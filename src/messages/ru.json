@@ -523,6 +523,12 @@
         "note": "Работа над проектом во время трудоустройства в C3 EXPO GmbH."
       },
       {
+        "year": "2025",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "BAU 2025 – Мюнхен",
+        "note": "13.–17.01.2025 · Salamander Window & Door Systems"
+      },
+      {
         "year": "2024",
         "client": "ZDK",
         "event": "Automechanika, Франкфурт",
@@ -534,6 +540,12 @@
         "client": "Merck, Darmstadt",
         "event": "ESHRE 2024 — 40-е ежегодное собрание, Амстердам, Нидерланды",
         "note": "7–10 июля 2024 г."
+      },
+      {
+        "year": "2024",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "FENSTERBAU FRONTALE 2024 – Нюрнберг",
+        "note": "19.–22.03.2024 · Salamander myWindow"
       },
       {
         "year": "2023",
@@ -560,6 +572,12 @@
         "note": "25–28 июня 2023 г."
       },
       {
+        "year": "2023",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "BAU 2023 – Мюнхен",
+        "note": "17.–22.04.2023 · Salamander Window & Door Systems"
+      },
+      {
         "year": "2022",
         "client": "Mercedes-Benz",
         "event": "RETTmobil 2022, Fulda"
@@ -569,6 +587,12 @@
         "client": "Merck, Darmstadt",
         "event": "ESHRE 2022 — 38-е ежегодное собрание, Милан, Италия",
         "note": "3–6 июля 2022 г."
+      },
+      {
+        "year": "2022",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "FENSTERBAU FRONTALE 2022 – Нюрнберг",
+        "note": "12.–15.07.2022 · Salamander Window & Door Systems"
       },
       {
         "year": "2018",
