@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useLocale } from "next-intl";
-import { ArrowRight, ArrowUpRight, Compass, Heart, Ruler, Sparkle, SquaresFour } from "@phosphor-icons/react";
+import { ArrowRight, ArrowUpRight, Compass, Heart } from "@phosphor-icons/react";
 import type { GalleryItem } from "@/components/gallery/types";
 import { pad3, thumbUrl } from "@/components/gallery/types";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
