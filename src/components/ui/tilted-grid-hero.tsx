@@ -54,6 +54,10 @@ export type TiltedGridHeroProps = {
   onImageSelect?: (image: TiltedGridImage, index: number, element: HTMLElement | null) => void;
   /** Wrap index at the ends. Defaults to true for image galleries. */
   loop?: boolean;
+  /** Automatically advance when visible until the visitor interacts. */
+  autoPlay?: boolean;
+  /** Seconds between cards in automatic mode, as in the original component. */
+  speed?: number;
   tileHeight?: number;
   aspectRatio?: number;
   gap?: number;
@@ -78,6 +82,8 @@ export function TiltedGridHero({
   onActiveIndexChange,
   onImageSelect,
   loop = true,
+  autoPlay = false,
+  speed = 4,
   tileHeight = 40,
   aspectRatio = 16 / 9,
   gap = 6,
@@ -96,6 +102,9 @@ export function TiltedGridHero({
   const [layout, setLayout] = React.useState<Layout | null>(null);
   const [internalIndex, setInternalIndex] = React.useState(0);
   const [motionReduced, setMotionReduced] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(false);
+  const [isHovered, setIsHovered] = React.useState(false);
+  const touched = React.useRef(false);
   const wheelSum = React.useRef(0);
   const lastWheel = React.useRef(0);
   const touch = React.useRef({ x: 0, y: 0, active: false, moved: false });
@@ -135,10 +144,28 @@ export function TiltedGridHero({
   }, [activeIndex, count, loop, onActiveIndexChange]);
 
   const advance = React.useCallback((direction: number) => moveTo(liveIndex.current + direction), [moveTo]);
+  React.useEffect(() => {
+    if (!autoPlay || motionReduced || isHovered || !isVisible || !loop || count < 2) return;
+    const timer = window.setInterval(() => {
+      if (!touched.current && !document.hidden) advance(1);
+    }, Math.max(1500, speed * 1000));
+    return () => window.clearInterval(timer);
+  }, [autoPlay, motionReduced, isHovered, isVisible, loop, count, speed, advance]);
+
+  React.useEffect(() => {
+    if (!autoPlay) return;
+    const node = host.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), { threshold: 0.08 });
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [autoPlay]);
+
   const onWheel = (event: React.WheelEvent<HTMLDivElement>) => {
     // Never preventDefault: the page continues scrolling naturally.
     // Trackpads send dozens of tiny deltas; group them into one logical step.
     if (event.ctrlKey || event.metaKey || !count) return;
+    touched.current = true;
     const scale = event.deltaMode === 1 ? 18 : event.deltaMode === 2 ? 300 : 1;
     const delta = (Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY) * scale;
     const now = performance.now();
@@ -177,12 +204,16 @@ export function TiltedGridHero({
       className={"relative isolate w-full overflow-hidden rounded-2xl border border-line bg-bg-raised outline-none focus-visible:ring-2 focus-visible:ring-accent " + className}
       style={{ ...rest.style, touchAction: "pan-y" }}
       onWheel={onWheel}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onFocusCapture={() => setIsHovered(true)}
+      onBlurCapture={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setIsHovered(false); }}
       onKeyDown={(event) => {
         if (event.target !== event.currentTarget) return;
-        if (event.key === "ArrowRight") { event.preventDefault(); advance(1); }
-        if (event.key === "ArrowLeft") { event.preventDefault(); advance(-1); }
-        if (event.key === "Home") { event.preventDefault(); moveTo(0); }
-        if (event.key === "End") { event.preventDefault(); moveTo(count - 1); }
+        if (event.key === "ArrowRight") { event.preventDefault(); touched.current = true; advance(1); }
+        if (event.key === "ArrowLeft") { event.preventDefault(); touched.current = true; advance(-1); }
+        if (event.key === "Home") { event.preventDefault(); touched.current = true; moveTo(0); }
+        if (event.key === "End") { event.preventDefault(); touched.current = true; moveTo(count - 1); }
       }}
       onPointerDown={(event) => {
         if (event.button !== 0) return;
@@ -196,6 +227,7 @@ export function TiltedGridHero({
         const dy = event.clientY - drag.y;
         if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.2) {
           ignoreClick.current = true;
+          touched.current = true;
           advance(dx < 0 ? 1 : -1);
           window.setTimeout(() => { ignoreClick.current = false; }, 0);
         }
@@ -235,6 +267,7 @@ export function TiltedGridHero({
               aria-label={(i + 1) + " / " + count + ": " + (image.title || image.alt || image.id)}
               onClick={(event) => {
                 if (ignoreClick.current) { ignoreClick.current = false; return; }
+                touched.current = true;
                 onImageSelect?.(image, i, event.currentTarget.querySelector("img"));
                 if (!onImageSelect) moveTo(i);
               }}
@@ -282,14 +315,14 @@ export function TiltedGridHero({
         })}
       </div>
       <div className="absolute inset-x-0 bottom-0 z-20 flex h-[76px] items-center justify-center gap-5 bg-gradient-to-t from-bg-raised to-transparent px-4">
-        <button type="button" onClick={() => advance(-1)} disabled={!loop && index === 0}
+        <button type="button" onClick={() => { touched.current = true; advance(-1); }} disabled={!loop && index === 0}
           aria-label={previousLabel}
           className="grid size-11 place-items-center rounded-full border border-line-strong bg-bg/80 text-xl hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:opacity-35">←</button>
         <span className="tabular min-w-20 text-center text-sm text-fg-muted" aria-live="polite">
           <span className="text-accent">{String(index + 1).padStart(2, "0")}</span>
           {" / " + String(count).padStart(2, "0")}
         </span>
-        <button type="button" onClick={() => advance(1)} disabled={!loop && index === count - 1}
+        <button type="button" onClick={() => { touched.current = true; advance(1); }} disabled={!loop && index === count - 1}
           aria-label={nextLabel}
           className="grid size-11 place-items-center rounded-full border border-line-strong bg-bg/80 text-xl hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:opacity-35">→</button>
       </div>
