@@ -84,7 +84,7 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
       <div role="group" aria-label={t("filters")} className="no-scrollbar -mx-[var(--gutter)] mt-4 flex gap-2 overflow-x-auto px-[var(--gutter)] pb-2">
         {FILTERS.filter(f=>counts[f.key]>0).map(f=><button key={f.key} type="button" aria-pressed={filter===f.key} onClick={()=>chooseFilter(f.key)}
           className="shrink-0 rounded-full border border-line-strong px-4 py-2 text-xs font-semibold text-fg-muted hover:border-accent aria-pressed:border-accent aria-pressed:bg-accent-soft aria-pressed:text-fg">
-          {t("filter."+f.key as "filter.all")} <span className="ml-1 font-mono opacity-60">{counts[f.key]}</span></button>)}
+          {t(`filter.${f.key}`)} <span className="ml-1 font-mono opacity-60">{counts[f.key]}</span></button>)}
       </div>
     </div>
     {!list.length?<div className="container-x py-20 text-center"><p className="text-fg-muted">{t("empty")}</p><button type="button" className="mt-4 rounded-full border border-line px-4 py-2" onClick={()=>{chooseFilter("all");search("");}}>{t("reset")}</button></div>:
