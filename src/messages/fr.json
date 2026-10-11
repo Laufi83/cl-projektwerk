@@ -530,6 +530,12 @@
         "note": "Plusieurs exposants et véhicules, grands écrans LED"
       },
       {
+        "year": "2024",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2024 – 40e réunion annuelle, Amsterdam, Pays-Bas",
+        "note": "7–10 juillet 2024"
+      },
+      {
         "year": "2023",
         "client": "Bosch Rexroth",
         "event": "Agritechnica, Hanovre",
@@ -548,9 +554,21 @@
         "event": "RETTmobil 2023, Fulda"
       },
       {
+        "year": "2023",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2023 – 39e réunion annuelle, Copenhague, Danemark",
+        "note": "25–28 juin 2023"
+      },
+      {
         "year": "2022",
         "client": "Mercedes-Benz",
         "event": "RETTmobil 2022, Fulda"
+      },
+      {
+        "year": "2022",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2022 – 38e réunion annuelle, Milan, Italie",
+        "note": "3–6 juillet 2022"
       },
       {
         "year": "2018",
