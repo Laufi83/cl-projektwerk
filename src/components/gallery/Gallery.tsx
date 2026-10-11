@@ -1,27 +1,31 @@
 "use client";
 import { useCallback, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Shuffle, SquaresFour, FilmStrip, Sun } from "@phosphor-icons/react";
+import { Shuffle, SquaresFour, FilmStrip, Sun, Play } from "@phosphor-icons/react";
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
 import { ZoomSliderStage, type ZoomSliderController } from "./ZoomSliderStage";
 import { GridView } from "./GridView";
+import { ImageAutoSlider } from "@/components/ui/image-auto-slider";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
 import { useReducedMotion } from "@/hooks/useMedia";
 
 type Props = { items: GalleryItem[]; dayPick: string };
+
+type ViewMode = "auto" | "slider" | "grid";
 
 export function Gallery({ items, dayPick }: Props) {
   const t = useTranslations("gallery");
   const reduced = useReducedMotion();
   const overlay = useDesignOverlay();
 
-  const [mode, setMode] = useState<"slider" | "grid">("slider");
+  // Neue Standardansicht; die bisherige 3D-Galerie bleibt auswählbar.
+  const [mode, setMode] = useState<ViewMode>("auto");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [index, setIndex] = useState(0);
   const controller = useRef<ZoomSliderController | null>(null);
 
-  // Reduzierte Bewegung → Raster statt Zoom-Slider
-  const effectiveMode = reduced ? "grid" : mode;
+  // Bei reduzierter Bewegung ausdrücklich nur das statische Raster zeigen.
+  const effectiveMode: ViewMode = reduced ? "grid" : mode;
 
   const list = useMemo(() => {
     const f = FILTERS.find((x) => x.key === filter)!;
@@ -64,8 +68,9 @@ export function Gallery({ items, dayPick }: Props) {
     [list, items, overlay],
   );
 
-  /** Im Slider hingleiten und nach dem Ankommen öffnen */
+  /** In der 3D-Ansicht hinfahren und öffnen; andere Ansichten direkt öffnen. */
   const spinAndOpen = (j: number) => {
+    if (!list[j]) return;
     if (effectiveMode !== "slider" || !controller.current) {
       openGrid(list[j].slug, document.querySelector(`[data-grid-card="${list[j].slug}"] img`));
       return;
@@ -92,18 +97,18 @@ export function Gallery({ items, dayPick }: Props) {
     <div className="grid gap-3">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div role="radiogroup" aria-label={t("viewMode")} className="glass inline-flex rounded-full p-1">
-          {(["slider", "grid"] as const).map((m) => (
+          {(["auto", "slider", "grid"] as const).map((m) => (
             <button
               key={m}
               type="button"
               role="radio"
               aria-checked={effectiveMode === m}
-              disabled={m === "slider" && reduced}
+              disabled={m !== "grid" && reduced}
               onClick={() => setMode(m)}
-              className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid aria-checked:bg-fg aria-checked:text-bg disabled:opacity-40"
+              className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid aria-checked:bg-fg aria-checked:text-bg disabled:opacity-40 sm:px-4"
             >
-              {m === "slider" ? <FilmStrip size={16} /> : <SquaresFour size={16} />}
-              {t(m)}
+              {m === "auto" ? <Play size={16} weight="fill" aria-hidden="true" /> : m === "slider" ? <FilmStrip size={16} aria-hidden="true" /> : <SquaresFour size={16} aria-hidden="true" />}
+              {m === "auto" ? "Auto" : m === "slider" ? "3D" : t("grid")}
             </button>
           ))}
         </div>
@@ -160,6 +165,19 @@ export function Gallery({ items, dayPick }: Props) {
             </div>
           )}
         </div>
+      </div>
+    );
+  }
+
+  if (effectiveMode === "auto") {
+    return (
+      <div>
+        <div className="container-x">{controls}</div>
+        {list.length ? (
+          <ImageAutoSlider items={list} onOpen={openGrid} />
+        ) : (
+          <div className="container-x py-12"><p className="text-fg-muted">{t("empty")}</p></div>
+        )}
       </div>
     );
   }
