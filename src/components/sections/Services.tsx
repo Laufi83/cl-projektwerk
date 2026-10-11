@@ -1,9 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import {
-  ArrowRight, ArrowUpRight, CalendarCheck, Check, Cube, Handshake, Kanban, Medal, PaintBrushBroad, PenNib, Recycle, ListChecks, PencilRuler, Phone, Truck, UserFocus, UsersThree,
+  ArrowRight, ArrowUpRight, CalendarCheck, Check, Handshake, Medal, PenNib, Phone, Truck, UserFocus, UsersThree,
 } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
-import { InViewVideo } from "@/components/media/InViewVideo";
+import { ServicesTiltedSlider } from "@/components/sections/ServicesTiltedSlider";
 import { AnchorLink } from "@/components/ui/AnchorLink";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { site } from "@/config/site";
@@ -14,8 +14,7 @@ export type ServiceMedia = { src: string; srcSet?: string; video?: string };
 const MODULES = ["tech", "prep", "control", "concept", "reuse"] as const;
 type Module = (typeof MODULES)[number];
 /** Sprungmarke „mehr dazu“ je Einzelleistung */
-const TARGETS: Record<Module, `#${string}`> = { tech: "#ablauf", prep: "#ablauf", control: "#ablauf", concept: "#designs", reuse: "#ueber" };
-const ICONS = { tech: PencilRuler, prep: ListChecks, control: Kanban, concept: Cube, reuse: Recycle };
+const TARGETS: Record<Module, "#ablauf" | "#designs" | "#ueber"> = { tech: "#ablauf", prep: "#ablauf", control: "#ablauf", concept: "#designs", reuse: "#ueber" };
 const PHASE_ICONS = [CalendarCheck, PenNib, Truck, Handshake];
 const TRUST_ICONS = [UserFocus, Medal, UsersThree];
 
@@ -125,80 +124,27 @@ export async function Services({ media, packageImage, visNote }: { media: Record
           <h3 className="font-display mt-4 text-4xl font-semibold leading-none md:text-6xl"><Kinetic text={t("single.title")} /></h3>
           <p className="mt-6 max-w-2xl text-lg text-fg-muted">{t("single.text")}</p>
         </div>
-        <ul className="mt-12 grid gap-4 md:grid-cols-2">
-          {MODULES.map((k, i) => {
-            const Icon = ICONS[k];
+        <ServicesTiltedSlider
+          items={MODULES.map((k) => {
             const m = media[k];
-            const points = t.raw(`items.${k}.points`) as string[];
-            return (
-              <li
-                key={k}
-                data-reveal
-                style={{ ["--reveal-delay" as string]: `${(i % 2) * 90}ms` }}
-                className="group relative isolate flex flex-col overflow-hidden rounded-3xl border border-line bg-bg-raised p-6 transition-[border-color,transform] duration-700 ease-fluid hover:-translate-y-1 hover:border-accent/60 md:p-8"
-              >
-                {/* Bild bzw. Video im oberen Teil der Karte, nach unten in die Karte ausgeblendet */}
-                <div aria-hidden className="absolute inset-x-0 top-0 -z-10 h-64 overflow-hidden md:h-72">
-                  {m.video ? (
-                    <InViewVideo
-                      src={m.video}
-                      poster={m.src}
-                      muted
-                      loop
-                      playsInline
-                      preload="none"
-                      className="h-full w-full object-cover opacity-55 transition-opacity duration-700 ease-fluid group-hover:opacity-85"
-                    />
-                  ) : (
-                    <img
-                      src={m.src}
-                      srcSet={m.srcSet}
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                      className="h-full w-full scale-105 object-cover opacity-45 transition-[opacity,transform] duration-[1100ms] ease-fluid group-hover:scale-100 group-hover:opacity-75"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg-raised via-bg-raised/50 to-bg-raised/10" />
-                </div>
-                <div className="flex items-start justify-between">
-                  <span className="grid size-12 place-items-center rounded-full border border-line-strong bg-bg/50 text-accent backdrop-blur transition-colors duration-700 ease-fluid group-hover:border-accent group-hover:bg-accent group-hover:text-accent-contrast">
-                    <Icon size={22} aria-hidden />
-                  </span>
-                  <span className="tabular text-sm text-fg-muted">0{i + 1}</span>
-                </div>
-                <h4 className="font-display mt-28 text-2xl font-semibold md:mt-32 md:text-3xl">{t(`items.${k}.title`)}</h4>
-                <p className="mt-3 max-w-xl text-fg-muted">{t(`items.${k}.text`)}</p>
-                <ul className="mt-5 grid gap-2 text-sm text-fg-muted">
-                  {(["task", "result", "benefit"] as const).map((f) => (
-                    <li key={f}>{t(`items.${k}.${f}`)}</li>
-                  ))}
-                </ul>
-                <ul className="mt-5 grid gap-2 text-sm">
-                  {points.map((p) => (
-                    <li key={p} className="flex gap-2.5">
-                      <Check size={16} weight="bold" className="mt-0.5 shrink-0 text-accent" aria-hidden />
-                      <span>{p}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-3 pt-8">
-                  <InquireLink
-                    service={k}
-                    aria-label={`${t(`items.${k}.title`)}: ${t("inquire")}`}
-                    className="inline-flex items-center gap-2 rounded-full border border-accent px-4 py-2 text-sm font-semibold text-fg transition-colors duration-500 ease-fluid hover:bg-accent hover:text-accent-contrast"
-                  >
-                    {t("inquire")} <ArrowRight size={16} aria-hidden />
-                  </InquireLink>
-                  <AnchorLink href={TARGETS[k]} className="inline-flex items-center gap-1 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg">
-                    {t(`items.${k}.link`)} <ArrowUpRight size={14} className="text-accent" aria-hidden />
-                  </AnchorLink>
-                </div>
-              </li>
-            );
+            return {
+              key: k,
+              title: t("items." + k + ".title"),
+              text: t("items." + k + ".text"),
+              task: t("items." + k + ".task"),
+              result: t("items." + k + ".result"),
+              benefit: t("items." + k + ".benefit"),
+              points: t.raw("items." + k + ".points") as string[],
+              more: t("items." + k + ".link"),
+              href: TARGETS[k],
+              image: m.src,
+              srcSet: m.srcSet,
+              video: m.video,
+            };
           })}
-        </ul>
+          inquireLabel={t("inquire")}
+          visualisationNote={visNote}
+        />
 
         {/* Abschluss */}
         <div className="mt-6 flex flex-col gap-8 rounded-[2rem] bg-accent p-8 text-accent-contrast md:p-12 lg:flex-row lg:items-center lg:justify-between" data-reveal>
