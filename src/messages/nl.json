@@ -40,7 +40,6 @@
     "services": "Diensten",
     "designs": "Concepten",
     "process": "Samenwerking",
-    "graphics": "Presentatie",
     "world": "Beurskalender",
     "about": "Over mij",
     "contact": "Contact",
@@ -449,14 +448,6 @@
       "note": "Uw locatie wordt alleen in uw browser verwerkt en niet verzonden."
     }
   },
-  "led": {
-    "eyebrow": "Schermoppervlakken in de planning",
-    "title": "Mediavlakken hebben exacte maten nodig.",
-    "lead": "Ledwanden en monitoren horen bij veel beursruimtes. Ik neem ze met maten, beeldverhoudingen en aansluitgegevens op in uw documenten. De clips tonen gangbare formaten; het is gelicentieerd voorbeeldmateriaal en geen eigen projecten.",
-    "placeholder": "Voorbeeldclip {n}",
-    "placeholderNote": "Voorbeeldmateriaal",
-    "caption": "Voorbeeldclip (stocklicentie): {title}, {format}. Geen project van CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Over mij",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Zender niet bereikbaar",
       "blocked": "Start geblokkeerd door de browser. Klik opnieuw op afspelen."
     }
-  },
-  "graphics": {
-    "eyebrow": "Ontwerp en presentatie",
-    "title": "Grafiek die in de ruimte past.",
-    "text": "Bij een ontwerp horen beelden die beslissingen mogelijk maken en data die zonder nabewerking verder te gebruiken is. Ik maak visualisaties en drukklare grafische data, afgestemd op maten en constructie van de ruimte en op uw huisstijl. Omvang en aantal correctierondes worden vooraf afgesproken. Het drukken gebeurt bij een drukpartner die u of, op verzoek, ik inschakel.",
-    "points": [
-      {
-        "title": "Visualisaties voor de afstemming",
-        "text": "Perspectieven, plattegrond en aanzichten maken het concept begrijpelijk voor u en uw klanten."
-      },
-      {
-        "title": "Drukdata met alle gegevens",
-        "text": "Afloop, kleurprofiel, maten en bestandsformaat zijn voor uw drukpartner voorbereid."
-      },
-      {
-        "title": "Afgestemd op de constructie",
-        "text": "Grafische vlakken worden getoetst aan de maten van wanden en onderdelen uit de technische planning."
-      },
-      {
-        "title": "Afgesproken correctierondes",
-        "text": "We leggen vooraf vast hoeveel correctierondes zijn inbegrepen. Extra rondes zijn een aanvullende dienst."
-      },
-      {
-        "title": "Bestanden met versiebeheer",
-        "text": "Elke versie heeft een duidelijke status, zodat alleen goedgekeurde data naar de drukker gaat."
-      },
-      {
-        "title": "Overdracht aan uw drukpartner",
-        "text": "Ik lever de data, het vakbedrijf drukt en produceert."
-      }
-    ],
-    "close": "Ontwerp en data van mij, productie bij het vakbedrijf: zodat de ruimte eruitziet zoals ze is goedgekeurd.",
-    "videoLabel": "Animatie: drukdata op een monitor en grootformaatdruk van een beursgrafiek (visualisatie)"
   },
   "drops": {
     "rule": "Elke ochtend om 5:00 uur een nieuw concept",

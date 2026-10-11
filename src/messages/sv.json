@@ -40,7 +40,6 @@
     "services": "Tjänster",
     "designs": "Koncept",
     "process": "Samarbete",
-    "graphics": "Presentation",
     "world": "Mässkalender",
     "about": "Om mig",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Skärmytor i planeringen",
-    "title": "Medieytor behöver exakta mått.",
-    "lead": "LED-väggar och skärmar hör till många mässrum. Jag tar med dem i dina dokument med mått, bildformat och anslutningsdata. Klippen visar vanliga format; de är licensierat exempelmaterial och inga egna projekt.",
-    "placeholder": "Exempelklipp {n}",
-    "placeholderNote": "Exempelmaterial",
-    "caption": "Exempelklipp (stocklicens): {title}, {format}. Inte ett projekt från CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Om mig",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stationen går inte att nå",
       "blocked": "Start blockerad av webbläsaren. Klicka på spela igen."
     }
-  },
-  "graphics": {
-    "eyebrow": "Design och presentation",
-    "title": "Grafik som passar rummet.",
-    "text": "Till en design hör bilder som gör det möjligt att fatta beslut och data som kan bearbetas vidare utan efterarbete. Jag tar fram visualiseringar och tryckklara grafikdata, anpassade efter rummets mått och konstruktion och din visuella identitet. Omfattning och antal korrekturomgångar överenskoms i förväg. Själva tryckningen sker hos en tryckpartner som du eller, på begäran, jag anlitar.",
-    "points": [
-      {
-        "title": "Visualiseringar för avstämning",
-        "text": "Perspektiv, planritning och fasader gör konceptet begripligt för dig och dina kunder."
-      },
-      {
-        "title": "Tryckdata med alla uppgifter",
-        "text": "Utfall, färgprofil, mått och filformat är förberedda för din tryckpartner."
-      },
-      {
-        "title": "Anpassat efter konstruktionen",
-        "text": "Grafikytor stäms av mot måtten på väggar och komponenter från den tekniska planeringen."
-      },
-      {
-        "title": "Överenskomna korrekturomgångar",
-        "text": "Vi fastställer i förväg hur många korrekturomgångar som ingår. Ytterligare omgångar är en tilläggstjänst."
-      },
-      {
-        "title": "Versionshanterade filer",
-        "text": "Varje version har en tydlig status, så att bara godkända data går till tryck."
-      },
-      {
-        "title": "Överlämning till din tryckpartner",
-        "text": "Jag levererar data, specialistföretaget trycker och producerar."
-      }
-    ],
-    "close": "Design och data från mig, produktion hos specialistföretaget: så att rummet ser ut som det godkändes.",
-    "videoLabel": "Animation: tryckdata på en skärm och storformatstryck av en mässgrafik (visualisering)"
   },
   "drops": {
     "rule": "Varje morgon kl. 5:00 ett nytt koncept",

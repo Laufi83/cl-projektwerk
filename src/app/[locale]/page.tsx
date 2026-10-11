@@ -19,8 +19,6 @@ import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { locations } from "@/config/locations";
 import { tradeFairs, TRADE_FAIRS_CHECKED } from "@/config/trade-fairs";
 import { boardRows } from "@/lib/trade-fairs";
-import { LedShowreel } from "@/components/sections/LedShowreel";
-import { Graphics } from "@/components/sections/Graphics";
 import { About } from "@/components/sections/About";
 import { SeoSection } from "@/components/sections/SeoSection";
 import { InquiryForm } from "@/components/contact/InquiryForm";
@@ -104,8 +102,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           tech: img(designs.find((d) => d.id === "040") ?? designs[2]),
           prep: img(designs[1]),
           control: img(designs.find((d) => d.id === "033") ?? designs[0]),
-          concept: { src: mediaUrl("graphics/grafikdaten-poster.webp"), video: mediaUrl("custom/skizze-animation.mp4") },
-          reuse: { src: "/led/led-automotive-16x9.webp", video: "/led/led-automotive-16x9.mp4" },
+          concept: img(designs.find((d) => d.id === "026") ?? designs[0]),
+          reuse: img(designs.find((d) => d.id === "033") ?? designs[1]),
         }}
         packageImage={designAsset((designs.find((d) => d.id === "026") ?? designs[0]).id, "render-1-1280.webp")}
         visNote={note}
@@ -149,8 +147,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Process images={processImages} visNote={note} />
       <ConstructionExperience images={processImages} visualisationNote={note} />
 
-      <Graphics visNote={note} />
-      <LedShowreel />
       <World rows={boardRows(locations, tradeFairs, now)} nowIso={now.toISOString()} checked={TRADE_FAIRS_CHECKED} />
       <MesseVenueExplorer />
       <SeoSection />

@@ -34,7 +34,6 @@ export async function Footer() {
             <li><Link href="/designs" className="text-fg-muted hover:text-fg">{tn("designs")}</Link></li>
             <li><Link href={{ pathname: "/", hash: "messegelande" }} className="text-fg-muted hover:text-fg">{locale === "de" ? "Messegelände" : "Exhibition venues"}</Link></li>
             <li><Link href={{ pathname: "/", hash: "ablauf" }} className="text-fg-muted hover:text-fg">{tn("process")}</Link></li>
-            <li><Link href={{ pathname: "/", hash: "grafik" }} className="text-fg-muted hover:text-fg">{tn("graphics")}</Link></li>
             <li><Link href="/auswahl" className="text-fg-muted hover:text-fg">{tn("selection")}</Link></li>
             <li><Link href="/anfrage" className="text-fg-muted hover:text-fg">{tn("cta")}</Link></li>
           </ul>

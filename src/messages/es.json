@@ -40,7 +40,6 @@
     "services": "Servicios",
     "designs": "Conceptos",
     "process": "Colaboración",
-    "graphics": "Presentación",
     "world": "Calendario de ferias",
     "about": "Sobre mí",
     "contact": "Contacto",
@@ -449,14 +448,6 @@
       "note": "Tu ubicación solo se procesa en tu navegador y no se transmite."
     }
   },
-  "led": {
-    "eyebrow": "Superficies de pantalla en la planificación",
-    "title": "Las superficies multimedia necesitan medidas exactas.",
-    "lead": "Las paredes LED y los monitores forman parte de muchos espacios feriales. Los incluyo en sus documentos con medidas, relaciones de aspecto y datos de conexión. Los clips muestran formatos habituales; son material de muestra con licencia y no proyectos propios.",
-    "placeholder": "Clip de muestra {n}",
-    "placeholderNote": "Material de muestra",
-    "caption": "Clip de muestra (licencia de stock): {title}, {format}. No es un proyecto de CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Sobre mí",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Emisora no disponible",
       "blocked": "Inicio bloqueado por el navegador. Pulse de nuevo reproducir."
     }
-  },
-  "graphics": {
-    "eyebrow": "Diseño y presentación",
-    "title": "Gráficos que encajan en el espacio.",
-    "text": "Un diseño necesita imágenes que permitan decidir y datos que puedan procesarse sin retoques. Elaboro visualizaciones y datos gráficos listos para imprimir, ajustados a las medidas y la construcción del espacio y a su identidad corporativa. El alcance y el número de rondas de corrección se acuerdan de antemano. La impresión corre a cargo de un socio de impresión que usted o, si lo desea, yo incorporamos.",
-    "points": [
-      {
-        "title": "Visualizaciones para la coordinación",
-        "text": "Perspectivas, planta y alzados hacen comprensible el concepto para usted y sus clientes."
-      },
-      {
-        "title": "Datos de impresión con todos los detalles",
-        "text": "Sangrado, perfil de color, medidas y formato de archivo preparados para su socio de impresión."
-      },
-      {
-        "title": "Ajustado a la construcción",
-        "text": "Las superficies gráficas se contrastan con las medidas de paredes y elementos de la planificación técnica."
-      },
-      {
-        "title": "Rondas de corrección acordadas",
-        "text": "Fijamos de antemano cuántas rondas de corrección están incluidas. Las rondas adicionales son un servicio extra."
-      },
-      {
-        "title": "Archivos versionados",
-        "text": "Cada versión tiene un estado claro, de modo que solo los datos aprobados van a imprenta."
-      },
-      {
-        "title": "Entrega a su socio de impresión",
-        "text": "Yo entrego los datos; la empresa especializada imprime y produce."
-      }
-    ],
-    "close": "Diseño y datos por mi parte, producción en la empresa especializada: para que el espacio se vea como fue aprobado.",
-    "videoLabel": "Animación: datos de impresión en un monitor e impresión en gran formato de un gráfico de feria (visualización)"
   },
   "drops": {
     "rule": "Cada mañana a las 5:00 otro concepto",

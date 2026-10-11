@@ -40,7 +40,6 @@
     "services": "Hizmetler",
     "designs": "Konseptler",
     "process": "İş birliği",
-    "graphics": "Sunum",
     "world": "Fuar takvimi",
     "about": "Hakkımda",
     "contact": "İletişim",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Planlamada ekran yüzeyleri",
-    "title": "Medya yüzeyleri kesin ölçülere ihtiyaç duyar.",
-    "lead": "LED duvarlar ve monitörler birçok fuar alanının parçasıdır. Onları ölçüler, en-boy oranları ve bağlantı verileriyle belgelerinize dahil ediyorum. Klipler yaygın formatları gösterir; lisanslı örnek materyaldir, kendi projelerim değildir.",
-    "placeholder": "Örnek klip {n}",
-    "placeholderNote": "Örnek materyal",
-    "caption": "Örnek klip (stok lisansı): {title}, {format}. CL Projektwerk projesi değildir."
-  },
   "about": {
     "eyebrow": "Hakkımda",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "İstasyona ulaşılamıyor",
       "blocked": "Başlatma tarayıcı tarafından engellendi. Lütfen oynat'a tekrar tıklayın."
     }
-  },
-  "graphics": {
-    "eyebrow": "Tasarım ve sunum",
-    "title": "Alana uyan grafik.",
-    "text": "Bir tasarıma, karar vermeyi sağlayan görseller ve yeniden işlem gerektirmeden kullanılabilen veriler gerekir. Alanın ölçülerine ve yapısına ve kurumsal kimliğinize uyarlanmış görselleştirmeler ve baskıya hazır grafik verileri hazırlıyorum. Kapsam ve düzeltme turu sayısı önceden kararlaştırılır. Baskının kendisi, sizin ya da isteğiniz üzerine benim devreye aldığım bir baskı ortağında yapılır.",
-    "points": [
-      {
-        "title": "Koordinasyon için görselleştirmeler",
-        "text": "Perspektifler, kat planı ve cepheler konsepti sizin ve müşterileriniz için anlaşılır kılar."
-      },
-      {
-        "title": "Tüm bilgileriyle baskı verileri",
-        "text": "Taşma payı, renk profili, ölçüler ve dosya biçimi baskı ortağınız için hazırlanır."
-      },
-      {
-        "title": "Yapıya uyarlanmış",
-        "text": "Grafik yüzeyler, teknik planlamadaki duvar ve bileşen ölçüleriyle karşılaştırılır."
-      },
-      {
-        "title": "Kararlaştırılmış düzeltme turları",
-        "text": "Kaç düzeltme turunun dahil olduğunu önceden belirleriz. Ek turlar ek hizmettir."
-      },
-      {
-        "title": "Sürümlenmiş dosyalar",
-        "text": "Her sürümün net bir durumu vardır; böylece baskıya yalnızca onaylı veriler gider."
-      },
-      {
-        "title": "Baskı ortağınıza teslim",
-        "text": "Verileri ben sağlarım, uzman firma basar ve üretir."
-      }
-    ],
-    "close": "Tasarım ve veriler benden, üretim uzman firmada: alan, onaylandığı gibi görünsün diye.",
-    "videoLabel": "Animasyon: monitörde baskı verileri ve bir fuar grafiğinin büyük format baskısı (görselleştirme)"
   },
   "drops": {
     "rule": "Her sabah saat 5:00'te yeni bir konsept",

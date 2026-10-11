@@ -40,7 +40,6 @@
     "services": "Služby",
     "designs": "Koncepty",
     "process": "Spolupráce",
-    "graphics": "Prezentace",
     "world": "Kalendář veletrhů",
     "about": "O mně",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Vaše poloha se zpracovává jen ve vašem prohlížeči a nikam se nepřenáší."
     }
   },
-  "led": {
-    "eyebrow": "Obrazovkové plochy v plánování",
-    "title": "Mediální plochy potřebují přesné rozměry.",
-    "lead": "LED stěny a monitory patří k mnoha veletržním prostorům. Zahrnuji je do vašich podkladů s rozměry, poměry stran a připojovacími údaji. Klipy ukazují běžné formáty; jde o licencovaný ukázkový materiál, nikoli o mé vlastní projekty.",
-    "placeholder": "Ukázkový klip {n}",
-    "placeholderNote": "Ukázkový materiál",
-    "caption": "Ukázkový klip (stock licence): {title}, {format}. Nejde o projekt CL Projektwerk."
-  },
   "about": {
     "eyebrow": "O mně",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stanice není dostupná",
       "blocked": "Spuštění zablokoval prohlížeč. Klikněte znovu na přehrát."
     }
-  },
-  "graphics": {
-    "eyebrow": "Návrh a prezentace",
-    "title": "Grafika, která do prostoru sedí.",
-    "text": "K návrhu patří obrázky, které umožňují rozhodnout, a data, která lze dále zpracovat bez předělávání. Zpracovávám vizualizace a tisková grafická data, přizpůsobená rozměrům a konstrukci prostoru i vašemu firemnímu designu. Rozsah a počet kol korektur se dohodnou předem. Tisk provádí tiskový partner, kterého zapojíte vy nebo na přání já.",
-    "points": [
-      {
-        "title": "Vizualizace pro odsouhlasení",
-        "text": "Perspektivy, půdorys a pohledy dělají koncept srozumitelným pro vás i vaše zákazníky."
-      },
-      {
-        "title": "Tisková data se všemi údaji",
-        "text": "Spadávka, barevný profil, rozměry a formát souboru jsou připraveny pro vašeho tiskového partnera."
-      },
-      {
-        "title": "Přizpůsobeno konstrukci",
-        "text": "Grafické plochy se porovnávají s rozměry stěn a prvků z technického plánování."
-      },
-      {
-        "title": "Dohodnutá kola korektur",
-        "text": "Předem stanovíme, kolik kol korektur je zahrnuto. Další kola jsou doplňkovou službou."
-      },
-      {
-        "title": "Verzované soubory",
-        "text": "Každá verze má jasný stav, takže do tisku jdou jen schválená data."
-      },
-      {
-        "title": "Předání vašemu tiskovému partnerovi",
-        "text": "Já dodám data, odborná firma tiskne a vyrábí."
-      }
-    ],
-    "close": "Návrh a data ode mě, výroba u odborné firmy: aby prostor vypadal tak, jak byl schválen.",
-    "videoLabel": "Animace: tisková data na monitoru a velkoformátový tisk veletržní grafiky (vizualizace)"
   },
   "drops": {
     "rule": "Každé ráno v 5:00 další koncept",

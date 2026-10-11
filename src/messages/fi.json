@@ -40,7 +40,6 @@
     "services": "Palvelut",
     "designs": "Konseptit",
     "process": "Yhteistyö",
-    "graphics": "Esittely",
     "world": "Messukalenteri",
     "about": "Minusta",
     "contact": "Yhteystiedot",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Näyttöpinnat suunnittelussa",
-    "title": "Mediapinnat tarvitsevat tarkat mitat.",
-    "lead": "LED-seinät ja näytöt kuuluvat moniin messutiloihin. Otan ne mukaan asiakirjoihisi mittojen, kuvasuhteiden ja liitäntätietojen kanssa. Klipit esittävät yleisiä formaatteja; ne ovat lisensoitua esimerkkimateriaalia eivätkä omia projektejani.",
-    "placeholder": "Esimerkkiklippi {n}",
-    "placeholderNote": "Esimerkkimateriaali",
-    "caption": "Esimerkkiklippi (kuvapankkilisenssi): {title}, {format}. Ei CL Projektwerkin projekti."
-  },
   "about": {
     "eyebrow": "Minusta",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Kanavaa ei tavoiteta",
       "blocked": "Selain esti käynnistyksen. Napsauta toistoa uudelleen."
     }
-  },
-  "graphics": {
-    "eyebrow": "Suunnittelu ja esittely",
-    "title": "Grafiikkaa, joka sopii tilaan.",
-    "text": "Suunnitelmaan kuuluvat kuvat, jotka mahdollistavat päätökset, ja data, jota voi käyttää eteenpäin ilman uudelleentyöstöä. Laadin visualisointeja ja painovalmista grafiikkadataa, sovitettuna tilan mittoihin ja rakenteeseen sekä yrityksesi visuaaliseen ilmeeseen. Laajuus ja korjauskierrosten määrä sovitaan etukäteen. Itse painatuksen tekee painopartneri, jonka sinä tai pyynnöstä minä otan mukaan.",
-    "points": [
-      {
-        "title": "Visualisoinnit yhteensovitukseen",
-        "text": "Perspektiivit, pohjapiirros ja julkisivukuvat tekevät konseptista ymmärrettävän sinulle ja asiakkaillesi."
-      },
-      {
-        "title": "Painodata kaikilla tiedoilla",
-        "text": "Leikkuuvara, väriprofiili, mitat ja tiedostomuoto on valmisteltu painopartnerillesi."
-      },
-      {
-        "title": "Sovitettu rakenteeseen",
-        "text": "Grafiikkapinnat tarkistetaan teknisen suunnittelun seinien ja osien mittoihin."
-      },
-      {
-        "title": "Sovitut korjauskierrokset",
-        "text": "Sovimme etukäteen, montako korjauskierrosta sisältyy. Lisäkierrokset ovat lisäpalvelua."
-      },
-      {
-        "title": "Versioidut tiedostot",
-        "text": "Jokaisella versiolla on selkeä tila, jotta vain hyväksytty data menee painoon."
-      },
-      {
-        "title": "Luovutus painopartnerillesi",
-        "text": "Minä toimitan datan, erikoisyritys painaa ja tuottaa."
-      }
-    ],
-    "close": "Suunnittelu ja data minulta, tuotanto erikoisyrityksessä: jotta tila näyttää samalta kuin se hyväksyttiin.",
-    "videoLabel": "Animaatio: painodata näytöllä ja messugrafiikan suurkokopainatus (visualisointi)"
   },
   "drops": {
     "rule": "Joka aamu klo 5:00 uusi konsepti",
