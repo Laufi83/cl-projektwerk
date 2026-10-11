@@ -14,7 +14,7 @@ export type ServiceMedia = { src: string; srcSet?: string; video?: string };
 const MODULES = ["tech", "prep", "control", "concept", "reuse"] as const;
 type Module = (typeof MODULES)[number];
 /** Sprungmarke „mehr dazu“ je Einzelleistung */
-const TARGETS: Record<Module, `#${string}`> = { tech: "#ablauf", prep: "#ablauf", control: "#ablauf", concept: "#designs", reuse: "#ueber" };
+const TARGETS: Record<Module, "#ablauf" | "#designs" | "#ueber"> = { tech: "#ablauf", prep: "#ablauf", control: "#ablauf", concept: "#designs", reuse: "#ueber" };
 const PHASE_ICONS = [CalendarCheck, PenNib, Truck, Handshake];
 const TRUST_ICONS = [UserFocus, Medal, UsersThree];
 
