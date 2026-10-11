@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "Chef de projet senior, salons et événements",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "06/2019 – 04/2025",
         "role": "Conduite de projets",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "Projet réalisé dans le cadre de l'emploi chez C3 EXPO GmbH."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "Présentation du BMW X5, Showpalast de Munich",
+        "note": "Projet réalisé dans le cadre de l'emploi chez C3 EXPO GmbH."
+      },
       {
         "year": "2024",
         "client": "ZDK",
