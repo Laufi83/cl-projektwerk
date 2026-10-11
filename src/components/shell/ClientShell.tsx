@@ -5,17 +5,20 @@ import { SmoothScroll } from "./SmoothScroll";
 import { RevealObserver } from "./RevealObserver";
 import { DesignOverlayProvider } from "@/components/overlay/DesignOverlay";
 import { useFinePointer, useReducedMotion } from "@/hooks/useMedia";
+import { PerformanceModeSync, useLiteMode } from "@/lib/performance";
 
 const MeshCursor = dynamic(() => import("@/components/cursor/MeshCursor"), { ssr: false });
 
 export function ClientShell({ children }: { children: ReactNode }) {
   const fine = useFinePointer();
   const reduced = useReducedMotion();
+  const lite = useLiteMode();
   return (
     <DesignOverlayProvider>
+      <PerformanceModeSync />
       <SmoothScroll />
       <RevealObserver />
-      {fine && !reduced ? <MeshCursor /> : <StaticGrid />}
+      {fine && !reduced && !lite ? <MeshCursor /> : <StaticGrid />}
       {children}
     </DesignOverlayProvider>
   );
