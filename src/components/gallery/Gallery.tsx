@@ -201,6 +201,8 @@ export function Gallery({ items, dayPick }: Props) {
                 onActiveIndexChange={setIndex}
                 onImageSelect={(d, _i, el) => openGrid(list.find((x) => x.id === d.id)?.slug ?? "", el)}
                 loop
+                autoPlay
+                speed={4}
                 tileHeight={43}
                 curve={80}
                 fade={8}
