@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocale } from "next-intl";
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowSquareOut, Briefcase, CalendarBlank, Certificate, FilePdf, X } from "@phosphor-icons/react";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowSquareOut, CalendarBlank, Certificate, FilePdf, X } from "@phosphor-icons/react";
 
 type Career = { years: string; role: string; org: string };
 type Project = { year: string; client: string; event: string; size?: string; note?: string };
@@ -51,7 +51,7 @@ function DocumentViewer({doc,onClose}:{doc:Document;onClose:()=>void}){
         <iframe title={title} src={"https://drive.google.com/file/d/"+encodeURIComponent(doc.id)+"/preview"}
           className="min-h-0 w-full flex-1 bg-white" loading="lazy" referrerPolicy="no-referrer"/>
         <p className="border-t border-white/15 px-4 py-3 text-[11px] text-[#b5c0cb]">
-          {de?"Die Datei liegt in Google Drive. Für Besucher ist sie erst nach Freigabe „Jeder mit dem Link“ sichtbar. Bei gesperrter Vorschau bitte „Neuer Tab“ verwenden.":"The file is stored in Google Drive and requires link-sharing access for visitors. Use New tab if preview is blocked."}
+          {de?"Bei Problemen mit der eingebetteten Vorschau die PDF über „Neuer Tab“ direkt in Google Drive öffnen.":"If the embedded PDF preview does not load, open the original in a new Google Drive tab."}
         </p>
       </section>
     </div>,document.body
@@ -123,7 +123,7 @@ export function ExperienceHub({career,projects,careerTitle,projectsTitle,project
             {document&&<div className="mt-9 border-t border-white/15 pt-6">
               <p className="mb-3 inline-flex items-center gap-2 text-sm font-semibold"><Certificate size={19} className="text-[#ff9e63]" aria-hidden="true"/>{label(document)}</p>
               <div className="flex flex-wrap gap-2">
-                <button type="button" onClick={()=>setDoc(document)} className="inline-flex items-center gap-2 rounded-full border border-white/35 px-4 py-2.5 text-xs font-semibold transition-colors hover:border-[#ff9756]"><FilePdf size={17} aria-hidden="true"/>{de?"Arbeitszeugnis ansehen":"Open document"}</button>
+                <button type="button" onClick={()=>setDoc(document)} className="inline-flex items-center gap-2 rounded-full border border-white/35 px-4 py-2.5 text-xs font-semibold transition-colors hover:border-[#ff9756]"><FilePdf size={17} aria-hidden="true"/>{document.kind==="certificate"?(de?"Zertifikat ansehen":"View certificate"):(de?"Arbeitszeugnis ansehen":"View employment reference")}</button>
                 <a href={download(document.id)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#f26a1b] px-4 py-2.5 text-xs font-semibold text-black transition-colors hover:bg-[#ff9957]"><ArrowDown size={17} aria-hidden="true"/>{de?"PDF herunterladen":"Download PDF"}</a>
               </div>
             </div>}
