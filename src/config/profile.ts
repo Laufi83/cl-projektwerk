@@ -1,5 +1,5 @@
 /**
- * Werdegang, Referenzprojekte und Kunden – ausschließlich aus Lebenslauf (CV 2025) und Portfolio.
+ * Werdegang und frühere Projekterfahrung – basierend auf Lebenslauf, Portfolio und den Angaben des Nutzers vom Oktober 2026.
  * Projekte und Kunden stammen aus der Zeit als angestellter Projektleiter (Arbeitgeber jeweils angegeben).
  */
 type L = { de: string; en: string };
@@ -14,7 +14,7 @@ export const facts: { value: L; label: L }[] = [
 ];
 
 export const career: { years: string; role: L; org: L }[] = [
-  { years: "11/2025 – 09/2026", role: { de: "Senior-Projektmanager Messebau", en: "Senior project manager, exhibition stands" }, org: { de: "C3 EXPO GmbH, Mannheim", en: "C3 EXPO GmbH, Mannheim" } },
+  { years: "11/2025 – 10/2026", role: { de: "Senior-Projektmanager Messebau", en: "Senior project manager, exhibition stands" }, org: { de: "C3 EXPO GmbH, Mannheim", en: "C3 EXPO GmbH, Mannheim" } },
   { years: "2019 – 2025", role: { de: "Projektleiter individueller Standbau", en: "Project manager, custom stand construction" }, org: { de: "Messeprojekt GmbH, Leipzig", en: "Messeprojekt GmbH, Leipzig" } },
   { years: "2017 – 2019", role: { de: "Geschäftsführer (angestellt)", en: "Managing director (employed)" }, org: { de: "MS Internationaler Messebau GmbH, Colditz", en: "MS Internationaler Messebau GmbH, Colditz" } },
   { years: "2010", role: { de: "IHK-Zertifikat Projektleiter Messebau und Event", en: "IHK certificate, project manager exhibitions & events" }, org: { de: "Deutsche Event Akademie, Hannover", en: "Deutsche Event Akademie, Hanover" } },
@@ -23,9 +23,9 @@ export const career: { years: string; role: L; org: L }[] = [
 ];
 
 export const projects: { year: string; client: string; event: L; size: L | null; note?: L }[] = [
-  { year: "2026", client: "Amazon", event: { de: "Amazon Port, Cannes Lions 2026 – International Festival of Creativity, Cannes", en: "Amazon Port, Cannes Lions 2026 – International Festival of Creativity, Cannes" }, size: null, note: { de: "Juni 2026", en: "June 2026" } },
+  { year: "2026", client: "Amazon", event: { de: "Amazon Port, Cannes Lions 2026 – International Festival of Creativity, Cannes", en: "Amazon Port, Cannes Lions 2026 – International Festival of Creativity, Cannes" }, size: null, note: { de: "Projektarbeit als Senior-Projektmanager während der Anstellung bei C3 EXPO GmbH", en: "Project experience as Senior Project Manager while employed at C3 EXPO GmbH" } },
   { year: "2026", client: "Bosch Rexroth", event: { de: "iVT Expo, Köln", en: "iVT Expo, Cologne" }, size: null, note: { de: "Juni 2026", en: "June 2026" } },
-  { year: "2026", client: "BMW", event: { de: "Vorstellung des neuen BMW X5, Showpalast München", en: "Launch of the new BMW X5, Showpalast Munich" }, size: null, note: { de: "Januar 2026", en: "January 2026" } },
+  { year: "2026", client: "BMW", event: { de: "Vorstellung des neuen BMW X5, Showpalast München", en: "Launch of the new BMW X5, Showpalast Munich" }, size: null, note: { de: "Projektarbeit als Senior-Projektmanager während der Anstellung bei C3 EXPO GmbH", en: "Project experience as Senior Project Manager while employed at C3 EXPO GmbH" } },
   { year: "2024", client: "Merck, Darmstadt", event: { de: "ESHRE 2024, Amsterdam (RAI Convention Centre)", en: "ESHRE 2024, Amsterdam (RAI Convention Centre)" }, size: null, note: { de: "7.–10. Juli 2024", en: "7–10 July 2024" } },
   { year: "2024", client: "ZDK", event: { de: "Automechanika, Frankfurt", en: "Automechanika, Frankfurt" }, size: { de: "1.200 m²", en: "1,200 m²" }, note: { de: "Mehrere Aussteller und Fahrzeuge, großflächige LED-Displays", en: "Several exhibitors and vehicles, large-format LED displays" } },
   { year: "2022 · 2024", client: "Salamander Industrie-Produkte GmbH", event: { de: "Fensterbau Frontale, Nürnberg", en: "Fensterbau Frontale, Nuremberg" }, size: null, note: { de: "Juli 2022 und März 2024", en: "July 2022 and March 2024" } },
