@@ -15,7 +15,7 @@ export const facts: { value: L; label: L }[] = [
 
 export const career: { years: string; role: L; org: L }[] = [
   { years: "11/2025 – 10/2026", role: { de: "Senior-Projektmanager Messebau", en: "Senior project manager, exhibition stands" }, org: { de: "C3 EXPO GmbH, Mannheim", en: "C3 EXPO GmbH, Mannheim" } },
-  { years: "2019 – 2025", role: { de: "Projektleiter individueller Standbau", en: "Project manager, custom stand construction" }, org: { de: "Messeprojekt GmbH, Leipzig", en: "Messeprojekt GmbH, Leipzig" } },
+  { years: "2019 – 2025", role: { de: "Projektleitung im individuellen Messebau", en: "Project management in custom exhibition stand construction" }, org: { de: "Messeprojekt GmbH, Leipzig", en: "Messeprojekt GmbH, Leipzig" } },
   { years: "2017 – 2019", role: { de: "Geschäftsführer (angestellt)", en: "Managing director (employed)" }, org: { de: "MS Internationaler Messebau GmbH, Colditz", en: "MS Internationaler Messebau GmbH, Colditz" } },
   { years: "2010", role: { de: "IHK-Zertifikat Projektleiter Messebau und Event", en: "IHK certificate, project manager exhibitions & events" }, org: { de: "Deutsche Event Akademie, Hannover", en: "Deutsche Event Akademie, Hanover" } },
   { years: "2007 – 2017", role: { de: "Projektleiter Messestandbau", en: "Project manager, exhibition stands" }, org: { de: "MEPLAN GmbH, München (Tochter der Messe München)", en: "MEPLAN GmbH, Munich (subsidiary of Messe München)" } },

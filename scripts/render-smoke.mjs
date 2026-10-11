@@ -47,13 +47,14 @@ try {
       }
       checks.push(`${route}: graphics + LED sections and references absent`);
 
-      for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "SELECTED EXPERIENCE"]) {
+      for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "CL / PROFESSIONAL EXPERIENCE", "CL / CAREER"]) {
         assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
       }
-      for (const marker of ["CL / CAREER TIMELINE", "Motion mode"]) {
+      for (const marker of ["CL / CAREER", "Motion mode"]) {
         assert(body.includes(marker) || (marker === "Motion mode" && body.includes("Animationsmodus")), `Interactive career/performance missing on ${route}: ${marker}`);
       }
-      checks.push(`${route}: C3 EXPO, interactive career timeline and performance controls`);
+      checks.push(`${route}: unified interactive career/projects and performance controls`);
+      if (route === "/") assert(body.includes("Projektleitung im individuellen Messebau"), "Messeprojekt role title missing");
     }
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
@@ -72,6 +73,17 @@ try {
     }
     checks.push(route);
   }
+  const documents = await readFile("src/components/sections/ExperienceHub.tsx","utf8");
+  for (const driveId of [
+    "1g5EI7E9JMf8Ox30mE89qSlQkWobIQNZW",
+    "1u7DvOWpaWccI8_5QjA_r2BNWiPbKteoY",
+    "1hPB-r-DtAEtTivOBZm2FgR0EyGgjEp9e",
+    "1ogFD8V7awSGwr99dtoEguexYs-FBVAKB",
+  ]) {
+    assert(documents.includes(driveId), `Missing scanned document link: ${driveId}`);
+  }
+  checks.push("Original scanned employment references linked from interactive experience explorer");
+
   // The removed media are not part of the deployed static asset bundle anymore.
   for (const asset of [
     "/media/graphics/grafikdaten.mp4",
