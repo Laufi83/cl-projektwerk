@@ -73,6 +73,30 @@ try {
     }
     checks.push(route);
   }
+  // New references must be in every locale, with no duplicate year/client/event.
+  const requiredCases = [
+    ["2022", "Mercedes-Benz", "RETTmobil 2022"],
+    ["2023", "Mercedes-Benz", "RETTmobil 2023"],
+    ["2023", "Daimler Truck", "HydrogenRecordRun"],
+    ["2022", "Merck, Darmstadt", "ESHRE 2022"],
+    ["2023", "Merck, Darmstadt", "ESHRE 2023"],
+    ["2024", "Merck, Darmstadt", "ESHRE 2024"],
+    ["2022", "Salamander Industrie-Produkte GmbH", "FENSTERBAU FRONTALE 2022"],
+    ["2023", "Salamander Industrie-Produkte GmbH", "BAU 2023"],
+    ["2024", "Salamander Industrie-Produkte GmbH", "FENSTERBAU FRONTALE 2024"],
+    ["2025", "Salamander Industrie-Produkte GmbH", "BAU 2025"],
+  ];
+  for (const locale of LOCALE_CODES) {
+    const messages = JSON.parse(await readFile("src/messages/" + locale + ".json", "utf8"));
+    const projects = messages.profile.projects;
+    const unique = new Set(projects.map(p => p.year + "|" + p.client + "|" + p.event));
+    assert.equal(unique.size, projects.length, locale + ": duplicate projects");
+    for (const [year,client,event] of requiredCases) {
+      assert.equal(projects.filter(p=>p.year===year&&p.client===client&&p.event.includes(event)).length,1,locale+": missing or duplicated "+client+" "+event);
+    }
+    checks.push(locale + ": all 10 dated Merck/Mercedes/Daimler/Salamander references present");
+  }
+
   const documents = await readFile("src/components/sections/ExperienceHub.tsx","utf8");
   for (const driveId of [
     "1g5EI7E9JMf8Ox30mE89qSlQkWobIQNZW",
