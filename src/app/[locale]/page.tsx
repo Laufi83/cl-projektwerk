@@ -9,6 +9,8 @@ import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
+import { StandConfigurator, SmartProjectFinder } from "@/components/sections/DesignDiscovery";
+import { ConstructionExperience } from "@/components/sections/ConstructionExperience";
 import { TaglineReveal } from "@/components/sections/TaglineReveal";
 import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
@@ -56,58 +58,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     return { id: h.id, slug: d.slug, title: d.title, desktop: h.desktop, mobile: h.mobile };
   });
 
-  return (
-    <>
-      <HeroScrub films={heroFilms} visNote={note} />
-
-      <Services
-        media={{
-          // Bilder aus Designs ohne Fremdlogos
-          tech: img(designs.find((d) => d.id === "040") ?? designs[2]),
-          prep: img(designs[1]),
-          control: img(designs.find((d) => d.id === "033") ?? designs[0]),
-          concept: { src: mediaUrl("graphics/grafikdaten-poster.webp"), video: mediaUrl("custom/skizze-animation.mp4") },
-          reuse: { src: "/led/led-automotive-16x9.webp", video: "/led/led-automotive-16x9.mp4" },
-        }}
-        packageImage={designAsset((designs.find((d) => d.id === "026") ?? designs[0]).id, "render-1-1280.webp")}
-        visNote={note}
-      />
-
-      <TaglineReveal text={t("tagline.text")} />
-
-      <section id="designs" aria-labelledby="gallery-title" className="relative scroll-mt-4 py-24 md:py-32">
-        <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-6">
-          <div className="max-w-[920px]" data-reveal>
-            <p className="eyebrow">{t("gallery.eyebrow")}</p>
-            <h2 id="gallery-title" className="font-display mt-4 text-6xl font-semibold leading-none md:text-8xl"><Kinetic text={t("gallery.title")} /></h2>
-            <p className="mt-6 text-lg text-fg-muted">{t("gallery.lead", { ...rangeText, count: release.released, total: release.total })}</p>
-          </div>
-          <DailyDrop info={release} className="w-full" />
-        </div>
-        <Gallery items={galleryItems} dayPick={release.latest.slug} />
-
-        {/* Crawlbare Liste aller Designs (semantisches HTML) */}
-        <div className="container-x mt-12">
-          <details className="group rounded-2xl border border-line">
-            <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-semibold">
-              {t("gallery.listTitle")} <span className="text-fg-subtle transition-transform duration-500 ease-fluid group-open:rotate-45">+</span>
-            </summary>
-            <ol className="grid gap-x-6 gap-y-1 px-5 pb-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
-              {designs.map((d) => (
-                <li key={d.slug}>
-                  <Link href={{ pathname: "/designs/[slug]", params: { slug: d.slug } }} className="flex gap-2 py-1 text-fg-muted hover:text-fg">
-                    <span className="tabular text-fg-subtle">{String(d.number).padStart(3, "0")}</span> {d.title}
-                    {d.size && <span className="tabular ml-auto text-fg-subtle">{d.size.width}×{d.size.depth}</span>}
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </details>
-        </div>
-      </section>
-
-      <Process
-        images={[
+  const processImages = [
           {
             src: mediaUrl("process/briefing-poster.webp?v=2"),
             video: mediaUrl("process/briefing.mp4?v=2"),
@@ -141,9 +92,62 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             video: mediaUrl("process/onsite.mp4"),
             alt: `${t("process.steps.onsite.title")} (${note})`,
           },
-        ]}
+        ];
+
+  return (
+    <>
+      <HeroScrub films={heroFilms} visNote={note} />
+
+      <Services
+        media={{
+          // Bilder aus Designs ohne Fremdlogos
+          tech: img(designs.find((d) => d.id === "040") ?? designs[2]),
+          prep: img(designs[1]),
+          control: img(designs.find((d) => d.id === "033") ?? designs[0]),
+          concept: { src: mediaUrl("graphics/grafikdaten-poster.webp"), video: mediaUrl("custom/skizze-animation.mp4") },
+          reuse: { src: "/led/led-automotive-16x9.webp", video: "/led/led-automotive-16x9.mp4" },
+        }}
+        packageImage={designAsset((designs.find((d) => d.id === "026") ?? designs[0]).id, "render-1-1280.webp")}
         visNote={note}
       />
+
+      <StandConfigurator items={galleryItems} />
+      <TaglineReveal text={t("tagline.text")} />
+
+      <section id="designs" aria-labelledby="gallery-title" className="relative scroll-mt-4 py-24 md:py-32">
+        <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-6">
+          <div className="max-w-[920px]" data-reveal>
+            <p className="eyebrow">{t("gallery.eyebrow")}</p>
+            <h2 id="gallery-title" className="font-display mt-4 text-6xl font-semibold leading-none md:text-8xl"><Kinetic text={t("gallery.title")} /></h2>
+            <p className="mt-6 text-lg text-fg-muted">{t("gallery.lead", { ...rangeText, count: release.released, total: release.total })}</p>
+          </div>
+          <DailyDrop info={release} className="w-full" />
+        </div>
+        <SmartProjectFinder items={galleryItems} />
+        <Gallery items={galleryItems} dayPick={release.latest.slug} />
+
+        {/* Crawlbare Liste aller Designs (semantisches HTML) */}
+        <div className="container-x mt-12">
+          <details className="group rounded-2xl border border-line">
+            <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4 text-sm font-semibold">
+              {t("gallery.listTitle")} <span className="text-fg-subtle transition-transform duration-500 ease-fluid group-open:rotate-45">+</span>
+            </summary>
+            <ol className="grid gap-x-6 gap-y-1 px-5 pb-5 text-sm sm:grid-cols-2 lg:grid-cols-4">
+              {designs.map((d) => (
+                <li key={d.slug}>
+                  <Link href={{ pathname: "/designs/[slug]", params: { slug: d.slug } }} className="flex gap-2 py-1 text-fg-muted hover:text-fg">
+                    <span className="tabular text-fg-subtle">{String(d.number).padStart(3, "0")}</span> {d.title}
+                    {d.size && <span className="tabular ml-auto text-fg-subtle">{d.size.width}×{d.size.depth}</span>}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </details>
+        </div>
+      </section>
+
+      <Process images={processImages} visNote={note} />
+      <ConstructionExperience images={processImages} visualisationNote={note} />
 
       <Graphics visNote={note} />
       <LedShowreel />

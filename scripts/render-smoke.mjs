@@ -42,6 +42,11 @@ try {
     }
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
+      // Approved interactive experiences must be present in server-rendered HTML.
+      for (const name of ["INTERACTIVE STAND CONFIGURATOR", "SMART PROJECT FINDER", "CONSTRUCTION EXPERIENCE", "Mission Control"]) {
+        assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
+        checks.push(`Homepage experience: ${name}`);
+      }
       const assets = [...new Set(body.match(/\/_next\/static\/[^"\s<>]+\.(?:js|css)/g))].slice(0, 6);
       assert(assets.length > 0, "No client assets in HTML");
       for (const asset of assets) {
@@ -57,7 +62,13 @@ try {
   for (const route of [`/media/designs/${first.id}/og.jpg`, `/designs/${first.slug}`, `/designs/${first.slug}/opengraph-image`]) {
     const response = await fetch(base + route, { signal: AbortSignal.timeout(45000) });
     assert.equal(response.status, 200, route);
-    assert((await response.arrayBuffer()).byteLength > 100, route);
+    const resource = await response.arrayBuffer();
+    assert(resource.byteLength > 100, route);
+    if (route === `/designs/${first.slug}`) {
+      const html = new TextDecoder().decode(resource);
+      assert(html.includes("DESIGN TO REALITY"), "X-Ray project comparison missing");
+      checks.push("Project detail: real drawing/rendering X-Ray comparison");
+    }
     checks.push(route);
   }
   const films = manifest.designs.filter((design) => design.clip).slice(0, 5);

@@ -8,6 +8,7 @@ import { messeVenues } from "@/config/messe-venues";
 import { useNear } from "@/hooks/useNear";
 import { useReducedMotion } from "@/hooks/useMedia";
 import { InquireLink } from "@/components/ui/InquireLink";
+import { ExpoMissionControl } from "@/components/sections/ExpoMissionControl";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
 
 const GlobeCanvas = dynamic(() => import("@/components/globe/GlobeCanvas"), { ssr: false });
@@ -26,6 +27,7 @@ export function MesseVenueExplorer() {
   const [term, setTerm] = useState("");
   const [selected, setSelected] = useState("venue-01");
   const [showList, setShowList] = useState(12);
+  const [atlasMode, setAtlasMode] = useState<"globe" | "mission">("globe");
   const globeHost = useRef<HTMLDivElement>(null);
   const near = useNear(globeHost);
   const reduced = useReducedMotion();
@@ -92,8 +94,15 @@ export function MesseVenueExplorer() {
           </label>
         </div>
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-          <div ref={globeHost} className="relative min-h-[380px] overflow-hidden rounded-[2rem] border border-line bg-bg-raised sm:min-h-[540px] lg:min-h-[680px]">
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+          <div role="group" aria-label={de?"Atlas-Ansicht wählen":"Choose atlas view"} className="inline-flex gap-2 rounded-full border border-line p-1">
+            <button type="button" aria-pressed={atlasMode==="globe"} onClick={()=>setAtlasMode("globe")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors aria-pressed:bg-accent aria-pressed:text-accent-contrast">{de?"3D-Globus":"3D Globe"}</button>
+            <button type="button" aria-pressed={atlasMode==="mission"} onClick={()=>setAtlasMode("mission")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors aria-pressed:bg-accent aria-pressed:text-accent-contrast">Mission Control</button>
+          </div>
+          <p className="text-xs text-fg-subtle">{de?"Zwei Ansichten – dieselben 50 Standortprofile.":"Two views – the same 50 venue profiles."}</p>
+        </div>
+        <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
+          {atlasMode==="mission" ? <ExpoMissionControl venues={items} selected={active} onSelect={choose}/> : <div ref={globeHost} className="relative min-h-[380px] overflow-hidden rounded-[2rem] border border-line bg-bg-raised sm:min-h-[540px] lg:min-h-[680px]">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(242,106,27,.09),transparent_60%)]" />
             {near ? (
               <GlobeCanvas pins={pins} route={[]} step={-1} focus={active.id} reduced={reduced}
@@ -111,7 +120,7 @@ export function MesseVenueExplorer() {
               <span>{de ? "Ziehen: drehen · Strg + Rad: zoomen" : "Drag: rotate · Ctrl + wheel: zoom"}</span>
               <span>{items.length} / 50</span>
             </div>
-          </div>
+          </div>}
 
           <article className="flex min-w-0 flex-col overflow-hidden rounded-[2rem] border border-line bg-bg-raised">
             <div className="border-b border-line p-6 sm:p-8">
@@ -124,7 +133,7 @@ export function MesseVenueExplorer() {
               <div className="mt-6 flex items-center gap-3">
                 <button type="button" onClick={()=>nav(-1)} aria-label={de?"Vorheriger Standort":"Previous venue"} className="grid size-10 place-items-center rounded-full border border-line-strong text-fg transition-colors hover:border-accent">←</button>
                 <button type="button" onClick={()=>nav(1)} aria-label={de?"Nächster Standort":"Next venue"} className="grid size-10 place-items-center rounded-full border border-line-strong text-fg transition-colors hover:border-accent">→</button>
-                <span className="ml-auto text-xs text-fg-muted">{de?"Standort wählen oder Globe anklicken":"Select a venue or click the globe"}</span>
+                <span className="ml-auto text-xs text-fg-muted">{de?"Standort per Atlas oder Liste wählen":"Choose a venue on atlas or list"}</span>
               </div>
             </div>
             <div className="max-h-[540px] flex-1 space-y-0 overflow-y-auto overscroll-contain p-6 sm:p-8">
