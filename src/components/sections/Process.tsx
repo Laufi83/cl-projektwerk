@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { useNear } from "@/hooks/useNear";
 import { useReducedMotion } from "@/hooks/useMedia";
+import { useLiteMode } from "@/lib/performance";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,12 +29,13 @@ function StepVideo({ media, playing, className, style }: { media: StepImage; pla
   const ref = useRef<HTMLVideoElement>(null);
   const near = useNear(ref);
   const reduced = useReducedMotion();
+  const lite = useLiteMode();
   const once = !!media.once;
   // Einmal-Video: vor dem Start das leere Blatt zeigen (reduzierte Bewegung behält das fertige Bild)
   const poster = once && media.startPoster && !reduced ? media.startPoster : media.src;
   useEffect(() => {
     const v = ref.current;
-    if (!v || !near || matchMedia(REDUCED).matches) return;
+    if (!v || !near || lite || matchMedia(REDUCED).matches) return;
     // einmal fertig gezeichnet → stehen lassen (play() würde bei beendetem Video von vorn beginnen)
     const start = () => { if (!(once && v.ended)) v.play().catch(() => {}); };
     if (playing === "in-view") {
@@ -43,11 +45,11 @@ function StepVideo({ media, playing, className, style }: { media: StepImage; pla
     }
     if (playing) { if (!once) v.currentTime = 0; start(); }
     else v.pause();
-  }, [playing, once, near]);
+  }, [playing, once, near, lite]);
   return (
     <video
       ref={ref}
-      src={near ? media.video : undefined}
+      src={near && !lite ? media.video : undefined}
       poster={near ? poster : undefined}
       muted
       loop={!once}
@@ -66,6 +68,7 @@ function StepVideo({ media, playing, className, style }: { media: StepImage; pla
  */
 export function Process({ images, visNote }: { images: StepImage[]; visNote?: string }) {
   const t = useTranslations("process");
+  const lite = useLiteMode();
   const section = useRef<HTMLElement>(null);
   const line = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
@@ -89,7 +92,7 @@ export function Process({ images, visNote }: { images: StepImage[]; visNote?: st
   }, []);
 
   useEffect(() => {
-    if (!pinned) return;
+    if (!pinned || lite) return;
     const st = ScrollTrigger.create({
       trigger: section.current,
       start: "top top",
@@ -101,9 +104,9 @@ export function Process({ images, visNote }: { images: StepImage[]; visNote?: st
       },
     });
     return () => st.kill();
-  }, [pinned]);
+  }, [pinned, lite]);
 
-  if (!pinned) {
+  if (!pinned || lite) {
     return (
       <section id="ablauf" aria-labelledby="process-title" className="relative scroll-mt-24 py-24">
         <div className="container-x">
