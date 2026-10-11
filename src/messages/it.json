@@ -40,7 +40,6 @@
     "services": "Servizi",
     "designs": "Concept",
     "process": "Collaborazione",
-    "graphics": "Presentazione",
     "world": "Calendario fiere",
     "about": "Chi sono",
     "contact": "Contatto",
@@ -449,14 +448,6 @@
       "note": "La tua posizione viene elaborata solo nel browser e non viene trasmessa."
     }
   },
-  "led": {
-    "eyebrow": "Superfici schermo nella pianificazione",
-    "title": "Le superfici multimediali richiedono misure precise.",
-    "lead": "Pareti LED e monitor fanno parte di molti spazi fieristici. Li inserisco nei suoi documenti con misure, rapporti d'aspetto e dati di collegamento. Le clip mostrano formati comuni; sono materiale di esempio con licenza e non progetti miei.",
-    "placeholder": "Clip di esempio {n}",
-    "placeholderNote": "Materiale di esempio",
-    "caption": "Clip di esempio (licenza stock): {title}, {format}. Non è un progetto di CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Chi sono",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stazione non raggiungibile",
       "blocked": "Avvio bloccato dal browser. Clicchi di nuovo su riproduci."
     }
-  },
-  "graphics": {
-    "eyebrow": "Progettazione e presentazione",
-    "title": "Grafiche che si adattano allo spazio.",
-    "text": "Un progetto ha bisogno di immagini che permettano di decidere e di dati utilizzabili senza rielaborazioni. Realizzo visualizzazioni e dati grafici pronti per la stampa, adattati a misure e costruzione dello spazio e alla sua identità visiva. Ambito e numero di cicli di correzione sono concordati in anticipo. La stampa è eseguita da un partner di stampa che lei o, su richiesta, io coinvolgiamo.",
-    "points": [
-      {
-        "title": "Visualizzazioni per il confronto",
-        "text": "Prospettive, pianta e prospetti rendono il concept comprensibile per lei e per i suoi clienti."
-      },
-      {
-        "title": "Dati di stampa completi",
-        "text": "Abbondanza, profilo colore, misure e formato file sono preparati per il suo partner di stampa."
-      },
-      {
-        "title": "Adattate alla costruzione",
-        "text": "Le superfici grafiche sono verificate rispetto alle misure di pareti e componenti della pianificazione tecnica."
-      },
-      {
-        "title": "Cicli di correzione concordati",
-        "text": "Stabiliamo in anticipo quanti cicli di correzione sono inclusi. Ulteriori cicli sono un servizio aggiuntivo."
-      },
-      {
-        "title": "File con versioni",
-        "text": "Ogni versione ha uno stato chiaro, così in stampa vanno solo i dati approvati."
-      },
-      {
-        "title": "Consegna al suo partner di stampa",
-        "text": "Io fornisco i dati, l'azienda specializzata stampa e produce."
-      }
-    ],
-    "close": "Progettazione e dati da parte mia, produzione presso l'azienda specializzata: perché lo spazio appaia come è stato approvato.",
-    "videoLabel": "Animazione: dati di stampa su un monitor e stampa a grande formato di una grafica fieristica (visualizzazione)"
   },
   "drops": {
     "rule": "Ogni mattina alle 5:00 un altro concept",
