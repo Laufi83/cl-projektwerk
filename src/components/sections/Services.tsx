@@ -69,9 +69,7 @@ export async function Services({ media, packageImage, visNote }: { media: Record
                 >
                   {t("package.cta")} <ArrowRight size={18} aria-hidden />
                 </InquireLink>
-                <AnchorLink href="#kontakt" className="inline-flex items-center gap-1 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg">
-                  {t("package.more")} <ArrowUpRight size={14} className="text-accent" aria-hidden />
-                </AnchorLink>
+
               </div>
             </div>
             <div className="relative order-1 min-h-[220px] md:min-h-[300px] lg:order-2">
