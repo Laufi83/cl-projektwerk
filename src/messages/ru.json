@@ -523,6 +523,12 @@
         "note": "Работа над проектом во время трудоустройства в C3 EXPO GmbH."
       },
       {
+        "year": "2025",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "BAU 2025 – Мюнхен",
+        "note": "13.–17.01.2025 · Salamander Window & Door Systems"
+      },
+      {
         "year": "2024",
         "client": "ZDK",
         "event": "Automechanika, Франкфурт",
@@ -530,11 +536,81 @@
         "note": "Несколько экспонентов и автомобилей, крупноформатные светодиодные экраны"
       },
       {
+        "year": "2024",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2024 — 40-е ежегодное собрание, Амстердам, Нидерланды",
+        "note": "7–10 июля 2024 г."
+      },
+      {
+        "year": "2024",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "FENSTERBAU FRONTALE 2024 – Нюрнберг",
+        "note": "19.–22.03.2024 · Salamander myWindow"
+      },
+      {
+        "year": "2024",
+        "client": "Jungheinrich",
+        "event": "Logistics Congress, Hotel InterContinental Berlin",
+        "note": "Jungheinrich, Hamburg"
+      },
+      {
         "year": "2023",
         "client": "Bosch Rexroth",
         "event": "Agritechnica, Ганновер",
         "size": "1 200 м²",
         "note": "Светодиодная стена длиной 20 м, техническая координация"
+      },
+      {
+        "year": "2023",
+        "client": "Daimler Truck",
+        "event": "HydrogenRecordRun, Берлин – Mercedes-Benz демонстрирует грузовик GenH2 в рекордном заезде",
+        "note": "сентябрь 2023"
+      },
+      {
+        "year": "2023",
+        "client": "Mercedes-Benz",
+        "event": "RETTmobil 2023, Fulda"
+      },
+      {
+        "year": "2023",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2023 — 39-е ежегодное собрание, Копенгаген, Дания",
+        "note": "25–28 июня 2023 г."
+      },
+      {
+        "year": "2023",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "BAU 2023 – Мюнхен",
+        "note": "17.–22.04.2023 · Salamander Window & Door Systems"
+      },
+      {
+        "year": "2023",
+        "client": "Jungheinrich",
+        "event": "Logistics Congress, Hotel InterContinental Berlin",
+        "note": "Jungheinrich, Hamburg"
+      },
+      {
+        "year": "2022",
+        "client": "Mercedes-Benz",
+        "event": "RETTmobil 2022, Fulda"
+      },
+      {
+        "year": "2022",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2022 — 38-е ежегодное собрание, Милан, Италия",
+        "note": "3–6 июля 2022 г."
+      },
+      {
+        "year": "2022",
+        "client": "Salamander Industrie-Produkte GmbH",
+        "event": "FENSTERBAU FRONTALE 2022 – Нюрнберг",
+        "note": "12.–15.07.2022 · Salamander Window & Door Systems"
+      },
+      {
+        "year": "2022",
+        "client": "Jungheinrich",
+        "event": "Logistics Congress, Hotel InterContinental Berlin",
+        "note": "Jungheinrich, Hamburg"
       },
       {
         "year": "2018",
