@@ -13,7 +13,6 @@ import { Kinetic } from "@/components/kinetic/Kinetic";
 const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
-  { id: "ablauf", key: "process" },
   { id: "grafik", key: "graphics" },
   { id: "weltweit", key: "world" },
   { id: "messegelande", key: "venues" },
