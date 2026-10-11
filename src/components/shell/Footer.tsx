@@ -4,14 +4,23 @@ import { site, isPlaceholder } from "@/config/site";
 import { CookieSettingsButton } from "./CookieBanner";
 import { Logo } from "@/components/brand/Logo";
 import { LOCALES, pick } from "@/i18n/locales";
+import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 
 export async function Footer() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
   const locale = await getLocale();
   return (
-    <footer className="relative z-10 border-t border-line bg-bg">
-      <div className="container-x grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
+    <footer className="relative z-10 overflow-hidden border-t border-line bg-[#0b0e13]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-70" />
+      <div className="container-x pt-16 md:pt-24">
+        <p className="eyebrow">CL PROJEKTWERK / CREATIVE ENGINEERING</p>
+        <div className="mt-5 flex flex-col items-start justify-between gap-8 border-b border-white/10 pb-12 lg:flex-row lg:items-end">
+          <h2 className="max-w-5xl font-display text-[clamp(2.8rem,7.3vw,7.8rem)] font-semibold leading-[0.95] tracking-tight text-[#f3f1ec]">Ideen werden <span className="text-accent">Raum.</span></h2>
+          <Link href="/anfrage" className="group inline-flex shrink-0 items-center gap-3 rounded-full border border-accent bg-accent px-7 py-4 text-sm font-semibold text-accent-contrast transition-[transform,background-color] duration-200 hover:-translate-y-1" data-magnetic>Projekt anfragen <ArrowUpRight size={20} className="transition-transform duration-200 group-hover:-translate-y-1 group-hover:translate-x-1" aria-hidden="true" /></Link>
+        </div>
+      </div>
+      <div className="container-x grid gap-12 py-14 md:grid-cols-[1.4fr_1fr_1fr] md:py-20">
         <div>
           <Logo className="h-12 w-auto text-fg" title={site.brand} />
           <p className="mt-4 text-sm font-semibold"><span className={isPlaceholder(site.brand) ? "ph" : ""}>{site.brand}</span></p>
@@ -22,6 +31,7 @@ export async function Footer() {
           <ul className="grid gap-2 text-sm">
             <li><Link href={{ pathname: "/", hash: "leistungen" }} className="text-fg-muted hover:text-fg">{tn("services")}</Link></li>
             <li><Link href="/designs" className="text-fg-muted hover:text-fg">{tn("designs")}</Link></li>
+            <li><Link href={{ pathname: "/", hash: "messegelande" }} className="text-fg-muted hover:text-fg">{locale === "de" ? "Messegelände" : "Exhibition venues"}</Link></li>
             <li><Link href={{ pathname: "/", hash: "ablauf" }} className="text-fg-muted hover:text-fg">{tn("process")}</Link></li>
             <li><Link href={{ pathname: "/", hash: "grafik" }} className="text-fg-muted hover:text-fg">{tn("graphics")}</Link></li>
             <li><Link href="/auswahl" className="text-fg-muted hover:text-fg">{tn("selection")}</Link></li>
@@ -41,7 +51,8 @@ export async function Footer() {
           </ul>
         </div>
       </div>
-      <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-line py-6 text-xs text-fg-subtle">
+      <div className="pointer-events-none container-x overflow-hidden select-none pt-3" aria-hidden="true"><p className="whitespace-nowrap font-display text-[clamp(3rem,12.5vw,13rem)] font-bold leading-none tracking-[-0.075em] text-white/[0.055]">CL PROJEKTWERK</p></div>
+      <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-line py-7 text-xs text-fg-subtle">
         <p>{t("rights", { year: new Date().getFullYear(), brand: site.brand })}</p>
         <a href="#main" className="hover:text-fg">{t("top")} ↑</a>
       </div>
