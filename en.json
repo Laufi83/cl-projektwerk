@@ -1,0 +1,885 @@
+{
+  "meta": {
+    "title": "Exhibition Stand Design & Technical Planning | {brand}",
+    "description": "Exhibition stand design, 3D visualisation, production drawings and project coordination. CL Projektwerk supports stand builders, agencies and exhibitors from concept to detailed planning.",
+    "ogTitle": "{brand} – Creative concepts. Precise exhibition planning.",
+    "ogDescription": "From exhibition stand concepts to detailed technical drawings, clear production documentation and coordinated project delivery.",
+    "socialDescription": "Exhibition stand design, technical detailing and project coordination from Leipzig, backed by 20+ years of industry experience.",
+    "designsTitle": "Exhibition Stand Concepts & Visualisations | CL Projektwerk",
+    "designsDescription": "Explore exhibition stand concepts from {min} to {max}, with 3D visuals, floor plans and elevations. Save favourites and enquire.",
+    "designTitle": "{number} {title} · Exhibition stand concept",
+    "designDescription": "Concept {title}: {size}{floors}. {description} A visualisation of a concept, not a built stand.",
+    "inquiryTitle": "Discuss your project",
+    "inquiryDescription": "Send a brief: fair or project, date, existing documents and the planning service you need. I will reply with a first assessment.",
+    "selectionTitle": "My selection",
+    "selectionDescription": "Your saved exhibition stand concepts, which you can attach to an enquiry.",
+    "imprintDescription": "Legal notice and provider information.",
+    "privacyDescription": "Information on how personal data is processed on this website."
+  },
+  "common": {
+    "skip": "Skip to content",
+    "visualisation": "Visualisation",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "prev": "Back",
+    "open": "Open",
+    "view": "View",
+    "play": "Play",
+    "pause": "Pause",
+    "loading": "Loading",
+    "placeholder": "Image to follow",
+    "later": "to follow",
+    "menu": "Menu",
+    "language": "Language",
+    "drag": "Drag",
+    "retry": "Try again",
+    "noWebgl": "This device or browser does not support the 3D view. The list of cities and distances is available below."
+  },
+  "nav": {
+    "services": "Services",
+    "designs": "Design Concepts",
+    "process": "Collaboration",
+    "graphics": "Visualisation & graphics",
+    "world": "Fair calendar",
+    "about": "About me",
+    "contact": "Contact",
+    "cta": "Discuss a project",
+    "selection": "My selection",
+    "home": "Home",
+    "main": "Main navigation"
+  },
+  "hero": {
+    "eyebrow": "CL Projektwerk · Exhibition Stand Design · Technical Planning · Project Coordination",
+    "title": "Creative concepts. Precisely planned projects.",
+    "lead": "From the initial idea to production-ready planning: I develop exhibition stand and spatial concepts, visualise design ideas, and support stand builders, agencies and exhibitors with technical drawings, work preparation and project coordination.",
+    "cta": "Discuss your project",
+    "secondary": "Explore design concepts",
+    "scroll": "Scroll and watch the visualisation take shape",
+    "progress": "Build-up (visualisation)",
+    "done": "Finished space",
+    "design": "Concept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Digital design studies · Animations",
+    "title": "See a concept take shape.",
+    "lead": "Five concept animations illustrate how different exhibition stand ideas evolve. These are visualisations, not footage of completed stands.",
+    "cta": "Watch concept animation",
+    "badge": "Concept animation",
+    "sliderLabel": "Slider with five concept animations. Arrow keys browse, Enter opens.",
+    "explain": "Time-lapse animation of a concept. It shows how the planned space could be assembled and is not evidence of a realised stand."
+  },
+  "tagline": {
+    "text": "Great design creates impact. Precise planning makes it achievable."
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "A strong idea. A clear plan. A confident result.",
+    "lead": "CL Projektwerk combines exhibition stand design with technical planning and project coordination. As an external partner, I provide focused expertise and additional capacity, from the first concept to coordinated handover to specialist contractors.",
+    "trust": [
+      {
+        "title": "Direct personal contact",
+        "text": "Clear responsibilities and direct communication with Christof Laufersweiler throughout the agreed scope."
+      },
+      {
+        "title": "20+ years of industry experience",
+        "text": "Technical training in wood technology, extensive exhibition project management and an IHK qualification in exhibition and event project management."
+      },
+      {
+        "title": "Predictable collaboration",
+        "text": "A defined scope, transparent document versions, agreed deadlines and traceable approvals."
+      }
+    ],
+    "package": {
+      "badge": "Collaboration",
+      "title": "Flexible engagement. Reliable delivery.",
+      "subtitle": "One-off task, project support or agreed monthly hours.",
+      "text": "Whether you need targeted input or ongoing support, we first establish the objectives, available documents, deliverables and timeline. You then receive a tailored proposal defining the scope, responsibilities and review stages.",
+      "cta": "Enquire about collaboration",
+      "more": "Explore the process",
+      "phases": [
+        {
+          "title": "Brief & scope",
+          "items": [
+            "Joint clarification of task, deadline and existing documents",
+            "Scope and deliverables defined in writing",
+            "Agreed correction rounds and approval stages",
+            "Individual quotation after the brief"
+          ]
+        },
+        {
+          "title": "Planning & documents",
+          "items": [
+            "Dimensioned detail and production drawings",
+            "Part lists and interface documents",
+            "Material and quantity overviews",
+            "Versioned files with a traceable status"
+          ]
+        },
+        {
+          "title": "Coordination & control",
+          "items": [
+            "Budget and schedule overviews",
+            "Quotation comparisons and procurement planning",
+            "Coordination of trades and specialist partners",
+            "Documented approvals and changes"
+          ]
+        },
+        {
+          "title": "Handover & documentation",
+          "items": [
+            "Partner-specific production documents for handover",
+            "Documentation of changes and decisions",
+            "Inventory and storage information for reuse",
+            "On-site meetings and travel by prior agreement"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Specialist partners for delivery.",
+      "text": "CL Projektwerk provides concepts, planning and agreed coordination services. Manufacturing, logistics, installation and regulated engineering tasks are handled by appropriate specialist contractors. Commissioning arrangements and responsibilities are agreed transparently at the outset.",
+      "items": [
+        "CNC manufacturing and bespoke component production",
+        "Carpentry",
+        "Metalwork",
+        "Assembly and build-up",
+        "Transport and logistics",
+        "Structural engineering and inspections",
+        "Permits and approvals",
+        "Electrical work",
+        "Printing and graphic production",
+        "Media and event technology",
+        "… and other trades as needed"
+      ]
+    },
+    "single": {
+      "eyebrow": "Bookable individually",
+      "title": "The expertise your project needs.",
+      "text": "Need a concept, accurate production drawings or help coordinating delivery? Each service is available individually or as part of a tailored package."
+    },
+    "items": {
+      "tech": {
+        "title": "Technical planning",
+        "text": "I translate your brief into clear technical detail and production drawings, component schedules and interface plans, providing a documented basis for your manufacturing partners.",
+        "points": [
+          "Dimensioned detail and production drawings",
+          "Part lists",
+          "Interface documents for trades and partners"
+        ],
+        "task": "Objective: Turn design and project requirements into buildable detail.",
+        "result": "Deliverables: Dimensioned drawings, component schedules and coordinated interfaces.",
+        "benefit": "Your benefit: Fewer clarification loops and better-prepared manufacturing.",
+        "link": "Enquire about technical planning"
+      },
+      "prep": {
+        "title": "Work preparation",
+        "text": "Materials, quantities, components and production stages are recorded systematically. I compile relevant documentation and support procurement and scheduling discussions with the project partners.",
+        "points": [
+          "Material and quantity overviews",
+          "Partner-specific production documents",
+          "Procurement and schedule planning"
+        ],
+        "task": "Objective: Turn plans into an organised execution package.",
+        "result": "Deliverables: Material, quantity and partner-specific documents.",
+        "benefit": "Your benefit: Clearer requirements and better-coordinated workflows.",
+        "link": "How I work"
+      },
+      "control": {
+        "title": "Project control",
+        "text": "I assist with schedule and budget overviews, tender comparisons, trade coordination and decision tracking. You remain in control while essential project information stays organised.",
+        "points": [
+          "Budget and schedule overviews",
+          "Quotation comparisons and coordination of trades",
+          "Approvals and traceable change documentation"
+        ],
+        "task": "Objective: Coordinate costs, schedules, responsibilities and interfaces.",
+        "result": "Deliverables: Current overviews, coordinated actions and recorded decisions.",
+        "benefit": "Your benefit: Greater clarity through demanding project stages.",
+        "link": "View collaboration"
+      },
+      "concept": {
+        "title": "Concept design & 3D visualisation",
+        "text": "I develop exhibition and spatial concepts, translating ideas into clear 3D perspectives, floor plans and presentations. Production graphics can be prepared as a further service.",
+        "points": [
+          "Stand and space concepts",
+          "Visualisations for coordination and presentation",
+          "Print-ready graphics with agreed correction rounds"
+        ],
+        "task": "Objective: Connect brand, space and function in one coherent concept.",
+        "result": "Deliverables: Concept, visuals and presentation material as agreed.",
+        "benefit": "Your benefit: Early decisions informed by understandable visuals.",
+        "link": "Explore design concepts"
+      },
+      "reuse": {
+        "title": "Planning for reuse",
+        "text": "I assess existing components for potential reuse, develop alternatives for future installations and document relevant material and storage information.",
+        "points": [
+          "Survey of existing components",
+          "Variant planning for new uses",
+          "Material and storage information"
+        ],
+        "task": "Objective: Identify and adapt components for future use.",
+        "result": "Deliverables: Inventories, design alternatives and reusable records.",
+        "benefit": "Your benefit: More purposeful use of existing resources.",
+        "link": "Make an enquiry"
+      }
+    },
+    "inquire": "Enquire",
+    "cta": {
+      "title": "Let’s talk about your next exhibition project.",
+      "text": "From an initial idea to a defined technical task, share a short brief and your preferred timeline. I will review the scope and outline the next steps.",
+      "button": "Start a project enquiry",
+      "phone": "Prefer to talk directly?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Digital design studies · Concept gallery",
+    "title": "Spaces designed to make brands stand out.",
+    "lead": "Explore {count} published exhibition stand concepts out of {total} planned, from {min} to {max}. Compare architecture, materials and spatial ideas, filter by size and features, and save your favourites. Every design is a digital concept study, not a completed client project.",
+    "slider": "Slider",
+    "grid": "Grid",
+    "viewMode": "View",
+    "random": "Surprise me",
+    "dayPick": "Concept of the day",
+    "hint": "Drag, scroll or use arrow keys",
+    "hintTouch": "Swipe sideways",
+    "count": "{count} of {total}",
+    "empty": "No concept matches these filters.",
+    "reset": "Reset filters",
+    "filters": "Filters",
+    "listTitle": "All published concepts",
+    "sliderLabel": "Concept slider. Arrow keys browse, Enter opens.",
+    "current": "Current: {number} {title}",
+    "loadingSlider": "Loading slider",
+    "cardAlt": "Concept {number} {title}: visualisation of an exhibition stand concept",
+    "filter": {
+      "all": "All",
+      "clip": "With animation",
+      "two-storey": "Two-storey",
+      "size-s": "Small · up to 30 m²",
+      "size-m": "Medium · over 30 and under 150 m²",
+      "size-l": "Large · 150 m² and above",
+      "wood": "Wood",
+      "green": "Greenery",
+      "metal": "Metal",
+      "light": "Light",
+      "container": "Containers",
+      "product": "Product stands",
+      "real-estate": "Real estate fair",
+      "outdoor": "Outdoor area"
+    }
+  },
+  "detail": {
+    "facts": "Key facts",
+    "area": "Area",
+    "floors": "Floors",
+    "standType": "Stand type",
+    "height": "Height",
+    "materials": "Materials",
+    "colours": "Colours",
+    "series": "Series",
+    "floorsValue": "{count, plural, =1 {single-storey} =2 {two-storey} other {# floors}}",
+    "standTypes": {
+      "corner": "Corner stand",
+      "head": "Head stand",
+      "island": "Island stand",
+      "row": "Row stand"
+    },
+    "renderings": "Visualisations",
+    "plans": "Plans",
+    "floorplan": "Floor plan",
+    "elevation": "Elevation",
+    "download": "Download",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "zoomReset": "Reset view",
+    "fullscreen": "Full screen",
+    "clip": "Concept animation in time-lapse",
+    "favorite": "Add to selection",
+    "favorited": "In your selection",
+    "share": "Share",
+    "shareWhatsapp": "Share via WhatsApp",
+    "shareLinkedin": "Share on LinkedIn",
+    "copyLink": "Copy link",
+    "copied": "Link copied",
+    "inquire": "Enquire about this concept",
+    "prevDesign": "Previous concept",
+    "nextDesign": "Next concept",
+    "backToGallery": "Back to gallery",
+    "imageOf": "Image {current} of {total}",
+    "description": "Description",
+    "placeholderImage": "Image to follow",
+    "conceptNote": "Concept design. The image is a visualisation and does not show a built stand.",
+    "imageAlt": "{title}: {label} (visualisation)",
+    "planAlt": "{title}: {label} (plan drawing of the concept)",
+    "clipAlt": "{title}: concept animation of the build-up (visualisation)"
+  },
+  "process": {
+    "eyebrow": "Collaboration",
+    "title": "Six clear steps from brief to handover.",
+    "steps": {
+      "briefing": {
+        "title": "01 · Brief and objectives",
+        "text": "We establish the requirements, available information, budget parameters, timeline and expected outcomes. Scope, approvals and communication are agreed.",
+        "alt": "Sketch animation for the brief (visualisation)"
+      },
+      "concept": {
+        "title": "02 · Concept and visualisation",
+        "text": "Spatial ideas, floor plans and 3D views provide a clear basis for reviewing the design before detailed technical work begins.",
+        "alt": "Concept animation of the design (visualisation)"
+      },
+      "planning": {
+        "title": "03 · Technical detailing",
+        "text": "Following concept approval, dimensioned detail and production documents are prepared. Structural, electrical and other specialist interfaces are coordinated with the responsible parties.",
+        "alt": "Animation of technical planning (visualisation)"
+      },
+      "production": {
+        "title": "04 · Work preparation",
+        "text": "Material and quantity schedules, plus partner-specific documents, support procurement and production. Manufacturing is carried out by appointed specialist companies.",
+        "alt": "Animation of CNC machining as an example of production data (visualisation); the specialist partner carries out the manufacturing"
+      },
+      "logistics": {
+        "title": "05 · Project coordination",
+        "text": "Schedules, trades and changes are coordinated so everyone can work with the latest agreed project information.",
+        "alt": "Time-lapse concept animation of the build-up (visualisation)"
+      },
+      "onsite": {
+        "title": "06 · Approval and handover",
+        "text": "Approved document versions and agreed deliverables are handed over clearly. Site meetings and additional project support can be arranged.",
+        "alt": "Concept animation of the handover (visualisation)"
+      }
+    },
+    "sketch": "Sketch"
+  },
+  "world": {
+    "eyebrow": "Fair calendar",
+    "title": "Trade fair dates at a glance.",
+    "lead": "Explore selected trade fairs across Germany and Europe, filter by location and date, and use the interactive map for orientation. Please confirm dates with the organisers before planning.",
+    "placeholderNote": "Sample locations",
+    "listLabel": "Fair cities",
+    "drag": "Rotate globe",
+    "base": "Base",
+    "regions": {
+      "de": "Germany",
+      "eu": "Europe"
+    },
+    "calendar": {
+      "eyebrow": "Fair calendar",
+      "title": "The next fair in every city.",
+      "lead": "For each city the next leading trade fair appears in chronological order, like a departure board. Scroll through the board: the globe follows your selection.",
+      "summary": "{cities} fair cities · {km} km straight-line along the route from Leipzig",
+      "boardLabel": "Fair calendar: next fair per city",
+      "cols": {
+        "date": "Date",
+        "dest": "Destination",
+        "fair": "Fair",
+        "status": "Status"
+      },
+      "running": "Running now",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "inDays": "in {days} days",
+      "tba": "Date to follow",
+      "past": "Ended",
+      "tbaNote": "No confirmed date for a leading fair is currently stored for this city.",
+      "dateTbc": "Date not confirmed",
+      "fairName": "Fair",
+      "venue": "Venue",
+      "route": "Straight line",
+      "homeBase": "My base",
+      "km": "{km} km",
+      "localTime": "Local time",
+      "website": "Organiser website",
+      "inquire": "Discuss a project for {fair}",
+      "tourPause": "Pause tour",
+      "tourPlay": "Resume tour",
+      "note": "Dates according to the organisers, checked on {date}. Changes are possible; the organisers' websites are authoritative. Fair names are trademarks of their owners. The dates make no statement about commissions or participation by CL Projektwerk.",
+      "search": "Search fair or city",
+      "searchPlaceholder": "e.g. Düsseldorf or construction",
+      "filterCountry": "Country",
+      "filterCity": "City",
+      "filterPeriod": "Period",
+      "filterSector": "Sector",
+      "filterAll": "All",
+      "periodUpcoming": "Upcoming",
+      "periodRunning": "Running",
+      "periodPast": "Past",
+      "resultCount": "{count, plural, =0 {No fairs} =1 {1 fair} other {# fairs}}",
+      "empty": "No fair matches your search and the selected filters.",
+      "reset": "Reset search and filters",
+      "source": "Source",
+      "checkedOn": "Checked on {date}"
+    },
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "zoomReset": "Reset view",
+    "zoomEurope": "Europe view",
+    "zoomCountry": "Choose country",
+    "zoomHint": "Ctrl + mouse wheel or double-click to zoom · click a city for the straight-line distance",
+    "zoomHintTouch": "Pinch to zoom · tap a city for the straight-line distance",
+    "zoomHintKeys": "Arrow keys move the view, plus and minus zoom.",
+    "scrollHint": "Normal scrolling only moves the page. Hold Ctrl to zoom.",
+    "distance": {
+      "title": "Straight-line distance between two cities",
+      "from": "From",
+      "to": "To",
+      "pick": "Choose city",
+      "swap": "Swap cities",
+      "result": "Straight line: {km} km",
+      "resultFromTo": "Straight line {from} – {to}: {km} km",
+      "note": "Calculated as great-circle distance on the globe. This is not a road distance and says nothing about travel time.",
+      "rings": "Distance rings around {city}: {km} km",
+      "scale": "Scale: {km} km",
+      "listTitle": "Cities and straight-line distance from {city}",
+      "listCity": "City",
+      "listCountry": "Country",
+      "listKm": "Straight line",
+      "noWebglTitle": "3D view not available",
+      "noWebglText": "Your device cannot display the 3D globe. The table contains the same cities, fairs and distances.",
+      "reducedMotion": "Reduced motion is active: there are no automatic flights or animations."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Screen surfaces in planning",
+    "title": "Plan digital display surfaces from the start.",
+    "lead": "LED walls and displays influence both spatial design and construction. I account for intended formats, installation dimensions and interfaces in the planning documents. The videos shown are licensed samples, not my project references.",
+    "placeholder": "Sample clip {n}",
+    "placeholderNote": "Sample material",
+    "caption": "Sample clip (stock licence): {title}, {format}. Not a project of CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "About me",
+    "name": "Christof Laufersweiler",
+    "role": "Exhibition design, technical planning and project coordination from Leipzig",
+    "text": "I’m Christof Laufersweiler. For more than 20 years, I have worked across exhibition and event projects, from technical drafting and project management to serving as an employed managing director of an exhibition stand company. My training in wood technology and IHK qualification in exhibition and event project management combine practical technical knowledge with experience coordinating complex projects. Through CL Projektwerk I personally support stand builders, agencies and exhibitors with design, planning and coordination.",
+    "close": "My aim: convincing design, precise documents and straightforward collaboration.",
+    "photoAlt": "Portrait of Christof Laufersweiler, founder of CL Projektwerk",
+    "cta": "Discuss a project with me",
+    "career": "Career",
+    "projects": "Projects from previous employment",
+    "projectsNote": "The projects shown here were undertaken during my previous employment. They are not commissions delivered by CL Projektwerk, and the companies named are not clients of CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Languages"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ years",
+        "label": "of experience in the trade fair and event sector"
+      },
+      {
+        "value": "1,200 m²",
+        "label": "largest stand area managed in earlier work (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certificate Exhibition and Event Project Manager (IHK Hannover, 11 Dec 2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Project management",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Managing director (employed)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Project management, exhibition stand construction",
+        "org": "MEPLAN GmbH, Munich"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certificate Exhibition and Event Project Manager (course, 160 teaching hours)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Apprenticeship as technical draughtsman, wood technology",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1,200 m²",
+        "note": "Several exhibitors and vehicles, large-format LED displays"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hanover",
+        "size": "1,200 m²",
+        "note": "20 m LED wall, technically coordinated"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, Munich",
+        "size": "360 m²",
+        "note": "Suspended glulam structure, wrinkle-free stretched fabric graphics"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Open stand concept with LED wall"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "German (native)",
+      "English (business fluent)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Discuss a project",
+    "title": "Your project starts with a conversation.",
+    "lead": "Tell me about your idea, technical planning task or exhibition stand. You can include saved concepts from the gallery.",
+    "response": "I usually reply within {time}.",
+    "steps": {
+      "fair": "Project",
+      "stand": "Details",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "stepOf": "Step {current} of {total}",
+    "fields": {
+      "fair": "Fair, event or project",
+      "fairPlaceholder": "e.g. trade fair appearance, brand space or interior fit-out",
+      "projectType": "Project type",
+      "projectTypes": {
+        "fair": "Exhibition stand",
+        "brand": "Brand space",
+        "interior": "Interior fit-out",
+        "event": "Event",
+        "open": "Still open"
+      },
+      "city": "Location",
+      "cityPlaceholder": "e.g. Leipzig",
+      "dateFrom": "Date from",
+      "dateTo": "to",
+      "dateUnknown": "Date not yet fixed",
+      "size": "Size of the space (optional)",
+      "width": "Width (m)",
+      "depth": "Depth (m)",
+      "area": "Area",
+      "standType": "Stand type",
+      "standTypeUnknown": "Still open",
+      "floors": "Floors",
+      "documents": "Existing documents",
+      "documentOptions": {
+        "briefing": "Brief or requirements specification",
+        "cad": "CAD or planning data",
+        "sketches": "Sketches or mood boards",
+        "renders": "Visualisations",
+        "inventory": "Inventory lists",
+        "none": "None yet"
+      },
+      "services": "Planning service needed",
+      "scope": "Desired scope",
+      "scopes": {
+        "single": "Single service",
+        "project": "Complete project",
+        "quota": "Ongoing monthly quota",
+        "open": "Still open"
+      },
+      "budget": "Total project budget (optional)",
+      "budgets": {
+        "a": "up to €25,000",
+        "b": "€25,000 to €75,000",
+        "c": "€75,000 to €150,000",
+        "d": "over €150,000",
+        "open": "I prefer not to say"
+      },
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "messagePlaceholder": "What needs to be planned? Are there specifications, a previous build or special technical requirements?",
+      "favorites": "Attached concepts",
+      "favoritesEmpty": "No concepts saved. In the gallery you can collect concepts with the heart.",
+      "consent": "I agree that my details may be stored and used to process my enquiry. Details in the <privacy>privacy policy</privacy>.",
+      "privacy": "Privacy policy",
+      "required": "Required"
+    },
+    "submit": "Send project enquiry",
+    "sending": "Sending",
+    "errors": {
+      "required": "Please fill in.",
+      "email": "Please enter a valid email address.",
+      "consent": "Please agree to the processing so that I can reply.",
+      "dates": "The end date is before the start date.",
+      "server": "Sending did not work. Please try again or write to {email}.",
+      "rate": "Too many requests in a short time. Please try again in a few minutes."
+    },
+    "whatsapp": "Write on WhatsApp",
+    "callback": "Request a call back",
+    "callbackTitle": "Request a call back",
+    "callbackTime": "When suits you?",
+    "callbackTimePlaceholder": "e.g. tomorrow after 2 pm",
+    "callbackSubmit": "Request a call back",
+    "callbackDone": "Thank you. Your call-back request has been submitted. I will try to reach you at the time you gave.",
+    "direct": "Direct",
+    "notConfigured": "Not yet provided",
+    "prefilled": "Your selection: {list}"
+  },
+  "thanks": {
+    "title": "Thank you for your brief.",
+    "text": "Your enquiry has been submitted. I usually reply within {time} with a first assessment. No automatic confirmation email is sent. Saved concepts were sent along.",
+    "back": "Back to home",
+    "designs": "View more concepts"
+  },
+  "selection": {
+    "title": "My selection",
+    "lead": "Your saved concepts. Attach them to an enquiry with one click.",
+    "count": "{count, plural, =0 {Nothing saved yet} =1 {1 concept saved} other {# concepts saved}}",
+    "empty": "Nothing saved yet. Tap the heart in the gallery to collect concepts.",
+    "toGallery": "To the gallery",
+    "inquire": "Send selection with an enquiry",
+    "clear": "Remove all",
+    "remove": "Remove"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Cookie settings",
+    "note": "All renderings and animations on this website are visualisations of design concepts. They do not show built exhibition stands.",
+    "top": "Back to top",
+    "languages": "Languages",
+    "tagline": "Exhibition design, technical planning and project coordination from Leipzig"
+  },
+  "cookies": {
+    "title": "Your privacy",
+    "text": "This website only stores what is technically necessary, for example your saved concepts, the chosen layout and this selection. Statistics and external services stay off until you agree.",
+    "necessary": "Necessary only",
+    "settings": "Settings",
+    "acceptAll": "Allow all",
+    "save": "Save selection",
+    "categories": {
+      "necessary": "Necessary",
+      "necessaryText": "Language, saved concepts, layout, radio settings and this selection. Always active.",
+      "stats": "Statistics",
+      "statsText": "Not currently in use.",
+      "media": "External media",
+      "mediaText": "Not currently in use. The radio only connects once you start it yourself."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Legal notice",
+    "privacyTitle": "Privacy policy",
+    "placeholder": "Legal text to follow.",
+    "notice": "The German version of this text is authoritative.",
+    "updated": "As of: {date}"
+  },
+  "notFound": {
+    "title": "This page does not exist.",
+    "text": "Perhaps you will find what you are looking for in the concept gallery.",
+    "home": "Back to home",
+    "designs": "To the gallery"
+  },
+  "layouts": {
+    "label": "Choose layout",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: concept animation {n}",
+    "active": "active",
+    "preview": "Preview: {name}",
+    "hint": "Arrow keys switch the layout, Escape closes the selection.",
+    "saved": "Your choice is saved on this device.",
+    "monoShowColour": "Show original colours",
+    "monoHideColour": "Show black and white",
+    "items": {
+      "studio": "Charcoal and orange, clear lines, precise like a planning studio",
+      "aurora": "Dark surfaces with mint and violet, serif type, soft light movement",
+      "tide": "Petrol and coral, expressive type, flowing waves",
+      "mono": "Strictly black and white, strong contrast, geometric shapes"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "CHOOSE STATION",
+    "close": "Collapse player",
+    "stations": "Stations",
+    "play": "Start playback",
+    "pause": "Pause playback",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "volume": "Volume",
+    "off": "off",
+    "hint": "Live web radio. Sound only starts after your click, and the slider only affects this player. When you start it, your browser connects to the station.",
+    "noTrack": "No track information available",
+    "levelNote": "The level display is a pure animation and does not show the real audio level.",
+    "state": {
+      "ready": "Ready",
+      "connecting": "Connecting …",
+      "live": "Live",
+      "buffering": "Buffering …",
+      "stalled": "Connection stalling …",
+      "paused": "Paused",
+      "error": "Station unreachable",
+      "blocked": "Start blocked by the browser. Please click play again."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Graphics · Presentation · Print-ready files",
+    "title": "Compelling visuals. Accurate artwork.",
+    "text": "A strong concept needs to be easy to understand and ready for professional production. I create 3D visualisations and artwork aligned with the architecture, component dimensions and your brand identity. Scope is defined per project; specialist partners handle print production.",
+    "points": [
+      {
+        "title": "Communicate ideas clearly",
+        "text": "Perspectives, plans and elevations make presentation and approval easier."
+      },
+      {
+        "title": "Prepare production artwork",
+        "text": "Dimensions, bleed and colour profiles follow the print partner’s requirements."
+      },
+      {
+        "title": "Align design and construction",
+        "text": "Graphic surfaces are coordinated with the actual component dimensions."
+      },
+      {
+        "title": "Agreed review stages",
+        "text": "Revisions and approval steps are defined in advance."
+      },
+      {
+        "title": "Clear file versioning",
+        "text": "Documents have identifiable versions and approval status."
+      },
+      {
+        "title": "Handover for production",
+        "text": "Approved print files are delivered in the agreed format."
+      }
+    ],
+    "close": "From first visualisation to final production artwork, design and planning work together.",
+    "videoLabel": "Animation: print data on a monitor and large-format printing of an exhibition graphic (visualisation)"
+  },
+  "drops": {
+    "rule": "Another concept every morning at 5:00",
+    "today": "New today",
+    "next": "Next concept in",
+    "soon": "A new concept is visible.",
+    "reload": "Reload",
+    "complete": "All {total} concepts are visible",
+    "count": "{released} of {total} visible"
+  },
+  "error": {
+    "title": "Something went wrong.",
+    "text": "The page could not be loaded completely. Please try again.",
+    "retry": "Try again",
+    "home": "Back to home"
+  },
+  "seo": {
+    "eyebrow": "Technical exhibition planning",
+    "title": "Exhibition design and technical planning, working together.",
+    "intro": "Based in Leipzig, CL Projektwerk combines creative exhibition concepts with structured technical development. I support stand builders, agencies and exhibitors with 3D visualisation, production drawings, work preparation and project coordination. Services are tailored to each assignment.",
+    "blocks": [
+      {
+        "title": "Technical planning and production drawings",
+        "text": "Clear drawings, component schedules and coordinated interfaces support a smoother manufacturing preparation process."
+      },
+      {
+        "title": "Work preparation for exhibition projects",
+        "text": "Material and quantity schedules, plus production documentation, give project partners a more transparent basis for delivery."
+      },
+      {
+        "title": "External project coordination",
+        "text": "Support with timelines, quotations, trade coordination and documented project decisions."
+      },
+      {
+        "title": "Concepts, visuals and reuse",
+        "text": "Spatial design, presentation artwork and adaptation of existing components complement the technical planning."
+      }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      {
+        "q": "What does the collaboration cost?",
+        "a": "Fees depend on the task, agreed deliverables and timeline. Following a brief, you receive a tailored proposal for a specific assignment or longer-term support."
+      },
+      {
+        "q": "When should I get in touch?",
+        "a": "Contact me as soon as the objectives, timeline and initial details are known. I also review urgent requests against current availability."
+      },
+      {
+        "q": "Can I book just a single service?",
+        "a": "Yes. Concept design, 3D visualisation, technical drawings, work preparation and project coordination can be commissioned individually."
+      },
+      {
+        "q": "Do you also manufacture and assemble?",
+        "a": "CL Projektwerk provides design, planning and coordination services. Manufacturing, installation and regulated engineering work are handled by qualified specialist contractors. Responsibilities are agreed per project."
+      },
+      {
+        "q": "Are on-site meetings or travel possible?",
+        "a": "Yes, by prior arrangement. Most planning work is carried out from Leipzig."
+      },
+      {
+        "q": "Can I use a gallery concept as a starting point?",
+        "a": "Yes. Save your favourites and include them with your enquiry. Concepts are for inspiration and can be adapted to your brief; technical feasibility must be assessed before construction."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Choose language",
+    "hint": "Drag, swipe or rotate with the arrow keys",
+    "current": "current",
+    "prev": "Previous language",
+    "next": "Next language",
+    "close": "Close"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Independent design and planning studio for exhibitions, brand spaces and interior fit-out",
+    "claim": "Creative concepts. Precise exhibition planning.",
+    "visualisationNote": "Visualisation"
+  },
+  "structured": {
+    "serviceCatalog": "Services",
+    "services": [
+      "Technical planning: dimensioned detail and production drawings, part lists, interface documents",
+      "Work preparation: material and quantity overviews, production documents, procurement and schedule planning",
+      "Project control: budget and schedule overviews, quotation comparisons, coordination of trades, change documentation",
+      "Design and presentation: stand and space concepts, visualisations, print-ready graphics",
+      "Reuse planning: survey of existing components, variant planning, material and storage information"
+    ],
+    "keywords": [
+      "technical exhibition planning",
+      "exhibition stand planning",
+      "external project control",
+      "work preparation exhibition stands",
+      "planning office Leipzig",
+      "brand spaces",
+      "interior fit-out",
+      "reuse planning"
+    ],
+    "genre": "Exhibition stand concept",
+    "videoSuffix": "Concept animation in time-lapse"
+  },
+  "ogImage": {
+    "film": "▶ Concept animation"
+  }
+}
