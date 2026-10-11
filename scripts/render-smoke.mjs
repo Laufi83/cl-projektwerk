@@ -40,6 +40,12 @@ try {
       assert.equal(JSON.parse(body).status, "ok");
       assert.match(response.headers.get("cache-control"), /no-store/);
     }
+    if (homepages.includes(route)) {
+      for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "SELECTED EXPERIENCE"]) {
+        assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
+      }
+      checks.push(`${route}: C3 EXPO, BMW, Amazon and updated timeline`);
+    }
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.

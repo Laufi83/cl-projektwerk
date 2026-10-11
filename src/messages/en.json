@@ -461,7 +461,7 @@
     "eyebrow": "About me",
     "name": "Christof Laufersweiler",
     "role": "Planning and project control for exhibition stands, brand spaces and interior fit-out",
-    "text": "I am Christof Laufersweiler and have worked in the trade fair and event sector for more than 20 years. I trained as a technical draughtsman specialising in wood technology, and later added project management in exhibition stand construction, employed managing director of a stand-building company and an IHK certificate as exhibition and event project manager. With CL Projektwerk I offer external planning and project capacity in Leipzig for stand builders, agencies, interior fit-out companies and exhibitors who need extra hands with expertise.",
+    "text": "I am Christof Laufersweiler and have worked in the trade fair and event sector for more than 20 years. I trained as a technical draughtsman specialising in wood technology, and later added project management in exhibition stand construction, employed managing director of a stand-building company and an IHK certificate as exhibition and event project manager. With CL Projektwerk I offer external planning and project capacity in Leipzig for stand builders, agencies, interior fit-out companies and exhibitors who need extra hands with expertise. Most recently, I worked as a Senior Project Manager at C3 EXPO GmbH from November 2025 to October 2026.",
     "close": "You keep the decisions. I provide documents, overview and coordination.",
     "photoAlt": "Portrait of Christof Laufersweiler, founder of CL Projektwerk",
     "cta": "Discuss a project with me",
@@ -487,6 +487,11 @@
       }
     ],
     "career": [
+      {
+        "years": "11/2025 – 10/2026",
+        "role": "Senior Project Manager, Exhibitions & Events",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
       {
         "years": "06/2019 – 04/2025",
         "role": "Project management",
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "Project work during employment at C3 EXPO GmbH."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "BMW X5 vehicle presentation, Showpalast Munich",
+        "note": "Project work during employment at C3 EXPO GmbH."
+      },
       {
         "year": "2024",
         "client": "ZDK",

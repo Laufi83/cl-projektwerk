@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "Gestor sénior de projetos, feiras e eventos",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "06/2019 – 04/2025",
         "role": "Direção de projetos",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "Projeto realizado durante o emprego na C3 EXPO GmbH."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "Apresentação do BMW X5, Showpalast Munique",
+        "note": "Projeto realizado durante o emprego na C3 EXPO GmbH."
+      },
       {
         "year": "2024",
         "client": "ZDK",

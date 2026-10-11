@@ -3,6 +3,7 @@ import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { mediaUrl } from "@/lib/media";
 import { portrait } from "@/config/profile";
+import { CareerSpotlight } from "@/components/sections/CareerSpotlight";
 
 /** Über mich – Foto, Text, Kennzahlen, Werdegang und Projekte aus Lebenslauf und Portfolio (siehe config/profile.ts). */
 export async function About() {
@@ -11,6 +12,8 @@ export async function About() {
   const facts = tp.raw("facts") as { value: string; label: string }[];
   const career = tp.raw("career") as { years: string; role: string; org: string }[];
   const projects = tp.raw("projects") as { year: string; client: string; event: string; size?: string; note?: string }[];
+  const highlighted = projects.filter((p) => p.year === "2026" && (p.client === "BMW" || p.client === "Amazon"));
+  const otherProjects = projects.filter((p) => !highlighted.includes(p));
   const tools = tp.raw("tools") as string[];
   const languages = tp.raw("languages") as string[];
   return (
@@ -66,8 +69,10 @@ export async function About() {
           <div className="mt-16" data-reveal>
             <h3 className="eyebrow">{t("projects")}</h3>
             <p className="mt-2 text-sm text-fg-subtle">{t("projectsNote")}</p>
-            <ul className="mt-5 divide-y divide-line border-y border-line">
-              {projects.map((p) => (
+            {highlighted.length > 0 && career.length > 0 && <CareerSpotlight career={career[0]} projects={highlighted} />}
+            <p className="mt-9 text-xs font-semibold uppercase tracking-[.13em] text-fg-subtle">{t("career")} / {t("projects")}</p>
+            <ul className="mt-4 divide-y divide-line border-y border-line">
+              {otherProjects.map((p) => (
                 <li key={p.client + p.year + p.event} className="grid grid-cols-[5.5rem_minmax(0,1fr)] gap-x-4 py-4 sm:grid-cols-[5.5rem_minmax(0,1fr)_auto]">
                   <span className="tabular text-sm text-fg-subtle">{p.year}</span>
                   <div className="min-w-0">
@@ -85,9 +90,9 @@ export async function About() {
           <div className="mt-12" data-reveal>
             <h3 className="eyebrow">{t("career")}</h3>
             <ol className="mt-5 grid gap-5 border-l border-line pl-5">
-              {career.map((c) => (
-                <li key={c.years + c.role} className="relative">
-                  <span aria-hidden className="absolute -left-[25px] top-1.5 size-2 rounded-full bg-accent" />
+              {career.map((c, i) => (
+                <li key={c.years + c.role} className={"relative rounded-r-2xl transition-colors duration-300 " + (i === 0 ? "border-y border-r border-accent/30 bg-accent-soft/40 p-4" : "")}>
+                  <span aria-hidden className={"absolute top-1.5 size-2 rounded-full bg-accent " + (i === 0 ? "-left-[25px]" : "-left-[25px]")} />
                   <p className="tabular text-sm text-fg-subtle">{c.years}</p>
                   <p className="font-semibold">{c.role}</p>
                   <p className="text-sm text-fg-muted">{c.org}</p>

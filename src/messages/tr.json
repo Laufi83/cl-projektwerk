@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "Kıdemli Proje Yöneticisi, fuarlar ve etkinlikler",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "06/2019 – 04/2025",
         "role": "Proje yönetimi",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "C3 EXPO GmbH bünyesinde çalışırken yürütülen proje."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "BMW X5 tanıtımı, Showpalast Münih",
+        "note": "C3 EXPO GmbH bünyesinde çalışırken yürütülen proje."
+      },
       {
         "year": "2024",
         "client": "ZDK",

@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "वरिष्ठ परियोजना प्रबंधक, प्रदर्शनियाँ और आयोजन",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "06/2019 – 04/2025",
         "role": "प्रोजेक्ट प्रबंधन",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, कान",
+        "note": "C3 EXPO GmbH में नौकरी के दौरान किया गया परियोजना कार्य।"
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "BMW X5 की प्रस्तुति, शोपालास्ट म्यूनिख",
+        "note": "C3 EXPO GmbH में नौकरी के दौरान किया गया परियोजना कार्य।"
+      },
       {
         "year": "2024",
         "client": "ZDK",

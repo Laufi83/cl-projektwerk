@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "Vanhempi projektipäällikkö, messut ja tapahtumat",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "06/2019 – 04/2025",
         "role": "Projektijohtaminen",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "Projektityö C3 EXPO GmbH:n palveluksessa."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "BMW X5:n esittely, Showpalast München",
+        "note": "Projektityö C3 EXPO GmbH:n palveluksessa."
+      },
       {
         "year": "2024",
         "client": "ZDK",

@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "Senior projektmenedzser, kiállítások és rendezvények",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "2019.06 – 2025.04",
         "role": "Projektvezetés",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – Cannes Lions International Festival of Creativity, Cannes",
+        "note": "Projektmunka a C3 EXPO GmbH alkalmazottjaként."
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "BMW X5 bemutató, müncheni Showpalast",
+        "note": "Projektmunka a C3 EXPO GmbH alkalmazottjaként."
+      },
       {
         "year": "2024",
         "client": "ZDK",
