@@ -248,8 +248,9 @@ export function TiltedGridHero({
           WebkitMaskImage: "linear-gradient(90deg, transparent 0%, black " + fade + "%, black " + (100 - fade) + "%, transparent 100%)",
         }}
       />
-      <div className="absolute inset-x-0 top-0 z-10 h-[calc(100%-76px)] overflow-hidden"
+      <div className="absolute inset-x-0 top-0 z-10 overflow-hidden"
         style={{
+          height: "calc(100% - 76px)",
           perspective: radius * CAMERA + "px",
           perspectiveOrigin: "50% " + axis + "%",
           maskImage: "linear-gradient(90deg, transparent, black " + fade + "%, black " + (100 - fade) + "%, transparent)",
