@@ -196,7 +196,7 @@ export function HeroScrub({ films, visNote }: Props) {
           <div className="container-x flex items-start justify-between gap-4">
             <p className="eyebrow line-clamp-2 max-w-[17rem] text-[0.65rem] md:line-clamp-none md:max-w-none md:text-xs">{t("eyebrow")}</p>
             <span className="vis-note hidden shrink-0 md:inline-flex">
-              {film.id} {film.title} · {visNote}
+              {customReady ? "CL Projektwerk" : `${film.id} ${film.title}`} · {visNote}
             </span>
           </div>
         </div>
