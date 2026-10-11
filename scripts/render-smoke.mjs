@@ -50,7 +50,7 @@ try {
       for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "CL / PROFESSIONAL EXPERIENCE", "CL / CAREER"]) {
         assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
       }
-      for (const marker of ["CL / PROJECT EXPERIENCE", "Motion mode"]) {
+      for (const marker of ["CL / CAREER", "Motion mode"]) {
         assert(body.includes(marker) || (marker === "Motion mode" && body.includes("Animationsmodus")), `Interactive career/performance missing on ${route}: ${marker}`);
       }
       checks.push(`${route}: unified interactive career/projects and performance controls`);
