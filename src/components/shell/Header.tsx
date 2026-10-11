@@ -14,7 +14,6 @@ const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
   { id: "ablauf", key: "process" },
-  { id: "grafik", key: "graphics" },
   { id: "weltweit", key: "world" },
   { id: "messegelande", key: "venues" },
   { id: "ueber", key: "about" },
@@ -23,7 +22,7 @@ const SECTIONS = [
 export function Header() {
   const t = useTranslations("nav");
   const locale = useLocale();
-  const sectionLabel = (s: typeof SECTIONS[number] | {id:string;key:string}) => s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key as "services" | "designs" | "process" | "graphics" | "world" | "about" | "contact");
+  const sectionLabel = (s: typeof SECTIONS[number] | {id:string;key:string}) => s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key as "services" | "designs" | "process" | "world" | "about" | "contact");
   const tc = useTranslations("common");
   const pathname = usePathname();
   const isHome = pathname === "/";
