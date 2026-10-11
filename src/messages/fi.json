@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Messujen tekninen suunnittelu ja projektinohjaus | {brand}",
+    "description": "Ulkoinen suunnittelu- ja projektitoimisto messuosastoille, bränditiloille ja sisustusrakentamiseen: tekninen suunnittelu, työn valmistelu ja projektinohjaus. Keskustele projektistasi.",
+    "ogTitle": "{brand}: suunnittelukapasiteettia messuosastoille, bränditiloille ja sisustusrakentamiseen",
+    "ogDescription": "Mitoitetut valmistusasiakirjat, työn valmistelu ja projektinohjaus osastorakentajille, toimistoille, sisustusrakentajille ja näytteilleasettajille. Yhteyshenkilö: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Lisää suunnittelu- ja projektikapasiteettia messuosastoille, bränditiloille ja sisustusrakentamiseen, projekti kerrallaan ja selkeästi sovitulla laajuudella.",
+    "designsTitle": "Osastokonsepteja, uusi joka päivä",
+    "designsDescription": "Osastokonsepteja visualisointien, pohjapiirrosten ja julkisivukuvien kanssa, {min} – {max}. Joka aamu klo 5:00 lisätään uusi konsepti.",
+    "designTitle": "{number} {title} · Osastokonsepti",
+    "designDescription": "Konsepti {title}: {size}{floors}. {description} Konseptin visualisointi, ei rakennettu osasto.",
+    "inquiryTitle": "Keskustele projektistasi",
+    "inquiryDescription": "Lähetä toimeksianto: messut tai projekti, ajankohta, olemassa olevat asiakirjat ja tarvittava suunnittelupalvelu. Vastaan ensimmäisellä arviolla.",
+    "selectionTitle": "Valintani",
+    "selectionDescription": "Tallentamasi osastokonseptit, jotka voit liittää tiedusteluun.",
+    "imprintDescription": "Oikeudelliset tiedot ja palveluntarjoajan tiedot.",
+    "privacyDescription": "Tietoja henkilötietojen käsittelystä tällä verkkosivustolla."
+  },
+  "common": {
+    "skip": "Siirry sisältöön",
+    "visualisation": "Visualisointi",
+    "close": "Sulje",
+    "back": "Takaisin",
+    "next": "Seuraava",
+    "prev": "Takaisin",
+    "open": "Avaa",
+    "view": "Katso",
+    "play": "Toista",
+    "pause": "Keskeytä",
+    "loading": "Ladataan",
+    "placeholder": "Kuva tulossa",
+    "later": "tulossa",
+    "menu": "Valikko",
+    "language": "Kieli",
+    "drag": "Vedä",
+    "retry": "Yritä uudelleen",
+    "noWebgl": "Tämä laite tai selain ei tue 3D-näkymää. Kaupunkien ja etäisyyksien luettelo on alla."
+  },
+  "nav": {
+    "services": "Palvelut",
+    "designs": "Konseptit",
+    "process": "Yhteistyö",
+    "graphics": "Esittely",
+    "world": "Messukalenteri",
+    "about": "Minusta",
+    "contact": "Yhteystiedot",
+    "cta": "Keskustele projektista",
+    "selection": "Valintani",
+    "home": "Etusivu",
+    "main": "Päävalikko"
+  },
+  "hero": {
+    "eyebrow": "Ulkoinen suunnittelu- ja projektitoimisto · Messuosastot, bränditilat, sisustusrakentaminen",
+    "title": "Suunnittelua, joka toimii hallissa.",
+    "lead": "Tuen osastorakentajia, toimistoja, sisustusrakentajia ja näytteilleasettajia teknisellä suunnittelulla, työn valmistelulla ja projektinohjauksella: projekti kerrallaan, selkeästi sovitulla laajuudella ja jäljitettävillä asiakirjoilla.",
+    "cta": "Tiedustele suunnittelukapasiteettia",
+    "secondary": "Katso konseptit",
+    "scroll": "Vieritä ja seuraa, miten visualisointi syntyy",
+    "progress": "Rakennus (visualisointi)",
+    "done": "Valmis tila",
+    "design": "Konsepti 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Konseptit aikaviiveellä",
+    "title": "5 konseptia.",
+    "lead": "Viisi konseptianimaatiota näyttää, miten suunnitelma kasvaa tyhjästä hallin lattiasta valmiiksi tilaksi. Ne ovat visualisointeja, eivät kuvauksia rakennetuista osastoista.",
+    "cta": "Toista animaatio",
+    "badge": "Konseptianimaatio",
+    "sliderLabel": "Liukusäädin viidellä konseptianimaatiolla. Nuolinäppäimet selaavat, Enter avaa.",
+    "explain": "Konseptin aikaviiveanimaatio. Se näyttää, miten suunniteltu tila voitaisiin rakentaa, eikä ole todiste toteutetusta osastosta."
+  },
+  "tagline": {
+    "text": "Jokainen tila alkaa asiakirjoista, joihin kaikki osapuolet voivat luottaa. Juuri ne laadin."
+  },
+  "services": {
+    "eyebrow": "Palvelut",
+    "title": "Lisää suunnittelukapasiteettia, kun useita projekteja on käynnissä yhtä aikaa.",
+    "lead": "Osastorakentajat, toimistot ja sisustusrakentajat ylittävät rajansa rinnakkaisissa projekteissa, henkilöstöpulassa ja teknisesti vaativissa tehtävissä. Ulkoisena suunnittelijana ja projektinohjaajana otan vastuulleni selkeästi rajattuja osia projektistasi, yli 20 vuoden kokemuksella messu- ja tapahtuma-alalta. Valmistuksen, kuljetuksen, asennuksen, rakennelaskelmat, luvat ja sähkötyöt toteuttavat pätevät erikoispartnerit.",
+    "trust": [
+      {
+        "title": "Yksi yhteyshenkilö",
+        "text": "suunnitteluun, asiakirjoihin ja yhteensovitukseen: puhut suoraan minun kanssani, et välikäsien kautta."
+      },
+      {
+        "title": "Yli 20 vuoden kokemus",
+        "text": "messu- ja tapahtuma-alalta, koulutukseltani puutekniikan teknillinen piirtäjä ja sertifioitu messu- ja tapahtumaprojektipäällikkö (IHK)."
+      },
+      {
+        "title": "Selkeästi rajattu laajuus",
+        "text": "Laajuuden, korjauskierrokset ja määräajat sovin etukäteen kirjallisesti. Lisätyöt ja matkat vain sopimuksen mukaan."
+      }
+    ],
+    "package": {
+      "badge": "Yhteistyö",
+      "title": "Projektikohtaisesti tai kuukausikiintiönä.",
+      "subtitle": "Suunnittelukapasiteettia siinä laajuudessa, jota projektisi juuri nyt tarvitsee.",
+      "text": "Lähetät minulle toimeksiannon, arvioin työmäärän ja ehdotan laajuutta, tuotoksia ja määräaikoja. Sen jälkeen työskentelen projektikohtaisesti tai kuukausikiintiön puitteissa, jossa tunnit, vasteajat ja korjauskierrokset on sovittu. Kapasiteettini on rajallinen; otan vain projekteja, jotka pystyn tekemään huolellisesti.",
+      "cta": "Tiedustele suunnittelukapasiteettia",
+      "more": "Näin projekti etenee",
+      "phases": [
+        {
+          "title": "Toimeksianto ja laajuus",
+          "items": [
+            "Tehtävän, määräajan ja olemassa olevien asiakirjojen yhteinen selvitys",
+            "Kirjallisesti sovittu laajuus ja tuotokset",
+            "Sovitut korjauskierrokset ja hyväksyntävaiheet",
+            "Yksilöllinen tarjous toimeksiannon jälkeen"
+          ]
+        },
+        {
+          "title": "Suunnittelu ja asiakirjat",
+          "items": [
+            "Mitoitetut detalji- ja valmistuspiirustukset",
+            "Osaluettelot ja rajapinta-asiakirjat",
+            "Yhteenvedot materiaaleista ja määristä",
+            "Versioidut tiedostot jäljitettävällä tilalla"
+          ]
+        },
+        {
+          "title": "Yhteensovitus ja ohjaus",
+          "items": [
+            "Budjetti- ja aikataulukatsaukset",
+            "Tarjousvertailut ja hankintasuunnittelu",
+            "Urakoiden ja erikoispartnerien yhteensovitus",
+            "Dokumentoidut hyväksynnät ja muutokset"
+          ]
+        },
+        {
+          "title": "Luovutus ja dokumentointi",
+          "items": [
+            "Partnerikohtaiset valmistusasiakirjat luovutettavaksi",
+            "Muutosten ja päätösten dokumentointi",
+            "Varasto- ja varantotiedot uudelleenkäyttöä varten",
+            "Tapaamiset paikan päällä ja matkat etukäteissopimuksen mukaan"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Erikoispartnerit toteutukseen.",
+      "text": "Minä suunnittelen ja koordinoin, toteutuksen hoitavat pätevät erikoisyritykset. Perusmallissa tilaat suuremmat valmistus- ja asennuspalvelut suoraan omilta partnereiltasi; pyynnöstä sovitan asiat heidän kanssaan ja valmistelen heidän asiakirjansa. CL Projektwerk ei ole tuotantopaja eikä toimi hankkeita ennakkorahoittavana pääurakoitsijana.",
+      "items": [
+        "CNC-controlled production only",
+        "Carpentry",
+        "Metalwork",
+        "Asennus ja pystytys",
+        "Kuljetus ja logistiikka",
+        "Rakennelaskelmat ja tarkastukset",
+        "Luvat ja hyväksynnät",
+        "Sähkötyöt",
+        "Painatus ja graafinen tuotanto",
+        "Media- ja tapahtumatekniikka",
+        "… ja muut urakat tarpeen mukaan"
+      ]
+    },
+    "single": {
+      "eyebrow": "Tilattavissa erikseen",
+      "title": "Täsmälleen se palvelu, joka sinulta puuttuu.",
+      "text": "Onko sinulla tiimi mutta liian vähän suunnittelukapasiteettia? Tilaa silloin vain tarvitsemasi osa-alue, esimerkiksi valmistuspiirustukset yhteen projektiin tai messuosallistumisen aikataulunohjaus."
+    },
+    "items": {
+      "tech": {
+        "title": "Tekninen suunnittelu",
+        "text": "Toimeksiantosi pohjalta laadin mitoitetut detalji- ja valmistuspiirustukset, osaluettelot ja rajapinta-asiakirjat. Saat asiakirjoja, joilla valmistuspartnerisi voivat työskennellä, ja säästät sisäisiä suunnittelutunteja.",
+        "points": [
+          "Mitoitetut detalji- ja valmistuspiirustukset",
+          "Osaluettelot",
+          "Rajapinta-asiakirjat urakoihin ja partnereihin"
+        ],
+        "task": "Tehtävä: muuntaa toimeksiantosi yksiselitteisiksi teknisiksi asiakirjoiksi.",
+        "result": "Tulos: piirustukset, luettelot ja rajapinnat sovitussa tilassa.",
+        "benefit": "Hyöty: vähemmän kysymyksiä valmistuksessa ja enemmän aikaa asiakkaillesi.",
+        "link": "Katso esimerkkejä"
+      },
+      "prep": {
+        "title": "Työn valmistelu",
+        "text": "Valmistelen projektisi toteutusta varten: yhteenvedot materiaaleista ja määristä, partnerikohtaiset valmistusasiakirjat sekä hankinta- ja aikataulusuunnittelu. Näin kaikki tietävät, mitä tarvitaan, milloin ja missä määrin.",
+        "points": [
+          "Yhteenvedot materiaaleista ja määristä",
+          "Partnerikohtaiset valmistusasiakirjat",
+          "Hankinta- ja aikataulusuunnittelu"
+        ],
+        "task": "Tehtävä: järjestää materiaalit, määrät ja päivämäärät toteutusta varten.",
+        "result": "Tulos: yhteenvedot ja asiakirjat koottuna kullekin partnerille.",
+        "benefit": "Hyöty: vähemmän puutteita ja aikataulu-yllätyksiä pystytyksessä.",
+        "link": "Näin työskentelen"
+      },
+      "control": {
+        "title": "Projektinohjaus",
+        "text": "Pidän budjetin ja aikataulun selkeinä, vertailen tarjouksia, sovitan urakat yhteen ja dokumentoin hyväksynnät ja muutokset. Päätökset pysyvät sinulla; valmistelen ne niin, että ne voidaan tehdä nopeasti.",
+        "points": [
+          "Budjetti- ja aikataulukatsaukset",
+          "Tarjousvertailut ja urakoiden yhteensovitus",
+          "Hyväksynnät ja jäljitettävä muutosdokumentaatio"
+        ],
+        "task": "Tehtävä: säilyttää yleiskuva kustannuksista, päivämääristä ja sopimuksista.",
+        "result": "Tulos: ajantasaiset katsaukset ja dokumentoidut päätökset.",
+        "benefit": "Hyöty: helpotusta rinnakkaisissa projekteissa ja selkeä jäljitettävyys.",
+        "link": "Katso yhteistyö"
+      },
+      "concept": {
+        "title": "Suunnittelu ja esittely",
+        "text": "Kehitän osasto- ja tilakonsepteja sekä laadin visualisointeja ja painovalmiita grafiikoita. Laajuus ja korjauskierrosten määrä sovitaan etukäteen, jotta työmäärä ja tulos pysyvät ennustettavina.",
+        "points": [
+          "Osasto- ja tilakonseptit",
+          "Visualisoinnit yhteensovitukseen ja esittelyyn",
+          "Painovalmiit grafiikat sovituilla korjauskierroksilla"
+        ],
+        "task": "Tehtävä: näyttää idea niin, että sinä ja asiakkaasi voitte päättää.",
+        "result": "Tulos: konsepti, visualisoinnit ja painodata sovitussa laajuudessa.",
+        "benefit": "Hyöty: varhaisia päätöksiä ymmärrettävien kuvien ja suunnitelmien pohjalta.",
+        "link": "Katso konseptit"
+      },
+      "reuse": {
+        "title": "Uudelleenkäytön suunnittelu",
+        "text": "Kartoitan olemassa olevat osat, suunnittelen variantteja uusiin käyttökohteisiin ja ylläpidän materiaali- ja varastotietoja. Näin voit hyödyntää olemassa olevaa tavoitteellisesti sen sijaan, että suunnittelisit joka kerta alusta.",
+        "points": [
+          "Olemassa olevien osien kartoitus",
+          "Varianttisuunnittelu uusiin käyttökohteisiin",
+          "Materiaali- ja varastotiedot"
+        ],
+        "task": "Tehtävä: kartoittaa olemassa olevat osat ja tehdä niistä käyttökelpoisia uusiin rakenteisiin.",
+        "result": "Tulos: varantoluettelo, variantit ja varastotiedot.",
+        "benefit": "Hyöty: vähemmän uudelleensuunnittelua ja materiaalinkäyttöä toistuvissa rakenteissa.",
+        "link": "Lähetä tiedustelu"
+      }
+    },
+    "inquire": "Tiedustele",
+    "cta": {
+      "title": "Seuraava projektisi alkaa toimeksiannolla.",
+      "text": "Kuvaile lyhyesti tehtävä, määräaika ja olemassa olevat asiakirjat. Vastaan ensimmäisellä arviolla ja seuraavilla vaiheilla. Tarjouksen saat yksilöllisesti toimeksiannon jälkeen.",
+      "button": "Lähetä toimeksianto",
+      "phone": "Puhutaanko mieluummin suoraan?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Konseptigalleria · uutta joka päivä",
+    "title": "Joka päivä uusi konsepti.",
+    "lead": "Tällä hetkellä näkyvillä on {count} / {total} osastokonseptia, {min} – {max}. Joka aamu klo 5:00 lisätään uusi. Kaikki kuvat ovat konseptien visualisointeja. Selaa, suodata, tallenna ja tiedustele suoraan.",
+    "slider": "Liukusäädin",
+    "grid": "Ruudukko",
+    "viewMode": "Näkymä",
+    "random": "Satunnainen konsepti",
+    "dayPick": "Päivän konsepti",
+    "hint": "Vedä, vieritä tai käytä nuolinäppäimiä",
+    "hintTouch": "Pyyhkäise sivulle",
+    "count": "{count} / {total}",
+    "empty": "Mikään konsepti ei vastaa näitä suodattimia.",
+    "reset": "Nollaa suodattimet",
+    "filters": "Suodattimet",
+    "listTitle": "Kaikki näkyvät konseptit yhdellä silmäyksellä",
+    "sliderLabel": "Konseptien liukusäädin. Nuolinäppäimet selaavat, Enter avaa.",
+    "current": "Nyt: {number} {title}",
+    "loadingSlider": "Liukusäädintä ladataan",
+    "cardAlt": "Konsepti {number} {title}: osastokonseptin visualisointi",
+    "filter": {
+      "all": "Kaikki",
+      "clip": "Konseptianimaatiolla",
+      "two-storey": "Kaksikerroksinen",
+      "size-s": "Kompakti alle 30 m²",
+      "size-m": "Keskikokoinen alle 150 m²",
+      "size-l": "Suuri yli 150 m²",
+      "wood": "Puu",
+      "green": "Vihreys",
+      "metal": "Metalli",
+      "light": "Valo",
+      "container": "Kontit",
+      "product": "Tuoteosastot",
+      "real-estate": "Kiinteistömessut",
+      "outdoor": "Ulkoalue"
+    }
+  },
+  "detail": {
+    "facts": "Perustiedot",
+    "area": "Pinta-ala",
+    "floors": "Kerrokset",
+    "standType": "Osastotyyppi",
+    "height": "Korkeus",
+    "materials": "Materiaalit",
+    "colours": "Värit",
+    "series": "Sarja",
+    "floorsValue": "{count, plural, =1 {yksikerroksinen} =2 {kaksikerroksinen} other {# kerrosta}}",
+    "standTypes": {
+      "corner": "Kulmaosasto",
+      "head": "Päätyosasto",
+      "island": "Saarekeosasto",
+      "row": "Rivi-osasto"
+    },
+    "renderings": "Visualisoinnit",
+    "plans": "Suunnitelmat",
+    "floorplan": "Pohjapiirros",
+    "elevation": "Julkisivukuva",
+    "download": "Lataa",
+    "zoomIn": "Lähennä",
+    "zoomOut": "Loitonna",
+    "zoomReset": "Palauta näkymä",
+    "fullscreen": "Koko näyttö",
+    "clip": "Konseptianimaatio aikaviiveellä",
+    "favorite": "Lisää valintaan",
+    "favorited": "Valinnassasi",
+    "share": "Jaa",
+    "shareWhatsapp": "Jaa WhatsAppissa",
+    "shareLinkedin": "Jaa LinkedInissä",
+    "copyLink": "Kopioi linkki",
+    "copied": "Linkki kopioitu",
+    "inquire": "Tiedustelu tästä konseptista",
+    "prevDesign": "Edellinen konsepti",
+    "nextDesign": "Seuraava konsepti",
+    "backToGallery": "Galleriaan",
+    "imageOf": "Kuva {current} / {total}",
+    "description": "Kuvaus",
+    "placeholderImage": "Kuva tulossa",
+    "conceptNote": "Konseptiluonnos. Kuva on visualisointi eikä esitä rakennettua osastoa.",
+    "imageAlt": "{title}: {label} (visualisointi)",
+    "planAlt": "{title}: {label} (konseptin piirustus)",
+    "clipAlt": "{title}: konseptianimaatio pystytyksestä (visualisointi)"
+  },
+  "process": {
+    "eyebrow": "Yhteistyö",
+    "title": "Kuusi vaihetta toimeksiannosta luovutukseen.",
+    "steps": {
+      "briefing": {
+        "title": "Toimeksianto ja laajuus",
+        "text": "Tehtävä, määräaika, olemassa olevat asiakirjat ja toivotut tulokset. Sovimme, mitä toimitan, montako korjauskierrosta on suunniteltu ja kuka hyväksyy.",
+        "alt": "Luonnosanimaatio toimeksiannosta (visualisointi)"
+      },
+      "concept": {
+        "title": "Konsepti ja yhteensovitus",
+        "text": "Tilaidea, visualisoinnit, pohjapiirros ja julkisivukuvat. Näet tilan useasta näkökulmasta ja päätät rauhassa ennen kuin tekninen yksityiskohtien suunnittelu alkaa.",
+        "alt": "Konseptianimaatio suunnitelmasta (visualisointi)"
+      },
+      "planning": {
+        "title": "Tekninen suunnittelu",
+        "text": "Mitoitetut detalji- ja valmistuspiirustukset, osaluettelot ja rajapinta-asiakirjat. Rakennelaskelmat, luvat ja sähkösuunnittelun hoitavat pätevät erikoispartnerit; minä sovitan rajapinnat yhteen.",
+        "alt": "Animaatio teknisestä suunnittelusta (visualisointi)"
+      },
+      "production": {
+        "title": "Työn valmistelu ja valmistusasiakirjat",
+        "text": "Yhteenvedot materiaaleista ja määristä sekä asiakirjat kullekin valmistuspartnerille, lisäksi hankinta- ja aikataulusuunnittelu. Valmistus tehdään kyseisessä erikoisyrityksessä, ei minulla.",
+        "alt": "Animaatio CNC-työstöstä esimerkkinä valmistustiedoista (visualisointi); valmistuksen suorittaa erikoispartneri"
+      },
+      "logistics": {
+        "title": "Urakoiden yhteensovitus",
+        "text": "Aikatauluyhteenveto, tarjousvertailut ja urakoiden välinen yhteensovitus, jotta kuljetus, pystytys ja tekniikka sopivat yhteen. Työn tekevät erikoispartnerisi.",
+        "alt": "Aikaviivekonseptianimaatio pystytyksestä (visualisointi)"
+      },
+      "onsite": {
+        "title": "Hyväksynnät, muutokset ja luovutus",
+        "text": "Dokumentoin hyväksynnät ja muutokset jäljitettävästi ja luovutan lopuksi kaikki asiakirjat sinulle. Tapaamiset paikan päällä ovat mahdollisia, jos niistä on sovittu etukäteen.",
+        "alt": "Konseptianimaatio luovutuksesta (visualisointi)"
+      }
+    },
+    "sketch": "Luonnos"
+  },
+  "world": {
+    "eyebrow": "Messukalenteri",
+    "title": "Messut Saksassa ja Euroopassa.",
+    "lead": "Katsaus messupäivämääriin Saksassa ja Euroopassa suuntaa antavaksi projektisi suunnitteluun. Valitse kaupunki, ja maapallo näyttää sijainnin ja linnuntie-etäisyyden Leipzigista. Kalenterin päivämäärä ei kerro mitään CL Projektwerkin toimeksiannoista tai osallistumisesta.",
+    "placeholderNote": "Esimerkkipaikat",
+    "listLabel": "Messukaupungit",
+    "drag": "Käännä maapalloa",
+    "base": "Kotipaikka",
+    "regions": {
+      "de": "Saksa",
+      "eu": "Eurooppa"
+    },
+    "calendar": {
+      "eyebrow": "Messukalenteri",
+      "title": "Seuraavat messut jokaisessa kaupungissa.",
+      "lead": "Jokaisesta kaupungista näytetään seuraavat johtavat messut aikajärjestyksessä kuin lähtötaululla. Vieritä taulua: maapallo seuraa valintaasi.",
+      "summary": "{cities} messukaupunkia · {km} km linnuntietä reitillä Leipzigista",
+      "boardLabel": "Messukalenteri: seuraavat messut kaupungeittain",
+      "cols": {
+        "date": "Ajankohta",
+        "dest": "Kohde",
+        "fair": "Messut",
+        "status": "Tila"
+      },
+      "running": "Käynnissä nyt",
+      "today": "Tänään",
+      "tomorrow": "Huomenna",
+      "inDays": "{days} päivän päästä",
+      "tba": "Ajankohta tulossa",
+      "past": "Päättynyt",
+      "tbaNote": "Tälle kaupungille ei ole tällä hetkellä tallennettu vahvistettua johtavien messujen ajankohtaa.",
+      "dateTbc": "Ajankohtaa ei ole vahvistettu",
+      "fairName": "Messut",
+      "venue": "Messualue",
+      "route": "Linnuntietä",
+      "homeBase": "Kotipaikkani",
+      "km": "{km} km",
+      "localTime": "Paikallinen aika",
+      "website": "Järjestäjän verkkosivusto",
+      "inquire": "Keskustele projektista: {fair}",
+      "tourPause": "Keskeytä kiertomatka",
+      "tourPlay": "Jatka kiertomatkaa",
+      "note": "Ajankohdat järjestäjien ilmoitusten mukaan, tarkistettu {date}. Muutokset ovat mahdollisia; järjestäjien verkkosivut ovat ratkaisevia. Messujen nimet ovat omistajiensa tavaramerkkejä. Ajankohdat eivät kerro mitään CL Projektwerkin toimeksiannoista tai osallistumisesta.",
+      "search": "Hae messuja tai kaupunkia",
+      "searchPlaceholder": "esim. Düsseldorf tai rakentaminen",
+      "filterCountry": "Maa",
+      "filterCity": "Kaupunki",
+      "filterPeriod": "Ajanjakso",
+      "filterSector": "Toimiala",
+      "filterAll": "Kaikki",
+      "periodUpcoming": "Tulevat",
+      "periodRunning": "Käynnissä olevat",
+      "periodPast": "Päättyneet",
+      "resultCount": "{count, plural, =0 {Ei messuja} =1 {1 messut} other {# messut}}",
+      "empty": "Mitkään messut eivät vastaa hakuasi ja valittuja suodattimia.",
+      "reset": "Nollaa haku ja suodattimet",
+      "source": "Lähde",
+      "checkedOn": "Tarkistettu {date}"
+    },
+    "zoomIn": "Lähennä",
+    "zoomOut": "Loitonna",
+    "zoomReset": "Palauta näkymä",
+    "zoomEurope": "Euroopan näkymä",
+    "zoomCountry": "Valitse maa",
+    "zoomHint": "Ctrl + hiiren rulla tai kaksoisnapsautus: zoomaa · napsauta kaupunkia: linnuntie-etäisyys",
+    "zoomHintTouch": "Zoomaa kahdella sormella · napauta kaupunkia: linnuntie-etäisyys",
+    "zoomHintKeys": "Nuolinäppäimet siirtävät näkymää, plus ja miinus zoomaavat.",
+    "scrollHint": "Tavallinen vieritys liikuttaa vain sivua. Pidä Ctrl painettuna zoomataksesi.",
+    "distance": {
+      "title": "Linnuntie-etäisyys kahden kaupungin välillä",
+      "from": "Mistä",
+      "to": "Mihin",
+      "pick": "Valitse kaupunki",
+      "swap": "Vaihda kaupungit",
+      "result": "Linnuntietä: {km} km",
+      "resultFromTo": "Linnuntietä {from} – {to}: {km} km",
+      "note": "Laskettu isoympyrän mukaisena etäisyytenä maapallolla. Se ei ole tie-etäisyys eikä kerro matka-ajasta.",
+      "rings": "Etäisyysrenkaat kaupungin {city} ympärillä: {km} km",
+      "scale": "Mittakaava: {km} km",
+      "listTitle": "Kaupungit ja linnuntie-etäisyys kaupungista {city}",
+      "listCity": "Kaupunki",
+      "listCountry": "Maa",
+      "listKm": "Linnuntietä",
+      "noWebglTitle": "3D-näkymä ei ole käytettävissä",
+      "noWebglText": "Laitteesi ei näytä 3D-maapalloa. Taulukko sisältää samat kaupungit, messut ja etäisyydet.",
+      "reducedMotion": "Vähennetty liike on käytössä: automaattisia lentoja tai animaatioita ei ole."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Näyttöpinnat suunnittelussa",
+    "title": "Mediapinnat tarvitsevat tarkat mitat.",
+    "lead": "LED-seinät ja näytöt kuuluvat moniin messutiloihin. Otan ne mukaan asiakirjoihisi mittojen, kuvasuhteiden ja liitäntätietojen kanssa. Klipit esittävät yleisiä formaatteja; ne ovat lisensoitua esimerkkimateriaalia eivätkä omia projektejani.",
+    "placeholder": "Esimerkkiklippi {n}",
+    "placeholderNote": "Esimerkkimateriaali",
+    "caption": "Esimerkkiklippi (kuvapankkilisenssi): {title}, {format}. Ei CL Projektwerkin projekti."
+  },
+  "about": {
+    "eyebrow": "Minusta",
+    "name": "Christof Laufersweiler",
+    "role": "Suunnittelu ja projektinohjaus messuosastoille, bränditiloille ja sisustusrakentamiseen",
+    "text": "Olen Christof Laufersweiler ja olen työskennellyt messu- ja tapahtuma-alalla yli 20 vuotta. Olen koulutukseltani puutekniikan teknillinen piirtäjä; myöhemmin mukaan tulivat messuosastorakentamisen projektijohtaminen, osastorakennusyrityksen palkattu toimitusjohtajuus ja IHK-sertifikaatti messu- ja tapahtumaprojektipäällikkönä. CL Projektwerkin kautta tarjoan Leipzigissa ulkoista suunnittelu- ja projektikapasiteettia osastorakentajille, toimistoille, sisustusrakentajille ja näytteilleasettajille, jotka tarvitsevat lisäkäsiä ammattitaidolla.",
+    "close": "Päätökset pysyvät sinulla. Minä huolehdin asiakirjoista, yleiskuvasta ja yhteensovituksesta.",
+    "photoAlt": "Muotokuva Christof Laufersweilerista, CL Projektwerkin perustajasta",
+    "cta": "Keskustele projektista kanssani",
+    "career": "Ura",
+    "projects": "Projektikokemus aiemmasta työstä",
+    "projectsNote": "Nämä esimerkit ovat peräisin aiemmasta ammatillisesta työstäni vastuullisena projektipäällikkönä. Ne eivät ole CL Projektwerkin projekteja, eivätkä mainitut yritykset ole CL Projektwerkin asiakkaita.",
+    "tools": "Ohjelmistot",
+    "languages": "Kielet"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ vuotta",
+        "label": "kokemusta messu- ja tapahtuma-alalta"
+      },
+      {
+        "value": "1 200 m²",
+        "label": "suurin hallinnoitu osastopinta-ala aiemmasta työstä (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Messu- ja tapahtumaprojektipäällikön sertifikaatti (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Projektijohtaminen",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Toimitusjohtaja (palkattu)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Messuosastorakentamisen projektijohtaminen",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "12/2009",
+        "role": "Messu- ja tapahtumaprojektipäällikön sertifikaatti (kurssi, 160 opetustuntia)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Koulutus teknilliseksi piirtäjäksi, puutekniikka",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1 200 m²",
+        "note": "Useita näytteilleasettajia ja ajoneuvoja, suurikokoisia LED-näyttöjä"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1 200 m²",
+        "note": "20 m pitkä LED-seinä, teknisesti koordinoitu"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Ripustettu liimapuurakenne, ryppyittä kiristetyt tekstiiligrafiikat"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Avoin osastokonsepti LED-seinällä"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Saksa (äidinkieli)",
+      "Englanti (sujuva työkieli)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Keskustele projektista",
+    "title": "Kerro minulle projektistasi.",
+    "lead": "Neljä lyhyttä vaihetta, vähän pakollisia kenttiä. Galleriasta tallennetut konseptit liitän pyynnöstä.",
+    "response": "Vastaan yleensä {time} kuluessa.",
+    "steps": {
+      "fair": "Projekti",
+      "stand": "Laajuus",
+      "services": "Palvelu",
+      "contact": "Yhteystiedot"
+    },
+    "stepOf": "Vaihe {current} / {total}",
+    "fields": {
+      "fair": "Messut, tapahtuma tai projekti",
+      "fairPlaceholder": "esim. messuosallistuminen, brändityila tai sisustusrakentaminen",
+      "projectType": "Projektin laji",
+      "projectTypes": {
+        "fair": "Messuosasto",
+        "brand": "Brändityila",
+        "interior": "Sisustusrakentaminen",
+        "event": "Tapahtuma",
+        "open": "Vielä avoin"
+      },
+      "city": "Paikka",
+      "cityPlaceholder": "esim. Leipzig",
+      "dateFrom": "Ajankohta alkaen",
+      "dateTo": "asti",
+      "dateUnknown": "Ajankohta ei ole vielä selvillä",
+      "size": "Tilan koko (valinnainen)",
+      "width": "Leveys (m)",
+      "depth": "Syvyys (m)",
+      "area": "Pinta-ala",
+      "standType": "Osastotyyppi",
+      "standTypeUnknown": "Vielä avoin",
+      "floors": "Kerrokset",
+      "documents": "Olemassa olevat asiakirjat",
+      "documentOptions": {
+        "briefing": "Toimeksianto tai vaatimusmäärittely",
+        "cad": "CAD- tai suunnitteludata",
+        "sketches": "Luonnokset tai tunnelmataulut",
+        "renders": "Visualisoinnit",
+        "inventory": "Varantoluettelot",
+        "none": "Ei vielä mitään"
+      },
+      "services": "Tarvittava suunnittelupalvelu",
+      "scope": "Toivottu laajuus",
+      "scopes": {
+        "single": "Yksittäinen palvelu",
+        "project": "Koko projekti",
+        "quota": "Jatkuva kuukausikiintiö",
+        "open": "Vielä avoin"
+      },
+      "budget": "Projektin kokonaisbudjetti (valinnainen)",
+      "budgets": {
+        "a": "enintään 25 000 €",
+        "b": "25 000–75 000 €",
+        "c": "75 000–150 000 €",
+        "d": "yli 150 000 €",
+        "open": "En halua ilmoittaa"
+      },
+      "name": "Nimi",
+      "company": "Yritys",
+      "email": "Sähköposti",
+      "phone": "Puhelin (valinnainen)",
+      "message": "Viesti",
+      "messagePlaceholder": "Mitä pitää suunnitella? Onko vaatimuksia, aiempi rakenne tai erityisiä teknisiä tarpeita?",
+      "favorites": "Liitetyt konseptit",
+      "favoritesEmpty": "Ei tallennettuja konsepteja. Galleriassa voit kerätä konsepteja sydämellä.",
+      "consent": "Hyväksyn, että tietoni tallennetaan ja niitä käytetään tiedustelun käsittelyyn. Lisätietoja <privacy>tietosuojaselosteessa</privacy>.",
+      "privacy": "Tietosuojaseloste",
+      "required": "Pakollinen"
+    },
+    "submit": "Lähetä toimeksianto",
+    "sending": "Lähetetään",
+    "errors": {
+      "required": "Täytä tämä kenttä.",
+      "email": "Anna kelvollinen sähköpostiosoite.",
+      "consent": "Hyväksy käsittely, jotta voin vastata.",
+      "dates": "Loppu on ennen alkua.",
+      "server": "Lähetys epäonnistui. Yritä uudelleen tai kirjoita osoitteeseen {email}.",
+      "rate": "Liian monta pyyntöä lyhyessä ajassa. Yritä uudelleen muutaman minuutin kuluttua."
+    },
+    "whatsapp": "Kirjoita WhatsAppissa",
+    "callback": "Pyydä takaisinsoittoa",
+    "callbackTitle": "Pyydä takaisinsoittoa",
+    "callbackTime": "Milloin sopii?",
+    "callbackTimePlaceholder": "esim. huomenna klo 14 jälkeen",
+    "callbackSubmit": "Pyydä takaisinsoittoa",
+    "callbackDone": "Kiitos. Takaisinsoittopyyntösi on lähetetty. Yritän tavoittaa sinut ilmoittamanasi aikana.",
+    "direct": "Suoraan",
+    "notConfigured": "Ei vielä ilmoitettu",
+    "prefilled": "Valintasi: {list}",
+    "emailDraft": {
+      "prepare": "Valmistele sähköposti",
+      "title": "Sähköpostiluonnos valmis",
+      "notice": "Tietosi kootaan sähköpostiluonnokseen. Tarkista ja lähetä se itse sähköpostiohjelmassasi. Viestiä ei ole vielä lähetetty.",
+      "open": "Avaa sähköpostiohjelma",
+      "copy": "Kopioi teksti",
+      "copied": "Teksti kopioitu",
+      "fallback": "Eikö sähköpostiohjelmaa ole määritetty tai puuttuuko tietoja? Kopioi koko alla oleva teksti verkkosähköpostiisi."
+    }
+  },
+  "thanks": {
+    "title": "Kiitos toimeksiannostasi.",
+    "text": "Tiedustelusi on lähetetty. Vastaan yleensä {time} kuluessa ensimmäisellä arviolla. Automaattista vahvistusta ei lähetetä sähköpostitse. Tallennetut konseptit lähetettiin mukana.",
+    "back": "Etusivulle",
+    "designs": "Katso lisää konsepteja"
+  },
+  "selection": {
+    "title": "Valintani",
+    "lead": "Tallentamasi konseptit. Liitä ne tiedusteluun yhdellä napsautuksella.",
+    "count": "{count, plural, =0 {Ei vielä tallennettuja} =1 {1 konsepti tallennettu} other {# konseptia tallennettu}}",
+    "empty": "Ei vielä tallennettuja. Napauta galleriassa sydäntä kerätäksesi konsepteja.",
+    "toGallery": "Galleriaan",
+    "inquire": "Lähetä valinta tiedustelun mukana",
+    "clear": "Poista kaikki",
+    "remove": "Poista"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Oikeudelliset tiedot",
+    "privacy": "Tietosuoja",
+    "cookies": "Evästeasetukset",
+    "note": "Kaikki renderöinnit ja animaatiot tällä verkkosivustolla ovat suunnittelukonseptien visualisointeja. Ne eivät esitä rakennettuja messuosastoja.",
+    "top": "Ylös",
+    "languages": "Kielet",
+    "tagline": "Ulkoinen suunnittelu- ja projektitoimisto messuosastoille, brändityiloille ja sisustusrakentamiseen"
+  },
+  "cookies": {
+    "title": "Yksityisyytesi",
+    "text": "Tämä sivusto tallentaa vain sen, mikä on teknisesti välttämätöntä, esimerkiksi tallennetut konseptisi, valitun asettelun ja tämän valinnan. Tilastot ja ulkoiset palvelut ovat pois päältä, kunnes hyväksyt ne.",
+    "necessary": "Vain välttämättömät",
+    "settings": "Asetukset",
+    "acceptAll": "Salli kaikki",
+    "save": "Tallenna valinta",
+    "categories": {
+      "necessary": "Välttämättömät",
+      "necessaryText": "Kieli, tallennetut konseptit, asettelu, radion asetukset ja tämä valinta. Aina käytössä.",
+      "stats": "Tilastot",
+      "statsText": "Ei tällä hetkellä käytössä.",
+      "media": "Ulkoinen media",
+      "mediaText": "Ei tällä hetkellä käytössä. Radio yhdistää vasta, kun käynnistät sen itse."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Oikeudelliset tiedot",
+    "privacyTitle": "Tietosuojaseloste",
+    "placeholder": "Oikeudellinen teksti tulossa.",
+    "notice": "Tämän tekstin saksankielinen versio on määräävä.",
+    "updated": "Tilanne: {date}"
+  },
+  "notFound": {
+    "title": "Tätä sivua ei ole.",
+    "text": "Ehkä löydät etsimäsi konseptigalleriasta.",
+    "home": "Etusivulle",
+    "designs": "Galleriaan"
+  },
+  "layouts": {
+    "label": "Valitse asettelu",
+    "toggle": "Asettelu",
+    "short": "ASETTELU",
+    "film": "Hero: konseptianimaatio {n}",
+    "active": "käytössä",
+    "preview": "Esikatselu: {name}",
+    "hint": "Nuolinäppäimet vaihtavat asettelua, Escape sulkee valinnan.",
+    "saved": "Valintasi tallennetaan tälle laitteelle.",
+    "monoShowColour": "Näytä alkuperäiset värit",
+    "monoHideColour": "Näytä mustavalkoisena",
+    "items": {
+      "studio": "Antrasiitti ja oranssi, selkeät linjat, tarkka kuin suunnitteluateljee",
+      "aurora": "Tummat pinnat mintulla ja violetilla, serif-kirjasin, pehmeät valoliikkeet",
+      "tide": "Petrooli ja koralli, ilmeikäs kirjasin, virtaavat aallot",
+      "mono": "Johdonmukaisesti mustavalkoinen, vahva kontrasti, geometriset muodot"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "VALITSE KANAVA",
+    "close": "Pienennä soitin",
+    "stations": "Kanavat",
+    "play": "Aloita toisto",
+    "pause": "Keskeytä toisto",
+    "mute": "Mykistä",
+    "unmute": "Ota ääni käyttöön",
+    "volume": "Äänenvoimakkuus",
+    "off": "pois",
+    "hint": "Suora verkkoradio. Ääni alkaa vasta napsautuksestasi, ja säädin koskee vain tätä soitinta. Käynnistettäessä selaimesi yhdistää kanavaan.",
+    "noTrack": "Kappaletietoja ei ole saatavilla",
+    "levelNote": "Tasonäyttö on pelkkä animaatio eikä näytä todellista äänitasoa.",
+    "state": {
+      "ready": "Valmis",
+      "connecting": "Yhdistetään …",
+      "live": "Suorana",
+      "buffering": "Puskuroidaan …",
+      "stalled": "Yhteys takkuaa …",
+      "paused": "Keskeytetty",
+      "error": "Kanavaa ei tavoiteta",
+      "blocked": "Selain esti käynnistyksen. Napsauta toistoa uudelleen."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Suunnittelu ja esittely",
+    "title": "Grafiikkaa, joka sopii tilaan.",
+    "text": "Suunnitelmaan kuuluvat kuvat, jotka mahdollistavat päätökset, ja data, jota voi käyttää eteenpäin ilman uudelleentyöstöä. Laadin visualisointeja ja painovalmista grafiikkadataa, sovitettuna tilan mittoihin ja rakenteeseen sekä yrityksesi visuaaliseen ilmeeseen. Laajuus ja korjauskierrosten määrä sovitaan etukäteen. Itse painatuksen tekee painopartneri, jonka sinä tai pyynnöstä minä otan mukaan.",
+    "points": [
+      {
+        "title": "Visualisoinnit yhteensovitukseen",
+        "text": "Perspektiivit, pohjapiirros ja julkisivukuvat tekevät konseptista ymmärrettävän sinulle ja asiakkaillesi."
+      },
+      {
+        "title": "Painodata kaikilla tiedoilla",
+        "text": "Leikkuuvara, väriprofiili, mitat ja tiedostomuoto on valmisteltu painopartnerillesi."
+      },
+      {
+        "title": "Sovitettu rakenteeseen",
+        "text": "Grafiikkapinnat tarkistetaan teknisen suunnittelun seinien ja osien mittoihin."
+      },
+      {
+        "title": "Sovitut korjauskierrokset",
+        "text": "Sovimme etukäteen, montako korjauskierrosta sisältyy. Lisäkierrokset ovat lisäpalvelua."
+      },
+      {
+        "title": "Versioidut tiedostot",
+        "text": "Jokaisella versiolla on selkeä tila, jotta vain hyväksytty data menee painoon."
+      },
+      {
+        "title": "Luovutus painopartnerillesi",
+        "text": "Minä toimitan datan, erikoisyritys painaa ja tuottaa."
+      }
+    ],
+    "close": "Suunnittelu ja data minulta, tuotanto erikoisyrityksessä: jotta tila näyttää samalta kuin se hyväksyttiin.",
+    "videoLabel": "Animaatio: painodata näytöllä ja messugrafiikan suurkokopainatus (visualisointi)"
+  },
+  "drops": {
+    "rule": "Joka aamu klo 5:00 uusi konsepti",
+    "today": "Uusi tänään",
+    "next": "Seuraava konsepti",
+    "soon": "Uusi konsepti on näkyvissä.",
+    "reload": "Lataa uudelleen",
+    "complete": "Kaikki {total} konseptia ovat näkyvissä",
+    "count": "{released} / {total} näkyvissä"
+  },
+  "error": {
+    "title": "Jokin meni pieleen.",
+    "text": "Sivua ei voitu ladata kokonaan. Yritä uudelleen.",
+    "retry": "Yritä uudelleen",
+    "home": "Etusivulle"
+  },
+  "seo": {
+    "eyebrow": "Messujen tekninen suunnittelu",
+    "title": "Tekninen suunnittelu, työn valmistelu ja projektinohjaus messuosastoille ja sisustusrakentamiseen.",
+    "intro": "CL Projektwerk on ulkoinen suunnittelu- ja projektitoimisto Leipzigissa. Tuen osastorakentajia, toimistoja, sisustusrakentajia ja keskisuuria näytteilleasettajia messuosastojen suunnittelussa: mitoitetuilla valmistusasiakirjoilla, työn valmistelulla, ulkoisella projektinohjauksella, konsepteilla ja uudelleenkäytön suunnittelulla. Toteutuksen hoitavat erikoispartnerit; minä toimitan suunnittelun ja koordinoinnin.",
+    "blocks": [
+      {
+        "title": "Messujen tekninen suunnittelu",
+        "text": "Toimeksiannosta syntyvät mitoitetut detalji- ja valmistuspiirustukset, osaluettelot ja rajapinta-asiakirjat. Valmistuspartnerisi voivat työskennellä niillä, ilman että tiimisi joutuu laatimaan jokaista piirustusta itse."
+      },
+      {
+        "title": "Työn valmistelu messuosastoille ja brändityiloille",
+        "text": "Yhteenvedot materiaaleista ja määristä, valmistuspartnerikohtaiset asiakirjat sekä hankinta- ja aikataulusuunnittelu tekevät piirustuksista kulun, jonka voi organisoida."
+      },
+      {
+        "title": "Ulkoinen projektinohjaus",
+        "text": "Budjetti- ja aikataulukatsaukset, tarjousvertailut, urakoiden yhteensovitus ja dokumentoidut hyväksynnät tuovat selkeyttä, erityisesti kun useita projekteja on käynnissä yhtä aikaa."
+      },
+      {
+        "title": "Konsepti, esittely ja uudelleenkäyttö",
+        "text": "Osasto- ja tilakonseptit, visualisoinnit ja painovalmiit grafiikat auttavat yhteensovituksessa. Uudelleenkäytön suunnittelu kartoittaa olemassa olevat osat ja suunnittelee variantteja uusiin käyttökohteisiin."
+      }
+    ],
+    "faqTitle": "Usein kysyttyä",
+    "faq": [
+      {
+        "q": "Mitä yhteistyö maksaa?",
+        "a": "Se riippuu laajuudesta, tuotoksista ja määräajoista. Lyhyen toimeksiannon jälkeen saat yksilöllisen tarjouksen projektille tai kuukausikiintiölle."
+      },
+      {
+        "q": "Milloin minun kannattaa ottaa yhteyttä?",
+        "a": "Mieluiten heti, kun tehtävä ja määräaika ovat selvillä, koska kuukausittainen suunnittelukapasiteettini on rajallinen. Lyhyellä varoitusajalla tulevat tiedustelut arvioin nykyisen työtilanteeni mukaan."
+      },
+      {
+        "q": "Voinko tilata vain yhden palvelun?",
+        "a": "Kyllä. Teknisen suunnittelun, työn valmistelun, projektinohjauksen, suunnittelun ja esittelyn tai uudelleenkäytön suunnittelun voi tilata erikseen."
+      },
+      {
+        "q": "Valmistatko ja asennatko myös?",
+        "a": "En. Valmistuksen, kuljetuksen, asennuksen, rakennelaskelmat, luvat ja sähkötyöt hoitavat pätevät erikoispartnerit. Suuremmat palvelut tilaat yleensä itse suoraan; minä suunnittelen ja koordinoin."
+      },
+      {
+        "q": "Ovatko tapaamiset paikan päällä tai matkat mahdollisia?",
+        "a": "Suunnittelu tehdään pääosin Leipzigista. Tapaamiset paikan päällä ja matkat sovimme etukäteen, lisäpalveluista sovitaan erikseen."
+      },
+      {
+        "q": "Tarjoatko verkkosuunnittelua tai automaatiota?",
+        "a": "Ne eivät kuulu pääpalveluihini. Painopisteeni on messuosasto-, brändityila- ja sisustusrakennusprojektien suunnittelu ja ohjaus."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Valitse kieli",
+    "hint": "Vedä, pyyhkäise tai käännä nuolinäppäimillä",
+    "current": "nykyinen",
+    "prev": "Edellinen kieli",
+    "next": "Seuraava kieli",
+    "close": "Sulje"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Ulkoinen suunnittelu- ja projektitoimisto messuosastoille, brändityiloille ja sisustusrakentamiseen",
+    "claim": "Suunnittelua, joka toimii hallissa.",
+    "visualisationNote": "Visualisointi"
+  },
+  "structured": {
+    "serviceCatalog": "Palvelut",
+    "services": [
+      "Tekninen suunnittelu: mitoitetut detalji- ja valmistuspiirustukset, osaluettelot, rajapinta-asiakirjat",
+      "Työn valmistelu: yhteenvedot materiaaleista ja määristä, valmistusasiakirjat, hankinta- ja aikataulusuunnittelu",
+      "Projektinohjaus: budjetti- ja aikataulukatsaukset, tarjousvertailut, urakoiden yhteensovitus, muutosdokumentaatio",
+      "Suunnittelu ja esittely: osasto- ja tilakonseptit, visualisoinnit, painovalmiit grafiikat",
+      "Uudelleenkäytön suunnittelu: olemassa olevien osien kartoitus, varianttisuunnittelu, materiaali- ja varastotiedot"
+    ],
+    "keywords": [
+      "messujen tekninen suunnittelu",
+      "messuosastojen suunnittelu",
+      "ulkoinen projektinohjaus",
+      "työn valmistelu osastorakentaminen",
+      "suunnittelutoimisto Leipzig",
+      "brändityilat",
+      "sisustusrakentaminen",
+      "uudelleenkäytön suunnittelu"
+    ],
+    "genre": "Messuosastokonsepti",
+    "videoSuffix": "Konseptianimaatio aikaviiveellä"
+  },
+  "ogImage": {
+    "film": "▶ Konseptianimaatio"
+  }
+}

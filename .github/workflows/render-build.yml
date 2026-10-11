@@ -1,0 +1,28 @@
+name: Render production build
+
+on:
+  push:
+    branches: [main, render]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_INDEXING: "false"
+      NEXT_PUBLIC_CONTACT_MODE: mailto
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci --include=dev --no-audit --no-fund
+      - run: npm run build:render
+      - run: npm run test:render

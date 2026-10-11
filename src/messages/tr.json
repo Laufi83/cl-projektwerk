@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Teknik fuar planlaması ve proje yönetimi | {brand}",
+    "description": "Fuar standları, marka alanları ve iç mekân uygulamaları için harici planlama ve proje ofisi: teknik planlama, iş hazırlığı ve proje yönetimi. Projenizi görüşelim.",
+    "ogTitle": "{brand}: fuar standları, marka alanları ve iç mekân uygulamaları için planlama kapasitesi",
+    "ogDescription": "Stand yapımcıları, ajanslar, iç mekân firmaları ve katılımcılar için ölçülendirilmiş üretim belgeleri, iş hazırlığı ve proje yönetimi. İletişim: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Fuar standları, marka alanları ve iç mekân uygulamaları için ek planlama ve proje kapasitesi: proje bazlı ve açıkça kararlaştırılmış kapsamla.",
+    "designsTitle": "Stand konseptleri, her gün yeni bir tane",
+    "designsDescription": "Görselleştirmeler, kat planları ve cephe görünüşleriyle stand konseptleri, {min} – {max}. Her sabah saat 5:00'te yeni bir konsept eklenir.",
+    "designTitle": "{number} {title} · Stand konsepti",
+    "designDescription": "{title} konsepti: {size}{floors}. {description} Bir konseptin görselleştirmesi, inşa edilmiş bir stand değildir.",
+    "inquiryTitle": "Projenizi görüşelim",
+    "inquiryDescription": "Brif gönderin: fuar veya proje, tarih, mevcut belgeler ve gereken planlama hizmeti. İlk değerlendirmemle size dönerim.",
+    "selectionTitle": "Seçimim",
+    "selectionDescription": "Kaydettiğiniz stand konseptleri; bir talebe ekleyebilirsiniz.",
+    "imprintDescription": "Yasal bilgiler ve hizmet sağlayıcı bilgileri.",
+    "privacyDescription": "Bu web sitesinde kişisel verilerin işlenmesine ilişkin bilgiler."
+  },
+  "common": {
+    "skip": "İçeriğe geç",
+    "visualisation": "Görselleştirme",
+    "close": "Kapat",
+    "back": "Geri",
+    "next": "İleri",
+    "prev": "Geri",
+    "open": "Aç",
+    "view": "Görüntüle",
+    "play": "Oynat",
+    "pause": "Duraklat",
+    "loading": "Yükleniyor",
+    "placeholder": "Görsel eklenecek",
+    "later": "eklenecek",
+    "menu": "Menü",
+    "language": "Dil",
+    "drag": "Sürükle",
+    "retry": "Tekrar dene",
+    "noWebgl": "Bu cihaz veya tarayıcı 3B görünümü desteklemiyor. Şehir ve mesafe listesi aşağıdadır."
+  },
+  "nav": {
+    "services": "Hizmetler",
+    "designs": "Konseptler",
+    "process": "İş birliği",
+    "graphics": "Sunum",
+    "world": "Fuar takvimi",
+    "about": "Hakkımda",
+    "contact": "İletişim",
+    "cta": "Proje görüşmesi",
+    "selection": "Seçimim",
+    "home": "Ana sayfa",
+    "main": "Ana gezinme"
+  },
+  "hero": {
+    "eyebrow": "Harici planlama ve proje ofisi · Fuar standları, marka alanları, iç mekân uygulamaları",
+    "title": "Sahada işleyen planlama.",
+    "lead": "Stand yapımcılarına, ajanslara, iç mekân firmalarına ve katılımcılara teknik planlama, iş hazırlığı ve proje yönetimiyle destek oluyorum: proje bazlı, açıkça kararlaştırılmış kapsamla ve izlenebilir belgelerle.",
+    "cta": "Planlama kapasitesi talep et",
+    "secondary": "Konseptleri görüntüle",
+    "scroll": "Kaydırın ve görselleştirmenin nasıl oluştuğunu izleyin",
+    "progress": "Kurulum (görselleştirme)",
+    "done": "Tamamlanmış alan",
+    "design": "Konsept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Hızlandırılmış konseptler",
+    "title": "5 konsept.",
+    "lead": "Beş konsept animasyonu, bir tasarımın boş salon zemininden tamamlanmış bir alana nasıl dönüştüğünü gösterir. Bunlar görselleştirmedir; inşa edilmiş standların kayıtları değildir.",
+    "cta": "Animasyonu oynat",
+    "badge": "Konsept animasyonu",
+    "sliderLabel": "Beş konsept animasyonlu kaydırıcı. Ok tuşları gezinir, Enter açar.",
+    "explain": "Bir konseptin hızlandırılmış animasyonu. Planlanan alanın nasıl kurulabileceğini gösterir ve gerçekleştirilmiş bir standın kanıtı değildir."
+  },
+  "tagline": {
+    "text": "Her alan, tüm taraflarının güvenebileceği belgelerle başlar. O belgeleri ben hazırlıyorum."
+  },
+  "services": {
+    "eyebrow": "Hizmetler",
+    "title": "Birden fazla proje aynı anda yürüdüğünde daha fazla planlama kapasitesi.",
+    "lead": "Stand yapımcıları, ajanslar ve iç mekân firmaları; paralel projelerde, personel darboğazlarında ve teknik açıdan zorlu işlerde sınırlarına ulaşır. Harici planlamacı ve proje yöneticisi olarak, fuar ve etkinlik sektöründeki 20 yılı aşkın deneyimimle projenizin açıkça ayrılmış bölümlerini üstleniyorum. Üretim, nakliye, montaj, statik, izinler ve elektrik işlerini nitelikli uzman ortaklar gerçekleştirir.",
+    "trust": [
+      {
+        "title": "Tek muhatap",
+        "text": "planlama, belgeler ve koordinasyon için: aracılar yerine doğrudan benimle görüşürsünüz."
+      },
+      {
+        "title": "20 yılı aşkın deneyim",
+        "text": "fuar ve etkinlik sektöründe; ahşap teknolojisi alanında teknik çizimci eğitimi aldım ve sertifikalı fuar ve etkinlik proje yöneticisiyim (IHK)."
+      },
+      {
+        "title": "Açıkça tanımlı kapsam",
+        "text": "Kapsamı, düzeltme turlarını ve terminleri önceden yazılı olarak kararlaştırırım. Ek işler ve seyahatler yalnızca anlaşmayla."
+      }
+    ],
+    "package": {
+      "badge": "İş birliği",
+      "title": "Proje bazlı ya da aylık kontenjan olarak.",
+      "subtitle": "Projenizin şu anda ihtiyaç duyduğu ölçüde planlama kapasitesi.",
+      "text": "Bana bir brif gönderirsiniz, emeği tahmin eder; kapsam, çıktılar ve terminler önerisinde bulunurum. Ardından proje bazlı ya da belirli saatler, yanıt süreleri ve düzeltme turları içeren aylık kontenjan çerçevesinde çalışırım. Kapasitem sınırlıdır; yalnızca özenle yürütebileceğim projeleri kabul ederim.",
+      "cta": "Planlama kapasitesi talep et",
+      "more": "Bir proje nasıl ilerler",
+      "phases": [
+        {
+          "title": "Brif ve kapsam",
+          "items": [
+            "Görevin, terminin ve mevcut belgelerin birlikte netleştirilmesi",
+            "Yazılı olarak belirlenmiş kapsam ve çıktılar",
+            "Kararlaştırılmış düzeltme turları ve onay aşamaları",
+            "Brifin ardından kişiye özel teklif"
+          ]
+        },
+        {
+          "title": "Planlama ve belgeler",
+          "items": [
+            "Ölçülendirilmiş detay ve imalat çizimleri",
+            "Parça listeleri ve arayüz belgeleri",
+            "Malzeme ve miktar özetleri",
+            "İzlenebilir durumla sürümlenmiş dosyalar"
+          ]
+        },
+        {
+          "title": "Koordinasyon ve yönetim",
+          "items": [
+            "Bütçe ve termin özetleri",
+            "Teklif karşılaştırmaları ve satın alma planlaması",
+            "Disiplinlerin ve uzman ortakların koordinasyonu",
+            "Belgelenmiş onaylar ve değişiklikler"
+          ]
+        },
+        {
+          "title": "Teslim ve dokümantasyon",
+          "items": [
+            "Teslim için ortak bazlı imalat belgeleri",
+            "Değişikliklerin ve kararların dokümantasyonu",
+            "Yeniden kullanım için envanter ve depo bilgileri",
+            "Yerinde görüşmeler ve seyahatler, önceden anlaşılarak"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Uygulama için uzman ortaklar.",
+      "text": "Ben planlar ve koordine ederim; uygulamayı nitelikli uzman firmalar yapar. Temel modelde daha büyük üretim ve montaj hizmetlerini doğrudan kendi ortaklarınıza siz verirsiniz; isteğiniz üzerine onlarla görüşür ve belgelerini hazırlarım. CL Projektwerk bir üretim atölyesi değildir ve projeleri ön finansmanla üstlenen bir genel yüklenici olarak çalışmaz.",
+      "items": [
+        "CNC-controlled production only",
+        "Carpentry",
+        "Metalwork",
+        "Montaj ve kurulum",
+        "Nakliye ve lojistik",
+        "Statik ve kontroller",
+        "İzinler ve kabuller",
+        "Elektrik işleri",
+        "Baskı ve grafik üretimi",
+        "Medya ve etkinlik teknolojisi",
+        "… ve ihtiyaca göre diğer disiplinler"
+      ]
+    },
+    "single": {
+      "eyebrow": "Tek tek ayrı alınabilir",
+      "title": "Tam olarak eksik olduğunuz hizmet.",
+      "text": "Bir ekibiniz var ama planlama kapasiteniz yetersiz mi? O zaman yalnızca ihtiyacınız olan alanı alın; örneğin bir proje için imalat çizimlerini ya da bir fuar katılımının termin yönetimini."
+    },
+    "items": {
+      "tech": {
+        "title": "Teknik planlama",
+        "text": "Brifinize dayanarak ölçülendirilmiş detay ve imalat çizimleri, parça listeleri ve arayüz belgeleri hazırlıyorum. İmalat ortaklarınızın çalışabileceği belgeler alırsınız ve dahili planlama saatlerinden tasarruf edersiniz.",
+        "points": [
+          "Ölçülendirilmiş detay ve imalat çizimleri",
+          "Parça listeleri",
+          "Disiplinler ve ortaklarla arayüz belgeleri"
+        ],
+        "task": "Görev: brifinizi net teknik belgelere dönüştürmek.",
+        "result": "Sonuç: üzerinde anlaşılmış durumda çizimler, listeler ve arayüzler.",
+        "benefit": "Fayda: imalatta daha az soru, müşterileriniz için daha çok zaman.",
+        "link": "Örnekleri görüntüle"
+      },
+      "prep": {
+        "title": "İş hazırlığı",
+        "text": "Projenizi uygulamaya hazırlıyorum: malzeme ve miktar özetleri, ortak bazlı imalat belgeleri ile satın alma ve termin planlaması. Böylece herkes neye, ne zaman ve hangi miktarda ihtiyaç olduğunu bilir.",
+        "points": [
+          "Malzeme ve miktar özetleri",
+          "Ortak bazlı imalat belgeleri",
+          "Satın alma ve termin planlaması"
+        ],
+        "task": "Görev: uygulama için malzemeleri, miktarları ve tarihleri düzenlemek.",
+        "result": "Sonuç: her ortak için derlenmiş özetler ve belgeler.",
+        "benefit": "Fayda: kurulumda daha az eksik ve termin sürprizi.",
+        "link": "Nasıl çalışıyorum"
+      },
+      "control": {
+        "title": "Proje yönetimi",
+        "text": "Bütçeyi ve takvimi anlaşılır tutarım, teklifleri karşılaştırırım, disiplinleri koordine eder, onayları ve değişiklikleri belgelerim. Kararlar sizde kalır; ben onları hızla alınabilecek şekilde hazırlarım.",
+        "points": [
+          "Bütçe ve termin özetleri",
+          "Teklif karşılaştırmaları ve disiplinlerin koordinasyonu",
+          "Onaylar ve izlenebilir değişiklik dokümantasyonu"
+        ],
+        "task": "Görev: maliyetler, tarihler ve anlaşmalar üzerinde genel bakışı korumak.",
+        "result": "Sonuç: güncel özetler ve belgelenmiş kararlar.",
+        "benefit": "Fayda: paralel projelerde rahatlama ve net izlenebilirlik.",
+        "link": "İş birliğini görüntüle"
+      },
+      "concept": {
+        "title": "Tasarım ve sunum",
+        "text": "Stand ve mekân konseptleri geliştiriyor, görselleştirmeler ve baskıya hazır grafikler hazırlıyorum. Kapsam ve düzeltme turu sayısı önceden kararlaştırılır; böylece emek ve sonuç öngörülebilir kalır.",
+        "points": [
+          "Stand ve mekân konseptleri",
+          "Koordinasyon ve sunum için görselleştirmeler",
+          "Kararlaştırılmış düzeltme turlarıyla baskıya hazır grafikler"
+        ],
+        "task": "Görev: bir fikri, sizin ve müşterilerinizin karar verebileceği şekilde göstermek.",
+        "result": "Sonuç: kararlaştırılan kapsamda konsept, görselleştirmeler ve baskı verileri.",
+        "benefit": "Fayda: anlaşılır görseller ve planlar temelinde erken kararlar.",
+        "link": "Konseptleri görüntüle"
+      },
+      "reuse": {
+        "title": "Yeniden kullanım planlaması",
+        "text": "Mevcut bileşenleri kaydediyor, yeni kullanımlar için varyantlar planlıyor ve malzeme ile depo bilgilerini güncel tutuyorum. Böylece her seferinde sıfırdan planlamak yerine eldekini amaca uygun yeniden kullanabilirsiniz.",
+        "points": [
+          "Mevcut bileşenlerin envanteri",
+          "Yeni kullanımlar için varyant planlaması",
+          "Malzeme ve depo bilgileri"
+        ],
+        "task": "Görev: mevcut bileşenleri kaydetmek ve yeni kurulumlar için kullanılabilir kılmak.",
+        "result": "Sonuç: envanter listesi, varyantlar ve depo bilgileri.",
+        "benefit": "Fayda: yinelenen kurulumlarda daha az yeniden planlama ve malzeme kullanımı.",
+        "link": "Talep gönder"
+      }
+    },
+    "inquire": "Talep et",
+    "cta": {
+      "title": "Bir sonraki projeniz bir brifle başlar.",
+      "text": "Görevi, terminini ve mevcut belgeleri kısaca anlatın. İlk değerlendirmem ve sonraki adımlarla size dönerim. Teklifi brifin ardından kişiye özel olarak alırsınız.",
+      "button": "Brif gönder",
+      "phone": "Doğrudan konuşmayı mı tercih edersiniz?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Konsept galerisi · her gün yeni",
+    "title": "Her gün yeni bir konsept.",
+    "lead": "Şu anda {total} stand konseptinden {count} tanesi görünür, {min} – {max}. Her sabah saat 5:00'te yenisi eklenir. Tüm görseller konseptlerin görselleştirmesidir. Göz atın, filtreleyin, kaydedin ve doğrudan talep edin.",
+    "slider": "Kaydırıcı",
+    "grid": "Izgara",
+    "viewMode": "Görünüm",
+    "random": "Rastgele konsept",
+    "dayPick": "Günün konsepti",
+    "hint": "Sürükleyin, kaydırın veya ok tuşlarını kullanın",
+    "hintTouch": "Yana kaydırın",
+    "count": "{count} / {total}",
+    "empty": "Bu filtrelere uyan konsept yok.",
+    "reset": "Filtreleri sıfırla",
+    "filters": "Filtreler",
+    "listTitle": "Görünen tüm konseptlere genel bakış",
+    "sliderLabel": "Konsept kaydırıcısı. Ok tuşları gezinir, Enter açar.",
+    "current": "Şu an: {number} {title}",
+    "loadingSlider": "Kaydırıcı yükleniyor",
+    "cardAlt": "{number} {title} konsepti: bir stand konseptinin görselleştirmesi",
+    "filter": {
+      "all": "Tümü",
+      "clip": "Konsept animasyonlu",
+      "two-storey": "İki katlı",
+      "size-s": "Kompakt, 30 m²'ye kadar",
+      "size-m": "Orta, 150 m²'ye kadar",
+      "size-l": "Büyük, 150 m²'den",
+      "wood": "Ahşap",
+      "green": "Bitkilendirme",
+      "metal": "Metal",
+      "light": "Işık",
+      "container": "Konteynerler",
+      "product": "Ürün standları",
+      "real-estate": "Gayrimenkul fuarı",
+      "outdoor": "Açık alan"
+    }
+  },
+  "detail": {
+    "facts": "Temel veriler",
+    "area": "Alan",
+    "floors": "Katlar",
+    "standType": "Stand tipi",
+    "height": "Yükseklik",
+    "materials": "Malzemeler",
+    "colours": "Renkler",
+    "series": "Seri",
+    "floorsValue": "{count, plural, =1 {tek katlı} =2 {iki katlı} other {# katlı}}",
+    "standTypes": {
+      "corner": "Köşe stand",
+      "head": "Baş stand",
+      "island": "Ada stand",
+      "row": "Sıra stand"
+    },
+    "renderings": "Görselleştirmeler",
+    "plans": "Planlar",
+    "floorplan": "Kat planı",
+    "elevation": "Cephe görünüşü",
+    "download": "İndir",
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır",
+    "zoomReset": "Görünümü sıfırla",
+    "fullscreen": "Tam ekran",
+    "clip": "Hızlandırılmış konsept animasyonu",
+    "favorite": "Seçime ekle",
+    "favorited": "Seçiminizde",
+    "share": "Paylaş",
+    "shareWhatsapp": "WhatsApp ile paylaş",
+    "shareLinkedin": "LinkedIn'de paylaş",
+    "copyLink": "Bağlantıyı kopyala",
+    "copied": "Bağlantı kopyalandı",
+    "inquire": "Bu konsept hakkında talep",
+    "prevDesign": "Önceki konsept",
+    "nextDesign": "Sonraki konsept",
+    "backToGallery": "Galeriye dön",
+    "imageOf": "Görsel {current} / {total}",
+    "description": "Açıklama",
+    "placeholderImage": "Görsel eklenecek",
+    "conceptNote": "Konsept tasarım. Görsel bir görselleştirmedir ve inşa edilmiş bir stand göstermez.",
+    "imageAlt": "{title}: {label} (görselleştirme)",
+    "planAlt": "{title}: {label} (konseptin plan çizimi)",
+    "clipAlt": "{title}: kurulumun konsept animasyonu (görselleştirme)"
+  },
+  "process": {
+    "eyebrow": "İş birliği",
+    "title": "Brifden teslime altı adım.",
+    "steps": {
+      "briefing": {
+        "title": "Brif ve kapsam",
+        "text": "Görev, termin, mevcut belgeler ve istenen sonuçlar. Neyi teslim ettiğimi, kaç düzeltme turu öngörüldüğünü ve kimin onay verdiğini belirleriz.",
+        "alt": "Brif için eskiz animasyonu (görselleştirme)"
+      },
+      "concept": {
+        "title": "Konsept ve koordinasyon",
+        "text": "Mekân fikri, görselleştirmeler, kat planı ve cepheler. Alanı birden çok açıdan görür ve teknik ayrıntıya geçilmeden önce rahatça karar verirsiniz.",
+        "alt": "Tasarımın konsept animasyonu (görselleştirme)"
+      },
+      "planning": {
+        "title": "Teknik planlama",
+        "text": "Ölçülendirilmiş detay ve imalat çizimleri, parça listeleri ve arayüz belgeleri. Statik, izinler ve elektrik projesini nitelikli uzman ortaklar üstlenir; arayüzleri ben koordine ederim.",
+        "alt": "Teknik planlama animasyonu (görselleştirme)"
+      },
+      "production": {
+        "title": "İş hazırlığı ve imalat belgeleri",
+        "text": "Malzeme ve miktar özetleri ile her imalat ortağı için belgeler, ayrıca satın alma ve termin planlaması. Üretim ilgili uzman firmada yapılır, bende değil.",
+        "alt": "İmalat verilerine örnek olarak CNC işleme animasyonu (görselleştirme); üretimi uzman ortak gerçekleştirir"
+      },
+      "logistics": {
+        "title": "Disiplinlerin koordinasyonu",
+        "text": "Termin özeti, teklif karşılaştırmaları ve disiplinler arası koordinasyon; nakliye, kurulum ve teknik birbirine uysun diye. İşi uzman ortaklarınız gerçekleştirir.",
+        "alt": "Kurulumun hızlandırılmış konsept animasyonu (görselleştirme)"
+      },
+      "onsite": {
+        "title": "Onaylar, değişiklikler ve teslim",
+        "text": "Onayları ve değişiklikleri izlenebilir biçimde belgeler, sonunda tüm belgeleri size teslim ederim. Önceden kararlaştırılmışsa yerinde görüşmeler mümkündür.",
+        "alt": "Teslimin konsept animasyonu (görselleştirme)"
+      }
+    },
+    "sketch": "Eskiz"
+  },
+  "world": {
+    "eyebrow": "Fuar takvimi",
+    "title": "Almanya ve Avrupa'da fuarlar.",
+    "lead": "Proje planlamanıza yön vermesi için Almanya ve Avrupa'daki fuar tarihlerine genel bir bakış. Bir şehir seçin; küre konumu ve Leipzig'e kuş uçuşu mesafeyi gösterir. Takvimdeki bir tarih, CL Projektwerk'in işleri veya katılımı hakkında hiçbir şey söylemez.",
+    "placeholderNote": "Örnek konumlar",
+    "listLabel": "Fuar şehirleri",
+    "drag": "Küreyi döndür",
+    "base": "Merkez",
+    "regions": {
+      "de": "Almanya",
+      "eu": "Avrupa"
+    },
+    "calendar": {
+      "eyebrow": "Fuar takvimi",
+      "title": "Her şehirde bir sonraki fuar.",
+      "lead": "Her şehir için bir sonraki öncü fuar, kalkış panosundaki gibi kronolojik sırayla görünür. Panoyu kaydırın: küre seçiminizi takip eder.",
+      "summary": "{cities} fuar şehri · Leipzig'den başlayan rotada {km} km kuş uçuşu",
+      "boardLabel": "Fuar takvimi: şehir başına bir sonraki fuar",
+      "cols": {
+        "date": "Tarih",
+        "dest": "Varış",
+        "fair": "Fuar",
+        "status": "Durum"
+      },
+      "running": "Şu anda devam ediyor",
+      "today": "Bugün",
+      "tomorrow": "Yarın",
+      "inDays": "{days} gün sonra",
+      "tba": "Tarih sonra",
+      "past": "Sona erdi",
+      "tbaNote": "Bu şehir için şu anda onaylanmış bir öncü fuar tarihi kayıtlı değil.",
+      "dateTbc": "Tarih onaylanmadı",
+      "fairName": "Fuar",
+      "venue": "Fuar alanı",
+      "route": "Kuş uçuşu",
+      "homeBase": "Merkezim",
+      "km": "{km} km",
+      "localTime": "Yerel saat",
+      "website": "Organizatör web sitesi",
+      "inquire": "{fair} için proje görüşmesi",
+      "tourPause": "Turu duraklat",
+      "tourPlay": "Turu sürdür",
+      "note": "Tarihler organizatörlerin bilgilerine göredir, {date} tarihinde kontrol edilmiştir. Değişiklikler olabilir; organizatörlerin web siteleri esastır. Fuar adları sahiplerinin markalarıdır. Tarihler, CL Projektwerk'in işleri veya katılımı hakkında hiçbir şey söylemez.",
+      "search": "Fuar veya şehir ara",
+      "searchPlaceholder": "ör. Düsseldorf veya inşaat",
+      "filterCountry": "Ülke",
+      "filterCity": "Şehir",
+      "filterPeriod": "Dönem",
+      "filterSector": "Sektör",
+      "filterAll": "Tümü",
+      "periodUpcoming": "Yaklaşan",
+      "periodRunning": "Devam eden",
+      "periodPast": "Geçmiş",
+      "resultCount": "{count, plural, =0 {Fuar yok} =1 {1 fuar} other {# fuar}}",
+      "empty": "Aramanıza ve seçilen filtrelere uyan fuar yok.",
+      "reset": "Aramayı ve filtreleri sıfırla",
+      "source": "Kaynak",
+      "checkedOn": "{date} tarihinde kontrol edildi"
+    },
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır",
+    "zoomReset": "Görünümü sıfırla",
+    "zoomEurope": "Avrupa görünümü",
+    "zoomCountry": "Ülke seç",
+    "zoomHint": "Ctrl + fare tekerleği veya çift tıklama: yakınlaştır · bir şehre tıkla: kuş uçuşu mesafe",
+    "zoomHintTouch": "İki parmakla yakınlaştır · bir şehre dokun: kuş uçuşu mesafe",
+    "zoomHintKeys": "Ok tuşları görünümü kaydırır, artı ve eksi yakınlaştırır ve uzaklaştırır.",
+    "scrollHint": "Normal kaydırma yalnızca sayfayı hareket ettirir. Yakınlaştırmak için Ctrl tuşunu basılı tutun.",
+    "distance": {
+      "title": "İki şehir arasındaki kuş uçuşu mesafe",
+      "from": "Nereden",
+      "to": "Nereye",
+      "pick": "Şehir seç",
+      "swap": "Şehirleri değiştir",
+      "result": "Kuş uçuşu: {km} km",
+      "resultFromTo": "Kuş uçuşu {from} – {to}: {km} km",
+      "note": "Yer küresi üzerinde büyük daire mesafesi olarak hesaplanır. Bu bir karayolu mesafesi değildir ve seyahat süresi hakkında bilgi vermez.",
+      "rings": "{city} çevresinde mesafe halkaları: {km} km",
+      "scale": "Ölçek: {km} km",
+      "listTitle": "{city} şehrinden şehirler ve kuş uçuşu mesafe",
+      "listCity": "Şehir",
+      "listCountry": "Ülke",
+      "listKm": "Kuş uçuşu",
+      "noWebglTitle": "3B görünüm kullanılamıyor",
+      "noWebglText": "Cihazınız 3B küreyi göstermiyor. Tablo aynı şehirleri, fuarları ve mesafeleri içerir.",
+      "reducedMotion": "Azaltılmış hareket etkin: otomatik uçuşlar ve animasyonlar yok."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Planlamada ekran yüzeyleri",
+    "title": "Medya yüzeyleri kesin ölçülere ihtiyaç duyar.",
+    "lead": "LED duvarlar ve monitörler birçok fuar alanının parçasıdır. Onları ölçüler, en-boy oranları ve bağlantı verileriyle belgelerinize dahil ediyorum. Klipler yaygın formatları gösterir; lisanslı örnek materyaldir, kendi projelerim değildir.",
+    "placeholder": "Örnek klip {n}",
+    "placeholderNote": "Örnek materyal",
+    "caption": "Örnek klip (stok lisansı): {title}, {format}. CL Projektwerk projesi değildir."
+  },
+  "about": {
+    "eyebrow": "Hakkımda",
+    "name": "Christof Laufersweiler",
+    "role": "Fuar standları, marka alanları ve iç mekân uygulamaları için planlama ve proje yönetimi",
+    "text": "Ben Christof Laufersweiler ve 20 yılı aşkın süredir fuar ve etkinlik sektöründe çalışıyorum. Ahşap teknolojisi alanında teknik çizimci olarak yetiştim; sonrasında stand yapımında proje yönetimi, bir stand yapım şirketinde ücretli genel müdürlük ve fuar ve etkinlik proje yöneticisi olarak bir IHK sertifikası eklendi. CL Projektwerk ile Leipzig'de, uzmanlıkla donatılmış ek ele ihtiyaç duyan stand yapımcıları, ajanslar, iç mekân firmaları ve katılımcılar için harici planlama ve proje kapasitesi sunuyorum.",
+    "close": "Kararlar sizde kalır. Belgeleri, genel bakışı ve koordinasyonu ben sağlarım.",
+    "photoAlt": "CL Projektwerk'in kurucusu Christof Laufersweiler'in portresi",
+    "cta": "Benimle proje görüşmesi",
+    "career": "Kariyer",
+    "projects": "Önceki çalışmalardan proje deneyimi",
+    "projectsNote": "Bu örnekler, sorumlu proje yöneticisi olarak önceki mesleki çalışmamdan gelmektedir. CL Projektwerk projeleri değildir ve adı geçen firmalar CL Projektwerk'in müşterisi değildir.",
+    "tools": "Yazılım",
+    "languages": "Diller"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ yıl",
+        "label": "fuar ve etkinlik sektöründe deneyim"
+      },
+      {
+        "value": "1.200 m²",
+        "label": "önceki çalışmadan en büyük yönetilen stand alanı (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Fuar ve Etkinlik Proje Yöneticisi sertifikası (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Proje yönetimi",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Genel müdür (ücretli çalışan)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Fuar standı yapımında proje yönetimi",
+        "org": "MEPLAN GmbH, Münih"
+      },
+      {
+        "years": "12/2009",
+        "role": "Fuar ve Etkinlik Proje Yöneticisi sertifikası (kurs, 160 ders saati)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Teknik çizimci eğitimi, ahşap teknolojisi",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1.200 m²",
+        "note": "Birden çok katılımcı ve araç, büyük ölçekli LED ekranlar"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1.200 m²",
+        "note": "20 m uzunluğunda LED duvar, teknik olarak koordine edildi"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, Münih",
+        "size": "360 m²",
+        "note": "Lamine ahşaptan asma yapı, kırışıksız gerilmiş tekstil grafikleri"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "LED duvarlı açık stand konsepti"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Almanca (ana dil)",
+      "İngilizce (iş hayatında akıcı)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Proje görüşmesi",
+    "title": "Bana projenizden bahsedin.",
+    "lead": "Dört kısa adım, az sayıda zorunlu alan. Galeriden kaydettiğiniz konseptleri isteğiniz üzerine eklerim.",
+    "response": "Genellikle {time} içinde yanıt veririm.",
+    "steps": {
+      "fair": "Proje",
+      "stand": "Kapsam",
+      "services": "Hizmet",
+      "contact": "İletişim"
+    },
+    "stepOf": "Adım {current} / {total}",
+    "fields": {
+      "fair": "Fuar, etkinlik veya proje",
+      "fairPlaceholder": "ör. fuar katılımı, marka alanı veya iç mekân uygulaması",
+      "projectType": "Proje türü",
+      "projectTypes": {
+        "fair": "Fuar standı",
+        "brand": "Marka alanı",
+        "interior": "İç mekân uygulaması",
+        "event": "Etkinlik",
+        "open": "Henüz açık"
+      },
+      "city": "Yer",
+      "cityPlaceholder": "ör. Leipzig",
+      "dateFrom": "Tarih başlangıcı",
+      "dateTo": "bitişi",
+      "dateUnknown": "Tarih henüz belli değil",
+      "size": "Alanın büyüklüğü (isteğe bağlı)",
+      "width": "Genişlik (m)",
+      "depth": "Derinlik (m)",
+      "area": "Alan",
+      "standType": "Stand tipi",
+      "standTypeUnknown": "Henüz açık",
+      "floors": "Katlar",
+      "documents": "Mevcut belgeler",
+      "documentOptions": {
+        "briefing": "Brif veya şartname",
+        "cad": "CAD veya planlama verileri",
+        "sketches": "Eskizler veya moodboard'lar",
+        "renders": "Görselleştirmeler",
+        "inventory": "Envanter listeleri",
+        "none": "Henüz yok"
+      },
+      "services": "Gereken planlama hizmeti",
+      "scope": "İstenen kapsam",
+      "scopes": {
+        "single": "Tek hizmet",
+        "project": "Komple proje",
+        "quota": "Süregelen aylık kontenjan",
+        "open": "Henüz açık"
+      },
+      "budget": "Projenin toplam bütçesi (isteğe bağlı)",
+      "budgets": {
+        "a": "25.000 €'ya kadar",
+        "b": "25.000 – 75.000 €",
+        "c": "75.000 – 150.000 €",
+        "d": "150.000 € üzeri",
+        "open": "Belirtmek istemiyorum"
+      },
+      "name": "Ad",
+      "company": "Firma",
+      "email": "E-posta",
+      "phone": "Telefon (isteğe bağlı)",
+      "message": "Mesaj",
+      "messagePlaceholder": "Neyin planlanması gerekiyor? Şartlar, önceki bir kurulum veya özel teknik gereksinimler var mı?",
+      "favorites": "Eklenen konseptler",
+      "favoritesEmpty": "Kayıtlı konsept yok. Galeride kalp ile konsept toplayabilirsiniz.",
+      "consent": "Bilgilerimin talebin işlenmesi için saklanmasını ve kullanılmasını kabul ediyorum. Ayrıntılar <privacy>gizlilik politikasında</privacy>.",
+      "privacy": "Gizlilik politikası",
+      "required": "Zorunlu"
+    },
+    "submit": "Brif gönder",
+    "sending": "Gönderiliyor",
+    "errors": {
+      "required": "Lütfen doldurun.",
+      "email": "Lütfen geçerli bir e-posta adresi girin.",
+      "consent": "Yanıt verebilmem için lütfen işlemeyi onaylayın.",
+      "dates": "Bitiş, başlangıçtan önce.",
+      "server": "Gönderim başarısız oldu. Lütfen tekrar deneyin veya {email} adresine yazın.",
+      "rate": "Kısa sürede çok fazla talep. Lütfen birkaç dakika sonra tekrar deneyin."
+    },
+    "whatsapp": "WhatsApp ile yaz",
+    "callback": "Geri arama talep et",
+    "callbackTitle": "Geri arama talep et",
+    "callbackTime": "Size ne zaman uygun?",
+    "callbackTimePlaceholder": "ör. yarın saat 14'ten sonra",
+    "callbackSubmit": "Geri arama talep et",
+    "callbackDone": "Teşekkürler. Geri arama talebiniz iletildi. Belirttiğiniz zamanda size ulaşmaya çalışacağım.",
+    "direct": "Doğrudan",
+    "notConfigured": "Henüz belirtilmedi",
+    "prefilled": "Seçiminiz: {list}",
+    "emailDraft": {
+      "prepare": "E-posta hazırla",
+      "title": "E-posta taslağı hazır",
+      "notice": "Bilgileriniz e-posta taslağı olarak hazırlanır. Kendi e-posta uygulamanızda kontrol edip gönderin. Henüz mesaj gönderilmedi.",
+      "open": "E-posta uygulamasını aç",
+      "copy": "Metni kopyala",
+      "copied": "Metin kopyalandı",
+      "fallback": "E-posta uygulaması ayarlı değil mi veya bilgiler eksik mi? Aşağıdaki tam metni web postanıza kopyalayın."
+    }
+  },
+  "thanks": {
+    "title": "Brifiniz için teşekkürler.",
+    "text": "Talebiniz iletildi. Genellikle {time} içinde ilk değerlendirmemle yanıt veririm. Otomatik e-posta onayı gönderilmez. Kayıtlı konseptler birlikte gönderildi.",
+    "back": "Ana sayfaya",
+    "designs": "Daha fazla konsept görüntüle"
+  },
+  "selection": {
+    "title": "Seçimim",
+    "lead": "Kaydettiğiniz konseptler. Tek tıkla bir talebe ekleyin.",
+    "count": "{count, plural, =0 {Henüz bir şey kaydedilmedi} =1 {1 konsept kaydedildi} other {# konsept kaydedildi}}",
+    "empty": "Henüz bir şey kaydedilmedi. Konsept toplamak için galeride kalbe dokunun.",
+    "toGallery": "Galeriye",
+    "inquire": "Seçimi talebe ekleyerek gönder",
+    "clear": "Tümünü kaldır",
+    "remove": "Kaldır"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Yasal bilgiler",
+    "privacy": "Gizlilik",
+    "cookies": "Çerez ayarları",
+    "note": "Bu web sitesindeki tüm render ve animasyonlar tasarım konseptlerinin görselleştirmesidir. İnşa edilmiş fuar standlarını göstermez.",
+    "top": "Yukarı",
+    "languages": "Diller",
+    "tagline": "Fuar standları, marka alanları ve iç mekân uygulamaları için harici planlama ve proje ofisi"
+  },
+  "cookies": {
+    "title": "Gizliliğiniz",
+    "text": "Bu web sitesi yalnızca teknik olarak gerekli olanı saklar; örneğin kayıtlı konseptlerinizi, seçilen düzeni ve bu seçimi. İstatistik ve harici hizmetler siz onaylayana kadar kapalıdır.",
+    "necessary": "Yalnızca gerekli olanlar",
+    "settings": "Ayarlar",
+    "acceptAll": "Tümüne izin ver",
+    "save": "Seçimi kaydet",
+    "categories": {
+      "necessary": "Gerekli",
+      "necessaryText": "Dil, kayıtlı konseptler, düzen, radyo ayarları ve bu seçim. Her zaman etkin.",
+      "stats": "İstatistik",
+      "statsText": "Şu anda kullanılmıyor.",
+      "media": "Harici medya",
+      "mediaText": "Şu anda kullanılmıyor. Radyo ancak siz kendiniz başlattığınızda bağlanır."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Yasal bilgiler",
+    "privacyTitle": "Gizlilik politikası",
+    "placeholder": "Hukuki metin eklenecek.",
+    "notice": "Bu metnin Almanca sürümü esastır.",
+    "updated": "Tarih: {date}"
+  },
+  "notFound": {
+    "title": "Bu sayfa mevcut değil.",
+    "text": "Aradığınızı belki konsept galerisinde bulursunuz.",
+    "home": "Ana sayfaya",
+    "designs": "Galeriye"
+  },
+  "layouts": {
+    "label": "Düzen seç",
+    "toggle": "Düzen",
+    "short": "DÜZEN",
+    "film": "Hero: konsept animasyonu {n}",
+    "active": "etkin",
+    "preview": "Önizleme: {name}",
+    "hint": "Ok tuşları düzeni değiştirir, Escape seçimi kapatır.",
+    "saved": "Seçiminiz bu cihazda saklanır.",
+    "monoShowColour": "Orijinal renkleri göster",
+    "monoHideColour": "Siyah beyaz göster",
+    "items": {
+      "studio": "Antrasit ve turuncu, net çizgiler, bir planlama atölyesi gibi hassas",
+      "aurora": "Nane ve mor ile koyu yüzeyler, serifli yazı tipi, yumuşak ışık hareketleri",
+      "tide": "Petrol ve mercan, etkileyici yazı tipi, akıcı dalgalar",
+      "mono": "Tutarlı biçimde siyah ve beyaz, güçlü kontrast, geometrik biçimler"
+    }
+  },
+  "radio": {
+    "label": "Radyo",
+    "title": "Radyo",
+    "choose": "İSTASYON SEÇ",
+    "close": "Oynatıcıyı daralt",
+    "stations": "İstasyonlar",
+    "play": "Oynatmayı başlat",
+    "pause": "Oynatmayı duraklat",
+    "mute": "Sessize al",
+    "unmute": "Sesi aç",
+    "volume": "Ses düzeyi",
+    "off": "kapalı",
+    "hint": "Canlı web radyosu. Ses ancak tıklamanızdan sonra başlar ve ayar yalnızca bu oynatıcı için geçerlidir. Başlatıldığında tarayıcınız istasyona bağlanır.",
+    "noTrack": "Parça bilgisi mevcut değil",
+    "levelNote": "Seviye göstergesi salt animasyondur ve gerçek ses seviyesini yansıtmaz.",
+    "state": {
+      "ready": "Hazır",
+      "connecting": "Bağlanıyor …",
+      "live": "Canlı",
+      "buffering": "Arabelleğe alınıyor …",
+      "stalled": "Bağlantı takılıyor …",
+      "paused": "Duraklatıldı",
+      "error": "İstasyona ulaşılamıyor",
+      "blocked": "Başlatma tarayıcı tarafından engellendi. Lütfen oynat'a tekrar tıklayın."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Tasarım ve sunum",
+    "title": "Alana uyan grafik.",
+    "text": "Bir tasarıma, karar vermeyi sağlayan görseller ve yeniden işlem gerektirmeden kullanılabilen veriler gerekir. Alanın ölçülerine ve yapısına ve kurumsal kimliğinize uyarlanmış görselleştirmeler ve baskıya hazır grafik verileri hazırlıyorum. Kapsam ve düzeltme turu sayısı önceden kararlaştırılır. Baskının kendisi, sizin ya da isteğiniz üzerine benim devreye aldığım bir baskı ortağında yapılır.",
+    "points": [
+      {
+        "title": "Koordinasyon için görselleştirmeler",
+        "text": "Perspektifler, kat planı ve cepheler konsepti sizin ve müşterileriniz için anlaşılır kılar."
+      },
+      {
+        "title": "Tüm bilgileriyle baskı verileri",
+        "text": "Taşma payı, renk profili, ölçüler ve dosya biçimi baskı ortağınız için hazırlanır."
+      },
+      {
+        "title": "Yapıya uyarlanmış",
+        "text": "Grafik yüzeyler, teknik planlamadaki duvar ve bileşen ölçüleriyle karşılaştırılır."
+      },
+      {
+        "title": "Kararlaştırılmış düzeltme turları",
+        "text": "Kaç düzeltme turunun dahil olduğunu önceden belirleriz. Ek turlar ek hizmettir."
+      },
+      {
+        "title": "Sürümlenmiş dosyalar",
+        "text": "Her sürümün net bir durumu vardır; böylece baskıya yalnızca onaylı veriler gider."
+      },
+      {
+        "title": "Baskı ortağınıza teslim",
+        "text": "Verileri ben sağlarım, uzman firma basar ve üretir."
+      }
+    ],
+    "close": "Tasarım ve veriler benden, üretim uzman firmada: alan, onaylandığı gibi görünsün diye.",
+    "videoLabel": "Animasyon: monitörde baskı verileri ve bir fuar grafiğinin büyük format baskısı (görselleştirme)"
+  },
+  "drops": {
+    "rule": "Her sabah saat 5:00'te yeni bir konsept",
+    "today": "Bugün yeni",
+    "next": "Sonraki konsepte kalan süre",
+    "soon": "Yeni bir konsept görünür.",
+    "reload": "Yeniden yükle",
+    "complete": "{total} konseptin tamamı görünür",
+    "count": "{released} / {total} görünür"
+  },
+  "error": {
+    "title": "Bir şeyler ters gitti.",
+    "text": "Sayfa tam olarak yüklenemedi. Lütfen tekrar deneyin.",
+    "retry": "Tekrar dene",
+    "home": "Ana sayfaya"
+  },
+  "seo": {
+    "eyebrow": "Teknik fuar planlaması",
+    "title": "Fuar standları ve iç mekân uygulamaları için teknik planlama, iş hazırlığı ve proje yönetimi.",
+    "intro": "CL Projektwerk, Leipzig'de harici bir planlama ve proje ofisidir. Stand yapımcılarını, ajansları, iç mekân firmalarını ve orta ölçekli katılımcıları fuar standı planlamasında destekliyorum: ölçülendirilmiş imalat belgeleri, iş hazırlığı, harici proje yönetimi, konseptler ve yeniden kullanım planlaması ile. Uygulamayı uzman ortaklar yapar; ben planlama ve koordinasyonu sunarım.",
+    "blocks": [
+      {
+        "title": "Teknik fuar planlaması",
+        "text": "Brifden ölçülendirilmiş detay ve imalat çizimleri, parça listeleri ve arayüz belgeleri oluşur. İmalat ortaklarınız bunlarla çalışabilir; ekibinizin her çizimi kendisinin hazırlaması gerekmez."
+      },
+      {
+        "title": "Fuar standları ve marka alanları için iş hazırlığı",
+        "text": "Malzeme ve miktar özetleri, imalat ortağı başına belgeler ile satın alma ve termin planlaması çizimleri organize edilebilir bir akışa dönüştürür."
+      },
+      {
+        "title": "Harici proje yönetimi",
+        "text": "Bütçe ve termin özetleri, teklif karşılaştırmaları, disiplinlerin koordinasyonu ve belgelenmiş onaylar; özellikle birden fazla proje aynı anda yürürken genel bakış sağlar."
+      },
+      {
+        "title": "Konsept, sunum ve yeniden kullanım",
+        "text": "Stand ve mekân konseptleri, görselleştirmeler ve baskıya hazır grafikler koordinasyona yardımcı olur. Yeniden kullanım planlaması mevcut bileşenleri kaydeder ve yeni kullanımlar için varyantlar planlar."
+      }
+    ],
+    "faqTitle": "Sık sorulan sorular",
+    "faq": [
+      {
+        "q": "İş birliğinin maliyeti nedir?",
+        "a": "Kapsama, çıktılara ve terminlere bağlıdır. Kısa bir brifin ardından proje ya da aylık kontenjan için kişiye özel teklif alırsınız."
+      },
+      {
+        "q": "Ne zaman başvurmalıyım?",
+        "a": "En iyisi görev ve termin netleşir netleşmez, çünkü aylık planlama kapasitem sınırlıdır. Kısa süreli talepleri güncel iş yüküme göre değerlendiririm."
+      },
+      {
+        "q": "Yalnızca tek bir hizmeti de alabilir miyim?",
+        "a": "Evet. Teknik planlama, iş hazırlığı, proje yönetimi, tasarım ve sunum veya yeniden kullanım planlaması ayrı ayrı alınabilir."
+      },
+      {
+        "q": "Üretim ve montaj da yapıyor musunuz?",
+        "a": "Hayır. Üretimi, nakliyeyi, montajı, statiği, izinleri ve elektrik işlerini nitelikli uzman ortaklar yapar. Daha büyük hizmetleri genellikle siz doğrudan verirsiniz; ben planlar ve koordine ederim."
+      },
+      {
+        "q": "Yerinde görüşmeler veya seyahatler mümkün mü?",
+        "a": "Planlama ağırlıklı olarak Leipzig'den yapılır. Yerinde görüşmeleri ve seyahatleri önceden kararlaştırırız; ek hizmetler ayrıca anlaşılır."
+      },
+      {
+        "q": "Web tasarımı veya otomasyon sunuyor musunuz?",
+        "a": "Bunlar ana hizmetlerim arasında değildir. Odağım fuar standı, marka alanı ve iç mekân uygulama projelerinin planlanması ve yönetilmesidir."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Dil seç",
+    "hint": "Sürükleyin, kaydırın veya ok tuşlarıyla döndürün",
+    "current": "geçerli",
+    "prev": "Önceki dil",
+    "next": "Sonraki dil",
+    "close": "Kapat"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Fuar standları, marka alanları ve iç mekân uygulamaları için harici planlama ve proje ofisi",
+    "claim": "Sahada işleyen planlama.",
+    "visualisationNote": "Görselleştirme"
+  },
+  "structured": {
+    "serviceCatalog": "Hizmetler",
+    "services": [
+      "Teknik planlama: ölçülendirilmiş detay ve imalat çizimleri, parça listeleri, arayüz belgeleri",
+      "İş hazırlığı: malzeme ve miktar özetleri, imalat belgeleri, satın alma ve termin planlaması",
+      "Proje yönetimi: bütçe ve termin özetleri, teklif karşılaştırmaları, disiplinlerin koordinasyonu, değişiklik dokümantasyonu",
+      "Tasarım ve sunum: stand ve mekân konseptleri, görselleştirmeler, baskıya hazır grafikler",
+      "Yeniden kullanım planlaması: mevcut bileşenlerin envanteri, varyant planlaması, malzeme ve depo bilgileri"
+    ],
+    "keywords": [
+      "teknik fuar planlaması",
+      "fuar standı planlaması",
+      "harici proje yönetimi",
+      "iş hazırlığı stand yapımı",
+      "planlama ofisi Leipzig",
+      "marka alanları",
+      "iç mekân uygulaması",
+      "yeniden kullanım planlaması"
+    ],
+    "genre": "Fuar standı konsepti",
+    "videoSuffix": "Hızlandırılmış konsept animasyonu"
+  },
+  "ogImage": {
+    "film": "▶ Konsept animasyonu"
+  }
+}

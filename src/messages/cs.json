@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Technické plánování veletrhů a řízení projektů | {brand}",
+    "description": "Externí plánovací a projektová kancelář pro veletržní stánky, prostory značek a interiérové vybavení: technické plánování, příprava práce a řízení projektů.",
+    "ogTitle": "{brand}: plánovací kapacita pro veletržní stánky, prostory značek a interiérové vybavení",
+    "ogDescription": "Okótovaná výrobní dokumentace, příprava práce a řízení projektů pro stavitele stánků, agentury, interiérové firmy a vystavovatele. Kontakt: Christof Laufersweiler, Lipsko.",
+    "socialDescription": "Dodatečná plánovací a projektová kapacita pro veletržní stánky, prostory značek a interiérové vybavení, projekt po projektu a s jasně dohodnutým rozsahem.",
+    "designsTitle": "Koncepty stánků, každý den nový",
+    "designsDescription": "Koncepty stánků s vizualizacemi, půdorysy a pohledy, od {min} do {max}. Každé ráno v 5:00 přibude další koncept.",
+    "designTitle": "{number} {title} · Koncept stánku",
+    "designDescription": "Koncept {title}: {size}{floors}. {description} Vizualizace konceptu, nikoli postavený stánek.",
+    "inquiryTitle": "Probrat váš projekt",
+    "inquiryDescription": "Pošlete zadání: veletrh nebo projekt, termín, dostupné podklady a požadovaná plánovací služba. Odpovím první odhadem.",
+    "selectionTitle": "Můj výběr",
+    "selectionDescription": "Vaše uložené koncepty stánků, které můžete přiložit k poptávce.",
+    "imprintDescription": "Právní informace a údaje o poskytovateli.",
+    "privacyDescription": "Informace o zpracování osobních údajů na těchto stránkách."
+  },
+  "common": {
+    "skip": "Přeskočit na obsah",
+    "visualisation": "Vizualizace",
+    "close": "Zavřít",
+    "back": "Zpět",
+    "next": "Dále",
+    "prev": "Zpět",
+    "open": "Otevřít",
+    "view": "Zobrazit",
+    "play": "Přehrát",
+    "pause": "Pozastavit",
+    "loading": "Načítání",
+    "placeholder": "Obrázek bude doplněn",
+    "later": "bude doplněno",
+    "menu": "Menu",
+    "language": "Jazyk",
+    "drag": "Přetáhnout",
+    "retry": "Zkusit znovu",
+    "noWebgl": "Toto zařízení nebo prohlížeč nepodporuje 3D zobrazení. Seznam měst a vzdáleností najdete níže."
+  },
+  "nav": {
+    "services": "Služby",
+    "designs": "Koncepty",
+    "process": "Spolupráce",
+    "graphics": "Prezentace",
+    "world": "Kalendář veletrhů",
+    "about": "O mně",
+    "contact": "Kontakt",
+    "cta": "Probrat projekt",
+    "selection": "Můj výběr",
+    "home": "Úvod",
+    "main": "Hlavní navigace"
+  },
+  "hero": {
+    "eyebrow": "Externí plánovací a projektová kancelář · Veletržní stánky, prostory značek, interiérové vybavení",
+    "title": "Plánování, které funguje v hale.",
+    "lead": "Podporuji stavitele stánků, agentury, interiérové firmy a vystavovatele technickým plánováním, přípravou práce a řízením projektů: projekt po projektu, s jasně dohodnutým rozsahem a dohledatelnými podklady.",
+    "cta": "Poptat plánovací kapacitu",
+    "secondary": "Prohlédnout koncepty",
+    "scroll": "Posouvejte stránku a sledujte, jak vizualizace vzniká",
+    "progress": "Stavba (vizualizace)",
+    "done": "Hotový prostor",
+    "design": "Koncept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Koncepty ve zrychleném záběru",
+    "title": "5 konceptů.",
+    "lead": "Pět konceptových animací ukazuje, jak návrh roste od prázdné podlahy haly po hotový prostor. Jsou to vizualizace, nikoli záběry postavených stánků.",
+    "cta": "Přehrát animaci",
+    "badge": "Konceptová animace",
+    "sliderLabel": "Posuvník s pěti konceptovými animacemi. Šipky listují, Enter otevře.",
+    "explain": "Zrychlená animace konceptu. Ukazuje, jak by mohl být plánovaný prostor postaven, a není důkazem realizovaného stánku."
+  },
+  "tagline": {
+    "text": "Každý prostor začíná podklady, na které se mohou spolehnout všichni zúčastnění. Právě ty zpracovávám."
+  },
+  "services": {
+    "eyebrow": "Služby",
+    "title": "Víc plánovací kapacity, když běží více projektů současně.",
+    "lead": "Stavitelé stánků, agentury a interiérové firmy narážejí při paralelních projektech, nedostatku personálu a technicky náročných úkolech na své limity. Jako externí plánovač a řídicí projektu přebírám jasně vymezené části vašeho projektu, s více než 20 lety zkušeností z veletržního a eventového prostředí. Výrobu, dopravu, montáž, statiku, povolení a elektroinstalace zajišťují kvalifikovaní odborní partneři.",
+    "trust": [
+      {
+        "title": "Jeden kontakt",
+        "text": "pro plánování, podklady a koordinaci: mluvíte přímo se mnou, ne přes prostředníky."
+      },
+      {
+        "title": "Více než 20 let zkušeností",
+        "text": "z veletržního a eventového prostředí, vyučen technický kreslič se zaměřením na dřevařskou techniku a certifikovaný projektový manažer veletrhů a eventů (IHK)."
+      },
+      {
+        "title": "Jasně vymezený rozsah",
+        "text": "Rozsah, kola korektur a termíny dohodnu předem písemně. Dodatečné práce a cesty jen po dohodě."
+      }
+    ],
+    "package": {
+      "badge": "Spolupráce",
+      "title": "Projektově, nebo jako měsíční kontingent.",
+      "subtitle": "Plánovací kapacita v takovém rozsahu, jaký váš projekt právě potřebuje.",
+      "text": "Pošlete mi zadání, odhadnu pracnost a navrhnu rozsah, výstupy a termíny. Poté pracuji projektově, nebo v rámci měsíčního kontingentu s pevně stanovenými hodinami, dobou reakce a koly korektur. Moje kapacita je omezená; přijímám jen projekty, které zvládnu pečlivě.",
+      "cta": "Poptat plánovací kapacitu",
+      "more": "Jak projekt probíhá",
+      "phases": [
+        {
+          "title": "Zadání a rozsah",
+          "items": [
+            "Společné vyjasnění úkolu, termínu a dostupných podkladů",
+            "Písemně stanovený rozsah a výstupy",
+            "Dohodnutá kola korektur a stupně schvalování",
+            "Individuální nabídka po zadání"
+          ]
+        },
+        {
+          "title": "Plánování a podklady",
+          "items": [
+            "Okótované detailní a výrobní výkresy",
+            "Kusovníky a podklady k rozhraním",
+            "Přehledy materiálu a množství",
+            "Verzované soubory s dohledatelným stavem"
+          ]
+        },
+        {
+          "title": "Koordinace a řízení",
+          "items": [
+            "Přehledy rozpočtu a termínů",
+            "Srovnání nabídek a plánování nákupu",
+            "Koordinace profesí a odborných partnerů",
+            "Zdokumentovaná schválení a změny"
+          ]
+        },
+        {
+          "title": "Předání a dokumentace",
+          "items": [
+            "Výrobní podklady pro jednotlivé partnery k předání",
+            "Dokumentace změn a rozhodnutí",
+            "Informace o zásobách a skladu pro opětovné využití",
+            "Schůzky na místě a cesty po předchozí dohodě"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Odborní partneři pro realizaci.",
+      "text": "Já plánuji a koordinuji, provádějí kvalifikované odborné firmy. V základním modelu zadáváte větší výrobní a montážní zakázky přímo svým partnerům; na přání se s nimi domluvím a připravím jejich podklady. CL Projektwerk není výrobní dílna a nevystupuje jako generální dodavatel, který projekty předfinancovává.",
+      "items": [
+        "Výhradně CNC řízená výroba",
+        "Truhlářství",
+        "Kovovýroba",
+        "Montáž a stavba",
+        "Doprava a logistika",
+        "Statika a kontroly",
+        "Povolení a kolaudace",
+        "Elektroinstalace",
+        "Tisk a výroba grafiky",
+        "Mediální a eventová technika",
+        "… a další profese podle potřeby"
+      ]
+    },
+    "single": {
+      "eyebrow": "Lze objednat samostatně",
+      "title": "Přesně ta služba, která vám chybí.",
+      "text": "Máte tým, ale málo plánovací kapacity? Pak si objednejte jen oblast, kterou potřebujete, například výrobní výkresy pro jeden projekt nebo řízení termínů veletržní účasti."
+    },
+    "items": {
+      "tech": {
+        "title": "Technické plánování",
+        "text": "Na základě vašeho zadání zpracuji okótované detailní a výrobní výkresy, kusovníky a podklady k rozhraním. Dostanete podklady, s nimiž mohou vaši výrobní partneři pracovat, a ušetříte interní hodiny plánování.",
+        "points": [
+          "Okótované detailní a výrobní výkresy",
+          "Kusovníky",
+          "Podklady k rozhraním s profesemi a partnery"
+        ],
+        "task": "Úkol: převést vaše zadání do jednoznačných technických podkladů.",
+        "result": "Výsledek: výkresy, seznamy a rozhraní v odsouhlaseném stavu.",
+        "benefit": "Přínos: méně dotazů ve výrobě a více času pro vaše zákazníky.",
+        "link": "Zobrazit příklady"
+      },
+      "prep": {
+        "title": "Příprava práce",
+        "text": "Připravuji váš projekt k realizaci: přehledy materiálu a množství, výrobní podklady pro jednotlivé partnery a plánování nákupu a termínů. Všichni tak vědí, co je potřeba, kdy a v jakém množství.",
+        "points": [
+          "Přehledy materiálu a množství",
+          "Výrobní podklady pro jednotlivé partnery",
+          "Plánování nákupu a termínů"
+        ],
+        "task": "Úkol: uspořádat materiál, množství a termíny pro realizaci.",
+        "result": "Výsledek: přehledy a podklady sestavené pro každého partnera.",
+        "benefit": "Přínos: méně chybějícího materiálu a překvapení v termínech při stavbě.",
+        "link": "Jak pracuji"
+      },
+      "control": {
+        "title": "Řízení projektů",
+        "text": "Udržuji přehled o rozpočtu a termínech, srovnávám nabídky, koordinuji profese a dokumentuji schválení a změny. Rozhodnutí zůstávají na vás; já je připravím tak, aby šla učinit rychle.",
+        "points": [
+          "Přehledy rozpočtu a termínů",
+          "Srovnání nabídek a koordinace profesí",
+          "Schválení a dohledatelná dokumentace změn"
+        ],
+        "task": "Úkol: udržet přehled o nákladech, termínech a dohodách.",
+        "result": "Výsledek: aktuální přehledy a zdokumentovaná rozhodnutí.",
+        "benefit": "Přínos: úleva při paralelních projektech a jasná dohledatelnost.",
+        "link": "Zobrazit spolupráci"
+      },
+      "concept": {
+        "title": "Návrh a prezentace",
+        "text": "Vyvíjím koncepty stánků a prostorů a zpracovávám vizualizace a grafiku připravenou k tisku. Rozsah a počet kol korektur se dohodnou předem, aby pracnost i výsledek zůstaly předvídatelné.",
+        "points": [
+          "Koncepty stánků a prostorů",
+          "Vizualizace pro odsouhlasení a prezentaci",
+          "Grafika připravená k tisku s dohodnutými koly korektur"
+        ],
+        "task": "Úkol: ukázat nápad tak, abyste se vy a vaši zákazníci mohli rozhodnout.",
+        "result": "Výsledek: koncept, vizualizace a tisková data v dohodnutém rozsahu.",
+        "benefit": "Přínos: včasná rozhodnutí na základě srozumitelných obrázků a plánů.",
+        "link": "Prohlédnout koncepty"
+      },
+      "reuse": {
+        "title": "Plánování opětovného využití",
+        "text": "Evidují stávající prvky, plánuji varianty pro nová nasazení a udržuji informace o materiálu a skladu. Stávající prvky tak můžete cíleně použít znovu, místo abyste pokaždé plánovali od nuly.",
+        "points": [
+          "Inventura stávajících prvků",
+          "Plánování variant pro nová nasazení",
+          "Informace o materiálu a skladu"
+        ],
+        "task": "Úkol: zaevidovat stávající prvky a využít je pro nové stavby.",
+        "result": "Výsledek: seznam zásob, varianty a informace o skladu.",
+        "benefit": "Přínos: méně nového plánování a spotřeby materiálu u opakovaných staveb.",
+        "link": "Odeslat poptávku"
+      }
+    },
+    "inquire": "Poptat",
+    "cta": {
+      "title": "Váš příští projekt začíná zadáním.",
+      "text": "Stručně popište úkol, termín a dostupné podklady. Ozvu se s prvním odhadem a dalšími kroky. Nabídku obdržíte individuálně po zadání.",
+      "button": "Odeslat zadání",
+      "phone": "Raději si promluvit přímo?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galerie konceptů · denně nový",
+    "title": "Každý den nový koncept.",
+    "lead": "Aktuálně je viditelných {count} z {total} konceptů stánků, od {min} do {max}. Každé ráno v 5:00 přibude další. Všechny obrázky jsou vizualizace konceptů. Listujte, filtrujte, ukládejte a poptávejte přímo.",
+    "slider": "Posuvník",
+    "grid": "Mřížka",
+    "viewMode": "Zobrazení",
+    "random": "Náhodný koncept",
+    "dayPick": "Koncept dne",
+    "hint": "Přetahujte, posouvejte nebo použijte šipky",
+    "hintTouch": "Přejeďte do strany",
+    "count": "{count} z {total}",
+    "empty": "Těmto filtrům neodpovídá žádný koncept.",
+    "reset": "Zrušit filtry",
+    "filters": "Filtry",
+    "listTitle": "Všechny viditelné koncepty na přehledu",
+    "sliderLabel": "Posuvník konceptů. Šipky listují, Enter otevře.",
+    "current": "Aktuálně: {number} {title}",
+    "loadingSlider": "Načítání posuvníku",
+    "cardAlt": "Koncept {number} {title}: vizualizace konceptu stánku",
+    "filter": {
+      "all": "Vše",
+      "clip": "S konceptovou animací",
+      "two-storey": "Dvoupodlažní",
+      "size-s": "Kompaktní do 30 m²",
+      "size-m": "Střední do 150 m²",
+      "size-l": "Velké od 150 m²",
+      "wood": "Dřevo",
+      "green": "Zeleň",
+      "metal": "Kov",
+      "light": "Světlo",
+      "container": "Kontejnery",
+      "product": "Produktové stánky",
+      "real-estate": "Veletrh nemovitostí",
+      "outdoor": "Venkovní plocha"
+    }
+  },
+  "detail": {
+    "facts": "Základní údaje",
+    "area": "Plocha",
+    "floors": "Podlaží",
+    "standType": "Typ stánku",
+    "height": "Výška",
+    "materials": "Materiály",
+    "colours": "Barvy",
+    "series": "Série",
+    "floorsValue": "{count, plural, =1 {jednopodlažní} =2 {dvoupodlažní} one {# podlaží} few {# podlaží} many {# podlaží} other {# podlaží}}",
+    "standTypes": {
+      "corner": "Rohový stánek",
+      "head": "Čelní stánek",
+      "island": "Ostrovní stánek",
+      "row": "Řadový stánek"
+    },
+    "renderings": "Vizualizace",
+    "plans": "Plány",
+    "floorplan": "Půdorys",
+    "elevation": "Pohled",
+    "download": "Stáhnout",
+    "zoomIn": "Přiblížit",
+    "zoomOut": "Oddálit",
+    "zoomReset": "Obnovit zobrazení",
+    "fullscreen": "Celá obrazovka",
+    "clip": "Konceptová animace ve zrychleném záběru",
+    "favorite": "Přidat do výběru",
+    "favorited": "Ve vašem výběru",
+    "share": "Sdílet",
+    "shareWhatsapp": "Sdílet přes WhatsApp",
+    "shareLinkedin": "Sdílet na LinkedIn",
+    "copyLink": "Kopírovat odkaz",
+    "copied": "Odkaz zkopírován",
+    "inquire": "Poptávka k tomuto konceptu",
+    "prevDesign": "Předchozí koncept",
+    "nextDesign": "Další koncept",
+    "backToGallery": "Zpět do galerie",
+    "imageOf": "Obrázek {current} z {total}",
+    "description": "Popis",
+    "placeholderImage": "Obrázek bude doplněn",
+    "conceptNote": "Konceptový návrh. Zobrazení je vizualizace a neukazuje postavený stánek.",
+    "imageAlt": "{title}: {label} (vizualizace)",
+    "planAlt": "{title}: {label} (výkres konceptu)",
+    "clipAlt": "{title}: konceptová animace stavby (vizualizace)"
+  },
+  "process": {
+    "eyebrow": "Spolupráce",
+    "title": "Šest kroků od zadání k předání.",
+    "steps": {
+      "briefing": {
+        "title": "Zadání a rozsah",
+        "text": "Úkol, termín, dostupné podklady a požadované výsledky. Stanovíme, co dodám, kolik kol korektur je plánováno a kdo schvaluje.",
+        "alt": "Animace skic k zadání (vizualizace)"
+      },
+      "concept": {
+        "title": "Koncept a odsouhlasení",
+        "text": "Prostorová myšlenka, vizualizace, půdorys a pohledy. Prostor uvidíte z více perspektiv a v klidu se rozhodnete, než se začne technicky do detailu.",
+        "alt": "Konceptová animace návrhu (vizualizace)"
+      },
+      "planning": {
+        "title": "Technické plánování",
+        "text": "Okótované detailní a výrobní výkresy, kusovníky a podklady k rozhraním. Statiku, povolení a elektroprojekt zajišťují kvalifikovaní odborní partneři; já koordinuji rozhraní.",
+        "alt": "Animace technického plánování (vizualizace)"
+      },
+      "production": {
+        "title": "Příprava práce a výrobní podklady",
+        "text": "Přehledy materiálu a množství a podklady pro každého výrobního partnera, k tomu plánování nákupu a termínů. Vyrábí se u příslušné odborné firmy, ne u mě.",
+        "alt": "Animace CNC obrábění jako příklad výrobních dat (vizualizace); výrobu provádí odborný partner"
+      },
+      "logistics": {
+        "title": "Koordinace profesí",
+        "text": "Přehled termínů, srovnání nabídek a koordinace mezi profesemi, aby doprava, stavba a technika do sebe zapadaly. Práce provádějí vaši odborní partneři.",
+        "alt": "Zrychlená konceptová animace stavby (vizualizace)"
+      },
+      "onsite": {
+        "title": "Schválení, změny a předání",
+        "text": "Schválení a změny dokumentuji dohledatelně a na konci vám předám všechny podklady. Schůzky na místě jsou možné, pokud jsou předem dohodnuty.",
+        "alt": "Konceptová animace předání (vizualizace)"
+      }
+    },
+    "sketch": "Skica"
+  },
+  "world": {
+    "eyebrow": "Kalendář veletrhů",
+    "title": "Veletrhy v Německu a Evropě.",
+    "lead": "Přehled termínů veletrhů v Německu a Evropě jako orientace pro plánování vašeho projektu. Vyberte město a glóbus ukáže místo a vzdušnou vzdálenost z Lipska. Termín v kalendáři nic neříká o zakázkách ani účasti CL Projektwerk.",
+    "placeholderNote": "Ukázkové lokality",
+    "listLabel": "Veletržní města",
+    "drag": "Otáčet glóbem",
+    "base": "Sídlo",
+    "regions": {
+      "de": "Německo",
+      "eu": "Evropa"
+    },
+    "calendar": {
+      "eyebrow": "Kalendář veletrhů",
+      "title": "Nejbližší veletrh v každém městě.",
+      "lead": "U každého města se zobrazí nejbližší hlavní veletrh v chronologickém pořadí jako na odletové tabuli. Procházejte tabuli: glóbus sleduje váš výběr.",
+      "summary": "{cities} veletržních měst · {km} km vzdušnou čarou podél trasy z Lipska",
+      "boardLabel": "Kalendář veletrhů: nejbližší veletrh v každém městě",
+      "cols": {
+        "date": "Termín",
+        "dest": "Cíl",
+        "fair": "Veletrh",
+        "status": "Stav"
+      },
+      "running": "Právě probíhá",
+      "today": "Dnes",
+      "tomorrow": "Zítra",
+      "inDays": "za {days} dní",
+      "tba": "Termín bude doplněn",
+      "past": "Skončil",
+      "tbaNote": "Pro toto město není aktuálně uložen potvrzený termín hlavního veletrhu.",
+      "dateTbc": "Termín nepotvrzen",
+      "fairName": "Veletrh",
+      "venue": "Výstaviště",
+      "route": "Vzdušnou čarou",
+      "homeBase": "Moje sídlo",
+      "km": "{km} km",
+      "localTime": "Místní čas",
+      "website": "Web pořadatele",
+      "inquire": "Probrat projekt pro {fair}",
+      "tourPause": "Pozastavit okružní jízdu",
+      "tourPlay": "Pokračovat v okružní jízdě",
+      "note": "Termíny podle pořadatelů, ověřeno {date}. Změny jsou možné; rozhodující jsou webové stránky pořadatelů. Názvy veletrhů jsou ochranné známky jejich majitelů. Termíny nic neříkají o zakázkách ani účasti CL Projektwerk.",
+      "search": "Hledat veletrh nebo město",
+      "searchPlaceholder": "např. Düsseldorf nebo stavebnictví",
+      "filterCountry": "Země",
+      "filterCity": "Město",
+      "filterPeriod": "Období",
+      "filterSector": "Obor",
+      "filterAll": "Vše",
+      "periodUpcoming": "Nadcházející",
+      "periodRunning": "Probíhající",
+      "periodPast": "Proběhlé",
+      "resultCount": "{count, plural, =0 {Žádný veletrh} one {# veletrh} few {# veletrhy} many {# veletrhu} other {# veletrhů}}",
+      "empty": "Vašemu hledání a zvoleným filtrům neodpovídá žádný veletrh.",
+      "reset": "Zrušit hledání a filtry",
+      "source": "Zdroj",
+      "checkedOn": "Ověřeno {date}"
+    },
+    "zoomIn": "Přiblížit",
+    "zoomOut": "Oddálit",
+    "zoomReset": "Obnovit zobrazení",
+    "zoomEurope": "Pohled na Evropu",
+    "zoomCountry": "Vybrat zemi",
+    "zoomHint": "Ctrl + kolečko myši nebo dvojklik: zoom · klik na město: vzdušná vzdálenost",
+    "zoomHintTouch": "Dvěma prsty přibližte · klepnutí na město: vzdušná vzdálenost",
+    "zoomHintKeys": "Šipky posouvají zobrazení, plus a mínus mění zvětšení.",
+    "scrollHint": "Běžné posouvání pohybuje jen stránkou. Pro zoom podržte Ctrl.",
+    "distance": {
+      "title": "Vzdušná vzdálenost mezi dvěma městy",
+      "from": "Z",
+      "to": "Do",
+      "pick": "Vybrat město",
+      "swap": "Prohodit města",
+      "result": "Vzdušnou čarou: {km} km",
+      "resultFromTo": "Vzdušnou čarou {from} – {to}: {km} km",
+      "note": "Vypočteno jako ortodromická vzdálenost na zemské kouli. Nejde o vzdálenost po silnici a nic to neříká o době cesty.",
+      "rings": "Vzdálenostní kruhy kolem města {city}: {km} km",
+      "scale": "Měřítko: {km} km",
+      "listTitle": "Města a vzdušná vzdálenost od města {city}",
+      "listCity": "Město",
+      "listCountry": "Země",
+      "listKm": "Vzdušnou čarou",
+      "noWebglTitle": "3D zobrazení není k dispozici",
+      "noWebglText": "Vaše zařízení 3D glóbus nezobrazí. Tabulka obsahuje stejná města, veletrhy a vzdálenosti.",
+      "reducedMotion": "Je zapnuto omezení pohybu: žádné automatické přelety ani animace."
+    },
+    "origin": {
+      "use": "Použít moji polohu jako výchozí bod",
+      "locating": "Zjišťuji polohu …",
+      "active": "Výchozí bod: {city} – nejbližší veletržní město",
+      "reset": "Zpět na {city}",
+      "denied": "Přístup k poloze nebyl povolen. Výchozí bod zůstává {city}.",
+      "far": "Vaše poloha je mimo oblast mapy. Výchozí bod zůstává {city}.",
+      "note": "Vaše poloha se zpracovává jen ve vašem prohlížeči a nikam se nepřenáší."
+    }
+  },
+  "led": {
+    "eyebrow": "Obrazovkové plochy v plánování",
+    "title": "Mediální plochy potřebují přesné rozměry.",
+    "lead": "LED stěny a monitory patří k mnoha veletržním prostorům. Zahrnuji je do vašich podkladů s rozměry, poměry stran a připojovacími údaji. Klipy ukazují běžné formáty; jde o licencovaný ukázkový materiál, nikoli o mé vlastní projekty.",
+    "placeholder": "Ukázkový klip {n}",
+    "placeholderNote": "Ukázkový materiál",
+    "caption": "Ukázkový klip (stock licence): {title}, {format}. Nejde o projekt CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "O mně",
+    "name": "Christof Laufersweiler",
+    "role": "Plánování a řízení projektů pro veletržní stánky, prostory značek a interiérové vybavení",
+    "text": "Jsem Christof Laufersweiler a více než 20 let pracuji ve veletržním a eventovém prostředí. Vyučil jsem se technickým kreslířem se zaměřením na dřevařskou techniku; později přibylo vedení projektů výstavby stánků, zaměstnanecká funkce jednatele firmy na výstavbu stánků a certifikát IHK projektového manažera veletrhů a eventů. S CL Projektwerk nabízím v Lipsku externí plánovací a projektovou kapacitu pro stavitele stánků, agentury, interiérové firmy a vystavovatele, kteří potřebují další ruce s odbornými znalostmi.",
+    "close": "Rozhodnutí zůstávají na vás. Já se postarám o podklady, přehled a koordinaci.",
+    "photoAlt": "Portrét Christofa Laufersweilera, zakladatele CL Projektwerk",
+    "cta": "Probrat projekt se mnou",
+    "career": "Profesní dráha",
+    "projects": "Projektové zkušenosti z dřívější činnosti",
+    "projectsNote": "Tyto příklady pocházejí z mé dřívější profesní činnosti jako odpovědného projektového manažera. Nejsou to projekty CL Projektwerk a uvedené firmy nejsou zákazníky CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Jazyky"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ let",
+        "label": "zkušeností z veletržního a eventového prostředí"
+      },
+      {
+        "value": "1 200 m²",
+        "label": "největší vedená plocha stánku z dřívější činnosti (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certifikát projektového manažera veletrhů a eventů (IHK Hannover, 11. 12. 2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Vedení projektů",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Jednatel (zaměstnanec)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Vedení projektů výstavby veletržních stánků",
+        "org": "MEPLAN GmbH, Mnichov"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certifikát projektového manažera veletrhů a eventů (kurz, 160 vyučovacích hodin)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Vyučení technickým kreslířem, dřevařská technika",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1 200 m²",
+        "note": "Více vystavovatelů a vozidel, velkoplošné LED displeje"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1 200 m²",
+        "note": "20 m dlouhá LED stěna, technicky koordinována"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, Mnichov",
+        "size": "360 m²",
+        "note": "Podvěšená konstrukce z lepeného dřeva, bez záhybů napnutá textilní grafika"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Otevřený koncept stánku s LED stěnou"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Němčina (mateřský jazyk)",
+      "Angličtina (pracovní úroveň)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Probrat projekt",
+    "title": "Řekněte mi o svém projektu.",
+    "lead": "Čtyři krátké kroky, málo povinných polí. Uložené koncepty z galerie připojím na přání.",
+    "response": "Odpovídám zpravidla do {time}.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Rozsah",
+      "services": "Služba",
+      "contact": "Kontakt"
+    },
+    "stepOf": "Krok {current} z {total}",
+    "fields": {
+      "fair": "Veletrh, akce nebo projekt",
+      "fairPlaceholder": "např. veletržní účast, prostor značky nebo interiér",
+      "projectType": "Druh projektu",
+      "projectTypes": {
+        "fair": "Veletržní stánek",
+        "brand": "Prostor značky",
+        "interior": "Interiérové vybavení",
+        "event": "Akce",
+        "open": "Zatím otevřeno"
+      },
+      "city": "Místo",
+      "cityPlaceholder": "např. Lipsko",
+      "dateFrom": "Termín od",
+      "dateTo": "do",
+      "dateUnknown": "Termín zatím není stanoven",
+      "size": "Velikost prostoru (nepovinné)",
+      "width": "Šířka (m)",
+      "depth": "Hloubka (m)",
+      "area": "Plocha",
+      "standType": "Typ stánku",
+      "standTypeUnknown": "Zatím otevřeno",
+      "floors": "Podlaží",
+      "documents": "Dostupné podklady",
+      "documentOptions": {
+        "briefing": "Zadání nebo specifikace",
+        "cad": "CAD nebo plánovací data",
+        "sketches": "Skici nebo moodboardy",
+        "renders": "Vizualizace",
+        "inventory": "Seznamy zásob",
+        "none": "Zatím žádné"
+      },
+      "services": "Potřebná plánovací služba",
+      "scope": "Požadovaný rozsah",
+      "scopes": {
+        "single": "Jednotlivá služba",
+        "project": "Celý projekt",
+        "quota": "Průběžný měsíční kontingent",
+        "open": "Zatím otevřeno"
+      },
+      "budget": "Celkový rozpočet projektu (nepovinné)",
+      "budgets": {
+        "a": "do 25 000 €",
+        "b": "25 000 až 75 000 €",
+        "c": "75 000 až 150 000 €",
+        "d": "nad 150 000 €",
+        "open": "Raději neuvádím"
+      },
+      "name": "Jméno",
+      "company": "Firma",
+      "email": "E-mail",
+      "phone": "Telefon (nepovinné)",
+      "message": "Zpráva",
+      "messagePlaceholder": "Co je třeba naplánovat? Existují požadavky, předchozí stavba nebo zvláštní technické nároky?",
+      "favorites": "Přiložené koncepty",
+      "favoritesEmpty": "Žádné uložené koncepty. V galerii je můžete sbírat srdíčkem.",
+      "consent": "Souhlasím s tím, že mé údaje budou uloženy a použity ke zpracování poptávky. Podrobnosti v <privacy>zásadách ochrany osobních údajů</privacy>.",
+      "privacy": "Zásady ochrany osobních údajů",
+      "required": "Povinné"
+    },
+    "submit": "Odeslat zadání",
+    "sending": "Odesílání",
+    "errors": {
+      "required": "Vyplňte prosím.",
+      "email": "Zadejte prosím platnou e-mailovou adresu.",
+      "consent": "Souhlaste prosím se zpracováním, abych mohl odpovědět.",
+      "dates": "Konec je před začátkem.",
+      "server": "Odeslání se nezdařilo. Zkuste to prosím znovu nebo napište na {email}.",
+      "rate": "Příliš mnoho požadavků v krátké době. Zkuste to prosím za několik minut."
+    },
+    "whatsapp": "Napsat přes WhatsApp",
+    "callback": "Požádat o zpětné zavolání",
+    "callbackTitle": "Požádat o zpětné zavolání",
+    "callbackTime": "Kdy se vám to hodí?",
+    "callbackTimePlaceholder": "např. zítra po 14. hodině",
+    "callbackSubmit": "Požádat o zpětné zavolání",
+    "callbackDone": "Děkuji. Vaše žádost o zavolání byla odeslána. Pokusím se vás zastihnout v uvedený čas.",
+    "direct": "Přímo",
+    "notConfigured": "Zatím neuvedeno",
+    "prefilled": "Váš výběr: {list}",
+    "emailDraft": {
+      "prepare": "Připravit e-mail",
+      "title": "Koncept e-mailu je připraven",
+      "notice": "Vaše údaje se připraví jako koncept e-mailu. Zkontrolujte jej a sami odešlete ve svém poštovním programu. Zpráva ještě nebyla odeslána.",
+      "open": "Otevřít poštovní program",
+      "copy": "Kopírovat text",
+      "copied": "Text zkopírován",
+      "fallback": "Nemáte nastavený poštovní program nebo chybí údaje? Zkopírujte celý text níže do webové pošty."
+    }
+  },
+  "thanks": {
+    "title": "Děkuji za vaše zadání.",
+    "text": "Vaše poptávka byla odeslána. Ozvu se zpravidla do {time} s prvním odhadem. Automatické potvrzení e-mailem se neodesílá. Uložené koncepty byly přiloženy.",
+    "back": "Na úvodní stránku",
+    "designs": "Zobrazit další koncepty"
+  },
+  "selection": {
+    "title": "Můj výběr",
+    "lead": "Vaše uložené koncepty. Jedním kliknutím je přiložíte k poptávce.",
+    "count": "{count, plural, =0 {Zatím nic neuloženo} one {Uložen # koncept} few {Uloženy # koncepty} many {Uloženo # konceptu} other {Uloženo # konceptů}}",
+    "empty": "Zatím nic neuloženo. Klepněte v galerii na srdíčko a sbírejte koncepty.",
+    "toGallery": "Do galerie",
+    "inquire": "Odeslat výběr s poptávkou",
+    "clear": "Odebrat vše",
+    "remove": "Odebrat"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Právní informace",
+    "privacy": "Ochrana osobních údajů",
+    "cookies": "Nastavení cookies",
+    "note": "Všechny rendery a animace na těchto stránkách jsou vizualizace návrhových konceptů. Nezobrazují postavené veletržní stánky.",
+    "top": "Nahoru",
+    "languages": "Jazyky",
+    "tagline": "Externí plánovací a projektová kancelář pro veletržní stánky, prostory značek a interiérové vybavení"
+  },
+  "cookies": {
+    "title": "Vaše soukromí",
+    "text": "Tyto stránky ukládají jen to, co je technicky nutné, například vaše uložené koncepty, zvolené rozvržení a tento výběr. Statistika a externí služby jsou vypnuty, dokud nesouhlasíte.",
+    "necessary": "Pouze nutné",
+    "settings": "Nastavení",
+    "acceptAll": "Povolit vše",
+    "save": "Uložit výběr",
+    "categories": {
+      "necessary": "Nutné",
+      "necessaryText": "Jazyk, uložené koncepty, rozvržení, nastavení rádia a tento výběr. Vždy aktivní.",
+      "stats": "Statistika",
+      "statsText": "Aktuálně se nepoužívá.",
+      "media": "Externí média",
+      "mediaText": "Aktuálně se nepoužívají. Rádio se připojí, až když ho sami spustíte."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Právní informace",
+    "privacyTitle": "Zásady ochrany osobních údajů",
+    "placeholder": "Právní text bude doplněn.",
+    "notice": "Rozhodující je německé znění tohoto textu.",
+    "updated": "Stav k: {date}"
+  },
+  "notFound": {
+    "title": "Tato stránka neexistuje.",
+    "text": "Možná najdete v galerii konceptů, co hledáte.",
+    "home": "Na úvodní stránku",
+    "designs": "Do galerie"
+  },
+  "layouts": {
+    "label": "Zvolit rozvržení",
+    "toggle": "Rozvržení",
+    "short": "ROZVRŽENÍ",
+    "film": "Hero: konceptová animace {n}",
+    "active": "aktivní",
+    "preview": "Náhled: {name}",
+    "hint": "Šipky mění rozvržení, Escape zavře výběr.",
+    "saved": "Vaše volba se ukládá v tomto zařízení.",
+    "monoShowColour": "Zobrazit původní barvy",
+    "monoHideColour": "Zobrazit černobíle",
+    "items": {
+      "studio": "Antracit a oranžová, jasné linie, přesné jako plánovací ateliér",
+      "aurora": "Tmavé plochy s mátovou a fialovou, patkové písmo, jemné pohyby světla",
+      "tide": "Petrolejová a korálová, výrazné písmo, plynulé vlny",
+      "mono": "Důsledně černá a bílá, silný kontrast, geometrické tvary"
+    }
+  },
+  "radio": {
+    "label": "Rádio",
+    "title": "Rádio",
+    "choose": "VYBRAT STANICI",
+    "close": "Sbalit přehrávač",
+    "stations": "Stanice",
+    "play": "Spustit přehrávání",
+    "pause": "Pozastavit přehrávání",
+    "mute": "Ztlumit",
+    "unmute": "Zapnout zvuk",
+    "volume": "Hlasitost",
+    "off": "vypnuto",
+    "hint": "Živé internetové rádio. Zvuk se spustí až po vašem kliknutí a posuvník platí jen pro tento přehrávač. Po spuštění se prohlížeč připojí ke stanici.",
+    "noTrack": "Informace o skladbě nejsou k dispozici",
+    "levelNote": "Ukazatel úrovně je pouhá animace a nezobrazuje skutečnou úroveň zvuku.",
+    "state": {
+      "ready": "Připraveno",
+      "connecting": "Připojování …",
+      "live": "Živě",
+      "buffering": "Ukládání do vyrovnávací paměti …",
+      "stalled": "Připojení váznou …",
+      "paused": "Pozastaveno",
+      "error": "Stanice není dostupná",
+      "blocked": "Spuštění zablokoval prohlížeč. Klikněte znovu na přehrát."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Návrh a prezentace",
+    "title": "Grafika, která do prostoru sedí.",
+    "text": "K návrhu patří obrázky, které umožňují rozhodnout, a data, která lze dále zpracovat bez předělávání. Zpracovávám vizualizace a tisková grafická data, přizpůsobená rozměrům a konstrukci prostoru i vašemu firemnímu designu. Rozsah a počet kol korektur se dohodnou předem. Tisk provádí tiskový partner, kterého zapojíte vy nebo na přání já.",
+    "points": [
+      {
+        "title": "Vizualizace pro odsouhlasení",
+        "text": "Perspektivy, půdorys a pohledy dělají koncept srozumitelným pro vás i vaše zákazníky."
+      },
+      {
+        "title": "Tisková data se všemi údaji",
+        "text": "Spadávka, barevný profil, rozměry a formát souboru jsou připraveny pro vašeho tiskového partnera."
+      },
+      {
+        "title": "Přizpůsobeno konstrukci",
+        "text": "Grafické plochy se porovnávají s rozměry stěn a prvků z technického plánování."
+      },
+      {
+        "title": "Dohodnutá kola korektur",
+        "text": "Předem stanovíme, kolik kol korektur je zahrnuto. Další kola jsou doplňkovou službou."
+      },
+      {
+        "title": "Verzované soubory",
+        "text": "Každá verze má jasný stav, takže do tisku jdou jen schválená data."
+      },
+      {
+        "title": "Předání vašemu tiskovému partnerovi",
+        "text": "Já dodám data, odborná firma tiskne a vyrábí."
+      }
+    ],
+    "close": "Návrh a data ode mě, výroba u odborné firmy: aby prostor vypadal tak, jak byl schválen.",
+    "videoLabel": "Animace: tisková data na monitoru a velkoformátový tisk veletržní grafiky (vizualizace)"
+  },
+  "drops": {
+    "rule": "Každé ráno v 5:00 další koncept",
+    "today": "Nové dnes",
+    "next": "Další koncept za",
+    "soon": "Je viditelný nový koncept.",
+    "reload": "Načíst znovu",
+    "complete": "Viditelné jsou všechny koncepty ({total})",
+    "count": "Viditelné: {released} z {total}"
+  },
+  "error": {
+    "title": "Něco se pokazilo.",
+    "text": "Stránku se nepodařilo úplně načíst. Zkuste to prosím znovu.",
+    "retry": "Zkusit znovu",
+    "home": "Na úvodní stránku"
+  },
+  "seo": {
+    "eyebrow": "Technické plánování veletrhů",
+    "title": "Technické plánování, příprava práce a řízení projektů pro veletržní stánky a interiérové vybavení.",
+    "intro": "CL Projektwerk je externí plánovací a projektová kancelář v Lipsku. Podporuji stavitele stánků, agentury, interiérové firmy a střední vystavovatele při plánování veletržních stánků: okótovanou výrobní dokumentací, přípravou práce, externím řízením projektů, koncepty a plánováním opětovného využití. Realizují odborní partneři; já dodávám plánování a koordinaci.",
+    "blocks": [
+      {
+        "title": "Technické plánování veletrhů",
+        "text": "Ze zadání vznikají okótované detailní a výrobní výkresy, kusovníky a podklady k rozhraním. Vaši výrobní partneři s nimi mohou pracovat, aniž by váš tým musel každý výkres zpracovat sám."
+      },
+      {
+        "title": "Příprava práce pro stánky a prostory značek",
+        "text": "Přehledy materiálu a množství, podklady pro jednotlivé výrobní partnery a plánování nákupu a termínů dělají z výkresů proces, který lze zorganizovat."
+      },
+      {
+        "title": "Externí řízení projektů",
+        "text": "Přehledy rozpočtu a termínů, srovnání nabídek, koordinace profesí a zdokumentovaná schválení přinášejí přehled, zejména když běží více projektů současně."
+      },
+      {
+        "title": "Koncept, prezentace a opětovné využití",
+        "text": "Koncepty stánků a prostorů, vizualizace a grafika připravená k tisku pomáhají při odsouhlasení. Plánování opětovného využití eviduje stávající prvky a plánuje varianty pro nová nasazení."
+      }
+    ],
+    "faqTitle": "Časté otázky",
+    "faq": [
+      {
+        "q": "Kolik spolupráce stojí?",
+        "a": "Záleží na rozsahu, výstupech a termínech. Po krátkém zadání obdržíte individuální nabídku na projekt nebo na měsíční kontingent."
+      },
+      {
+        "q": "Kdy se mám ozvat?",
+        "a": "Nejlépe hned, jakmile je znám úkol a termín, protože moje měsíční plánovací kapacita je omezená. Krátkodobé poptávky posuzuji podle aktuálního vytížení."
+      },
+      {
+        "q": "Mohu si objednat jen jednu službu?",
+        "a": "Ano. Technické plánování, přípravu práce, řízení projektů, návrh a prezentaci nebo plánování opětovného využití lze objednat samostatně."
+      },
+      {
+        "q": "Vyrábíte a montujete také?",
+        "a": "Ne. Výrobu, dopravu, montáž, statiku, povolení a elektroinstalace zajišťují kvalifikovaní odborní partneři. Větší zakázky zadáváte zpravidla přímo vy; já plánuji a koordinuji."
+      },
+      {
+        "q": "Jsou možné schůzky na místě nebo cesty?",
+        "a": "Plánování probíhá převážně z Lipska. Schůzky na místě a cesty dohodneme předem, dodatečné služby se sjednávají zvlášť."
+      },
+      {
+        "q": "Nabízíte webdesign nebo automatizaci?",
+        "a": "Ty nepatří mezi mé hlavní služby. Soustředím se na plánování a řízení projektů veletržních stánků, prostorů značek a interiérového vybavení."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Zvolit jazyk",
+    "hint": "Přetahujte, přejíždějte nebo otáčejte šipkami",
+    "current": "aktuální",
+    "prev": "Předchozí jazyk",
+    "next": "Další jazyk",
+    "close": "Zavřít"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Externí plánovací a projektová kancelář pro veletržní stánky, prostory značek a interiérové vybavení",
+    "claim": "Plánování, které funguje v hale.",
+    "visualisationNote": "Vizualizace"
+  },
+  "structured": {
+    "serviceCatalog": "Služby",
+    "services": [
+      "Technické plánování: okótované detailní a výrobní výkresy, kusovníky, podklady k rozhraním",
+      "Příprava práce: přehledy materiálu a množství, výrobní podklady, plánování nákupu a termínů",
+      "Řízení projektů: přehledy rozpočtu a termínů, srovnání nabídek, koordinace profesí, dokumentace změn",
+      "Návrh a prezentace: koncepty stánků a prostorů, vizualizace, grafika připravená k tisku",
+      "Plánování opětovného využití: inventura stávajících prvků, plánování variant, informace o materiálu a skladu"
+    ],
+    "keywords": [
+      "technické plánování veletrhů",
+      "plánování veletržních stánků",
+      "externí řízení projektů",
+      "příprava práce výstavba stánků",
+      "plánovací kancelář Lipsko",
+      "prostory značek",
+      "interiérové vybavení",
+      "plánování opětovného využití"
+    ],
+    "genre": "Koncept veletržního stánku",
+    "videoSuffix": "Konceptová animace ve zrychleném záběru"
+  },
+  "ogImage": {
+    "film": "▶ Konceptová animace"
+  }
+}

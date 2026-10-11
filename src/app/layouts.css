@@ -1,0 +1,152 @@
+/* ─────────────────────────────────────────────────────────────
+   Vier Layouts (html[data-layout]): Studio 1, Aurora 2, Tide 4, Monochrom: Farben, Schriften, Positionen.
+   Umschalten über die Lasche links (components/shell/LayoutDock).
+   Liste und Zuordnung Film/Effekt: src/config/layouts.ts
+   ───────────────────────────────────────────────────────────── */
+
+/* ───────── Animierte Schrift (Kinetic Type) ───────── */
+.kinetic-word { display: inline-block; white-space: nowrap; }
+.kinetic-word--wrap { display: inline; white-space: normal; }
+.kinetic-char {
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 75%;
+  transition: transform .55s cubic-bezier(.2, .8, .2, 1), color .35s, text-shadow .2s, filter .4s, opacity .4s, font-variation-settings .45s;
+}
+.kinetic-active .kinetic-char { will-change: transform; }
+.kinetic-char.is-near { color: var(--accent); }
+
+/* ───────── Layoutwechsel: Kreis wächst von der Lasche aus ───────── */
+::view-transition-old(root) { animation: none; }
+::view-transition-new(root) { animation: layout-reveal .9s cubic-bezier(.32, .72, 0, 1) both; }
+@keyframes layout-reveal {
+  from { clip-path: circle(0 at var(--vt-x, 100%) var(--vt-y, 50%)); }
+  to { clip-path: circle(150vmax at var(--vt-x, 100%) var(--vt-y, 50%)); }
+}
+
+/* ───────── Hero: gemeinsame Basis ───────── */
+.hero-poster { background-size: cover; background-position: 42% 50%; background-repeat: no-repeat; background-image: var(--hero-poster); }
+.hero-big-word { background-image: var(--hero-big-gradient, linear-gradient(90deg, #fff, #9b9b9b)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* Poster je Layout – nur das aktive Bild wird geladen */
+html, html[data-layout="studio"] { --hero-poster: url("/hero/001/poster-desktop.webp"); }
+html[data-layout="aurora"] { --hero-poster: url("/hero/002/poster-desktop.webp"); }
+html[data-layout="mono"] { --hero-poster: url("/hero/003/poster-desktop.webp"); }
+html[data-layout="tide"] { --hero-poster: url("/hero/004/poster-desktop.webp"); }
+/* Hochformat: eigener 9:16-Ausschnitt (bereits auf den Stand zentriert) – Abfrage wie HERO_PORTRAIT_QUERY in config/layouts.ts */
+@media (orientation: portrait) {
+  .hero-poster { background-position: 50% 50%; }
+  html, html[data-layout="studio"] { --hero-poster: url("/hero/001/poster-mobile.webp"); }
+  html[data-layout="aurora"] { --hero-poster: url("/hero/002/poster-mobile.webp"); }
+  html[data-layout="mono"] { --hero-poster: url("/hero/003/poster-mobile.webp"); }
+  html[data-layout="tide"] { --hero-poster: url("/hero/004/poster-mobile.webp"); }
+  }
+
+/* ═════════ 01 STUDIO – Anthrazit & Orange, Mona Sans + Geist (Standard aus globals.css) ═════════ */
+html { --font-d: var(--font-mona); --font-t: var(--font-geist); }
+
+/* ═════════ 02 AURORA – Mitternacht, Mint & Violett, Instrument Serif + Inter Tight ═════════
+   Hero: Film gerahmt mit Abstand und runden Ecken, Text zentriert. Effekt: Lupe. */
+html[data-layout="aurora"] {
+  --bg: #070b1d; --bg-raised: #0e1533; --bg-sunken: #050817;
+  --fg: #eef1ff; --accent: #7cf5d4; --accent-contrast: #04161a; --accent-2: #b69cff;
+  --font-d: var(--font-instrument); --font-t: var(--font-intertight);
+  --hero-big-gradient: linear-gradient(90deg, #7cf5d4, #b69cff 70%, #eef1ff);
+}
+html[data-layout="aurora"] .font-display { font-weight: 400; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.012em; font-synthesis: none; }
+html[data-layout="aurora"] h2.font-display, html[data-layout="aurora"] .hero-big-text { font-style: italic; }
+html[data-layout="aurora"] .eyebrow { color: var(--accent-2); }
+html[data-layout="aurora"] .kinetic-char { transition-duration: .35s; transform-origin: 50% 90%; }
+html[data-layout="aurora"] .hero-stage {
+  background:
+    radial-gradient(110% 80% at 85% -10%, #1d2c75 0%, transparent 55%),
+    radial-gradient(90% 70% at -5% 105%, #0f4440 0%, transparent 60%),
+    var(--bg);
+}
+html[data-layout="aurora"] .hero-media {
+  inset: 88px var(--gutter) 18px;
+  border-radius: 32px;
+  box-shadow: 0 40px 90px -30px #000c, 0 0 0 1px color-mix(in oklab, var(--accent) 35%, transparent);
+}
+html[data-layout="aurora"] .hero-top { top: 112px; }
+html[data-layout="aurora"] .hero-top .container-x { padding-inline: calc(var(--gutter) + 24px); }
+html[data-layout="aurora"] .hero-copy { padding-bottom: 92px; }
+html[data-layout="aurora"] .hero-copy-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+html[data-layout="aurora"] .hero-copy-text { margin-inline: auto; }
+html[data-layout="aurora"] .hero-copy-text p { margin-inline: auto; }
+html[data-layout="aurora"] .hero-cta { justify-content: center; }
+html[data-layout="aurora"] .hero-progress { padding-inline: calc(var(--gutter) + 24px); }
+html[data-layout="aurora"] .hero-shade-side { display: none; }
+
+/* ═════════ 04 TIDE – Petrol & Koralle, Bricolage Grotesque + DM Sans ═════════
+   Hero: Text rechtsbündig, Verlauf von rechts, Petrol-Schleier. Effekt: Schriftgewicht-Welle. */
+html[data-layout="tide"] {
+  --bg: #062a2c; --bg-raised: #0b3739; --bg-sunken: #041e20;
+  --fg: #f3ece2; --accent: #ff8f6b; --accent-contrast: #1a0b06; --accent-2: #6fd3c4;
+  --font-d: var(--font-bricolage); --font-t: var(--font-dmsans);
+  --hero-big-gradient: linear-gradient(90deg, #f3ece2, #ffc2ad 55%, #ff8f6b);
+}
+html[data-layout="tide"] .font-display { font-weight: 600; font-stretch: normal; font-variation-settings: "wdth" 78, "opsz" 96; letter-spacing: -0.03em; }
+html[data-layout="tide"] .eyebrow::before { content: ""; display: inline-block; width: 28px; height: 1px; margin-right: 10px; vertical-align: middle; background: currentColor; }
+html[data-layout="tide"] .kinetic-char { transition-duration: .45s; }
+html[data-layout="tide"] .hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgb(6 42 44 / .55)); pointer-events: none; }
+html[data-layout="tide"] .hero-shade-side { background: linear-gradient(to left, rgb(4 30 32 / .8), transparent 62%); }
+html[data-layout="tide"] .hero-top .container-x { flex-direction: row-reverse; }
+html[data-layout="tide"] .hero-big { place-items: center end; }
+html[data-layout="tide"] .hero-big-text { text-align: right; }
+html[data-layout="tide"] .hero-copy-grid { grid-template-columns: auto 1fr; }
+html[data-layout="tide"] .hero-cta { order: -1; align-self: end; }
+html[data-layout="tide"] .hero-copy-text { justify-self: end; text-align: right; }
+html[data-layout="tide"] .hero-copy-text p { margin-left: auto; }
+@media (max-width: 767px) {
+  html[data-layout="tide"] .hero-copy-grid { grid-template-columns: 1fr; justify-items: end; }
+  html[data-layout="tide"] .hero-cta { order: 0; justify-content: flex-end; }
+}
+
+/* ═════════ MONOCHROM – nur Schwarz, Weiß und Neutralgrau, Space Grotesk + Geist ═════════
+   Hero: Film in Graustufen, Headline links oben, geometrische Maske, feine Linien. Effekt: Linienversatz.
+   Medien bleiben farbig erhalten; Schalter „Originalfarben“ (data-mono-colour) hebt die Graustufen auf. */
+html[data-layout="mono"] {
+  --bg: #000; --bg-raised: #0d0d0d; --bg-sunken: #000;
+  --fg: #fff; --accent: #fff; --accent-contrast: #000; --accent-2: #fff;
+  --radius-lg: 0px; --radius-xl: 0px; --radius-2xl: 0px; --radius-3xl: 0px;
+  --font-d: var(--font-spacegrotesk); --font-t: var(--font-geist);
+  --hero-big-gradient: linear-gradient(90deg, #fff, #fff);
+}
+html[data-layout="mono"] .font-display { font-weight: 500; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.035em; text-transform: none; }
+html[data-layout="mono"] .rounded-full:not(.size-1\.5):not(.size-2) { border-radius: 0; }
+html[data-layout="mono"] .eyebrow { color: var(--fg); letter-spacing: .2em; border-bottom: 1px solid var(--fg); display: inline-block; padding-bottom: 4px; }
+html[data-layout="mono"] .kinetic-char { transition-duration: .2s; }
+html[data-layout="mono"] .grain::after { opacity: 0; }
+html[data-layout="mono"] .hero-poster,
+html[data-layout="mono"] .hero-media canvas,
+html[data-layout="mono"] img:not([data-keep-colour]),
+html[data-layout="mono"] video { filter: grayscale(1) contrast(1.08); }
+html[data-layout="mono"][data-mono-colour="on"] .hero-poster,
+html[data-layout="mono"][data-mono-colour="on"] .hero-media canvas,
+html[data-layout="mono"][data-mono-colour="on"] img,
+html[data-layout="mono"][data-mono-colour="on"] video { filter: none; }
+html[data-layout="mono"] .hero-media { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 64px), calc(100% - 64px) 100%, 0 100%); }
+html[data-layout="mono"] .hero-big { place-items: start; padding-top: 19vh; }
+html[data-layout="mono"] .hero-big-text { text-align: left; max-width: 100%; font-size: clamp(48px, 7.6vw, 150px); line-height: 1.02; }
+html[data-layout="mono"] .hero-big-word { background: none; color: #fff; }
+html[data-layout="mono"] .hero-copy-grid { grid-template-columns: auto 1fr; }
+html[data-layout="mono"] .hero-cta { order: -1; align-self: end; }
+html[data-layout="mono"] .hero-copy-text { justify-self: end; text-align: right; border-right: 1px solid #fff; padding-right: 20px; }
+html[data-layout="mono"] .hero-copy-text p { margin-left: auto; }
+html[data-layout="mono"] section { border-top: 1px solid #ffffff1f; }
+html[data-layout="mono"] .border-line, html[data-layout="mono"] .border-line-strong { border-color: #ffffff3d; }
+html[data-layout="mono"] .vis-note { background: #000; color: #fff; border: 1px solid #fff; }
+@media (max-width: 767px) {
+  html[data-layout="mono"] .hero-copy-grid { grid-template-columns: 1fr; }
+  html[data-layout="mono"] .hero-cta { order: 0; }
+  html[data-layout="mono"] .hero-copy-text { justify-self: start; text-align: left; border-right: 0; border-left: 1px solid #fff; padding: 0 0 0 16px; }
+  html[data-layout="mono"] .hero-media { clip-path: none; }
+}
+@media (prefers-reduced-motion: reduce) { html[data-layout="mono"] .hero-media { clip-path: none; } }
+
+/* ───────── Zeichenflächen ohne CSS-Farbe: Hintergrund aus --bg (siehe useCssColor) ───────── */
+@media (prefers-reduced-motion: reduce) {
+  .kinetic-char { transform: none !important; filter: none !important; }
+  ::view-transition-new(root) { animation: none; }
+}

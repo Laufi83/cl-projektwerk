@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Technische Messeplanung & Projektsteuerung | {brand}",
+    "description": "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau: technische Planung, Arbeitsvorbereitung und Projektsteuerung. Projekt besprechen.",
+    "ogTitle": "{brand}: Planungskapazität für Messebau, Markenräume und Innenausbau",
+    "ogDescription": "Bemaßte Fertigungsunterlagen, Arbeitsvorbereitung und Projektsteuerung für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller. Ansprechpartner: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Zusätzliche Planungs- und Projektkapazität für Messebau, Markenräume und Innenausbau – projektbezogen und mit klar vereinbartem Umfang.",
+    "designsTitle": "Messestand-Entwürfe – jeden Tag neu",
+    "designsDescription": "Messestand-Designkonzepte mit Visualisierungen, Grundrissen und Ansichten, von {min} bis {max}. Jeden Morgen um 5:00 Uhr kommt ein weiterer Entwurf dazu.",
+    "designTitle": "{number} {title} · Messestand-Entwurf",
+    "designDescription": "Entwurf {title}: {size}{floors}. {description} Visualisierung eines Konzepts, kein gebauter Stand.",
+    "inquiryTitle": "Projekt besprechen",
+    "inquiryDescription": "Briefing senden: Messe oder Projekt, Termin, vorhandene Unterlagen und gewünschte Planungsleistung. Ich melde mich mit einer ersten Einschätzung.",
+    "selectionTitle": "Meine Auswahl",
+    "selectionDescription": "Ihre gemerkten Messestand-Entwürfe, die Sie mit einer Anfrage mitsenden können.",
+    "imprintDescription": "Anbieterkennzeichnung und rechtliche Angaben.",
+    "privacyDescription": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website."
+  },
+  "common": {
+    "skip": "Zum Inhalt springen",
+    "visualisation": "Visualisierung",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "prev": "Zurück",
+    "open": "Öffnen",
+    "view": "Ansehen",
+    "play": "Abspielen",
+    "pause": "Pausieren",
+    "loading": "Wird geladen",
+    "placeholder": "Bild folgt",
+    "later": "folgt",
+    "menu": "Menü",
+    "language": "Sprache",
+    "drag": "Ziehen",
+    "retry": "Erneut versuchen",
+    "noWebgl": "Die 3D-Darstellung wird von diesem Gerät oder Browser nicht unterstützt. Die Liste der Städte und Entfernungen steht unten bereit."
+  },
+  "nav": {
+    "services": "Leistungen",
+    "designs": "Entwürfe",
+    "process": "Zusammenarbeit",
+    "graphics": "Präsentation",
+    "world": "Messekalender",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "cta": "Projekt besprechen",
+    "selection": "Meine Auswahl",
+    "home": "Startseite",
+    "main": "Hauptnavigation"
+  },
+  "hero": {
+    "eyebrow": "Externes Planungs- und Projektbüro · Messebau, Markenräume, Innenausbau",
+    "title": "Planung, die auf der Fläche funktioniert.",
+    "lead": "Ich verstärke Messebauer, Agenturen, Innenausbaubetriebe und Aussteller mit technischer Planung, Arbeitsvorbereitung und Projektsteuerung – projektbezogen, mit klar vereinbartem Umfang und nachvollziehbaren Unterlagen.",
+    "cta": "Planungskapazität anfragen",
+    "secondary": "Entwürfe ansehen",
+    "scroll": "Scrollen Sie und sehen Sie zu, wie die Visualisierung entsteht",
+    "progress": "Aufbau (Visualisierung)",
+    "done": "Fertige Fläche",
+    "design": "Entwurf 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Entwürfe im Zeitraffer",
+    "title": "5 Entwürfe.",
+    "lead": "Fünf Konzeptanimationen zeigen, wie ein Entwurf vom leeren Hallenboden zur fertigen Fläche wächst. Es sind Visualisierungen, keine Aufnahmen gebauter Stände.",
+    "cta": "Animation abspielen",
+    "badge": "Konzeptanimation",
+    "sliderLabel": "Slider mit fünf Konzeptanimationen. Pfeiltasten blättern, Eingabetaste öffnet.",
+    "explain": "Zeitraffer-Animation eines Entwurfs. Sie zeigt, wie die geplante Fläche aufgebaut sein könnte, und ist kein Nachweis eines realisierten Stands."
+  },
+  "tagline": {
+    "text": "Jede Fläche beginnt mit Unterlagen, auf die sich alle Beteiligten verlassen können. Genau die erstelle ich."
+  },
+  "services": {
+    "eyebrow": "Leistungen",
+    "title": "Mehr Planungskapazität, wenn mehrere Projekte gleichzeitig laufen.",
+    "lead": "Messebauer, Agenturen und Innenausbaubetriebe stoßen bei parallelen Projekten, personellen Engpässen und technisch anspruchsvollen Aufgaben an Grenzen. Ich übernehme als externer Planer und Projektsteuerer klar abgegrenzte Teile Ihres Projekts – mit mehr als 20 Jahren Erfahrung im Messe- und Veranstaltungsumfeld. Fertigung, Transport, Montage, Statik, Genehmigungen und Elektroarbeiten erbringen qualifizierte Fachpartner.",
+    "trust": [
+      {
+        "title": "Ein Ansprechpartner",
+        "text": "für Planung, Unterlagen und Abstimmung – ich spreche selbst mit Ihnen, nicht über Zwischenstufen."
+      },
+      {
+        "title": "Mehr als 20 Jahre Erfahrung",
+        "text": "im Messe- und Veranstaltungsumfeld, ausgebildet als technischer Zeichner Holztechnik und zertifizierter Projektleiter Messebau und Event (IHK)."
+      },
+      {
+        "title": "Klar abgegrenzter Umfang",
+        "text": "Leistungsumfang, Korrekturschleifen und Termine vereinbare ich vorab schriftlich – Zusatzarbeiten und Reisen nur nach Absprache."
+      }
+    ],
+    "package": {
+      "badge": "Zusammenarbeit",
+      "title": "Projektbezogen oder als Monatskontingent.",
+      "subtitle": "Planungskapazität in dem Umfang, den Ihr Projekt gerade braucht.",
+      "text": "Sie senden mir ein Briefing, ich schätze den Aufwand ein und schlage Umfang, Ergebnisse und Termine vor. Danach arbeite ich projektbezogen oder innerhalb eines Monatskontingents mit festgelegten Stunden, Reaktionszeiten und Korrekturschleifen. Meine Kapazität ist begrenzt; ich nehme nur Projekte an, die ich sorgfältig bearbeiten kann.",
+      "cta": "Planungskapazität anfragen",
+      "more": "So läuft ein Projekt ab",
+      "phases": [
+        {
+          "title": "Briefing & Umfang",
+          "items": [
+            "Gemeinsame Klärung von Aufgabe, Termin und vorhandenen Unterlagen",
+            "Schriftlich festgelegter Leistungsumfang und Ergebnisse",
+            "Vereinbarte Korrekturschleifen und Freigabestufen",
+            "Individuelles Angebot nach dem Briefing"
+          ]
+        },
+        {
+          "title": "Planung & Unterlagen",
+          "items": [
+            "Bemaßte Detail- und Fertigungszeichnungen",
+            "Bauteillisten und Schnittstellenunterlagen",
+            "Material- und Mengenübersichten",
+            "Versionierte Dateien mit nachvollziehbarem Stand"
+          ]
+        },
+        {
+          "title": "Abstimmung & Steuerung",
+          "items": [
+            "Budget- und Terminübersichten",
+            "Angebotsvergleiche und Beschaffungsplanung",
+            "Abstimmung der Gewerke und Fachpartner",
+            "Dokumentierte Freigaben und Änderungen"
+          ]
+        },
+        {
+          "title": "Übergabe & Dokumentation",
+          "items": [
+            "Partnerbezogene Fertigungsunterlagen zur Übergabe",
+            "Dokumentation der Änderungen und Entscheidungen",
+            "Bestands- und Lagerinformationen für die Wiederverwendung",
+            "Vor-Ort-Termine und Reisen nach vorheriger Vereinbarung"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Fachpartner für die Ausführung.",
+      "text": "Ich plane und koordiniere, ausgeführt wird von qualifizierten Fachbetrieben. Im Grundmodell beauftragen Sie größere Fertigungs- und Montageleistungen direkt bei Ihren Partnern; auf Wunsch stimme ich mich mit ihnen ab und bereite deren Unterlagen auf. CL Projektwerk ist keine Produktionswerkstatt und tritt nicht als finanzierender Generalunternehmer auf.",
+      "items": [
+        "Ausschließlich CNC-gesteuerte Fertigung",
+        "Schreinerei",
+        "Metallbau",
+        "Montage und Aufbau",
+        "Transport und Logistik",
+        "Statik und Prüfungen",
+        "Genehmigungen und Abnahmen",
+        "Elektroarbeiten",
+        "Druck und Grafikproduktion",
+        "Medien- und Veranstaltungstechnik",
+        "… und weitere Gewerke nach Bedarf"
+      ]
+    },
+    "single": {
+      "eyebrow": "Einzeln buchbar",
+      "title": "Genau die Leistung, die Ihnen fehlt.",
+      "text": "Sie haben ein Team, aber zu wenig Planungskapazität? Dann buchen Sie nur den Bereich, den Sie brauchen – etwa Fertigungszeichnungen für ein Projekt oder die Terminsteuerung für einen Messeauftritt."
+    },
+    "items": {
+      "tech": {
+        "title": "Technische Planung",
+        "text": "Auf Grundlage Ihres Briefings erstelle ich bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen. Sie erhalten Unterlagen, mit denen Ihre Fertigungspartner arbeiten können, und sparen interne Planungsstunden.",
+        "points": [
+          "Bemaßte Detail- und Fertigungszeichnungen",
+          "Bauteillisten",
+          "Schnittstellenunterlagen zu Gewerken und Partnern"
+        ],
+        "task": "Aufgabe: Ihr Briefing in eindeutige technische Unterlagen übersetzen.",
+        "result": "Ergebnis: Zeichnungen, Listen und Schnittstellen in einem abgestimmten Stand.",
+        "benefit": "Nutzen: Weniger Rückfragen in der Fertigung, mehr Zeit für Ihre Kunden.",
+        "link": "Beispiele ansehen"
+      },
+      "prep": {
+        "title": "Arbeitsvorbereitung",
+        "text": "Ich bereite Ihr Projekt für die Ausführung vor: Material- und Mengenübersichten, partnerbezogene Fertigungsunterlagen sowie Beschaffungs- und Terminplanung. So wissen alle Beteiligten, was wann in welcher Menge gebraucht wird.",
+        "points": [
+          "Material- und Mengenübersichten",
+          "Partnerbezogene Fertigungsunterlagen",
+          "Beschaffungs- und Terminplanung"
+        ],
+        "task": "Aufgabe: Material, Mengen und Termine für die Ausführung ordnen.",
+        "result": "Ergebnis: Übersichten und Unterlagen, die je Partner zusammengestellt sind.",
+        "benefit": "Nutzen: Weniger Fehlmengen und Terminüberraschungen im Aufbau.",
+        "link": "So arbeite ich"
+      },
+      "control": {
+        "title": "Projektsteuerung",
+        "text": "Ich halte Budget und Termine übersichtlich, vergleiche Angebote, stimme Gewerke ab und dokumentiere Freigaben und Änderungen. Entscheidungen bleiben bei Ihnen – ich bereite sie so vor, dass sie schnell getroffen werden können.",
+        "points": [
+          "Budget- und Terminübersichten",
+          "Angebotsvergleiche und Gewerkeabstimmung",
+          "Freigaben und nachvollziehbare Änderungsdokumentation"
+        ],
+        "task": "Aufgabe: Überblick über Kosten, Termine und Abstimmungen behalten.",
+        "result": "Ergebnis: Aktuelle Übersichten und dokumentierte Entscheidungen.",
+        "benefit": "Nutzen: Entlastung bei parallelen Projekten und klare Nachvollziehbarkeit.",
+        "link": "Zusammenarbeit ansehen"
+      },
+      "concept": {
+        "title": "Entwurf und Präsentation",
+        "text": "Ich entwickle Stand- und Raumkonzepte, erstelle Visualisierungen und druckfertige Grafiken. Der Leistungsumfang und die Zahl der Korrekturschleifen werden vorab vereinbart, damit Aufwand und Ergebnis planbar bleiben.",
+        "points": [
+          "Stand- und Raumkonzepte",
+          "Visualisierungen für Abstimmung und Präsentation",
+          "Druckfertige Grafiken mit vereinbarten Korrekturschleifen"
+        ],
+        "task": "Aufgabe: Eine Idee so zeigen, dass Sie und Ihre Kunden entscheiden können.",
+        "result": "Ergebnis: Konzept, Visualisierungen und Druckdaten im vereinbarten Umfang.",
+        "benefit": "Nutzen: Frühe Entscheidungen auf Basis verständlicher Bilder und Pläne.",
+        "link": "Entwürfe ansehen"
+      },
+      "reuse": {
+        "title": "Wiederverwendungsplanung",
+        "text": "Ich erfasse vorhandene Bauteile, plane Varianten für neue Einsätze und pflege Material- und Lagerinformationen. So lässt sich Vorhandenes gezielt wieder einsetzen, statt jedes Mal neu zu planen.",
+        "points": [
+          "Bestandsaufnahme vorhandener Bauteile",
+          "Variantenplanung für neue Einsätze",
+          "Material- und Lagerinformationen"
+        ],
+        "task": "Aufgabe: Vorhandene Bauteile erfassen und für neue Aufbauten nutzbar machen.",
+        "result": "Ergebnis: Bestandsliste, Varianten und Lagerinformationen.",
+        "benefit": "Nutzen: Weniger Neuplanung und Materialeinsatz bei wiederkehrenden Aufbauten.",
+        "link": "Anfrage stellen"
+      }
+    },
+    "inquire": "Anfragen",
+    "cta": {
+      "title": "Ihr nächstes Projekt beginnt mit einem Briefing.",
+      "text": "Schildern Sie mir kurz Aufgabe, Termin und vorhandene Unterlagen. Ich melde mich mit einer ersten Einschätzung und den nächsten Schritten. Das Angebot erhalten Sie individuell nach dem Briefing.",
+      "button": "Briefing senden",
+      "phone": "Lieber direkt sprechen?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Entwurfsgalerie · täglich neu",
+    "title": "Jeden Tag ein neuer Entwurf.",
+    "lead": "{count} von {total} Messestand-Designkonzepten sind aktuell sichtbar, von {min} bis {max}. Jeden Morgen um 5:00 Uhr kommt ein weiterer Entwurf dazu. Alle Bilder sind Visualisierungen von Konzepten. Durchblättern, filtern, merken und direkt anfragen.",
+    "slider": "Slider",
+    "grid": "Raster",
+    "viewMode": "Ansicht",
+    "random": "Zufälliger Entwurf",
+    "dayPick": "Entwurf des Tages",
+    "hint": "Ziehen, scrollen oder Pfeiltasten",
+    "hintTouch": "Zur Seite wischen",
+    "count": "{count} von {total}",
+    "empty": "Kein Entwurf passt zu diesen Filtern.",
+    "reset": "Filter zurücksetzen",
+    "filters": "Filter",
+    "listTitle": "Alle sichtbaren Entwürfe im Überblick",
+    "sliderLabel": "Entwurfs-Slider. Pfeiltasten blättern, Eingabetaste öffnet.",
+    "current": "Aktuell: {number} {title}",
+    "loadingSlider": "Slider wird geladen",
+    "cardAlt": "Entwurf {number} {title}: Visualisierung eines Messestand-Konzepts",
+    "filter": {
+      "all": "Alle",
+      "clip": "Mit Konzeptanimation",
+      "two-storey": "Zweigeschossig",
+      "size-s": "Kompakt bis 30 m²",
+      "size-m": "Mittel bis 150 m²",
+      "size-l": "Groß ab 150 m²",
+      "wood": "Holz",
+      "green": "Begrünung",
+      "metal": "Metall",
+      "light": "Licht",
+      "container": "Container",
+      "product": "Produktstände",
+      "real-estate": "Immobilienmesse",
+      "outdoor": "Freigelände"
+    }
+  },
+  "detail": {
+    "facts": "Kenndaten",
+    "area": "Fläche",
+    "floors": "Etagen",
+    "standType": "Standtyp",
+    "height": "Höhe",
+    "materials": "Materialien",
+    "colours": "Farben",
+    "series": "Serie",
+    "floorsValue": "{count, plural, =1 {eingeschossig} =2 {zweigeschossig} other {# Geschosse}}",
+    "standTypes": {
+      "corner": "Eckstand",
+      "head": "Kopfstand",
+      "island": "Inselstand",
+      "row": "Reihenstand"
+    },
+    "renderings": "Visualisierungen",
+    "plans": "Pläne",
+    "floorplan": "Grundriss",
+    "elevation": "Höhenansicht",
+    "download": "Herunterladen",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern",
+    "zoomReset": "Ansicht zurücksetzen",
+    "fullscreen": "Vollbild",
+    "clip": "Konzeptanimation im Zeitraffer",
+    "favorite": "Zur Auswahl hinzufügen",
+    "favorited": "In Ihrer Auswahl",
+    "share": "Teilen",
+    "shareWhatsapp": "Per WhatsApp teilen",
+    "shareLinkedin": "Auf LinkedIn teilen",
+    "copyLink": "Link kopieren",
+    "copied": "Link kopiert",
+    "inquire": "Anfrage zu diesem Entwurf",
+    "prevDesign": "Vorheriger Entwurf",
+    "nextDesign": "Nächster Entwurf",
+    "backToGallery": "Zur Galerie",
+    "imageOf": "Bild {current} von {total}",
+    "description": "Beschreibung",
+    "placeholderImage": "Bild folgt",
+    "conceptNote": "Konzeptentwurf. Die Darstellung ist eine Visualisierung und zeigt keinen gebauten Stand.",
+    "imageAlt": "{title}: {label} (Visualisierung)",
+    "planAlt": "{title}: {label} (Planzeichnung des Entwurfs)",
+    "clipAlt": "{title}: Konzeptanimation des Aufbaus (Visualisierung)"
+  },
+  "process": {
+    "eyebrow": "Zusammenarbeit",
+    "title": "Sechs Schritte vom Briefing bis zur Übergabe.",
+    "steps": {
+      "briefing": {
+        "title": "Briefing & Umfang",
+        "text": "Aufgabe, Termin, vorhandene Unterlagen und gewünschte Ergebnisse. Wir legen fest, was ich liefere, wie viele Korrekturschleifen vorgesehen sind und wer freigibt.",
+        "alt": "Skizzen-Animation zum Briefing (Visualisierung)"
+      },
+      "concept": {
+        "title": "Entwurf & Abstimmung",
+        "text": "Raumidee, Visualisierungen, Grundriss und Ansichten. Sie sehen die Fläche aus mehreren Perspektiven und entscheiden in Ruhe, bevor technisch ins Detail geplant wird.",
+        "alt": "Konzeptanimation zum Entwurf (Visualisierung)"
+      },
+      "planning": {
+        "title": "Technische Planung",
+        "text": "Bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen. Statik, Genehmigungen und Elektroplanung erbringen dafür qualifizierte Fachpartner; ich stimme die Schnittstellen ab.",
+        "alt": "Animation zur technischen Planung (Visualisierung)"
+      },
+      "production": {
+        "title": "Arbeitsvorbereitung & Fertigungsunterlagen",
+        "text": "Material- und Mengenübersichten sowie Unterlagen je Fertigungspartner, dazu Beschaffungs- und Terminplanung. Gefertigt wird beim jeweiligen Fachbetrieb, nicht bei mir.",
+        "alt": "Animation einer CNC-Bearbeitung als Beispiel für Fertigungsdaten (Visualisierung); die Fertigung erbringt der Fachpartner"
+      },
+      "logistics": {
+        "title": "Abstimmung der Gewerke",
+        "text": "Terminübersicht, Angebotsvergleiche und Abstimmung zwischen den Gewerken, damit Transport, Aufbau und Technik zusammenpassen. Ausgeführt wird von Ihren Fachpartnern.",
+        "alt": "Zeitraffer-Konzeptanimation des Aufbaus (Visualisierung)"
+      },
+      "onsite": {
+        "title": "Freigaben, Änderungen & Übergabe",
+        "text": "Freigaben und Änderungen dokumentiere ich nachvollziehbar und übergebe Ihnen am Ende alle Unterlagen. Vor-Ort-Termine sind möglich, wenn sie vorab vereinbart wurden.",
+        "alt": "Konzeptanimation zur Übergabe (Visualisierung)"
+      }
+    },
+    "sketch": "Skizze"
+  },
+  "world": {
+    "eyebrow": "Messekalender",
+    "title": "Messen in Deutschland und Europa.",
+    "lead": "Ein Überblick über Messetermine in Deutschland und Europa – als Orientierung für Ihre Projektplanung. Wählen Sie eine Stadt, und der Globus zeigt Ort und Luftlinie ab Leipzig. Ein Termin im Kalender sagt nichts über Aufträge oder eine Teilnahme von CL Projektwerk.",
+    "placeholderNote": "Beispielstandorte",
+    "listLabel": "Messestädte",
+    "drag": "Globus drehen",
+    "base": "Standort",
+    "regions": {
+      "de": "Deutschland",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Messekalender",
+      "title": "Die nächste Messe in jeder Stadt.",
+      "lead": "Für jede Stadt erscheint die nächste anstehende Leitmesse, chronologisch wie auf einer Abflugtafel. Scrollen Sie durch die Tafel: Der Globus folgt der Auswahl.",
+      "summary": "{cities} Messestädte · {km} km Luftlinie entlang der Route ab Leipzig",
+      "boardLabel": "Messekalender: nächste Messe je Stadt",
+      "cols": {
+        "date": "Termin",
+        "dest": "Ziel",
+        "fair": "Messe",
+        "status": "Status"
+      },
+      "running": "Läuft gerade",
+      "today": "Heute",
+      "tomorrow": "Morgen",
+      "inDays": "in {days} Tagen",
+      "tba": "Termin folgt",
+      "past": "Beendet",
+      "tbaNote": "Für diese Stadt ist derzeit kein bestätigter Termin einer Leitmesse hinterlegt.",
+      "dateTbc": "Termin nicht bestätigt",
+      "fairName": "Messe",
+      "venue": "Gelände",
+      "route": "Luftlinie",
+      "homeBase": "Mein Standort",
+      "km": "{km} km",
+      "localTime": "Ortszeit",
+      "website": "Website des Veranstalters",
+      "inquire": "Projekt zu {fair} besprechen",
+      "tourPause": "Rundreise anhalten",
+      "tourPlay": "Rundreise fortsetzen",
+      "note": "Termine laut Angaben der Veranstalter, geprüft am {date}. Änderungen sind möglich; maßgeblich sind die Websites der Veranstalter. Messenamen sind Marken ihrer Inhaber. Die Termine sind keine Aussage über Aufträge oder eine Teilnahme von CL Projektwerk.",
+      "search": "Messe oder Stadt suchen",
+      "searchPlaceholder": "z. B. Düsseldorf oder Bau",
+      "filterCountry": "Land",
+      "filterCity": "Stadt",
+      "filterPeriod": "Zeitraum",
+      "filterSector": "Branche",
+      "filterAll": "Alle",
+      "periodUpcoming": "Kommende",
+      "periodRunning": "Laufende",
+      "periodPast": "Vergangene",
+      "resultCount": "{count, plural, =0 {Keine Messe} =1 {1 Messe} other {# Messen}}",
+      "empty": "Keine Messe passt zu Ihrer Suche und den gewählten Filtern.",
+      "reset": "Suche und Filter zurücksetzen",
+      "source": "Quelle",
+      "checkedOn": "Geprüft am {date}"
+    },
+    "zoomIn": "Hineinzoomen",
+    "zoomOut": "Herauszoomen",
+    "zoomReset": "Ansicht zurücksetzen",
+    "zoomEurope": "Europaansicht",
+    "zoomCountry": "Land wählen",
+    "zoomHint": "Strg + Mausrad oder Doppelklick: zoomen · Stadt anklicken: Luftlinie",
+    "zoomHintTouch": "Mit zwei Fingern zoomen · Stadt antippen: Luftlinie",
+    "zoomHintKeys": "Pfeiltasten verschieben die Ansicht, Plus und Minus zoomen.",
+    "scrollHint": "Normales Scrollen bewegt nur die Seite. Zum Zoomen Strg gedrückt halten.",
+    "distance": {
+      "title": "Luftlinie zwischen zwei Städten",
+      "from": "Von",
+      "to": "Nach",
+      "pick": "Stadt wählen",
+      "swap": "Städte tauschen",
+      "result": "Luftlinie: {km} km",
+      "resultFromTo": "Luftlinie {from} – {to}: {km} km",
+      "note": "Berechnet als Großkreisentfernung auf der Erdkugel. Das ist keine Straßenentfernung und sagt nichts über die Reisezeit.",
+      "rings": "Entfernungsringe um {city}: {km} km",
+      "scale": "Maßstab: {km} km",
+      "listTitle": "Städte und Luftlinie ab {city}",
+      "listCity": "Stadt",
+      "listCountry": "Land",
+      "listKm": "Luftlinie",
+      "noWebglTitle": "3D-Ansicht nicht verfügbar",
+      "noWebglText": "Ihr Gerät zeigt die 3D-Weltkugel nicht an. Die Tabelle enthält dieselben Städte, Messen und Entfernungen.",
+      "reducedMotion": "Reduzierte Bewegung ist aktiv: Es gibt keine automatischen Flüge und Animationen."
+    },
+    "origin": {
+      "use": "Meinen Standort als Startpunkt nutzen",
+      "locating": "Standort wird bestimmt …",
+      "active": "Startpunkt: {city} – nächstgelegene Messestadt zu Ihrem Standort",
+      "reset": "Zurück zu {city}",
+      "denied": "Der Standort wurde nicht freigegeben. Der Startpunkt bleibt {city}.",
+      "far": "Ihr Standort liegt außerhalb des Kartengebiets. Der Startpunkt bleibt {city}.",
+      "note": "Ihr Standort wird nur in Ihrem Browser ausgewertet und nicht übertragen."
+    }
+  },
+  "led": {
+    "eyebrow": "Bildschirmflächen in der Planung",
+    "title": "Medienflächen brauchen genaue Maße.",
+    "lead": "LED-Wände und Monitore gehören zu vielen Messeflächen. Ich plane sie mit Maßen, Seitenverhältnissen und Anschlussdaten in Ihre Unterlagen ein. Die Clips zeigen übliche Formate; sie sind lizenziertes Beispielmaterial und keine eigenen Projekte.",
+    "placeholder": "Beispielclip {n}",
+    "placeholderNote": "Beispielmaterial",
+    "caption": "Beispielclip (Stock-Lizenz): {title}, {format}. Kein Projekt von CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "Über mich",
+    "name": "Christof Laufersweiler",
+    "role": "Planung und Projektsteuerung für Messebau, Markenräume und Innenausbau",
+    "text": "Ich bin Christof Laufersweiler und arbeite seit mehr als 20 Jahren im Messe- und Veranstaltungsumfeld. Gelernt habe ich als technischer Zeichner der Fachrichtung Holztechnik, später kamen die Projektleitung im Messebau, die angestellte Geschäftsführung eines Messebauunternehmens und ein IHK-Zertifikat als Projektleiter Messebau und Event hinzu. Mit CL Projektwerk biete ich in Leipzig externe Planungs- und Projektkapazität an: für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller, die zusätzliche Hände mit Fachwissen brauchen.",
+    "close": "Sie behalten die Entscheidungen. Ich sorge für Unterlagen, Übersicht und Abstimmung.",
+    "photoAlt": "Porträt von Christof Laufersweiler, Gründer von CL Projektwerk",
+    "cta": "Projekt mit mir besprechen",
+    "career": "Werdegang",
+    "projects": "Projekterfahrung aus früherer Tätigkeit",
+    "projectsNote": "Diese Beispiele stammen aus meiner früheren beruflichen Tätigkeit als verantwortlicher Projektleiter. Es sind keine Projekte von CL Projektwerk, und die genannten Unternehmen sind keine Kunden von CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Sprachen"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ Jahre",
+        "label": "Erfahrung im Messe- und Veranstaltungsumfeld"
+      },
+      {
+        "value": "1.200 m²",
+        "label": "größte betreute Standfläche aus früherer Tätigkeit (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Zertifikat Projektleiter/-in Messebau und Event (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Projektleitung",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Geschäftsführer (angestellt)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Projektleitung Messestandbau",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "12/2009",
+        "role": "Zertifikat Projektleiter/-in Messebau und Event (Lehrgang, 160 Unterrichtsstunden)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Ausbildung zum Technischen Zeichner, Fachrichtung Holztechnik",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1.200 m²",
+        "note": "Mehrere Aussteller und Fahrzeuge, großflächige LED-Displays"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1.200 m²",
+        "note": "20 m lange LED-Wand, technisch koordiniert"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Abgehängte Konstruktion aus Brettschichtholz, faltenfrei bespannte Stoffgrafiken"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Offenes Standkonzept mit LED-Wand"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Deutsch (Muttersprache)",
+      "Englisch (verhandlungssicher)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Projekt besprechen",
+    "title": "Erzählen Sie mir von Ihrem Projekt.",
+    "lead": "Vier kurze Schritte, wenige Pflichtangaben. Gemerkte Entwürfe aus der Galerie hänge ich auf Wunsch an.",
+    "response": "Ich antworte in der Regel innerhalb von {time}.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Umfang",
+      "services": "Leistung",
+      "contact": "Kontakt"
+    },
+    "stepOf": "Schritt {current} von {total}",
+    "fields": {
+      "fair": "Messe, Veranstaltung oder Projekt",
+      "fairPlaceholder": "z. B. Messeauftritt, Markenraum oder Innenausbau",
+      "projectType": "Projektart",
+      "projectTypes": {
+        "fair": "Messestand",
+        "brand": "Markenraum",
+        "interior": "Innenausbau",
+        "event": "Event",
+        "open": "Noch offen"
+      },
+      "city": "Ort",
+      "cityPlaceholder": "z. B. Leipzig",
+      "dateFrom": "Termin von",
+      "dateTo": "bis",
+      "dateUnknown": "Termin steht noch nicht fest",
+      "size": "Größe der Fläche (optional)",
+      "width": "Breite (m)",
+      "depth": "Tiefe (m)",
+      "area": "Fläche",
+      "standType": "Standtyp",
+      "standTypeUnknown": "Noch offen",
+      "floors": "Geschosse",
+      "documents": "Vorhandene Unterlagen",
+      "documentOptions": {
+        "briefing": "Briefing oder Lastenheft",
+        "cad": "CAD- oder Planungsdaten",
+        "sketches": "Skizzen oder Moodboards",
+        "renders": "Visualisierungen",
+        "inventory": "Bestandslisten",
+        "none": "Noch keine"
+      },
+      "services": "Benötigte Planungsleistung",
+      "scope": "Gewünschter Umfang",
+      "scopes": {
+        "single": "Einzelne Leistung",
+        "project": "Komplettes Projekt",
+        "quota": "Laufendes Monatskontingent",
+        "open": "Noch offen"
+      },
+      "budget": "Gesamtbudget des Projekts (optional)",
+      "budgets": {
+        "a": "bis 25.000 €",
+        "b": "25.000 bis 75.000 €",
+        "c": "75.000 bis 150.000 €",
+        "d": "über 150.000 €",
+        "open": "Möchte ich nicht angeben"
+      },
+      "name": "Name",
+      "company": "Firma",
+      "email": "E-Mail",
+      "phone": "Telefon (optional)",
+      "message": "Nachricht",
+      "messagePlaceholder": "Was soll geplant werden? Gibt es Vorgaben, einen Vorgängeraufbau oder besondere technische Anforderungen?",
+      "favorites": "Angehängte Entwürfe",
+      "favoritesEmpty": "Keine Entwürfe gemerkt. In der Galerie können Sie Entwürfe mit dem Herz sammeln.",
+      "consent": "Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage gespeichert und verwendet werden. Details in der <privacy>Datenschutzerklärung</privacy>.",
+      "privacy": "Datenschutzerklärung",
+      "required": "Pflichtangabe"
+    },
+    "submit": "Briefing senden",
+    "sending": "Wird gesendet",
+    "errors": {
+      "required": "Bitte ausfüllen.",
+      "email": "Bitte eine gültige E-Mail-Adresse eingeben.",
+      "consent": "Bitte stimmen Sie der Verarbeitung zu, damit ich antworten kann.",
+      "dates": "Das Ende liegt vor dem Beginn.",
+      "server": "Das Senden hat nicht funktioniert. Bitte versuchen Sie es erneut oder schreiben Sie an {email}.",
+      "rate": "Zu viele Anfragen in kurzer Zeit. Bitte versuchen Sie es in einigen Minuten erneut."
+    },
+    "whatsapp": "Per WhatsApp schreiben",
+    "callback": "Rückruf anfragen",
+    "callbackTitle": "Rückruf anfragen",
+    "callbackTime": "Wann passt es Ihnen?",
+    "callbackTimePlaceholder": "z. B. morgen ab 14 Uhr",
+    "callbackSubmit": "Rückruf anfragen",
+    "callbackDone": "Danke. Ihre Rückrufbitte wurde übermittelt. Ich versuche, Sie zum genannten Zeitpunkt zu erreichen.",
+    "direct": "Direkt",
+    "notConfigured": "Noch nicht hinterlegt",
+    "prefilled": "Ihre Auswahl: {list}",
+    "emailDraft": {
+      "prepare": "E-Mail vorbereiten",
+      "title": "E-Mail-Entwurf bereit",
+      "notice": "Deine Angaben werden als E-Mail-Entwurf vorbereitet. Bitte im eigenen Mailprogramm prüfen und selbst versenden. Es wurde noch keine Nachricht gesendet.",
+      "open": "Im Mailprogramm öffnen",
+      "copy": "Text kopieren",
+      "copied": "Text kopiert",
+      "fallback": "Kein Mailprogramm eingerichtet oder Angaben fehlen im Entwurf? Kopiere den vollständigen Text unten in dein Webmail-Postfach."
+    }
+  },
+  "thanks": {
+    "title": "Danke für Ihr Briefing.",
+    "text": "Ihre Anfrage wurde übermittelt. Ich melde mich in der Regel innerhalb von {time} mit einer ersten Einschätzung. Eine automatische Bestätigung per E-Mail wird nicht versendet. Gemerkte Entwürfe wurden mitgeschickt.",
+    "back": "Zur Startseite",
+    "designs": "Weitere Entwürfe ansehen"
+  },
+  "selection": {
+    "title": "Meine Auswahl",
+    "lead": "Ihre gemerkten Entwürfe. Mit einem Klick als Anfrage mitsenden.",
+    "count": "{count, plural, =0 {Noch nichts gemerkt} =1 {1 Entwurf gemerkt} other {# Entwürfe gemerkt}}",
+    "empty": "Noch nichts gemerkt. Tippen Sie in der Galerie auf das Herz, um Entwürfe zu sammeln.",
+    "toGallery": "Zur Galerie",
+    "inquire": "Auswahl mit Anfrage senden",
+    "clear": "Alle entfernen",
+    "remove": "Entfernen"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "cookies": "Cookie-Einstellungen",
+    "note": "Alle Renderings und Animationen auf dieser Website sind Visualisierungen von Entwurfskonzepten. Sie zeigen keine gebauten Messestände.",
+    "top": "Nach oben",
+    "languages": "Sprachen",
+    "tagline": "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau"
+  },
+  "cookies": {
+    "title": "Ihre Privatsphäre",
+    "text": "Diese Website speichert nur, was technisch nötig ist, zum Beispiel Ihre gemerkten Entwürfe, das gewählte Layout und diese Auswahl. Statistik und externe Dienste sind aus, bis Sie zustimmen.",
+    "necessary": "Nur notwendige",
+    "settings": "Einstellungen",
+    "acceptAll": "Alle erlauben",
+    "save": "Auswahl speichern",
+    "categories": {
+      "necessary": "Notwendig",
+      "necessaryText": "Sprache, gemerkte Entwürfe, Layout, Radio-Einstellungen und diese Auswahl. Immer aktiv.",
+      "stats": "Statistik",
+      "statsText": "Derzeit nicht im Einsatz.",
+      "media": "Externe Medien",
+      "mediaText": "Derzeit nicht im Einsatz. Das Radio verbindet sich erst, wenn Sie es selbst starten."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Impressum",
+    "privacyTitle": "Datenschutzerklärung",
+    "placeholder": "Rechtstext folgt.",
+    "notice": "Maßgeblich ist die deutsche Fassung dieses Textes.",
+    "updated": "Stand: {date}"
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es nicht.",
+    "text": "Vielleicht finden Sie in der Entwurfsgalerie, was Sie suchen.",
+    "home": "Zur Startseite",
+    "designs": "Zur Galerie"
+  },
+  "layouts": {
+    "label": "Layout wählen",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: Konzeptanimation {n}",
+    "active": "aktiv",
+    "preview": "Vorschau: {name}",
+    "hint": "Pfeiltasten wechseln das Layout, Escape schließt die Auswahl.",
+    "saved": "Ihre Auswahl wird auf diesem Gerät gespeichert.",
+    "monoShowColour": "Originalfarben anzeigen",
+    "monoHideColour": "Schwarz-Weiß anzeigen",
+    "items": {
+      "studio": "Anthrazit und Orange, klare Linien, präzise wie ein Planungsatelier",
+      "aurora": "Dunkle Flächen mit Mint und Violett, Serifenschrift, weiche Lichtbewegungen",
+      "tide": "Petrol und Koralle, ausdrucksstarke Schrift, fließende Wellen",
+      "mono": "Konsequent Schwarz und Weiß, starke Kontraste, geometrische Formen"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "SENDER WÄHLEN",
+    "close": "Player zuklappen",
+    "stations": "Sender",
+    "play": "Wiedergabe starten",
+    "pause": "Wiedergabe anhalten",
+    "mute": "Stummschalten",
+    "unmute": "Ton einschalten",
+    "volume": "Lautstärke",
+    "off": "aus",
+    "hint": "Live-Webradio. Der Ton startet erst nach Ihrem Klick, der Regler gilt nur für diesen Player. Beim Start verbindet sich Ihr Browser mit dem Sender.",
+    "noTrack": "Keine Titelinformation verfügbar",
+    "levelNote": "Die Pegelanzeige ist eine reine Animation und gibt nicht den echten Pegel wieder.",
+    "state": {
+      "ready": "Bereit",
+      "connecting": "Verbindung wird aufgebaut …",
+      "live": "Läuft live",
+      "buffering": "Puffert …",
+      "stalled": "Verbindung stockt …",
+      "paused": "Pausiert",
+      "error": "Sender nicht erreichbar",
+      "blocked": "Start vom Browser blockiert. Bitte erneut auf Play klicken."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Entwurf und Präsentation",
+    "title": "Grafik, die auf der Fläche passt.",
+    "text": "Zu einem Entwurf gehören Bilder, die Entscheidungen ermöglichen, und Daten, die sich ohne Nacharbeit weiterverarbeiten lassen. Ich erstelle Visualisierungen und druckfertige Grafikdaten, abgestimmt auf Maße und Konstruktion der Fläche und auf Ihr Corporate Design. Der Leistungsumfang und die Zahl der Korrekturschleifen werden vorab vereinbart. Der Druck selbst erfolgt bei einem Druckpartner, den Sie oder ich auf Wunsch einbinden.",
+    "points": [
+      {
+        "title": "Visualisierungen für die Abstimmung",
+        "text": "Perspektiven, Grundriss und Ansichten machen den Entwurf für Sie und Ihre Kunden verständlich."
+      },
+      {
+        "title": "Druckdaten mit allen Angaben",
+        "text": "Beschnitt, Farbprofil, Maße und Dateiformat sind für Ihren Druckpartner aufbereitet."
+      },
+      {
+        "title": "Abgestimmt auf die Konstruktion",
+        "text": "Grafikflächen werden mit den Maßen der Wände und Bauteile aus der technischen Planung abgeglichen."
+      },
+      {
+        "title": "Vereinbarte Korrekturschleifen",
+        "text": "Wie viele Korrekturrunden enthalten sind, legen wir vorab fest. Weitere Runden sind Zusatzleistung."
+      },
+      {
+        "title": "Versionierte Dateien",
+        "text": "Jede Fassung hat einen klaren Stand, damit nur freigegebene Daten in den Druck gehen."
+      },
+      {
+        "title": "Übergabe an Ihren Druckpartner",
+        "text": "Ich liefere die Daten, der Fachbetrieb druckt und produziert."
+      }
+    ],
+    "close": "Gestaltung und Daten von mir, Produktion beim Fachbetrieb – damit die Fläche so aussieht, wie sie freigegeben wurde.",
+    "videoLabel": "Animation: Druckdaten am Monitor und Großformatdruck einer Messegrafik (Visualisierung)"
+  },
+  "drops": {
+    "rule": "Jeden Morgen um 5:00 Uhr ein weiterer Entwurf",
+    "today": "Neu heute",
+    "next": "Nächster Entwurf in",
+    "soon": "Ein neuer Entwurf ist sichtbar.",
+    "reload": "Neu laden",
+    "complete": "Alle {total} Entwürfe sind sichtbar",
+    "count": "{released} von {total} sichtbar"
+  },
+  "error": {
+    "title": "Hier ist etwas schiefgelaufen.",
+    "text": "Die Seite konnte nicht vollständig geladen werden. Bitte versuchen Sie es noch einmal.",
+    "retry": "Erneut versuchen",
+    "home": "Zur Startseite"
+  },
+  "seo": {
+    "eyebrow": "Technische Messeplanung",
+    "title": "Technische Planung, Arbeitsvorbereitung und Projektsteuerung für Messebau und Innenausbau.",
+    "intro": "CL Projektwerk ist ein externes Planungs- und Projektbüro in Leipzig. Ich unterstütze Messebauer, Agenturen, Innenausbaubetriebe und mittelständische Aussteller bei der Messebauplanung: mit bemaßten Fertigungsunterlagen, Arbeitsvorbereitung, externer Projektsteuerung, Entwürfen und Wiederverwendungsplanung. Ausgeführt wird von Fachpartnern; ich liefere Planung und Koordination.",
+    "blocks": [
+      {
+        "title": "Technische Messeplanung",
+        "text": "Aus dem Briefing entstehen bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen. Damit können Ihre Fertigungspartner arbeiten, ohne dass Ihr Team jede Zeichnung selbst erstellen muss."
+      },
+      {
+        "title": "Arbeitsvorbereitung für Messebau und Markenräume",
+        "text": "Material- und Mengenübersichten, Unterlagen je Fertigungspartner sowie Beschaffungs- und Terminplanung machen aus Zeichnungen einen Ablauf, der sich organisieren lässt."
+      },
+      {
+        "title": "Externe Projektsteuerung",
+        "text": "Budget- und Terminübersichten, Angebotsvergleiche, Gewerkeabstimmung und dokumentierte Freigaben schaffen Überblick – besonders, wenn mehrere Projekte gleichzeitig laufen."
+      },
+      {
+        "title": "Entwurf, Präsentation und Wiederverwendung",
+        "text": "Stand- und Raumkonzepte, Visualisierungen und druckfertige Grafiken helfen bei der Abstimmung. Die Wiederverwendungsplanung erfasst vorhandene Bauteile und plant Varianten für neue Einsätze."
+      }
+    ],
+    "faqTitle": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Was kostet die Zusammenarbeit?",
+        "a": "Das hängt von Umfang, Ergebnissen und Terminen ab. Nach einem kurzen Briefing erhalten Sie ein individuelles Angebot für das Projekt oder für ein Monatskontingent."
+      },
+      {
+        "q": "Wann sollte ich anfragen?",
+        "a": "Am besten, sobald Aufgabe und Termin feststehen, weil meine monatliche Planungskapazität begrenzt ist. Kurzfristige Anfragen prüfe ich nach aktueller Auslastung."
+      },
+      {
+        "q": "Kann ich auch nur eine einzelne Leistung buchen?",
+        "a": "Ja. Technische Planung, Arbeitsvorbereitung, Projektsteuerung, Entwurf und Präsentation oder Wiederverwendungsplanung sind einzeln buchbar."
+      },
+      {
+        "q": "Fertigen und montieren Sie auch?",
+        "a": "Nein. Fertigung, Transport, Montage, Statik, Genehmigungen und Elektroarbeiten erbringen qualifizierte Fachpartner. Größere Leistungen beauftragen Sie in der Regel direkt; ich plane und koordiniere."
+      },
+      {
+        "q": "Sind Termine vor Ort oder Reisen möglich?",
+        "a": "Die Planung erfolgt überwiegend aus Leipzig. Vor-Ort-Termine und Reisen vereinbaren wir vorab, zusätzliche Leistungen werden gesondert abgestimmt."
+      },
+      {
+        "q": "Bieten Sie Webdesign oder Automatisierung an?",
+        "a": "Das gehört nicht zu meinen Hauptleistungen. Mein Schwerpunkt ist die Planung und Steuerung von Messebau-, Markenraum- und Innenausbauprojekten."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Sprache wählen",
+    "hint": "Ziehen, wischen oder mit den Pfeiltasten drehen",
+    "current": "aktuell",
+    "prev": "Vorherige Sprache",
+    "next": "Nächste Sprache",
+    "close": "Schließen"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau",
+    "claim": "Planung, die auf der Fläche funktioniert.",
+    "visualisationNote": "Visualisierung"
+  },
+  "structured": {
+    "serviceCatalog": "Leistungen",
+    "services": [
+      "Technische Planung: bemaßte Detail- und Fertigungszeichnungen, Bauteillisten, Schnittstellenunterlagen",
+      "Arbeitsvorbereitung: Material- und Mengenübersichten, Fertigungsunterlagen, Beschaffungs- und Terminplanung",
+      "Projektsteuerung: Budget- und Terminübersichten, Angebotsvergleiche, Gewerkeabstimmung, Änderungsdokumentation",
+      "Entwurf und Präsentation: Stand- und Raumkonzepte, Visualisierungen, druckfertige Grafiken",
+      "Wiederverwendungsplanung: Bestandsaufnahme, Variantenplanung, Material- und Lagerinformationen"
+    ],
+    "keywords": [
+      "technische Messeplanung",
+      "Messebauplanung",
+      "externe Projektsteuerung",
+      "Arbeitsvorbereitung Messebau",
+      "Planungsbüro Leipzig",
+      "Markenräume",
+      "Innenausbau",
+      "Wiederverwendungsplanung"
+    ],
+    "genre": "Messestand-Entwurf",
+    "videoSuffix": "Konzeptanimation im Zeitraffer"
+  },
+  "ogImage": {
+    "film": "▶ Konzeptanimation"
+  }
+}

@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Teknisk messeplanlægning og projektstyring | {brand}",
+    "description": "Eksternt planlægnings- og projektkontor til messestande, brandrum og indretning: teknisk planlægning, arbejdsforberedelse og projektstyring. Tal om dit projekt.",
+    "ogTitle": "{brand}: planlægningskapacitet til messestande, brandrum og indretning",
+    "ogDescription": "Målsatte produktionsunderlag, arbejdsforberedelse og projektstyring til standbyggere, bureauer, indretningsfirmaer og udstillere. Kontakt: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Ekstra planlægnings- og projektkapacitet til messestande, brandrum og indretning, projekt for projekt og med et klart aftalt omfang.",
+    "designsTitle": "Standkoncepter, et nyt hver dag",
+    "designsDescription": "Standkoncepter med visualiseringer, plantegninger og opstalter, fra {min} til {max}. Hver morgen kl. 5:00 kommer et koncept til.",
+    "designTitle": "{number} {title} · Standkoncept",
+    "designDescription": "Koncept {title}: {size}{floors}. {description} Visualisering af et koncept, ikke en bygget stand.",
+    "inquiryTitle": "Tal om dit projekt",
+    "inquiryDescription": "Send et brief: messe eller projekt, tidspunkt, eksisterende materiale og ønsket planlægningsydelse. Jeg vender tilbage med en første vurdering.",
+    "selectionTitle": "Mit udvalg",
+    "selectionDescription": "Dine gemte standkoncepter, som du kan vedhæfte en forespørgsel.",
+    "imprintDescription": "Juridiske oplysninger og oplysninger om udbyderen.",
+    "privacyDescription": "Oplysninger om behandling af personoplysninger på dette websted."
+  },
+  "common": {
+    "skip": "Gå til indhold",
+    "visualisation": "Visualisering",
+    "close": "Luk",
+    "back": "Tilbage",
+    "next": "Næste",
+    "prev": "Tilbage",
+    "open": "Åbn",
+    "view": "Se",
+    "play": "Afspil",
+    "pause": "Sæt på pause",
+    "loading": "Indlæser",
+    "placeholder": "Billede følger",
+    "later": "følger",
+    "menu": "Menu",
+    "language": "Sprog",
+    "drag": "Træk",
+    "retry": "Prøv igen",
+    "noWebgl": "Denne enhed eller browser understøtter ikke 3D-visningen. Listen over byer og afstande findes nedenfor."
+  },
+  "nav": {
+    "services": "Ydelser",
+    "designs": "Koncepter",
+    "process": "Samarbejde",
+    "graphics": "Præsentation",
+    "world": "Messekalender",
+    "about": "Om mig",
+    "contact": "Kontakt",
+    "cta": "Tal om et projekt",
+    "selection": "Mit udvalg",
+    "home": "Forside",
+    "main": "Hovednavigation"
+  },
+  "hero": {
+    "eyebrow": "Eksternt planlægnings- og projektkontor · Messestande, brandrum, indretning",
+    "title": "Planlægning, der virker på gulvet.",
+    "lead": "Jeg støtter standbyggere, bureauer, indretningsfirmaer og udstillere med teknisk planlægning, arbejdsforberedelse og projektstyring: projekt for projekt, med et klart aftalt omfang og sporbare dokumenter.",
+    "cta": "Forespørg planlægningskapacitet",
+    "secondary": "Se koncepter",
+    "scroll": "Scroll og se, hvordan visualiseringen opstår",
+    "progress": "Opbygning (visualisering)",
+    "done": "Færdigt rum",
+    "design": "Koncept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Koncepter i tidsforløb",
+    "title": "5 koncepter.",
+    "lead": "Fem konceptanimationer viser, hvordan et design vokser fra et tomt hallgulv til et færdigt rum. Det er visualiseringer, ikke optagelser af byggede stande.",
+    "cta": "Afspil animation",
+    "badge": "Konceptanimation",
+    "sliderLabel": "Slider med fem konceptanimationer. Piletasterne blader, Enter åbner.",
+    "explain": "Tidsforløbsanimation af et koncept. Den viser, hvordan det planlagte rum kunne opbygges, og er ikke bevis for en realiseret stand."
+  },
+  "tagline": {
+    "text": "Ethvert rum begynder med dokumenter, som alle involverede kan stole på. Det er dem, jeg laver."
+  },
+  "services": {
+    "eyebrow": "Ydelser",
+    "title": "Mere planlægningskapacitet, når flere projekter kører samtidig.",
+    "lead": "Standbyggere, bureauer og indretningsfirmaer når grænsen ved parallelle projekter, personalemangel og teknisk krævende opgaver. Som ekstern planlægger og projektstyrer overtager jeg klart afgrænsede dele af dit projekt, med mere end 20 års erfaring fra messe- og eventbranchen. Produktion, transport, montage, statik, tilladelser og elarbejde udføres af kvalificerede specialpartnere.",
+    "trust": [
+      {
+        "title": "Én kontaktperson",
+        "text": "til planlægning, dokumenter og afstemning: du taler direkte med mig, ikke via mellemled."
+      },
+      {
+        "title": "Mere end 20 års erfaring",
+        "text": "fra messe- og eventbranchen, uddannet teknisk tegner i trætekning og certificeret projektleder for messer og events (IHK)."
+      },
+      {
+        "title": "Klart afgrænset omfang",
+        "text": "Omfang, rettelsesrunder og frister aftaler jeg på forhånd skriftligt. Ekstra arbejde og rejser kun efter aftale."
+      }
+    ],
+    "package": {
+      "badge": "Samarbejde",
+      "title": "Projektbaseret eller som månedskontingent.",
+      "subtitle": "Planlægningskapacitet i det omfang, dit projekt har brug for lige nu.",
+      "text": "Du sender mig et brief, jeg vurderer indsatsen og foreslår omfang, leverancer og frister. Derefter arbejder jeg projektbaseret eller inden for et månedskontingent med fastlagte timer, reaktionstider og rettelsesrunder. Min kapacitet er begrænset; jeg tager kun projekter, som jeg kan udføre grundigt.",
+      "cta": "Forespørg planlægningskapacitet",
+      "more": "Sådan forløber et projekt",
+      "phases": [
+        {
+          "title": "Brief og omfang",
+          "items": [
+            "Fælles afklaring af opgave, frist og eksisterende materiale",
+            "Skriftligt fastlagt omfang og leverancer",
+            "Aftalte rettelsesrunder og godkendelsestrin",
+            "Individuelt tilbud efter briefet"
+          ]
+        },
+        {
+          "title": "Planlægning og dokumenter",
+          "items": [
+            "Målsatte detalje- og produktionstegninger",
+            "Styklister og dokumenter om grænseflader",
+            "Oversigter over materialer og mængder",
+            "Versionerede filer med sporbar status"
+          ]
+        },
+        {
+          "title": "Afstemning og styring",
+          "items": [
+            "Budget- og tidsplansoversigter",
+            "Tilbudssammenligninger og indkøbsplanlægning",
+            "Afstemning af fag og specialpartnere",
+            "Dokumenterede godkendelser og ændringer"
+          ]
+        },
+        {
+          "title": "Overdragelse og dokumentation",
+          "items": [
+            "Produktionsunderlag pr. partner til overdragelse",
+            "Dokumentation af ændringer og beslutninger",
+            "Lager- og beholdningsoplysninger til genbrug",
+            "Møder på stedet og rejser efter forudgående aftale"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Specialpartnere til udførelsen.",
+      "text": "Jeg planlægger og koordinerer, kvalificerede specialfirmaer udfører. I grundmodellen bestiller du større produktions- og montageydelser direkte hos dine partnere; på ønske afstemmer jeg med dem og forbereder deres dokumenter. CL Projektwerk er ikke et produktionsværksted og optræder ikke som generalentreprenør, der forfinansierer projekter.",
+      "items": [
+        "CNC-controlled production only",
+        "Carpentry",
+        "Metalwork",
+        "Montage og opbygning",
+        "Transport og logistik",
+        "Statik og kontrol",
+        "Tilladelser og afleveringer",
+        "Elarbejde",
+        "Tryk og grafisk produktion",
+        "Medie- og eventteknik",
+        "… og andre fag efter behov"
+      ]
+    },
+    "single": {
+      "eyebrow": "Kan bookes enkeltvis",
+      "title": "Præcis den ydelse, du mangler.",
+      "text": "Har du et team, men for lidt planlægningskapacitet? Så book kun det område, du har brug for, f.eks. produktionstegninger til ét projekt eller tidsstyring af en messedeltagelse."
+    },
+    "items": {
+      "tech": {
+        "title": "Teknisk planlægning",
+        "text": "På grundlag af dit brief udarbejder jeg målsatte detalje- og produktionstegninger, styklister og dokumenter om grænseflader. Du får dokumenter, som dine produktionspartnere kan arbejde med, og sparer interne planlægningstimer.",
+        "points": [
+          "Målsatte detalje- og produktionstegninger",
+          "Stykliste",
+          "Grænsefladedokumenter til fag og partnere"
+        ],
+        "task": "Opgave: omsætte dit brief til entydige tekniske dokumenter.",
+        "result": "Resultat: tegninger, lister og grænseflader i en afstemt status.",
+        "benefit": "Fordel: færre spørgsmål i produktionen og mere tid til dine kunder.",
+        "link": "Se eksempler"
+      },
+      "prep": {
+        "title": "Arbejdsforberedelse",
+        "text": "Jeg forbereder dit projekt til udførelsen: oversigter over materialer og mængder, produktionsunderlag pr. partner samt indkøbs- og tidsplanlægning. Så ved alle, hvad der skal bruges, hvornår og i hvilken mængde.",
+        "points": [
+          "Oversigter over materialer og mængder",
+          "Produktionsunderlag pr. partner",
+          "Indkøbs- og tidsplanlægning"
+        ],
+        "task": "Opgave: ordne materialer, mængder og datoer til udførelsen.",
+        "result": "Resultat: oversigter og dokumenter sammensat for hver partner.",
+        "benefit": "Fordel: færre mangler og tidsoverraskelser under opbygningen.",
+        "link": "Sådan arbejder jeg"
+      },
+      "control": {
+        "title": "Projektstyring",
+        "text": "Jeg holder budget og tidsplan overskuelige, sammenligner tilbud, afstemmer fag og dokumenterer godkendelser og ændringer. Beslutningerne bliver hos dig; jeg forbereder dem, så de kan træffes hurtigt.",
+        "points": [
+          "Budget- og tidsplansoversigter",
+          "Tilbudssammenligninger og afstemning af fag",
+          "Godkendelser og sporbar ændringsdokumentation"
+        ],
+        "task": "Opgave: bevare overblikket over omkostninger, datoer og aftaler.",
+        "result": "Resultat: aktuelle oversigter og dokumenterede beslutninger.",
+        "benefit": "Fordel: aflastning ved parallelle projekter og klar sporbarhed.",
+        "link": "Se samarbejdet"
+      },
+      "concept": {
+        "title": "Design og præsentation",
+        "text": "Jeg udvikler stand- og rumkoncepter og laver visualiseringer og trykklar grafik. Omfang og antal rettelsesrunder aftales på forhånd, så indsats og resultat forbliver forudsigelige.",
+        "points": [
+          "Stand- og rumkoncepter",
+          "Visualiseringer til afstemning og præsentation",
+          "Trykklar grafik med aftalte rettelsesrunder"
+        ],
+        "task": "Opgave: vise en idé, så du og dine kunder kan beslutte.",
+        "result": "Resultat: koncept, visualiseringer og trykdata i det aftalte omfang.",
+        "benefit": "Fordel: tidlige beslutninger på grundlag af forståelige billeder og planer.",
+        "link": "Se koncepter"
+      },
+      "reuse": {
+        "title": "Genbrugsplanlægning",
+        "text": "Jeg registrerer eksisterende elementer, planlægger varianter til nye anvendelser og vedligeholder oplysninger om materialer og lager. Så kan du målrettet genbruge det, du har, i stedet for at planlægge forfra hver gang.",
+        "points": [
+          "Registrering af eksisterende elementer",
+          "Variantplanlægning til nye anvendelser",
+          "Oplysninger om materialer og lager"
+        ],
+        "task": "Opgave: registrere eksisterende elementer og gøre dem brugbare til nye opbygninger.",
+        "result": "Resultat: beholdningsliste, varianter og lageroplysninger.",
+        "benefit": "Fordel: mindre ny planlægning og materialeforbrug ved tilbagevendende opbygninger.",
+        "link": "Send en forespørgsel"
+      }
+    },
+    "inquire": "Forespørg",
+    "cta": {
+      "title": "Dit næste projekt begynder med et brief.",
+      "text": "Beskriv kort opgave, frist og eksisterende materiale. Jeg vender tilbage med en første vurdering og de næste skridt. Tilbuddet får du individuelt efter briefet.",
+      "button": "Send brief",
+      "phone": "Vil du hellere tale direkte?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Konceptgalleri · nyt hver dag",
+    "title": "Hver dag et nyt koncept.",
+    "lead": "{count} af {total} standkoncepter er p.t. synlige, fra {min} til {max}. Hver morgen kl. 5:00 kommer et nyt til. Alle billeder er visualiseringer af koncepter. Bladr, filtrér, gem og forespørg direkte.",
+    "slider": "Slider",
+    "grid": "Gitter",
+    "viewMode": "Visning",
+    "random": "Tilfældigt koncept",
+    "dayPick": "Dagens koncept",
+    "hint": "Træk, scroll eller brug piletasterne",
+    "hintTouch": "Stryg til siden",
+    "count": "{count} af {total}",
+    "empty": "Intet koncept passer til disse filtre.",
+    "reset": "Nulstil filtre",
+    "filters": "Filtre",
+    "listTitle": "Alle synlige koncepter i overblik",
+    "sliderLabel": "Konceptslider. Piletasterne blader, Enter åbner.",
+    "current": "Aktuelt: {number} {title}",
+    "loadingSlider": "Slideren indlæses",
+    "cardAlt": "Koncept {number} {title}: visualisering af et standkoncept",
+    "filter": {
+      "all": "Alle",
+      "clip": "Med konceptanimation",
+      "two-storey": "To etager",
+      "size-s": "Kompakt op til 30 m²",
+      "size-m": "Mellem op til 150 m²",
+      "size-l": "Stor fra 150 m²",
+      "wood": "Træ",
+      "green": "Beplantning",
+      "metal": "Metal",
+      "light": "Lys",
+      "container": "Containere",
+      "product": "Produktstande",
+      "real-estate": "Ejendomsmesse",
+      "outdoor": "Friareal"
+    }
+  },
+  "detail": {
+    "facts": "Nøgledata",
+    "area": "Areal",
+    "floors": "Etager",
+    "standType": "Standtype",
+    "height": "Højde",
+    "materials": "Materialer",
+    "colours": "Farver",
+    "series": "Serie",
+    "floorsValue": "{count, plural, =1 {én etage} =2 {to etager} other {# etager}}",
+    "standTypes": {
+      "corner": "Hjørnestand",
+      "head": "Hovedstand",
+      "island": "Østand",
+      "row": "Rækkestand"
+    },
+    "renderings": "Visualiseringer",
+    "plans": "Planer",
+    "floorplan": "Plantegning",
+    "elevation": "Opstalt",
+    "download": "Download",
+    "zoomIn": "Zoom ind",
+    "zoomOut": "Zoom ud",
+    "zoomReset": "Nulstil visning",
+    "fullscreen": "Fuld skærm",
+    "clip": "Konceptanimation i tidsforløb",
+    "favorite": "Føj til udvalg",
+    "favorited": "I dit udvalg",
+    "share": "Del",
+    "shareWhatsapp": "Del via WhatsApp",
+    "shareLinkedin": "Del på LinkedIn",
+    "copyLink": "Kopiér link",
+    "copied": "Link kopieret",
+    "inquire": "Forespørgsel om dette koncept",
+    "prevDesign": "Forrige koncept",
+    "nextDesign": "Næste koncept",
+    "backToGallery": "Til galleriet",
+    "imageOf": "Billede {current} af {total}",
+    "description": "Beskrivelse",
+    "placeholderImage": "Billede følger",
+    "conceptNote": "Konceptudkast. Billedet er en visualisering og viser ikke en bygget stand.",
+    "imageAlt": "{title}: {label} (visualisering)",
+    "planAlt": "{title}: {label} (plantegning af konceptet)",
+    "clipAlt": "{title}: konceptanimation af opbygningen (visualisering)"
+  },
+  "process": {
+    "eyebrow": "Samarbejde",
+    "title": "Seks trin fra brief til overdragelse.",
+    "steps": {
+      "briefing": {
+        "title": "Brief og omfang",
+        "text": "Opgave, frist, eksisterende materiale og ønskede resultater. Vi fastlægger, hvad jeg leverer, hvor mange rettelsesrunder der er planlagt, og hvem der godkender.",
+        "alt": "Skitseanimation til briefet (visualisering)"
+      },
+      "concept": {
+        "title": "Koncept og afstemning",
+        "text": "Rumidé, visualiseringer, plantegning og opstalter. Du ser rummet fra flere perspektiver og beslutter i ro og mag, før den tekniske detaljering begynder.",
+        "alt": "Konceptanimation af designet (visualisering)"
+      },
+      "planning": {
+        "title": "Teknisk planlægning",
+        "text": "Målsatte detalje- og produktionstegninger, styklister og dokumenter om grænseflader. Kvalificerede specialpartnere står for statik, tilladelser og elprojektering; jeg afstemmer grænsefladerne.",
+        "alt": "Animation af den tekniske planlægning (visualisering)"
+      },
+      "production": {
+        "title": "Arbejdsforberedelse og produktionsunderlag",
+        "text": "Oversigter over materialer og mængder samt dokumenter til hver produktionspartner, dertil indkøbs- og tidsplanlægning. Der produceres hos det pågældende specialfirma, ikke hos mig.",
+        "alt": "Animation af CNC-bearbejdning som eksempel på produktionsdata (visualisering); produktionen udføres af specialpartneren"
+      },
+      "logistics": {
+        "title": "Afstemning af fag",
+        "text": "Tidsplansoversigt, tilbudssammenligninger og afstemning mellem fagene, så transport, opbygning og teknik passer sammen. Dine specialpartnere udfører arbejdet.",
+        "alt": "Konceptanimation af opbygningen i tidsforløb (visualisering)"
+      },
+      "onsite": {
+        "title": "Godkendelser, ændringer og overdragelse",
+        "text": "Godkendelser og ændringer dokumenterer jeg sporbart, og til sidst overdrager jeg alle dokumenter til dig. Møder på stedet er mulige, hvis de er aftalt på forhånd.",
+        "alt": "Konceptanimation af overdragelsen (visualisering)"
+      }
+    },
+    "sketch": "Skitse"
+  },
+  "world": {
+    "eyebrow": "Messekalender",
+    "title": "Messer i Tyskland og Europa.",
+    "lead": "Et overblik over messedatoer i Tyskland og Europa som orientering til din projektplanlægning. Vælg en by, og globussen viser stedet og luftlinjen fra Leipzig. En dato i kalenderen siger intet om opgaver eller deltagelse for CL Projektwerk.",
+    "placeholderNote": "Eksempelsteder",
+    "listLabel": "Messebyer",
+    "drag": "Drej globussen",
+    "base": "Hjemsted",
+    "regions": {
+      "de": "Tyskland",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Messekalender",
+      "title": "Den næste messe i hver by.",
+      "lead": "For hver by vises den næste ledende messe i kronologisk rækkefølge som på en afgangstavle. Scroll gennem tavlen: Globussen følger dit valg.",
+      "summary": "{cities} messebyer · {km} km luftlinje langs ruten fra Leipzig",
+      "boardLabel": "Messekalender: næste messe pr. by",
+      "cols": {
+        "date": "Dato",
+        "dest": "Destination",
+        "fair": "Messe",
+        "status": "Status"
+      },
+      "running": "Kører nu",
+      "today": "I dag",
+      "tomorrow": "I morgen",
+      "inDays": "om {days} dage",
+      "tba": "Dato følger",
+      "past": "Afsluttet",
+      "tbaNote": "For denne by er der på nuværende tidspunkt ingen bekræftet dato for en ledende messe.",
+      "dateTbc": "Dato ikke bekræftet",
+      "fairName": "Messe",
+      "venue": "Messeområde",
+      "route": "Luftlinje",
+      "homeBase": "Mit hjemsted",
+      "km": "{km} km",
+      "localTime": "Lokal tid",
+      "website": "Arrangørens websted",
+      "inquire": "Tal om et projekt til {fair}",
+      "tourPause": "Sæt rundrejsen på pause",
+      "tourPlay": "Fortsæt rundrejsen",
+      "note": "Datoer ifølge arrangørerne, kontrolleret {date}. Ændringer er mulige; arrangørernes websteder er gældende. Messenavne er varemærker tilhørende deres indehavere. Datoerne siger intet om opgaver eller deltagelse for CL Projektwerk.",
+      "search": "Søg efter messe eller by",
+      "searchPlaceholder": "f.eks. Düsseldorf eller byggeri",
+      "filterCountry": "Land",
+      "filterCity": "By",
+      "filterPeriod": "Periode",
+      "filterSector": "Branche",
+      "filterAll": "Alle",
+      "periodUpcoming": "Kommende",
+      "periodRunning": "Igangværende",
+      "periodPast": "Afsluttede",
+      "resultCount": "{count, plural, =0 {Ingen messer} =1 {1 messe} other {# messer}}",
+      "empty": "Ingen messe passer til din søgning og de valgte filtre.",
+      "reset": "Nulstil søgning og filtre",
+      "source": "Kilde",
+      "checkedOn": "Kontrolleret {date}"
+    },
+    "zoomIn": "Zoom ind",
+    "zoomOut": "Zoom ud",
+    "zoomReset": "Nulstil visning",
+    "zoomEurope": "Europavisning",
+    "zoomCountry": "Vælg land",
+    "zoomHint": "Ctrl + musehjul eller dobbeltklik: zoom · klik på en by: luftlinje",
+    "zoomHintTouch": "Zoom med to fingre · tryk på en by: luftlinje",
+    "zoomHintKeys": "Piletasterne flytter visningen, plus og minus zoomer.",
+    "scrollHint": "Almindelig scrolling flytter kun siden. Hold Ctrl nede for at zoome.",
+    "distance": {
+      "title": "Luftlinje mellem to byer",
+      "from": "Fra",
+      "to": "Til",
+      "pick": "Vælg by",
+      "swap": "Byt byer",
+      "result": "Luftlinje: {km} km",
+      "resultFromTo": "Luftlinje {from} – {to}: {km} km",
+      "note": "Beregnet som storcirkelafstand på jordkloden. Det er ikke en vejafstand og siger intet om rejsetiden.",
+      "rings": "Afstandsringe omkring {city}: {km} km",
+      "scale": "Målestok: {km} km",
+      "listTitle": "Byer og luftlinje fra {city}",
+      "listCity": "By",
+      "listCountry": "Land",
+      "listKm": "Luftlinje",
+      "noWebglTitle": "3D-visning er ikke tilgængelig",
+      "noWebglText": "Din enhed viser ikke 3D-globussen. Tabellen indeholder de samme byer, messer og afstande.",
+      "reducedMotion": "Reduceret bevægelse er aktiv: Der er ingen automatiske flyvninger eller animationer."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Skærmflader i planlægningen",
+    "title": "Medieflader kræver nøjagtige mål.",
+    "lead": "LED-vægge og skærme hører med til mange messerum. Jeg indarbejder dem i dine dokumenter med mål, billedformater og tilslutningsdata. Klippene viser almindelige formater; de er licenseret eksempelmateriale og ikke mine egne projekter.",
+    "placeholder": "Eksempelklip {n}",
+    "placeholderNote": "Eksempelmateriale",
+    "caption": "Eksempelklip (stocklicens): {title}, {format}. Ikke et projekt fra CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "Om mig",
+    "name": "Christof Laufersweiler",
+    "role": "Planlægning og projektstyring til messestande, brandrum og indretning",
+    "text": "Jeg hedder Christof Laufersweiler og har arbejdet i messe- og eventbranchen i mere end 20 år. Jeg er uddannet teknisk tegner i trætekning; siden kom projektledelse i messebyggeri, ansat direktørstilling i en standbyggervirksomhed og et IHK-certifikat som projektleder for messer og events til. Med CL Projektwerk tilbyder jeg i Leipzig ekstern planlægnings- og projektkapacitet til standbyggere, bureauer, indretningsfirmaer og udstillere, som har brug for ekstra hænder med faglig viden.",
+    "close": "Beslutningerne bliver hos dig. Jeg sørger for dokumenter, overblik og afstemning.",
+    "photoAlt": "Portræt af Christof Laufersweiler, grundlægger af CL Projektwerk",
+    "cta": "Tal om et projekt med mig",
+    "career": "Karriere",
+    "projects": "Projekterfaring fra tidligere arbejde",
+    "projectsNote": "Disse eksempler stammer fra mit tidligere arbejde som ansvarlig projektleder. De er ikke projekter fra CL Projektwerk, og de nævnte virksomheder er ikke kunder hos CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Sprog"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ år",
+        "label": "erfaring fra messe- og eventbranchen"
+      },
+      {
+        "value": "1.200 m²",
+        "label": "største standareal fra tidligere arbejde (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certifikat som projektleder for messer og events (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Projektledelse",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Direktør (ansat)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Projektledelse i messestandbyggeri",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certifikat som projektleder for messer og events (kursus, 160 undervisningstimer)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Uddannelse som teknisk tegner, trætekning",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1.200 m²",
+        "note": "Flere udstillere og køretøjer, store LED-skærme"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1.200 m²",
+        "note": "20 m lang LED-væg, teknisk koordineret"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Ophængt konstruktion i limtræ, rynkefrit udspændt tekstilgrafik"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Åbent standkoncept med LED-væg"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Tysk (modersmål)",
+      "Engelsk (forhandlingssikker)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Tal om et projekt",
+    "title": "Fortæl mig om dit projekt.",
+    "lead": "Fire korte trin, få obligatoriske felter. Gemte koncepter fra galleriet vedhæfter jeg på ønske.",
+    "response": "Jeg svarer som regel inden for {time}.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Omfang",
+      "services": "Ydelse",
+      "contact": "Kontakt"
+    },
+    "stepOf": "Trin {current} af {total}",
+    "fields": {
+      "fair": "Messe, event eller projekt",
+      "fairPlaceholder": "f.eks. messedeltagelse, brandrum eller indretning",
+      "projectType": "Projekttype",
+      "projectTypes": {
+        "fair": "Messestand",
+        "brand": "Brandrum",
+        "interior": "Indretning",
+        "event": "Event",
+        "open": "Endnu åbent"
+      },
+      "city": "Sted",
+      "cityPlaceholder": "f.eks. Leipzig",
+      "dateFrom": "Dato fra",
+      "dateTo": "til",
+      "dateUnknown": "Datoen er endnu ikke fastlagt",
+      "size": "Rummets størrelse (valgfrit)",
+      "width": "Bredde (m)",
+      "depth": "Dybde (m)",
+      "area": "Areal",
+      "standType": "Standtype",
+      "standTypeUnknown": "Endnu åbent",
+      "floors": "Etager",
+      "documents": "Eksisterende materiale",
+      "documentOptions": {
+        "briefing": "Brief eller kravspecifikation",
+        "cad": "CAD- eller planlægningsdata",
+        "sketches": "Skitser eller moodboards",
+        "renders": "Visualiseringer",
+        "inventory": "Beholdningslister",
+        "none": "Endnu intet"
+      },
+      "services": "Nødvendig planlægningsydelse",
+      "scope": "Ønsket omfang",
+      "scopes": {
+        "single": "Enkelt ydelse",
+        "project": "Hele projektet",
+        "quota": "Løbende månedskontingent",
+        "open": "Endnu åbent"
+      },
+      "budget": "Projektets samlede budget (valgfrit)",
+      "budgets": {
+        "a": "op til 25.000 €",
+        "b": "25.000 til 75.000 €",
+        "c": "75.000 til 150.000 €",
+        "d": "over 150.000 €",
+        "open": "Det vil jeg helst ikke oplyse"
+      },
+      "name": "Navn",
+      "company": "Firma",
+      "email": "E-mail",
+      "phone": "Telefon (valgfrit)",
+      "message": "Besked",
+      "messagePlaceholder": "Hvad skal planlægges? Er der krav, en tidligere opbygning eller særlige tekniske behov?",
+      "favorites": "Vedhæftede koncepter",
+      "favoritesEmpty": "Ingen gemte koncepter. I galleriet kan du samle koncepter med hjertet.",
+      "consent": "Jeg accepterer, at mine oplysninger gemmes og bruges til at behandle forespørgslen. Detaljer i <privacy>privatlivspolitikken</privacy>.",
+      "privacy": "Privatlivspolitik",
+      "required": "Skal udfyldes"
+    },
+    "submit": "Send brief",
+    "sending": "Sender",
+    "errors": {
+      "required": "Udfyld venligst.",
+      "email": "Indtast en gyldig e-mailadresse.",
+      "consent": "Accepter venligst behandlingen, så jeg kan svare.",
+      "dates": "Slutningen ligger før begyndelsen.",
+      "server": "Afsendelsen mislykkedes. Prøv igen, eller skriv til {email}.",
+      "rate": "For mange forespørgsler på kort tid. Prøv igen om nogle minutter."
+    },
+    "whatsapp": "Skriv på WhatsApp",
+    "callback": "Bed om tilbagekald",
+    "callbackTitle": "Bed om tilbagekald",
+    "callbackTime": "Hvornår passer det dig?",
+    "callbackTimePlaceholder": "f.eks. i morgen efter kl. 14",
+    "callbackSubmit": "Bed om tilbagekald",
+    "callbackDone": "Tak. Din anmodning om tilbagekald er sendt. Jeg forsøger at få fat i dig på det angivne tidspunkt.",
+    "direct": "Direkte",
+    "notConfigured": "Endnu ikke angivet",
+    "prefilled": "Dit valg: {list}",
+    "emailDraft": {
+      "prepare": "Forbered e-mail",
+      "title": "E-mailkladde klar",
+      "notice": "Dine oplysninger forberedes som en e-mailkladde. Kontrollér den og send den selv i dit mailprogram. Ingen besked er sendt endnu.",
+      "open": "Åbn mailprogram",
+      "copy": "Kopiér tekst",
+      "copied": "Tekst kopieret",
+      "fallback": "Intet mailprogram konfigureret, eller mangler der oplysninger? Kopiér hele teksten nedenfor til din webmail."
+    }
+  },
+  "thanks": {
+    "title": "Tak for dit brief.",
+    "text": "Din forespørgsel er sendt. Jeg svarer som regel inden for {time} med en første vurdering. Der sendes ingen automatisk bekræftelse pr. e-mail. Gemte koncepter er sendt med.",
+    "back": "Til forsiden",
+    "designs": "Se flere koncepter"
+  },
+  "selection": {
+    "title": "Mit udvalg",
+    "lead": "Dine gemte koncepter. Vedhæft dem en forespørgsel med ét klik.",
+    "count": "{count, plural, =0 {Intet gemt endnu} =1 {1 koncept gemt} other {# koncepter gemt}}",
+    "empty": "Intet gemt endnu. Tryk på hjertet i galleriet for at samle koncepter.",
+    "toGallery": "Til galleriet",
+    "inquire": "Send udvalget med en forespørgsel",
+    "clear": "Fjern alle",
+    "remove": "Fjern"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Juridiske oplysninger",
+    "privacy": "Privatliv",
+    "cookies": "Cookieindstillinger",
+    "note": "Alle renderinger og animationer på dette websted er visualiseringer af designkoncepter. De viser ikke byggede messestande.",
+    "top": "Til toppen",
+    "languages": "Sprog",
+    "tagline": "Eksternt planlægnings- og projektkontor til messestande, brandrum og indretning"
+  },
+  "cookies": {
+    "title": "Dit privatliv",
+    "text": "Dette websted gemmer kun det, der er teknisk nødvendigt, f.eks. dine gemte koncepter, det valgte layout og dette valg. Statistik og eksterne tjenester er slået fra, indtil du accepterer.",
+    "necessary": "Kun nødvendige",
+    "settings": "Indstillinger",
+    "acceptAll": "Tillad alle",
+    "save": "Gem valg",
+    "categories": {
+      "necessary": "Nødvendige",
+      "necessaryText": "Sprog, gemte koncepter, layout, radioindstillinger og dette valg. Altid aktive.",
+      "stats": "Statistik",
+      "statsText": "Bruges ikke i øjeblikket.",
+      "media": "Eksterne medier",
+      "mediaText": "Bruges ikke i øjeblikket. Radioen forbinder først, når du selv starter den."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Juridiske oplysninger",
+    "privacyTitle": "Privatlivspolitik",
+    "placeholder": "Juridisk tekst følger.",
+    "notice": "Den tyske version af denne tekst er gældende.",
+    "updated": "Version: {date}"
+  },
+  "notFound": {
+    "title": "Denne side findes ikke.",
+    "text": "Måske finder du det, du leder efter, i konceptgalleriet.",
+    "home": "Til forsiden",
+    "designs": "Til galleriet"
+  },
+  "layouts": {
+    "label": "Vælg layout",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: konceptanimation {n}",
+    "active": "aktiv",
+    "preview": "Eksempel: {name}",
+    "hint": "Piletasterne skifter layout, Escape lukker valget.",
+    "saved": "Dit valg gemmes på denne enhed.",
+    "monoShowColour": "Vis originale farver",
+    "monoHideColour": "Vis sort-hvid",
+    "items": {
+      "studio": "Antracit og orange, klare linjer, præcist som et planlægningsatelier",
+      "aurora": "Mørke flader med mint og violet, serifskrift, bløde lysbevægelser",
+      "tide": "Petroleum og koral, udtryksfuld skrift, flydende bølger",
+      "mono": "Konsekvent sort og hvid, stærk kontrast, geometriske former"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "VÆLG STATION",
+    "close": "Fold afspilleren sammen",
+    "stations": "Stationer",
+    "play": "Start afspilning",
+    "pause": "Sæt afspilning på pause",
+    "mute": "Slå lyden fra",
+    "unmute": "Slå lyden til",
+    "volume": "Lydstyrke",
+    "off": "fra",
+    "hint": "Live-webradio. Lyden starter først efter dit klik, og skyderen gælder kun denne afspiller. Ved start forbinder din browser til stationen.",
+    "noTrack": "Ingen titeloplysninger tilgængelige",
+    "levelNote": "Niveauvisningen er ren animation og viser ikke det faktiske lydniveau.",
+    "state": {
+      "ready": "Klar",
+      "connecting": "Opretter forbindelse …",
+      "live": "Live",
+      "buffering": "Bufferer …",
+      "stalled": "Forbindelsen hakker …",
+      "paused": "På pause",
+      "error": "Stationen kan ikke nås",
+      "blocked": "Start blokeret af browseren. Klik på afspil igen."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Design og præsentation",
+    "title": "Grafik, der passer til rummet.",
+    "text": "Til et design hører billeder, der gør det muligt at beslutte, og data, der kan viderebearbejdes uden efterarbejde. Jeg laver visualiseringer og trykklare grafikdata, tilpasset rummets mål og konstruktion og din visuelle identitet. Omfang og antal rettelsesrunder aftales på forhånd. Selve trykningen udføres af en trykpartner, som du eller på ønske jeg inddrager.",
+    "points": [
+      {
+        "title": "Visualiseringer til afstemning",
+        "text": "Perspektiver, plantegning og opstalter gør konceptet forståeligt for dig og dine kunder."
+      },
+      {
+        "title": "Trykdata med alle oplysninger",
+        "text": "Affald, farveprofil, mål og filformat er forberedt til din trykpartner."
+      },
+      {
+        "title": "Tilpasset konstruktionen",
+        "text": "Grafikflader afstemmes med målene på vægge og bygningsdele fra den tekniske planlægning."
+      },
+      {
+        "title": "Aftalte rettelsesrunder",
+        "text": "Vi fastlægger på forhånd, hvor mange rettelsesrunder der er med. Yderligere runder er en tillægsydelse."
+      },
+      {
+        "title": "Versionerede filer",
+        "text": "Hver version har en klar status, så kun godkendte data går til tryk."
+      },
+      {
+        "title": "Overdragelse til din trykpartner",
+        "text": "Jeg leverer dataene, specialfirmaet trykker og producerer."
+      }
+    ],
+    "close": "Design og data fra mig, produktion hos specialfirmaet: så rummet ser ud, som det blev godkendt.",
+    "videoLabel": "Animation: trykdata på en skærm og storformattryk af en messegrafik (visualisering)"
+  },
+  "drops": {
+    "rule": "Hver morgen kl. 5:00 et nyt koncept",
+    "today": "Nyt i dag",
+    "next": "Næste koncept om",
+    "soon": "Et nyt koncept er synligt.",
+    "reload": "Genindlæs",
+    "complete": "Alle {total} koncepter er synlige",
+    "count": "{released} af {total} synlige"
+  },
+  "error": {
+    "title": "Noget gik galt.",
+    "text": "Siden kunne ikke indlæses fuldstændigt. Prøv igen.",
+    "retry": "Prøv igen",
+    "home": "Til forsiden"
+  },
+  "seo": {
+    "eyebrow": "Teknisk messeplanlægning",
+    "title": "Teknisk planlægning, arbejdsforberedelse og projektstyring til messestande og indretning.",
+    "intro": "CL Projektwerk er et eksternt planlægnings- og projektkontor i Leipzig. Jeg støtter standbyggere, bureauer, indretningsfirmaer og mellemstore udstillere i planlægningen af messestande: med målsatte produktionsunderlag, arbejdsforberedelse, ekstern projektstyring, koncepter og genbrugsplanlægning. Specialpartnere udfører arbejdet; jeg leverer planlægning og koordinering.",
+    "blocks": [
+      {
+        "title": "Teknisk messeplanlægning",
+        "text": "Ud fra briefet opstår målsatte detalje- og produktionstegninger, styklister og dokumenter om grænseflader. Dine produktionspartnere kan arbejde med dem, uden at dit team selv skal lave hver tegning."
+      },
+      {
+        "title": "Arbejdsforberedelse til messestande og brandrum",
+        "text": "Oversigter over materialer og mængder, dokumenter pr. produktionspartner samt indkøbs- og tidsplanlægning gør tegninger til et forløb, der kan organiseres."
+      },
+      {
+        "title": "Ekstern projektstyring",
+        "text": "Budget- og tidsplansoversigter, tilbudssammenligninger, afstemning af fag og dokumenterede godkendelser skaber overblik, især når flere projekter kører samtidig."
+      },
+      {
+        "title": "Koncept, præsentation og genbrug",
+        "text": "Stand- og rumkoncepter, visualiseringer og trykklar grafik hjælper med afstemningen. Genbrugsplanlægningen registrerer eksisterende elementer og planlægger varianter til nye anvendelser."
+      }
+    ],
+    "faqTitle": "Ofte stillede spørgsmål",
+    "faq": [
+      {
+        "q": "Hvad koster samarbejdet?",
+        "a": "Det afhænger af omfang, leverancer og frister. Efter et kort brief får du et individuelt tilbud på projektet eller på et månedskontingent."
+      },
+      {
+        "q": "Hvornår bør jeg henvende mig?",
+        "a": "Helst så snart opgave og frist er fastlagt, fordi min månedlige planlægningskapacitet er begrænset. Henvendelser med kort varsel vurderer jeg ud fra min aktuelle belastning."
+      },
+      {
+        "q": "Kan jeg også kun booke én ydelse?",
+        "a": "Ja. Teknisk planlægning, arbejdsforberedelse, projektstyring, design og præsentation eller genbrugsplanlægning kan bookes enkeltvis."
+      },
+      {
+        "q": "Producerer og monterer du også?",
+        "a": "Nej. Kvalificerede specialpartnere udfører produktion, transport, montage, statik, tilladelser og elarbejde. Større ydelser bestiller du som regel selv direkte; jeg planlægger og koordinerer."
+      },
+      {
+        "q": "Er møder på stedet eller rejser mulige?",
+        "a": "Planlægningen foregår overvejende fra Leipzig. Møder på stedet og rejser aftaler vi på forhånd, yderligere ydelser aftales særskilt."
+      },
+      {
+        "q": "Tilbyder du webdesign eller automatisering?",
+        "a": "Det hører ikke til mine hovedydelser. Mit fokus er planlægning og styring af projekter med messestande, brandrum og indretning."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Vælg sprog",
+    "hint": "Træk, stryg eller drej med piletasterne",
+    "current": "aktuelt",
+    "prev": "Forrige sprog",
+    "next": "Næste sprog",
+    "close": "Luk"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Eksternt planlægnings- og projektkontor til messestande, brandrum og indretning",
+    "claim": "Planlægning, der virker på gulvet.",
+    "visualisationNote": "Visualisering"
+  },
+  "structured": {
+    "serviceCatalog": "Ydelser",
+    "services": [
+      "Teknisk planlægning: målsatte detalje- og produktionstegninger, stykliste, grænsefladedokumenter",
+      "Arbejdsforberedelse: oversigter over materialer og mængder, produktionsunderlag, indkøbs- og tidsplanlægning",
+      "Projektstyring: budget- og tidsplansoversigter, tilbudssammenligninger, afstemning af fag, ændringsdokumentation",
+      "Design og præsentation: stand- og rumkoncepter, visualiseringer, trykklar grafik",
+      "Genbrugsplanlægning: registrering af eksisterende elementer, variantplanlægning, oplysninger om materialer og lager"
+    ],
+    "keywords": [
+      "teknisk messeplanlægning",
+      "planlægning af messestande",
+      "ekstern projektstyring",
+      "arbejdsforberedelse standbyggeri",
+      "planlægningskontor Leipzig",
+      "brandrum",
+      "indretning",
+      "genbrugsplanlægning"
+    ],
+    "genre": "Messestandkoncept",
+    "videoSuffix": "Konceptanimation i tidsforløb"
+  },
+  "ogImage": {
+    "film": "▶ Konceptanimation"
+  }
+}

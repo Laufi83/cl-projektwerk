@@ -1,0 +1,265 @@
+{
+  "_hinweis": "Nicht veröffentlichte Ordner aus dem Render-Bestand. Zum Tauschen in scripts/data/selection.json eintragen und `npm run designs:import` ausführen.",
+  "archived": [
+    {
+      "source": "06 Galerie",
+      "title": "Galerie",
+      "size": "12 × 16 m"
+    },
+    {
+      "source": "11 Textilforum",
+      "title": "Textilforum",
+      "size": "14 × 10 m"
+    },
+    {
+      "source": "20 Papierfaecher",
+      "title": "Papierfächer",
+      "size": "12 × 16 m"
+    },
+    {
+      "source": "21 Mineralhof",
+      "title": "Mineralhof",
+      "size": "7 × 5 m"
+    },
+    {
+      "source": "23 Lichtfalte",
+      "title": "Lichtfalte",
+      "size": "8 × 6 m"
+    },
+    {
+      "source": "27 Lehm-Terrassen",
+      "title": "Lehm-Terrassen",
+      "size": "13 × 8 m"
+    },
+    {
+      "source": "33 Spiralkabinett",
+      "title": "Spiralkabinett",
+      "size": "9 × 9 m"
+    },
+    {
+      "source": "35 Faltkarton",
+      "title": "Faltkarton",
+      "size": "7 × 6 m"
+    },
+    {
+      "source": "37 Wasserhof",
+      "title": "Wasserhof",
+      "size": "10 × 8 m"
+    },
+    {
+      "source": "41 Seidenstrasse",
+      "title": "Seidenstraße",
+      "size": "13 × 7 m"
+    },
+    {
+      "source": "47 Glasprisma",
+      "title": "Glasprisma",
+      "size": "10 × 7 m"
+    },
+    {
+      "source": "48 Kiesgarten",
+      "title": "Kiesgarten",
+      "size": "8 × 8 m"
+    },
+    {
+      "source": "50 Flechtwand",
+      "title": "Flechtwand",
+      "size": "7 × 5 m"
+    },
+    {
+      "source": "54 Schubladenwand",
+      "title": "Schubladenwand",
+      "size": "8 × 7 m"
+    },
+    {
+      "source": "57 Travertin-Band",
+      "title": "Travertin-Band",
+      "size": "7 × 5 m"
+    },
+    {
+      "source": "62 Ziegelpassage 18x10",
+      "title": "Ziegelpassage 18x10",
+      "size": null
+    },
+    {
+      "source": "63 Glasbaustein-Atelier",
+      "title": "Glasbaustein-Atelier",
+      "size": "8 × 6 m"
+    },
+    {
+      "source": "65 Filzfluegel",
+      "title": "Filzflügel",
+      "size": "7 × 5 m"
+    },
+    {
+      "source": "66 Keramikhof",
+      "title": "Keramikhof",
+      "size": "8 × 8 m"
+    },
+    {
+      "source": "67 Lichtzylinder Version 2",
+      "title": "Lichtzylinder Version 2",
+      "size": null
+    },
+    {
+      "source": "68 Steglandschaft",
+      "title": "Steglandschaft",
+      "size": "18 × 14 m"
+    },
+    {
+      "source": "73 Pocket Dock",
+      "title": "Pocket Dock",
+      "size": "10 × 10 m, zweigeschossig"
+    },
+    {
+      "source": "74 Studio Boulevard",
+      "title": "Studio Boulevard",
+      "size": "20 × 18 m, zweigeschossig"
+    },
+    {
+      "source": "75 Winter Trail",
+      "title": "Winter Trail",
+      "size": "8 × 6 m"
+    },
+    {
+      "source": "78 Sternforum",
+      "title": "Sternforum",
+      "size": "22 × 22 m, zweigeschossig"
+    },
+    {
+      "source": "80 Kreuzpunkt",
+      "title": "Kreuzpunkt",
+      "size": "20 × 16 m, zweigeschossig"
+    },
+    {
+      "source": "86 Hafenkamm",
+      "title": "Hafenkamm",
+      "size": "25 × 20 m, zweigeschossig"
+    },
+    {
+      "source": "87 Schaufenster",
+      "title": "Schaufenster",
+      "size": "14 × 14 m, zweigeschossig"
+    },
+    {
+      "source": "91 Light Gallery",
+      "title": "Light Gallery",
+      "size": "7 × 9 m"
+    },
+    {
+      "source": "93 Window Studio",
+      "title": "Window Studio",
+      "size": "7 × 3 m"
+    },
+    {
+      "source": "98 Auto Tech",
+      "title": "Auto Tech",
+      "size": "8 × 6 m"
+    },
+    {
+      "source": "102 Urban Winter",
+      "title": "Urban Winter",
+      "size": "7 × 3 m"
+    },
+    {
+      "source": "104 Filter Lab",
+      "title": "Filter Lab",
+      "size": "3 × 3 m"
+    },
+    {
+      "source": "105 Cycle Studio",
+      "title": "Cycle Studio",
+      "size": "7 × 9 m"
+    },
+    {
+      "source": "109 Siebwerk",
+      "title": "Siebwerk",
+      "size": "36 × 30 m"
+    },
+    {
+      "source": "111 Rammfeld",
+      "title": "Rammfeld",
+      "size": "30 × 30 m"
+    },
+    {
+      "source": "112 Bohrfeld",
+      "title": "Bohrfeld",
+      "size": "36 × 30 m"
+    },
+    {
+      "source": "114 Fraesenfeld",
+      "title": "Fräsenfeld",
+      "size": "30 × 24 m"
+    },
+    {
+      "source": "115 Fertigerhof",
+      "title": "Fertigerhof",
+      "size": "30 × 24 m"
+    },
+    {
+      "source": "116 Graderallee",
+      "title": "Graderallee",
+      "size": "36 × 24 m"
+    },
+    {
+      "source": "118 Radladerplatz",
+      "title": "Radladerplatz",
+      "size": "30 × 24 m"
+    },
+    {
+      "source": "119 Pumpwerk",
+      "title": "Pumpwerk",
+      "size": "30 × 24 m"
+    },
+    {
+      "source": "120 Kipperfaecher",
+      "title": "Kipperfächer",
+      "size": "45 × 35 m"
+    },
+    {
+      "source": "121 Walzenhof",
+      "title": "Walzenhof",
+      "size": "24 × 24 m"
+    },
+    {
+      "source": "123 Trennschnitt",
+      "title": "Trennschnitt",
+      "size": "24 × 20 m"
+    },
+    {
+      "source": "125 Mischerplatz",
+      "title": "Mischerplatz",
+      "size": "15 × 12 m"
+    },
+    {
+      "source": "126 Grabenfraese",
+      "title": "Grabenfräse",
+      "size": "18 × 15 m"
+    },
+    {
+      "source": "128 Teleskophof",
+      "title": "Teleskophof",
+      "size": "24 × 20 m"
+    },
+    {
+      "source": "129",
+      "title": "[TITEL]",
+      "size": null
+    },
+    {
+      "source": "130",
+      "title": "[TITEL]",
+      "size": null
+    },
+    {
+      "source": "131",
+      "title": "[TITEL]",
+      "size": null
+    },
+    {
+      "source": "132",
+      "title": "[TITEL]",
+      "size": null
+    }
+  ]
+}

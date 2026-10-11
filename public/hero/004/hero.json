@@ -1,0 +1,16 @@
+{
+  "id": "004",
+  "source": "retusche/CL-04-Retuschiert.mp4",
+  "desktop": {
+    "count": 81,
+    "width": 1440,
+    "height": 810,
+    "bytes": 8506244
+  },
+  "mobile": {
+    "count": 61,
+    "width": 486,
+    "height": 863,
+    "bytes": 2113484
+  }
+}

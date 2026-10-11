@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Műszaki kiállítástervezés és projektvezetés | {brand}",
+    "description": "Külső tervezési és projektiroda kiállítási standokhoz, márkatérekhez és belsőépítészethez: műszaki tervezés, munka-előkészítés és projektvezetés. Beszéljük meg a projektjét.",
+    "ogTitle": "{brand}: tervezési kapacitás kiállítási standokhoz, márkatérekhez és belsőépítészethez",
+    "ogDescription": "Méretezett gyártási dokumentáció, munka-előkészítés és projektvezetés standépítőknek, ügynökségeknek, belsőépítő cégeknek és kiállítóknak. Kapcsolattartó: Christof Laufersweiler, Lipcse.",
+    "socialDescription": "További tervezési és projektkapacitás kiállítási standokhoz, márkatérekhez és belsőépítészethez, projektenként és egyértelműen megállapodott terjedelemben.",
+    "designsTitle": "Standkoncepciók, minden nap egy új",
+    "designsDescription": "Standkoncepciók vizualizációkkal, alaprajzokkal és homlokzati nézetekkel, {min} – {max}. Minden reggel 5:00-kor újabb koncepció kerül fel.",
+    "designTitle": "{number} {title} · Standkoncepció",
+    "designDescription": "{title} koncepció: {size}{floors}. {description} Egy koncepció vizualizációja, nem megépült stand.",
+    "inquiryTitle": "A projekt megbeszélése",
+    "inquiryDescription": "Küldjön megbízási leírást: kiállítás vagy projekt, időpont, meglévő dokumentumok és a szükséges tervezési szolgáltatás. Első értékeléssel válaszolok.",
+    "selectionTitle": "Kiválasztásom",
+    "selectionDescription": "Mentett standkoncepciói, amelyeket csatolhat egy ajánlatkéréshez.",
+    "imprintDescription": "Jogi tudnivalók és a szolgáltató adatai.",
+    "privacyDescription": "Tájékoztatás a személyes adatok kezeléséről ezen a weboldalon."
+  },
+  "common": {
+    "skip": "Ugrás a tartalomhoz",
+    "visualisation": "Vizualizáció",
+    "close": "Bezárás",
+    "back": "Vissza",
+    "next": "Tovább",
+    "prev": "Vissza",
+    "open": "Megnyitás",
+    "view": "Megtekintés",
+    "play": "Lejátszás",
+    "pause": "Szünet",
+    "loading": "Betöltés",
+    "placeholder": "A kép hamarosan érkezik",
+    "later": "hamarosan",
+    "menu": "Menü",
+    "language": "Nyelv",
+    "drag": "Húzás",
+    "retry": "Újrapróbálkozás",
+    "noWebgl": "Ez az eszköz vagy böngésző nem támogatja a 3D nézetet. A városok és távolságok listája alább található."
+  },
+  "nav": {
+    "services": "Szolgáltatások",
+    "designs": "Koncepciók",
+    "process": "Együttműködés",
+    "graphics": "Bemutatás",
+    "world": "Kiállítási naptár",
+    "about": "Rólam",
+    "contact": "Kapcsolat",
+    "cta": "Projekt megbeszélése",
+    "selection": "Kiválasztásom",
+    "home": "Főoldal",
+    "main": "Főnavigáció"
+  },
+  "hero": {
+    "eyebrow": "Külső tervezési és projektiroda · Kiállítási standok, márkaterek, belsőépítészet",
+    "title": "Tervezés, amely a csarnokban is működik.",
+    "lead": "Támogatom a standépítőket, ügynökségeket, belsőépítő cégeket és kiállítókat műszaki tervezéssel, munka-előkészítéssel és projektvezetéssel: projektenként, egyértelműen megállapodott terjedelemben és nyomon követhető dokumentumokkal.",
+    "cta": "Tervezési kapacitás kérése",
+    "secondary": "Koncepciók megtekintése",
+    "scroll": "Görgessen, és nézze, hogyan jön létre a vizualizáció",
+    "progress": "Építés (vizualizáció)",
+    "done": "Kész tér",
+    "design": "001. koncepció · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Koncepciók gyorsított felvételen",
+    "title": "5 koncepció.",
+    "lead": "Öt koncepcióanimáció mutatja, hogyan nő ki egy terv az üres csarnokpadlóból kész térré. Vizualizációk, nem megépült standokról készült felvételek.",
+    "cta": "Animáció lejátszása",
+    "badge": "Koncepcióanimáció",
+    "sliderLabel": "Csúszka öt koncepcióanimációval. A nyílbillentyűk lapoznak, az Enter megnyit.",
+    "explain": "Egy koncepció gyorsított animációja. Azt mutatja, hogyan épülhetne fel a tervezett tér, és nem bizonyítéka egy megvalósult standnak."
+  },
+  "tagline": {
+    "text": "Minden tér olyan dokumentumokkal kezdődik, amelyekre minden érintett támaszkodhat. Én ezeket készítem el."
+  },
+  "services": {
+    "eyebrow": "Szolgáltatások",
+    "title": "Több tervezési kapacitás, ha egyszerre több projekt fut.",
+    "lead": "A standépítők, ügynökségek és belsőépítő cégek párhuzamos projekteknél, létszámhiánynál és műszakilag igényes feladatoknál elérik a határaikat. Külső tervezőként és projektvezetőként a projektje világosan elhatárolt részeit veszem át, több mint 20 év kiállítási és rendezvényszakmai tapasztalattal. A gyártást, a szállítást, az összeszerelést, a statikát, az engedélyeket és a villamos munkákat képzett szakpartnerek végzik.",
+    "trust": [
+      {
+        "title": "Egy kapcsolattartó",
+        "text": "a tervezéshez, a dokumentumokhoz és az egyeztetéshez: közvetlenül velem beszél, nem közvetítőkön keresztül."
+      },
+      {
+        "title": "Több mint 20 év tapasztalat",
+        "text": "a kiállítási és rendezvényszakmában, faipari műszaki rajzolóként végeztem, és okleveles kiállítás- és rendezvényprojekt-vezető vagyok (IHK)."
+      },
+      {
+        "title": "Egyértelműen körülhatárolt terjedelem",
+        "text": "A terjedelmet, a javítási köröket és a határidőket előre, írásban rögzítem. További munkák és utazások csak egyeztetés alapján."
+      }
+    ],
+    "package": {
+      "badge": "Együttműködés",
+      "title": "Projektenként vagy havi keretként.",
+      "subtitle": "Tervezési kapacitás abban a mértékben, amennyire a projektjének éppen szüksége van.",
+      "text": "Elküldi nekem a megbízási leírást, én felbecsülöm a ráfordítást, és javaslatot teszek a terjedelemre, az eredményekre és a határidőkre. Ezután projektenként vagy havi keretben dolgozom, rögzített órákkal, reakcióidőkkel és javítási körökkel. A kapacitásom korlátozott; csak olyan projekteket vállalok, amelyeket gondosan el tudok végezni.",
+      "cta": "Tervezési kapacitás kérése",
+      "more": "Így zajlik egy projekt",
+      "phases": [
+        {
+          "title": "Megbízás és terjedelem",
+          "items": [
+            "A feladat, a határidő és a meglévő dokumentumok közös tisztázása",
+            "Írásban rögzített terjedelem és eredmények",
+            "Megállapodott javítási körök és jóváhagyási szintek",
+            "Egyedi ajánlat a megbízási leírás után"
+          ]
+        },
+        {
+          "title": "Tervezés és dokumentumok",
+          "items": [
+            "Méretezett részlet- és gyártási rajzok",
+            "Alkatrészlisták és interfész-dokumentumok",
+            "Anyag- és mennyiségi összesítők",
+            "Verziózott fájlok nyomon követhető állapottal"
+          ]
+        },
+        {
+          "title": "Egyeztetés és irányítás",
+          "items": [
+            "Költségvetési és ütemterv-összesítők",
+            "Ajánlatok összehasonlítása és beszerzéstervezés",
+            "Szakágak és szakpartnerek egyeztetése",
+            "Dokumentált jóváhagyások és módosítások"
+          ]
+        },
+        {
+          "title": "Átadás és dokumentáció",
+          "items": [
+            "Partnerenkénti gyártási dokumentumok átadásra",
+            "A módosítások és döntések dokumentálása",
+            "Készlet- és raktárinformációk az újrahasznosításhoz",
+            "Helyszíni egyeztetések és utazások előzetes megállapodás alapján"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Szakpartnerek a kivitelezéshez.",
+      "text": "Én tervezek és koordinálok, a kivitelezést képzett szakvállalkozások végzik. Az alapmodellben a nagyobb gyártási és szerelési megbízásokat Ön adja közvetlenül a partnereinek; kérésre egyeztetek velük, és előkészítem a dokumentumaikat. A CL Projektwerk nem gyártóműhely, és nem lép fel projekteket előfinanszírozó generálkivitelezőként.",
+      "items": [
+        "CNC-controlled production only",
+        "Carpentry",
+        "Metalwork",
+        "Összeszerelés és felépítés",
+        "Szállítás és logisztika",
+        "Statika és ellenőrzések",
+        "Engedélyek és átvételek",
+        "Villamos munkák",
+        "Nyomtatás és grafikai gyártás",
+        "Média- és rendezvénytechnika",
+        "… és további szakágak igény szerint"
+      ]
+    },
+    "single": {
+      "eyebrow": "Külön is megrendelhető",
+      "title": "Pontosan az a szolgáltatás, ami Önnek hiányzik.",
+      "text": "Van csapata, de kevés a tervezési kapacitása? Akkor csak azt a területet rendelje meg, amelyre szüksége van, például gyártási rajzokat egy projekthez vagy egy kiállítási megjelenés ütemezésének irányítását."
+    },
+    "items": {
+      "tech": {
+        "title": "Műszaki tervezés",
+        "text": "A megbízási leírása alapján méretezett részlet- és gyártási rajzokat, alkatrészlistákat és interfész-dokumentumokat készítek. Olyan dokumentumokat kap, amelyekkel a gyártópartnerei dolgozni tudnak, és belső tervezési órákat takarít meg.",
+        "points": [
+          "Méretezett részlet- és gyártási rajzok",
+          "Alkatrészlisták",
+          "Interfész-dokumentumok szakágakhoz és partnerekhez"
+        ],
+        "task": "Feladat: a megbízási leírását egyértelmű műszaki dokumentumokká alakítani.",
+        "result": "Eredmény: rajzok, listák és interfészek egyeztetett állapotban.",
+        "benefit": "Haszon: kevesebb kérdés a gyártásban és több idő az ügyfeleire.",
+        "link": "Példák megtekintése"
+      },
+      "prep": {
+        "title": "Munka-előkészítés",
+        "text": "Előkészítem a projektjét a kivitelezésre: anyag- és mennyiségi összesítők, partnerenkénti gyártási dokumentumok, valamint beszerzési és ütemtervezés. Így mindenki tudja, mi kell, mikor és milyen mennyiségben.",
+        "points": [
+          "Anyag- és mennyiségi összesítők",
+          "Partnerenkénti gyártási dokumentumok",
+          "Beszerzési és ütemtervezés"
+        ],
+        "task": "Feladat: az anyagok, mennyiségek és időpontok rendezése a kivitelezéshez.",
+        "result": "Eredmény: minden partnerhez összeállított összesítők és dokumentumok.",
+        "benefit": "Haszon: kevesebb hiány és ütemezési meglepetés az építés során.",
+        "link": "Így dolgozom"
+      },
+      "control": {
+        "title": "Projektvezetés",
+        "text": "Átláthatóan tartom a költségvetést és az ütemtervet, összehasonlítom az ajánlatokat, egyeztetem a szakágakat, és dokumentálom a jóváhagyásokat és módosításokat. A döntések Önnél maradnak; én úgy készítem elő őket, hogy gyorsan meg lehessen hozni.",
+        "points": [
+          "Költségvetési és ütemterv-összesítők",
+          "Ajánlat-összehasonlítások és szakágak egyeztetése",
+          "Jóváhagyások és nyomon követhető módosítás-dokumentáció"
+        ],
+        "task": "Feladat: az áttekintés megőrzése a költségek, határidők és megállapodások felett.",
+        "result": "Eredmény: naprakész összesítők és dokumentált döntések.",
+        "benefit": "Haszon: tehermentesítés párhuzamos projekteknél és egyértelmű nyomon követhetőség.",
+        "link": "Az együttműködés megtekintése"
+      },
+      "concept": {
+        "title": "Tervezés és bemutatás",
+        "text": "Stand- és térkoncepciókat dolgozok ki, vizualizációkat és nyomdakész grafikákat készítek. A terjedelmet és a javítási körök számát előre megállapodjuk, hogy a ráfordítás és az eredmény tervezhető maradjon.",
+        "points": [
+          "Stand- és térkoncepciók",
+          "Vizualizációk egyeztetéshez és bemutatáshoz",
+          "Nyomdakész grafikák megállapodott javítási körökkel"
+        ],
+        "task": "Feladat: egy ötletet úgy megmutatni, hogy Ön és az ügyfelei dönteni tudjanak.",
+        "result": "Eredmény: koncepció, vizualizációk és nyomdai adatok a megállapodott terjedelemben.",
+        "benefit": "Haszon: korai döntések érthető képek és tervek alapján.",
+        "link": "Koncepciók megtekintése"
+      },
+      "reuse": {
+        "title": "Újrahasznosítás-tervezés",
+        "text": "Felmérem a meglévő elemeket, variánsokat tervezek új felhasználásokra, és karbantartom az anyag- és raktárinformációkat. Így célzottan újra felhasználhatja a meglévőt ahelyett, hogy minden alkalommal elölről tervezne.",
+        "points": [
+          "A meglévő elemek felmérése",
+          "Variánstervezés új felhasználásokra",
+          "Anyag- és raktárinformációk"
+        ],
+        "task": "Feladat: a meglévő elemek felmérése és használhatóvá tétele új építményekhez.",
+        "result": "Eredmény: készletlista, variánsok és raktárinformációk.",
+        "benefit": "Haszon: kevesebb újratervezés és anyagfelhasználás visszatérő építményeknél.",
+        "link": "Ajánlatkérés küldése"
+      }
+    },
+    "inquire": "Ajánlatkérés",
+    "cta": {
+      "title": "A következő projektje egy megbízási leírással kezdődik.",
+      "text": "Írja le röviden a feladatot, a határidőt és a meglévő dokumentumokat. Első értékeléssel és a következő lépésekkel jelentkezem. Az ajánlatot a megbízási leírás után egyedileg kapja meg.",
+      "button": "Megbízási leírás küldése",
+      "phone": "Inkább közvetlenül beszélne?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Koncepciógaléria · naponta új",
+    "title": "Minden nap egy új koncepció.",
+    "lead": "Jelenleg {count} / {total} standkoncepció látható, {min} – {max}. Minden reggel 5:00-kor újabb kerül fel. Minden kép koncepciók vizualizációja. Lapozzon, szűrjön, mentsen, és kérjen ajánlatot közvetlenül.",
+    "slider": "Csúszka",
+    "grid": "Rács",
+    "viewMode": "Nézet",
+    "random": "Véletlenszerű koncepció",
+    "dayPick": "A nap koncepciója",
+    "hint": "Húzza, görgesse vagy használja a nyílbillentyűket",
+    "hintTouch": "Húzza oldalra",
+    "count": "{count} / {total}",
+    "empty": "Egy koncepció sem felel meg ezeknek a szűrőknek.",
+    "reset": "Szűrők visszaállítása",
+    "filters": "Szűrők",
+    "listTitle": "Az összes látható koncepció áttekintése",
+    "sliderLabel": "Koncepciócsúszka. A nyílbillentyűk lapoznak, az Enter megnyit.",
+    "current": "Jelenleg: {number} {title}",
+    "loadingSlider": "A csúszka betöltése",
+    "cardAlt": "{number} {title} koncepció: egy standkoncepció vizualizációja",
+    "filter": {
+      "all": "Mind",
+      "clip": "Koncepcióanimációval",
+      "two-storey": "Kétszintes",
+      "size-s": "Kompakt, 30 m²-ig",
+      "size-m": "Közepes, 150 m²-ig",
+      "size-l": "Nagy, 150 m²-től",
+      "wood": "Fa",
+      "green": "Növényzet",
+      "metal": "Fém",
+      "light": "Fény",
+      "container": "Konténerek",
+      "product": "Termékstandok",
+      "real-estate": "Ingatlankiállítás",
+      "outdoor": "Szabadtér"
+    }
+  },
+  "detail": {
+    "facts": "Alapadatok",
+    "area": "Terület",
+    "floors": "Szintek",
+    "standType": "Standtípus",
+    "height": "Magasság",
+    "materials": "Anyagok",
+    "colours": "Színek",
+    "series": "Sorozat",
+    "floorsValue": "{count, plural, =1 {egyszintes} =2 {kétszintes} other {# szintes}}",
+    "standTypes": {
+      "corner": "Sarokstand",
+      "head": "Fejstand",
+      "island": "Szigetstand",
+      "row": "Soros stand"
+    },
+    "renderings": "Vizualizációk",
+    "plans": "Tervek",
+    "floorplan": "Alaprajz",
+    "elevation": "Homlokzati nézet",
+    "download": "Letöltés",
+    "zoomIn": "Nagyítás",
+    "zoomOut": "Kicsinyítés",
+    "zoomReset": "Nézet visszaállítása",
+    "fullscreen": "Teljes képernyő",
+    "clip": "Koncepcióanimáció gyorsított felvételen",
+    "favorite": "Hozzáadás a kiválasztáshoz",
+    "favorited": "A kiválasztásában",
+    "share": "Megosztás",
+    "shareWhatsapp": "Megosztás WhatsAppon",
+    "shareLinkedin": "Megosztás LinkedInen",
+    "copyLink": "Link másolása",
+    "copied": "Link másolva",
+    "inquire": "Ajánlatkérés erre a koncepcióra",
+    "prevDesign": "Előző koncepció",
+    "nextDesign": "Következő koncepció",
+    "backToGallery": "Vissza a galériához",
+    "imageOf": "{current}. kép / {total}",
+    "description": "Leírás",
+    "placeholderImage": "A kép hamarosan érkezik",
+    "conceptNote": "Koncepcióterv. A kép vizualizáció, és nem megépült standot ábrázol.",
+    "imageAlt": "{title}: {label} (vizualizáció)",
+    "planAlt": "{title}: {label} (a koncepció tervrajza)",
+    "clipAlt": "{title}: az építés koncepcióanimációja (vizualizáció)"
+  },
+  "process": {
+    "eyebrow": "Együttműködés",
+    "title": "Hat lépés a megbízástól az átadásig.",
+    "steps": {
+      "briefing": {
+        "title": "Megbízás és terjedelem",
+        "text": "Feladat, határidő, meglévő dokumentumok és kívánt eredmények. Rögzítjük, mit szállítok, hány javítási kör van tervezve, és ki hagyja jóvá.",
+        "alt": "Vázlatanimáció a megbízáshoz (vizualizáció)"
+      },
+      "concept": {
+        "title": "Koncepció és egyeztetés",
+        "text": "Térötlet, vizualizációk, alaprajz és nézetek. Több nézőpontból látja a teret, és nyugodtan dönthet, mielőtt a műszaki részletezés megkezdődik.",
+        "alt": "A terv koncepcióanimációja (vizualizáció)"
+      },
+      "planning": {
+        "title": "Műszaki tervezés",
+        "text": "Méretezett részlet- és gyártási rajzok, alkatrészlisták és interfész-dokumentumok. A statikát, az engedélyeket és a villamos tervezést képzett szakpartnerek végzik; én egyeztetem az interfészeket.",
+        "alt": "A műszaki tervezés animációja (vizualizáció)"
+      },
+      "production": {
+        "title": "Munka-előkészítés és gyártási dokumentumok",
+        "text": "Anyag- és mennyiségi összesítők és dokumentumok minden gyártópartnernek, ezen felül beszerzési és ütemtervezés. A gyártás az adott szakvállalkozásnál történik, nem nálam.",
+        "alt": "CNC-megmunkálás animációja a gyártási adatok példájaként (vizualizáció); a gyártást a szakpartner végzi"
+      },
+      "logistics": {
+        "title": "Szakágak egyeztetése",
+        "text": "Ütemtervi áttekintés, ajánlat-összehasonlítások és a szakágak közötti egyeztetés, hogy a szállítás, az építés és a technika összeilljen. A munkát az Ön szakpartnerei végzik.",
+        "alt": "Az építés gyorsított koncepcióanimációja (vizualizáció)"
+      },
+      "onsite": {
+        "title": "Jóváhagyások, módosítások és átadás",
+        "text": "A jóváhagyásokat és módosításokat nyomon követhetően dokumentálom, és a végén átadom Önnek az összes dokumentumot. Helyszíni egyeztetések lehetségesek, ha előre megállapodtunk róluk.",
+        "alt": "Az átadás koncepcióanimációja (vizualizáció)"
+      }
+    },
+    "sketch": "Vázlat"
+  },
+  "world": {
+    "eyebrow": "Kiállítási naptár",
+    "title": "Kiállítások Németországban és Európában.",
+    "lead": "Áttekintés a németországi és európai kiállítási időpontokról a projekttervezés tájékozódásához. Válasszon egy várost, és a földgömb megmutatja a helyet és a Lipcsétől mért légvonalbeli távolságot. A naptárban szereplő időpont nem mond semmit a CL Projektwerk megbízásairól vagy részvételéről.",
+    "placeholderNote": "Példa helyszínek",
+    "listLabel": "Kiállítási városok",
+    "drag": "Földgömb forgatása",
+    "base": "Székhely",
+    "regions": {
+      "de": "Németország",
+      "eu": "Európa"
+    },
+    "calendar": {
+      "eyebrow": "Kiállítási naptár",
+      "title": "A következő kiállítás minden városban.",
+      "lead": "Minden városnál a következő vezető kiállítás jelenik meg időrendben, mint egy indulási táblán. Görgesse a táblát: a földgömb követi a kiválasztását.",
+      "summary": "{cities} kiállítási város · {km} km légvonal a Lipcséből induló útvonalon",
+      "boardLabel": "Kiállítási naptár: városonként a következő kiállítás",
+      "cols": {
+        "date": "Időpont",
+        "dest": "Cél",
+        "fair": "Kiállítás",
+        "status": "Állapot"
+      },
+      "running": "Most zajlik",
+      "today": "Ma",
+      "tomorrow": "Holnap",
+      "inDays": "{days} nap múlva",
+      "tba": "Az időpont hamarosan",
+      "past": "Véget ért",
+      "tbaNote": "Ehhez a városhoz jelenleg nincs rögzített, megerősített vezető kiállítási időpont.",
+      "dateTbc": "Az időpont nincs megerősítve",
+      "fairName": "Kiállítás",
+      "venue": "Kiállítási terület",
+      "route": "Légvonal",
+      "homeBase": "A székhelyem",
+      "km": "{km} km",
+      "localTime": "Helyi idő",
+      "website": "A szervező weboldala",
+      "inquire": "Projekt megbeszélése: {fair}",
+      "tourPause": "Körút szüneteltetése",
+      "tourPlay": "Körút folytatása",
+      "note": "Az időpontok a szervezők adatai szerint, ellenőrizve: {date}. Változások lehetségesek; a szervezők weboldalai az irányadók. A kiállítások nevei tulajdonosaik védjegyei. Az időpontok nem mondanak semmit a CL Projektwerk megbízásairól vagy részvételéről.",
+      "search": "Kiállítás vagy város keresése",
+      "searchPlaceholder": "pl. Düsseldorf vagy építőipar",
+      "filterCountry": "Ország",
+      "filterCity": "Város",
+      "filterPeriod": "Időszak",
+      "filterSector": "Ágazat",
+      "filterAll": "Mind",
+      "periodUpcoming": "Közelgő",
+      "periodRunning": "Zajló",
+      "periodPast": "Lezajlott",
+      "resultCount": "{count, plural, =0 {Nincs kiállítás} =1 {1 kiállítás} other {# kiállítás}}",
+      "empty": "Egyetlen kiállítás sem felel meg a keresésnek és a kiválasztott szűrőknek.",
+      "reset": "Keresés és szűrők visszaállítása",
+      "source": "Forrás",
+      "checkedOn": "Ellenőrizve: {date}"
+    },
+    "zoomIn": "Nagyítás",
+    "zoomOut": "Kicsinyítés",
+    "zoomReset": "Nézet visszaállítása",
+    "zoomEurope": "Európa nézet",
+    "zoomCountry": "Ország kiválasztása",
+    "zoomHint": "Ctrl + egérgörgő vagy dupla kattintás: nagyítás · kattintás egy városra: légvonalbeli távolság",
+    "zoomHintTouch": "Két ujjal nagyítson · koppintson egy városra: légvonalbeli távolság",
+    "zoomHintKeys": "A nyílbillentyűk mozgatják a nézetet, a plusz és a mínusz nagyít és kicsinyít.",
+    "scrollHint": "A szokásos görgetés csak az oldalt mozgatja. A nagyításhoz tartsa lenyomva a Ctrl billentyűt.",
+    "distance": {
+      "title": "Légvonalbeli távolság két város között",
+      "from": "Honnan",
+      "to": "Hová",
+      "pick": "Város kiválasztása",
+      "swap": "Városok cseréje",
+      "result": "Légvonal: {km} km",
+      "resultFromTo": "Légvonal {from} – {to}: {km} km",
+      "note": "Nagykör menti távolságként számolva a földgömbön. Ez nem közúti távolság, és nem mond semmit az utazási időről.",
+      "rings": "Távolságkörök {city} körül: {km} km",
+      "scale": "Lépték: {km} km",
+      "listTitle": "Városok és légvonalbeli távolság innen: {city}",
+      "listCity": "Város",
+      "listCountry": "Ország",
+      "listKm": "Légvonal",
+      "noWebglTitle": "A 3D nézet nem érhető el",
+      "noWebglText": "Az eszköze nem jeleníti meg a 3D földgömböt. A táblázat ugyanazokat a városokat, kiállításokat és távolságokat tartalmazza.",
+      "reducedMotion": "A csökkentett mozgás be van kapcsolva: nincsenek automatikus repülések és animációk."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Képernyőfelületek a tervezésben",
+    "title": "A médiafelületeknek pontos méretekre van szükségük.",
+    "lead": "A LED-falak és monitorok sok kiállítási tér részei. Méretekkel, képarányokkal és csatlakozási adatokkal beépítem őket a dokumentumaiba. A klipek gyakori formátumokat mutatnak; licencelt mintaanyagok, nem saját projektjeim.",
+    "placeholder": "Mintaklip {n}",
+    "placeholderNote": "Mintaanyag",
+    "caption": "Mintaklip (stock licenc): {title}, {format}. Nem a CL Projektwerk projektje."
+  },
+  "about": {
+    "eyebrow": "Rólam",
+    "name": "Christof Laufersweiler",
+    "role": "Tervezés és projektvezetés kiállítási standokhoz, márkatérekhez és belsőépítészethez",
+    "text": "Christof Laufersweiler vagyok, és több mint 20 éve dolgozom a kiállítási és rendezvényszakmában. Faipari műszaki rajzolónak tanultam; később jött a standépítési projektvezetés, egy standépítő cég alkalmazott ügyvezetése és egy IHK-oklevél kiállítás- és rendezvényprojekt-vezetőként. A CL Projektwerkkel Lipcsében külső tervezési és projektkapacitást kínálok standépítőknek, ügynökségeknek, belsőépítő cégeknek és kiállítóknak, akiknek szakértelemmel rendelkező extra kezekre van szükségük.",
+    "close": "A döntések Önnél maradnak. Én gondoskodom a dokumentumokról, az áttekintésről és az egyeztetésről.",
+    "photoAlt": "Christof Laufersweiler, a CL Projektwerk alapítójának portréja",
+    "cta": "Projekt megbeszélése velem",
+    "career": "Pályafutás",
+    "projects": "Projektek korábbi munkából",
+    "projectsNote": "Ezek a példák korábbi szakmai munkámból származnak, felelős projektvezetőként. Nem a CL Projektwerk projektjei, és a megnevezett vállalatok nem a CL Projektwerk ügyfelei.",
+    "tools": "Szoftverek",
+    "languages": "Nyelvek"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ év",
+        "label": "tapasztalat a kiállítási és rendezvényszakmában"
+      },
+      {
+        "value": "1 200 m²",
+        "label": "legnagyobb vezetett standterület korábbi munkából (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Kiállítás- és rendezvényprojekt-vezetői oklevél (IHK Hannover, 2009.12.11.)"
+      }
+    ],
+    "career": [
+      {
+        "years": "2019.06 – 2025.04",
+        "role": "Projektvezetés",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "2017.06 – 2019.06",
+        "role": "Ügyvezető (alkalmazott)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "2007.02 – 2017.06",
+        "role": "Kiállítási standépítés projektvezetése",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "2009.12",
+        "role": "Kiállítás- és rendezvényprojekt-vezetői oklevél (tanfolyam, 160 tanóra)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "2003.08 – 2007.01",
+        "role": "Műszaki rajzoló képzés, faipar",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1 200 m²",
+        "note": "Több kiállító és jármű, nagyméretű LED-kijelzők"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1 200 m²",
+        "note": "20 m hosszú LED-fal, műszakilag koordinálva"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Függesztett rétegelt-ragasztott fa szerkezet, ráncmentesen kifeszített textilgrafikák"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Nyitott standkoncepció LED-fallal"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Német (anyanyelv)",
+      "Angol (üzleti szinten folyékony)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Projekt megbeszélése",
+    "title": "Meséljen a projektjéről.",
+    "lead": "Négy rövid lépés, kevés kötelező mező. A galériából mentett koncepciókat kérésre csatolom.",
+    "response": "Általában {time} belül válaszolok.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Terjedelem",
+      "services": "Szolgáltatás",
+      "contact": "Kapcsolat"
+    },
+    "stepOf": "{current}. lépés / {total}",
+    "fields": {
+      "fair": "Kiállítás, rendezvény vagy projekt",
+      "fairPlaceholder": "pl. kiállítási megjelenés, márkatér vagy belsőépítészet",
+      "projectType": "Projekt típusa",
+      "projectTypes": {
+        "fair": "Kiállítási stand",
+        "brand": "Márkatér",
+        "interior": "Belsőépítészet",
+        "event": "Rendezvény",
+        "open": "Még nyitott"
+      },
+      "city": "Helyszín",
+      "cityPlaceholder": "pl. Lipcse",
+      "dateFrom": "Időpont kezdete",
+      "dateTo": "vége",
+      "dateUnknown": "Az időpont még nem biztos",
+      "size": "A tér mérete (nem kötelező)",
+      "width": "Szélesség (m)",
+      "depth": "Mélység (m)",
+      "area": "Terület",
+      "standType": "Standtípus",
+      "standTypeUnknown": "Még nyitott",
+      "floors": "Szintek",
+      "documents": "Meglévő dokumentumok",
+      "documentOptions": {
+        "briefing": "Megbízási leírás vagy követelményjegyzék",
+        "cad": "CAD- vagy tervezési adatok",
+        "sketches": "Vázlatok vagy hangulattáblák",
+        "renders": "Vizualizációk",
+        "inventory": "Készletlisták",
+        "none": "Még nincs"
+      },
+      "services": "Szükséges tervezési szolgáltatás",
+      "scope": "Kívánt terjedelem",
+      "scopes": {
+        "single": "Egyedi szolgáltatás",
+        "project": "Teljes projekt",
+        "quota": "Folyamatos havi keret",
+        "open": "Még nyitott"
+      },
+      "budget": "A projekt teljes költségvetése (nem kötelező)",
+      "budgets": {
+        "a": "25 000 €-ig",
+        "b": "25 000 – 75 000 €",
+        "c": "75 000 – 150 000 €",
+        "d": "150 000 € felett",
+        "open": "Nem szeretném megadni"
+      },
+      "name": "Név",
+      "company": "Cég",
+      "email": "E-mail",
+      "phone": "Telefon (nem kötelező)",
+      "message": "Üzenet",
+      "messagePlaceholder": "Mit kell megtervezni? Vannak előírások, egy korábbi építmény vagy különleges műszaki követelmények?",
+      "favorites": "Csatolt koncepciók",
+      "favoritesEmpty": "Nincs mentett koncepció. A galériában a szívvel gyűjthet koncepciókat.",
+      "consent": "Hozzájárulok, hogy az adataimat az ajánlatkérés feldolgozásához eltárolják és felhasználják. Részletek az <privacy>adatvédelmi tájékoztatóban</privacy>.",
+      "privacy": "Adatvédelmi tájékoztató",
+      "required": "Kötelező"
+    },
+    "submit": "Megbízási leírás küldése",
+    "sending": "Küldés folyamatban",
+    "errors": {
+      "required": "Kérjük, töltse ki.",
+      "email": "Kérjük, adjon meg érvényes e-mail-címet.",
+      "consent": "Kérjük, járuljon hozzá a feldolgozáshoz, hogy válaszolhassak.",
+      "dates": "A vég a kezdet előtt van.",
+      "server": "A küldés nem sikerült. Kérjük, próbálja újra, vagy írjon a(z) {email} címre.",
+      "rate": "Túl sok kérés rövid idő alatt. Kérjük, próbálja újra néhány perc múlva."
+    },
+    "whatsapp": "Írás WhatsAppon",
+    "callback": "Visszahívás kérése",
+    "callbackTitle": "Visszahívás kérése",
+    "callbackTime": "Mikor alkalmas Önnek?",
+    "callbackTimePlaceholder": "pl. holnap 14 óra után",
+    "callbackSubmit": "Visszahívás kérése",
+    "callbackDone": "Köszönöm. A visszahívási kérését elküldtem. Megpróbálom a megadott időpontban elérni Önt.",
+    "direct": "Közvetlenül",
+    "notConfigured": "Még nincs megadva",
+    "prefilled": "Az Ön kiválasztása: {list}",
+    "emailDraft": {
+      "prepare": "E-mail előkészítése",
+      "title": "Az e-mail piszkozata elkészült",
+      "notice": "Az adataiból e-mail-piszkozat készül. Ellenőrizze és küldje el saját levelezőprogramjában. Még nem történt üzenetküldés.",
+      "open": "Levelezőprogram megnyitása",
+      "copy": "Szöveg másolása",
+      "copied": "Szöveg másolva",
+      "fallback": "Nincs beállított levelezőprogram, vagy hiányoznak adatok? Másolja az alábbi teljes szöveget a webes levelezőjébe."
+    }
+  },
+  "thanks": {
+    "title": "Köszönöm a megbízási leírását.",
+    "text": "Az ajánlatkérését elküldtem. Általában {time} belül válaszolok első értékeléssel. Automatikus e-mailes visszaigazolás nem érkezik. A mentett koncepciókat is elküldtem.",
+    "back": "Vissza a főoldalra",
+    "designs": "További koncepciók megtekintése"
+  },
+  "selection": {
+    "title": "Kiválasztásom",
+    "lead": "A mentett koncepciói. Egy kattintással csatolhatja őket az ajánlatkéréshez.",
+    "count": "{count, plural, =0 {Még nincs mentve semmi} =1 {1 koncepció mentve} other {# koncepció mentve}}",
+    "empty": "Még nincs mentve semmi. A galériában koppintson a szívre a koncepciók gyűjtéséhez.",
+    "toGallery": "A galériához",
+    "inquire": "Kiválasztás küldése ajánlatkéréssel",
+    "clear": "Összes eltávolítása",
+    "remove": "Eltávolítás"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Jogi tudnivalók",
+    "privacy": "Adatvédelem",
+    "cookies": "Süti-beállítások",
+    "note": "A weboldalon látható összes renderelés és animáció tervezési koncepciók vizualizációja. Nem megépült kiállítási standokat ábrázolnak.",
+    "top": "Fel",
+    "languages": "Nyelvek",
+    "tagline": "Külső tervezési és projektiroda kiállítási standokhoz, márkatérekhez és belsőépítészethez"
+  },
+  "cookies": {
+    "title": "Az Ön adatvédelme",
+    "text": "Ez a weboldal csak azt tárolja, ami műszakilag szükséges, például a mentett koncepcióit, a választott elrendezést és ezt a döntést. A statisztika és a külső szolgáltatások kikapcsolva maradnak, amíg nem járul hozzá.",
+    "necessary": "Csak a szükségesek",
+    "settings": "Beállítások",
+    "acceptAll": "Mindet engedélyezem",
+    "save": "Választás mentése",
+    "categories": {
+      "necessary": "Szükséges",
+      "necessaryText": "Nyelv, mentett koncepciók, elrendezés, rádióbeállítások és ez a döntés. Mindig aktív.",
+      "stats": "Statisztika",
+      "statsText": "Jelenleg nincs használatban.",
+      "media": "Külső média",
+      "mediaText": "Jelenleg nincs használatban. A rádió csak akkor csatlakozik, ha Ön maga elindítja."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Jogi tudnivalók",
+    "privacyTitle": "Adatvédelmi tájékoztató",
+    "placeholder": "A jogi szöveg hamarosan érkezik.",
+    "notice": "A szöveg német nyelvű változata az irányadó.",
+    "updated": "Állapot: {date}"
+  },
+  "notFound": {
+    "title": "Ez az oldal nem létezik.",
+    "text": "Talán a koncepciógalériában megtalálja, amit keres.",
+    "home": "Vissza a főoldalra",
+    "designs": "A galériához"
+  },
+  "layouts": {
+    "label": "Elrendezés kiválasztása",
+    "toggle": "Elrendezés",
+    "short": "ELRENDEZÉS",
+    "film": "Hero: {n}. koncepcióanimáció",
+    "active": "aktív",
+    "preview": "Előnézet: {name}",
+    "hint": "A nyílbillentyűk váltják az elrendezést, az Escape bezárja a választást.",
+    "saved": "A választását ezen az eszközön mentjük.",
+    "monoShowColour": "Eredeti színek megjelenítése",
+    "monoHideColour": "Megjelenítés fekete-fehérben",
+    "items": {
+      "studio": "Antracit és narancs, világos vonalak, pontos, mint egy tervezőműterem",
+      "aurora": "Sötét felületek mentával és liláskékkel, talpas betű, lágy fénymozgások",
+      "tide": "Petrol és korall, kifejező betű, áramló hullámok",
+      "mono": "Következetesen fekete-fehér, erős kontraszt, geometrikus formák"
+    }
+  },
+  "radio": {
+    "label": "Rádió",
+    "title": "Rádió",
+    "choose": "ADÓ VÁLASZTÁSA",
+    "close": "Lejátszó összecsukása",
+    "stations": "Adók",
+    "play": "Lejátszás indítása",
+    "pause": "Lejátszás szüneteltetése",
+    "mute": "Némítás",
+    "unmute": "Hang bekapcsolása",
+    "volume": "Hangerő",
+    "off": "ki",
+    "hint": "Élő webrádió. A hang csak a kattintása után indul, és a szabályozó csak erre a lejátszóra vonatkozik. Indításkor a böngészője csatlakozik az adóhoz.",
+    "noTrack": "Nincs elérhető számadat",
+    "levelNote": "A szintjelző puszta animáció, és nem a valós hangszintet mutatja.",
+    "state": {
+      "ready": "Kész",
+      "connecting": "Csatlakozás …",
+      "live": "Élőben",
+      "buffering": "Pufferelés …",
+      "stalled": "A kapcsolat akadozik …",
+      "paused": "Szüneteltetve",
+      "error": "Az adó nem érhető el",
+      "blocked": "A böngésző letiltotta az indítást. Kattintson újra a lejátszásra."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Tervezés és bemutatás",
+    "title": "Grafika, amely illik a térhez.",
+    "text": "Egy tervhez olyan képek tartoznak, amelyek lehetővé teszik a döntést, és olyan adatok, amelyek utómunka nélkül továbbfeldolgozhatók. Vizualizációkat és nyomdakész grafikai adatokat készítek, amelyek a tér méreteihez és szerkezetéhez, valamint az Ön arculatához igazodnak. A terjedelmet és a javítási körök számát előre megállapodjuk. A nyomtatást egy nyomdai partner végzi, akit Ön vagy kérésre én vonok be.",
+    "points": [
+      {
+        "title": "Vizualizációk az egyeztetéshez",
+        "text": "A perspektívák, az alaprajz és a nézetek érthetővé teszik a koncepciót Önnek és az ügyfeleinek."
+      },
+      {
+        "title": "Nyomdai adatok minden szükséges információval",
+        "text": "A vágási ráhagyás, a színprofil, a méretek és a fájlformátum elő van készítve a nyomdai partnere számára."
+      },
+      {
+        "title": "A szerkezethez igazítva",
+        "text": "A grafikai felületeket összevetjük a műszaki tervezésből származó falak és elemek méreteivel."
+      },
+      {
+        "title": "Megállapodott javítási körök",
+        "text": "Előre rögzítjük, hány javítási kör tartozik bele. További körök külön szolgáltatásnak minősülnek."
+      },
+      {
+        "title": "Verziózott fájlok",
+        "text": "Minden verziónak egyértelmű állapota van, így csak jóváhagyott adatok kerülnek nyomdába."
+      },
+      {
+        "title": "Átadás a nyomdai partnerének",
+        "text": "Én szállítom az adatokat, a szakvállalkozás nyomtat és gyárt."
+      }
+    ],
+    "close": "A tervezés és az adatok tőlem, a gyártás a szakvállalkozásnál: hogy a tér úgy nézzen ki, ahogyan jóváhagyták.",
+    "videoLabel": "Animáció: nyomdai adatok monitoron és egy kiállítási grafika nagyformátumú nyomtatása (vizualizáció)"
+  },
+  "drops": {
+    "rule": "Minden reggel 5:00-kor újabb koncepció",
+    "today": "Ma új",
+    "next": "Következő koncepció ennyi idő múlva:",
+    "soon": "Új koncepció látható.",
+    "reload": "Újratöltés",
+    "complete": "Mind a(z) {total} koncepció látható",
+    "count": "{released} / {total} látható"
+  },
+  "error": {
+    "title": "Valami hiba történt.",
+    "text": "Az oldalt nem sikerült teljesen betölteni. Kérjük, próbálja újra.",
+    "retry": "Újrapróbálkozás",
+    "home": "Vissza a főoldalra"
+  },
+  "seo": {
+    "eyebrow": "Műszaki kiállítástervezés",
+    "title": "Műszaki tervezés, munka-előkészítés és projektvezetés kiállítási standokhoz és belsőépítészethez.",
+    "intro": "A CL Projektwerk külső tervezési és projektiroda Lipcsében. Standépítőket, ügynökségeket, belsőépítő cégeket és középméretű kiállítókat támogatok a kiállítási standok tervezésében: méretezett gyártási dokumentációval, munka-előkészítéssel, külső projektvezetéssel, koncepciókkal és újrahasznosítás-tervezéssel. A kivitelezést szakpartnerek végzik; én a tervezést és a koordinációt szállítom.",
+    "blocks": [
+      {
+        "title": "Műszaki kiállítástervezés",
+        "text": "A megbízási leírásból méretezett részlet- és gyártási rajzok, alkatrészlisták és interfész-dokumentumok készülnek. A gyártópartnerei dolgozhatnak velük, anélkül hogy a csapatának minden rajzot maga kellene elkészítenie."
+      },
+      {
+        "title": "Munka-előkészítés standokhoz és márkatérekhez",
+        "text": "Az anyag- és mennyiségi összesítők, a gyártópartnerenkénti dokumentumok, valamint a beszerzési és ütemtervezés a rajzokból megszervezhető folyamatot csinálnak."
+      },
+      {
+        "title": "Külső projektvezetés",
+        "text": "A költségvetési és ütemterv-összesítők, az ajánlat-összehasonlítások, a szakágak egyeztetése és a dokumentált jóváhagyások áttekinthetőséget teremtenek, különösen ha egyszerre több projekt fut."
+      },
+      {
+        "title": "Koncepció, bemutatás és újrahasznosítás",
+        "text": "A stand- és térkoncepciók, a vizualizációk és a nyomdakész grafikák segítik az egyeztetést. Az újrahasznosítás-tervezés felmérti a meglévő elemeket, és variánsokat tervez új felhasználásokra."
+      }
+    ],
+    "faqTitle": "Gyakori kérdések",
+    "faq": [
+      {
+        "q": "Mennyibe kerül az együttműködés?",
+        "a": "A terjedelemtől, az eredményektől és a határidőktől függ. Rövid megbízási leírás után egyedi ajánlatot kap a projektre vagy egy havi keretre."
+      },
+      {
+        "q": "Mikor érdemes jelentkeznem?",
+        "a": "A legjobb, ha a feladat és a határidő megvan, mert a havi tervezési kapacitásom korlátozott. A rövid határidejű megkereséseket az aktuális leterheltségem alapján bírálom el."
+      },
+      {
+        "q": "Rendelhetek csak egyetlen szolgáltatást?",
+        "a": "Igen. A műszaki tervezés, a munka-előkészítés, a projektvezetés, a tervezés és bemutatás, valamint az újrahasznosítás-tervezés külön-külön is megrendelhető."
+      },
+      {
+        "q": "Gyárt és szerel is?",
+        "a": "Nem. A gyártást, a szállítást, az összeszerelést, a statikát, az engedélyeket és a villamos munkákat képzett szakpartnerek végzik. A nagyobb megbízásokat általában Ön adja közvetlenül; én tervezek és koordinálok."
+      },
+      {
+        "q": "Lehetségesek helyszíni egyeztetések vagy utazások?",
+        "a": "A tervezés főleg Lipcséből történik. A helyszíni egyeztetésekről és utazásokról előre megállapodunk, a további szolgáltatásokat külön egyeztetjük."
+      },
+      {
+        "q": "Kínál webdesignt vagy automatizálást?",
+        "a": "Ezek nem tartoznak a fő szolgáltatásaim közé. A fókuszom kiállítási stand-, márkatér- és belsőépítészeti projektek tervezése és irányítása."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Nyelv kiválasztása",
+    "hint": "Húzással, húzással oldalra vagy a nyílbillentyűkkel forgathatja",
+    "current": "jelenlegi",
+    "prev": "Előző nyelv",
+    "next": "Következő nyelv",
+    "close": "Bezárás"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Külső tervezési és projektiroda kiállítási standokhoz, márkatérekhez és belsőépítészethez",
+    "claim": "Tervezés, amely a csarnokban is működik.",
+    "visualisationNote": "Vizualizáció"
+  },
+  "structured": {
+    "serviceCatalog": "Szolgáltatások",
+    "services": [
+      "Műszaki tervezés: méretezett részlet- és gyártási rajzok, alkatrészlisták, interfész-dokumentumok",
+      "Munka-előkészítés: anyag- és mennyiségi összesítők, gyártási dokumentumok, beszerzési és ütemtervezés",
+      "Projektvezetés: költségvetési és ütemterv-összesítők, ajánlat-összehasonlítások, szakágak egyeztetése, módosítás-dokumentáció",
+      "Tervezés és bemutatás: stand- és térkoncepciók, vizualizációk, nyomdakész grafikák",
+      "Újrahasznosítás-tervezés: a meglévő elemek felmérése, variánstervezés, anyag- és raktárinformációk"
+    ],
+    "keywords": [
+      "műszaki kiállítástervezés",
+      "kiállítási standok tervezése",
+      "külső projektvezetés",
+      "munka-előkészítés standépítés",
+      "tervezőiroda Lipcse",
+      "márkaterek",
+      "belsőépítészet",
+      "újrahasznosítás-tervezés"
+    ],
+    "genre": "Kiállítási standkoncepció",
+    "videoSuffix": "Koncepcióanimáció gyorsított felvételen"
+  },
+  "ogImage": {
+    "film": "▶ Koncepcióanimáció"
+  }
+}

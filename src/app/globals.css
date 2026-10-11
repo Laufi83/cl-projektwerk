@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+/* ───────────────────────── Design-Tokens ─────────────────────────
+   Alle Farben als CSS-Variablen. Akzent tauschen: nur --accent ändern. */
+:root {
+  --bg: #0a0a0b;
+  --bg-raised: #131210;
+  --bg-sunken: #070708;
+  --fg: #f4efe6;
+  --fg-muted: color-mix(in oklab, var(--fg) 64%, var(--bg));
+  --fg-subtle: color-mix(in oklab, var(--fg) 42%, var(--bg));
+  --accent: #f26a1b; /* Orange (vorher Gold #d4af37) – Akzent nur hier tauschen */
+  --accent-soft: color-mix(in oklab, var(--accent) 22%, transparent);
+  --accent-contrast: #0a0a0b;
+  --accent-2: #4a1f3d;
+  --line: color-mix(in oklab, var(--fg) 12%, transparent);
+  --line-strong: color-mix(in oklab, var(--fg) 22%, transparent);
+  --glass: color-mix(in oklab, var(--bg) 62%, transparent);
+  --danger: #ff8a7a;
+  --ok: #9fd8a5;
+
+  --ease-fluid: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 300ms;
+  --dur: 700ms;
+  --dur-slow: 1100ms;
+
+  --header-h: 88px;
+  --gutter: 16px;
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 32px; }
+}
+@media (min-width: 1280px) {
+  :root { --gutter: 48px; }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-raised: var(--bg-raised);
+  --color-bg-sunken: var(--bg-sunken);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-contrast: var(--accent-contrast);
+  --color-accent-2: var(--accent-2);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-danger: var(--danger);
+  --color-ok: var(--ok);
+  /* --font-d / --font-t setzt das aktive Layout (src/app/layouts.css) */
+  --font-display: var(--font-d), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-t), ui-sans-serif, system-ui, sans-serif;
+  --ease-fluid: var(--ease-fluid);
+  --ease-out-expo: var(--ease-out-expo);
+}
+
+/* ───────────────────────── Basis ───────────────────────── */
+html {
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scrollbar-color: var(--line-strong) transparent;
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+
+body {
+  min-height: 100svh;
+  background: var(--bg);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection { background: var(--accent); color: var(--accent-contrast); }
+
+/* Im Basis-Layer, damit Utilities wie truncate, whitespace-nowrap, hidden oder max-w-none gewinnen */
+@layer base {
+  h1, h2, h3, h4 { text-wrap: balance; }
+  p, li, dd { text-wrap: pretty; }
+  img, video, canvas { display: block; max-width: 100%; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Komponenten-Klassen im Layer „components“: Tailwind-Utilities (hidden, border-r-0, tracking-…) gewinnen */
+@layer components {
+/* Display-Schrift: Mona Sans, breit laufend */
+.font-display {
+  font-family: var(--font-display);
+  font-stretch: 118%;
+  font-variation-settings: "wdth" 118;
+  letter-spacing: -0.035em;
+}
+.font-display-tight { font-stretch: 108%; font-variation-settings: "wdth" 108; }
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Zahlen in Geist mit gleicher Breite */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Seitenraster */
+.container-x { padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right)); margin-inline: auto; width: 100%; max-width: 1600px; }
+
+/* Hinweis-Etikett „Visualisierung“ */
+.vis-note {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.6875rem; line-height: 1; letter-spacing: 0.12em; text-transform: uppercase;
+  color: color-mix(in oklab, var(--fg) 82%, transparent);
+  background: color-mix(in oklab, var(--bg) 55%, transparent);
+  backdrop-filter: blur(8px);
+  padding: 6px 8px; border-radius: 999px;
+}
+
+/* Platzhalter sichtbar markieren */
+.ph {
+  color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 10%, transparent);
+  outline: 1px dashed color-mix(in oklab, var(--accent) 55%, transparent);
+  outline-offset: 2px;
+  border-radius: 4px;
+  padding-inline: 4px;
+}
+
+/* Glas-Oberfläche */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border: 1px solid var(--line);
+}
+}
+
+/* Eigener Cursor: nativen Zeiger nur ausblenden, wenn der Effekt aktiv ist */
+html[data-cursor="on"] body,
+html[data-cursor="on"] a,
+html[data-cursor="on"] button,
+html[data-cursor="on"] [role="button"],
+html[data-cursor="on"] label,
+html[data-cursor="on"] summary { cursor: none; }
+html[data-cursor="on"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html[data-cursor="on"] textarea,
+html[data-cursor="on"] select,
+html[data-cursor="on"] [contenteditable="true"] { cursor: text; }
+html[data-cursor="on"] select { cursor: pointer; }
+
+/* Einblenden beim Scrollen (per IntersectionObserver, siehe RevealObserver).
+   Nur wenn JavaScript läuft – ohne JS bleibt alles sichtbar. */
+@media (scripting: enabled) {
+[data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 64px, 0);
+  filter: blur(12px);
+  transition: opacity var(--dur-slow) var(--ease-fluid), transform var(--dur-slow) var(--ease-fluid), filter var(--dur-slow) var(--ease-fluid);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal="in"] { opacity: 1; transform: none; filter: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal] { opacity: 1; transform: none; filter: none; }
+}
+
+/* Feines Filmkorn über allem (sehr leise). Auf Touch-Geräten aus: die Mischebene über dem ganzen Bildschirm kostet dort spürbar Leistung */
+.grain::after {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 60;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+@media (pointer: coarse) { .grain::after { display: none; } }
+
+/* Scrollleisten in horizontalen Bändern ausblenden */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* ---------- Messekalender: Fallblatt-Anzeige ---------- */
+.flap-root { position: relative; display: inline-block; }
+.flap-layer { position: absolute; inset: 0; white-space: pre; pointer-events: none; }
+.flap-root[data-anim="1"] .flap-text { visibility: hidden; }
+.flap { display: inline-block; transform-origin: 50% 55%; animation: flap-a 90ms linear; }
+.flap[data-f="1"] { animation-name: flap-b; }
+@keyframes flap-a { 0% { transform: perspective(200px) rotateX(-70deg); opacity: .4; } 100% { transform: none; opacity: 1; } }
+@keyframes flap-b { 0% { transform: perspective(200px) rotateX(-70deg); opacity: .4; } 100% { transform: none; opacity: 1; } }
+/* Zielcode als Fallblatt-Kachel mit Trennfuge */
+.board-code { position: relative; display: inline-grid; place-items: center; min-width: 3.25rem; padding: .3rem .4rem .3rem .55rem; border-radius: .45rem;
+  background: linear-gradient(to bottom, color-mix(in oklab, var(--fg) 9%, transparent) 50%, color-mix(in oklab, var(--fg) 6%, transparent) 50%);
+  box-shadow: inset 0 0 0 1px var(--line); }
+.board-code::after { content: ""; position: absolute; inset: 50% 0 auto; height: 1px; background: color-mix(in oklab, var(--bg) 70%, transparent); }
+.board-row[data-active] .board-code { box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--accent) 70%, transparent), 0 0 24px -6px var(--accent); }
+.board-row::before { content: ""; position: absolute; left: 0; top: 18%; bottom: 18%; width: 2px; border-radius: 2px; background: var(--accent); transform: scaleY(0); transition: transform var(--dur) var(--ease-fluid); }
+.board-row[data-active]::before { transform: scaleY(1); }
+.board-detail { grid-template-rows: 0fr; opacity: 0; }
+.board-detail[data-open] { grid-template-rows: 1fr; opacity: 1; }
+.board-row[data-running] .board-status { box-shadow: 0 0 0 0 var(--accent); animation: board-live 2.4s var(--ease-fluid) infinite; }
+@keyframes board-live { 0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 60%, transparent); } 70%, 100% { box-shadow: 0 0 0 10px transparent; } }
+
+/* ---------- Messekalender: Globus-Bühne und Messekarte ---------- */
+@media (max-width: 1023px) {
+  /* Handy/Tablet: Globus oben angeheftet, Tafel läuft darunter durch */
+  .world-stage { background: linear-gradient(to bottom, var(--bg) 0%, var(--bg) 84%, color-mix(in oklab, var(--bg) 0%, transparent) 100%); }
+}
+.fair-card { position: absolute; left: 0; top: 0; z-index: 2; pointer-events: none; transition: opacity 400ms var(--ease-fluid); will-change: transform; }
+.fair-card[data-state="off"], .fair-card[data-hidden="1"] { opacity: 0; }
+.fair-card__dot { position: absolute; width: 10px; height: 10px; margin: -5px 0 0 -5px; border-radius: 50%; background: #fff;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 70%, transparent), 0 0 22px 4px var(--accent); }
+.fair-card__line { position: absolute; left: -0.5px; bottom: 8px; width: 1px; height: 2.4rem; transform-origin: center bottom;
+  background: linear-gradient(0deg, var(--accent), color-mix(in oklab, var(--accent) 20%, transparent)); transform: scaleY(0); transition: transform 380ms var(--ease-out-expo); }
+.fair-card[data-side="bottom"] .fair-card__line { bottom: auto; top: 8px; transform-origin: center top; background: linear-gradient(180deg, var(--accent), color-mix(in oklab, var(--accent) 20%, transparent)); }
+.fair-card__body { position: absolute; bottom: calc(2.4rem + 8px); left: 0; width: min(17.5rem, 70vw); padding: .9rem 1rem 1rem; border-radius: 1rem; overflow: hidden;
+  --shift: translateX(calc(-50% + var(--dx, 0px)));
+  background: linear-gradient(160deg, color-mix(in oklab, var(--bg-raised) 82%, transparent), color-mix(in oklab, var(--bg) 70%, transparent));
+  border: 1px solid color-mix(in oklab, var(--accent) 42%, transparent);
+  box-shadow: 0 24px 60px -24px rgb(0 0 0 / .85), 0 0 40px -18px var(--accent), inset 0 1px 0 rgb(255 255 255 / .06);
+  backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  transform: var(--shift) perspective(700px) rotateY(var(--ry, 0deg)) translateY(10px) scale(.94); opacity: 0; filter: blur(6px);
+  transition: transform 700ms var(--ease-out-expo) 120ms, opacity 500ms var(--ease-fluid) 120ms, filter 600ms var(--ease-fluid) 120ms; }
+.fair-card[data-side="bottom"] .fair-card__body { bottom: auto; top: calc(2.4rem + 8px); }
+/* Hologramm: feine Rasterlinien und ein Lichtstreifen beim Erscheinen */
+.fair-card__body::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background: repeating-linear-gradient(to bottom, transparent 0 3px, color-mix(in oklab, var(--fg) 3.5%, transparent) 3px 4px); }
+.fair-card__body::after { content: ""; position: absolute; inset: -40% -60%; pointer-events: none; opacity: 0;
+  background: linear-gradient(105deg, transparent 40%, color-mix(in oklab, var(--accent) 30%, transparent) 48%, rgb(255 255 255 / .18) 50%, transparent 58%); }
+.fair-card[data-state="arrived"] .fair-card__line { transform: scaleY(1); }
+.fair-card[data-state="arrived"] .fair-card__body { transform: var(--shift) perspective(700px) rotateY(var(--ry, 0deg)); opacity: 1; filter: none; }
+.fair-card[data-state="arrived"] .fair-card__body::after { animation: card-sweep 1.4s var(--ease-fluid) 260ms both; }
+@keyframes card-sweep { 0% { opacity: 1; transform: translateX(-45%); } 100% { opacity: 0; transform: translateX(45%); } }
+@media (max-width: 767px) { .fair-card__body { width: min(14.5rem, 66vw); padding: .7rem .8rem .8rem; } }
+@media (prefers-reduced-motion: reduce) { .fair-card__body, .fair-card__line { transition: none; filter: none; } .fair-card__body::after { display: none; } }
+
+/* ---------- Sprachwahl: 3D-Karussell ---------- */
+.lang-stage { perspective: 1500px; perspective-origin: 50% 35%; transform: rotateX(16deg) scale(.82); opacity: 0; transition: transform 1100ms var(--ease-out-expo), opacity 700ms var(--ease-fluid); }
+.lang-stage--in { transform: none; opacity: 1; }
+.lang-ring { --r: 470px; width: 0; height: 0; transform-style: preserve-3d; will-change: transform; }
+.lang-card { position: absolute; left: -4.75rem; top: -6.25rem; width: 9.5rem; padding: .85rem .75rem 1rem; border-radius: 1.25rem; text-align: center;
+  background: linear-gradient(160deg, color-mix(in oklab, var(--bg-raised) 94%, transparent), color-mix(in oklab, var(--bg) 86%, transparent));
+  border: 1px solid var(--line); box-shadow: 0 30px 60px -30px rgb(0 0 0 / .9), inset 0 1px 0 rgb(255 255 255 / .05);
+  backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: border-color 500ms var(--ease-fluid), box-shadow 500ms var(--ease-fluid); }
+.lang-card[data-front="1"] { border-color: color-mix(in oklab, var(--accent) 65%, transparent); box-shadow: 0 30px 70px -30px rgb(0 0 0 / .9), 0 0 60px -14px var(--accent); }
+.lang-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.lang-card[aria-checked="true"]::after { content: ""; position: absolute; top: .55rem; right: .55rem; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.lang-flag { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .6rem; box-shadow: 0 12px 28px -12px rgb(0 0 0 / .85); transform-origin: left center; }
+/* Flagge der vorderen Karte weht leicht */
+.lang-card[data-front="1"] .lang-flag { animation: flag-wave 3.2s ease-in-out infinite; }
+@keyframes flag-wave { 0%, 100% { transform: perspective(320px) rotateY(0deg) skewY(0deg); } 50% { transform: perspective(320px) rotateY(-12deg) skewY(-1.5deg); } }
+@media (max-width: 640px) {
+  .lang-ring { --r: 330px; }
+  .lang-stage { perspective: 1000px; }
+  .lang-card { width: 7rem; left: -3.5rem; top: -5.25rem; padding: .7rem .6rem .8rem; }
+}
+@media (prefers-reduced-motion: reduce) { .lang-stage { transition: none; transform: none; opacity: 1; } .lang-card[data-front="1"] .lang-flag { animation: none; } }
+
+/* ---------- Rechts-nach-links-Sprachen (Arabisch) ----------
+   Das Layout bleibt stabil (dir="ltr"); jeder Textblock bestimmt seine Richtung selbst:
+   arabischer Text läuft von rechts nach links und rechtsbündig, englische Ersatztexte bleiben links. */
+html[data-rtl] :where(h1, h2, h3, h4, h5, p, li, dt, dd, label, legend, summary, figcaption, blockquote, td, th, input, textarea, select, .kinetic-vis) {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
+/* Arabisch und indische Schriften: Zeichen sind verbunden – kein zusätzlicher Buchstabenabstand */
+html:is([lang="ar"], [lang="hi"]) * { letter-spacing: normal !important; }
+
+/* iPhone/iPad: Notch und Home-Indikator, Tippen ohne Verzögerung und ohne graues Aufblitzen */
+html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+a, button, summary, label, select, [role="button"] { touch-action: manipulation; }
+body { padding-bottom: env(safe-area-inset-bottom); }
+.hero-top { padding-top: env(safe-area-inset-top); }

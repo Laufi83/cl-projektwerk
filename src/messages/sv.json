@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Teknisk mässplanering och projektstyrning | {brand}",
+    "description": "Externt plannings- och projektkontor för mässmontrar, varumärkesrum och inredning: teknisk planering, arbetsberedning och projektstyrning. Diskutera ditt projekt.",
+    "ogTitle": "{brand}: planeringskapacitet för mässmontrar, varumärkesrum och inredning",
+    "ogDescription": "Måttsatta produktionsunderlag, arbetsberedning och projektstyrning för montörer, byråer, inredningsföretag och utställare. Kontakt: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Extra plannings- och projektkapacitet för mässmontrar, varumärkesrum och inredning, projekt för projekt och med tydligt överenskommen omfattning.",
+    "designsTitle": "Montterkoncept, ett nytt varje dag",
+    "designsDescription": "Montterkoncept med visualiseringar, planritningar och fasader, från {min} till {max}. Varje morgon kl. 5:00 tillkommer ett koncept.",
+    "designTitle": "{number} {title} · Montterkoncept",
+    "designDescription": "Koncept {title}: {size}{floors}. {description} Visualisering av ett koncept, inte en byggd monter.",
+    "inquiryTitle": "Diskutera ditt projekt",
+    "inquiryDescription": "Skicka en brief: mässa eller projekt, datum, befintligt underlag och önskad planeringstjänst. Jag återkommer med en första bedömning.",
+    "selectionTitle": "Mitt urval",
+    "selectionDescription": "Dina sparade montterkoncept som du kan bifoga en förfrågan.",
+    "imprintDescription": "Juridisk information och uppgifter om leverantören.",
+    "privacyDescription": "Information om behandling av personuppgifter på denna webbplats."
+  },
+  "common": {
+    "skip": "Hoppa till innehållet",
+    "visualisation": "Visualisering",
+    "close": "Stäng",
+    "back": "Tillbaka",
+    "next": "Nästa",
+    "prev": "Tillbaka",
+    "open": "Öppna",
+    "view": "Visa",
+    "play": "Spela upp",
+    "pause": "Pausa",
+    "loading": "Laddar",
+    "placeholder": "Bild följer",
+    "later": "följer",
+    "menu": "Meny",
+    "language": "Språk",
+    "drag": "Dra",
+    "retry": "Försök igen",
+    "noWebgl": "Den här enheten eller webbläsaren stöder inte 3D-vyn. Listan över städer och avstånd finns nedan."
+  },
+  "nav": {
+    "services": "Tjänster",
+    "designs": "Koncept",
+    "process": "Samarbete",
+    "graphics": "Presentation",
+    "world": "Mässkalender",
+    "about": "Om mig",
+    "contact": "Kontakt",
+    "cta": "Diskutera ett projekt",
+    "selection": "Mitt urval",
+    "home": "Startsida",
+    "main": "Huvudnavigering"
+  },
+  "hero": {
+    "eyebrow": "Externt plannings- och projektkontor · Mässmontrar, varumärkesrum, inredning",
+    "title": "Planering som fungerar på golvet.",
+    "lead": "Jag stöttar montörer, byråer, inredningsföretag och utställare med teknisk planering, arbetsberedning och projektstyrning: projekt för projekt, med tydligt överenskommen omfattning och spårbara dokument.",
+    "cta": "Fråga efter planeringskapacitet",
+    "secondary": "Se koncept",
+    "scroll": "Scrolla och se hur visualiseringen växer fram",
+    "progress": "Uppbyggnad (visualisering)",
+    "done": "Färdigt rum",
+    "design": "Koncept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Koncept i time-lapse",
+    "title": "5 koncept.",
+    "lead": "Fem konceptanimationer visar hur en design växer från ett tomt hallgolv till ett färdigt rum. De är visualiseringar, inte filmer av byggda montrar.",
+    "cta": "Spela upp animation",
+    "badge": "Konceptanimation",
+    "sliderLabel": "Reglage med fem konceptanimationer. Piltangenterna bläddrar, Enter öppnar.",
+    "explain": "Time-lapse-animation av ett koncept. Den visar hur det planerade rummet kan byggas upp och är inget bevis på en genomförd monter."
+  },
+  "tagline": {
+    "text": "Varje rum börjar med underlag som alla inblandade kan lita på. Det är de dokumenten jag tar fram."
+  },
+  "services": {
+    "eyebrow": "Tjänster",
+    "title": "Mer planeringskapacitet när flera projekt pågår samtidigt.",
+    "lead": "Montörer, byråer och inredningsföretag når sina gränser vid parallella projekt, personalbrist och tekniskt krävande uppgifter. Som extern planerare och projektstyrare tar jag över tydligt avgränsade delar av ditt projekt, med mer än 20 års erfarenhet från mäss- och eventbranschen. Produktion, transport, montering, statik, tillstånd och elarbeten utförs av kvalificerade specialistpartner.",
+    "trust": [
+      {
+        "title": "En kontaktperson",
+        "text": "för planering, dokument och avstämning: du pratar direkt med mig, inte via mellanhänder."
+      },
+      {
+        "title": "Mer än 20 års erfarenhet",
+        "text": "från mäss- och eventbranschen, utbildad teknisk ritare inom träteknik och certifierad projektledare för mässor och event (IHK)."
+      },
+      {
+        "title": "Tydligt avgränsad omfattning",
+        "text": "Omfattning, korrekturomgångar och tidsfrister kommer jag överens om skriftligt i förväg. Extra arbeten och resor endast efter överenskommelse."
+      }
+    ],
+    "package": {
+      "badge": "Samarbete",
+      "title": "Projektbaserat eller som månadskontingent.",
+      "subtitle": "Planeringskapacitet i den omfattning ditt projekt behöver just nu.",
+      "text": "Du skickar mig en brief, jag uppskattar insatsen och föreslår omfattning, leveranser och tidsfrister. Därefter arbetar jag projektbaserat eller inom ett månadskontingent med fastställda timmar, svarstider och korrekturomgångar. Min kapacitet är begränsad; jag tar bara projekt som jag kan utföra noggrant.",
+      "cta": "Fråga efter planeringskapacitet",
+      "more": "Så går ett projekt till",
+      "phases": [
+        {
+          "title": "Brief och omfattning",
+          "items": [
+            "Gemensam klargöring av uppgift, tidsfrist och befintligt underlag",
+            "Skriftligt fastställd omfattning och leveranser",
+            "Överenskomna korrekturomgångar och godkännandesteg",
+            "Individuell offert efter briefen"
+          ]
+        },
+        {
+          "title": "Planering och dokument",
+          "items": [
+            "Måttsatta detalj- och produktionsritningar",
+            "Styckelistor och gränssnittsdokument",
+            "Översikter över material och mängder",
+            "Versionshanterade filer med spårbar status"
+          ]
+        },
+        {
+          "title": "Avstämning och styrning",
+          "items": [
+            "Budget- och tidsplansöversikter",
+            "Offertjämförelser och inköpsplanering",
+            "Samordning av yrkesgrupper och specialistpartner",
+            "Dokumenterade godkännanden och ändringar"
+          ]
+        },
+        {
+          "title": "Överlämning och dokumentation",
+          "items": [
+            "Produktionsunderlag per partner för överlämning",
+            "Dokumentation av ändringar och beslut",
+            "Lager- och beståndsuppgifter för återanvändning",
+            "Möten på plats och resor efter förhandsöverenskommelse"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Specialistpartner för genomförandet.",
+      "text": "Jag planerar och samordnar, kvalificerade specialistföretag utför. I grundmodellen beställer du större produktions- och monteringstjänster direkt hos dina partner; på begäran stämmer jag av med dem och förbereder deras dokument. CL Projektwerk är ingen produktionsverkstad och uppträder inte som generalentreprenör som förskotterar projekt.",
+      "items": [
+        "CNC-controlled production only",
+        "Carpentry",
+        "Metalwork",
+        "Montering och uppbyggnad",
+        "Transport och logistik",
+        "Statik och kontroller",
+        "Tillstånd och godkännanden",
+        "Elarbeten",
+        "Tryck och grafisk produktion",
+        "Medie- och eventteknik",
+        "… och andra yrkesgrupper vid behov"
+      ]
+    },
+    "single": {
+      "eyebrow": "Kan bokas separat",
+      "title": "Precis den tjänst du saknar.",
+      "text": "Har du ett team men för lite planeringskapacitet? Boka då bara det område du behöver, till exempel produktionsritningar för ett projekt eller tidsstyrning av en mässmedverkan."
+    },
+    "items": {
+      "tech": {
+        "title": "Teknisk planering",
+        "text": "På grundval av din brief tar jag fram måttsatta detalj- och produktionsritningar, styckelistor och gränssnittsdokument. Du får dokument som dina produktionspartner kan arbeta med och sparar interna planeringstimmar.",
+        "points": [
+          "Måttsatta detalj- och produktionsritningar",
+          "Styckelistor",
+          "Gränssnittsdokument till yrkesgrupper och partner"
+        ],
+        "task": "Uppgift: översätta din brief till entydiga tekniska dokument.",
+        "result": "Resultat: ritningar, listor och gränssnitt i en avstämd status.",
+        "benefit": "Nytta: färre frågor i produktionen och mer tid för dina kunder.",
+        "link": "Se exempel"
+      },
+      "prep": {
+        "title": "Arbetsberedning",
+        "text": "Jag förbereder ditt projekt för genomförandet: översikter över material och mängder, produktionsunderlag per partner samt inköps- och tidsplanering. Så vet alla vad som behövs, när och i vilken mängd.",
+        "points": [
+          "Översikter över material och mängder",
+          "Produktionsunderlag per partner",
+          "Inköps- och tidsplanering"
+        ],
+        "task": "Uppgift: ordna material, mängder och datum inför genomförandet.",
+        "result": "Resultat: översikter och dokument sammanställda för varje partner.",
+        "benefit": "Nytta: färre bristfälliga leveranser och tidsöverraskningar under uppbyggnaden.",
+        "link": "Så arbetar jag"
+      },
+      "control": {
+        "title": "Projektstyrning",
+        "text": "Jag håller budget och tidsplan överskådliga, jämför offerter, samordnar yrkesgrupper och dokumenterar godkännanden och ändringar. Besluten ligger kvar hos dig; jag förbereder dem så att de kan fattas snabbt.",
+        "points": [
+          "Budget- och tidsplansöversikter",
+          "Offertjämförelser och samordning av yrkesgrupper",
+          "Godkännanden och spårbar ändringsdokumentation"
+        ],
+        "task": "Uppgift: behålla överblicken över kostnader, datum och överenskommelser.",
+        "result": "Resultat: aktuella översikter och dokumenterade beslut.",
+        "benefit": "Nytta: avlastning vid parallella projekt och tydlig spårbarhet.",
+        "link": "Se samarbetet"
+      },
+      "concept": {
+        "title": "Design och presentation",
+        "text": "Jag utvecklar monter- och rumskoncept och tar fram visualiseringar och tryckklar grafik. Omfattning och antal korrekturomgångar överenskoms i förväg så att insats och resultat förblir förutsägbara.",
+        "points": [
+          "Monter- och rumskoncept",
+          "Visualiseringar för avstämning och presentation",
+          "Tryckklar grafik med överenskomna korrekturomgångar"
+        ],
+        "task": "Uppgift: visa en idé så att du och dina kunder kan fatta beslut.",
+        "result": "Resultat: koncept, visualiseringar och tryckdata i överenskommen omfattning.",
+        "benefit": "Nytta: tidiga beslut på grundval av begripliga bilder och planer.",
+        "link": "Se koncept"
+      },
+      "reuse": {
+        "title": "Återanvändningsplanering",
+        "text": "Jag inventerar befintliga komponenter, planerar varianter för nya användningar och håller material- och lageruppgifter uppdaterade. Så kan du återanvända det du har på ett målinriktat sätt i stället för att planera från noll varje gång.",
+        "points": [
+          "Inventering av befintliga komponenter",
+          "Variantplanering för nya användningar",
+          "Material- och lageruppgifter"
+        ],
+        "task": "Uppgift: inventera befintliga komponenter och göra dem användbara för nya uppbyggnader.",
+        "result": "Resultat: beståndslista, varianter och lageruppgifter.",
+        "benefit": "Nytta: mindre ny planering och materialåtgång vid återkommande uppbyggnader.",
+        "link": "Skicka en förfrågan"
+      }
+    },
+    "inquire": "Fråga",
+    "cta": {
+      "title": "Ditt nästa projekt börjar med en brief.",
+      "text": "Beskriv kort uppgift, tidsfrist och befintligt underlag. Jag återkommer med en första bedömning och nästa steg. Offerten får du individuellt efter briefen.",
+      "button": "Skicka brief",
+      "phone": "Vill du hellre prata direkt?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Konceptgalleri · nytt varje dag",
+    "title": "Varje dag ett nytt koncept.",
+    "lead": "Just nu syns {count} av {total} montterkoncept, från {min} till {max}. Varje morgon kl. 5:00 tillkommer ett nytt. Alla bilder är visualiseringar av koncept. Bläddra, filtrera, spara och fråga direkt.",
+    "slider": "Reglage",
+    "grid": "Rutnät",
+    "viewMode": "Vy",
+    "random": "Slumpmässigt koncept",
+    "dayPick": "Dagens koncept",
+    "hint": "Dra, scrolla eller använd piltangenterna",
+    "hintTouch": "Svep åt sidan",
+    "count": "{count} av {total}",
+    "empty": "Inget koncept matchar dessa filter.",
+    "reset": "Återställ filter",
+    "filters": "Filter",
+    "listTitle": "Alla synliga koncept i överblick",
+    "sliderLabel": "Konceptreglage. Piltangenterna bläddrar, Enter öppnar.",
+    "current": "Aktuellt: {number} {title}",
+    "loadingSlider": "Reglaget laddas",
+    "cardAlt": "Koncept {number} {title}: visualisering av ett montterkoncept",
+    "filter": {
+      "all": "Alla",
+      "clip": "Med konceptanimation",
+      "two-storey": "Två våningar",
+      "size-s": "Kompakt upp till 30 m²",
+      "size-m": "Medelstor upp till 150 m²",
+      "size-l": "Stor från 150 m²",
+      "wood": "Trä",
+      "green": "Grönska",
+      "metal": "Metall",
+      "light": "Ljus",
+      "container": "Containrar",
+      "product": "Produktmontrar",
+      "real-estate": "Fastighetsmässa",
+      "outdoor": "Utomhusyta"
+    }
+  },
+  "detail": {
+    "facts": "Nyckeldata",
+    "area": "Yta",
+    "floors": "Våningar",
+    "standType": "Monterstyp",
+    "height": "Höjd",
+    "materials": "Material",
+    "colours": "Färger",
+    "series": "Serie",
+    "floorsValue": "{count, plural, =1 {en våning} =2 {två våningar} other {# våningar}}",
+    "standTypes": {
+      "corner": "Hörnmonter",
+      "head": "Kortsidesmonter",
+      "island": "Ö-monter",
+      "row": "Radmonter"
+    },
+    "renderings": "Visualiseringar",
+    "plans": "Planer",
+    "floorplan": "Planritning",
+    "elevation": "Fasadritning",
+    "download": "Ladda ned",
+    "zoomIn": "Zooma in",
+    "zoomOut": "Zooma ut",
+    "zoomReset": "Återställ vy",
+    "fullscreen": "Helskärm",
+    "clip": "Konceptanimation i time-lapse",
+    "favorite": "Lägg till i urvalet",
+    "favorited": "I ditt urval",
+    "share": "Dela",
+    "shareWhatsapp": "Dela via WhatsApp",
+    "shareLinkedin": "Dela på LinkedIn",
+    "copyLink": "Kopiera länk",
+    "copied": "Länk kopierad",
+    "inquire": "Förfrågan om detta koncept",
+    "prevDesign": "Föregående koncept",
+    "nextDesign": "Nästa koncept",
+    "backToGallery": "Till galleriet",
+    "imageOf": "Bild {current} av {total}",
+    "description": "Beskrivning",
+    "placeholderImage": "Bild följer",
+    "conceptNote": "Konceptutkast. Bilden är en visualisering och visar inte en byggd monter.",
+    "imageAlt": "{title}: {label} (visualisering)",
+    "planAlt": "{title}: {label} (planritning av konceptet)",
+    "clipAlt": "{title}: konceptanimation av uppbyggnaden (visualisering)"
+  },
+  "process": {
+    "eyebrow": "Samarbete",
+    "title": "Sex steg från brief till överlämning.",
+    "steps": {
+      "briefing": {
+        "title": "Brief och omfattning",
+        "text": "Uppgift, tidsfrist, befintligt underlag och önskade resultat. Vi bestämmer vad jag levererar, hur många korrekturomgångar som planeras och vem som godkänner.",
+        "alt": "Skissanimation till briefen (visualisering)"
+      },
+      "concept": {
+        "title": "Koncept och avstämning",
+        "text": "Rumsidé, visualiseringar, planritning och fasader. Du ser rummet ur flera perspektiv och bestämmer dig i lugn och ro innan den tekniska detaljeringen börjar.",
+        "alt": "Konceptanimation av designen (visualisering)"
+      },
+      "planning": {
+        "title": "Teknisk planering",
+        "text": "Måttsatta detalj- och produktionsritningar, styckelistor och gränssnittsdokument. Kvalificerade specialistpartner svarar för statik, tillstånd och elprojektering; jag samordnar gränssnitten.",
+        "alt": "Animation av den tekniska planeringen (visualisering)"
+      },
+      "production": {
+        "title": "Arbetsberedning och produktionsunderlag",
+        "text": "Översikter över material och mängder samt dokument för varje produktionspartner, dessutom inköps- och tidsplanering. Tillverkningen sker hos respektive specialistföretag, inte hos mig.",
+        "alt": "Animation av CNC-bearbetning som exempel på produktionsdata (visualisering); tillverkningen utförs av specialistpartnern"
+      },
+      "logistics": {
+        "title": "Samordning av yrkesgrupper",
+        "text": "Tidsplansöversikt, offertjämförelser och avstämning mellan yrkesgrupperna så att transport, uppbyggnad och teknik passar ihop. Dina specialistpartner utför arbetet.",
+        "alt": "Konceptanimation av uppbyggnaden i time-lapse (visualisering)"
+      },
+      "onsite": {
+        "title": "Godkännanden, ändringar och överlämning",
+        "text": "Godkännanden och ändringar dokumenterar jag spårbart, och till slut lämnar jag över alla dokument till dig. Möten på plats är möjliga om de överenskommits i förväg.",
+        "alt": "Konceptanimation av överlämningen (visualisering)"
+      }
+    },
+    "sketch": "Skiss"
+  },
+  "world": {
+    "eyebrow": "Mässkalender",
+    "title": "Mässor i Tyskland och Europa.",
+    "lead": "En översikt över mässdatum i Tyskland och Europa som orientering för din projektplanering. Välj en stad så visar globen platsen och fågelvägen från Leipzig. Ett datum i kalendern säger inget om uppdrag eller deltagande för CL Projektwerk.",
+    "placeholderNote": "Exempelplatser",
+    "listLabel": "Mässtäder",
+    "drag": "Vrid globen",
+    "base": "Hemvist",
+    "regions": {
+      "de": "Tyskland",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Mässkalender",
+      "title": "Nästa mässa i varje stad.",
+      "lead": "För varje stad visas nästa ledande mässa i kronologisk ordning som på en avgångstavla. Scrolla genom tavlan: globen följer ditt val.",
+      "summary": "{cities} mässtäder · {km} km fågelväg längs rutten från Leipzig",
+      "boardLabel": "Mässkalender: nästa mässa per stad",
+      "cols": {
+        "date": "Datum",
+        "dest": "Mål",
+        "fair": "Mässa",
+        "status": "Status"
+      },
+      "running": "Pågår nu",
+      "today": "Idag",
+      "tomorrow": "Imorgon",
+      "inDays": "om {days} dagar",
+      "tba": "Datum följer",
+      "past": "Avslutad",
+      "tbaNote": "För den här staden finns för närvarande inget bekräftat datum för en ledande mässa.",
+      "dateTbc": "Datum ej bekräftat",
+      "fairName": "Mässa",
+      "venue": "Mässområde",
+      "route": "Fågelväg",
+      "homeBase": "Min hemvist",
+      "km": "{km} km",
+      "localTime": "Lokal tid",
+      "website": "Arrangörens webbplats",
+      "inquire": "Diskutera projekt för {fair}",
+      "tourPause": "Pausa rundresan",
+      "tourPlay": "Fortsätt rundresan",
+      "note": "Datum enligt arrangörerna, kontrollerade {date}. Ändringar är möjliga; arrangörernas webbplatser gäller. Mässnamn är varumärken som tillhör sina innehavare. Datumen säger inget om uppdrag eller deltagande för CL Projektwerk.",
+      "search": "Sök mässa eller stad",
+      "searchPlaceholder": "t.ex. Düsseldorf eller bygg",
+      "filterCountry": "Land",
+      "filterCity": "Stad",
+      "filterPeriod": "Period",
+      "filterSector": "Bransch",
+      "filterAll": "Alla",
+      "periodUpcoming": "Kommande",
+      "periodRunning": "Pågående",
+      "periodPast": "Tidigare",
+      "resultCount": "{count, plural, =0 {Inga mässor} =1 {1 mässa} other {# mässor}}",
+      "empty": "Ingen mässa matchar din sökning och de valda filtren.",
+      "reset": "Återställ sökning och filter",
+      "source": "Källa",
+      "checkedOn": "Kontrollerad {date}"
+    },
+    "zoomIn": "Zooma in",
+    "zoomOut": "Zooma ut",
+    "zoomReset": "Återställ vy",
+    "zoomEurope": "Europavy",
+    "zoomCountry": "Välj land",
+    "zoomHint": "Ctrl + mushjul eller dubbelklick: zooma · klicka på en stad: fågelväg",
+    "zoomHintTouch": "Zooma med två fingrar · tryck på en stad: fågelväg",
+    "zoomHintKeys": "Piltangenterna flyttar vyn, plus och minus zoomar.",
+    "scrollHint": "Vanlig scrollning flyttar bara sidan. Håll ned Ctrl för att zooma.",
+    "distance": {
+      "title": "Fågelväg mellan två städer",
+      "from": "Från",
+      "to": "Till",
+      "pick": "Välj stad",
+      "swap": "Byt städer",
+      "result": "Fågelväg: {km} km",
+      "resultFromTo": "Fågelväg {from} – {to}: {km} km",
+      "note": "Beräknad som storcirkelavstånd på jordklotet. Det är inte ett vägavstånd och säger inget om restiden.",
+      "rings": "Avståndsringar kring {city}: {km} km",
+      "scale": "Skala: {km} km",
+      "listTitle": "Städer och fågelväg från {city}",
+      "listCity": "Stad",
+      "listCountry": "Land",
+      "listKm": "Fågelväg",
+      "noWebglTitle": "3D-vy ej tillgänglig",
+      "noWebglText": "Din enhet visar inte 3D-globen. Tabellen innehåller samma städer, mässor och avstånd.",
+      "reducedMotion": "Reducerad rörelse är aktiv: inga automatiska flygningar eller animationer."
+    },
+    "origin": {
+      "use": "Use my location as the starting point",
+      "locating": "Finding your location …",
+      "active": "Starting point: {city} – the trade-fair city nearest to you",
+      "reset": "Back to {city}",
+      "denied": "Location access was not granted. The starting point stays {city}.",
+      "far": "Your location is outside the map area. The starting point stays {city}.",
+      "note": "Your location is processed only in your browser and is not transmitted."
+    }
+  },
+  "led": {
+    "eyebrow": "Skärmytor i planeringen",
+    "title": "Medieytor behöver exakta mått.",
+    "lead": "LED-väggar och skärmar hör till många mässrum. Jag tar med dem i dina dokument med mått, bildformat och anslutningsdata. Klippen visar vanliga format; de är licensierat exempelmaterial och inga egna projekt.",
+    "placeholder": "Exempelklipp {n}",
+    "placeholderNote": "Exempelmaterial",
+    "caption": "Exempelklipp (stocklicens): {title}, {format}. Inte ett projekt från CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "Om mig",
+    "name": "Christof Laufersweiler",
+    "role": "Planering och projektstyrning för mässmontrar, varumärkesrum och inredning",
+    "text": "Jag heter Christof Laufersweiler och har arbetat i mäss- och eventbranschen i mer än 20 år. Jag är utbildad teknisk ritare inom träteknik; senare tillkom projektledning inom mässbyggnad, anställd verkställande direktör i ett montörföretag och ett IHK-certifikat som projektledare för mässor och event. Med CL Projektwerk erbjuder jag i Leipzig extern plannings- och projektkapacitet för montörer, byråer, inredningsföretag och utställare som behöver extra händer med sakkunskap.",
+    "close": "Besluten ligger kvar hos dig. Jag sörjer för dokument, överblick och avstämning.",
+    "photoAlt": "Porträtt av Christof Laufersweiler, grundare av CL Projektwerk",
+    "cta": "Diskutera ett projekt med mig",
+    "career": "Karriär",
+    "projects": "Projekterfarenhet från tidigare arbete",
+    "projectsNote": "Dessa exempel kommer från mitt tidigare yrkesarbete som ansvarig projektledare. De är inte projekt från CL Projektwerk, och de nämnda företagen är inte kunder hos CL Projektwerk.",
+    "tools": "Programvara",
+    "languages": "Språk"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ år",
+        "label": "erfarenhet från mäss- och eventbranschen"
+      },
+      {
+        "value": "1 200 m²",
+        "label": "största monteryta från tidigare arbete (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certifikat som projektledare för mässor och event (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Projektledning",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Verkställande direktör (anställd)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Projektledning inom mässmonterbyggnad",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certifikat som projektledare för mässor och event (kurs, 160 undervisningstimmar)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Utbildning till teknisk ritare, träteknik",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1 200 m²",
+        "note": "Flera utställare och fordon, storformatiga LED-skärmar"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1 200 m²",
+        "note": "20 m lång LED-vägg, tekniskt samordnad"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Upphängd konstruktion i limträ, rynkfritt spänd textilgrafik"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Öppet montterkoncept med LED-vägg"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Tyska (modersmål)",
+      "Engelska (flytande i yrkeslivet)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Diskutera ett projekt",
+    "title": "Berätta om ditt projekt.",
+    "lead": "Fyra korta steg, få obligatoriska fält. Sparade koncept från galleriet bifogar jag på begäran.",
+    "response": "Jag svarar vanligtvis inom {time}.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Omfattning",
+      "services": "Tjänst",
+      "contact": "Kontakt"
+    },
+    "stepOf": "Steg {current} av {total}",
+    "fields": {
+      "fair": "Mässa, evenemang eller projekt",
+      "fairPlaceholder": "t.ex. mässdeltagande, varumärkesrum eller inredning",
+      "projectType": "Projekttyp",
+      "projectTypes": {
+        "fair": "Mässmonter",
+        "brand": "Varumärkesrum",
+        "interior": "Inredning",
+        "event": "Event",
+        "open": "Ännu öppet"
+      },
+      "city": "Plats",
+      "cityPlaceholder": "t.ex. Leipzig",
+      "dateFrom": "Datum från",
+      "dateTo": "till",
+      "dateUnknown": "Datum är ännu inte fastställt",
+      "size": "Rummets storlek (valfritt)",
+      "width": "Bredd (m)",
+      "depth": "Djup (m)",
+      "area": "Yta",
+      "standType": "Monterstyp",
+      "standTypeUnknown": "Ännu öppet",
+      "floors": "Våningar",
+      "documents": "Befintligt underlag",
+      "documentOptions": {
+        "briefing": "Brief eller kravspecifikation",
+        "cad": "CAD- eller planeringsdata",
+        "sketches": "Skisser eller moodboards",
+        "renders": "Visualiseringar",
+        "inventory": "Beståndslistor",
+        "none": "Inget ännu"
+      },
+      "services": "Behövd planeringstjänst",
+      "scope": "Önskad omfattning",
+      "scopes": {
+        "single": "Enskild tjänst",
+        "project": "Hela projektet",
+        "quota": "Löpande månadskontingent",
+        "open": "Ännu öppet"
+      },
+      "budget": "Projektets totala budget (valfritt)",
+      "budgets": {
+        "a": "upp till 25 000 €",
+        "b": "25 000 till 75 000 €",
+        "c": "75 000 till 150 000 €",
+        "d": "över 150 000 €",
+        "open": "Vill helst inte uppge"
+      },
+      "name": "Namn",
+      "company": "Företag",
+      "email": "E-post",
+      "phone": "Telefon (valfritt)",
+      "message": "Meddelande",
+      "messagePlaceholder": "Vad ska planeras? Finns det krav, en tidigare uppbyggnad eller särskilda tekniska behov?",
+      "favorites": "Bifogade koncept",
+      "favoritesEmpty": "Inga sparade koncept. I galleriet kan du samla koncept med hjärtat.",
+      "consent": "Jag samtycker till att mina uppgifter sparas och används för att behandla förfrågan. Mer information i <privacy>integritetspolicyn</privacy>.",
+      "privacy": "Integritetspolicy",
+      "required": "Obligatoriskt"
+    },
+    "submit": "Skicka brief",
+    "sending": "Skickar",
+    "errors": {
+      "required": "Fyll i.",
+      "email": "Ange en giltig e-postadress.",
+      "consent": "Godkänn behandlingen så att jag kan svara.",
+      "dates": "Slutet ligger före början.",
+      "server": "Det gick inte att skicka. Försök igen eller skriv till {email}.",
+      "rate": "För många förfrågningar på kort tid. Försök igen om några minuter."
+    },
+    "whatsapp": "Skriv på WhatsApp",
+    "callback": "Be om återuppringning",
+    "callbackTitle": "Be om återuppringning",
+    "callbackTime": "När passar det dig?",
+    "callbackTimePlaceholder": "t.ex. imorgon efter kl. 14",
+    "callbackSubmit": "Be om återuppringning",
+    "callbackDone": "Tack. Din begäran om återuppringning har skickats. Jag försöker nå dig vid den angivna tiden.",
+    "direct": "Direkt",
+    "notConfigured": "Ännu inte angivet",
+    "prefilled": "Ditt urval: {list}",
+    "emailDraft": {
+      "prepare": "Förbered e-post",
+      "title": "E-postutkast klart",
+      "notice": "Dina uppgifter förbereds som ett e-postutkast. Granska och skicka det själv i ditt e-postprogram. Inget meddelande har skickats ännu.",
+      "open": "Öppna e-postprogram",
+      "copy": "Kopiera text",
+      "copied": "Text kopierad",
+      "fallback": "Inget e-postprogram inställt eller saknas uppgifter? Kopiera hela texten nedan till din webbmail."
+    }
+  },
+  "thanks": {
+    "title": "Tack för din brief.",
+    "text": "Din förfrågan har skickats. Jag svarar vanligtvis inom {time} med en första bedömning. Ingen automatisk bekräftelse skickas via e-post. Sparade koncept har skickats med.",
+    "back": "Till startsidan",
+    "designs": "Se fler koncept"
+  },
+  "selection": {
+    "title": "Mitt urval",
+    "lead": "Dina sparade koncept. Bifoga dem en förfrågan med ett klick.",
+    "count": "{count, plural, =0 {Inget sparat ännu} =1 {1 koncept sparat} other {# koncept sparade}}",
+    "empty": "Inget sparat ännu. Tryck på hjärtat i galleriet för att samla koncept.",
+    "toGallery": "Till galleriet",
+    "inquire": "Skicka urvalet med en förfrågan",
+    "clear": "Ta bort alla",
+    "remove": "Ta bort"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Juridisk information",
+    "privacy": "Integritet",
+    "cookies": "Cookie-inställningar",
+    "note": "Alla renderingar och animationer på denna webbplats är visualiseringar av designkoncept. De visar inga byggda mässmontrar.",
+    "top": "Till toppen",
+    "languages": "Språk",
+    "tagline": "Externt plannings- och projektkontor för mässmontrar, varumärkesrum och inredning"
+  },
+  "cookies": {
+    "title": "Din integritet",
+    "text": "Den här webbplatsen sparar bara det som är tekniskt nödvändigt, till exempel dina sparade koncept, vald layout och detta val. Statistik och externa tjänster är avstängda tills du samtycker.",
+    "necessary": "Endast nödvändiga",
+    "settings": "Inställningar",
+    "acceptAll": "Tillåt alla",
+    "save": "Spara valet",
+    "categories": {
+      "necessary": "Nödvändiga",
+      "necessaryText": "Språk, sparade koncept, layout, radioinställningar och detta val. Alltid aktiva.",
+      "stats": "Statistik",
+      "statsText": "Används för närvarande inte.",
+      "media": "Externa medier",
+      "mediaText": "Används för närvarande inte. Radion ansluter först när du själv startar den."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Juridisk information",
+    "privacyTitle": "Integritetspolicy",
+    "placeholder": "Juridisk text följer.",
+    "notice": "Den tyska versionen av denna text är den gällande.",
+    "updated": "Version: {date}"
+  },
+  "notFound": {
+    "title": "Den här sidan finns inte.",
+    "text": "Kanske hittar du det du söker i konceptgalleriet.",
+    "home": "Till startsidan",
+    "designs": "Till galleriet"
+  },
+  "layouts": {
+    "label": "Välj layout",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: konceptanimation {n}",
+    "active": "aktiv",
+    "preview": "Förhandsvisning: {name}",
+    "hint": "Piltangenterna byter layout, Escape stänger valet.",
+    "saved": "Ditt val sparas på den här enheten.",
+    "monoShowColour": "Visa originalfärger",
+    "monoHideColour": "Visa svartvitt",
+    "items": {
+      "studio": "Antracit och orange, tydliga linjer, exakt som en planeringsateljé",
+      "aurora": "Mörka ytor med mint och violett, serifftypsnitt, mjuka ljusrörelser",
+      "tide": "Petrol och korall, uttrycksfull skrift, flytande vågor",
+      "mono": "Konsekvent svart och vitt, stark kontrast, geometriska former"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "VÄLJ STATION",
+    "close": "Fäll ihop spelaren",
+    "stations": "Stationer",
+    "play": "Starta uppspelning",
+    "pause": "Pausa uppspelning",
+    "mute": "Stäng av ljudet",
+    "unmute": "Slå på ljudet",
+    "volume": "Volym",
+    "off": "av",
+    "hint": "Webbradio live. Ljudet startar först efter ditt klick, och reglaget gäller bara den här spelaren. Vid start ansluter din webbläsare till stationen.",
+    "noTrack": "Ingen titelinformation tillgänglig",
+    "levelNote": "Nivåindikatorn är ren animation och visar inte den verkliga ljudnivån.",
+    "state": {
+      "ready": "Redo",
+      "connecting": "Ansluter …",
+      "live": "Live",
+      "buffering": "Buffrar …",
+      "stalled": "Anslutningen hackar …",
+      "paused": "Pausad",
+      "error": "Stationen går inte att nå",
+      "blocked": "Start blockerad av webbläsaren. Klicka på spela igen."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Design och presentation",
+    "title": "Grafik som passar rummet.",
+    "text": "Till en design hör bilder som gör det möjligt att fatta beslut och data som kan bearbetas vidare utan efterarbete. Jag tar fram visualiseringar och tryckklara grafikdata, anpassade efter rummets mått och konstruktion och din visuella identitet. Omfattning och antal korrekturomgångar överenskoms i förväg. Själva tryckningen sker hos en tryckpartner som du eller, på begäran, jag anlitar.",
+    "points": [
+      {
+        "title": "Visualiseringar för avstämning",
+        "text": "Perspektiv, planritning och fasader gör konceptet begripligt för dig och dina kunder."
+      },
+      {
+        "title": "Tryckdata med alla uppgifter",
+        "text": "Utfall, färgprofil, mått och filformat är förberedda för din tryckpartner."
+      },
+      {
+        "title": "Anpassat efter konstruktionen",
+        "text": "Grafikytor stäms av mot måtten på väggar och komponenter från den tekniska planeringen."
+      },
+      {
+        "title": "Överenskomna korrekturomgångar",
+        "text": "Vi fastställer i förväg hur många korrekturomgångar som ingår. Ytterligare omgångar är en tilläggstjänst."
+      },
+      {
+        "title": "Versionshanterade filer",
+        "text": "Varje version har en tydlig status, så att bara godkända data går till tryck."
+      },
+      {
+        "title": "Överlämning till din tryckpartner",
+        "text": "Jag levererar data, specialistföretaget trycker och producerar."
+      }
+    ],
+    "close": "Design och data från mig, produktion hos specialistföretaget: så att rummet ser ut som det godkändes.",
+    "videoLabel": "Animation: tryckdata på en skärm och storformatstryck av en mässgrafik (visualisering)"
+  },
+  "drops": {
+    "rule": "Varje morgon kl. 5:00 ett nytt koncept",
+    "today": "Nytt idag",
+    "next": "Nästa koncept om",
+    "soon": "Ett nytt koncept är synligt.",
+    "reload": "Ladda om",
+    "complete": "Alla {total} koncept är synliga",
+    "count": "{released} av {total} synliga"
+  },
+  "error": {
+    "title": "Något gick fel.",
+    "text": "Sidan kunde inte laddas helt. Försök igen.",
+    "retry": "Försök igen",
+    "home": "Till startsidan"
+  },
+  "seo": {
+    "eyebrow": "Teknisk mässplanering",
+    "title": "Teknisk planering, arbetsberedning och projektstyrning för mässmontrar och inredning.",
+    "intro": "CL Projektwerk är ett externt plannings- och projektkontor i Leipzig. Jag stöttar montörer, byråer, inredningsföretag och medelstora utställare vid planeringen av mässmontrar: med måttsatta produktionsunderlag, arbetsberedning, extern projektstyrning, koncept och återanvändningsplanering. Specialistpartner utför arbetet; jag levererar planering och samordning.",
+    "blocks": [
+      {
+        "title": "Teknisk mässplanering",
+        "text": "Utifrån briefen tas måttsatta detalj- och produktionsritningar, styckelistor och gränssnittsdokument fram. Dina produktionspartner kan arbeta med dem utan att ditt team själv behöver göra varje ritning."
+      },
+      {
+        "title": "Arbetsberedning för mässmontrar och varumärkesrum",
+        "text": "Översikter över material och mängder, dokument per produktionspartner samt inköps- och tidsplanering gör ritningar till ett förlopp som går att organisera."
+      },
+      {
+        "title": "Extern projektstyrning",
+        "text": "Budget- och tidsplansöversikter, offertjämförelser, samordning av yrkesgrupper och dokumenterade godkännanden skapar överblick, särskilt när flera projekt pågår samtidigt."
+      },
+      {
+        "title": "Koncept, presentation och återanvändning",
+        "text": "Monter- och rumskoncept, visualiseringar och tryckklar grafik hjälper vid avstämningen. Återanvändningsplaneringen inventerar befintliga komponenter och planerar varianter för nya användningar."
+      }
+    ],
+    "faqTitle": "Vanliga frågor",
+    "faq": [
+      {
+        "q": "Vad kostar samarbetet?",
+        "a": "Det beror på omfattning, leveranser och tidsfrister. Efter en kort brief får du en individuell offert för projektet eller för ett månadskontingent."
+      },
+      {
+        "q": "När bör jag höra av mig?",
+        "a": "Helst så snart uppgift och tidsfrist är fastställda, eftersom min månatliga planeringskapacitet är begränsad. Förfrågningar med kort varsel bedömer jag utifrån min aktuella arbetsbelastning."
+      },
+      {
+        "q": "Kan jag boka bara en enskild tjänst?",
+        "a": "Ja. Teknisk planering, arbetsberedning, projektstyrning, design och presentation eller återanvändningsplanering kan bokas var för sig."
+      },
+      {
+        "q": "Tillverkar och monterar du också?",
+        "a": "Nej. Kvalificerade specialistpartner utför tillverkning, transport, montering, statik, tillstånd och elarbeten. Större tjänster beställer du vanligtvis direkt; jag planerar och samordnar."
+      },
+      {
+        "q": "Är möten på plats eller resor möjliga?",
+        "a": "Planeringen sker huvudsakligen från Leipzig. Möten på plats och resor kommer vi överens om i förväg, ytterligare tjänster avtalas separat."
+      },
+      {
+        "q": "Erbjuder du webbdesign eller automatisering?",
+        "a": "Det ingår inte i mina huvudtjänster. Mitt fokus är planering och styrning av projekt med mässmontrar, varumärkesrum och inredning."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Välj språk",
+    "hint": "Dra, svep eller vrid med piltangenterna",
+    "current": "aktuellt",
+    "prev": "Föregående språk",
+    "next": "Nästa språk",
+    "close": "Stäng"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Externt plannings- och projektkontor för mässmontrar, varumärkesrum och inredning",
+    "claim": "Planering som fungerar på golvet.",
+    "visualisationNote": "Visualisering"
+  },
+  "structured": {
+    "serviceCatalog": "Tjänster",
+    "services": [
+      "Teknisk planering: måttsatta detalj- och produktionsritningar, styckelistor, gränssnittsdokument",
+      "Arbetsberedning: översikter över material och mängder, produktionsunderlag, inköps- och tidsplanering",
+      "Projektstyrning: budget- och tidsplansöversikter, offertjämförelser, samordning av yrkesgrupper, ändringsdokumentation",
+      "Design och presentation: monter- och rumskoncept, visualiseringar, tryckklar grafik",
+      "Återanvändningsplanering: inventering av befintliga komponenter, variantplanering, material- och lageruppgifter"
+    ],
+    "keywords": [
+      "teknisk mässplanering",
+      "planering av mässmontrar",
+      "extern projektstyrning",
+      "arbetsberedning monterbygge",
+      "planeringskontor Leipzig",
+      "varumärkesrum",
+      "inredning",
+      "återanvändningsplanering"
+    ],
+    "genre": "Mässmonterkoncept",
+    "videoSuffix": "Konceptanimation i time-lapse"
+  },
+  "ogImage": {
+    "film": "▶ Konceptanimation"
+  }
+}

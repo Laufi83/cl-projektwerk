@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://render.com/schema/render.yaml.json
+# Free web service. No database, disk, paid compute or email subscription.
+services:
+  - type: web
+    name: cl-projektwerk-free
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm ci --include=dev --no-audit --no-fund && npm run build:render
+    startCommand: npm run start:render
+    healthCheckPath: /api/health
+    autoDeployTrigger: "off"
+    envVars:
+      - key: NODE_VERSION
+        value: "24.19.0"
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: HOSTNAME
+        value: 0.0.0.0
+      - key: NEXT_PUBLIC_CONTACT_MODE
+        value: mailto
+      - key: NEXT_PUBLIC_INDEXING
+        value: "false"
+      - key: NEXT_PUBLIC_MEDIA_BASE
+        value: /media
+# SITE_URL is derived at build time from Render's assigned RENDER_EXTERNAL_URL.
+# To use a custom domain, set NEXT_PUBLIC_SITE_URL in Render and rebuild.

@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Pianificazione tecnica di fiere e controllo di progetto | {brand}",
+    "description": "Studio esterno di pianificazione e progetto per stand fieristici, spazi di marca e allestimenti interni: pianificazione tecnica, preparazione del lavoro e controllo di progetto.",
+    "ogTitle": "{brand}: capacità di pianificazione per stand fieristici, spazi di marca e allestimenti interni",
+    "ogDescription": "Documenti di produzione quotati, preparazione del lavoro e controllo di progetto per costruttori di stand, agenzie, aziende di allestimento e espositori. Referente: Christof Laufersweiler, Lipsia.",
+    "socialDescription": "Capacità aggiuntiva di pianificazione e progetto per stand fieristici, spazi di marca e allestimenti interni, progetto per progetto e con un ambito chiaramente concordato.",
+    "designsTitle": "Concept di stand, uno nuovo ogni giorno",
+    "designsDescription": "Concept di stand con visualizzazioni, piante e prospetti, da {min} a {max}. Ogni mattina alle 5:00 si aggiunge un nuovo concept.",
+    "designTitle": "{number} {title} · Concept di stand",
+    "designDescription": "Concept {title}: {size}{floors}. {description} Visualizzazione di un concept, non uno stand realizzato.",
+    "inquiryTitle": "Parliamo del suo progetto",
+    "inquiryDescription": "Invii un brief: fiera o progetto, data, documenti disponibili e servizio di pianificazione richiesto. Le risponderò con una prima valutazione.",
+    "selectionTitle": "La mia selezione",
+    "selectionDescription": "I suoi concept di stand salvati, che può allegare a una richiesta.",
+    "imprintDescription": "Note legali e informazioni sul fornitore.",
+    "privacyDescription": "Informazioni sul trattamento dei dati personali su questo sito."
+  },
+  "common": {
+    "skip": "Vai al contenuto",
+    "visualisation": "Visualizzazione",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "prev": "Indietro",
+    "open": "Apri",
+    "view": "Guarda",
+    "play": "Riproduci",
+    "pause": "Pausa",
+    "loading": "Caricamento",
+    "placeholder": "Immagine in arrivo",
+    "later": "in arrivo",
+    "menu": "Menu",
+    "language": "Lingua",
+    "drag": "Trascina",
+    "retry": "Riprova",
+    "noWebgl": "Questo dispositivo o browser non supporta la vista 3D. L'elenco delle città e delle distanze è disponibile qui sotto."
+  },
+  "nav": {
+    "services": "Servizi",
+    "designs": "Concept",
+    "process": "Collaborazione",
+    "graphics": "Presentazione",
+    "world": "Calendario fiere",
+    "about": "Chi sono",
+    "contact": "Contatto",
+    "cta": "Parliamo di un progetto",
+    "selection": "La mia selezione",
+    "home": "Home",
+    "main": "Navigazione principale"
+  },
+  "hero": {
+    "eyebrow": "Studio esterno di pianificazione e progetto · Stand fieristici, spazi di marca, allestimenti interni",
+    "title": "Una pianificazione che funziona sul campo.",
+    "lead": "Affianco costruttori di stand, agenzie, aziende di allestimento ed espositori con pianificazione tecnica, preparazione del lavoro e controllo di progetto: progetto per progetto, con un ambito chiaramente concordato e documenti tracciabili.",
+    "cta": "Richiedi capacità di pianificazione",
+    "secondary": "Guarda i concept",
+    "scroll": "Scorra e guardi come prende forma la visualizzazione",
+    "progress": "Allestimento (visualizzazione)",
+    "done": "Spazio completato",
+    "design": "Concept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Concept in time-lapse",
+    "title": "5 concept.",
+    "lead": "Cinque animazioni concettuali mostrano come un progetto passa dal pavimento vuoto del padiglione allo spazio completato. Sono visualizzazioni, non riprese di stand realizzati.",
+    "cta": "Riproduci animazione",
+    "badge": "Animazione concettuale",
+    "sliderLabel": "Cursore con cinque animazioni concettuali. Le frecce scorrono, Invio apre.",
+    "explain": "Animazione time-lapse di un concept. Mostra come potrebbe essere allestito lo spazio pianificato e non è la prova di uno stand realizzato."
+  },
+  "tagline": {
+    "text": "Ogni spazio inizia con documenti su cui possono contare tutti i partecipanti. Sono i documenti che realizzo io."
+  },
+  "services": {
+    "eyebrow": "Servizi",
+    "title": "Più capacità di pianificazione quando più progetti procedono insieme.",
+    "lead": "Costruttori di stand, agenzie e aziende di allestimento raggiungono i propri limiti con progetti paralleli, carenze di personale e compiti tecnicamente complessi. Come pianificatore e project controller esterno mi occupo di parti chiaramente delimitate del suo progetto, con oltre 20 anni di esperienza nel settore fieristico e degli eventi. Produzione, trasporto, montaggio, calcoli strutturali, autorizzazioni e lavori elettrici sono eseguiti da partner specializzati qualificati.",
+    "trust": [
+      {
+        "title": "Un unico referente",
+        "text": "per pianificazione, documenti e coordinamento: parla direttamente con me, senza intermediari."
+      },
+      {
+        "title": "Oltre 20 anni di esperienza",
+        "text": "nel settore fieristico e degli eventi, formato come disegnatore tecnico in tecnologia del legno e project manager certificato per fiere ed eventi (IHK)."
+      },
+      {
+        "title": "Ambito chiaramente definito",
+        "text": "Concordo per iscritto in anticipo ambito, cicli di correzione e scadenze. Lavori aggiuntivi e trasferte solo previo accordo."
+      }
+    ],
+    "package": {
+      "badge": "Collaborazione",
+      "title": "Per progetto o come monte ore mensile.",
+      "subtitle": "Capacità di pianificazione nella misura di cui il suo progetto ha bisogno.",
+      "text": "Mi invia un brief, stimo l'impegno e propongo ambito, risultati e scadenze. Poi lavoro per progetto o all'interno di un monte ore mensile con ore, tempi di risposta e cicli di correzione definiti. La mia capacità è limitata; accetto solo progetti che posso seguire con cura.",
+      "cta": "Richiedi capacità di pianificazione",
+      "more": "Come si svolge un progetto",
+      "phases": [
+        {
+          "title": "Brief e ambito",
+          "items": [
+            "Chiarimento congiunto di compito, scadenza e documenti disponibili",
+            "Ambito e risultati definiti per iscritto",
+            "Cicli di correzione e fasi di approvazione concordati",
+            "Offerta individuale dopo il brief"
+          ]
+        },
+        {
+          "title": "Pianificazione e documenti",
+          "items": [
+            "Disegni di dettaglio e di produzione quotati",
+            "Distinte dei componenti e documenti di interfaccia",
+            "Riepiloghi di materiali e quantità",
+            "File con versioni e stato tracciabile"
+          ]
+        },
+        {
+          "title": "Coordinamento e controllo",
+          "items": [
+            "Riepiloghi di budget e scadenze",
+            "Confronto di offerte e pianificazione degli acquisti",
+            "Coordinamento di lavorazioni e partner specializzati",
+            "Approvazioni e modifiche documentate"
+          ]
+        },
+        {
+          "title": "Consegna e documentazione",
+          "items": [
+            "Documenti di produzione per partner da consegnare",
+            "Documentazione di modifiche e decisioni",
+            "Informazioni su inventario e magazzino per il riutilizzo",
+            "Incontri in loco e trasferte previo accordo"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Partner specializzati per l'esecuzione.",
+      "text": "Io pianifico e coordino; l'esecuzione è affidata a aziende specializzate qualificate. Nel modello base commissiona direttamente ai suoi partner i servizi maggiori di produzione e montaggio; su richiesta mi coordino con loro e preparo i loro documenti. CL Projektwerk non è un laboratorio di produzione e non agisce come general contractor che finanzia i progetti.",
+      "items": [
+        "Produzione esclusivamente con macchine a controllo numerico (CNC)",
+        "Falegnameria",
+        "Carpenteria metallica",
+        "Montaggio e allestimento",
+        "Trasporto e logistica",
+        "Calcolo strutturale e collaudi",
+        "Autorizzazioni e collaudi finali",
+        "Lavori elettrici",
+        "Stampa e produzione grafica",
+        "Tecnica audiovisiva e per eventi",
+        "… e altre lavorazioni secondo necessità"
+      ]
+    },
+    "single": {
+      "eyebrow": "Prenotabile singolarmente",
+      "title": "Esattamente il servizio che le manca.",
+      "text": "Ha un team ma troppo poca capacità di pianificazione? Prenoti solo l'area di cui ha bisogno, ad esempio disegni di produzione per un progetto o il controllo delle scadenze per una partecipazione fieristica."
+    },
+    "items": {
+      "tech": {
+        "title": "Pianificazione tecnica",
+        "text": "Sulla base del suo brief redigo disegni di dettaglio e di produzione quotati, distinte dei componenti e documenti di interfaccia. Riceve documenti con cui i suoi partner di produzione possono lavorare e risparmia ore di pianificazione interne.",
+        "points": [
+          "Disegni di dettaglio e di produzione quotati",
+          "Distinte dei componenti",
+          "Documenti di interfaccia con lavorazioni e partner"
+        ],
+        "task": "Compito: tradurre il suo brief in documenti tecnici inequivocabili.",
+        "result": "Risultato: disegni, elenchi e interfacce in uno stato concordato.",
+        "benefit": "Vantaggio: meno richieste di chiarimento in produzione e più tempo per i suoi clienti.",
+        "link": "Vedi esempi"
+      },
+      "prep": {
+        "title": "Preparazione del lavoro",
+        "text": "Preparo il suo progetto per l'esecuzione: riepiloghi di materiali e quantità, documenti di produzione per partner e pianificazione di acquisti e scadenze. Così tutti sanno che cosa serve, quando e in quale quantità.",
+        "points": [
+          "Riepiloghi di materiali e quantità",
+          "Documenti di produzione per partner",
+          "Pianificazione di acquisti e scadenze"
+        ],
+        "task": "Compito: ordinare materiali, quantità e date per l'esecuzione.",
+        "result": "Risultato: riepiloghi e documenti composti per ogni partner.",
+        "benefit": "Vantaggio: meno ammanchi e sorprese sulle scadenze durante l'allestimento.",
+        "link": "Come lavoro"
+      },
+      "control": {
+        "title": "Controllo di progetto",
+        "text": "Mantengo chiari budget e scadenze, confronto le offerte, coordino le lavorazioni e documento approvazioni e modifiche. Le decisioni restano a lei; io le preparo perché possano essere prese rapidamente.",
+        "points": [
+          "Riepiloghi di budget e scadenze",
+          "Confronto di offerte e coordinamento delle lavorazioni",
+          "Approvazioni e documentazione tracciabile delle modifiche"
+        ],
+        "task": "Compito: mantenere la visione d'insieme su costi, date e accordi.",
+        "result": "Risultato: riepiloghi aggiornati e decisioni documentate.",
+        "benefit": "Vantaggio: sollievo con progetti paralleli e chiara tracciabilità.",
+        "link": "Vedi la collaborazione"
+      },
+      "concept": {
+        "title": "Progettazione e presentazione",
+        "text": "Sviluppo concept di stand e di spazio e realizzo visualizzazioni e grafiche pronte per la stampa. Ambito e numero di cicli di correzione sono concordati in anticipo, così impegno e risultato restano prevedibili.",
+        "points": [
+          "Concept di stand e di spazio",
+          "Visualizzazioni per il confronto e la presentazione",
+          "Grafiche pronte per la stampa con cicli di correzione concordati"
+        ],
+        "task": "Compito: mostrare un'idea in modo che lei e i suoi clienti possiate decidere.",
+        "result": "Risultato: concept, visualizzazioni e dati di stampa nell'ambito concordato.",
+        "benefit": "Vantaggio: decisioni precoci basate su immagini e piani comprensibili.",
+        "link": "Vedi i concept"
+      },
+      "reuse": {
+        "title": "Pianificazione del riutilizzo",
+        "text": "Rilevo i componenti esistenti, pianifico varianti per nuovi impieghi e curo le informazioni su materiali e magazzino. Così può riutilizzare in modo mirato ciò che ha, invece di pianificare ogni volta da zero.",
+        "points": [
+          "Rilievo dei componenti esistenti",
+          "Pianificazione di varianti per nuovi impieghi",
+          "Informazioni su materiali e magazzino"
+        ],
+        "task": "Compito: rilevare i componenti esistenti e renderli utilizzabili per nuovi allestimenti.",
+        "result": "Risultato: elenco di inventario, varianti e informazioni di magazzino.",
+        "benefit": "Vantaggio: meno ripianificazione e meno materiale per allestimenti ricorrenti.",
+        "link": "Invia una richiesta"
+      }
+    },
+    "inquire": "Richiedi",
+    "cta": {
+      "title": "Il suo prossimo progetto inizia con un brief.",
+      "text": "Mi descriva brevemente compito, scadenza e documenti disponibili. Le risponderò con una prima valutazione e i passi successivi. L'offerta la riceve in modo individuale dopo il brief.",
+      "button": "Invia il brief",
+      "phone": "Preferisce parlare direttamente?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galleria di concept · novità ogni giorno",
+    "title": "Ogni giorno un nuovo concept.",
+    "lead": "Al momento sono visibili {count} concept di stand su {total}, da {min} a {max}. Ogni mattina alle 5:00 se ne aggiunge un altro. Tutte le immagini sono visualizzazioni di concept. Sfogli, filtri, salvi e richieda direttamente.",
+    "slider": "Cursore",
+    "grid": "Griglia",
+    "viewMode": "Vista",
+    "random": "Concept casuale",
+    "dayPick": "Concept del giorno",
+    "hint": "Trascini, scorra o usi le frecce",
+    "hintTouch": "Scorra di lato",
+    "count": "{count} di {total}",
+    "empty": "Nessun concept corrisponde a questi filtri.",
+    "reset": "Reimposta i filtri",
+    "filters": "Filtri",
+    "listTitle": "Tutti i concept visibili in sintesi",
+    "sliderLabel": "Cursore dei concept. Le frecce scorrono, Invio apre.",
+    "current": "Attuale: {number} {title}",
+    "loadingSlider": "Caricamento del cursore",
+    "cardAlt": "Concept {number} {title}: visualizzazione di un concept di stand",
+    "filter": {
+      "all": "Tutti",
+      "clip": "Con animazione concettuale",
+      "two-storey": "Due piani",
+      "size-s": "Compatto fino a 30 m²",
+      "size-m": "Medio fino a 150 m²",
+      "size-l": "Grande da 150 m²",
+      "wood": "Legno",
+      "green": "Verde",
+      "metal": "Metallo",
+      "light": "Luce",
+      "container": "Container",
+      "product": "Stand prodotto",
+      "real-estate": "Fiera immobiliare",
+      "outdoor": "Area esterna"
+    }
+  },
+  "detail": {
+    "facts": "Dati",
+    "area": "Superficie",
+    "floors": "Piani",
+    "standType": "Tipo di stand",
+    "height": "Altezza",
+    "materials": "Materiali",
+    "colours": "Colori",
+    "series": "Serie",
+    "floorsValue": "{count, plural, =1 {a un piano} =2 {a due piani} other {# piani}}",
+    "standTypes": {
+      "corner": "Stand d'angolo",
+      "head": "Stand di testata",
+      "island": "Stand a isola",
+      "row": "Stand in linea"
+    },
+    "renderings": "Visualizzazioni",
+    "plans": "Piani",
+    "floorplan": "Pianta",
+    "elevation": "Prospetto",
+    "download": "Scarica",
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "zoomReset": "Reimposta vista",
+    "fullscreen": "Schermo intero",
+    "clip": "Animazione concettuale in time-lapse",
+    "favorite": "Aggiungi alla selezione",
+    "favorited": "Nella sua selezione",
+    "share": "Condividi",
+    "shareWhatsapp": "Condividi su WhatsApp",
+    "shareLinkedin": "Condividi su LinkedIn",
+    "copyLink": "Copia link",
+    "copied": "Link copiato",
+    "inquire": "Richiesta su questo concept",
+    "prevDesign": "Concept precedente",
+    "nextDesign": "Concept successivo",
+    "backToGallery": "Alla galleria",
+    "imageOf": "Immagine {current} di {total}",
+    "description": "Descrizione",
+    "placeholderImage": "Immagine in arrivo",
+    "conceptNote": "Concept progettuale. L'immagine è una visualizzazione e non mostra uno stand realizzato.",
+    "imageAlt": "{title}: {label} (visualizzazione)",
+    "planAlt": "{title}: {label} (disegno del concept)",
+    "clipAlt": "{title}: animazione concettuale dell'allestimento (visualizzazione)"
+  },
+  "process": {
+    "eyebrow": "Collaborazione",
+    "title": "Sei passi dal brief alla consegna.",
+    "steps": {
+      "briefing": {
+        "title": "Brief e ambito",
+        "text": "Compito, scadenza, documenti disponibili e risultati desiderati. Stabiliamo che cosa consegno, quanti cicli di correzione sono previsti e chi approva.",
+        "alt": "Animazione di schizzi per il brief (visualizzazione)"
+      },
+      "concept": {
+        "title": "Concept e confronto",
+        "text": "Idea spaziale, visualizzazioni, pianta e prospetti. Vede lo spazio da più prospettive e decide con calma prima che si entri nel dettaglio tecnico.",
+        "alt": "Animazione concettuale del progetto (visualizzazione)"
+      },
+      "planning": {
+        "title": "Pianificazione tecnica",
+        "text": "Disegni di dettaglio e di produzione quotati, distinte dei componenti e documenti di interfaccia. Partner specializzati qualificati si occupano di calcolo strutturale, autorizzazioni e progettazione elettrica; io coordino le interfacce.",
+        "alt": "Animazione della pianificazione tecnica (visualizzazione)"
+      },
+      "production": {
+        "title": "Preparazione del lavoro e documenti di produzione",
+        "text": "Riepiloghi di materiali e quantità e documenti per ogni partner di produzione, oltre a pianificazione di acquisti e scadenze. La produzione avviene presso l'azienda specializzata, non da me.",
+        "alt": "Animazione di una lavorazione CNC come esempio di dati di produzione (visualizzazione); la produzione è eseguita dal partner specializzato"
+      },
+      "logistics": {
+        "title": "Coordinamento delle lavorazioni",
+        "text": "Quadro delle scadenze, confronto di offerte e coordinamento tra le lavorazioni, affinché trasporto, allestimento e tecnica combacino. I suoi partner specializzati eseguono il lavoro.",
+        "alt": "Animazione concettuale time-lapse dell'allestimento (visualizzazione)"
+      },
+      "onsite": {
+        "title": "Approvazioni, modifiche e consegna",
+        "text": "Documento approvazioni e modifiche in modo tracciabile e al termine le consegno tutti i documenti. Sono possibili incontri in loco se concordati in anticipo.",
+        "alt": "Animazione concettuale della consegna (visualizzazione)"
+      }
+    },
+    "sketch": "Schizzo"
+  },
+  "world": {
+    "eyebrow": "Calendario fiere",
+    "title": "Fiere in Germania e in Europa.",
+    "lead": "Una panoramica delle date delle fiere in Germania e in Europa come orientamento per la pianificazione del suo progetto. Scelga una città: il globo mostra il luogo e la distanza in linea d'aria da Lipsia. Una data nel calendario non dice nulla su incarichi o partecipazione di CL Projektwerk.",
+    "placeholderNote": "Località di esempio",
+    "listLabel": "Città fieristiche",
+    "drag": "Ruota il globo",
+    "base": "Sede",
+    "regions": {
+      "de": "Germania",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Calendario fiere",
+      "title": "La prossima fiera in ogni città.",
+      "lead": "Per ogni città compare la prossima fiera di riferimento, in ordine cronologico come su un tabellone delle partenze. Scorra il tabellone: il globo segue la sua selezione.",
+      "summary": "{cities} città fieristiche · {km} km in linea d'aria lungo il percorso da Lipsia",
+      "boardLabel": "Calendario fiere: prossima fiera per città",
+      "cols": {
+        "date": "Data",
+        "dest": "Destinazione",
+        "fair": "Fiera",
+        "status": "Stato"
+      },
+      "running": "In corso",
+      "today": "Oggi",
+      "tomorrow": "Domani",
+      "inDays": "tra {days} giorni",
+      "tba": "Data da definire",
+      "past": "Conclusa",
+      "tbaNote": "Per questa città non è attualmente registrata una data confermata di una fiera di riferimento.",
+      "dateTbc": "Data non confermata",
+      "fairName": "Fiera",
+      "venue": "Quartiere fieristico",
+      "route": "In linea d'aria",
+      "homeBase": "La mia sede",
+      "km": "{km} km",
+      "localTime": "Ora locale",
+      "website": "Sito dell'organizzatore",
+      "inquire": "Parliamo di un progetto per {fair}",
+      "tourPause": "Metti in pausa il giro",
+      "tourPlay": "Riprendi il giro",
+      "note": "Date secondo gli organizzatori, verificate il {date}. Sono possibili modifiche; fanno fede i siti degli organizzatori. I nomi delle fiere sono marchi dei rispettivi titolari. Le date non dicono nulla su incarichi o partecipazione di CL Projektwerk.",
+      "search": "Cerca fiera o città",
+      "searchPlaceholder": "ad es. Düsseldorf o edilizia",
+      "filterCountry": "Paese",
+      "filterCity": "Città",
+      "filterPeriod": "Periodo",
+      "filterSector": "Settore",
+      "filterAll": "Tutti",
+      "periodUpcoming": "Prossime",
+      "periodRunning": "In corso",
+      "periodPast": "Passate",
+      "resultCount": "{count, plural, =0 {Nessuna fiera} =1 {1 fiera} other {# fiere}}",
+      "empty": "Nessuna fiera corrisponde alla ricerca e ai filtri scelti.",
+      "reset": "Reimposta ricerca e filtri",
+      "source": "Fonte",
+      "checkedOn": "Verificato il {date}"
+    },
+    "zoomIn": "Ingrandisci",
+    "zoomOut": "Riduci",
+    "zoomReset": "Reimposta vista",
+    "zoomEurope": "Vista Europa",
+    "zoomCountry": "Scegli un paese",
+    "zoomHint": "Ctrl + rotellina o doppio clic: zoom · clic su una città: distanza in linea d'aria",
+    "zoomHintTouch": "Pizzica per ingrandire · tocca una città: distanza in linea d'aria",
+    "zoomHintKeys": "Le frecce spostano la vista, più e meno ingrandiscono o riducono.",
+    "scrollHint": "Lo scorrimento normale muove solo la pagina. Tenga premuto Ctrl per lo zoom.",
+    "distance": {
+      "title": "Distanza in linea d'aria tra due città",
+      "from": "Da",
+      "to": "A",
+      "pick": "Scegli una città",
+      "swap": "Scambia le città",
+      "result": "In linea d'aria: {km} km",
+      "resultFromTo": "In linea d'aria {from} – {to}: {km} km",
+      "note": "Calcolata come distanza ortodromica sulla sfera terrestre. Non è una distanza stradale e non dice nulla sul tempo di viaggio.",
+      "rings": "Anelli di distanza attorno a {city}: {km} km",
+      "scale": "Scala: {km} km",
+      "listTitle": "Città e distanza in linea d'aria da {city}",
+      "listCity": "Città",
+      "listCountry": "Paese",
+      "listKm": "In linea d'aria",
+      "noWebglTitle": "Vista 3D non disponibile",
+      "noWebglText": "Il suo dispositivo non mostra il globo 3D. La tabella contiene le stesse città, fiere e distanze.",
+      "reducedMotion": "Il movimento ridotto è attivo: non ci sono voli né animazioni automatiche."
+    },
+    "origin": {
+      "use": "Usa la mia posizione come punto di partenza",
+      "locating": "Rilevamento della posizione …",
+      "active": "Punto di partenza: {city}, la città fieristica più vicina a te",
+      "reset": "Torna a {city}",
+      "denied": "L’accesso alla posizione non è stato concesso. Il punto di partenza resta {city}.",
+      "far": "La tua posizione è fuori dall’area della mappa. Il punto di partenza resta {city}.",
+      "note": "La tua posizione viene elaborata solo nel browser e non viene trasmessa."
+    }
+  },
+  "led": {
+    "eyebrow": "Superfici schermo nella pianificazione",
+    "title": "Le superfici multimediali richiedono misure precise.",
+    "lead": "Pareti LED e monitor fanno parte di molti spazi fieristici. Li inserisco nei suoi documenti con misure, rapporti d'aspetto e dati di collegamento. Le clip mostrano formati comuni; sono materiale di esempio con licenza e non progetti miei.",
+    "placeholder": "Clip di esempio {n}",
+    "placeholderNote": "Materiale di esempio",
+    "caption": "Clip di esempio (licenza stock): {title}, {format}. Non è un progetto di CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "Chi sono",
+    "name": "Christof Laufersweiler",
+    "role": "Pianificazione e controllo di progetto per stand fieristici, spazi di marca e allestimenti interni",
+    "text": "Sono Christof Laufersweiler e lavoro da oltre 20 anni nel settore fieristico e degli eventi. Mi sono formato come disegnatore tecnico in tecnologia del legno; si sono aggiunte poi la direzione di progetti di stand, la direzione generale come dipendente di un'azienda di costruzione stand e un certificato IHK come project manager per fiere ed eventi. Con CL Projektwerk offro a Lipsia capacità esterna di pianificazione e progetto a costruttori di stand, agenzie, aziende di allestimento ed espositori che hanno bisogno di mani in più con competenza.",
+    "close": "A lei restano le decisioni. Io mi occupo di documenti, visione d'insieme e coordinamento.",
+    "photoAlt": "Ritratto di Christof Laufersweiler, fondatore di CL Projektwerk",
+    "cta": "Parliamo di un progetto",
+    "career": "Percorso",
+    "projects": "Esperienza di progetto da attività precedenti",
+    "projectsNote": "Questi esempi provengono dalla mia precedente attività professionale come project manager responsabile. Non sono progetti di CL Projektwerk e le aziende citate non sono clienti di CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Lingue"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ anni",
+        "label": "di esperienza nel settore fieristico e degli eventi"
+      },
+      {
+        "value": "1.200 m²",
+        "label": "maggiore superficie di stand seguita in attività precedenti (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certificato di project manager per fiere ed eventi (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Direzione di progetto",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Direttore generale (dipendente)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Direzione di progetto per stand fieristici",
+        "org": "MEPLAN GmbH, Monaco di Baviera"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certificato di project manager per fiere ed eventi (corso, 160 ore di lezione)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Apprendistato come disegnatore tecnico, tecnologia del legno",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Francoforte",
+        "size": "1.200 m²",
+        "note": "Più espositori e veicoli, grandi display LED"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1.200 m²",
+        "note": "Parete LED di 20 m, coordinata tecnicamente"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, Monaco di Baviera",
+        "size": "360 m²",
+        "note": "Struttura sospesa in legno lamellare, grafiche tessili tese senza pieghe"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Concept di stand aperto con parete LED"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Tedesco (madrelingua)",
+      "Inglese (livello professionale)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Parliamo di un progetto",
+    "title": "Mi racconti il suo progetto.",
+    "lead": "Quattro brevi passaggi, pochi campi obbligatori. Su richiesta allego i concept salvati dalla galleria.",
+    "response": "Di norma rispondo entro {time}.",
+    "steps": {
+      "fair": "Progetto",
+      "stand": "Ambito",
+      "services": "Servizio",
+      "contact": "Contatto"
+    },
+    "stepOf": "Passo {current} di {total}",
+    "fields": {
+      "fair": "Fiera, evento o progetto",
+      "fairPlaceholder": "ad es. partecipazione fieristica, spazio di marca o allestimento interno",
+      "projectType": "Tipo di progetto",
+      "projectTypes": {
+        "fair": "Stand fieristico",
+        "brand": "Spazio di marca",
+        "interior": "Allestimento interno",
+        "event": "Evento",
+        "open": "Ancora aperto"
+      },
+      "city": "Luogo",
+      "cityPlaceholder": "ad es. Lipsia",
+      "dateFrom": "Data dal",
+      "dateTo": "al",
+      "dateUnknown": "La data non è ancora stabilita",
+      "size": "Dimensione dello spazio (facoltativo)",
+      "width": "Larghezza (m)",
+      "depth": "Profondità (m)",
+      "area": "Superficie",
+      "standType": "Tipo di stand",
+      "standTypeUnknown": "Ancora aperto",
+      "floors": "Piani",
+      "documents": "Documenti disponibili",
+      "documentOptions": {
+        "briefing": "Brief o capitolato",
+        "cad": "Dati CAD o di pianificazione",
+        "sketches": "Schizzi o moodboard",
+        "renders": "Visualizzazioni",
+        "inventory": "Elenchi di inventario",
+        "none": "Ancora nessuno"
+      },
+      "services": "Servizio di pianificazione richiesto",
+      "scope": "Ambito desiderato",
+      "scopes": {
+        "single": "Servizio singolo",
+        "project": "Progetto completo",
+        "quota": "Monte ore mensile continuativo",
+        "open": "Ancora aperto"
+      },
+      "budget": "Budget complessivo del progetto (facoltativo)",
+      "budgets": {
+        "a": "fino a 25.000 €",
+        "b": "da 25.000 a 75.000 €",
+        "c": "da 75.000 a 150.000 €",
+        "d": "oltre 150.000 €",
+        "open": "Preferisco non indicarlo"
+      },
+      "name": "Nome",
+      "company": "Azienda",
+      "email": "E-mail",
+      "phone": "Telefono (facoltativo)",
+      "message": "Messaggio",
+      "messagePlaceholder": "Che cosa va pianificato? Ci sono requisiti, un allestimento precedente o esigenze tecniche particolari?",
+      "favorites": "Concept allegati",
+      "favoritesEmpty": "Nessun concept salvato. Nella galleria può raccoglierne con il cuore.",
+      "consent": "Acconsento a che i miei dati siano memorizzati e utilizzati per elaborare la richiesta. Dettagli nell'<privacy>informativa sulla privacy</privacy>.",
+      "privacy": "Informativa sulla privacy",
+      "required": "Obbligatorio"
+    },
+    "submit": "Invia il brief",
+    "sending": "Invio in corso",
+    "errors": {
+      "required": "Compili questo campo.",
+      "email": "Inserisca un indirizzo e-mail valido.",
+      "consent": "Acconsenta al trattamento, così posso risponderle.",
+      "dates": "La fine precede l'inizio.",
+      "server": "L'invio non è riuscito. Riprovi o scriva a {email}.",
+      "rate": "Troppe richieste in poco tempo. Riprovi tra qualche minuto."
+    },
+    "whatsapp": "Scrivi su WhatsApp",
+    "callback": "Richiedi di essere richiamato",
+    "callbackTitle": "Richiedi di essere richiamato",
+    "callbackTime": "Quando le va bene?",
+    "callbackTimePlaceholder": "ad es. domani dopo le 14",
+    "callbackSubmit": "Richiedi di essere richiamato",
+    "callbackDone": "Grazie. La sua richiesta di richiamata è stata inviata. Cercherò di raggiungerla all'ora indicata.",
+    "direct": "Diretto",
+    "notConfigured": "Non ancora indicato",
+    "prefilled": "La sua selezione: {list}",
+    "emailDraft": {
+      "prepare": "Prepara e-mail",
+      "title": "Bozza pronta",
+      "notice": "I tuoi dati vengono preparati in una bozza. Controllala e inviala dalla tua applicazione di posta. Nessun messaggio è stato ancora inviato.",
+      "open": "Apri applicazione di posta",
+      "copy": "Copia testo",
+      "copied": "Testo copiato",
+      "fallback": "Nessuna applicazione di posta configurata o dati mancanti? Copia il testo completo qui sotto nella tua webmail."
+    }
+  },
+  "thanks": {
+    "title": "Grazie per il suo brief.",
+    "text": "La sua richiesta è stata inviata. Di norma rispondo entro {time} con una prima valutazione. Non viene inviata alcuna conferma automatica via e-mail. I concept salvati sono stati allegati.",
+    "back": "Alla home",
+    "designs": "Vedi altri concept"
+  },
+  "selection": {
+    "title": "La mia selezione",
+    "lead": "I suoi concept salvati. Li allega a una richiesta con un clic.",
+    "count": "{count, plural, =0 {Ancora nulla salvato} =1 {1 concept salvato} other {# concept salvati}}",
+    "empty": "Ancora nulla salvato. Tocchi il cuore nella galleria per raccogliere concept.",
+    "toGallery": "Alla galleria",
+    "inquire": "Invia la selezione con una richiesta",
+    "clear": "Rimuovi tutto",
+    "remove": "Rimuovi"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Note legali",
+    "privacy": "Privacy",
+    "cookies": "Impostazioni cookie",
+    "note": "Tutti i rendering e le animazioni di questo sito sono visualizzazioni di concept progettuali. Non mostrano stand realizzati.",
+    "top": "In alto",
+    "languages": "Lingue",
+    "tagline": "Studio esterno di pianificazione e progetto per stand fieristici, spazi di marca e allestimenti interni"
+  },
+  "cookies": {
+    "title": "La sua privacy",
+    "text": "Questo sito memorizza solo ciò che è tecnicamente necessario, ad esempio i suoi concept salvati, il layout scelto e questa scelta. Statistiche e servizi esterni restano disattivati finché non acconsente.",
+    "necessary": "Solo necessari",
+    "settings": "Impostazioni",
+    "acceptAll": "Consenti tutti",
+    "save": "Salva la scelta",
+    "categories": {
+      "necessary": "Necessari",
+      "necessaryText": "Lingua, concept salvati, layout, impostazioni della radio e questa scelta. Sempre attivi.",
+      "stats": "Statistiche",
+      "statsText": "Attualmente non in uso.",
+      "media": "Media esterni",
+      "mediaText": "Attualmente non in uso. La radio si connette solo quando la avvia lei."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Note legali",
+    "privacyTitle": "Informativa sulla privacy",
+    "placeholder": "Testo legale in arrivo.",
+    "notice": "Fa fede la versione tedesca di questo testo.",
+    "updated": "Aggiornato al: {date}"
+  },
+  "notFound": {
+    "title": "Questa pagina non esiste.",
+    "text": "Forse trova nella galleria dei concept ciò che cerca.",
+    "home": "Alla home",
+    "designs": "Alla galleria"
+  },
+  "layouts": {
+    "label": "Scegli il layout",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: animazione concettuale {n}",
+    "active": "attivo",
+    "preview": "Anteprima: {name}",
+    "hint": "Le frecce cambiano il layout, Esc chiude la selezione.",
+    "saved": "La sua scelta viene salvata su questo dispositivo.",
+    "monoShowColour": "Mostra i colori originali",
+    "monoHideColour": "Mostra in bianco e nero",
+    "items": {
+      "studio": "Antracite e arancione, linee nette, preciso come uno studio di progettazione",
+      "aurora": "Superfici scure con menta e viola, carattere con grazie, morbidi movimenti di luce",
+      "tide": "Verde petrolio e corallo, carattere espressivo, onde fluide",
+      "mono": "Rigorosamente bianco e nero, forte contrasto, forme geometriche"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "SCEGLI STAZIONE",
+    "close": "Chiudi il player",
+    "stations": "Stazioni",
+    "play": "Avvia la riproduzione",
+    "pause": "Metti in pausa",
+    "mute": "Disattiva l'audio",
+    "unmute": "Attiva l'audio",
+    "volume": "Volume",
+    "off": "spento",
+    "hint": "Web radio dal vivo. L'audio parte solo dopo il suo clic e il cursore vale solo per questo player. All'avvio il browser si collega alla stazione.",
+    "noTrack": "Nessuna informazione sul brano",
+    "levelNote": "L'indicatore di livello è una semplice animazione e non rappresenta il livello audio reale.",
+    "state": {
+      "ready": "Pronto",
+      "connecting": "Connessione in corso …",
+      "live": "In diretta",
+      "buffering": "Buffering …",
+      "stalled": "La connessione rallenta …",
+      "paused": "In pausa",
+      "error": "Stazione non raggiungibile",
+      "blocked": "Avvio bloccato dal browser. Clicchi di nuovo su riproduci."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Progettazione e presentazione",
+    "title": "Grafiche che si adattano allo spazio.",
+    "text": "Un progetto ha bisogno di immagini che permettano di decidere e di dati utilizzabili senza rielaborazioni. Realizzo visualizzazioni e dati grafici pronti per la stampa, adattati a misure e costruzione dello spazio e alla sua identità visiva. Ambito e numero di cicli di correzione sono concordati in anticipo. La stampa è eseguita da un partner di stampa che lei o, su richiesta, io coinvolgiamo.",
+    "points": [
+      {
+        "title": "Visualizzazioni per il confronto",
+        "text": "Prospettive, pianta e prospetti rendono il concept comprensibile per lei e per i suoi clienti."
+      },
+      {
+        "title": "Dati di stampa completi",
+        "text": "Abbondanza, profilo colore, misure e formato file sono preparati per il suo partner di stampa."
+      },
+      {
+        "title": "Adattate alla costruzione",
+        "text": "Le superfici grafiche sono verificate rispetto alle misure di pareti e componenti della pianificazione tecnica."
+      },
+      {
+        "title": "Cicli di correzione concordati",
+        "text": "Stabiliamo in anticipo quanti cicli di correzione sono inclusi. Ulteriori cicli sono un servizio aggiuntivo."
+      },
+      {
+        "title": "File con versioni",
+        "text": "Ogni versione ha uno stato chiaro, così in stampa vanno solo i dati approvati."
+      },
+      {
+        "title": "Consegna al suo partner di stampa",
+        "text": "Io fornisco i dati, l'azienda specializzata stampa e produce."
+      }
+    ],
+    "close": "Progettazione e dati da parte mia, produzione presso l'azienda specializzata: perché lo spazio appaia come è stato approvato.",
+    "videoLabel": "Animazione: dati di stampa su un monitor e stampa a grande formato di una grafica fieristica (visualizzazione)"
+  },
+  "drops": {
+    "rule": "Ogni mattina alle 5:00 un altro concept",
+    "today": "Nuovo oggi",
+    "next": "Prossimo concept tra",
+    "soon": "È visibile un nuovo concept.",
+    "reload": "Ricarica",
+    "complete": "Tutti i {total} concept sono visibili",
+    "count": "{released} di {total} visibili"
+  },
+  "error": {
+    "title": "Qualcosa è andato storto.",
+    "text": "La pagina non è stata caricata completamente. Riprovi.",
+    "retry": "Riprova",
+    "home": "Alla home"
+  },
+  "seo": {
+    "eyebrow": "Pianificazione tecnica di fiere",
+    "title": "Pianificazione tecnica, preparazione del lavoro e controllo di progetto per stand fieristici e allestimenti interni.",
+    "intro": "CL Projektwerk è uno studio esterno di pianificazione e progetto a Lipsia. Affianco costruttori di stand, agenzie, aziende di allestimento ed espositori di medie dimensioni nella pianificazione di stand: con documenti di produzione quotati, preparazione del lavoro, controllo esterno di progetto, concept e pianificazione del riutilizzo. L'esecuzione è affidata a partner specializzati; io fornisco pianificazione e coordinamento.",
+    "blocks": [
+      {
+        "title": "Pianificazione tecnica di fiere",
+        "text": "Dal brief nascono disegni di dettaglio e di produzione quotati, distinte dei componenti e documenti di interfaccia. I suoi partner di produzione possono lavorarci, senza che il suo team debba realizzare ogni disegno."
+      },
+      {
+        "title": "Preparazione del lavoro per stand e spazi di marca",
+        "text": "Riepiloghi di materiali e quantità, documenti per partner di produzione e pianificazione di acquisti e scadenze trasformano i disegni in un processo organizzabile."
+      },
+      {
+        "title": "Controllo esterno di progetto",
+        "text": "Riepiloghi di budget e scadenze, confronto di offerte, coordinamento delle lavorazioni e approvazioni documentate danno chiarezza, soprattutto quando più progetti procedono insieme."
+      },
+      {
+        "title": "Concept, presentazione e riutilizzo",
+        "text": "Concept di stand e di spazio, visualizzazioni e grafiche pronte per la stampa aiutano il confronto. La pianificazione del riutilizzo rileva i componenti esistenti e pianifica varianti per nuovi impieghi."
+      }
+    ],
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      {
+        "q": "Quanto costa la collaborazione?",
+        "a": "Dipende da ambito, risultati e scadenze. Dopo un breve brief riceve un'offerta individuale per il progetto o per un monte ore mensile."
+      },
+      {
+        "q": "Quando dovrei contattarla?",
+        "a": "Idealmente appena compito e scadenza sono definiti, perché la mia capacità mensile di pianificazione è limitata. Le richieste dell'ultimo minuto le valuto in base al carico attuale."
+      },
+      {
+        "q": "Posso prenotare anche un solo servizio?",
+        "a": "Sì. Pianificazione tecnica, preparazione del lavoro, controllo di progetto, progettazione e presentazione o pianificazione del riutilizzo si prenotano singolarmente."
+      },
+      {
+        "q": "Realizza e monta anche?",
+        "a": "No. Produzione, trasporto, montaggio, calcolo strutturale, autorizzazioni e lavori elettrici sono eseguiti da partner specializzati qualificati. I servizi maggiori li commissiona di norma direttamente lei; io pianifico e coordino."
+      },
+      {
+        "q": "Sono possibili incontri in loco o trasferte?",
+        "a": "La pianificazione avviene prevalentemente da Lipsia. Incontri in loco e trasferte si concordano in anticipo; i servizi aggiuntivi sono concordati separatamente."
+      },
+      {
+        "q": "Offre web design o automazione?",
+        "a": "Non fanno parte dei miei servizi principali. Il mio focus è la pianificazione e il controllo di progetti di stand fieristici, spazi di marca e allestimenti interni."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Scegli la lingua",
+    "hint": "Trascini, scorra o ruoti con le frecce",
+    "current": "attuale",
+    "prev": "Lingua precedente",
+    "next": "Lingua successiva",
+    "close": "Chiudi"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Studio esterno di pianificazione e progetto per stand fieristici, spazi di marca e allestimenti interni",
+    "claim": "Una pianificazione che funziona sul campo.",
+    "visualisationNote": "Visualizzazione"
+  },
+  "structured": {
+    "serviceCatalog": "Servizi",
+    "services": [
+      "Pianificazione tecnica: disegni di dettaglio e di produzione quotati, distinte dei componenti, documenti di interfaccia",
+      "Preparazione del lavoro: riepiloghi di materiali e quantità, documenti di produzione, pianificazione di acquisti e scadenze",
+      "Controllo di progetto: riepiloghi di budget e scadenze, confronto di offerte, coordinamento delle lavorazioni, documentazione delle modifiche",
+      "Progettazione e presentazione: concept di stand e di spazio, visualizzazioni, grafiche pronte per la stampa",
+      "Pianificazione del riutilizzo: rilievo dei componenti esistenti, pianificazione di varianti, informazioni su materiali e magazzino"
+    ],
+    "keywords": [
+      "pianificazione tecnica di fiere",
+      "pianificazione di stand fieristici",
+      "controllo esterno di progetto",
+      "preparazione del lavoro stand",
+      "studio di pianificazione Lipsia",
+      "spazi di marca",
+      "allestimenti interni",
+      "pianificazione del riutilizzo"
+    ],
+    "genre": "Concept di stand fieristico",
+    "videoSuffix": "Animazione concettuale in time-lapse"
+  },
+  "ogImage": {
+    "film": "▶ Animazione concettuale"
+  }
+}

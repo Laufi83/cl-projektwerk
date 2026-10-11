@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Technische beursplanning & projectsturing | {brand}",
+    "description": "Extern plannings- en projectbureau voor beursstands, merkruimtes en interieurbouw: technische planning, werkvoorbereiding en projectsturing. Bespreek uw project.",
+    "ogTitle": "{brand}: planningscapaciteit voor beursstands, merkruimtes en interieurbouw",
+    "ogDescription": "Gemaatvoerde productiedocumenten, werkvoorbereiding en projectsturing voor standbouwers, bureaus, interieurbouwbedrijven en exposanten. Contactpersoon: Christof Laufersweiler, Leipzig.",
+    "socialDescription": "Extra plannings- en projectcapaciteit voor beursstands, merkruimtes en interieurbouw, per project en met een duidelijk afgesproken omvang.",
+    "designsTitle": "Standconcepten, elke dag een nieuw",
+    "designsDescription": "Standconcepten met visualisaties, plattegronden en aanzichten, van {min} tot {max}. Elke ochtend om 5:00 uur komt er een concept bij.",
+    "designTitle": "{number} {title} · Standconcept",
+    "designDescription": "Concept {title}: {size}{floors}. {description} Visualisatie van een concept, geen gebouwde stand.",
+    "inquiryTitle": "Uw project bespreken",
+    "inquiryDescription": "Stuur een briefing: beurs of project, datum, beschikbare documenten en gewenste planningsdienst. Ik reageer met een eerste inschatting.",
+    "selectionTitle": "Mijn selectie",
+    "selectionDescription": "Uw opgeslagen standconcepten, die u bij een aanvraag kunt meesturen.",
+    "imprintDescription": "Juridische kennisgeving en gegevens van de aanbieder.",
+    "privacyDescription": "Informatie over de verwerking van persoonsgegevens op deze website."
+  },
+  "common": {
+    "skip": "Naar de inhoud",
+    "visualisation": "Visualisatie",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "prev": "Terug",
+    "open": "Openen",
+    "view": "Bekijken",
+    "play": "Afspelen",
+    "pause": "Pauzeren",
+    "loading": "Laden",
+    "placeholder": "Afbeelding volgt",
+    "later": "volgt",
+    "menu": "Menu",
+    "language": "Taal",
+    "drag": "Slepen",
+    "retry": "Opnieuw proberen",
+    "noWebgl": "Dit apparaat of deze browser ondersteunt de 3D-weergave niet. De lijst met steden en afstanden staat hieronder."
+  },
+  "nav": {
+    "services": "Diensten",
+    "designs": "Concepten",
+    "process": "Samenwerking",
+    "graphics": "Presentatie",
+    "world": "Beurskalender",
+    "about": "Over mij",
+    "contact": "Contact",
+    "cta": "Project bespreken",
+    "selection": "Mijn selectie",
+    "home": "Home",
+    "main": "Hoofdnavigatie"
+  },
+  "hero": {
+    "eyebrow": "Extern plannings- en projectbureau · Beursstands, merkruimtes, interieurbouw",
+    "title": "Planning die op de vloer werkt.",
+    "lead": "Ik ondersteun standbouwers, bureaus, interieurbouwbedrijven en exposanten met technische planning, werkvoorbereiding en projectsturing: per project, met een duidelijk afgesproken omvang en traceerbare documenten.",
+    "cta": "Planningscapaciteit aanvragen",
+    "secondary": "Concepten bekijken",
+    "scroll": "Scroll en kijk hoe de visualisatie ontstaat",
+    "progress": "Opbouw (visualisatie)",
+    "done": "Afgewerkte ruimte",
+    "design": "Concept 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Concepten in time-lapse",
+    "title": "5 concepten.",
+    "lead": "Vijf conceptanimaties laten zien hoe een ontwerp van een lege hallenvloer tot een afgewerkte ruimte groeit. Het zijn visualisaties, geen opnames van gebouwde stands.",
+    "cta": "Animatie afspelen",
+    "badge": "Conceptanimatie",
+    "sliderLabel": "Slider met vijf conceptanimaties. Pijltjestoetsen bladeren, Enter opent.",
+    "explain": "Time-lapse-animatie van een concept. Ze toont hoe de geplande ruimte opgebouwd zou kunnen worden en is geen bewijs van een gerealiseerde stand."
+  },
+  "tagline": {
+    "text": "Elke ruimte begint met documenten waarop alle betrokkenen kunnen vertrouwen. Die documenten maak ik."
+  },
+  "services": {
+    "eyebrow": "Diensten",
+    "title": "Meer planningscapaciteit als meerdere projecten tegelijk lopen.",
+    "lead": "Standbouwers, bureaus en interieurbouwbedrijven komen bij parallelle projecten, personeelstekorten en technisch veeleisende taken aan hun grenzen. Als externe planner en projectsturer neem ik duidelijk afgebakende delen van uw project over, met meer dan 20 jaar ervaring in beurs- en evenementenwereld. Productie, transport, montage, constructieberekeningen, vergunningen en elektrawerk worden uitgevoerd door gekwalificeerde vakpartners.",
+    "trust": [
+      {
+        "title": "Eén aanspreekpunt",
+        "text": "voor planning, documenten en afstemming: u spreekt rechtstreeks met mij, niet via tussenschakels."
+      },
+      {
+        "title": "Meer dan 20 jaar ervaring",
+        "text": "in de beurs- en evenementenwereld, opgeleid als technisch tekenaar houttechniek en gecertificeerd projectleider beurzen en evenementen (IHK)."
+      },
+      {
+        "title": "Duidelijk afgebakende omvang",
+        "text": "Omvang, correctierondes en termijnen spreek ik vooraf schriftelijk af. Extra werk en reizen alleen in overleg."
+      }
+    ],
+    "package": {
+      "badge": "Samenwerking",
+      "title": "Per project of als maandcontingent.",
+      "subtitle": "Planningscapaciteit in de omvang die uw project nu nodig heeft.",
+      "text": "U stuurt mij een briefing, ik schat de inspanning in en stel omvang, resultaten en termijnen voor. Daarna werk ik per project of binnen een maandcontingent met vastgelegde uren, reactietijden en correctierondes. Mijn capaciteit is beperkt; ik neem alleen projecten aan die ik zorgvuldig kan uitvoeren.",
+      "cta": "Planningscapaciteit aanvragen",
+      "more": "Zo verloopt een project",
+      "phases": [
+        {
+          "title": "Briefing & omvang",
+          "items": [
+            "Gezamenlijke afstemming van taak, termijn en beschikbare documenten",
+            "Schriftelijk vastgelegde omvang en resultaten",
+            "Afgesproken correctierondes en goedkeuringsstappen",
+            "Individuele offerte na de briefing"
+          ]
+        },
+        {
+          "title": "Planning & documenten",
+          "items": [
+            "Gemaatvoerde detail- en productietekeningen",
+            "Onderdelenlijsten en interfacedocumenten",
+            "Overzichten van materialen en hoeveelheden",
+            "Bestanden met versiebeheer en traceerbare status"
+          ]
+        },
+        {
+          "title": "Afstemming & sturing",
+          "items": [
+            "Budget- en planningsoverzichten",
+            "Offertevergelijkingen en inkoopplanning",
+            "Afstemming van disciplines en vakpartners",
+            "Gedocumenteerde goedkeuringen en wijzigingen"
+          ]
+        },
+        {
+          "title": "Overdracht & documentatie",
+          "items": [
+            "Productiedocumenten per partner voor de overdracht",
+            "Documentatie van wijzigingen en beslissingen",
+            "Voorraad- en opslaginformatie voor hergebruik",
+            "Afspraken ter plaatse en reizen na voorafgaand overleg"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Vakpartners voor de uitvoering.",
+      "text": "Ik plan en coördineer; gekwalificeerde vakbedrijven voeren uit. In het basismodel geeft u grotere productie- en montageopdrachten rechtstreeks aan uw partners; op verzoek stem ik met hen af en bereid ik hun documenten voor. CL Projektwerk is geen productiewerkplaats en treedt niet op als voorfinancierende hoofdaannemer.",
+      "items": [
+        "Uitsluitend CNC-gestuurde productie",
+        "Schrijnwerk",
+        "Metaalbouw",
+        "Montage en opbouw",
+        "Transport en logistiek",
+        "Constructieberekening en keuringen",
+        "Vergunningen en opleveringen",
+        "Elektrawerk",
+        "Druk en grafische productie",
+        "Media- en evenemententechniek",
+        "… en andere disciplines naar behoefte"
+      ]
+    },
+    "single": {
+      "eyebrow": "Los te boeken",
+      "title": "Precies de dienst die u mist.",
+      "text": "Hebt u een team maar te weinig planningscapaciteit? Boek dan alleen het onderdeel dat u nodig hebt, bijvoorbeeld productietekeningen voor één project of de planningssturing van een beursdeelname."
+    },
+    "items": {
+      "tech": {
+        "title": "Technische planning",
+        "text": "Op basis van uw briefing maak ik gemaatvoerde detail- en productietekeningen, onderdelenlijsten en interfacedocumenten. U krijgt documenten waarmee uw productiepartners kunnen werken en u bespaart interne planningsuren.",
+        "points": [
+          "Gemaatvoerde detail- en productietekeningen",
+          "Onderdelenlijsten",
+          "Interfacedocumenten voor disciplines en partners"
+        ],
+        "task": "Taak: uw briefing vertalen naar ondubbelzinnige technische documenten.",
+        "result": "Resultaat: tekeningen, lijsten en interfaces in een afgestemde status.",
+        "benefit": "Voordeel: minder vragen in de productie en meer tijd voor uw klanten.",
+        "link": "Voorbeelden bekijken"
+      },
+      "prep": {
+        "title": "Werkvoorbereiding",
+        "text": "Ik bereid uw project voor op de uitvoering: overzichten van materialen en hoeveelheden, productiedocumenten per partner en inkoop- en tijdsplanning. Zo weet iedereen wat wanneer in welke hoeveelheid nodig is.",
+        "points": [
+          "Overzichten van materialen en hoeveelheden",
+          "Productiedocumenten per partner",
+          "Inkoop- en tijdsplanning"
+        ],
+        "task": "Taak: materialen, hoeveelheden en data voor de uitvoering ordenen.",
+        "result": "Resultaat: overzichten en documenten die per partner zijn samengesteld.",
+        "benefit": "Voordeel: minder tekorten en planningsverrassingen tijdens de opbouw.",
+        "link": "Zo werk ik"
+      },
+      "control": {
+        "title": "Projectsturing",
+        "text": "Ik houd budget en planning overzichtelijk, vergelijk offertes, stem disciplines af en documenteer goedkeuringen en wijzigingen. Beslissingen blijven bij u; ik bereid ze zo voor dat ze snel genomen kunnen worden.",
+        "points": [
+          "Budget- en planningsoverzichten",
+          "Offertevergelijkingen en afstemming van disciplines",
+          "Goedkeuringen en traceerbare wijzigingsdocumentatie"
+        ],
+        "task": "Taak: overzicht houden over kosten, data en afspraken.",
+        "result": "Resultaat: actuele overzichten en gedocumenteerde beslissingen.",
+        "benefit": "Voordeel: ontlasting bij parallelle projecten en heldere traceerbaarheid.",
+        "link": "Samenwerking bekijken"
+      },
+      "concept": {
+        "title": "Ontwerp en presentatie",
+        "text": "Ik ontwikkel stand- en ruimteconcepten en maak visualisaties en drukklare afbeeldingen. De omvang en het aantal correctierondes worden vooraf afgesproken, zodat inspanning en resultaat voorspelbaar blijven.",
+        "points": [
+          "Stand- en ruimteconcepten",
+          "Visualisaties voor afstemming en presentatie",
+          "Drukklare afbeeldingen met afgesproken correctierondes"
+        ],
+        "task": "Taak: een idee zo tonen dat u en uw klanten kunnen beslissen.",
+        "result": "Resultaat: concept, visualisaties en drukdata in de afgesproken omvang.",
+        "benefit": "Voordeel: vroege beslissingen op basis van begrijpelijke beelden en plannen.",
+        "link": "Concepten bekijken"
+      },
+      "reuse": {
+        "title": "Hergebruikplanning",
+        "text": "Ik inventariseer bestaande onderdelen, plan varianten voor nieuwe toepassingen en onderhoud materiaal- en opslaginformatie. Zo kunt u wat er is gericht hergebruiken in plaats van elke keer opnieuw te plannen.",
+        "points": [
+          "Inventarisatie van bestaande onderdelen",
+          "Variantenplanning voor nieuwe toepassingen",
+          "Materiaal- en opslaginformatie"
+        ],
+        "task": "Taak: bestaande onderdelen inventariseren en bruikbaar maken voor nieuwe opbouwen.",
+        "result": "Resultaat: voorraadlijst, varianten en opslaginformatie.",
+        "benefit": "Voordeel: minder herplanning en materiaalgebruik bij terugkerende opbouwen.",
+        "link": "Aanvraag doen"
+      }
+    },
+    "inquire": "Aanvragen",
+    "cta": {
+      "title": "Uw volgende project begint met een briefing.",
+      "text": "Schets kort de taak, de termijn en de beschikbare documenten. Ik reageer met een eerste inschatting en de volgende stappen. De offerte ontvangt u individueel na de briefing.",
+      "button": "Briefing sturen",
+      "phone": "Liever direct spreken?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Conceptgalerij · elke dag nieuw",
+    "title": "Elke dag een nieuw concept.",
+    "lead": "{count} van {total} standconcepten zijn nu zichtbaar, van {min} tot {max}. Elke ochtend om 5:00 uur komt er een concept bij. Alle beelden zijn visualisaties van concepten. Blader, filter, bewaar en vraag direct aan.",
+    "slider": "Slider",
+    "grid": "Raster",
+    "viewMode": "Weergave",
+    "random": "Willekeurig concept",
+    "dayPick": "Concept van de dag",
+    "hint": "Slepen, scrollen of pijltjestoetsen",
+    "hintTouch": "Veeg opzij",
+    "count": "{count} van {total}",
+    "empty": "Geen concept past bij deze filters.",
+    "reset": "Filters wissen",
+    "filters": "Filters",
+    "listTitle": "Alle zichtbare concepten in één overzicht",
+    "sliderLabel": "Conceptslider. Pijltjestoetsen bladeren, Enter opent.",
+    "current": "Actueel: {number} {title}",
+    "loadingSlider": "Slider wordt geladen",
+    "cardAlt": "Concept {number} {title}: visualisatie van een standconcept",
+    "filter": {
+      "all": "Alle",
+      "clip": "Met conceptanimatie",
+      "two-storey": "Twee verdiepingen",
+      "size-s": "Compact tot 30 m²",
+      "size-m": "Middel tot 150 m²",
+      "size-l": "Groot vanaf 150 m²",
+      "wood": "Hout",
+      "green": "Groen",
+      "metal": "Metaal",
+      "light": "Licht",
+      "container": "Containers",
+      "product": "Productstands",
+      "real-estate": "Vastgoedbeurs",
+      "outdoor": "Buitenterrein"
+    }
+  },
+  "detail": {
+    "facts": "Kerngegevens",
+    "area": "Oppervlakte",
+    "floors": "Verdiepingen",
+    "standType": "Standtype",
+    "height": "Hoogte",
+    "materials": "Materialen",
+    "colours": "Kleuren",
+    "series": "Serie",
+    "floorsValue": "{count, plural, =1 {één verdieping} =2 {twee verdiepingen} other {# verdiepingen}}",
+    "standTypes": {
+      "corner": "Hoekstand",
+      "head": "Kopstand",
+      "island": "Eilandstand",
+      "row": "Rijstand"
+    },
+    "renderings": "Visualisaties",
+    "plans": "Plattegronden",
+    "floorplan": "Plattegrond",
+    "elevation": "Aanzicht",
+    "download": "Downloaden",
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "zoomReset": "Weergave herstellen",
+    "fullscreen": "Volledig scherm",
+    "clip": "Conceptanimatie in time-lapse",
+    "favorite": "Aan selectie toevoegen",
+    "favorited": "In uw selectie",
+    "share": "Delen",
+    "shareWhatsapp": "Delen via WhatsApp",
+    "shareLinkedin": "Delen op LinkedIn",
+    "copyLink": "Link kopiëren",
+    "copied": "Link gekopieerd",
+    "inquire": "Aanvraag over dit concept",
+    "prevDesign": "Vorig concept",
+    "nextDesign": "Volgend concept",
+    "backToGallery": "Naar de galerij",
+    "imageOf": "Afbeelding {current} van {total}",
+    "description": "Beschrijving",
+    "placeholderImage": "Afbeelding volgt",
+    "conceptNote": "Conceptontwerp. De weergave is een visualisatie en toont geen gebouwde stand.",
+    "imageAlt": "{title}: {label} (visualisatie)",
+    "planAlt": "{title}: {label} (plattegrond van het concept)",
+    "clipAlt": "{title}: conceptanimatie van de opbouw (visualisatie)"
+  },
+  "process": {
+    "eyebrow": "Samenwerking",
+    "title": "Zes stappen van briefing tot overdracht.",
+    "steps": {
+      "briefing": {
+        "title": "Briefing & omvang",
+        "text": "Taak, termijn, beschikbare documenten en gewenste resultaten. We leggen vast wat ik lever, hoeveel correctierondes zijn voorzien en wie goedkeurt.",
+        "alt": "Schetsanimatie bij de briefing (visualisatie)"
+      },
+      "concept": {
+        "title": "Concept & afstemming",
+        "text": "Ruimte-idee, visualisaties, plattegrond en aanzichten. U ziet de ruimte vanuit meerdere perspectieven en beslist rustig voordat de technische uitwerking begint.",
+        "alt": "Conceptanimatie van het ontwerp (visualisatie)"
+      },
+      "planning": {
+        "title": "Technische planning",
+        "text": "Gemaatvoerde detail- en productietekeningen, onderdelenlijsten en interfacedocumenten. Gekwalificeerde vakpartners verzorgen constructieberekeningen, vergunningen en elektraplanning; ik stem de interfaces af.",
+        "alt": "Animatie van de technische planning (visualisatie)"
+      },
+      "production": {
+        "title": "Werkvoorbereiding & productiedocumenten",
+        "text": "Overzichten van materialen en hoeveelheden en documenten per productiepartner, plus inkoop- en tijdsplanning. Er wordt geproduceerd bij het betreffende vakbedrijf, niet bij mij.",
+        "alt": "Animatie van CNC-bewerking als voorbeeld van productiedata (visualisatie); de productie wordt uitgevoerd door de vakpartner"
+      },
+      "logistics": {
+        "title": "Afstemming van disciplines",
+        "text": "Planningsoverzicht, offertevergelijkingen en afstemming tussen de disciplines, zodat transport, opbouw en techniek op elkaar aansluiten. Uw vakpartners voeren het werk uit.",
+        "alt": "Time-lapse-conceptanimatie van de opbouw (visualisatie)"
+      },
+      "onsite": {
+        "title": "Goedkeuringen, wijzigingen & overdracht",
+        "text": "Goedkeuringen en wijzigingen documenteer ik traceerbaar en aan het eind draag ik alle documenten aan u over. Afspraken ter plaatse zijn mogelijk als ze vooraf zijn afgesproken.",
+        "alt": "Conceptanimatie van de overdracht (visualisatie)"
+      }
+    },
+    "sketch": "Schets"
+  },
+  "world": {
+    "eyebrow": "Beurskalender",
+    "title": "Beurzen in Duitsland en Europa.",
+    "lead": "Een overzicht van beursdata in Duitsland en Europa als oriëntatie voor uw projectplanning. Kies een stad en de globe toont de locatie en de hemelsbrede afstand vanaf Leipzig. Een datum in de kalender zegt niets over opdrachten of deelname van CL Projektwerk.",
+    "placeholderNote": "Voorbeeldlocaties",
+    "listLabel": "Beurssteden",
+    "drag": "Globe draaien",
+    "base": "Vestiging",
+    "regions": {
+      "de": "Duitsland",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Beurskalender",
+      "title": "De volgende beurs in elke stad.",
+      "lead": "Voor elke stad verschijnt de eerstvolgende toonaangevende beurs in chronologische volgorde, zoals op een vertrekbord. Scroll door het bord: de globe volgt uw selectie.",
+      "summary": "{cities} beurssteden · {km} km hemelsbreed langs de route vanaf Leipzig",
+      "boardLabel": "Beurskalender: volgende beurs per stad",
+      "cols": {
+        "date": "Datum",
+        "dest": "Bestemming",
+        "fair": "Beurs",
+        "status": "Status"
+      },
+      "running": "Loopt nu",
+      "today": "Vandaag",
+      "tomorrow": "Morgen",
+      "inDays": "over {days} dagen",
+      "tba": "Datum volgt",
+      "past": "Afgelopen",
+      "tbaNote": "Voor deze stad is momenteel geen bevestigde datum van een toonaangevende beurs opgeslagen.",
+      "dateTbc": "Datum niet bevestigd",
+      "fairName": "Beurs",
+      "venue": "Beursterrein",
+      "route": "Hemelsbreed",
+      "homeBase": "Mijn vestiging",
+      "km": "{km} km",
+      "localTime": "Lokale tijd",
+      "website": "Website van de organisator",
+      "inquire": "Project voor {fair} bespreken",
+      "tourPause": "Rondreis pauzeren",
+      "tourPlay": "Rondreis hervatten",
+      "note": "Data volgens de organisatoren, gecontroleerd op {date}. Wijzigingen zijn mogelijk; de websites van de organisatoren zijn bepalend. Beursnamen zijn merken van hun eigenaren. De data zeggen niets over opdrachten of deelname van CL Projektwerk.",
+      "search": "Beurs of stad zoeken",
+      "searchPlaceholder": "bijv. Düsseldorf of bouw",
+      "filterCountry": "Land",
+      "filterCity": "Stad",
+      "filterPeriod": "Periode",
+      "filterSector": "Branche",
+      "filterAll": "Alle",
+      "periodUpcoming": "Komende",
+      "periodRunning": "Lopende",
+      "periodPast": "Afgelopen",
+      "resultCount": "{count, plural, =0 {Geen beurzen} =1 {1 beurs} other {# beurzen}}",
+      "empty": "Geen beurs past bij uw zoekopdracht en de gekozen filters.",
+      "reset": "Zoekopdracht en filters wissen",
+      "source": "Bron",
+      "checkedOn": "Gecontroleerd op {date}"
+    },
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "zoomReset": "Weergave herstellen",
+    "zoomEurope": "Europaweergave",
+    "zoomCountry": "Land kiezen",
+    "zoomHint": "Ctrl + muiswiel of dubbelklik: zoomen · stad aanklikken: hemelsbrede afstand",
+    "zoomHintTouch": "Met twee vingers zoomen · stad aantikken: hemelsbrede afstand",
+    "zoomHintKeys": "Pijltjestoetsen verschuiven de weergave, plus en min zoomen.",
+    "scrollHint": "Normaal scrollen beweegt alleen de pagina. Houd Ctrl ingedrukt om te zoomen.",
+    "distance": {
+      "title": "Hemelsbrede afstand tussen twee steden",
+      "from": "Van",
+      "to": "Naar",
+      "pick": "Stad kiezen",
+      "swap": "Steden omwisselen",
+      "result": "Hemelsbreed: {km} km",
+      "resultFromTo": "Hemelsbreed {from} – {to}: {km} km",
+      "note": "Berekend als grootcirkelafstand op de aardbol. Dit is geen wegafstand en zegt niets over de reistijd.",
+      "rings": "Afstandsringen rond {city}: {km} km",
+      "scale": "Schaal: {km} km",
+      "listTitle": "Steden en hemelsbrede afstand vanaf {city}",
+      "listCity": "Stad",
+      "listCountry": "Land",
+      "listKm": "Hemelsbreed",
+      "noWebglTitle": "3D-weergave niet beschikbaar",
+      "noWebglText": "Uw apparaat toont de 3D-globe niet. De tabel bevat dezelfde steden, beurzen en afstanden.",
+      "reducedMotion": "Beperkte beweging is actief: er zijn geen automatische vluchten of animaties."
+    },
+    "origin": {
+      "use": "Mijn locatie als startpunt gebruiken",
+      "locating": "Locatie wordt bepaald …",
+      "active": "Startpunt: {city} – de beursstad het dichtst bij u",
+      "reset": "Terug naar {city}",
+      "denied": "Toegang tot de locatie is niet verleend. Het startpunt blijft {city}.",
+      "far": "Uw locatie ligt buiten het kaartgebied. Het startpunt blijft {city}.",
+      "note": "Uw locatie wordt alleen in uw browser verwerkt en niet verzonden."
+    }
+  },
+  "led": {
+    "eyebrow": "Schermoppervlakken in de planning",
+    "title": "Mediavlakken hebben exacte maten nodig.",
+    "lead": "Ledwanden en monitoren horen bij veel beursruimtes. Ik neem ze met maten, beeldverhoudingen en aansluitgegevens op in uw documenten. De clips tonen gangbare formaten; het is gelicentieerd voorbeeldmateriaal en geen eigen projecten.",
+    "placeholder": "Voorbeeldclip {n}",
+    "placeholderNote": "Voorbeeldmateriaal",
+    "caption": "Voorbeeldclip (stocklicentie): {title}, {format}. Geen project van CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "Over mij",
+    "name": "Christof Laufersweiler",
+    "role": "Planning en projectsturing voor beursstands, merkruimtes en interieurbouw",
+    "text": "Ik ben Christof Laufersweiler en werk al meer dan 20 jaar in de beurs- en evenementenwereld. Ik ben opgeleid als technisch tekenaar houttechniek; daarna kwamen projectleiding in de standbouw, de directie in loondienst van een standbouwbedrijf en een IHK-certificaat als projectleider beurzen en evenementen erbij. Met CL Projektwerk bied ik in Leipzig externe plannings- en projectcapaciteit voor standbouwers, bureaus, interieurbouwbedrijven en exposanten die extra handen met vakkennis nodig hebben.",
+    "close": "De beslissingen blijven bij u. Ik zorg voor documenten, overzicht en afstemming.",
+    "photoAlt": "Portret van Christof Laufersweiler, oprichter van CL Projektwerk",
+    "cta": "Project met mij bespreken",
+    "career": "Loopbaan",
+    "projects": "Projectervaring uit eerder werk",
+    "projectsNote": "Deze voorbeelden komen uit mijn eerdere beroepsmatige werk als verantwoordelijk projectleider. Het zijn geen projecten van CL Projektwerk en de genoemde bedrijven zijn geen klanten van CL Projektwerk.",
+    "tools": "Software",
+    "languages": "Talen"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ jaar",
+        "label": "ervaring in de beurs- en evenementenwereld"
+      },
+      {
+        "value": "1.200 m²",
+        "label": "grootste begeleide standoppervlakte uit eerder werk (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certificaat projectleider beurzen en evenementen (IHK Hannover, 11-12-2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Projectleiding",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Directeur (in loondienst)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Projectleiding beursstandbouw",
+        "org": "MEPLAN GmbH, München"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certificaat projectleider beurzen en evenementen (cursus, 160 lesuren)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Opleiding technisch tekenaar, houttechniek",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1.200 m²",
+        "note": "Meerdere exposanten en voertuigen, grootformaat ledschermen"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hannover",
+        "size": "1.200 m²",
+        "note": "Ledwand van 20 m, technisch gecoördineerd"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, München",
+        "size": "360 m²",
+        "note": "Opgehangen constructie van gelamineerd hout, rimpelvrij gespannen textielgrafiek"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Open standconcept met ledwand"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Duits (moedertaal)",
+      "Engels (zakelijk vloeiend)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Project bespreken",
+    "title": "Vertel me over uw project.",
+    "lead": "Vier korte stappen, weinig verplichte velden. Opgeslagen concepten uit de galerij voeg ik op verzoek toe.",
+    "response": "Ik reageer doorgaans binnen {time}.",
+    "steps": {
+      "fair": "Project",
+      "stand": "Omvang",
+      "services": "Dienst",
+      "contact": "Contact"
+    },
+    "stepOf": "Stap {current} van {total}",
+    "fields": {
+      "fair": "Beurs, evenement of project",
+      "fairPlaceholder": "bijv. beursdeelname, merkruimte of interieurbouw",
+      "projectType": "Soort project",
+      "projectTypes": {
+        "fair": "Beursstand",
+        "brand": "Merkruimte",
+        "interior": "Interieurbouw",
+        "event": "Evenement",
+        "open": "Nog open"
+      },
+      "city": "Plaats",
+      "cityPlaceholder": "bijv. Leipzig",
+      "dateFrom": "Datum van",
+      "dateTo": "tot",
+      "dateUnknown": "Datum staat nog niet vast",
+      "size": "Grootte van de ruimte (optioneel)",
+      "width": "Breedte (m)",
+      "depth": "Diepte (m)",
+      "area": "Oppervlakte",
+      "standType": "Standtype",
+      "standTypeUnknown": "Nog open",
+      "floors": "Verdiepingen",
+      "documents": "Beschikbare documenten",
+      "documentOptions": {
+        "briefing": "Briefing of programma van eisen",
+        "cad": "CAD- of planningsdata",
+        "sketches": "Schetsen of moodboards",
+        "renders": "Visualisaties",
+        "inventory": "Voorraadlijsten",
+        "none": "Nog geen"
+      },
+      "services": "Benodigde planningsdienst",
+      "scope": "Gewenste omvang",
+      "scopes": {
+        "single": "Losse dienst",
+        "project": "Compleet project",
+        "quota": "Doorlopend maandcontingent",
+        "open": "Nog open"
+      },
+      "budget": "Totaalbudget van het project (optioneel)",
+      "budgets": {
+        "a": "tot € 25.000",
+        "b": "€ 25.000 tot € 75.000",
+        "c": "€ 75.000 tot € 150.000",
+        "d": "meer dan € 150.000",
+        "open": "Liever niet vermelden"
+      },
+      "name": "Naam",
+      "company": "Bedrijf",
+      "email": "E-mail",
+      "phone": "Telefoon (optioneel)",
+      "message": "Bericht",
+      "messagePlaceholder": "Wat moet er gepland worden? Zijn er eisen, een eerdere opbouw of bijzondere technische vereisten?",
+      "favorites": "Bijgevoegde concepten",
+      "favoritesEmpty": "Geen concepten opgeslagen. In de galerij kunt u concepten met het hartje verzamelen.",
+      "consent": "Ik ga ermee akkoord dat mijn gegevens worden opgeslagen en gebruikt voor de afhandeling van mijn aanvraag. Details in de <privacy>privacyverklaring</privacy>.",
+      "privacy": "Privacyverklaring",
+      "required": "Verplicht"
+    },
+    "submit": "Briefing sturen",
+    "sending": "Wordt verzonden",
+    "errors": {
+      "required": "Vul dit in.",
+      "email": "Voer een geldig e-mailadres in.",
+      "consent": "Ga akkoord met de verwerking, zodat ik kan antwoorden.",
+      "dates": "Het einde ligt vóór het begin.",
+      "server": "Verzenden is mislukt. Probeer het opnieuw of schrijf naar {email}.",
+      "rate": "Te veel aanvragen in korte tijd. Probeer het over een paar minuten opnieuw."
+    },
+    "whatsapp": "Schrijf via WhatsApp",
+    "callback": "Terugbelverzoek",
+    "callbackTitle": "Terugbelverzoek",
+    "callbackTime": "Wanneer komt het u uit?",
+    "callbackTimePlaceholder": "bijv. morgen vanaf 14 uur",
+    "callbackSubmit": "Terugbelverzoek",
+    "callbackDone": "Dank u. Uw terugbelverzoek is verzonden. Ik probeer u op het opgegeven tijdstip te bereiken.",
+    "direct": "Direct",
+    "notConfigured": "Nog niet ingevuld",
+    "prefilled": "Uw selectie: {list}",
+    "emailDraft": {
+      "prepare": "E-mail voorbereiden",
+      "title": "E-mailconcept klaar",
+      "notice": "Je gegevens worden als e-mailconcept voorbereid. Controleer en verstuur het zelf in je e-mailprogramma. Er is nog geen bericht verstuurd.",
+      "open": "E-mailprogramma openen",
+      "copy": "Tekst kopiëren",
+      "copied": "Tekst gekopieerd",
+      "fallback": "Geen e-mailprogramma ingesteld of ontbreken er gegevens? Kopieer de volledige tekst hieronder naar je webmail."
+    }
+  },
+  "thanks": {
+    "title": "Dank voor uw briefing.",
+    "text": "Uw aanvraag is verzonden. Ik reageer doorgaans binnen {time} met een eerste inschatting. Er wordt geen automatische bevestiging per e-mail verstuurd. Opgeslagen concepten zijn meegestuurd.",
+    "back": "Naar de startpagina",
+    "designs": "Meer concepten bekijken"
+  },
+  "selection": {
+    "title": "Mijn selectie",
+    "lead": "Uw opgeslagen concepten. Met één klik meesturen met een aanvraag.",
+    "count": "{count, plural, =0 {Nog niets opgeslagen} =1 {1 concept opgeslagen} other {# concepten opgeslagen}}",
+    "empty": "Nog niets opgeslagen. Tik in de galerij op het hartje om concepten te verzamelen.",
+    "toGallery": "Naar de galerij",
+    "inquire": "Selectie met aanvraag versturen",
+    "clear": "Alles verwijderen",
+    "remove": "Verwijderen"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Colofon",
+    "privacy": "Privacy",
+    "cookies": "Cookie-instellingen",
+    "note": "Alle renderings en animaties op deze website zijn visualisaties van ontwerpconcepten. Ze tonen geen gebouwde beursstands.",
+    "top": "Naar boven",
+    "languages": "Talen",
+    "tagline": "Extern plannings- en projectbureau voor beursstands, merkruimtes en interieurbouw"
+  },
+  "cookies": {
+    "title": "Uw privacy",
+    "text": "Deze website slaat alleen op wat technisch nodig is, bijvoorbeeld uw opgeslagen concepten, de gekozen layout en deze keuze. Statistiek en externe diensten blijven uit totdat u akkoord gaat.",
+    "necessary": "Alleen noodzakelijke",
+    "settings": "Instellingen",
+    "acceptAll": "Alles toestaan",
+    "save": "Keuze opslaan",
+    "categories": {
+      "necessary": "Noodzakelijk",
+      "necessaryText": "Taal, opgeslagen concepten, layout, radio-instellingen en deze keuze. Altijd actief.",
+      "stats": "Statistiek",
+      "statsText": "Momenteel niet in gebruik.",
+      "media": "Externe media",
+      "mediaText": "Momenteel niet in gebruik. De radio maakt pas verbinding als u hem zelf start."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Colofon",
+    "privacyTitle": "Privacyverklaring",
+    "placeholder": "Juridische tekst volgt.",
+    "notice": "De Duitse versie van deze tekst is bepalend.",
+    "updated": "Stand: {date}"
+  },
+  "notFound": {
+    "title": "Deze pagina bestaat niet.",
+    "text": "Misschien vindt u in de conceptgalerij wat u zoekt.",
+    "home": "Naar de startpagina",
+    "designs": "Naar de galerij"
+  },
+  "layouts": {
+    "label": "Layout kiezen",
+    "toggle": "Layout",
+    "short": "LAYOUT",
+    "film": "Hero: conceptanimatie {n}",
+    "active": "actief",
+    "preview": "Voorbeeld: {name}",
+    "hint": "Pijltjestoetsen wisselen de layout, Escape sluit de keuze.",
+    "saved": "Uw keuze wordt op dit apparaat opgeslagen.",
+    "monoShowColour": "Originele kleuren tonen",
+    "monoHideColour": "Zwart-wit tonen",
+    "items": {
+      "studio": "Antraciet en oranje, heldere lijnen, precies als een planningsatelier",
+      "aurora": "Donkere vlakken met mint en violet, serif-letter, zachte lichtbewegingen",
+      "tide": "Petrol en koraal, expressieve letter, vloeiende golven",
+      "mono": "Strikt zwart en wit, sterk contrast, geometrische vormen"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "ZENDER KIEZEN",
+    "close": "Speler inklappen",
+    "stations": "Zenders",
+    "play": "Afspelen starten",
+    "pause": "Afspelen pauzeren",
+    "mute": "Dempen",
+    "unmute": "Geluid aan",
+    "volume": "Volume",
+    "off": "uit",
+    "hint": "Live webradio. Het geluid start pas na uw klik en de regelaar geldt alleen voor deze speler. Bij het starten maakt uw browser verbinding met de zender.",
+    "noTrack": "Geen titelinformatie beschikbaar",
+    "levelNote": "De niveau-indicator is puur een animatie en toont niet het echte audioniveau.",
+    "state": {
+      "ready": "Gereed",
+      "connecting": "Verbinding maken …",
+      "live": "Live",
+      "buffering": "Bufferen …",
+      "stalled": "Verbinding haperen …",
+      "paused": "Gepauzeerd",
+      "error": "Zender niet bereikbaar",
+      "blocked": "Start geblokkeerd door de browser. Klik opnieuw op afspelen."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Ontwerp en presentatie",
+    "title": "Grafiek die in de ruimte past.",
+    "text": "Bij een ontwerp horen beelden die beslissingen mogelijk maken en data die zonder nabewerking verder te gebruiken is. Ik maak visualisaties en drukklare grafische data, afgestemd op maten en constructie van de ruimte en op uw huisstijl. Omvang en aantal correctierondes worden vooraf afgesproken. Het drukken gebeurt bij een drukpartner die u of, op verzoek, ik inschakel.",
+    "points": [
+      {
+        "title": "Visualisaties voor de afstemming",
+        "text": "Perspectieven, plattegrond en aanzichten maken het concept begrijpelijk voor u en uw klanten."
+      },
+      {
+        "title": "Drukdata met alle gegevens",
+        "text": "Afloop, kleurprofiel, maten en bestandsformaat zijn voor uw drukpartner voorbereid."
+      },
+      {
+        "title": "Afgestemd op de constructie",
+        "text": "Grafische vlakken worden getoetst aan de maten van wanden en onderdelen uit de technische planning."
+      },
+      {
+        "title": "Afgesproken correctierondes",
+        "text": "We leggen vooraf vast hoeveel correctierondes zijn inbegrepen. Extra rondes zijn een aanvullende dienst."
+      },
+      {
+        "title": "Bestanden met versiebeheer",
+        "text": "Elke versie heeft een duidelijke status, zodat alleen goedgekeurde data naar de drukker gaat."
+      },
+      {
+        "title": "Overdracht aan uw drukpartner",
+        "text": "Ik lever de data, het vakbedrijf drukt en produceert."
+      }
+    ],
+    "close": "Ontwerp en data van mij, productie bij het vakbedrijf: zodat de ruimte eruitziet zoals ze is goedgekeurd.",
+    "videoLabel": "Animatie: drukdata op een monitor en grootformaatdruk van een beursgrafiek (visualisatie)"
+  },
+  "drops": {
+    "rule": "Elke ochtend om 5:00 uur een nieuw concept",
+    "today": "Nieuw vandaag",
+    "next": "Volgend concept over",
+    "soon": "Er is een nieuw concept zichtbaar.",
+    "reload": "Opnieuw laden",
+    "complete": "Alle {total} concepten zijn zichtbaar",
+    "count": "{released} van {total} zichtbaar"
+  },
+  "error": {
+    "title": "Er is iets misgegaan.",
+    "text": "De pagina kon niet volledig worden geladen. Probeer het opnieuw.",
+    "retry": "Opnieuw proberen",
+    "home": "Naar de startpagina"
+  },
+  "seo": {
+    "eyebrow": "Technische beursplanning",
+    "title": "Technische planning, werkvoorbereiding en projectsturing voor beursstands en interieurbouw.",
+    "intro": "CL Projektwerk is een extern plannings- en projectbureau in Leipzig. Ik ondersteun standbouwers, bureaus, interieurbouwbedrijven en middelgrote exposanten bij de planning van beursstands: met gemaatvoerde productiedocumenten, werkvoorbereiding, externe projectsturing, concepten en hergebruikplanning. Vakpartners voeren uit; ik lever planning en afstemming.",
+    "blocks": [
+      {
+        "title": "Technische beursplanning",
+        "text": "Uit de briefing ontstaan gemaatvoerde detail- en productietekeningen, onderdelenlijsten en interfacedocumenten. Uw productiepartners kunnen ermee werken, zonder dat uw team elke tekening zelf hoeft te maken."
+      },
+      {
+        "title": "Werkvoorbereiding voor beursstands en merkruimtes",
+        "text": "Overzichten van materialen en hoeveelheden, documenten per productiepartner en inkoop- en tijdsplanning maken van tekeningen een proces dat te organiseren is."
+      },
+      {
+        "title": "Externe projectsturing",
+        "text": "Budget- en planningsoverzichten, offertevergelijkingen, afstemming van disciplines en gedocumenteerde goedkeuringen scheppen overzicht, vooral als meerdere projecten tegelijk lopen."
+      },
+      {
+        "title": "Concept, presentatie en hergebruik",
+        "text": "Stand- en ruimteconcepten, visualisaties en drukklare afbeeldingen helpen bij de afstemming. De hergebruikplanning inventariseert bestaande onderdelen en plant varianten voor nieuwe toepassingen."
+      }
+    ],
+    "faqTitle": "Veelgestelde vragen",
+    "faq": [
+      {
+        "q": "Wat kost de samenwerking?",
+        "a": "Dat hangt af van omvang, resultaten en termijnen. Na een korte briefing ontvangt u een individuele offerte voor het project of voor een maandcontingent."
+      },
+      {
+        "q": "Wanneer moet ik contact opnemen?",
+        "a": "Het liefst zodra taak en termijn vaststaan, omdat mijn maandelijkse planningscapaciteit beperkt is. Aanvragen op korte termijn beoordeel ik aan de hand van mijn actuele werkdruk."
+      },
+      {
+        "q": "Kan ik ook één enkele dienst boeken?",
+        "a": "Ja. Technische planning, werkvoorbereiding, projectsturing, ontwerp en presentatie of hergebruikplanning zijn los te boeken."
+      },
+      {
+        "q": "Produceert en monteert u ook?",
+        "a": "Nee. Gekwalificeerde vakpartners verzorgen productie, transport, montage, constructieberekeningen, vergunningen en elektrawerk. Grotere opdrachten geeft u doorgaans rechtstreeks; ik plan en coördineer."
+      },
+      {
+        "q": "Zijn afspraken ter plaatse of reizen mogelijk?",
+        "a": "De planning gebeurt voornamelijk vanuit Leipzig. Afspraken ter plaatse en reizen stemmen we vooraf af; aanvullende diensten worden apart overeengekomen."
+      },
+      {
+        "q": "Biedt u webdesign of automatisering aan?",
+        "a": "Dat hoort niet bij mijn kerndiensten. Mijn focus ligt op planning en sturing van projecten voor beursstands, merkruimtes en interieurbouw."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Taal kiezen",
+    "hint": "Slepen, vegen of draaien met de pijltjestoetsen",
+    "current": "actueel",
+    "prev": "Vorige taal",
+    "next": "Volgende taal",
+    "close": "Sluiten"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Extern plannings- en projectbureau voor beursstands, merkruimtes en interieurbouw",
+    "claim": "Planning die op de vloer werkt.",
+    "visualisationNote": "Visualisatie"
+  },
+  "structured": {
+    "serviceCatalog": "Diensten",
+    "services": [
+      "Technische planning: gemaatvoerde detail- en productietekeningen, onderdelenlijsten, interfacedocumenten",
+      "Werkvoorbereiding: overzichten van materialen en hoeveelheden, productiedocumenten, inkoop- en tijdsplanning",
+      "Projectsturing: budget- en planningsoverzichten, offertevergelijkingen, afstemming van disciplines, wijzigingsdocumentatie",
+      "Ontwerp en presentatie: stand- en ruimteconcepten, visualisaties, drukklare afbeeldingen",
+      "Hergebruikplanning: inventarisatie van bestaande onderdelen, variantenplanning, materiaal- en opslaginformatie"
+    ],
+    "keywords": [
+      "technische beursplanning",
+      "beursstandplanning",
+      "externe projectsturing",
+      "werkvoorbereiding standbouw",
+      "planningsbureau Leipzig",
+      "merkruimtes",
+      "interieurbouw",
+      "hergebruikplanning"
+    ],
+    "genre": "Beursstandconcept",
+    "videoSuffix": "Conceptanimatie in time-lapse"
+  },
+  "ogImage": {
+    "film": "▶ Conceptanimatie"
+  }
+}

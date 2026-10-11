@@ -1,0 +1,894 @@
+{
+  "meta": {
+    "title": "Techniczne planowanie targów i sterowanie projektem | {brand}",
+    "description": "Zewnętrzne biuro planowania i projektów dla zabudów targowych, przestrzeni marek i wykończeń wnętrz: planowanie techniczne, przygotowanie pracy i sterowanie projektem.",
+    "ogTitle": "{brand}: moce planistyczne dla zabudów targowych, przestrzeni marek i wykończeń wnętrz",
+    "ogDescription": "Wymiarowana dokumentacja wykonawcza, przygotowanie pracy i sterowanie projektem dla firm zabudowy, agencji, firm wykończeniowych i wystawców. Osoba kontaktowa: Christof Laufersweiler, Lipsk.",
+    "socialDescription": "Dodatkowe moce planistyczne i projektowe dla zabudów targowych, przestrzeni marek i wykończeń wnętrz: projekt po projekcie, z jasno uzgodnionym zakresem.",
+    "designsTitle": "Koncepcje stoisk, codziennie nowa",
+    "designsDescription": "Koncepcje stoisk z wizualizacjami, rzutami i widokami, od {min} do {max}. Każdego ranka o 5:00 dochodzi kolejna koncepcja.",
+    "designTitle": "{number} {title} · Koncepcja stoiska",
+    "designDescription": "Koncepcja {title}: {size}{floors}. {description} Wizualizacja koncepcji, nie zbudowane stoisko.",
+    "inquiryTitle": "Omówmy Twój projekt",
+    "inquiryDescription": "Prześlij brief: targi lub projekt, termin, dostępne dokumenty i potrzebną usługę planistyczną. Odpowiem wstępną oceną.",
+    "selectionTitle": "Mój wybór",
+    "selectionDescription": "Zapisane koncepcje stoisk, które możesz dołączyć do zapytania.",
+    "imprintDescription": "Nota prawna i dane dostawcy usług.",
+    "privacyDescription": "Informacje o przetwarzaniu danych osobowych na tej stronie."
+  },
+  "common": {
+    "skip": "Przejdź do treści",
+    "visualisation": "Wizualizacja",
+    "close": "Zamknij",
+    "back": "Wstecz",
+    "next": "Dalej",
+    "prev": "Wstecz",
+    "open": "Otwórz",
+    "view": "Zobacz",
+    "play": "Odtwórz",
+    "pause": "Wstrzymaj",
+    "loading": "Ładowanie",
+    "placeholder": "Obraz wkrótce",
+    "later": "wkrótce",
+    "menu": "Menu",
+    "language": "Język",
+    "drag": "Przeciągnij",
+    "retry": "Spróbuj ponownie",
+    "noWebgl": "To urządzenie lub przeglądarka nie obsługuje widoku 3D. Lista miast i odległości znajduje się poniżej."
+  },
+  "nav": {
+    "services": "Usługi",
+    "designs": "Koncepcje",
+    "process": "Współpraca",
+    "graphics": "Prezentacja",
+    "world": "Kalendarz targów",
+    "about": "O mnie",
+    "contact": "Kontakt",
+    "cta": "Omówmy projekt",
+    "selection": "Mój wybór",
+    "home": "Strona główna",
+    "main": "Nawigacja główna"
+  },
+  "hero": {
+    "eyebrow": "Zewnętrzne biuro planowania i projektów · Zabudowy targowe, przestrzenie marek, wykończenia wnętrz",
+    "title": "Planowanie, które działa na hali.",
+    "lead": "Wspieram firmy zabudowy targowej, agencje, firmy wykończeniowe i wystawców planowaniem technicznym, przygotowaniem pracy i sterowaniem projektem: projekt po projekcie, z jasno uzgodnionym zakresem i dokumentami, które można prześledzić.",
+    "cta": "Zapytaj o moce planistyczne",
+    "secondary": "Zobacz koncepcje",
+    "scroll": "Przewijaj i obserwuj, jak powstaje wizualizacja",
+    "progress": "Montaż (wizualizacja)",
+    "done": "Gotowa przestrzeń",
+    "design": "Koncepcja 001 · Timber Campus"
+  },
+  "films": {
+    "eyebrow": "Koncepcje w przyspieszeniu",
+    "title": "5 koncepcji.",
+    "lead": "Pięć animacji koncepcyjnych pokazuje, jak projekt rośnie od pustej podłogi hali do gotowej przestrzeni. To wizualizacje, nie nagrania zbudowanych stoisk.",
+    "cta": "Odtwórz animację",
+    "badge": "Animacja koncepcyjna",
+    "sliderLabel": "Suwak z pięcioma animacjami koncepcyjnymi. Strzałki przewijają, Enter otwiera.",
+    "explain": "Animacja koncepcji w przyspieszeniu. Pokazuje, jak mogłaby być zmontowana planowana przestrzeń, i nie jest dowodem zrealizowanego stoiska."
+  },
+  "tagline": {
+    "text": "Każda przestrzeń zaczyna się od dokumentów, na których mogą polegać wszyscy uczestnicy. Takie dokumenty przygotowuję."
+  },
+  "services": {
+    "eyebrow": "Usługi",
+    "title": "Więcej mocy planistycznych, gdy równolegle trwa kilka projektów.",
+    "lead": "Firmy zabudowy targowej, agencje i firmy wykończeniowe dochodzą do granic przy równoległych projektach, brakach kadrowych i technicznie wymagających zadaniach. Jako zewnętrzny planista i osoba sterująca projektem przejmuję jasno wydzielone części Twojego projektu, z ponad 20-letnim doświadczeniem w branży targowej i eventowej. Produkcję, transport, montaż, statykę, pozwolenia i prace elektryczne wykonują wykwalifikowani partnerzy.",
+    "trust": [
+      {
+        "title": "Jedna osoba kontaktowa",
+        "text": "do planowania, dokumentów i uzgodnień: rozmawiasz bezpośrednio ze mną, bez pośredników."
+      },
+      {
+        "title": "Ponad 20 lat doświadczenia",
+        "text": "w branży targowej i eventowej, z wykształceniem technika rysownika w zakresie technologii drewna i certyfikatem kierownika projektów targowych i eventowych (IHK)."
+      },
+      {
+        "title": "Jasno określony zakres",
+        "text": "Zakres, rundy poprawek i terminy uzgadniam z góry na piśmie. Dodatkowe prace i podróże wyłącznie po uzgodnieniu."
+      }
+    ],
+    "package": {
+      "badge": "Współpraca",
+      "title": "Projektowo lub w miesięcznym kontyngencie.",
+      "subtitle": "Moce planistyczne w wymiarze, którego Twój projekt akurat potrzebuje.",
+      "text": "Przesyłasz mi brief, ja szacuję nakład pracy i proponuję zakres, rezultaty i terminy. Potem pracuję projektowo albo w miesięcznym kontyngencie ze ściśle określonymi godzinami, czasami reakcji i rundami poprawek. Moje moce są ograniczone; przyjmuję tylko projekty, które mogę rzetelnie wykonać.",
+      "cta": "Zapytaj o moce planistyczne",
+      "more": "Jak przebiega projekt",
+      "phases": [
+        {
+          "title": "Brief i zakres",
+          "items": [
+            "Wspólne ustalenie zadania, terminu i dostępnych dokumentów",
+            "Zakres i rezultaty ustalone na piśmie",
+            "Uzgodnione rundy poprawek i etapy akceptacji",
+            "Indywidualna oferta po briefie"
+          ]
+        },
+        {
+          "title": "Planowanie i dokumenty",
+          "items": [
+            "Wymiarowane rysunki szczegółowe i wykonawcze",
+            "Wykazy elementów i dokumenty interfejsów",
+            "Zestawienia materiałów i ilości",
+            "Pliki z wersjami i możliwym do prześledzenia stanem"
+          ]
+        },
+        {
+          "title": "Uzgodnienia i sterowanie",
+          "items": [
+            "Zestawienia budżetu i terminów",
+            "Porównania ofert i planowanie zakupów",
+            "Uzgodnienia branż i partnerów specjalistycznych",
+            "Udokumentowane akceptacje i zmiany"
+          ]
+        },
+        {
+          "title": "Przekazanie i dokumentacja",
+          "items": [
+            "Dokumenty wykonawcze dla poszczególnych partnerów do przekazania",
+            "Dokumentacja zmian i decyzji",
+            "Informacje o zasobach i magazynie do ponownego użycia",
+            "Spotkania na miejscu i podróże po wcześniejszym uzgodnieniu"
+          ]
+        }
+      ]
+    },
+    "network": {
+      "title": "Partnerzy specjalistyczni do wykonania.",
+      "text": "Ja planuję i koordynuję, wykonują wykwalifikowane firmy specjalistyczne. W modelu podstawowym większe zlecenia produkcyjne i montażowe zlecasz bezpośrednio swoim partnerom; na życzenie uzgadniam z nimi szczegóły i przygotowuję ich dokumenty. CL Projektwerk nie jest warsztatem produkcyjnym i nie występuje jako generalny wykonawca finansujący projekty.",
+      "items": [
+        "Wyłącznie produkcja sterowana numerycznie (CNC)",
+        "Stolarka",
+        "Konstrukcje metalowe",
+        "Montaż i zabudowa",
+        "Transport i logistyka",
+        "Statyka i kontrole",
+        "Pozwolenia i odbiory",
+        "Prace elektryczne",
+        "Druk i produkcja grafiki",
+        "Technika medialna i eventowa",
+        "… i inne branże według potrzeb"
+      ]
+    },
+    "single": {
+      "eyebrow": "Do zamówienia osobno",
+      "title": "Dokładnie ta usługa, której Ci brakuje.",
+      "text": "Masz zespół, ale zbyt mało mocy planistycznych? Zamów tylko to, czego potrzebujesz, na przykład rysunki wykonawcze do jednego projektu albo sterowanie terminami udziału w targach."
+    },
+    "items": {
+      "tech": {
+        "title": "Planowanie techniczne",
+        "text": "Na podstawie Twojego briefu przygotowuję wymiarowane rysunki szczegółowe i wykonawcze, wykazy elementów i dokumenty interfejsów. Otrzymujesz dokumenty, z którymi mogą pracować Twoi partnerzy produkcyjni, i oszczędzasz wewnętrzne godziny planowania.",
+        "points": [
+          "Wymiarowane rysunki szczegółowe i wykonawcze",
+          "Wykazy elementów",
+          "Dokumenty interfejsów z branżami i partnerami"
+        ],
+        "task": "Zadanie: przełożyć Twój brief na jednoznaczne dokumenty techniczne.",
+        "result": "Rezultat: rysunki, wykazy i interfejsy w uzgodnionym stanie.",
+        "benefit": "Korzyść: mniej pytań w produkcji i więcej czasu dla Twoich klientów.",
+        "link": "Zobacz przykłady"
+      },
+      "prep": {
+        "title": "Przygotowanie pracy",
+        "text": "Przygotowuję Twój projekt do realizacji: zestawienia materiałów i ilości, dokumenty wykonawcze dla poszczególnych partnerów oraz planowanie zakupów i terminów. Dzięki temu wszyscy wiedzą, co jest potrzebne, kiedy i w jakiej ilości.",
+        "points": [
+          "Zestawienia materiałów i ilości",
+          "Dokumenty wykonawcze dla poszczególnych partnerów",
+          "Planowanie zakupów i terminów"
+        ],
+        "task": "Zadanie: uporządkować materiały, ilości i terminy do realizacji.",
+        "result": "Rezultat: zestawienia i dokumenty skompletowane dla każdego partnera.",
+        "benefit": "Korzyść: mniej braków i niespodzianek terminowych podczas montażu.",
+        "link": "Jak pracuję"
+      },
+      "control": {
+        "title": "Sterowanie projektem",
+        "text": "Utrzymuję przejrzystość budżetu i terminów, porównuję oferty, uzgadniam branże i dokumentuję akceptacje oraz zmiany. Decyzje pozostają po Twojej stronie; przygotowuję je tak, by można je było szybko podjąć.",
+        "points": [
+          "Zestawienia budżetu i terminów",
+          "Porównania ofert i uzgadnianie branż",
+          "Akceptacje i możliwa do prześledzenia dokumentacja zmian"
+        ],
+        "task": "Zadanie: zachować przegląd kosztów, terminów i uzgodnień.",
+        "result": "Rezultat: aktualne zestawienia i udokumentowane decyzje.",
+        "benefit": "Korzyść: odciążenie przy projektach równoległych i jasna możliwość prześledzenia.",
+        "link": "Zobacz współpracę"
+      },
+      "concept": {
+        "title": "Projekt i prezentacja",
+        "text": "Opracowuję koncepcje stoisk i przestrzeni, przygotowuję wizualizacje i grafiki gotowe do druku. Zakres i liczbę rund poprawek uzgadniamy z góry, aby nakład pracy i rezultat były przewidywalne.",
+        "points": [
+          "Koncepcje stoisk i przestrzeni",
+          "Wizualizacje do uzgodnień i prezentacji",
+          "Grafiki gotowe do druku z uzgodnionymi rundami poprawek"
+        ],
+        "task": "Zadanie: pokazać pomysł tak, byś Ty i Twoi klienci mogli podjąć decyzję.",
+        "result": "Rezultat: koncepcja, wizualizacje i dane do druku w uzgodnionym zakresie.",
+        "benefit": "Korzyść: wczesne decyzje na podstawie zrozumiałych obrazów i planów.",
+        "link": "Zobacz koncepcje"
+      },
+      "reuse": {
+        "title": "Planowanie ponownego użycia",
+        "text": "Inwentaryzuję istniejące elementy, planuję warianty do nowych zastosowań i prowadzę informacje o materiałach i magazynie. Dzięki temu możesz celowo wykorzystać to, co już masz, zamiast za każdym razem planować od zera.",
+        "points": [
+          "Inwentaryzacja istniejących elementów",
+          "Planowanie wariantów do nowych zastosowań",
+          "Informacje o materiałach i magazynie"
+        ],
+        "task": "Zadanie: ująć istniejące elementy i uczynić je użytecznymi w nowych zabudowach.",
+        "result": "Rezultat: lista zasobów, warianty i informacje magazynowe.",
+        "benefit": "Korzyść: mniej ponownego planowania i zużycia materiału przy powtarzalnych zabudowach.",
+        "link": "Wyślij zapytanie"
+      }
+    },
+    "inquire": "Zapytaj",
+    "cta": {
+      "title": "Twój następny projekt zaczyna się od briefu.",
+      "text": "Opisz krótko zadanie, termin i dostępne dokumenty. Odpowiem wstępną oceną i kolejnymi krokami. Ofertę otrzymasz indywidualnie po briefie.",
+      "button": "Wyślij brief",
+      "phone": "Wolisz porozmawiać bezpośrednio?"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galeria koncepcji · codziennie nowa",
+    "title": "Codziennie nowa koncepcja.",
+    "lead": "Widocznych jest obecnie {count} z {total} koncepcji stoisk, od {min} do {max}. Każdego ranka o 5:00 dochodzi kolejna. Wszystkie obrazy są wizualizacjami koncepcji. Przeglądaj, filtruj, zapisuj i pytaj bezpośrednio.",
+    "slider": "Suwak",
+    "grid": "Siatka",
+    "viewMode": "Widok",
+    "random": "Losowa koncepcja",
+    "dayPick": "Koncepcja dnia",
+    "hint": "Przeciągaj, przewijaj lub użyj strzałek",
+    "hintTouch": "Przesuń w bok",
+    "count": "{count} z {total}",
+    "empty": "Żadna koncepcja nie pasuje do tych filtrów.",
+    "reset": "Zresetuj filtry",
+    "filters": "Filtry",
+    "listTitle": "Wszystkie widoczne koncepcje w skrócie",
+    "sliderLabel": "Suwak koncepcji. Strzałki przewijają, Enter otwiera.",
+    "current": "Aktualnie: {number} {title}",
+    "loadingSlider": "Ładowanie suwaka",
+    "cardAlt": "Koncepcja {number} {title}: wizualizacja koncepcji stoiska",
+    "filter": {
+      "all": "Wszystkie",
+      "clip": "Z animacją koncepcyjną",
+      "two-storey": "Dwukondygnacyjne",
+      "size-s": "Kompaktowe do 30 m²",
+      "size-m": "Średnie do 150 m²",
+      "size-l": "Duże od 150 m²",
+      "wood": "Drewno",
+      "green": "Zieleń",
+      "metal": "Metal",
+      "light": "Światło",
+      "container": "Kontenery",
+      "product": "Stoiska produktowe",
+      "real-estate": "Targi nieruchomości",
+      "outdoor": "Teren otwarty"
+    }
+  },
+  "detail": {
+    "facts": "Dane",
+    "area": "Powierzchnia",
+    "floors": "Kondygnacje",
+    "standType": "Typ stoiska",
+    "height": "Wysokość",
+    "materials": "Materiały",
+    "colours": "Kolory",
+    "series": "Seria",
+    "floorsValue": "{count, plural, =1 {jednokondygnacyjne} =2 {dwukondygnacyjne} one {# kondygnacja} few {# kondygnacje} many {# kondygnacji} other {# kondygnacji}}",
+    "standTypes": {
+      "corner": "Stoisko narożne",
+      "head": "Stoisko czołowe",
+      "island": "Stoisko wyspowe",
+      "row": "Stoisko rzędowe"
+    },
+    "renderings": "Wizualizacje",
+    "plans": "Plany",
+    "floorplan": "Rzut",
+    "elevation": "Widok z boku",
+    "download": "Pobierz",
+    "zoomIn": "Powiększ",
+    "zoomOut": "Pomniejsz",
+    "zoomReset": "Zresetuj widok",
+    "fullscreen": "Pełny ekran",
+    "clip": "Animacja koncepcyjna w przyspieszeniu",
+    "favorite": "Dodaj do wyboru",
+    "favorited": "W Twoim wyborze",
+    "share": "Udostępnij",
+    "shareWhatsapp": "Udostępnij przez WhatsApp",
+    "shareLinkedin": "Udostępnij na LinkedIn",
+    "copyLink": "Kopiuj link",
+    "copied": "Link skopiowany",
+    "inquire": "Zapytanie o tę koncepcję",
+    "prevDesign": "Poprzednia koncepcja",
+    "nextDesign": "Następna koncepcja",
+    "backToGallery": "Do galerii",
+    "imageOf": "Obraz {current} z {total}",
+    "description": "Opis",
+    "placeholderImage": "Obraz wkrótce",
+    "conceptNote": "Projekt koncepcyjny. Obraz jest wizualizacją i nie przedstawia zbudowanego stoiska.",
+    "imageAlt": "{title}: {label} (wizualizacja)",
+    "planAlt": "{title}: {label} (rysunek planu koncepcji)",
+    "clipAlt": "{title}: animacja koncepcyjna montażu (wizualizacja)"
+  },
+  "process": {
+    "eyebrow": "Współpraca",
+    "title": "Sześć kroków od briefu do przekazania.",
+    "steps": {
+      "briefing": {
+        "title": "Brief i zakres",
+        "text": "Zadanie, termin, dostępne dokumenty i oczekiwane rezultaty. Ustalamy, co dostarczam, ile rund poprawek przewidziano i kto akceptuje.",
+        "alt": "Animacja szkiców do briefu (wizualizacja)"
+      },
+      "concept": {
+        "title": "Koncepcja i uzgodnienia",
+        "text": "Idea przestrzeni, wizualizacje, rzut i widoki. Widzisz przestrzeń z kilku perspektyw i decydujesz bez pośpiechu, zanim zaczną się szczegóły techniczne.",
+        "alt": "Animacja koncepcyjna projektu (wizualizacja)"
+      },
+      "planning": {
+        "title": "Planowanie techniczne",
+        "text": "Wymiarowane rysunki szczegółowe i wykonawcze, wykazy elementów i dokumenty interfejsów. Statykę, pozwolenia i projekt elektryczny zapewniają wykwalifikowani partnerzy; ja uzgadniam interfejsy.",
+        "alt": "Animacja planowania technicznego (wizualizacja)"
+      },
+      "production": {
+        "title": "Przygotowanie pracy i dokumenty wykonawcze",
+        "text": "Zestawienia materiałów i ilości oraz dokumenty dla każdego partnera produkcyjnego, a do tego planowanie zakupów i terminów. Produkcja odbywa się w firmie specjalistycznej, nie u mnie.",
+        "alt": "Animacja obróbki CNC jako przykład danych wykonawczych (wizualizacja); produkcję wykonuje partner specjalistyczny"
+      },
+      "logistics": {
+        "title": "Uzgadnianie branż",
+        "text": "Przegląd terminów, porównania ofert i uzgodnienia między branżami, aby transport, montaż i technika do siebie pasowały. Pracę wykonują Twoi partnerzy specjalistyczni.",
+        "alt": "Animacja koncepcyjna montażu w przyspieszeniu (wizualizacja)"
+      },
+      "onsite": {
+        "title": "Akceptacje, zmiany i przekazanie",
+        "text": "Akceptacje i zmiany dokumentuję w sposób możliwy do prześledzenia, a na końcu przekazuję Ci wszystkie dokumenty. Spotkania na miejscu są możliwe, jeśli uzgodniono je wcześniej.",
+        "alt": "Animacja koncepcyjna przekazania (wizualizacja)"
+      }
+    },
+    "sketch": "Szkic"
+  },
+  "world": {
+    "eyebrow": "Kalendarz targów",
+    "title": "Targi w Niemczech i Europie.",
+    "lead": "Przegląd terminów targów w Niemczech i Europie jako orientacja do planowania Twojego projektu. Wybierz miasto, a globus pokaże miejsce i odległość w linii prostej od Lipska. Termin w kalendarzu nie mówi nic o zleceniach ani udziale CL Projektwerk.",
+    "placeholderNote": "Przykładowe lokalizacje",
+    "listLabel": "Miasta targowe",
+    "drag": "Obracaj globus",
+    "base": "Siedziba",
+    "regions": {
+      "de": "Niemcy",
+      "eu": "Europa"
+    },
+    "calendar": {
+      "eyebrow": "Kalendarz targów",
+      "title": "Najbliższe targi w każdym mieście.",
+      "lead": "Dla każdego miasta pojawiają się najbliższe wiodące targi, chronologicznie jak na tablicy odlotów. Przewijaj tablicę: globus podąża za Twoim wyborem.",
+      "summary": "{cities} miast targowych · {km} km w linii prostej wzdłuż trasy z Lipska",
+      "boardLabel": "Kalendarz targów: najbliższe targi w każdym mieście",
+      "cols": {
+        "date": "Termin",
+        "dest": "Cel",
+        "fair": "Targi",
+        "status": "Status"
+      },
+      "running": "Trwają",
+      "today": "Dziś",
+      "tomorrow": "Jutro",
+      "inDays": "za {days} dni",
+      "tba": "Termin wkrótce",
+      "past": "Zakończone",
+      "tbaNote": "Dla tego miasta nie zapisano obecnie potwierdzonego terminu targów wiodących.",
+      "dateTbc": "Termin niepotwierdzony",
+      "fairName": "Targi",
+      "venue": "Teren targowy",
+      "route": "W linii prostej",
+      "homeBase": "Moja siedziba",
+      "km": "{km} km",
+      "localTime": "Czas lokalny",
+      "website": "Strona organizatora",
+      "inquire": "Omówmy projekt na targi {fair}",
+      "tourPause": "Wstrzymaj podróż",
+      "tourPlay": "Wznów podróż",
+      "note": "Terminy według organizatorów, sprawdzone {date}. Zmiany są możliwe; wiążące są strony organizatorów. Nazwy targów są znakami towarowymi ich właścicieli. Terminy nie mówią nic o zleceniach ani udziale CL Projektwerk.",
+      "search": "Szukaj targów lub miasta",
+      "searchPlaceholder": "np. Düsseldorf lub budownictwo",
+      "filterCountry": "Kraj",
+      "filterCity": "Miasto",
+      "filterPeriod": "Okres",
+      "filterSector": "Branża",
+      "filterAll": "Wszystkie",
+      "periodUpcoming": "Nadchodzące",
+      "periodRunning": "Trwające",
+      "periodPast": "Minione",
+      "resultCount": "{count, plural, =0 {Brak targów} one {# targi} few {# targi} many {# targów} other {# targów}}",
+      "empty": "Żadne targi nie pasują do wyszukiwania i wybranych filtrów.",
+      "reset": "Zresetuj wyszukiwanie i filtry",
+      "source": "Źródło",
+      "checkedOn": "Sprawdzono {date}"
+    },
+    "zoomIn": "Przybliż",
+    "zoomOut": "Oddal",
+    "zoomReset": "Zresetuj widok",
+    "zoomEurope": "Widok Europy",
+    "zoomCountry": "Wybierz kraj",
+    "zoomHint": "Ctrl + kółko myszy lub dwukrotne kliknięcie: zoom · kliknij miasto: odległość w linii prostej",
+    "zoomHintTouch": "Zoom dwoma palcami · dotknij miasta: odległość w linii prostej",
+    "zoomHintKeys": "Strzałki przesuwają widok, plus i minus zmieniają powiększenie.",
+    "scrollHint": "Zwykłe przewijanie przesuwa tylko stronę. Przytrzymaj Ctrl, aby powiększać.",
+    "distance": {
+      "title": "Odległość w linii prostej między dwoma miastami",
+      "from": "Z",
+      "to": "Do",
+      "pick": "Wybierz miasto",
+      "swap": "Zamień miasta",
+      "result": "W linii prostej: {km} km",
+      "resultFromTo": "W linii prostej {from} – {to}: {km} km",
+      "note": "Obliczona jako odległość ortodromiczna na kuli ziemskiej. To nie jest odległość drogowa i nic nie mówi o czasie podróży.",
+      "rings": "Pierścienie odległości wokół {city}: {km} km",
+      "scale": "Skala: {km} km",
+      "listTitle": "Miasta i odległość w linii prostej od {city}",
+      "listCity": "Miasto",
+      "listCountry": "Kraj",
+      "listKm": "W linii prostej",
+      "noWebglTitle": "Widok 3D niedostępny",
+      "noWebglText": "Twoje urządzenie nie wyświetla globusa 3D. Tabela zawiera te same miasta, targi i odległości.",
+      "reducedMotion": "Włączono ograniczenie ruchu: brak automatycznych przelotów i animacji."
+    },
+    "origin": {
+      "use": "Użyj mojej lokalizacji jako punktu startowego",
+      "locating": "Ustalanie lokalizacji …",
+      "active": "Punkt startowy: {city} – najbliższe Ci miasto targowe",
+      "reset": "Wróć do: {city}",
+      "denied": "Nie udzielono dostępu do lokalizacji. Punkt startowy pozostaje: {city}.",
+      "far": "Twoja lokalizacja jest poza obszarem mapy. Punkt startowy pozostaje: {city}.",
+      "note": "Twoja lokalizacja jest przetwarzana tylko w przeglądarce i nie jest przesyłana."
+    }
+  },
+  "led": {
+    "eyebrow": "Powierzchnie ekranowe w planowaniu",
+    "title": "Powierzchnie medialne wymagają dokładnych wymiarów.",
+    "lead": "Ściany LED i monitory są częścią wielu przestrzeni targowych. Uwzględniam je w Twoich dokumentach z wymiarami, proporcjami obrazu i danymi przyłączeniowymi. Klipy pokazują typowe formaty; to licencjonowany materiał przykładowy, nie moje projekty.",
+    "placeholder": "Klip przykładowy {n}",
+    "placeholderNote": "Materiał przykładowy",
+    "caption": "Klip przykładowy (licencja stockowa): {title}, {format}. To nie jest projekt CL Projektwerk."
+  },
+  "about": {
+    "eyebrow": "O mnie",
+    "name": "Christof Laufersweiler",
+    "role": "Planowanie i sterowanie projektami dla zabudów targowych, przestrzeni marek i wykończeń wnętrz",
+    "text": "Nazywam się Christof Laufersweiler i od ponad 20 lat pracuję w branży targowej i eventowej. Wyuczyłem się zawodu technika rysownika w zakresie technologii drewna; później doszły kierowanie projektami zabudów targowych, zatrudnione stanowisko dyrektora zarządzającego w firmie zabudowy targowej i certyfikat IHK kierownika projektów targowych i eventowych. W CL Projektwerk oferuję w Lipsku zewnętrzne moce planistyczne i projektowe dla firm zabudowy, agencji, firm wykończeniowych i wystawców, którzy potrzebują dodatkowych rąk z wiedzą fachową.",
+    "close": "Decyzje zostają po Twojej stronie. Ja zapewniam dokumenty, przegląd i uzgodnienia.",
+    "photoAlt": "Portret Christofa Laufersweilera, założyciela CL Projektwerk",
+    "cta": "Omówmy projekt ze mną",
+    "career": "Droga zawodowa",
+    "projects": "Doświadczenie projektowe z wcześniejszej pracy",
+    "projectsNote": "Te przykłady pochodzą z mojej wcześniejszej pracy zawodowej jako odpowiedzialnego kierownika projektów. To nie są projekty CL Projektwerk, a wymienione firmy nie są klientami CL Projektwerk.",
+    "tools": "Oprogramowanie",
+    "languages": "Języki"
+  },
+  "profile": {
+    "facts": [
+      {
+        "value": "20+ lat",
+        "label": "doświadczenia w branży targowej i eventowej"
+      },
+      {
+        "value": "1 200 m²",
+        "label": "największa prowadzona powierzchnia stoiska z wcześniejszej pracy (Agritechnica 2023, Automechanika 2024)"
+      },
+      {
+        "value": "IHK",
+        "label": "Certyfikat kierownika projektów targowych i eventowych (IHK Hannover, 11.12.2009)"
+      }
+    ],
+    "career": [
+      {
+        "years": "06/2019 – 04/2025",
+        "role": "Kierowanie projektami",
+        "org": "Messeprojekt Leipzig"
+      },
+      {
+        "years": "06/2017 – 06/2019",
+        "role": "Dyrektor zarządzający (zatrudniony)",
+        "org": "MS Internationaler Messebau GmbH, Colditz"
+      },
+      {
+        "years": "02/2007 – 06/2017",
+        "role": "Kierowanie projektami zabudów targowych",
+        "org": "MEPLAN GmbH, Monachium"
+      },
+      {
+        "years": "12/2009",
+        "role": "Certyfikat kierownika projektów targowych i eventowych (kurs, 160 godzin lekcyjnych)",
+        "org": "IHK Hannover"
+      },
+      {
+        "years": "08/2003 – 01/2007",
+        "role": "Nauka zawodu technika rysownika, technologia drewna",
+        "org": "HEITEC Heiser GmbH, Gau-Algesheim"
+      }
+    ],
+    "projects": [
+      {
+        "year": "2024",
+        "client": "ZDK",
+        "event": "Automechanika, Frankfurt",
+        "size": "1 200 m²",
+        "note": "Kilku wystawców i pojazdy, wielkoformatowe ekrany LED"
+      },
+      {
+        "year": "2023",
+        "client": "Bosch Rexroth",
+        "event": "Agritechnica, Hanower",
+        "size": "1 200 m²",
+        "note": "Ściana LED o długości 20 m, koordynacja techniczna"
+      },
+      {
+        "year": "2018",
+        "client": "Schöffel",
+        "event": "ISPO, Monachium",
+        "size": "360 m²",
+        "note": "Podwieszona konstrukcja z drewna klejonego, napięte bez zmarszczek grafiki tekstylne"
+      },
+      {
+        "year": "2018",
+        "client": "Pharmatechnik",
+        "event": "Expopharm, Düsseldorf",
+        "size": "400 m²",
+        "note": "Otwarta koncepcja stoiska ze ścianą LED"
+      }
+    ],
+    "tools": [
+      "CAD",
+      "SketchUp Pro",
+      "Adobe"
+    ],
+    "languages": [
+      "Niemiecki (język ojczysty)",
+      "Angielski (biegły w kontekście biznesowym)"
+    ]
+  },
+  "contact": {
+    "eyebrow": "Omówmy projekt",
+    "title": "Opowiedz mi o swoim projekcie.",
+    "lead": "Cztery krótkie kroki, niewiele pól obowiązkowych. Zapisane koncepcje z galerii dołączam na życzenie.",
+    "response": "Odpowiadam zazwyczaj w ciągu {time}.",
+    "steps": {
+      "fair": "Projekt",
+      "stand": "Zakres",
+      "services": "Usługa",
+      "contact": "Kontakt"
+    },
+    "stepOf": "Krok {current} z {total}",
+    "fields": {
+      "fair": "Targi, wydarzenie lub projekt",
+      "fairPlaceholder": "np. udział w targach, przestrzeń marki lub wykończenie wnętrz",
+      "projectType": "Rodzaj projektu",
+      "projectTypes": {
+        "fair": "Stoisko targowe",
+        "brand": "Przestrzeń marki",
+        "interior": "Wykończenie wnętrz",
+        "event": "Event",
+        "open": "Jeszcze otwarte"
+      },
+      "city": "Miejsce",
+      "cityPlaceholder": "np. Lipsk",
+      "dateFrom": "Termin od",
+      "dateTo": "do",
+      "dateUnknown": "Termin nie jest jeszcze ustalony",
+      "size": "Wielkość przestrzeni (opcjonalnie)",
+      "width": "Szerokość (m)",
+      "depth": "Głębokość (m)",
+      "area": "Powierzchnia",
+      "standType": "Typ stoiska",
+      "standTypeUnknown": "Jeszcze otwarte",
+      "floors": "Kondygnacje",
+      "documents": "Dostępne dokumenty",
+      "documentOptions": {
+        "briefing": "Brief lub wymagania",
+        "cad": "Dane CAD lub planistyczne",
+        "sketches": "Szkice lub moodboardy",
+        "renders": "Wizualizacje",
+        "inventory": "Listy zasobów",
+        "none": "Jeszcze brak"
+      },
+      "services": "Potrzebna usługa planistyczna",
+      "scope": "Oczekiwany zakres",
+      "scopes": {
+        "single": "Pojedyncza usługa",
+        "project": "Cały projekt",
+        "quota": "Stały kontyngent miesięczny",
+        "open": "Jeszcze otwarte"
+      },
+      "budget": "Budżet całego projektu (opcjonalnie)",
+      "budgets": {
+        "a": "do 25 000 €",
+        "b": "25 000 do 75 000 €",
+        "c": "75 000 do 150 000 €",
+        "d": "powyżej 150 000 €",
+        "open": "Wolę nie podawać"
+      },
+      "name": "Imię i nazwisko",
+      "company": "Firma",
+      "email": "E-mail",
+      "phone": "Telefon (opcjonalnie)",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Co trzeba zaplanować? Czy są wytyczne, wcześniejsza zabudowa lub szczególne wymagania techniczne?",
+      "favorites": "Dołączone koncepcje",
+      "favoritesEmpty": "Brak zapisanych koncepcji. W galerii możesz je zbierać za pomocą serca.",
+      "consent": "Wyrażam zgodę na zapisanie i wykorzystanie moich danych do obsługi zapytania. Szczegóły w <privacy>polityce prywatności</privacy>.",
+      "privacy": "Polityka prywatności",
+      "required": "Wymagane"
+    },
+    "submit": "Wyślij brief",
+    "sending": "Wysyłanie",
+    "errors": {
+      "required": "Proszę wypełnić.",
+      "email": "Proszę podać prawidłowy adres e-mail.",
+      "consent": "Proszę wyrazić zgodę na przetwarzanie, abym mógł odpowiedzieć.",
+      "dates": "Koniec jest przed początkiem.",
+      "server": "Wysyłanie się nie powiodło. Spróbuj ponownie lub napisz na {email}.",
+      "rate": "Zbyt wiele zapytań w krótkim czasie. Spróbuj ponownie za kilka minut."
+    },
+    "whatsapp": "Napisz na WhatsApp",
+    "callback": "Poproś o telefon zwrotny",
+    "callbackTitle": "Poproś o telefon zwrotny",
+    "callbackTime": "Kiedy Ci pasuje?",
+    "callbackTimePlaceholder": "np. jutro po 14:00",
+    "callbackSubmit": "Poproś o telefon zwrotny",
+    "callbackDone": "Dziękuję. Prośba o telefon została przesłana. Spróbuję skontaktować się z Tobą o podanej porze.",
+    "direct": "Bezpośrednio",
+    "notConfigured": "Jeszcze nie podano",
+    "prefilled": "Twój wybór: {list}",
+    "emailDraft": {
+      "prepare": "Przygotuj e-mail",
+      "title": "Szkic wiadomości gotowy",
+      "notice": "Twoje dane zostaną przygotowane jako szkic e-maila. Sprawdź go i wyślij samodzielnie w programie pocztowym. Wiadomość nie została jeszcze wysłana.",
+      "open": "Otwórz program pocztowy",
+      "copy": "Kopiuj tekst",
+      "copied": "Tekst skopiowany",
+      "fallback": "Nie masz skonfigurowanego programu pocztowego lub brakuje danych? Skopiuj cały tekst poniżej do poczty internetowej."
+    }
+  },
+  "thanks": {
+    "title": "Dziękuję za brief.",
+    "text": "Zapytanie zostało przesłane. Odpowiadam zazwyczaj w ciągu {time} wstępną oceną. Automatyczne potwierdzenie e-mailem nie jest wysyłane. Zapisane koncepcje zostały dołączone.",
+    "back": "Na stronę główną",
+    "designs": "Zobacz więcej koncepcji"
+  },
+  "selection": {
+    "title": "Mój wybór",
+    "lead": "Twoje zapisane koncepcje. Dołącz je do zapytania jednym kliknięciem.",
+    "count": "{count, plural, =0 {Nic jeszcze nie zapisano} one {Zapisano # koncepcję} few {Zapisano # koncepcje} many {Zapisano # koncepcji} other {Zapisano # koncepcji}}",
+    "empty": "Nic jeszcze nie zapisano. Dotknij serca w galerii, aby zbierać koncepcje.",
+    "toGallery": "Do galerii",
+    "inquire": "Wyślij wybór wraz z zapytaniem",
+    "clear": "Usuń wszystko",
+    "remove": "Usuń"
+  },
+  "footer": {
+    "rights": "© {year} {brand}",
+    "imprint": "Nota prawna",
+    "privacy": "Prywatność",
+    "cookies": "Ustawienia plików cookie",
+    "note": "Wszystkie rendery i animacje na tej stronie są wizualizacjami koncepcji projektowych. Nie przedstawiają zbudowanych stoisk.",
+    "top": "Do góry",
+    "languages": "Języki",
+    "tagline": "Zewnętrzne biuro planowania i projektów dla zabudów targowych, przestrzeni marek i wykończeń wnętrz"
+  },
+  "cookies": {
+    "title": "Twoja prywatność",
+    "text": "Ta strona zapisuje tylko to, co jest technicznie niezbędne, na przykład Twoje zapisane koncepcje, wybrany układ i ten wybór. Statystyka i usługi zewnętrzne są wyłączone, dopóki się nie zgodzisz.",
+    "necessary": "Tylko niezbędne",
+    "settings": "Ustawienia",
+    "acceptAll": "Zezwól na wszystkie",
+    "save": "Zapisz wybór",
+    "categories": {
+      "necessary": "Niezbędne",
+      "necessaryText": "Język, zapisane koncepcje, układ, ustawienia radia i ten wybór. Zawsze aktywne.",
+      "stats": "Statystyka",
+      "statsText": "Obecnie nieużywana.",
+      "media": "Media zewnętrzne",
+      "mediaText": "Obecnie nieużywane. Radio łączy się dopiero po jego samodzielnym uruchomieniu."
+    }
+  },
+  "legal": {
+    "imprintTitle": "Nota prawna",
+    "privacyTitle": "Polityka prywatności",
+    "placeholder": "Tekst prawny wkrótce.",
+    "notice": "Wiążąca jest niemiecka wersja tego tekstu.",
+    "updated": "Stan na: {date}"
+  },
+  "notFound": {
+    "title": "Tej strony nie ma.",
+    "text": "Być może znajdziesz w galerii koncepcji to, czego szukasz.",
+    "home": "Na stronę główną",
+    "designs": "Do galerii"
+  },
+  "layouts": {
+    "label": "Wybierz układ",
+    "toggle": "Układ",
+    "short": "UKŁAD",
+    "film": "Hero: animacja koncepcyjna {n}",
+    "active": "aktywny",
+    "preview": "Podgląd: {name}",
+    "hint": "Strzałki zmieniają układ, Escape zamyka wybór.",
+    "saved": "Twój wybór jest zapisywany na tym urządzeniu.",
+    "monoShowColour": "Pokaż oryginalne kolory",
+    "monoHideColour": "Pokaż czarno-biało",
+    "items": {
+      "studio": "Antracyt i pomarańcz, wyraźne linie, precyzja pracowni projektowej",
+      "aurora": "Ciemne powierzchnie z miętą i fioletem, pismo szeryfowe, miękkie ruchy światła",
+      "tide": "Morski zielony i koral, wyrazista czcionka, płynne fale",
+      "mono": "Konsekwentnie czerń i biel, mocny kontrast, formy geometryczne"
+    }
+  },
+  "radio": {
+    "label": "Radio",
+    "title": "Radio",
+    "choose": "WYBIERZ STACJĘ",
+    "close": "Zwiń odtwarzacz",
+    "stations": "Stacje",
+    "play": "Rozpocznij odtwarzanie",
+    "pause": "Wstrzymaj odtwarzanie",
+    "mute": "Wycisz",
+    "unmute": "Włącz dźwięk",
+    "volume": "Głośność",
+    "off": "wył.",
+    "hint": "Radio internetowe na żywo. Dźwięk startuje dopiero po Twoim kliknięciu, a regulator dotyczy tylko tego odtwarzacza. Po uruchomieniu przeglądarka łączy się ze stacją.",
+    "noTrack": "Brak informacji o utworze",
+    "levelNote": "Wskaźnik poziomu to tylko animacja i nie pokazuje rzeczywistego poziomu dźwięku.",
+    "state": {
+      "ready": "Gotowe",
+      "connecting": "Łączenie …",
+      "live": "Na żywo",
+      "buffering": "Buforowanie …",
+      "stalled": "Połączenie się zacina …",
+      "paused": "Wstrzymano",
+      "error": "Stacja niedostępna",
+      "blocked": "Start zablokowany przez przeglądarkę. Kliknij odtwarzanie ponownie."
+    }
+  },
+  "graphics": {
+    "eyebrow": "Projekt i prezentacja",
+    "title": "Grafika, która pasuje do przestrzeni.",
+    "text": "Do projektu potrzebne są obrazy umożliwiające decyzje i dane, które można dalej przetwarzać bez poprawek. Przygotowuję wizualizacje i dane graficzne gotowe do druku, dopasowane do wymiarów i konstrukcji przestrzeni oraz do Twojej identyfikacji wizualnej. Zakres i liczbę rund poprawek uzgadniamy z góry. Druk wykonuje partner drukarski, którego włączasz Ty lub na życzenie ja.",
+    "points": [
+      {
+        "title": "Wizualizacje do uzgodnień",
+        "text": "Perspektywy, rzut i widoki sprawiają, że koncepcja jest zrozumiała dla Ciebie i Twoich klientów."
+      },
+      {
+        "title": "Dane do druku ze wszystkimi informacjami",
+        "text": "Spady, profil kolorów, wymiary i format pliku są przygotowane dla Twojego partnera drukarskiego."
+      },
+      {
+        "title": "Dopasowane do konstrukcji",
+        "text": "Powierzchnie graficzne są sprawdzane z wymiarami ścian i elementów z planowania technicznego."
+      },
+      {
+        "title": "Uzgodnione rundy poprawek",
+        "text": "Z góry ustalamy, ile rund poprawek jest w cenie. Kolejne rundy są usługą dodatkową."
+      },
+      {
+        "title": "Pliki z wersjami",
+        "text": "Każda wersja ma jasny status, dzięki czemu do druku trafiają tylko zaakceptowane dane."
+      },
+      {
+        "title": "Przekazanie partnerowi drukarskiemu",
+        "text": "Ja dostarczam dane, firma specjalistyczna drukuje i produkuje."
+      }
+    ],
+    "close": "Projekt i dane ode mnie, produkcja w firmie specjalistycznej: aby przestrzeń wyglądała tak, jak została zaakceptowana.",
+    "videoLabel": "Animacja: dane do druku na monitorze i druk wielkoformatowy grafiki targowej (wizualizacja)"
+  },
+  "drops": {
+    "rule": "Każdego ranka o 5:00 kolejna koncepcja",
+    "today": "Nowa dziś",
+    "next": "Następna koncepcja za",
+    "soon": "Widoczna jest nowa koncepcja.",
+    "reload": "Załaduj ponownie",
+    "complete": "Widoczne są wszystkie koncepcje ({total})",
+    "count": "Widoczne: {released} z {total}"
+  },
+  "error": {
+    "title": "Coś poszło nie tak.",
+    "text": "Nie udało się w pełni załadować strony. Spróbuj ponownie.",
+    "retry": "Spróbuj ponownie",
+    "home": "Na stronę główną"
+  },
+  "seo": {
+    "eyebrow": "Techniczne planowanie targów",
+    "title": "Planowanie techniczne, przygotowanie pracy i sterowanie projektem dla zabudów targowych i wykończeń wnętrz.",
+    "intro": "CL Projektwerk to zewnętrzne biuro planowania i projektów w Lipsku. Wspieram firmy zabudowy targowej, agencje, firmy wykończeniowe i średnich wystawców w planowaniu zabudów targowych: wymiarowaną dokumentacją wykonawczą, przygotowaniem pracy, zewnętrznym sterowaniem projektem, koncepcjami i planowaniem ponownego użycia. Wykonują partnerzy specjalistyczni; ja dostarczam planowanie i koordynację.",
+    "blocks": [
+      {
+        "title": "Techniczne planowanie targów",
+        "text": "Z briefu powstają wymiarowane rysunki szczegółowe i wykonawcze, wykazy elementów i dokumenty interfejsów. Twoi partnerzy produkcyjni mogą na nich pracować, a Twój zespół nie musi sam przygotowywać każdego rysunku."
+      },
+      {
+        "title": "Przygotowanie pracy dla zabudów i przestrzeni marek",
+        "text": "Zestawienia materiałów i ilości, dokumenty dla poszczególnych partnerów produkcyjnych oraz planowanie zakupów i terminów zamieniają rysunki w proces, który da się zorganizować."
+      },
+      {
+        "title": "Zewnętrzne sterowanie projektem",
+        "text": "Zestawienia budżetu i terminów, porównania ofert, uzgadnianie branż i udokumentowane akceptacje dają przejrzystość, zwłaszcza gdy równolegle trwa kilka projektów."
+      },
+      {
+        "title": "Koncepcja, prezentacja i ponowne użycie",
+        "text": "Koncepcje stoisk i przestrzeni, wizualizacje i grafiki gotowe do druku pomagają w uzgodnieniach. Planowanie ponownego użycia inwentaryzuje istniejące elementy i planuje warianty do nowych zastosowań."
+      }
+    ],
+    "faqTitle": "Często zadawane pytania",
+    "faq": [
+      {
+        "q": "Ile kosztuje współpraca?",
+        "a": "To zależy od zakresu, rezultatów i terminów. Po krótkim briefie otrzymasz indywidualną ofertę na projekt lub na miesięczny kontyngent."
+      },
+      {
+        "q": "Kiedy powinienem się odezwać?",
+        "a": "Najlepiej, gdy tylko ustalone są zadanie i termin, ponieważ moje miesięczne moce planistyczne są ograniczone. Zapytania w krótkim terminie oceniam według aktualnego obciążenia."
+      },
+      {
+        "q": "Czy mogę zamówić tylko jedną usługę?",
+        "a": "Tak. Planowanie techniczne, przygotowanie pracy, sterowanie projektem, projekt i prezentację lub planowanie ponownego użycia można zamawiać osobno."
+      },
+      {
+        "q": "Czy produkujesz i montujesz również?",
+        "a": "Nie. Produkcję, transport, montaż, statykę, pozwolenia i prace elektryczne wykonują wykwalifikowani partnerzy. Większe zlecenia zwykle zlecasz bezpośrednio; ja planuję i koordynuję."
+      },
+      {
+        "q": "Czy możliwe są spotkania na miejscu lub podróże?",
+        "a": "Planowanie odbywa się głównie z Lipska. Spotkania na miejscu i podróże uzgadniamy z góry, a usługi dodatkowe ustalamy osobno."
+      },
+      {
+        "q": "Czy oferujesz projektowanie stron lub automatyzację?",
+        "a": "To nie należy do moich głównych usług. Skupiam się na planowaniu i sterowaniu projektami zabudów targowych, przestrzeni marek i wykończeń wnętrz."
+      }
+    ]
+  },
+  "lang": {
+    "title": "Wybierz język",
+    "hint": "Przeciągnij, przesuń lub obracaj strzałkami",
+    "current": "aktualny",
+    "prev": "Poprzedni język",
+    "next": "Następny język",
+    "close": "Zamknij"
+  },
+  "site": {
+    "brand": "CL Projektwerk",
+    "role": "Zewnętrzne biuro planowania i projektów dla zabudów targowych, przestrzeni marek i wykończeń wnętrz",
+    "claim": "Planowanie, które działa na hali.",
+    "visualisationNote": "Wizualizacja"
+  },
+  "structured": {
+    "serviceCatalog": "Usługi",
+    "services": [
+      "Planowanie techniczne: wymiarowane rysunki szczegółowe i wykonawcze, wykazy elementów, dokumenty interfejsów",
+      "Przygotowanie pracy: zestawienia materiałów i ilości, dokumenty wykonawcze, planowanie zakupów i terminów",
+      "Sterowanie projektem: zestawienia budżetu i terminów, porównania ofert, uzgadnianie branż, dokumentacja zmian",
+      "Projekt i prezentacja: koncepcje stoisk i przestrzeni, wizualizacje, grafiki gotowe do druku",
+      "Planowanie ponownego użycia: inwentaryzacja istniejących elementów, planowanie wariantów, informacje o materiałach i magazynie"
+    ],
+    "keywords": [
+      "techniczne planowanie targów",
+      "planowanie zabudów targowych",
+      "zewnętrzne sterowanie projektem",
+      "przygotowanie pracy zabudowy targowej",
+      "biuro planowania Lipsk",
+      "przestrzenie marek",
+      "wykończenia wnętrz",
+      "planowanie ponownego użycia"
+    ],
+    "genre": "Koncepcja stoiska targowego",
+    "videoSuffix": "Animacja koncepcyjna w przyspieszeniu"
+  },
+  "ogImage": {
+    "film": "▶ Animacja koncepcyjna"
+  }
+}

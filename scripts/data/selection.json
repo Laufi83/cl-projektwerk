@@ -1,0 +1,18 @@
+{
+  "_comment": "Kuratierte Reihenfolge der 100 sichtbaren Designs. Eintrag = Ordnername im Quellordner (DESIGNS_SOURCE_DIR). Position in der Liste = Designnummer.",
+  "featured": ["133", "134", "135", "136", "137"],
+  "series": ["138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152"],
+  "main": [
+    "01 Lamello", "02 Naturraum", "03 Monolith", "04 Fluid", "05 Gartenforum", "07 Rasterwerk", "08 Lichtsegel", "09 Kupferbogen", "10 Prismenfeld",
+    "12 Basalttor", "13 Geflechtinseln", "14 Aluminium-Orbit", "15 Akustik-Kapseln", "16 Roter Boulevard", "17 Korklandschaft", "18 Stahlwerft", "19 Glasatelier",
+    "22 Indigo-Labor", "24 Bambusfaltung", "25 Brueckenforum", "26 Terrazzo-Atoll", "28 Pixel-Wolke", "29 Saegezahn-Loft", "30 Chrom-Welle", "31 Myzel-Duenen",
+    "32 Panorama-Deck", "34 Haengegarten", "36 Bibliotheksbruecke", "38 Akkordeon", "39 Steinrondell", "40 Schwebende Scheibe", "42 Terrakottawabe", "43 Lichtschlucht",
+    "44 Treppenforum", "45 Doppelgiebel", "46 Faecherkrone", "49 Bogenloggia", "51 Spiegelportal", "52 Lamelleninsel", "53 Zwillingsdecks", "55 Containerterrasse",
+    "56 Lichtzylinder", "58 Ziegelpassage", "59 Drehbuehne", "60 Cortenschlucht", "61 Kreuzgrat-Pavillon", "64 Fachwerkloggia",
+    "69 Terrassenkaskade", "70 Amphitheater", "71 Snow Lab", "72 Hafenpassage", "76 Skybridge", "77 Diagonal Dock", "79 Galerie-Spirale", "81 Campus", "82 Gartenhof",
+    "83 Glashaus", "84 Doppelhof", "85 Alpine Gear", "88 Marktplatz", "89 Container-Ring",
+    "90 Pet Nutrition", "92 Auto Tech", "94 Vision Lounge", "95 Seat Studio", "96 Workshop Tech", "97 Tyre Gallery", "99 Coffee Lab", "100 Fitness Zone",
+    "101 Auto Light", "103 Camera Studio", "106 Trail Footwear", "107 Clean Tech", "108 Audio Lounge",
+    "110 Brecherpark", "113 Pumpenparcours", "117 Raupenfeld", "122 Kranfeld", "124 Baggerpark", "127 Hubbuehnenpark"
+  ]
+}
