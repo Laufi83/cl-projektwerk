@@ -40,7 +40,6 @@
     "services": "Szolgáltatások",
     "designs": "Koncepciók",
     "process": "Együttműködés",
-    "graphics": "Bemutatás",
     "world": "Kiállítási naptár",
     "about": "Rólam",
     "contact": "Kapcsolat",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Képernyőfelületek a tervezésben",
-    "title": "A médiafelületeknek pontos méretekre van szükségük.",
-    "lead": "A LED-falak és monitorok sok kiállítási tér részei. Méretekkel, képarányokkal és csatlakozási adatokkal beépítem őket a dokumentumaiba. A klipek gyakori formátumokat mutatnak; licencelt mintaanyagok, nem saját projektjeim.",
-    "placeholder": "Mintaklip {n}",
-    "placeholderNote": "Mintaanyag",
-    "caption": "Mintaklip (stock licenc): {title}, {format}. Nem a CL Projektwerk projektje."
-  },
   "about": {
     "eyebrow": "Rólam",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Az adó nem érhető el",
       "blocked": "A böngésző letiltotta az indítást. Kattintson újra a lejátszásra."
     }
-  },
-  "graphics": {
-    "eyebrow": "Tervezés és bemutatás",
-    "title": "Grafika, amely illik a térhez.",
-    "text": "Egy tervhez olyan képek tartoznak, amelyek lehetővé teszik a döntést, és olyan adatok, amelyek utómunka nélkül továbbfeldolgozhatók. Vizualizációkat és nyomdakész grafikai adatokat készítek, amelyek a tér méreteihez és szerkezetéhez, valamint az Ön arculatához igazodnak. A terjedelmet és a javítási körök számát előre megállapodjuk. A nyomtatást egy nyomdai partner végzi, akit Ön vagy kérésre én vonok be.",
-    "points": [
-      {
-        "title": "Vizualizációk az egyeztetéshez",
-        "text": "A perspektívák, az alaprajz és a nézetek érthetővé teszik a koncepciót Önnek és az ügyfeleinek."
-      },
-      {
-        "title": "Nyomdai adatok minden szükséges információval",
-        "text": "A vágási ráhagyás, a színprofil, a méretek és a fájlformátum elő van készítve a nyomdai partnere számára."
-      },
-      {
-        "title": "A szerkezethez igazítva",
-        "text": "A grafikai felületeket összevetjük a műszaki tervezésből származó falak és elemek méreteivel."
-      },
-      {
-        "title": "Megállapodott javítási körök",
-        "text": "Előre rögzítjük, hány javítási kör tartozik bele. További körök külön szolgáltatásnak minősülnek."
-      },
-      {
-        "title": "Verziózott fájlok",
-        "text": "Minden verziónak egyértelmű állapota van, így csak jóváhagyott adatok kerülnek nyomdába."
-      },
-      {
-        "title": "Átadás a nyomdai partnerének",
-        "text": "Én szállítom az adatokat, a szakvállalkozás nyomtat és gyárt."
-      }
-    ],
-    "close": "A tervezés és az adatok tőlem, a gyártás a szakvállalkozásnál: hogy a tér úgy nézzen ki, ahogyan jóváhagyták.",
-    "videoLabel": "Animáció: nyomdai adatok monitoron és egy kiállítási grafika nagyformátumú nyomtatása (vizualizáció)"
   },
   "drops": {
     "rule": "Minden reggel 5:00-kor újabb koncepció",
