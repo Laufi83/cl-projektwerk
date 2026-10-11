@@ -40,7 +40,6 @@
     "services": "Prestations",
     "designs": "Concepts",
     "process": "Collaboration",
-    "graphics": "Présentation",
     "world": "Calendrier des salons",
     "about": "À propos",
     "contact": "Contact",
@@ -449,14 +448,6 @@
       "note": "Votre position est traitée uniquement dans votre navigateur et n’est pas transmise."
     }
   },
-  "led": {
-    "eyebrow": "Surfaces d'écran dans la planification",
-    "title": "Les surfaces multimédias exigent des cotes exactes.",
-    "lead": "Les murs LED et les moniteurs font partie de nombreux espaces de salon. Je les intègre à vos documents avec cotes, formats d'image et données de raccordement. Les clips montrent des formats courants ; ce sont des contenus d'exemple sous licence, pas mes propres projets.",
-    "placeholder": "Clip d'exemple {n}",
-    "placeholderNote": "Contenu d'exemple",
-    "caption": "Clip d'exemple (licence de banque d'images) : {title}, {format}. Pas un projet de CL Projektwerk."
-  },
   "about": {
     "eyebrow": "À propos",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Station injoignable",
       "blocked": "Démarrage bloqué par le navigateur. Cliquez de nouveau sur lecture."
     }
-  },
-  "graphics": {
-    "eyebrow": "Conception et présentation",
-    "title": "Des graphismes adaptés à l'espace.",
-    "text": "Un projet a besoin d'images qui permettent de décider et de données exploitables sans retouche. J'élabore des visualisations et des fichiers graphiques prêts à imprimer, adaptés aux cotes et à la construction de l'espace et à votre identité visuelle. Le périmètre et le nombre de boucles de correction sont convenus à l'avance. L'impression est réalisée par un partenaire d'impression que vous ou, sur demande, moi-même faisons intervenir.",
-    "points": [
-      {
-        "title": "Visualisations pour la concertation",
-        "text": "Perspectives, plan et élévations rendent le concept compréhensible pour vous et vos clients."
-      },
-      {
-        "title": "Fichiers d'impression complets",
-        "text": "Fond perdu, profil colorimétrique, cotes et format de fichier sont préparés pour votre partenaire d'impression."
-      },
-      {
-        "title": "Adaptés à la construction",
-        "text": "Les surfaces graphiques sont vérifiées par rapport aux cotes des parois et des éléments de la planification technique."
-      },
-      {
-        "title": "Boucles de correction convenues",
-        "text": "Nous fixons à l'avance le nombre de boucles de correction incluses. Les boucles supplémentaires sont une prestation additionnelle."
-      },
-      {
-        "title": "Fichiers versionnés",
-        "text": "Chaque version a un état clair, afin que seules les données validées partent à l'impression."
-      },
-      {
-        "title": "Remise à votre partenaire d'impression",
-        "text": "Je fournis les données, l'entreprise spécialisée imprime et produit."
-      }
-    ],
-    "close": "Conception et données de ma part, production chez l'entreprise spécialisée : pour que l'espace ressemble à ce qui a été validé.",
-    "videoLabel": "Animation : fichiers d'impression sur un écran et impression grand format d'un visuel de salon (visualisation)"
   },
   "drops": {
     "rule": "Chaque matin à 5 h 00, un nouveau concept",
