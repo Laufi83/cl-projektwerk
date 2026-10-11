@@ -130,7 +130,7 @@ export function Gallery({ items, dayPick }: Props) {
               aria-pressed={filter === f.key}
               onClick={() => pickFilter(f.key)}
               className="shrink-0 rounded-full border border-line-strong bg-bg px-4 py-2 text-xs font-semibold text-fg-muted transition-colors duration-200 hover:border-accent hover:text-fg aria-pressed:border-accent aria-pressed:bg-accent aria-pressed:text-accent-contrast"
-            >{t("filter." + f.key)} <span className="ml-1 font-mono tabular opacity-75">{counts[f.key]}</span></button>
+            >{t(`filter.${f.key}`)} <span className="ml-1 font-mono tabular opacity-75">{counts[f.key]}</span></button>
           ))}
         </div>
       </div>
