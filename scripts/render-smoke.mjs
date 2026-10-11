@@ -31,6 +31,30 @@ try {
   }
   assert(ready, `Server did not become ready: ${logs}`);
   const checks = [];
+  // Every language must expose the same named professional project references.
+  for (const locale of LOCALE_CODES) {
+    const { profile } = JSON.parse(await readFile("src/messages/" + locale + ".json", "utf8"));
+    const projects = profile.projects;
+    const required = [
+      ["Jungheinrich","2024","InterContinental"],
+      ["Jungheinrich","2023","InterContinental"],
+      ["Jungheinrich","2022","InterContinental"],
+      ["Merck, Darmstadt","2024","40"],
+      ["Merck, Darmstadt","2023","39"],
+      ["Merck, Darmstadt","2022","38"],
+      ["Mercedes-Benz","2023","RETTmobil"],
+      ["Mercedes-Benz","2022","RETTmobil"],
+      ["Daimler Truck","2023","HydrogenRecordRun"],
+    ];
+    for (const [client,year,term] of required) {
+      const matches = projects.filter(p => p.client === client && p.year === year && p.event.includes(term));
+      assert.equal(matches.length, 1, locale + ": expected exactly one " + client + " " + year + " (" + term + ")");
+    }
+    for (let i = 1; i < projects.length; i++) {
+      assert(Number.parseInt(projects[i-1].year,10) >= Number.parseInt(projects[i].year,10), locale + ": project references out of chronological order");
+    }
+    checks.push(locale + ": Jungheinrich/Merck/RETTmobil/GenH2 references unique, complete and chronological");
+  }
   const homepages = LOCALE_CODES.map((locale) => locale === "de" ? "/" : `/${locale}`);
   for (const route of ["/api/health", ...homepages, "/designs", "/impressum", "/datenschutz", "/robots.txt"]) {
     const response = await fetch(base + route, { signal: AbortSignal.timeout(30000) });
