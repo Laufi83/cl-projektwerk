@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useLocale } from "next-intl";
 import { ArrowRight, ArrowUpRight, Check } from "@phosphor-icons/react";
 import { TiltedGridHero, type TiltedGridImage } from "@/components/ui/tilted-grid-hero";
 import { InViewVideo } from "@/components/media/InViewVideo";
@@ -31,6 +32,8 @@ export function ServicesTiltedSlider({
   inquireLabel: string;
   visualisationNote: string;
 }) {
+  const locale = useLocale();
+  const german = locale === "de";
   const [index, setIndex] = useState(0);
   const current = items[Math.max(0, Math.min(items.length - 1, index))];
   const images = useMemo<TiltedGridImage[]>(() => items.map((item, i) => ({
@@ -47,19 +50,21 @@ export function ServicesTiltedSlider({
       <TiltedGridHero
         images={images}
         className="h-[335px] sm:h-[405px] lg:h-[470px]"
-        label="Fünf Leistungen als interaktive gebogene 3D-Galerie"
-        wheelHint="Mit Mausrad, Pfeiltasten oder Wischen zwischen den Leistungen wechseln"
+        label={german ? "Fünf Leistungen als interaktive 3D-Galerie" : "Five services in an interactive 3D gallery"}
+        wheelHint={german ? "Mausrad · Pfeiltasten · Wischen" : "Mouse wheel · arrow keys · swipe"}
         activeIndex={index}
         onActiveIndexChange={setIndex}
         onImageSelect={(_image, itemIndex) => setIndex(itemIndex)}
+        previousLabel={german ? "Vorherige Leistung" : "Previous service"}
+        nextLabel={german ? "Nächste Leistung" : "Next service"}
         loop={false}
         tileHeight={43}
         curve={78}
         fade={8}
       />
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2 px-1 text-xs text-fg-muted">
-        <p>Mausrad / Wischen / Pfeiltasten</p>
-        <p>Bild anklicken: Leistung auswählen</p>
+        <p>{german ? "Mausrad / Wischen / Pfeiltasten" : "Mouse wheel / swipe / arrow keys"}</p>
+        <p>{german ? "Bild anklicken: Leistung auswählen" : "Select a service by clicking an image"}</p>
       </div>
       <article
         key={current.key}
