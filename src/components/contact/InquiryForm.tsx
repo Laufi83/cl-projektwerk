@@ -65,13 +65,18 @@ export function InquiryForm({ items }: Props) {
         setErrors((x) => ({ ...x, fair: undefined, dateTo: undefined }));
         setStep(0);
       }
+      if (d?.configuration) {
+        const { width, depth, style } = d.configuration;
+        setF((s) => ({ ...s, width, depth, message: s.message || (locale === "de" ? "Gewünschte Gestaltungsrichtung: " : "Preferred design direction: ") + style }));
+        setErrors((x) => ({ ...x, width: undefined, depth: undefined }));
+      }
       const k = d?.service as (typeof SERVICE_KEYS)[number] | undefined;
       if (!k || !SERVICE_KEYS.includes(k)) return;
       setF((s) => (s.services.includes(k) ? s : { ...s, services: [...s.services, k] }));
     };
     window.addEventListener(PREFILL_EVENT, onPrefill);
     return () => window.removeEventListener(PREFILL_EVENT, onPrefill);
-  }, []);
+  }, [locale]);
 
   const attached = useMemo(() => favs.map((id) => items.find((d) => d.id === id)).filter(Boolean) as FavRef[], [favs, items]);
   const area = Number(f.width.replace(",", ".")) * Number(f.depth.replace(",", "."));
