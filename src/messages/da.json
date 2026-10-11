@@ -40,7 +40,6 @@
     "services": "Ydelser",
     "designs": "Koncepter",
     "process": "Samarbejde",
-    "graphics": "Præsentation",
     "world": "Messekalender",
     "about": "Om mig",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Skærmflader i planlægningen",
-    "title": "Medieflader kræver nøjagtige mål.",
-    "lead": "LED-vægge og skærme hører med til mange messerum. Jeg indarbejder dem i dine dokumenter med mål, billedformater og tilslutningsdata. Klippene viser almindelige formater; de er licenseret eksempelmateriale og ikke mine egne projekter.",
-    "placeholder": "Eksempelklip {n}",
-    "placeholderNote": "Eksempelmateriale",
-    "caption": "Eksempelklip (stocklicens): {title}, {format}. Ikke et projekt fra CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Om mig",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stationen kan ikke nås",
       "blocked": "Start blokeret af browseren. Klik på afspil igen."
     }
-  },
-  "graphics": {
-    "eyebrow": "Design og præsentation",
-    "title": "Grafik, der passer til rummet.",
-    "text": "Til et design hører billeder, der gør det muligt at beslutte, og data, der kan viderebearbejdes uden efterarbejde. Jeg laver visualiseringer og trykklare grafikdata, tilpasset rummets mål og konstruktion og din visuelle identitet. Omfang og antal rettelsesrunder aftales på forhånd. Selve trykningen udføres af en trykpartner, som du eller på ønske jeg inddrager.",
-    "points": [
-      {
-        "title": "Visualiseringer til afstemning",
-        "text": "Perspektiver, plantegning og opstalter gør konceptet forståeligt for dig og dine kunder."
-      },
-      {
-        "title": "Trykdata med alle oplysninger",
-        "text": "Affald, farveprofil, mål og filformat er forberedt til din trykpartner."
-      },
-      {
-        "title": "Tilpasset konstruktionen",
-        "text": "Grafikflader afstemmes med målene på vægge og bygningsdele fra den tekniske planlægning."
-      },
-      {
-        "title": "Aftalte rettelsesrunder",
-        "text": "Vi fastlægger på forhånd, hvor mange rettelsesrunder der er med. Yderligere runder er en tillægsydelse."
-      },
-      {
-        "title": "Versionerede filer",
-        "text": "Hver version har en klar status, så kun godkendte data går til tryk."
-      },
-      {
-        "title": "Overdragelse til din trykpartner",
-        "text": "Jeg leverer dataene, specialfirmaet trykker og producerer."
-      }
-    ],
-    "close": "Design og data fra mig, produktion hos specialfirmaet: så rummet ser ud, som det blev godkendt.",
-    "videoLabel": "Animation: trykdata på en skærm og storformattryk af en messegrafik (visualisering)"
   },
   "drops": {
     "rule": "Hver morgen kl. 5:00 et nyt koncept",
