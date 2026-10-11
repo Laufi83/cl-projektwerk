@@ -71,6 +71,13 @@ try {
     assert.equal((await response.arrayBuffer()).byteLength, 1024, route);
     checks.push(route);
   }
+  // Beide kundenseitig gelieferten Videos muessen auch im Render-Standalone-Paket erreichbar sein.
+  for (const route of ["/media/custom/skizze-animation.mp4", "/media/custom/homepage-scroll-build.mp4"]) {
+    const response = await fetch(base + route, { headers: { Range: "bytes=0-1023" } });
+    assert.equal(response.status, 206, route);
+    assert.equal((await response.arrayBuffer()).byteLength, 1024, route);
+    checks.push(route);
+  }
   const invalid = await fetch(base + "/api/inquiry", {
     method: "POST", headers: { "Content-Type": "application/json" }, body: "{invalid",
   });
@@ -92,7 +99,7 @@ try {
       assert.equal(result.draft.to, "info@cl-projektwerk.de");
       assert.match(result.draft.body, /Render Test & Müller/);
       if (data.type === "inquiry") {
-        assert(result.draft.body.includes(data.message));
+        assert(result.draft.body.includes(data.message.trim())); // Zod trim() entfernt äußere Leerzeichen
         assert(result.draft.body.includes(first.slug));
       }
       const url = new URL(emailDraftUrl(result.draft));
