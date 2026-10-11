@@ -5,7 +5,9 @@ import { Shuffle, SquaresFour, FilmStrip, Sun, Play } from "@phosphor-icons/reac
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
 import { ZoomSliderStage, type ZoomSliderController } from "./ZoomSliderStage";
 import { GridView } from "./GridView";
-import { ImageAutoSlider } from "@/components/ui/image-auto-slider";
+import CoverflowCarousel, { type CoverflowItem } from "@/components/ui/coverflow-carousel";
+import { favorites, useFavorites } from "@/lib/favorites";
+import { Heart } from "@phosphor-icons/react";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
 import { useReducedMotion } from "@/hooks/useMedia";
 
@@ -17,6 +19,7 @@ export function Gallery({ items, dayPick }: Props) {
   const t = useTranslations("gallery");
   const reduced = useReducedMotion();
   const overlay = useDesignOverlay();
+  const favoriteIds = useFavorites();
 
   // Neue Standardansicht; die bisherige 3D-Galerie bleibt auswählbar.
   const [mode, setMode] = useState<ViewMode>("auto");
@@ -39,7 +42,7 @@ export function Gallery({ items, dayPick }: Props) {
       const d = list[i];
       if (!d) return;
       overlay.open(d.slug, {
-        fullscreen: true,
+        fullscreen: false,
         rect: rect ?? undefined,
         image: thumbUrl(d.id),
         tone: d.tone,
@@ -58,7 +61,7 @@ export function Gallery({ items, dayPick }: Props) {
       const d = list.find((x) => x.slug === slug) ?? items.find((x) => x.slug === slug);
       if (!d) return;
       overlay.open(slug, {
-        fullscreen: true,
+        fullscreen: false,
         rect: el?.getBoundingClientRect(),
         image: thumbUrl(d.id),
         tone: d.tone,
@@ -72,7 +75,7 @@ export function Gallery({ items, dayPick }: Props) {
   const spinAndOpen = (j: number) => {
     if (!list[j]) return;
     if (effectiveMode !== "slider" || !controller.current) {
-      openGrid(list[j].slug, document.querySelector(`[data-grid-card="${list[j].slug}"] img`));
+      openGrid(list[j].slug, document.querySelector(`[data-coverflow-card="${list[j].id}"] img, [data-grid-card="${list[j].slug}"] img`));
       return;
     }
     controller.current.goTo(j);
@@ -89,7 +92,7 @@ export function Gallery({ items, dayPick }: Props) {
   const openDayPick = () => {
     const j = list.findIndex((d) => d.slug === dayPick);
     if (j >= 0) spinAndOpen(j);
-    else overlay.open(dayPick, { fullscreen: true });
+    else overlay.open(dayPick, { fullscreen: false });
   };
   const day = items.find((d) => d.slug === dayPick);
 
@@ -174,7 +177,36 @@ export function Gallery({ items, dayPick }: Props) {
       <div>
         <div className="container-x">{controls}</div>
         {list.length ? (
-          <ImageAutoSlider items={list} onOpen={openGrid} />
+          <CoverflowCarousel
+            items={list.map((d): CoverflowItem => ({
+              id: d.id,
+              image: thumbUrl(d.id, "render-1", 1280),
+              srcSet: thumbUrl(d.id, "render-1", 640) + " 640w, " + thumbUrl(d.id, "render-1", 1280) + " 1280w",
+              alt: pad3(d.n) + " " + d.title,
+              title: pad3(d.n) + " · " + d.title,
+              subtitle: d.size ?? undefined,
+            }))}
+            loop
+            autoPlay
+            activeIndex={index}
+            onActiveIndexChange={setIndex}
+            onSelect={(item, image) => openGrid(list.find((d) => d.id === item.id)?.slug ?? "", image)}
+            renderAction={(item) => (
+              <button
+                type="button"
+                onClick={() => favorites.toggle(item.id)}
+                aria-pressed={favoriteIds.includes(item.id)}
+                aria-label={favoriteIds.includes(item.id) ? "Aus Auswahl entfernen" : "Zur Auswahl hinzufügen"}
+                className="grid size-10 place-items-center rounded-full border border-white/20 bg-black/60 text-[#F3F1EC] backdrop-blur transition-colors hover:border-[#F26A1B] aria-pressed:text-[#F26A1B]"
+              >
+                <Heart size={18} weight={favoriteIds.includes(item.id) ? "fill" : "regular"} />
+              </button>
+            )}
+            label={t("sliderLabel")}
+            previousLabel={t("hintTouch")}
+            nextLabel={t("hint")}
+            openLabel={t("viewMode")}
+          />
         ) : (
           <div className="container-x py-12"><p className="text-fg-muted">{t("empty")}</p></div>
         )}
