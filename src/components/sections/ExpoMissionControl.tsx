@@ -1,7 +1,7 @@
 "use client";
 import { useMemo } from "react";
 import { useLocale } from "next-intl";
-import { Compass, MapPin, NavigationArrow } from "@phosphor-icons/react";
+import { Compass } from "@phosphor-icons/react";
 import type { MesseVenue } from "@/config/messe-venues";
 import { useReducedMotion } from "@/hooks/useMedia";
 const clamp=(n:number,a:number,b:number)=>Math.max(a,Math.min(b,n));
