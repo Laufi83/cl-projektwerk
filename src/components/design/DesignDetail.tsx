@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { site } from "@/config/site";
 import { DesignImage } from "./DesignImage";
 import { DesignReveal } from "./DesignReveal";
+import { DesignStory } from "./DesignStory";
 import { ZoomPan } from "./ZoomPan";
 import { ShareMenu } from "./ShareMenu";
 import { FavoriteButton } from "./FavoriteButton";
@@ -157,6 +158,9 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
 
         {/* 01: Vergleich echter Projektplanung mit dem tatsächlichen Rendering */}
         <DesignReveal design={d} />
+
+        {/* Narrative Projektgeschichte auf Basis der vorhandenen Daten und Originalbilder */}
+        <DesignStory design={d} />
 
         {/* Aufbaufilm */}
         {d.clip && <ClipPlayer design={d} note={note} />}
