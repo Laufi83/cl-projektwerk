@@ -65,7 +65,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           tech: img(designs.find((d) => d.id === "040") ?? designs[2]),
           prep: img(designs[1]),
           control: img(designs.find((d) => d.id === "033") ?? designs[0]),
-          concept: { src: mediaUrl("graphics/grafikdaten-poster.webp"), video: mediaUrl("graphics/grafikdaten.mp4") },
+          concept: { src: mediaUrl("graphics/grafikdaten-poster.webp"), video: mediaUrl("custom/skizze-animation.mp4") },
           reuse: { src: "/led/led-automotive-16x9.webp", video: "/led/led-automotive-16x9.mp4" },
         }}
         packageImage={designAsset((designs.find((d) => d.id === "026") ?? designs[0]).id, "render-1-1280.webp")}

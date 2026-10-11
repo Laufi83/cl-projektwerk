@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, Play } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { scrollToTarget } from "@/lib/scroll";
-import { designAsset } from "@/lib/media";
+import { designAsset, mediaUrl } from "@/lib/media";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
@@ -30,6 +30,8 @@ export function HeroScrub({ films, visNote }: Props) {
   const tc = useTranslations("common");
   const section = useRef<HTMLElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
+  const customVideo = useRef<HTMLVideoElement>(null);
+  const [customReady, setCustomReady] = useState(false);
   const bar = useRef<HTMLDivElement>(null);
   const pct = useRef<HTMLSpanElement>(null);
   const [done, setDone] = useState(false);
@@ -42,7 +44,7 @@ export function HeroScrub({ films, visNote }: Props) {
   const film = films.find((f) => f.id === layoutById(layout).design) ?? films[0];
 
   useEffect(() => {
-    if (mode !== "scrub") return;
+    if (mode !== "scrub" || customReady) return;
     const seq = variant === "mobile" ? film.mobile : film.desktop;
     const cv = canvas.current!;
     const ctx = cv.getContext("2d", { alpha: false })!;
@@ -130,7 +132,39 @@ export function HeroScrub({ films, visNote }: Props) {
     ro.observe(cv);
     size();
     return () => { alive = false; st.kill(); ro.disconnect(); near.disconnect(); window.removeEventListener("load", onLoad); clearTimeout(idle); clearInterval(showWhenReady); };
-  }, [mode, variant, film]);
+  }, [mode, variant, film, customReady]);
+
+  // Video-Frame wird direkt durch ScrollTrigger gesteuert, auch beim Rueckwaertsscrollen.
+  // Falls der MP4-Upload noch fehlt, bleibt die bestehende WebP-Sequenz sichtbar.
+  useEffect(() => {
+    if (mode !== "scrub" || !customReady) return;
+    const video = customVideo.current;
+    if (!video || !Number.isFinite(video.duration) || video.duration <= 0) return;
+    video.pause();
+    let shownPct = -1;
+    const update = (progress: number) => {
+      const p = Math.min(1, Math.max(0, progress * 1.08));
+      const targetTime = Math.min(Math.max(0, video.duration - 0.025), p * video.duration);
+      if (Math.abs(video.currentTime - targetTime) > 0.045) {
+        try { video.currentTime = targetTime; } catch { /* Safari may defer seek */ }
+      }
+      if (bar.current) bar.current.style.transform = "scaleX(" + p + ")";
+      const percent = Math.round(p * 100);
+      if (pct.current && percent !== shownPct) {
+        shownPct = percent;
+        pct.current.textContent = String(percent);
+      }
+      setDone(progress > 0.86);
+    };
+    const trigger = ScrollTrigger.create({
+      trigger: section.current,
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => update(self.progress),
+    });
+    update(trigger.progress);
+    return () => trigger.kill();
+  }, [mode, customReady]);
 
   return (
     <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[260svh] md:h-[320svh]"}`}>
@@ -138,7 +172,18 @@ export function HeroScrub({ films, visNote }: Props) {
         <div className="hero-media absolute inset-0 overflow-hidden bg-black">
           {/* Poster je Layout per CSS (nur das aktive wird geladen); die Sequenz zeichnet darüber */}
           <div aria-hidden className="hero-poster absolute inset-0" />
-          {mode === "scrub" && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
+          {mode === "scrub" && !customReady && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
+          {mode === "scrub" && (
+            <video
+              ref={customVideo}
+              src={mediaUrl("custom/homepage-scroll-build.mp4")}
+              muted playsInline preload="auto" aria-hidden
+              onLoadedData={() => setCustomReady(true)}
+              onError={() => setCustomReady(false)}
+              className={"absolute inset-0 h-full w-full object-cover transition-opacity duration-500 " + (customReady ? "opacity-100" : "pointer-events-none opacity-0")}
+              style={{ objectPosition: "50% 50%" }}
+            />
+          )}
           {mode === "fallback" && <FallbackLoop key={film.id} id={film.id} playLabel={tc("play")} />}
 
           {/* Lesbarkeit */}
