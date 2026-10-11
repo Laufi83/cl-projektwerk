@@ -40,7 +40,6 @@
     "services": "Leistungen",
     "designs": "Entwürfe",
     "process": "Zusammenarbeit",
-    "graphics": "Präsentation",
     "world": "Messekalender",
     "about": "Über mich",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Ihr Standort wird nur in Ihrem Browser ausgewertet und nicht übertragen."
     }
   },
-  "led": {
-    "eyebrow": "Bildschirmflächen in der Planung",
-    "title": "Medienflächen brauchen genaue Maße.",
-    "lead": "LED-Wände und Monitore gehören zu vielen Messeflächen. Ich plane sie mit Maßen, Seitenverhältnissen und Anschlussdaten in Ihre Unterlagen ein. Die Clips zeigen übliche Formate; sie sind lizenziertes Beispielmaterial und keine eigenen Projekte.",
-    "placeholder": "Beispielclip {n}",
-    "placeholderNote": "Beispielmaterial",
-    "caption": "Beispielclip (Stock-Lizenz): {title}, {format}. Kein Projekt von CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Über mich",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Sender nicht erreichbar",
       "blocked": "Start vom Browser blockiert. Bitte erneut auf Play klicken."
     }
-  },
-  "graphics": {
-    "eyebrow": "Entwurf und Präsentation",
-    "title": "Grafik, die auf der Fläche passt.",
-    "text": "Zu einem Entwurf gehören Bilder, die Entscheidungen ermöglichen, und Daten, die sich ohne Nacharbeit weiterverarbeiten lassen. Ich erstelle Visualisierungen und druckfertige Grafikdaten, abgestimmt auf Maße und Konstruktion der Fläche und auf Ihr Corporate Design. Der Leistungsumfang und die Zahl der Korrekturschleifen werden vorab vereinbart. Der Druck selbst erfolgt bei einem Druckpartner, den Sie oder ich auf Wunsch einbinden.",
-    "points": [
-      {
-        "title": "Visualisierungen für die Abstimmung",
-        "text": "Perspektiven, Grundriss und Ansichten machen den Entwurf für Sie und Ihre Kunden verständlich."
-      },
-      {
-        "title": "Druckdaten mit allen Angaben",
-        "text": "Beschnitt, Farbprofil, Maße und Dateiformat sind für Ihren Druckpartner aufbereitet."
-      },
-      {
-        "title": "Abgestimmt auf die Konstruktion",
-        "text": "Grafikflächen werden mit den Maßen der Wände und Bauteile aus der technischen Planung abgeglichen."
-      },
-      {
-        "title": "Vereinbarte Korrekturschleifen",
-        "text": "Wie viele Korrekturrunden enthalten sind, legen wir vorab fest. Weitere Runden sind Zusatzleistung."
-      },
-      {
-        "title": "Versionierte Dateien",
-        "text": "Jede Fassung hat einen klaren Stand, damit nur freigegebene Daten in den Druck gehen."
-      },
-      {
-        "title": "Übergabe an Ihren Druckpartner",
-        "text": "Ich liefere die Daten, der Fachbetrieb druckt und produziert."
-      }
-    ],
-    "close": "Gestaltung und Daten von mir, Produktion beim Fachbetrieb – damit die Fläche so aussieht, wie sie freigegeben wurde.",
-    "videoLabel": "Animation: Druckdaten am Monitor und Großformatdruck einer Messegrafik (Visualisierung)"
   },
   "drops": {
     "rule": "Jeden Morgen um 5:00 Uhr ein weiterer Entwurf",
