@@ -57,7 +57,7 @@ export function DailyDrop({ info, className = "" }: { info: ReleaseInfo; classNa
         onClick={(e) => {
           if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
           e.preventDefault();
-          overlay.open(info.latest.slug, { fullscreen: true });
+          overlay.open(info.latest.slug, { fullscreen: false });
         }}
         className="group inline-flex items-center gap-2 text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg"
       >
