@@ -488,6 +488,11 @@
     ],
     "career": [
       {
+        "years": "11/2025 – 10/2026",
+        "role": "高级项目经理（展会与活动）",
+        "org": "C3 EXPO GmbH, Mannheim"
+      },
+      {
         "years": "2019/06 – 2025/04",
         "role": "项目管理",
         "org": "Messeprojekt Leipzig"
@@ -514,6 +519,18 @@
       }
     ],
     "projects": [
+      {
+        "year": "2026",
+        "client": "Amazon",
+        "event": "Amazon – 法国戛纳 Cannes Lions 国际创意节",
+        "note": "受雇于 C3 EXPO GmbH 期间参与的项目。"
+      },
+      {
+        "year": "2026",
+        "client": "BMW",
+        "event": "宝马 BMW X5 展示活动，慕尼黑 Showpalast",
+        "note": "受雇于 C3 EXPO GmbH 期间参与的项目。"
+      },
       {
         "year": "2024",
         "client": "ZDK",
