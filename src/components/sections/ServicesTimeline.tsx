@@ -12,7 +12,7 @@ export type ServiceStep = {
   benefit: string;
   points: string[];
   more: string;
-  href: "#ablauf" | "#designs" | "#ueber";
+  href: "#kontakt" | "#designs" | "#ueber";
   image: string;
   srcSet?: string;
   video?: string;
