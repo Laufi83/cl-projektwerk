@@ -48,8 +48,8 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Unschlagbare Bahnanbindung. Die S-Bahn-Linien S3, S4, S5 und S6 fahren vom Hauptbahnhof direkt zur Station \"Frankfurt(Main)Messe\" inmitten des Geländes."
     },
     "id": "venue-03",
-    "lat": null,
-    "lon": null
+    "lat": 50.11,
+    "lon": 8.68
   },
   {
     "number": 4,
@@ -165,7 +165,7 @@ export const messeVenues: MesseVenue[] = [
   },
   {
     "number": 11,
-    "city": "Mailand, Italien",
+    "city": "Mailand",
     "venue": "Fiera Milano - Rho",
     "facts": {
       "area": "ca. 405.000 m² Gesamtfläche. Das architektonische Meisterwerk von Massimiliano Fuksas besticht durch ein riesiges, wellenförmiges Glasdach über der Hauptachse.",
@@ -176,12 +176,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nehmen Sie die rote U-Bahn-Linie M1 direkt bis zur Endstation \"Rho Fiera\". Achtung: Sie benötigen ein spezielles Vorort-Ticket, das normale Stadtticket gilt hier nicht!"
     },
     "id": "venue-11",
-    "lat": null,
-    "lon": null
+    "lat": 45.46,
+    "lon": 9.19
   },
   {
     "number": 12,
-    "city": "Paris, Frankreich",
+    "city": "Paris",
     "venue": "Paris Nord Villepinte",
     "facts": {
       "area": "ca. 268.000 m² Gesamtfläche im Norden der französischen Hauptstadt, nahe dem Flughafen CDG.",
@@ -192,12 +192,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die S-Bahn RER B fährt vom Pariser Zentrum direkt zur Station \"Parc des Expositions\". Vermeiden Sie die Anreise per Auto über die Autobahn A1 zu den Stoßzeiten – chronischer Stau gefahr."
     },
     "id": "venue-12",
-    "lat": null,
-    "lon": null
+    "lat": 48.86,
+    "lon": 2.35
   },
   {
     "number": 13,
-    "city": "Paris, Frankreich",
+    "city": "Paris",
     "venue": "Paris Expo Porte de Versailles",
     "facts": {
       "area": "ca. 215.000 m² Ausstellungsfläche. Das traditionsreiche, innerstädtische Messegelände im Süden von Paris.",
@@ -208,12 +208,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Perfekt angebunden über die U-Bahn-Linie 12 (Station Porte de Versailles) sowie die Trambahnen T2 und T3a."
     },
     "id": "venue-13",
-    "lat": null,
-    "lon": null
+    "lat": 48.86,
+    "lon": 2.35
   },
   {
     "number": 14,
-    "city": "Barcelona, Spanien",
+    "city": "Barcelona",
     "venue": "Fira Barcelona - Gran Via",
     "facts": {
       "area": "ca. 240.000 m² hochmoderne Hallenkapazität. Schauplatz des Mobile World Congress.",
@@ -224,12 +224,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die U-Bahn-Linie L9 Sud verbindet den Flughafen Barcelona direkt mit der Station \"Fira\" auf dem Messegelände – ideal für die Durchreise."
     },
     "id": "venue-14",
-    "lat": null,
-    "lon": null
+    "lat": 41.39,
+    "lon": 2.17
   },
   {
     "number": 15,
-    "city": "Madrid, Spanien",
+    "city": "Madrid",
     "venue": "IFEMA - Feria de Madrid",
     "facts": {
       "area": "ca. 210.000 m² Gesamtfläche. Ein perfekt symmetrisch angeordneter Komplex im Nordosten Madrids.",
@@ -240,12 +240,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die U-Bahn-Linie 8 fährt vom Flughafen Madrid-Barajas in nur zwei Stationen direkt zur Haltestelle \"Feria de Madrid\"."
     },
     "id": "venue-15",
-    "lat": null,
-    "lon": null
+    "lat": 40.42,
+    "lon": -3.7
   },
   {
     "number": 16,
-    "city": "Valencia, Spanien",
+    "city": "Valencia",
     "venue": "Feria Valencia",
     "facts": {
       "area": "ca. 230.000 m² Gesamtfläche. Eines der größten und modernsten Messezentren in Spanien mit einer markanten Glas-Zentralhalle.",
@@ -256,12 +256,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Metro-Linie 2 fährt direkt zur Station \"Les Carolines | Fira\". Bei Großmessen fährt zudem die Tram-Linie 4 direkt vor den Haupteingang."
     },
     "id": "venue-16",
-    "lat": null,
-    "lon": null
+    "lat": 39.47,
+    "lon": -0.38
   },
   {
     "number": 17,
-    "city": "Bologna, Italien",
+    "city": "Bologna",
     "venue": "BolognaFiere",
     "facts": {
       "area": "ca. 145.000 m² Gesamtfläche. Das Herz der italienischen Kosmetik- und Keramikindustrie.",
@@ -272,12 +272,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Vom Hauptbahnhof Bologna (einem der wichtigsten Bahnknotenpunkte Italiens) fahren die Buslinien 35 und 38 in nur 10 Minuten direkt zur Messe."
     },
     "id": "venue-17",
-    "lat": null,
-    "lon": null
+    "lat": 44.49,
+    "lon": 11.34
   },
   {
     "number": 18,
-    "city": "Verona, Italien",
+    "city": "Verona",
     "venue": "Veronafiere",
     "facts": {
       "area": "ca. 165.000 m² Gesamtfläche. Berühmt für die Weinmesse Vinitaly.",
@@ -288,12 +288,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Der Bahnhof Verona Porta Nuova liegt etwa 2 Kilometer von der Messe entfernt. Während großer Events pendeln kostenlose Non-Stop-Shitbusse zwischen Bahnhof und Gelände."
     },
     "id": "venue-18",
-    "lat": null,
-    "lon": null
+    "lat": 45.44,
+    "lon": 10.99
   },
   {
     "number": 19,
-    "city": "Birmingham, Großbritannien",
+    "city": "Birmingham",
     "venue": "NEC - National Exhibition Centre",
     "facts": {
       "area": "ca. 200.000 m² Gesamtfläche. Ein riesiger, zusammenhängender Hallenkomplex im Herzen Englands.",
@@ -304,12 +304,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Unschlagbare Anbindung: Der Bahnhof Birmingham International ist direkt mit dem NEC verbunden. Züge aus London benötigen nur ca. 70 Minuten. Zudem gibt es eine kostenlose Seilbahn (\"Air-Rail Link\") direkt zum Flughafen Birmingham."
     },
     "id": "venue-19",
-    "lat": null,
-    "lon": null
+    "lat": 52.49,
+    "lon": -1.89
   },
   {
     "number": 20,
-    "city": "London, Großbritannien",
+    "city": "London",
     "venue": "ExCeL London",
     "facts": {
       "area": "ca. 100.000 m² reine, ebenerdige Hallenfläche entlang des königlichen Docks (Royal Docks).",
@@ -320,12 +320,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Dank der Elizabeth Line (Station Custom House direkt vor dem Eingang) gelangen Sie nun in weniger als 20 Minuten aus der Londoner Innenstadt (West End) zur Messe."
     },
     "id": "venue-20",
-    "lat": null,
-    "lon": null
+    "lat": 51.51,
+    "lon": -0.13
   },
   {
     "number": 21,
-    "city": "Basel, Schweiz",
+    "city": "Basel",
     "venue": "Messe Basel",
     "facts": {
       "area": "ca. 141.000 m² Gesamtfläche. Das optische Highlight ist das \"Loch im Dach\" (die City Lounge), eine spektakuläre Deckenöffnung über dem Messeplatz.",
@@ -336,12 +336,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Basel bietet allen Hotelgästen das kostenlose \"BaselCard\"–Ticket für den Nahverkehr. Die Tramlinien 1 und 2 fahren vom Bahnhof Basel SBB direkt zum Messeplatz."
     },
     "id": "venue-21",
-    "lat": null,
-    "lon": null
+    "lat": 47.56,
+    "lon": 7.59
   },
   {
     "number": 22,
-    "city": "Genf, Schweiz",
+    "city": "Genf",
     "venue": "Palexpo",
     "facts": {
       "area": "ca. 106.000 m² vollkommen überdachte Fläche. Austragungsort von Watches and Wonders.",
@@ -352,12 +352,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Sensationell kurze Wege: Das Palexpo liegt nur 10 Gehminuten oder eine kurze Busfahrt (Linie 5) vom Flughafen Genf und dem dazugehörigen Bahnhof Genève-Aéroport entfernt."
     },
     "id": "venue-22",
-    "lat": null,
-    "lon": null
+    "lat": 46.2,
+    "lon": 6.14
   },
   {
     "number": 23,
-    "city": "Brüssel, Belgien",
+    "city": "Brüssel",
     "venue": "Brussels Expo",
     "facts": {
       "area": "ca. 115.000 m² Nutzfläche. Der historische Komplex im Art-déco-Stil wurde für die Weltausstellung 1935 errichtet.",
@@ -368,12 +368,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nehmen Sie die Metro-Linie 6 direkt bis zur Endstation \"Heysel\". Das Auto sollten Sie in Brüssel aufgrund des dichten Berufsverkehrs meiden."
     },
     "id": "venue-23",
-    "lat": null,
-    "lon": null
+    "lat": 50.85,
+    "lon": 4.35
   },
   {
     "number": 24,
-    "city": "Amsterdam, Niederlande",
+    "city": "Amsterdam",
     "venue": "RAI Amsterdam",
     "facts": {
       "area": "ca. 112.000 m² Gesamtfläche. Ein hocheffizientes, topmodernes Kongress- und Messezentrum im Süden der Stadt.",
@@ -384,12 +384,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die U-Bahn-Linie 52 (Nord-Süd-Linie) hält direkt an der Station \"Europaplein\" vor der Messe und verbindet das Gelände in weniger als 10 Minuten mit dem Amsterdamer Hauptbahnhof (Centraal)."
     },
     "id": "venue-24",
-    "lat": null,
-    "lon": null
+    "lat": 52.37,
+    "lon": 4.9
   },
   {
     "number": 25,
-    "city": "Utrecht, Niederlande",
+    "city": "Utrecht",
     "venue": "Jaarbeurs",
     "facts": {
       "area": "ca. 100.000 m² Gesamtfläche. Das logistische Herz der niederländischen Binnenwirtschaft.",
@@ -400,12 +400,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Reisen Sie unbedingt mit der Bahn an. Der Bahnhof Utrecht Centraal wird aus allen Richtungen (auch per ICE aus Deutschland) im Minutentakt angefahren. Von dort sind es nur wenige Schritte."
     },
     "id": "venue-25",
-    "lat": null,
-    "lon": null
+    "lat": 52.09,
+    "lon": 5.12
   },
   {
     "number": 26,
-    "city": "Posen, Polen",
+    "city": "Posen",
     "venue": "MTP - Międzynarodowe Targi Poznańskie",
     "facts": {
       "area": "ca. 110.000 m² Gesamtfläche. Das geschichtsträchtigste und größte Messegelände in Polen.",
@@ -416,12 +416,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Da der Hauptbahnhof Poznań Główny direkt an das Messegelände angrenzt, ist die Anreise mit dem Eurocity aus Berlin (ca. 2,5 Stunden Fahrzeit) extrem komfortabel."
     },
     "id": "venue-26",
-    "lat": null,
-    "lon": null
+    "lat": 52.41,
+    "lon": 16.93
   },
   {
     "number": 27,
-    "city": "Brünn, Tschechien",
+    "city": "Brünn",
     "venue": "Veletrhy Brno",
     "facts": {
       "area": "ca. 135.000 m² Gesamtfläche. Gilt als eines der schönsten Messegelände Europas aufgrund seiner funktionalistischen Architektur aus den 1920er und 30er Jahren.",
@@ -432,12 +432,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Straßenbahnlinien 1, 5 und 6 verbinden den Hauptbahnhof in wenigen Minuten mit dem Messegelände (Haltestelle Výstaviště)."
     },
     "id": "venue-27",
-    "lat": null,
-    "lon": null
+    "lat": 49.2,
+    "lon": 16.61
   },
   {
     "number": 28,
-    "city": "Lyon, Frankreich",
+    "city": "Lyon",
     "venue": "Eurexpo Lyon",
     "facts": {
       "area": "ca. 150.000 m² Gesamtfläche im Osten der französischen Kulinarik-Metropole.",
@@ -448,12 +448,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Trambahnlinie T5 fährt während großer Messen direkt von der Metrostation \"Grange Blanche\" zum Haupteingang der Eurexpo."
     },
     "id": "venue-28",
-    "lat": null,
-    "lon": null
+    "lat": 45.76,
+    "lon": 4.84
   },
   {
     "number": 29,
-    "city": "Wien, Österreich",
+    "city": "Wien",
     "venue": "Messe Wien",
     "facts": {
       "area": "ca. 55.000 m² hochmoderne, kompakte Ausstellungsfläche direkt neben dem Wiener Prater.",
@@ -464,12 +464,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Perfekte U-Bahn-Anbindung: Die Linie U2 hält direkt an den Stationen \"Messe-Prater\" (Hallen A und B) sowie \"Krieau\" (Hallen C und D)."
     },
     "id": "venue-29",
-    "lat": null,
-    "lon": null
+    "lat": 48.21,
+    "lon": 16.37
   },
   {
     "number": 30,
-    "city": "Lissabon, Portugal",
+    "city": "Lissabon",
     "venue": "FIL - Feira Internacional de Lisboa",
     "facts": {
       "area": "ca. 60.000 m² Gesamtfläche. Gelegen im hochmodernen Parque das Nações, dem ehemaligen Expo-98-Gelände.",
@@ -480,12 +480,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nutzen Sie die rote Metro-Linie (Linha Vermelha) bis zur Station \"Oriente\". Der Bahnhof Gare do Oriente (entworfen von Santiago Calatrava) liegt nur 5 Gehminuten von der FIL entfernt und verbindet das Gelände auch direkt mit dem Flughafen."
     },
     "id": "venue-30",
-    "lat": null,
-    "lon": null
+    "lat": 38.72,
+    "lon": -9.14
   },
   {
     "number": 31,
-    "city": "Kopenhagen, Dänemark",
+    "city": "Kopenhagen",
     "venue": "Bella Center",
     "facts": {
       "area": "ca. 65.000 m² Gesamtfläche. Das größte Kongress- und Ausstellungszentrum Skandinaviens, gelegen im modernen Stadtteil Ørestad.",
@@ -496,12 +496,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die fahrerlose Metro M1 hält direkt an der Station \"Bella Center\". Von dort sind es nur 15 Minuten bis ins Stadtzentrum und knapp 15 Minuten zum Flughafen per Bahn/Bus."
     },
     "id": "venue-31",
-    "lat": null,
-    "lon": null
+    "lat": 55.68,
+    "lon": 12.57
   },
   {
     "number": 32,
-    "city": "Stockholm, Schweden",
+    "city": "Stockholm",
     "venue": "Stockholmsmässan",
     "facts": {
       "area": "ca. 75.000 m² Gesamtfläche in Älvsjö, knapp südlich der Stockholmer Innenstadt.",
@@ -512,12 +512,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nehmen Sie die Pendeltåg (Vorortzug) vom Stockholmer Hauptbahnhof (T-Centralen) bis zur Station \"Älvsjö\". Die Fahrt dauert exakt 10 Minuten, die Züge fahren im dichten Takt."
     },
     "id": "venue-32",
-    "lat": null,
-    "lon": null
+    "lat": 59.33,
+    "lon": 18.07
   },
   {
     "number": 33,
-    "city": "Helsinki, Finnland",
+    "city": "Helsinki",
     "venue": "Messukeskus",
     "facts": {
       "area": "ca. 58.000 m² Ausstellungsfläche im Stadtteil Pasila.",
@@ -528,12 +528,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Alle Nahverkehrszüge vom Hauptbahnhof Helsinki halten am Bahnhof Pasila. Von dort führt ein kurzer, ausgeschilderter Fußweg direkt zum Messukeskus."
     },
     "id": "venue-33",
-    "lat": null,
-    "lon": null
+    "lat": 60.17,
+    "lon": 24.94
   },
   {
     "number": 34,
-    "city": "Athen, Griechenland",
+    "city": "Athen",
     "venue": "Athens Metropolitan Expo",
     "facts": {
       "area": "ca. 50.000 m² hochmoderne Ausstellungsfläche, strategisch direkt am internationalen Flughafen Athen gelegen.",
@@ -544,12 +544,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Fliegen Sie einfach ein. Vom Flughafen Athen (ATH) gibt es während aller Messetage einen kostenlosen, permanenten Bus-Shuttle direkt zu den Halleneingängen."
     },
     "id": "venue-34",
-    "lat": null,
-    "lon": null
+    "lat": 37.98,
+    "lon": 23.72
   },
   {
     "number": 35,
-    "city": "Istanbul, Türkei",
+    "city": "Istanbul",
     "venue": "Tüyap Fair Convention and Congress Center",
     "facts": {
       "area": "ca. 125.000 m² Gesamtfläche im Stadtteil Büyükçekmece auf der europäischen Seite der Metropole.",
@@ -560,8 +560,8 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die beste und staubefreite Option ist die Nutzung des Metrobus (Schnellbusse auf eigener Spur) bis zur Endstation \"Tüyap\". Eine Taxifahrt aus der Innenstadt (Taksim) kann zu Stoßzeiten über zwei Stunden dauern."
     },
     "id": "venue-35",
-    "lat": null,
-    "lon": null
+    "lat": 41.01,
+    "lon": 28.98
   },
   {
     "number": 36,
@@ -581,7 +581,7 @@ export const messeVenues: MesseVenue[] = [
   },
   {
     "number": 37,
-    "city": "Moskau, Russland",
+    "city": "Moskau",
     "venue": "Expocentre Krasnaya Presnya",
     "facts": {
       "area": "ca. 165.000 m² Gesamtfläche, direkt neben dem futuristischen Wolkenkratzer-Viertel Moscow City am Ufer des Moskwa-Flusses gelegen.",
@@ -592,12 +592,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nutzen Sie die Metro bis zur Station \"Vystavochnaya\" oder \"Delovoy Tsentr\". Perfekt zentrale Lage."
     },
     "id": "venue-37",
-    "lat": null,
-    "lon": null
+    "lat": 55.75,
+    "lon": 37.62
   },
   {
     "number": 38,
-    "city": "Sankt Petersburg, Russland",
+    "city": "Sankt Petersburg",
     "venue": "Expoforum",
     "facts": {
       "area": "ca. 100.000 m² hochmoderne Ausstellungsfläche, unweit des Flughafens Pulkowo gelegen. Schauplatz des jährlichen St. Petersburg International Economic Forum (SPIEF).",
@@ -608,12 +608,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Während Messen verkehren kostenlose Shuttle-Busse von den Metrostationen \"Moskovskaya\" und \"Ploshchad Vosstaniya\"."
     },
     "id": "venue-38",
-    "lat": null,
-    "lon": null
+    "lat": 59.94,
+    "lon": 30.31
   },
   {
     "number": 39,
-    "city": "Kiew, Ukraine",
+    "city": "Kiew",
     "venue": "IEC - International Exhibition Centre",
     "facts": {
       "area": "ca. 58.000 m² moderne Hallenfläche am linken Ufer des Dnjepr-Flusses.",
@@ -624,12 +624,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Metro-Station \"Livoberezhna\" (Rote Linie) liegt nur knapp 10 Gehminuten vom Messegelände entfernt und bietet eine direkte Verbindung ins Stadtzentrum."
     },
     "id": "venue-39",
-    "lat": null,
-    "lon": null
+    "lat": 50.45,
+    "lon": 30.52
   },
   {
     "number": 40,
-    "city": "Belgrad, Serbien",
+    "city": "Belgrad",
     "venue": "Beogradski Sajam",
     "facts": {
       "area": "ca. 100.000 m² Gesamtfläche am Ufer der Save. Ein Meilenstein der sozialistischen Moderne.",
@@ -640,12 +640,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Belgrad hat derzeit kein U-Bahn-System. Nutzen Sie die Tramlinien 3, 12 und 13 oder Taxis, um direkt zum Messegelände am Fluss zu gelangen."
     },
     "id": "venue-40",
-    "lat": null,
-    "lon": null
+    "lat": 44.81,
+    "lon": 20.46
   },
   {
     "number": 41,
-    "city": "Bukarest, Rumänien",
+    "city": "Bukarest",
     "venue": "Romexpo",
     "facts": {
       "area": "ca. 100.000 m² Ausstellungsfläche im Norden der rumänischen Hauptstadt.",
@@ -656,12 +656,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Vom Flughafen Otopeni (OTP) gelangt man per Taxi oder Express-Bus 783 schnell zum Romexpo-Areal im Norden."
     },
     "id": "venue-41",
-    "lat": null,
-    "lon": null
+    "lat": 44.43,
+    "lon": 26.1
   },
   {
     "number": 42,
-    "city": "Zagreb, Kroatien",
+    "city": "Zagreb",
     "venue": "Zagrebački Velesajam",
     "facts": {
       "area": "ca. 135.000 m² Ausstellungsfläche im Stadtteil Novi Zagreb, südlich der Save.",
@@ -672,12 +672,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Tramlinien 7 und 14 verbinden das Stadtzentrum direkt mit der Haltestelle \"Velesajam\" vor dem Messegelände."
     },
     "id": "venue-42",
-    "lat": null,
-    "lon": null
+    "lat": 45.81,
+    "lon": 15.98
   },
   {
     "number": 43,
-    "city": "Budapest, Ungarn",
+    "city": "Budapest",
     "venue": "Hungexpo",
     "facts": {
       "area": "ca. 70.000 m² Hallenfläche, eingebettet in ein weitläufiges, grünes Parkareal im Osten der Stadt.",
@@ -688,12 +688,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nehmen Sie die Metro-Linie M2 bis zur Station \"Puskás Ferenc Stadion\" und steigen Sie dort in den moped-artig getakteten Messe-Busbahnhof um."
     },
     "id": "venue-43",
-    "lat": null,
-    "lon": null
+    "lat": 47.5,
+    "lon": 19.04
   },
   {
     "number": 44,
-    "city": "Nitra, Slowakei",
+    "city": "Nitra",
     "venue": "Agrokomplex",
     "facts": {
       "area": "ca. 60.000 m² Hallenkapazität plus ein riesiges landwirtschaftliches Freigelände mit integriertem Freilichtmuseum.",
@@ -704,12 +704,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Nitra ist am besten über die Autobahn R1 per Auto oder mit direkten Busverbindungen aus Bratislava (ca. 1 Stunde Fahrzeit) zu erreichen."
     },
     "id": "venue-44",
-    "lat": null,
-    "lon": null
+    "lat": 48.31,
+    "lon": 18.09
   },
   {
     "number": 45,
-    "city": "Graz, Österreich",
+    "city": "Graz",
     "venue": "Messe Congress Graz",
     "facts": {
       "area": "ca. 40.000 m² Gesamtfläche. Das architektonische Prunkstück ist die Stadthalle Graz mit ihrem weit auskragenden, spektakulären Vordach.",
@@ -720,8 +720,8 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Die Straßenbahnlinien 4, 5 und 13 fahren vom zentralen Jakominiplatz direkt vor den Haupteingang der Messe."
     },
     "id": "venue-45",
-    "lat": null,
-    "lon": null
+    "lat": 47.07,
+    "lon": 15.44
   },
   {
     "number": 46,
@@ -741,7 +741,7 @@ export const messeVenues: MesseVenue[] = [
   },
   {
     "number": 47,
-    "city": "Vilnius, Litauen",
+    "city": "Vilnius",
     "venue": "Litexpo",
     "facts": {
       "area": "ca. 33.000 m² moderne Ausstellungsfläche im Westen der baltischen Metropole.",
@@ -752,12 +752,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Vom Flughafen Vilnius (VNO) bringen Sie Taxis oder Ride-Hailing-Dienste (Bolt) in knapp 15 Minuten direkt zum Litexpo-Gelände."
     },
     "id": "venue-47",
-    "lat": null,
-    "lon": null
+    "lat": 54.69,
+    "lon": 25.28
   },
   {
     "number": 48,
-    "city": "Plowdiw, Bulgarien",
+    "city": "Plowdiw",
     "venue": "International Fair Plovdiv",
     "facts": {
       "area": "ca. 138.000 m² Gesamtfläche an beiden Ufern des Flusses Mariza. Einer der ältesten und traditionsreichsten Messeplätze auf dem Balkan.",
@@ -768,12 +768,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Plowdiw ist über die Autobahn Trakia perfekt an die Hauptstadt Sofia angebunden (ca. 1,5 Stunden Autofahrt)."
     },
     "id": "venue-48",
-    "lat": null,
-    "lon": null
+    "lat": 42.14,
+    "lon": 24.75
   },
   {
     "number": 49,
-    "city": "Ljubljana, Slowenien",
+    "city": "Ljubljana",
     "venue": "Gospodarsko Razstavišče",
     "facts": {
       "area": "ca. 25.000 m² Ausstellungsfläche im unmittelbaren Zentrum der grünen Hauptstadt.",
@@ -784,12 +784,12 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Da der Hauptbahnhof Ljubljana direkt um die Ecke liegt, ist die Anreise mit der Bahn die entspannteste Wahl."
     },
     "id": "venue-49",
-    "lat": null,
-    "lon": null
+    "lat": 46.06,
+    "lon": 14.51
   },
   {
     "number": 50,
-    "city": "Jekaterinburg, Russland",
+    "city": "Jekaterinburg",
     "venue": "Ekaterinburg-Expo",
     "facts": {
       "area": "ca. 90.000 m² hochmoderne Ausstellungsfläche weit im Osten an der geografischen Grenze zwischen Europa und Asien. Schauplatz der Industriemesse Innoprom.",
@@ -800,7 +800,7 @@ export const messeVenues: MesseVenue[] = [
       "travel": "Der Flughafen Koltsovo (SVX) liegt strategisch extrem nah am Messegelände. Nutzen Sie die offiziellen Messe-Shuttles, um die weite Fahrt in das Stadtzentrum zu umgehen."
     },
     "id": "venue-50",
-    "lat": null,
-    "lon": null
+    "lat": 56.84,
+    "lon": 60.61
   }
 ];
