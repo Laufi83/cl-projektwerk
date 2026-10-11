@@ -3,7 +3,7 @@ import {
   ArrowRight, ArrowUpRight, CalendarCheck, Check, Handshake, Medal, PenNib, Phone, Truck, UserFocus, UsersThree,
 } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
-import { ServicesEditorialIndex } from "@/components/sections/ServicesEditorialIndex";
+import { ServicesTimeline } from "@/components/sections/ServicesTimeline";
 import { AnchorLink } from "@/components/ui/AnchorLink";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { site } from "@/config/site";
@@ -124,7 +124,7 @@ export async function Services({ media, packageImage, visNote }: { media: Record
           <h3 className="font-display mt-4 text-4xl font-semibold leading-none md:text-6xl"><Kinetic text={t("single.title")} /></h3>
           <p className="mt-6 max-w-2xl text-lg text-fg-muted">{t("single.text")}</p>
         </div>
-        <ServicesEditorialIndex
+        <ServicesTimeline
           items={MODULES.map((k) => {
             const m = media[k];
             return {
