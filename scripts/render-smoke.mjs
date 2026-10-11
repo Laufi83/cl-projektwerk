@@ -52,10 +52,14 @@ try {
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ["INTERACTIVE STAND CONFIGURATOR", "SMART PROJECT FINDER", "CONSTRUCTION EXPERIENCE", "Mission Control"]) {
+      for (const name of ["INTERACTIVE STAND CONFIGURATOR", "SMART PROJECT FINDER", "Mission Control"]) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
+      assert(!body.includes("CL / CONSTRUCTION EXPERIENCE"), "Removed construction video experience still rendered");
+      assert(!body.includes('id="ablauf"'), "Removed process section still rendered");
+      assert(!body.includes("/media/process/"), "Removed process videos still linked");
+      checks.push("Homepage: process and construction video sections fully absent");
       const assets = [...new Set(body.match(/\/_next\/static\/[^"\s<>]+\.(?:js|css)/g))].slice(0, 6);
       assert(assets.length > 0, "No client assets in HTML");
       for (const asset of assets) {
