@@ -13,6 +13,7 @@ import { TaglineReveal } from "@/components/sections/TaglineReveal";
 import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
 import { World } from "@/components/sections/World";
+import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { locations } from "@/config/locations";
 import { tradeFairs, TRADE_FAIRS_CHECKED } from "@/config/trade-fairs";
 import { boardRows } from "@/lib/trade-fairs";
@@ -147,6 +148,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Graphics visNote={note} />
       <LedShowreel />
       <World rows={boardRows(locations, tradeFairs, now)} nowIso={now.toISOString()} checked={TRADE_FAIRS_CHECKED} />
+      <MesseVenueExplorer />
       <SeoSection />
       <About />
 
