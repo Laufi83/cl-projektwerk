@@ -40,7 +40,6 @@
     "services": "Tjenester",
     "designs": "Konsepter",
     "process": "Samarbeid",
-    "graphics": "Presentasjon",
     "world": "Messekalender",
     "about": "Om meg",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Skjermflater i planleggingen",
-    "title": "Medieflater trenger nøyaktige mål.",
-    "lead": "LED-vegger og skjermer hører til i mange messerom. Jeg tar dem med i dokumentene dine med mål, bildeforhold og tilkoblingsdata. Klippene viser vanlige formater; de er lisensiert eksempelmateriale og ikke mine egne prosjekter.",
-    "placeholder": "Eksempelklipp {n}",
-    "placeholderNote": "Eksempelmateriale",
-    "caption": "Eksempelklipp (stocklisens): {title}, {format}. Ikke et prosjekt fra CL Projektwerk."
-  },
   "about": {
     "eyebrow": "Om meg",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stasjonen kan ikke nås",
       "blocked": "Start blokkert av nettleseren. Klikk på spill av igjen."
     }
-  },
-  "graphics": {
-    "eyebrow": "Design og presentasjon",
-    "title": "Grafikk som passer til rommet.",
-    "text": "Til et design hører bilder som gjør det mulig å bestemme seg, og data som kan videreforedles uten etterarbeid. Jeg lager visualiseringer og trykkeklare grafikkdata, tilpasset rommets mål og konstruksjon og din visuelle identitet. Omfang og antall korrekturrunder avtales på forhånd. Selve trykkingen utføres av en trykkpartner som du eller, på ønske, jeg engasjerer.",
-    "points": [
-      {
-        "title": "Visualiseringer til avstemming",
-        "text": "Perspektiver, plantegning og fasader gjør konseptet forståelig for deg og kundene dine."
-      },
-      {
-        "title": "Trykkdata med alle opplysninger",
-        "text": "Utfall, fargeprofil, mål og filformat er forberedt for trykkpartneren din."
-      },
-      {
-        "title": "Tilpasset konstruksjonen",
-        "text": "Grafikkflater avstemmes mot målene på vegger og komponenter fra den tekniske planleggingen."
-      },
-      {
-        "title": "Avtalte korrekturrunder",
-        "text": "Vi fastsetter på forhånd hvor mange korrekturrunder som er inkludert. Flere runder er en tilleggstjeneste."
-      },
-      {
-        "title": "Versjonerte filer",
-        "text": "Hver versjon har en tydelig status, slik at bare godkjente data går til trykk."
-      },
-      {
-        "title": "Overlevering til trykkpartneren din",
-        "text": "Jeg leverer dataene, spesialistfirmaet trykker og produserer."
-      }
-    ],
-    "close": "Design og data fra meg, produksjon hos spesialistfirmaet: slik at rommet ser ut som det ble godkjent.",
-    "videoLabel": "Animasjon: trykkdata på en skjerm og storformattrykk av en messegrafikk (visualisering)"
   },
   "drops": {
     "rule": "Hver morgen kl. 5:00 et nytt konsept",
