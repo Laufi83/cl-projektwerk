@@ -1,11 +1,12 @@
 "use client";
 import { useCallback, useMemo, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Shuffle, SquaresFour, FilmStrip, Sun, Play } from "@phosphor-icons/react";
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
 import { ZoomSliderStage, type ZoomSliderController } from "./ZoomSliderStage";
 import { GridView } from "./GridView";
 import CoverflowCarousel, { type CoverflowItem } from "@/components/ui/coverflow-carousel";
+import { TiltedGridHero, type TiltedGridImage } from "@/components/ui/tilted-grid-hero";
 import { favorites, useFavorites } from "@/lib/favorites";
 import { Heart } from "@phosphor-icons/react";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
@@ -13,16 +14,17 @@ import { useReducedMotion } from "@/hooks/useMedia";
 
 type Props = { items: GalleryItem[]; dayPick: string };
 
-type ViewMode = "auto" | "slider" | "grid";
+type ViewMode = "tilted" | "auto" | "slider" | "grid";
 
 export function Gallery({ items, dayPick }: Props) {
   const t = useTranslations("gallery");
+  const locale = useLocale();
   const reduced = useReducedMotion();
   const overlay = useDesignOverlay();
   const favoriteIds = useFavorites();
 
   // Neue Standardansicht; die bisherige 3D-Galerie bleibt auswählbar.
-  const [mode, setMode] = useState<ViewMode>("auto");
+  const [mode, setMode] = useState<ViewMode>("tilted");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [index, setIndex] = useState(0);
   const controller = useRef<ZoomSliderController | null>(null);
@@ -65,7 +67,13 @@ export function Gallery({ items, dayPick }: Props) {
         rect: el?.getBoundingClientRect(),
         image: thumbUrl(d.id),
         tone: d.tone,
-        getReturnRect: (s) => document.querySelector<HTMLElement>(`[data-grid-card="${s}"] img`)?.getBoundingClientRect() ?? null,
+        getReturnRect: (s) => {
+          const card = list.find((d) => d.slug === s) ?? items.find((d) => d.slug === s);
+          const id = card?.id ?? "";
+          return document.querySelector<HTMLElement>(
+            '[data-grid-card="' + s + '"] img, [data-tilted-card="' + id + '"] img, [data-coverflow-card="' + id + '"] img',
+          )?.getBoundingClientRect() ?? null;
+        },
       });
     },
     [list, items, overlay],
@@ -100,7 +108,7 @@ export function Gallery({ items, dayPick }: Props) {
     <div className="grid gap-3">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div role="radiogroup" aria-label={t("viewMode")} className="glass inline-flex rounded-full p-1">
-          {(["auto", "slider", "grid"] as const).map((m) => (
+          {(["tilted", "auto", "slider", "grid"] as const).map((m) => (
             <button
               key={m}
               type="button"
@@ -110,8 +118,8 @@ export function Gallery({ items, dayPick }: Props) {
               onClick={() => setMode(m)}
               className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid aria-checked:bg-fg aria-checked:text-bg disabled:opacity-40 sm:px-4"
             >
-              {m === "auto" ? <Play size={16} weight="fill" aria-hidden="true" /> : m === "slider" ? <FilmStrip size={16} aria-hidden="true" /> : <SquaresFour size={16} aria-hidden="true" />}
-              {m === "auto" ? "Auto" : m === "slider" ? "3D" : t("grid")}
+              {m === "tilted" ? <FilmStrip size={16} aria-hidden="true" /> : m === "auto" ? <Play size={16} weight="fill" aria-hidden="true" /> : m === "slider" ? <FilmStrip size={16} aria-hidden="true" /> : <SquaresFour size={16} aria-hidden="true" />}
+              {m === "tilted" ? (locale === "de" ? "Kurve" : "Curved") : m === "auto" ? "Coverflow" : m === "slider" ? "3D" : t("grid")}
             </button>
           ))}
         </div>
@@ -168,6 +176,65 @@ export function Gallery({ items, dayPick }: Props) {
             </div>
           )}
         </div>
+      </div>
+    );
+  }
+
+  if (effectiveMode === "tilted") {
+    const tiles: TiltedGridImage[] = list.map((d) => ({
+      id: d.id,
+      src: thumbUrl(d.id, "render-1", 1280),
+      alt: pad3(d.n) + " " + d.title,
+      title: pad3(d.n) + " · " + d.title,
+      subtitle: d.size ?? undefined,
+    }));
+    const current = list[index] ?? list[0];
+    return (
+      <div>
+        <div className="container-x">{controls}</div>
+        {list.length ? (
+          <>
+            <div className="mt-6 px-[var(--gutter)]">
+              <TiltedGridHero
+                images={tiles}
+                activeIndex={index}
+                onActiveIndexChange={setIndex}
+                onImageSelect={(d, _i, el) => openGrid(list.find((x) => x.id === d.id)?.slug ?? "", el)}
+                loop
+                tileHeight={43}
+                curve={80}
+                fade={8}
+                className="h-[335px] sm:h-[420px] lg:h-[520px]"
+                label={t("sliderLabel")}
+                previousLabel={locale === "de" ? "Vorheriger Entwurf" : "Previous design"}
+                nextLabel={locale === "de" ? "Nächster Entwurf" : "Next design"}
+                wheelHint={locale === "de" ? "Mausrad · Wischen · Pfeiltasten" : "Mouse wheel · swipe · arrow keys"}
+              />
+            </div>
+            {current && (
+              <div className="container-x mt-4 flex flex-wrap items-center justify-between gap-4">
+                <button
+                  type="button"
+                  className="min-w-0 text-left text-sm font-semibold text-fg hover:text-accent"
+                  onClick={() => openGrid(current.slug, document.querySelector('[data-tilted-card="' + current.id + '"] img'))}
+                >
+                  {pad3(current.n)} · {current.title} <span className="ml-2 text-fg-muted">{current.size}</span>
+                </button>
+                <button
+                  type="button"
+                  aria-pressed={favoriteIds.includes(current.id)}
+                  onClick={() => favorites.toggle(current.id)}
+                  className="inline-flex items-center gap-2 rounded-full border border-line-strong px-4 py-2 text-sm font-semibold transition-colors hover:border-accent aria-pressed:text-accent"
+                >
+                  <Heart size={18} weight={favoriteIds.includes(current.id) ? "fill" : "regular"} aria-hidden="true" />
+                  {locale === "de" ? "Merken" : "Save"}
+                </button>
+              </div>
+            )}
+          </>
+        ) : (
+          <div className="container-x py-12"><p className="text-fg-muted">{t("empty")}</p></div>
+        )}
       </div>
     );
   }
