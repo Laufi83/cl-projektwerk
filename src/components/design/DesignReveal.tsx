@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useLocale } from "next-intl";
-import { ArrowsLeftRight, Blueprint, Image as ImageIcon } from "@phosphor-icons/react";
+import { ArrowsLeftRight, Ruler, Image as ImageIcon } from "@phosphor-icons/react";
 import type { Design, ImageInfo } from "@/lib/design-types";
 import { DesignImage } from "./DesignImage";
 
@@ -45,7 +45,7 @@ export function DesignReveal({ design }: { design: Design }) {
           <span className="absolute top-1/2 grid size-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-fg text-bg shadow-xl"><ArrowsLeftRight size={21}/></span>
         </div>
         <span className="pointer-events-none absolute left-3 top-3 z-10 inline-flex items-center gap-2 rounded-full bg-black/70 px-3 py-2 text-xs font-semibold text-white backdrop-blur">
-          <Blueprint size={15} aria-hidden="true"/> {de?"Planung":"Drawing"}
+          <Ruler size={15} aria-hidden="true"/> {de?"Planung":"Drawing"}
         </span>
         <span className="pointer-events-none absolute right-3 top-3 z-10 inline-flex items-center gap-2 rounded-full bg-black/70 px-3 py-2 text-xs font-semibold text-white backdrop-blur">
           <ImageIcon size={15} aria-hidden="true"/> Rendering
