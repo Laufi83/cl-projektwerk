@@ -134,6 +134,38 @@ export function HeroScrub({ films, visNote }: Props) {
     return () => { alive = false; st.kill(); ro.disconnect(); near.disconnect(); window.removeEventListener("load", onLoad); clearTimeout(idle); clearInterval(showWhenReady); };
   }, [mode, variant, film, customReady]);
 
+  // Video-Frame wird direkt durch ScrollTrigger gesteuert, auch beim Rueckwaertsscrollen.
+  // Falls der MP4-Upload noch fehlt, bleibt die bestehende WebP-Sequenz sichtbar.
+  useEffect(() => {
+    if (mode !== "scrub" || !customReady) return;
+    const video = customVideo.current;
+    if (!video || !Number.isFinite(video.duration) || video.duration <= 0) return;
+    video.pause();
+    let shownPct = -1;
+    const update = (progress: number) => {
+      const p = Math.min(1, Math.max(0, progress * 1.08));
+      const targetTime = Math.min(Math.max(0, video.duration - 0.025), p * video.duration);
+      if (Math.abs(video.currentTime - targetTime) > 0.045) {
+        try { video.currentTime = targetTime; } catch { /* Safari may defer seek */ }
+      }
+      if (bar.current) bar.current.style.transform = "scaleX(" + p + ")";
+      const percent = Math.round(p * 100);
+      if (pct.current && percent !== shownPct) {
+        shownPct = percent;
+        pct.current.textContent = String(percent);
+      }
+      setDone(progress > 0.86);
+    };
+    const trigger = ScrollTrigger.create({
+      trigger: section.current,
+      start: "top top",
+      end: "bottom bottom",
+      onUpdate: (self) => update(self.progress),
+    });
+    update(trigger.progress);
+    return () => trigger.kill();
+  }, [mode, customReady]);
+
   return (
     <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[260svh] md:h-[320svh]"}`}>
       <div className="hero-stage sticky top-0 h-[100svh] w-full overflow-hidden">
