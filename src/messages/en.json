@@ -40,7 +40,6 @@
     "services": "Services",
     "designs": "Concepts",
     "process": "Collaboration",
-    "graphics": "Presentation",
     "world": "Fair calendar",
     "about": "About me",
     "contact": "Contact",
@@ -449,14 +448,6 @@
       "note": "Your location is processed only in your browser and is not transmitted."
     }
   },
-  "led": {
-    "eyebrow": "Screen surfaces in planning",
-    "title": "Media surfaces need exact dimensions.",
-    "lead": "LED walls and monitors are part of many exhibition spaces. I include them in your documents with dimensions, aspect ratios and connection data. The clips show common formats; they are licensed sample material and not my own projects.",
-    "placeholder": "Sample clip {n}",
-    "placeholderNote": "Sample material",
-    "caption": "Sample clip (stock licence): {title}, {format}. Not a project of CL Projektwerk."
-  },
   "about": {
     "eyebrow": "About me",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Station unreachable",
       "blocked": "Start blocked by the browser. Please click play again."
     }
-  },
-  "graphics": {
-    "eyebrow": "Design and presentation",
-    "title": "Graphics that fit the space.",
-    "text": "A design needs images that enable decisions and data that can be processed without rework. I create visualisations and print-ready graphic data, matched to the dimensions and construction of the space and to your corporate design. The scope and the number of correction rounds are agreed in advance. Printing itself is done by a print partner whom you or, on request, I involve.",
-    "points": [
-      {
-        "title": "Visualisations for coordination",
-        "text": "Perspectives, floor plan and elevations make the concept understandable for you and your clients."
-      },
-      {
-        "title": "Print data with all details",
-        "text": "Bleed, colour profile, dimensions and file format are prepared for your print partner."
-      },
-      {
-        "title": "Matched to the construction",
-        "text": "Graphic areas are checked against the dimensions of walls and components from the technical planning."
-      },
-      {
-        "title": "Agreed correction rounds",
-        "text": "We define in advance how many correction rounds are included. Further rounds are an additional service."
-      },
-      {
-        "title": "Versioned files",
-        "text": "Every version has a clear status, so only approved data goes to print."
-      },
-      {
-        "title": "Handover to your print partner",
-        "text": "I supply the data, the specialist company prints and produces."
-      }
-    ],
-    "close": "Design and data from me, production at the specialist company, so that the space looks the way it was approved.",
-    "videoLabel": "Animation: print data on a monitor and large-format printing of an exhibition graphic (visualisation)"
   },
   "drops": {
     "rule": "Another concept every morning at 5:00",
