@@ -4,6 +4,7 @@ import { Kinetic } from "@/components/kinetic/Kinetic";
 import { mediaUrl } from "@/lib/media";
 import { portrait } from "@/config/profile";
 import { CareerSpotlight } from "@/components/sections/CareerSpotlight";
+import { CareerTimeline } from "@/components/sections/CareerTimeline";
 
 /** Über mich – Foto, Text, Kennzahlen, Werdegang und Projekte aus Lebenslauf und Portfolio (siehe config/profile.ts). */
 export async function About() {
@@ -89,16 +90,7 @@ export async function About() {
 
           <div className="mt-12" data-reveal>
             <h3 className="eyebrow">{t("career")}</h3>
-            <ol className="mt-5 grid gap-5 border-l border-line pl-5">
-              {career.map((c, i) => (
-                <li key={c.years + c.role} className={"relative rounded-r-2xl transition-colors duration-300 " + (i === 0 ? "border-y border-r border-accent/30 bg-accent-soft/40 p-4" : "")}>
-                  <span aria-hidden className={"absolute top-1.5 size-2 rounded-full bg-accent " + (i === 0 ? "-left-[25px]" : "-left-[25px]")} />
-                  <p className="tabular text-sm text-fg-subtle">{c.years}</p>
-                  <p className="font-semibold">{c.role}</p>
-                  <p className="text-sm text-fg-muted">{c.org}</p>
-                </li>
-              ))}
-            </ol>
+            <CareerTimeline entries={career} />
           </div>
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2" data-reveal>
