@@ -40,7 +40,6 @@
     "services": "Usługi",
     "designs": "Koncepcje",
     "process": "Współpraca",
-    "graphics": "Prezentacja",
     "world": "Kalendarz targów",
     "about": "O mnie",
     "contact": "Kontakt",
@@ -449,14 +448,6 @@
       "note": "Twoja lokalizacja jest przetwarzana tylko w przeglądarce i nie jest przesyłana."
     }
   },
-  "led": {
-    "eyebrow": "Powierzchnie ekranowe w planowaniu",
-    "title": "Powierzchnie medialne wymagają dokładnych wymiarów.",
-    "lead": "Ściany LED i monitory są częścią wielu przestrzeni targowych. Uwzględniam je w Twoich dokumentach z wymiarami, proporcjami obrazu i danymi przyłączeniowymi. Klipy pokazują typowe formaty; to licencjonowany materiał przykładowy, nie moje projekty.",
-    "placeholder": "Klip przykładowy {n}",
-    "placeholderNote": "Materiał przykładowy",
-    "caption": "Klip przykładowy (licencja stockowa): {title}, {format}. To nie jest projekt CL Projektwerk."
-  },
   "about": {
     "eyebrow": "O mnie",
     "name": "Christof Laufersweiler",
@@ -770,39 +761,6 @@
       "error": "Stacja niedostępna",
       "blocked": "Start zablokowany przez przeglądarkę. Kliknij odtwarzanie ponownie."
     }
-  },
-  "graphics": {
-    "eyebrow": "Projekt i prezentacja",
-    "title": "Grafika, która pasuje do przestrzeni.",
-    "text": "Do projektu potrzebne są obrazy umożliwiające decyzje i dane, które można dalej przetwarzać bez poprawek. Przygotowuję wizualizacje i dane graficzne gotowe do druku, dopasowane do wymiarów i konstrukcji przestrzeni oraz do Twojej identyfikacji wizualnej. Zakres i liczbę rund poprawek uzgadniamy z góry. Druk wykonuje partner drukarski, którego włączasz Ty lub na życzenie ja.",
-    "points": [
-      {
-        "title": "Wizualizacje do uzgodnień",
-        "text": "Perspektywy, rzut i widoki sprawiają, że koncepcja jest zrozumiała dla Ciebie i Twoich klientów."
-      },
-      {
-        "title": "Dane do druku ze wszystkimi informacjami",
-        "text": "Spady, profil kolorów, wymiary i format pliku są przygotowane dla Twojego partnera drukarskiego."
-      },
-      {
-        "title": "Dopasowane do konstrukcji",
-        "text": "Powierzchnie graficzne są sprawdzane z wymiarami ścian i elementów z planowania technicznego."
-      },
-      {
-        "title": "Uzgodnione rundy poprawek",
-        "text": "Z góry ustalamy, ile rund poprawek jest w cenie. Kolejne rundy są usługą dodatkową."
-      },
-      {
-        "title": "Pliki z wersjami",
-        "text": "Każda wersja ma jasny status, dzięki czemu do druku trafiają tylko zaakceptowane dane."
-      },
-      {
-        "title": "Przekazanie partnerowi drukarskiemu",
-        "text": "Ja dostarczam dane, firma specjalistyczna drukuje i produkuje."
-      }
-    ],
-    "close": "Projekt i dane ode mnie, produkcja w firmie specjalistycznej: aby przestrzeń wyglądała tak, jak została zaakceptowana.",
-    "videoLabel": "Animacja: dane do druku na monitorze i druk wielkoformatowy grafiki targowej (wizualizacja)"
   },
   "drops": {
     "rule": "Każdego ranka o 5:00 kolejna koncepcja",
