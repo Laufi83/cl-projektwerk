@@ -530,6 +530,12 @@
         "note": "Több kiállító és jármű, nagyméretű LED-kijelzők"
       },
       {
+        "year": "2024",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2024 – 40. éves találkozó, Amszterdam, Hollandia",
+        "note": "2024. július 7–10."
+      },
+      {
         "year": "2023",
         "client": "Bosch Rexroth",
         "event": "Agritechnica, Hannover",
@@ -548,9 +554,21 @@
         "event": "RETTmobil 2023, Fulda"
       },
       {
+        "year": "2023",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2023 – 39. éves találkozó, Koppenhága, Dánia",
+        "note": "2023. június 25–28."
+      },
+      {
         "year": "2022",
         "client": "Mercedes-Benz",
         "event": "RETTmobil 2022, Fulda"
+      },
+      {
+        "year": "2022",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2022 – 38. éves találkozó, Milánó, Olaszország",
+        "note": "2022. július 3–6."
       },
       {
         "year": "2018",
