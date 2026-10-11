@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Heart } from "@phosphor-icons/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useFavorites } from "@/lib/favorites";
@@ -16,11 +16,14 @@ const SECTIONS = [
   { id: "ablauf", key: "process" },
   { id: "grafik", key: "graphics" },
   { id: "weltweit", key: "world" },
+  { id: "messegelande", key: "venues" },
   { id: "ueber", key: "about" },
 ] as const;
 
 export function Header() {
   const t = useTranslations("nav");
+  const locale = useLocale();
+  const sectionLabel = (s: typeof SECTIONS[number] | {id:string;key:string}) => s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key as "services" | "designs" | "process" | "graphics" | "world" | "about" | "contact");
   const tc = useTranslations("common");
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -87,7 +90,7 @@ export function Header() {
     >
       <nav
         aria-label={t("main")}
-        className="glass pointer-events-auto mx-auto mt-4 flex w-max max-w-[calc(100vw-24px)] items-center gap-1 rounded-full p-2 shadow-[0_12px_40px_-12px_rgba(0,0,0,.6)] md:mt-6"
+        className="glass pointer-events-auto mx-auto mt-4 flex w-max max-w-[calc(100vw-24px)] items-center gap-1 rounded-[1.6rem] border border-white/15 bg-[#12161c]/80 p-2 shadow-[0_24px_85px_-28px_rgba(0,0,0,.85),inset_0_1px_0_rgba(255,255,255,.1)] backdrop-blur-2xl md:mt-6"
       >
         <Link
           href="/"
@@ -105,16 +108,16 @@ export function Header() {
           <Logo className="h-5 w-auto text-fg transition-colors duration-500 ease-fluid group-hover/logo:text-accent" />
         </Link>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center gap-0.5 xl:flex">
           {SECTIONS.map((s) => (
             <li key={s.id}>
               <Link
                 href={{ pathname: "/", hash: s.id }}
                 onClick={go(s.id)}
                 aria-current={current === s.id ? "true" : undefined}
-                className="relative rounded-full px-3 py-2 text-sm text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg aria-[current]:text-fg"
+                className="group/nav relative inline-flex items-center rounded-2xl px-2.5 py-2.5 text-xs font-semibold text-fg-muted transition-[color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:text-fg aria-[current]:bg-white/10 aria-[current]:text-fg 2xl:px-3 2xl:text-sm"
               >
-                <Kinetic text={t(s.key)} />
+                <Kinetic text={sectionLabel(s)} />
                 <span
                   aria-hidden
                   className="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-accent transition-transform duration-700 ease-fluid [[aria-current]>&]:scale-x-100"
@@ -142,7 +145,7 @@ export function Header() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={tc("menu")}
-          className="relative ml-1 grid size-10 place-items-center rounded-full lg:hidden"
+          className="relative ml-1 grid size-10 place-items-center rounded-full xl:hidden"
         >
           <span aria-hidden className="relative block h-3 w-5">
             <span className={`absolute left-0 h-[1.5px] w-5 bg-fg transition-all duration-700 ease-fluid ${open ? "top-1.5 rotate-45" : "top-0"}`} />
@@ -155,7 +158,7 @@ export function Header() {
       <div
         id="mobile-menu"
         hidden={!open}
-        className="pointer-events-auto fixed inset-0 -z-10 bg-black/80 backdrop-blur-3xl lg:hidden"
+        className="pointer-events-auto fixed inset-0 -z-10 bg-[#080b10]/95 backdrop-blur-3xl xl:hidden"
         onClick={(e) => e.target === e.currentTarget && setOpen(false)}
       >
         <ul className="flex h-full flex-col justify-center gap-2 px-8">
@@ -164,14 +167,14 @@ export function Header() {
               <Link
                 href={{ pathname: "/", hash: s.id }}
                 onClick={(e) => { go(s.id)(e); setOpen(false); }}
-                className="font-display block py-2 text-4xl font-semibold transition-all duration-700 ease-fluid"
+                className="font-display block py-2 text-[clamp(1.75rem,5.5vh,3rem)] font-semibold tracking-tight transition-[transform,opacity,color] duration-500 ease-fluid hover:text-accent"
                 style={{
                   transform: open ? "none" : "translateY(48px)",
                   opacity: open ? 1 : 0,
                   transitionDelay: `${100 + i * 50}ms`,
                 }}
               >
-                {t(s.key)}
+                {s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key)}
               </Link>
             </li>
           ))}

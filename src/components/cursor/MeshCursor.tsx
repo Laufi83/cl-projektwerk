@@ -178,6 +178,7 @@ export default function MeshCursor() {
     <>
       <canvas ref={canvasRef} aria-hidden className="pointer-events-none fixed inset-0 z-0 h-full w-full" />
       <div ref={cursorRef} aria-hidden className="mesh-cursor" data-state="hidden" popover="manual">
+        <span className="mesh-cursor__halo" />
         <span className="mesh-cursor__cross" />
         <span className="mesh-cursor__ring">
           <span ref={labelRef} className="mesh-cursor__label" />
@@ -190,6 +191,11 @@ export default function MeshCursor() {
       <style>{`
         .mesh-cursor { position: fixed; inset: 0 auto auto 0; z-index: 95; width: 0; height: 0; margin: 0; padding: 0; border: 0; background: none; color: inherit; overflow: visible; pointer-events: none; will-change: transform; }
         .mesh-cursor > * { position: absolute; left: 0; top: 0; transform: translate(-50%, -50%); transition: opacity 400ms var(--ease-fluid), transform 600ms var(--ease-fluid), width 600ms var(--ease-fluid), height 600ms var(--ease-fluid); }
+        .mesh-cursor__halo { width: 42px; height: 42px; border: 1px solid color-mix(in oklab, var(--accent) 52%, transparent); border-radius: 50%; opacity: .7; box-shadow: 0 0 24px -10px var(--accent), inset 0 0 14px -11px var(--accent); transition: width 280ms cubic-bezier(.2,.8,.2,1), height 280ms cubic-bezier(.2,.8,.2,1), opacity 280ms ease; }
+        .mesh-cursor[data-state="ring"] .mesh-cursor__halo { width: 98px; height: 98px; opacity: .3; }
+        .mesh-cursor[data-state="hand"] .mesh-cursor__halo, .mesh-cursor[data-state="grab"] .mesh-cursor__halo { width: 48px; height: 48px; opacity: .35; }
+        .mesh-cursor[data-pressed="true"] .mesh-cursor__halo { width: 26px; height: 26px; }
+        @media (prefers-reduced-motion:reduce) { .mesh-cursor__halo { transition: none; } }
         .mesh-cursor__cross { width: 22px; height: 22px; }
         .mesh-cursor__cross::before, .mesh-cursor__cross::after { content: ""; position: absolute; background: #fff; mix-blend-mode: difference; }
         .mesh-cursor__cross::before { left: 50%; top: 0; width: 1.25px; height: 100%; transform: translateX(-50%); }
