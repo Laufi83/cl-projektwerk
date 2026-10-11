@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight, Pause, Play } from "@phosphor-icons/react";
 import { useNear } from "@/hooks/useNear";
 import { useReducedMotion } from "@/hooks/useMedia";
+import { useLiteMode } from "@/lib/performance";
 import type { StepImage } from "@/components/sections/Process";
 
 const STEPS = ["briefing","concept","planning","production","logistics","onsite"] as const;
@@ -12,7 +13,8 @@ export function ConstructionExperience({images,visualisationNote}:{images:StepIm
   const de=useLocale()==="de",t=useTranslations("process");
   const [step,setStep]=useState(0),[tour,setTour]=useState(false);
   const host=useRef<HTMLDivElement>(null),video=useRef<HTMLVideoElement>(null);
-  const near=useNear(host),reduced=useReducedMotion();
+  const near=useNear(host),systemReduced=useReducedMotion(),lite=useLiteMode();
+  const reduced=systemReduced||lite;
   const current=images[step];
   useEffect(()=>{
     if(!tour||!near||reduced)return;
