@@ -10,6 +10,7 @@ import { designAsset, mediaUrl } from "@/lib/media";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
+import { useLiteMode } from "@/lib/performance";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,9 +38,10 @@ export function HeroScrub({ films, visNote }: Props) {
   const [done, setDone] = useState(false);
   const hydrated = useSyncExternalStore(noop, () => true, () => false);
   const reduce = useReducedMotion();
+  const lite = useLiteMode();
   const weak = useSyncExternalStore(noop, weakConnection, () => false);
   const variant = useMedia(HERO_PORTRAIT_QUERY) ? "mobile" : "desktop";
-  const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || weak ? "fallback" : "scrub";
+  const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || lite || weak ? "fallback" : "scrub";
   const layout = useLayout();
   const film = films.find((f) => f.id === layoutById(layout).design) ?? films[0];
 
@@ -184,7 +186,7 @@ export function HeroScrub({ films, visNote }: Props) {
               style={{ objectPosition: "50% 50%" }}
             />
           )}
-          {mode === "fallback" && <FallbackLoop key={film.id} id={film.id} playLabel={tc("play")} />}
+          {mode === "fallback" && !lite && <FallbackLoop key={film.id} id={film.id} playLabel={tc("play")} />}
 
           {/* Lesbarkeit */}
           <div aria-hidden className="hero-shade absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/55" />

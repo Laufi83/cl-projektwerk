@@ -292,3 +292,38 @@ html { -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%;
 a, button, summary, label, select, [role="button"] { touch-action: manipulation; }
 body { padding-bottom: env(safe-area-inset-bottom); }
 .hero-top { padding-top: env(safe-area-inset-top); }
+
+
+/* Career timeline: animate only when motion is allowed. */
+@keyframes career-enter {
+  from { opacity: 0; transform: translateY(14px); filter: blur(5px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+/* Light rendering mode chosen automatically for small touch devices or manually in footer. */
+html[data-performance="lite"] {
+  --dur-fast: 1ms;
+  --dur: 1ms;
+  --dur-slow: 1ms;
+}
+html[data-performance="lite"] *,
+html[data-performance="lite"] *::before,
+html[data-performance="lite"] *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+html[data-performance="lite"] [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+}
+html[data-performance="lite"] .glass,
+html[data-performance="lite"] .vis-note {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .career-date-enter { animation: none !important; }
+}

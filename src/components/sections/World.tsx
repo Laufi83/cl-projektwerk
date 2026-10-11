@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ArrowsIn, MapPin, Minus, Pause, Play, Plus } from "@phosphor-icons/react";
 import { locations, locationsArePlaceholders, regions } from "@/config/locations";
 import { useReducedMotion } from "@/hooks/useMedia";
+import { useLiteMode } from "@/lib/performance";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { useNear } from "@/hooks/useNear";
@@ -41,6 +42,7 @@ export function World({ rows, nowIso, checked }: Props) {
   const tc = useTranslations("world.calendar");
   const locale = useLocale();
   const reduced = useReducedMotion();
+  const lite = useLiteMode();
 
   const defaultHome = locations.find((l) => l.home) ?? locations[0];
   // Startpunkt: Leipzig, oder die dem Besucher nächstgelegene Messestadt (nur nach Freigabe des Browser-Standorts, nur im Browser ausgewertet)
@@ -232,11 +234,12 @@ export function World({ rows, nowIso, checked }: Props) {
               <div aria-hidden className="absolute inset-[12%] rounded-full bg-accent/10 blur-3xl" />
               {/* Canvas größer als die Fläche: Lichtsäulen und Flugbögen werden am Rand nicht abgeschnitten */}
               <div className="absolute -inset-[12%]">
-                {near && (
+                {near && !lite && (
                   <ErrorBoundary>
                     <GlobeCanvas pins={pins} route={route} step={step} focus={focus} reduced={reduced} visible={visible} overlay={overlay} onArrive={onArrive} zoom={zoom} onZoom={onZoom} onPick={setChip} locale={locale} />
                   </ErrorBoundary>
                 )}
+                {lite && <div className="absolute inset-0 flex items-center justify-center p-8 text-center text-sm text-fg-muted"><p>{locale === "de" ? "3D-Globus im Schonmodus pausiert – alle Messetermine sind rechts weiterhin verfügbar." : "3D globe paused in Lite mode – exhibition dates remain available alongside."}</p></div>}
                 {/* Messekarte über der angeflogenen Stadt (Position setzt der Globus) */}
                 <div ref={overlay} className="fair-card" data-state="off" data-side="right" data-hidden="0" aria-hidden>
                   <span className="fair-card__dot" />

@@ -44,7 +44,10 @@ try {
       for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "SELECTED EXPERIENCE"]) {
         assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
       }
-      checks.push(`${route}: C3 EXPO, BMW, Amazon and updated timeline`);
+      for (const marker of ["CL / CAREER TIMELINE", "Motion mode"]) {
+        assert(body.includes(marker) || (marker === "Motion mode" && body.includes("Animationsmodus")), `Interactive career/performance missing on ${route}: ${marker}`);
+      }
+      checks.push(`${route}: C3 EXPO, interactive career timeline and performance controls`);
     }
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
@@ -73,6 +76,8 @@ try {
     if (route === `/designs/${first.slug}`) {
       const html = new TextDecoder().decode(resource);
       assert(html.includes("DESIGN TO REALITY"), "X-Ray project comparison missing");
+      assert(html.includes("CL / PROJECT STORY"), "Interactive project story missing");
+      checks.push("Project detail: three-stage interactive story from existing design content");
       checks.push("Project detail: real drawing/rendering X-Ray comparison");
     }
     checks.push(route);

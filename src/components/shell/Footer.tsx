@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { site, isPlaceholder } from "@/config/site";
 import { CookieSettingsButton } from "./CookieBanner";
 import { Logo } from "@/components/brand/Logo";
+import { PerformanceSwitcher } from "./PerformanceSwitcher";
 import { LOCALES, pick } from "@/i18n/locales";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 
@@ -42,6 +43,7 @@ export async function Footer() {
           <Link href="/impressum" className="text-fg-muted hover:text-fg">{t("imprint")}</Link>
           <Link href="/datenschutz" className="text-fg-muted hover:text-fg">{t("privacy")}</Link>
           <CookieSettingsButton label={t("cookies")} />
+          <PerformanceSwitcher />
           <ul className="mt-4 flex max-w-xs flex-wrap gap-x-3 gap-y-2 text-xs uppercase tracking-[0.14em]" aria-label={t("languages")}>
             {LOCALES.map((l) => (
               <li key={l.code}>

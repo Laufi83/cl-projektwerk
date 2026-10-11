@@ -7,6 +7,7 @@ import { ArrowRight, Compass, MagnifyingGlass, MapPin, Buildings, Info, ArrowSqu
 import { messeVenues } from "@/config/messe-venues";
 import { useNear } from "@/hooks/useNear";
 import { useReducedMotion } from "@/hooks/useMedia";
+import { useLiteMode } from "@/lib/performance";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { ExpoMissionControl } from "@/components/sections/ExpoMissionControl";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
@@ -31,6 +32,7 @@ export function MesseVenueExplorer() {
   const globeHost = useRef<HTMLDivElement>(null);
   const near = useNear(globeHost);
   const reduced = useReducedMotion();
+  const lite = useLiteMode();
   const items = useMemo(() => messeVenues.filter((v) => {
     if (region === "de" && !DE_IDS.has(v.number)) return false;
     if (region === "eu" && DE_IDS.has(v.number)) return false;
@@ -96,13 +98,13 @@ export function MesseVenueExplorer() {
 
         <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
           <div role="group" aria-label={de?"Atlas-Ansicht wählen":"Choose atlas view"} className="inline-flex gap-2 rounded-full border border-line p-1">
-            <button type="button" aria-pressed={atlasMode==="globe"} onClick={()=>setAtlasMode("globe")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors aria-pressed:bg-accent aria-pressed:text-accent-contrast">{de?"3D-Globus":"3D Globe"}</button>
-            <button type="button" aria-pressed={atlasMode==="mission"} onClick={()=>setAtlasMode("mission")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors aria-pressed:bg-accent aria-pressed:text-accent-contrast">Mission Control</button>
+            <button type="button" aria-pressed={atlasMode==="globe"&&!lite} disabled={lite} title={lite?(de?"Im Schonmodus nicht verfügbar":"Unavailable in Lite mode"):undefined} onClick={()=>setAtlasMode("globe")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors disabled:opacity-40 aria-pressed:bg-accent aria-pressed:text-accent-contrast">{de?"3D-Globus":"3D Globe"}</button>
+            <button type="button" aria-pressed={atlasMode==="mission"||lite} onClick={()=>setAtlasMode("mission")} className="rounded-full px-5 py-2 text-sm font-semibold transition-colors aria-pressed:bg-accent aria-pressed:text-accent-contrast">Mission Control</button>
           </div>
           <p className="text-xs text-fg-subtle">{de?"Zwei Ansichten – dieselben 50 Standortprofile.":"Two views – the same 50 venue profiles."}</p>
         </div>
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-          {atlasMode==="mission" ? <ExpoMissionControl venues={items} selected={active} onSelect={choose}/> : <div ref={globeHost} className="relative min-h-[380px] overflow-hidden rounded-[2rem] border border-line bg-bg-raised sm:min-h-[540px] lg:min-h-[680px]">
+          {atlasMode==="mission" || lite ? <ExpoMissionControl venues={items} selected={active} onSelect={choose}/> : <div ref={globeHost} className="relative min-h-[380px] overflow-hidden rounded-[2rem] border border-line bg-bg-raised sm:min-h-[540px] lg:min-h-[680px]">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(242,106,27,.09),transparent_60%)]" />
             {near ? (
               <GlobeCanvas pins={pins} route={[]} step={-1} focus={active.id} reduced={reduced}
