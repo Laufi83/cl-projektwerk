@@ -41,6 +41,12 @@ try {
       assert.match(response.headers.get("cache-control"), /no-store/);
     }
     if (homepages.includes(route)) {
+      // Graphics/LED sections and their navigation must stay completely removed.
+      for (const removed of ['id="grafik"', 'id="led"', 'href="#grafik"', '/media/graphics/grafikdaten.mp4', '/led/led-automotive-16x9.mp4']) {
+        assert(!body.includes(removed), `Removed section/media still rendered on ${route}: ${removed}`);
+      }
+      checks.push(`${route}: graphics + LED sections and references absent`);
+
       for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "SELECTED EXPERIENCE"]) {
         assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
       }
@@ -65,6 +71,17 @@ try {
       }
     }
     checks.push(route);
+  }
+  // The removed media are not part of the deployed static asset bundle anymore.
+  for (const asset of [
+    "/media/graphics/grafikdaten.mp4",
+    "/led/led-automotive-16x9.mp4",
+    "/led/led-ki-9x16.mp4",
+    "/led/led-nachhaltigkeit-16x9.mp4",
+  ]) {
+    const response = await fetch(base + asset, { signal: AbortSignal.timeout(10000) });
+    assert.equal(response.status, 404, `Deleted asset should be unavailable: ${asset}`);
+    checks.push(`Removed media unavailable: ${asset}`);
   }
   const manifest = JSON.parse(await readFile("src/generated/manifest.json", "utf8"));
   const first = manifest.designs[0];
