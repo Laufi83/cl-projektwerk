@@ -14,7 +14,7 @@ export type ServiceMedia = { src: string; srcSet?: string; video?: string };
 const MODULES = ["tech", "prep", "control", "concept", "reuse"] as const;
 type Module = (typeof MODULES)[number];
 /** Sprungmarke „mehr dazu“ je Einzelleistung */
-const TARGETS: Record<Module, "#ablauf" | "#designs" | "#ueber"> = { tech: "#ablauf", prep: "#ablauf", control: "#ablauf", concept: "#designs", reuse: "#ueber" };
+const TARGETS: Record<Module, "#kontakt" | "#designs" | "#ueber"> = { tech: "#kontakt", prep: "#kontakt", control: "#kontakt", concept: "#designs", reuse: "#ueber" };
 const PHASE_ICONS = [CalendarCheck, PenNib, Truck, Handshake];
 const TRUST_ICONS = [UserFocus, Medal, UsersThree];
 
@@ -69,7 +69,7 @@ export async function Services({ media, packageImage, visNote }: { media: Record
                 >
                   {t("package.cta")} <ArrowRight size={18} aria-hidden />
                 </InquireLink>
-                <AnchorLink href="#ablauf" className="inline-flex items-center gap-1 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg">
+                <AnchorLink href="#kontakt" className="inline-flex items-center gap-1 text-sm font-semibold text-fg-muted transition-colors duration-500 ease-fluid hover:text-fg">
                   {t("package.more")} <ArrowUpRight size={14} className="text-accent" aria-hidden />
                 </AnchorLink>
               </div>
