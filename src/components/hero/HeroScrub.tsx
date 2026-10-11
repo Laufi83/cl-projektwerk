@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, Play } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { scrollToTarget } from "@/lib/scroll";
-import { designAsset } from "@/lib/media";
+import { designAsset, mediaUrl } from "@/lib/media";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
@@ -30,6 +30,8 @@ export function HeroScrub({ films, visNote }: Props) {
   const tc = useTranslations("common");
   const section = useRef<HTMLElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
+  const customVideo = useRef<HTMLVideoElement>(null);
+  const [customReady, setCustomReady] = useState(false);
   const bar = useRef<HTMLDivElement>(null);
   const pct = useRef<HTMLSpanElement>(null);
   const [done, setDone] = useState(false);
@@ -42,7 +44,7 @@ export function HeroScrub({ films, visNote }: Props) {
   const film = films.find((f) => f.id === layoutById(layout).design) ?? films[0];
 
   useEffect(() => {
-    if (mode !== "scrub") return;
+    if (mode !== "scrub" || customReady) return;
     const seq = variant === "mobile" ? film.mobile : film.desktop;
     const cv = canvas.current!;
     const ctx = cv.getContext("2d", { alpha: false })!;
@@ -130,7 +132,7 @@ export function HeroScrub({ films, visNote }: Props) {
     ro.observe(cv);
     size();
     return () => { alive = false; st.kill(); ro.disconnect(); near.disconnect(); window.removeEventListener("load", onLoad); clearTimeout(idle); clearInterval(showWhenReady); };
-  }, [mode, variant, film]);
+  }, [mode, variant, film, customReady]);
 
   return (
     <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[260svh] md:h-[320svh]"}`}>
@@ -138,7 +140,18 @@ export function HeroScrub({ films, visNote }: Props) {
         <div className="hero-media absolute inset-0 overflow-hidden bg-black">
           {/* Poster je Layout per CSS (nur das aktive wird geladen); die Sequenz zeichnet darüber */}
           <div aria-hidden className="hero-poster absolute inset-0" />
-          {mode === "scrub" && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
+          {mode === "scrub" && !customReady && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
+          {mode === "scrub" && (
+            <video
+              ref={customVideo}
+              src={mediaUrl("custom/homepage-scroll-build.mp4")}
+              muted playsInline preload="auto" aria-hidden
+              onLoadedData={() => setCustomReady(true)}
+              onError={() => setCustomReady(false)}
+              className={"absolute inset-0 h-full w-full object-cover transition-opacity duration-500 " + (customReady ? "opacity-100" : "pointer-events-none opacity-0")}
+              style={{ objectPosition: "50% 50%" }}
+            />
+          )}
           {mode === "fallback" && <FallbackLoop key={film.id} id={film.id} playLabel={tc("play")} />}
 
           {/* Lesbarkeit */}
