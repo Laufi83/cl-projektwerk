@@ -530,6 +530,12 @@
         "note": "多家参展商和车辆，大尺寸 LED 显示屏"
       },
       {
+        "year": "2024",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2024 – 第40届年会，荷兰阿姆斯特丹",
+        "note": "2024年7月7日至10日"
+      },
+      {
         "year": "2023",
         "client": "Bosch Rexroth",
         "event": "Agritechnica，汉诺威",
@@ -548,9 +554,21 @@
         "event": "RETTmobil 2023, Fulda"
       },
       {
+        "year": "2023",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2023 – 第39届年会，丹麦哥本哈根",
+        "note": "2023年6月25日至28日"
+      },
+      {
         "year": "2022",
         "client": "Mercedes-Benz",
         "event": "RETTmobil 2022, Fulda"
+      },
+      {
+        "year": "2022",
+        "client": "Merck, Darmstadt",
+        "event": "ESHRE 2022 – 第38届年会，意大利米兰",
+        "note": "2022年7月3日至6日"
       },
       {
         "year": "2018",
