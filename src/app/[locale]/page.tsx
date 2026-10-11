@@ -10,10 +10,8 @@ import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
 import { StandConfigurator, SmartProjectFinder } from "@/components/sections/DesignDiscovery";
-import { ConstructionExperience } from "@/components/sections/ConstructionExperience";
 import { TaglineReveal } from "@/components/sections/TaglineReveal";
 import { Gallery } from "@/components/gallery/Gallery";
-import { Process } from "@/components/sections/Process";
 import { World } from "@/components/sections/World";
 import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { locations } from "@/config/locations";
@@ -58,41 +56,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     return { id: h.id, slug: d.slug, title: d.title, desktop: h.desktop, mobile: h.mobile };
   });
 
-  const processImages = [
-          {
-            src: mediaUrl("process/briefing-poster.webp?v=2"),
-            video: mediaUrl("process/briefing.mp4?v=2"),
-            startPoster: mediaUrl("process/briefing-start.webp?v=2"),
-            once: true,
-            alt: `${t("process.steps.briefing.title")} · ${t("process.sketch")}`,
-          },
-          {
-            src: mediaUrl("process/concept-poster.webp"),
-            video: mediaUrl("process/concept.mp4"),
-            alt: `${t("process.steps.concept.title")} (${note})`,
-          },
-          {
-            src: mediaUrl("process/planung-poster.webp"),
-            video: mediaUrl("process/planung.mp4"),
-            clean: true,
-            alt: `${t("process.steps.planning.title")} (${note})`,
-          },
-          {
-            src: mediaUrl("process/cnc-poster.webp"),
-            video: mediaUrl("process/cnc.mp4"),
-            alt: `${t("process.steps.production.title")} (${note})`,
-          },
-          {
-            src: designAsset(d1.id, "clip-poster.webp"),
-            video: designAsset(d1.id, "clip.mp4"),
-            alt: `${d1.title} · ${t("process.steps.logistics.title")} (${note})`,
-          },
-          {
-            src: mediaUrl("process/onsite-poster.webp"),
-            video: mediaUrl("process/onsite.mp4"),
-            alt: `${t("process.steps.onsite.title")} (${note})`,
-          },
-        ];
 
   return (
     <>
@@ -145,9 +108,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </details>
         </div>
       </section>
-
-      <Process images={processImages} visNote={note} />
-      <ConstructionExperience images={processImages} visualisationNote={note} />
 
       <Graphics visNote={note} />
       <LedShowreel />
