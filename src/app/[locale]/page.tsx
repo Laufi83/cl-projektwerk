@@ -4,12 +4,12 @@ import hero002 from "../../../public/hero/002/hero.json";
 import hero003 from "../../../public/hero/003/hero.json";
 import hero004 from "../../../public/hero/004/hero.json";
 import hero005 from "../../../public/hero/005/hero.json";
+import hero021 from "../../../public/hero/021/hero.json";
 import { getDesigns, getGalleryItems, getMediaDesign, releaseInfo, sizeRange } from "@/lib/designs";
 import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
-import { StandConfigurator, SmartProjectFinder } from "@/components/sections/DesignDiscovery";
 import { ConstructionExperience } from "@/components/sections/ConstructionExperience";
 import { TaglineReveal } from "@/components/sections/TaglineReveal";
 import { Gallery } from "@/components/gallery/Gallery";
@@ -50,8 +50,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     srcSet: `${designAsset(d.id, `${base}-640.webp`)} 640w, ${designAsset(d.id, `${base}-1280.webp`)} 1280w`,
   });
   const d1 = getMediaDesign("001") ?? designs[0];
-  // Je Layout ein eigener Aufbaufilm im Hero (Designs 001–005, siehe config/layouts.ts)
-  const heroFilms: HeroFilm[] = [hero001, hero002, hero003, hero004, hero005].map((h) => {
+  // Je Layout ein eigener Aufbaufilm im Hero (Designs 001–005 und 021 für Wood, siehe config/layouts.ts)
+  const heroFilms: HeroFilm[] = [hero001, hero002, hero003, hero004, hero005, hero021].map((h) => {
     const d = getMediaDesign(h.id) ?? d1;
     return { id: h.id, slug: d.slug, title: d.title, desktop: h.desktop, mobile: h.mobile };
   });
@@ -109,7 +109,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         visNote={note}
       />
 
-      <StandConfigurator items={galleryItems} />
       <TaglineReveal text={t("tagline.text")} />
 
       <section id="designs" aria-labelledby="gallery-title" className="relative scroll-mt-4 py-24 md:py-32">
@@ -121,7 +120,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           </div>
           <DailyDrop info={release} className="w-full" />
         </div>
-        <SmartProjectFinder items={galleryItems} />
         <Gallery items={galleryItems} dayPick={release.latest.slug} />
 
         {/* Crawlbare Liste aller Designs (semantisches HTML) */}

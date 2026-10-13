@@ -1,7 +1,7 @@
 "use client";
 /**
  * Layout-Auswahl am linken Rand: ab md senkrechte Lasche, auf kleinen Bildschirmen ein 48-px-Knopf unten links.
- * Vier Layouts (Studio 1, Aurora 2, Tide 4, Monochrom); die Wahl bleibt gerätelokal gespeichert (localStorage, siehe lib/layout).
+ * Fünf Layouts (01 Studio, 02 Wood, 03 Aurora, 04 Tide, 05 Monochrom); die Wahl bleibt gerätelokal gespeichert (localStorage, siehe lib/layout).
  */
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";

@@ -1,0 +1,16 @@
+{
+  "id": "021",
+  "source": "Firefly Time-lapse 01 Lamello (1280x720, 10 s)",
+  "desktop": {
+    "count": 81,
+    "width": 1280,
+    "height": 720,
+    "bytes": 4453634
+  },
+  "mobile": {
+    "count": 61,
+    "width": 486,
+    "height": 863,
+    "bytes": 1263078
+  }
+}

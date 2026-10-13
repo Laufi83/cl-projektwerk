@@ -1,7 +1,9 @@
 /**
- * Vier Layouts (Art Direction: Studio 1, Aurora 2, Tide 4, Monochrom), umschaltbar über die Lasche links.
+ * Fünf Layouts (01 Studio, 02 Wood, 03 Aurora, 04 Tide, 05 Monochrom), umschaltbar über die Lasche links.
  * Je Layout: Farben, Schriften, Hero-Anordnung (alles in src/app/layouts.css),
  * eigener Aufbaufilm im Hero und eigener Hover-Effekt der animierten Schriften.
+ * sharedFilm: true = Hero zeigt das gemeinsame Scroll-Video (media/custom/homepage-scroll-build.mp4),
+ * false = die eigene Bildsequenz des Layouts (Wood: Firefly-Zeitraffer von Entwurf 021).
  */
 export const LAYOUTS = [
   {
@@ -9,6 +11,7 @@ export const LAYOUTS = [
     n: "01",
     name: "Studio",
     design: "001",
+    sharedFilm: true,
     theme: "#0a0a0b",
     swatch: "linear-gradient(135deg,#0a0a0b 50%,#f26a1b 50%)",
     effect: "lift",
@@ -16,10 +19,24 @@ export const LAYOUTS = [
     desc: { de: "Anthrazit & Orange · Buchstaben heben sich", en: "Charcoal & orange · letters lift" },
   },
   {
-    id: "aurora",
+    id: "wood",
     n: "02",
+    name: "Wood",
+    // Entwurf 021 „Lamello“: Aufbaufilm aus dem Firefly-Zeitraffer (public/hero/021)
+    design: "021",
+    sharedFilm: false,
+    theme: "#16100b",
+    swatch: "linear-gradient(135deg,#16100b 45%,#c98d55 45% 72%,#efe3cf 72%)",
+    effect: "slat",
+    font: "var(--font-fraunces)",
+    desc: { de: "Eiche, Walnuss & Creme · Lamellen drehen sich", en: "Oak, walnut & cream · turning slats" },
+  },
+  {
+    id: "aurora",
+    n: "03",
     name: "Aurora",
     design: "002",
+    sharedFilm: true,
     theme: "#070b1d",
     swatch: "linear-gradient(135deg,#070b1d 45%,#7cf5d4 45% 72%,#b69cff 72%)",
     effect: "loupe",
@@ -31,6 +48,7 @@ export const LAYOUTS = [
     n: "04",
     name: "Tide",
     design: "004",
+    sharedFilm: true,
     theme: "#062a2c",
     swatch: "linear-gradient(135deg,#062a2c 50%,#ff8f6b 50%)",
     effect: "weight",
@@ -39,9 +57,10 @@ export const LAYOUTS = [
   },
   {
     id: "mono",
-    n: "M",
+    n: "05",
     name: "Monochrom",
     design: "003",
+    sharedFilm: true,
     theme: "#000000",
     swatch: "linear-gradient(135deg,#000 50%,#fff 50%)",
     effect: "line",

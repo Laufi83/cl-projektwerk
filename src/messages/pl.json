@@ -267,7 +267,25 @@
       "product": "Stoiska produktowe",
       "real-estate": "Targi nieruchomości",
       "outdoor": "Teren otwarty"
-    }
+    },
+    "atlas": {
+      "name": "Atlas",
+      "role": "Atlas projektów",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "W centrum",
+      "save": "Zapisz",
+      "open": "Zobacz projekt",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Przeciągnij lub użyj strzałek · kliknij obraz, aby go wyśrodkować · kliknij środek, aby otworzyć",
+      "hintTouch": "Przesuń w bok · dotknij obrazu, aby go wyśrodkować · dotknij ponownie, aby otworzyć"
+    },
+    "search": "Szukaj projektów",
+    "searchPlaceholder": "Nazwa, numer lub rozmiar",
+    "loadMore": "Wczytaj więcej projektów ({shown}/{total})"
   },
   "detail": {
     "facts": "Dane",
@@ -809,7 +827,8 @@
       "studio": "Antracyt i pomarańcz, wyraźne linie, precyzja pracowni projektowej",
       "aurora": "Ciemne powierzchnie z miętą i fioletem, pismo szeryfowe, miękkie ruchy światła",
       "tide": "Morski zielony i koral, wyrazista czcionka, płynne fale",
-      "mono": "Konsekwentnie czerń i biel, mocny kontrast, formy geometryczne"
+      "mono": "Konsekwentnie czerń i biel, mocny kontrast, formy geometryczne",
+      "wood": "Orzech, dąb i krem, krój szeryfowy i lamele – ciepło jak drewniane stoisko"
     }
   },
   "radio": {

@@ -63,13 +63,13 @@ export function MesseVenueExplorer() {
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-4xl">
-            <p className="eyebrow">{de ? "MESSESTANDORTE / EUROPA" : "EXHIBITION VENUES / EUROPE"}</p>
+            <p className="eyebrow">{de ? "Messestandorte · Europa" : "Exhibition venues · Europe"}</p>
             <h2 id="venues-title" className="font-display mt-4 text-5xl font-semibold leading-[0.98] md:text-7xl">
               {de ? "Messegelände." : "Exhibition venues."}
-              <span className="block text-accent">{de ? "Weltweit verbunden." : "Connected worldwide."}</span>
+              <span className="block text-accent">{de ? "In Europa im Überblick." : "Across Europe at a glance."}</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-fg-muted md:text-lg">
-              {de ? "50 ausgewählte Messegelände in Europa – auf dem Globus entdecken, Standorte vergleichen und praktische Informationen zu Anreise, Orientierung und Aufenthalt finden." : "Explore 50 exhibition venues across Europe on an interactive globe, with transport, venue and visitor tips."}
+              {de ? "50 ausgewählte Messegelände in Europa: auf dem Globus entdecken, Standorte vergleichen und Hinweise zu Anreise, Orientierung und Aufenthalt nachlesen." : "50 selected exhibition venues in Europe: explore them on the globe, compare locations and read notes on travel, orientation and accommodation."}
             </p>
           </div>
           <div className="flex items-center gap-3 rounded-full border border-line-strong bg-bg-raised px-5 py-3 text-sm text-fg-muted">
@@ -177,7 +177,7 @@ export function MesseVenueExplorer() {
         </div>
         <p className="mt-8 flex items-start gap-2 text-xs leading-relaxed text-fg-subtle">
           <Info size={16} className="mt-0.5 shrink-0 text-accent" aria-hidden="true"/>
-          {de?"Hinweis: Redaktionelle Angaben aus einer vom Auftraggeber bereitgestellten Standortliste; Hotel-, Restaurant- und Verkehrstipps sowie Flächenangaben können veraltet sein. Bitte vor Planung auf offiziellen Seiten prüfen. Globe-Marker zeigen Stadtpositionen, keine Halleneingänge.":"Note: Venue information was supplied by the site owner and has not been independently verified. Check travel, hotel and venue details with official sources before visiting. Globe pins indicate city centres, not entrances."}
+          {de?"Hinweis: Redaktionelle Angaben ohne Gewähr. Hotel-, Restaurant- und Verkehrstipps sowie Flächenangaben können veraltet sein – bitte vor der Planung auf den offiziellen Seiten prüfen. Die Markierungen zeigen Stadtpositionen, keine Halleneingänge.":"Note: editorial information without guarantee. Hotel, restaurant and travel tips as well as floor areas may be out of date – please check the official websites before planning. Markers show city positions, not hall entrances."}
         </p>
       </div>
     </section>

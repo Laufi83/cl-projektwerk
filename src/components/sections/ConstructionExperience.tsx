@@ -31,10 +31,10 @@ export function ConstructionExperience({images,visualisationNote}:{images:StepIm
   return <section id="bauphasen" aria-labelledby="construction-title" className="relative border-y border-line py-20 md:py-28">
     <div className="container-x">
       <div className="flex flex-wrap items-end justify-between gap-6">
-        <div><p className="eyebrow">CL / CONSTRUCTION EXPERIENCE</p>
+        <div><p className="eyebrow">{de?"Projektablauf":"Project workflow"}</p>
           <h2 id="construction-title" className="font-display mt-3 text-4xl font-semibold md:text-6xl">{de?"Von der Idee zur Übergabe.":"From idea to handover."}</h2>
           <p className="mt-4 max-w-3xl text-base leading-relaxed text-fg-muted">
-            {de?"Erlebe die sechs realen Arbeitsschritte anhand der vorhandenen Prozessvideos. Wähle eine Phase oder starte die geführte Tour.":"Explore six project workflow steps with existing process footage. Select a stage or start the guided tour."}
+            {de?"Sechs Arbeitsschritte in kurzen Prozessfilmen. Wählen Sie eine Phase oder starten Sie die geführte Tour.":"Six workflow steps in short process films. Choose a stage or start the guided tour."}
           </p>
         </div>
         <button type="button" disabled={reduced} onClick={()=>setTour(p=>!p)}
@@ -79,7 +79,7 @@ export function ConstructionExperience({images,visualisationNote}:{images:StepIm
         </div>
       </div>
       <p className="mt-5 text-xs leading-relaxed text-fg-subtle">
-        {de?"Die gezeigten Bilder und Filme illustrieren verschiedene reale Arbeitsschritte. Sie zeigen nicht durchgehend die Montage desselben Messestands.":"Existing footage illustrates real workflow stages; it does not document the continuous assembly of one identical stand."}
+        {de?"Die Bilder und Filme veranschaulichen einzelne Arbeitsschritte; sie zeigen nicht durchgehend die Montage desselben Messestands.":"The images and films illustrate individual workflow steps; they do not show the continuous assembly of one stand."}
       </p>
     </div>
   </section>;

@@ -2077,6 +2077,7 @@
       "published": true,
       "title": "Lamello",
       "tags": [
+        "clip",
         "wood",
         "light"
       ],
@@ -2161,7 +2162,12 @@
           }
         }
       ],
-      "clip": null
+      "clip": {
+        "file": "clip.mp4",
+        "poster": "clip-poster.webp",
+        "end": "clip-end.webp",
+        "duration": 10
+      }
     },
     {
       "id": "022",

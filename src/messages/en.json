@@ -1,18 +1,18 @@
 {
   "meta": {
     "title": "Technical Exhibition Planning & Project Control | {brand}",
-    "description": "External planning and project office for exhibition stands, brand spaces and interior fit-out: technical planning, work preparation and project control. Discuss your project.",
-    "ogTitle": "{brand}: planning capacity for exhibition stands, brand spaces and interior fit-out",
+    "description": "External planning and project office in Leipzig for exhibition stands, brand spaces and interior fit-out: technical planning, work preparation and project management.",
+    "ogTitle": "{brand} – planning capacity for exhibition stands, brand spaces and interior fit-out",
     "ogDescription": "Dimensioned production drawings, work preparation and project control for stand builders, agencies, interior fit-out companies and exhibitors. Contact: Christof Laufersweiler, Leipzig.",
-    "socialDescription": "Additional planning and project capacity for exhibition stands, brand spaces and interior fit-out, project by project and with a clearly agreed scope.",
-    "designsTitle": "Exhibition stand concepts, a new one every day",
-    "designsDescription": "Exhibition stand design concepts with visualisations, floor plans and elevations, from {min} to {max}. Another concept is added every morning at 5:00.",
+    "socialDescription": "Additional planning and project capacity for exhibition stands, brand spaces and interior fit-out – per project, with a clearly agreed scope.",
+    "designsTitle": "Exhibition stand designs – a new one every day",
+    "designsDescription": "Exhibition stand concepts with visualisations, floor plans and elevations from {min} to {max}. A new design is added every morning at 5:00.",
     "designTitle": "{number} {title} · Exhibition stand concept",
-    "designDescription": "Concept {title}: {size}{floors}. {description} A visualisation of a concept, not a built stand.",
+    "designDescription": "Design {title}: {size}{floors}. {description} Visualisation of a concept, not a built stand.",
     "inquiryTitle": "Discuss your project",
-    "inquiryDescription": "Send a brief: fair or project, date, existing documents and the planning service you need. I will reply with a first assessment.",
+    "inquiryDescription": "Send your briefing: project, dates, existing documents and the service you need. You will receive an initial assessment.",
     "selectionTitle": "My selection",
-    "selectionDescription": "Your saved exhibition stand concepts, which you can attach to an enquiry.",
+    "selectionDescription": "Your saved exhibition stand designs – sent with your enquiry if you wish.",
     "imprintDescription": "Legal notice and provider information.",
     "privacyDescription": "Information on how personal data is processed on this website."
   },
@@ -49,12 +49,12 @@
     "main": "Main navigation"
   },
   "hero": {
-    "eyebrow": "External planning and project office · Exhibition stands, brand spaces, interior fit-out",
+    "eyebrow": "External planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
     "title": "Planning that works on the floor.",
-    "lead": "I support stand builders, agencies, interior fit-out companies and exhibitors with technical planning, work preparation and project control: project by project, with a clearly agreed scope and traceable documents.",
+    "lead": "Technical planning, work preparation and project management for stand builders, agencies, fit-out companies and exhibitors – per project, with a clearly agreed scope and traceable documents.",
     "cta": "Request planning capacity",
     "secondary": "View concepts",
-    "scroll": "Scroll and watch the visualisation take shape",
+    "scroll": "Scroll – watch the design take shape",
     "progress": "Build-up (visualisation)",
     "done": "Finished space",
     "design": "Concept 001 · Timber Campus"
@@ -62,38 +62,38 @@
   "films": {
     "eyebrow": "Concepts in time-lapse",
     "title": "5 concepts.",
-    "lead": "Five concept animations show how a design grows from an empty hall floor to a finished space. They are visualisations, not recordings of built stands.",
+    "lead": "Five concept animations show how a design grows from an empty hall floor to a finished space – visualisations, not footage of built stands.",
     "cta": "Play animation",
     "badge": "Concept animation",
     "sliderLabel": "Slider with five concept animations. Arrow keys browse, Enter opens.",
-    "explain": "Time-lapse animation of a concept. It shows how the planned space could be assembled and is not evidence of a realised stand."
+    "explain": "Time-lapse animation of a design: this is how the planned space could take shape. It is not evidence of a realised stand."
   },
   "tagline": {
-    "text": "Every space starts with documents that everyone involved can rely on. Those are the documents I create."
+    "text": "Every space starts with documents everyone can rely on. That is what I create."
   },
   "services": {
     "eyebrow": "Services",
-    "title": "More planning capacity when several projects run at once.",
-    "lead": "Stand builders, agencies and interior fit-out companies reach their limits with parallel projects, staff shortages and technically demanding tasks. As an external planner and project controller I take over clearly defined parts of your project, backed by more than 20 years of experience in the trade fair and event sector. Production, transport, assembly, structural engineering, permits and electrical work are carried out by qualified specialist partners.",
+    "title": "Additional planning capacity when projects run in parallel.",
+    "lead": "Parallel projects, stretched teams, technically demanding tasks: as an external planner and project manager I take on clearly defined parts of your project – with more than 20 years of experience in exhibitions and events. Production, transport, installation, structural engineering, permits and electrical work are delivered by qualified specialist partners.",
     "trust": [
       {
         "title": "One point of contact",
-        "text": "for planning, documents and coordination. You talk to me directly, not through intermediaries."
+        "text": "for planning, documents and coordination – directly, without intermediaries."
       },
       {
         "title": "More than 20 years of experience",
-        "text": "in the trade fair and event sector, trained as a technical draughtsman in wood technology and certified exhibition and event project manager (IHK)."
+        "text": "in exhibitions and events; trained technical draughtsman (wood technology) and certified project manager for exhibition construction and events (IHK)."
       },
       {
-        "title": "Clearly defined scope",
-        "text": "I agree the scope, correction rounds and deadlines in writing beforehand. Extra work and travel only by arrangement."
+        "title": "Clearly agreed scope",
+        "text": "Services, revision rounds and deadlines are agreed in writing up front – additional work and travel only by arrangement."
       }
     ],
     "package": {
       "badge": "Collaboration",
       "title": "Project by project or as a monthly quota.",
-      "subtitle": "Planning capacity in the amount your project needs right now.",
-      "text": "You send me a brief, I estimate the effort and propose scope, deliverables and deadlines. After that I work project by project or within a monthly quota with fixed hours, response times and correction rounds. My capacity is limited; I only accept projects I can handle with care.",
+      "subtitle": "Planning capacity in exactly the scope your project needs.",
+      "text": "After your briefing I estimate the effort and propose scope, deliverables and dates. We work per project or with a monthly allowance of agreed hours, response times and revision rounds. My capacity is limited – I only take on projects I can handle with the necessary care.",
       "cta": "Request planning capacity",
       "more": "How a project works",
       "phases": [
@@ -155,12 +155,12 @@
     "single": {
       "eyebrow": "Bookable individually",
       "title": "Exactly the service you are missing.",
-      "text": "You have a team but too little planning capacity? Then book only the area you need, for example production drawings for one project or schedule control for a trade fair appearance."
+      "text": "Your team is in place, but planning capacity is short? Book exactly the area you are missing – for example production drawings for one project or schedule management for a trade fair appearance."
     },
     "items": {
       "tech": {
         "title": "Technical planning",
-        "text": "Based on your brief I create dimensioned detail and production drawings, part lists and interface documents. You receive documents your production partners can work with, and you save internal planning hours.",
+        "text": "From your briefing I produce dimensioned detail and production drawings, parts lists and interface documents your production partners can work with directly. Your team saves internal planning hours.",
         "points": [
           "Dimensioned detail and production drawings",
           "Part lists",
@@ -173,7 +173,7 @@
       },
       "prep": {
         "title": "Work preparation",
-        "text": "I prepare your project for execution: material and quantity overviews, partner-specific production documents and procurement and schedule planning. Everyone involved knows what is needed, when and in what quantity.",
+        "text": "I prepare your project for execution: material and quantity overviews, production documents per partner, and procurement and schedule planning. Everyone involved knows what is needed, when and in what quantity.",
         "points": [
           "Material and quantity overviews",
           "Partner-specific production documents",
@@ -186,7 +186,7 @@
       },
       "control": {
         "title": "Project control",
-        "text": "I keep budget and schedule clear, compare quotations, coordinate trades and document approvals and changes. Decisions stay with you; I prepare them so they can be made quickly.",
+        "text": "I keep budget and schedule in view, compare quotes, coordinate trades and document approvals and changes. You make the decisions – I prepare them so they can be made quickly.",
         "points": [
           "Budget and schedule overviews",
           "Quotation comparisons and coordination of trades",
@@ -199,7 +199,7 @@
       },
       "concept": {
         "title": "Design and presentation",
-        "text": "I develop stand and space concepts and create visualisations and print-ready graphics. The scope and the number of correction rounds are agreed in advance so that effort and result stay predictable.",
+        "text": "I develop stand and space concepts and create visualisations and print-ready graphics. Scope and revision rounds are agreed in advance so that effort and result remain predictable.",
         "points": [
           "Stand and space concepts",
           "Visualisations for coordination and presentation",
@@ -212,7 +212,7 @@
       },
       "reuse": {
         "title": "Reuse planning",
-        "text": "I record existing components, plan variants for new uses and maintain material and storage information. This lets you deliberately reuse what you already have instead of planning from scratch every time.",
+        "text": "I record existing components, plan variants for new uses and maintain material and storage information. Existing elements are reused deliberately instead of being re-planned every time.",
         "points": [
           "Survey of existing components",
           "Variant planning for new uses",
@@ -227,15 +227,15 @@
     "inquire": "Enquire",
     "cta": {
       "title": "Your next project starts with a brief.",
-      "text": "Briefly describe the task, deadline and existing documents. I will reply with a first assessment and the next steps. You receive an individual quotation after the brief.",
+      "text": "Briefly describe the task, dates and existing documents. You will receive an initial assessment and the next steps; a tailored quote follows the briefing.",
       "button": "Send brief",
       "phone": "Prefer to talk directly?"
     }
   },
   "gallery": {
-    "eyebrow": "Concept gallery · new every day",
+    "eyebrow": "Design atlas · new every day",
     "title": "A new concept every day.",
-    "lead": "{count} of {total} exhibition stand design concepts are currently visible, from {min} to {max}. Another concept is added every morning at 5:00. All images are visualisations of concepts. Browse, filter, save and enquire directly.",
+    "lead": "{count} of {total} exhibition stand concepts are visible, from {min} to {max}. A new one is added every morning at 5:00. All images are visualisations. Explore, filter, save and enquire directly.",
     "slider": "Slider",
     "grid": "Grid",
     "viewMode": "View",
@@ -243,7 +243,7 @@
     "dayPick": "Concept of the day",
     "hint": "Drag, scroll or use arrow keys",
     "hintTouch": "Swipe sideways",
-    "count": "{count} of {total}",
+    "count": "{count} of {total} designs",
     "empty": "No concept matches these filters.",
     "reset": "Reset filters",
     "filters": "Filters",
@@ -267,6 +267,24 @@
       "product": "Product stands",
       "real-estate": "Real estate fair",
       "outdoor": "Outdoor area"
+    },
+    "search": "Search designs",
+    "searchPlaceholder": "Name, number or size",
+    "loadMore": "Load more designs ({shown}/{total})",
+    "atlas": {
+      "name": "Atlas",
+      "role": "Design atlas",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "In focus",
+      "save": "Save",
+      "open": "View design",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Drag or use the arrow keys to explore · click an image to bring it into focus · click the focus to open it",
+      "hintTouch": "Swipe sideways to explore · tap an image to bring it into focus · tap again to open it"
     }
   },
   "detail": {
@@ -309,7 +327,7 @@
     "imageOf": "Image {current} of {total}",
     "description": "Description",
     "placeholderImage": "Image to follow",
-    "conceptNote": "Concept design. The image is a visualisation and does not show a built stand.",
+    "conceptNote": "Concept design. The images are visualisations, not a built stand.",
     "imageAlt": "{title}: {label} (visualisation)",
     "planAlt": "{title}: {label} (plan drawing of the concept)",
     "clipAlt": "{title}: concept animation of the build-up (visualisation)"
@@ -354,7 +372,7 @@
   "world": {
     "eyebrow": "Fair calendar",
     "title": "Trade fairs in Germany and Europe.",
-    "lead": "An overview of trade fair dates in Germany and Europe as a guide for your project planning. Choose a city and the globe shows the location and straight-line distance from Leipzig. A date in the calendar says nothing about commissions or participation by CL Projektwerk.",
+    "lead": "Trade fair dates in Germany and Europe as a reference for your project planning. Choose a city – the globe shows its location and the distance as the crow flies from Leipzig. Calendar entries say nothing about contracts or participation by CL Projektwerk.",
     "placeholderNote": "Sample locations",
     "listLabel": "Fair cities",
     "drag": "Rotate globe",
@@ -453,7 +471,7 @@
     "name": "Christof Laufersweiler",
     "role": "Planning and project control for exhibition stands, brand spaces and interior fit-out",
     "text": "I am Christof Laufersweiler and have worked in the trade fair and event sector for more than 20 years. I trained as a technical draughtsman specialising in wood technology, and later added project management in exhibition stand construction, employed managing director of a stand-building company and an IHK certificate as exhibition and event project manager. With CL Projektwerk I offer external planning and project capacity in Leipzig for stand builders, agencies, interior fit-out companies and exhibitors who need extra hands with expertise. Most recently, I worked as a Senior Project Manager at C3 EXPO GmbH from November 2025 to October 2026.",
-    "close": "You keep the decisions. I provide documents, overview and coordination.",
+    "close": "You keep the decisions. I take care of documents, overview and coordination.",
     "photoAlt": "Portrait of Christof Laufersweiler, founder of CL Projektwerk",
     "cta": "Discuss a project with me",
     "career": "Career",
@@ -640,7 +658,7 @@
   "contact": {
     "eyebrow": "Discuss a project",
     "title": "Tell me about your project.",
-    "lead": "Four short steps, few mandatory fields. On request I attach saved concepts from the gallery.",
+    "lead": "Four short steps, only a few required fields. I can attach designs you have saved.",
     "response": "I usually reply within {time}.",
     "steps": {
       "fair": "Project",
@@ -760,7 +778,7 @@
     "imprint": "Legal notice",
     "privacy": "Privacy",
     "cookies": "Cookie settings",
-    "note": "All renderings and animations on this website are visualisations of design concepts. They do not show built exhibition stands.",
+    "note": "All renderings and animations on this website are visualisations of design concepts, not built exhibition stands.",
     "top": "Back to top",
     "languages": "Languages",
     "tagline": "External planning and project office for exhibition stands, brand spaces and interior fit-out"
@@ -790,7 +808,7 @@
   },
   "notFound": {
     "title": "This page does not exist.",
-    "text": "Perhaps you will find what you are looking for in the concept gallery.",
+    "text": "Perhaps you will find what you are looking for in the design atlas.",
     "home": "Back to home",
     "designs": "To the gallery"
   },
@@ -809,7 +827,8 @@
       "studio": "Charcoal and orange, clear lines, precise like a planning studio",
       "aurora": "Dark surfaces with mint and violet, serif type, soft light movement",
       "tide": "Petrol and coral, expressive type, flowing waves",
-      "mono": "Strictly black and white, strong contrast, geometric shapes"
+      "mono": "Strictly black and white, strong contrast, geometric shapes",
+      "wood": "Walnut, oak and cream, serif type and slats – warm like a timber stand"
     }
   },
   "radio": {

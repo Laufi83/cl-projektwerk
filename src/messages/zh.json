@@ -267,7 +267,25 @@
       "product": "产品展台",
       "real-estate": "房地产展",
       "outdoor": "室外场地"
-    }
+    },
+    "atlas": {
+      "name": "图集",
+      "role": "设计图集",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "焦点",
+      "save": "收藏",
+      "open": "查看设计",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "拖动或使用方向键浏览 · 点击图片将其置于焦点 · 点击焦点打开设计",
+      "hintTouch": "左右滑动浏览 · 点按图片将其置于焦点 · 再次点按打开"
+    },
+    "search": "搜索设计",
+    "searchPlaceholder": "名称、编号或尺寸",
+    "loadMore": "加载更多设计（{shown}/{total}）"
   },
   "detail": {
     "facts": "基本数据",
@@ -809,7 +827,8 @@
       "studio": "炭灰与橙色，线条清晰，像规划工作室一样精确",
       "aurora": "深色表面搭配薄荷绿与紫色，衬线字体，柔和的光影流动",
       "tide": "石油蓝与珊瑚色，表现力强的字体，流动的波浪",
-      "mono": "彻底的黑与白，强烈对比，几何形态"
+      "mono": "彻底的黑与白，强烈对比，几何形态",
+      "wood": "胡桃木、橡木与奶油色，衬线字体与格栅——如木质展台般温暖"
     }
   },
   "radio": {

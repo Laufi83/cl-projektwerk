@@ -58,7 +58,16 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
       near: p > 0.12,
     }),
   },
-  // 02 Aurora – Lupe: Buchstaben wachsen unter dem Zeiger
+  // 02 Wood – Lamellen: Buchstaben drehen sich wie Holzlamellen zum Zeiger und fangen warmes Licht
+  slat: {
+    radius: 130,
+    fx: ({ p, ux }) => ({
+      transform: `perspective(400px) rotateY(${(-ux * 58 * p).toFixed(1)}deg) translateY(${(-4 * p).toFixed(1)}px)`,
+      textShadow: p > 0.05 ? `0 0 ${Math.round(18 * p)}px rgba(232,170,104,${(0.5 * p).toFixed(2)})` : "",
+      near: p > 0.3,
+    }),
+  },
+  // 03 Aurora – Lupe: Buchstaben wachsen unter dem Zeiger
   loupe: {
     radius: 140,
     fx: ({ p, h }) => ({
@@ -66,7 +75,7 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
       near: p > 0.35,
     }),
   },
-  // 03 Tide – Schriftgewicht und -breite schwellen an (variable Achsen)
+  // 04 Tide – Schriftgewicht und -breite schwellen an (variable Achsen)
   weight: {
     radius: 150,
     fx: ({ p }) => ({
@@ -75,7 +84,7 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
       near: p > 0.3,
     }),
   },
-  // Monochrom – präziser Linienversatz: Buchstabe hebt sich, darunter erscheint eine feine Linie
+  // 05 Monochrom – präziser Linienversatz: Buchstabe hebt sich, darunter erscheint eine feine Linie
   line: {
     radius: 120,
     fx: ({ p, h }) => ({

@@ -267,7 +267,25 @@
       "product": "Productstands",
       "real-estate": "Vastgoedbeurs",
       "outdoor": "Buitenterrein"
-    }
+    },
+    "atlas": {
+      "name": "Atlas",
+      "role": "Ontwerpatlas",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "In focus",
+      "save": "Bewaren",
+      "open": "Ontwerp bekijken",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Sleep of gebruik de pijltjestoetsen · klik op een beeld om het te focussen · klik op de focus om het te openen",
+      "hintTouch": "Veeg zijwaarts · tik op een beeld om het te focussen · tik opnieuw om het te openen"
+    },
+    "search": "Ontwerpen zoeken",
+    "searchPlaceholder": "Naam, nummer of formaat",
+    "loadMore": "Meer ontwerpen laden ({shown}/{total})"
   },
   "detail": {
     "facts": "Kerngegevens",
@@ -809,7 +827,8 @@
       "studio": "Antraciet en oranje, heldere lijnen, precies als een planningsatelier",
       "aurora": "Donkere vlakken met mint en violet, serif-letter, zachte lichtbewegingen",
       "tide": "Petrol en koraal, expressieve letter, vloeiende golven",
-      "mono": "Strikt zwart en wit, sterk contrast, geometrische vormen"
+      "mono": "Strikt zwart en wit, sterk contrast, geometrische vormen",
+      "wood": "Notenhout, eiken en crème, schreefletter en lamellen – warm als een houten stand"
     }
   },
   "radio": {

@@ -267,7 +267,25 @@
       "product": "Stands de produto",
       "real-estate": "Feira imobiliária",
       "outdoor": "Ar livre"
-    }
+    },
+    "atlas": {
+      "name": "Atlas",
+      "role": "Atlas de projetos",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "Em foco",
+      "save": "Guardar",
+      "open": "Ver projeto",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Arraste ou use as setas · clique numa imagem para a focar · clique no foco para a abrir",
+      "hintTouch": "Deslize lateralmente · toque numa imagem para a focar · toque de novo para a abrir"
+    },
+    "search": "Pesquisar projetos",
+    "searchPlaceholder": "Nome, número ou tamanho",
+    "loadMore": "Carregar mais projetos ({shown}/{total})"
   },
   "detail": {
     "facts": "Dados",
@@ -809,7 +827,8 @@
       "studio": "Antracite e laranja, linhas claras, preciso como um atelier de planeamento",
       "aurora": "Superfícies escuras com menta e violeta, letra serifada, movimentos suaves de luz",
       "tide": "Petróleo e coral, letra expressiva, ondas fluidas",
-      "mono": "Estritamente preto e branco, forte contraste, formas geométricas"
+      "mono": "Estritamente preto e branco, forte contraste, formas geométricas",
+      "wood": "Nogueira, carvalho e creme, tipografia serifada e lamelas – acolhedor como um stand em madeira"
     }
   },
   "radio": {

@@ -15,7 +15,7 @@ import { useLiteMode } from "@/lib/performance";
 gsap.registerPlugin(ScrollTrigger);
 
 type Seq = { count: number; width: number; height: number };
-/** Ein Aufbaufilm je Layout (Designs 001–005), als Bildsequenz in public/hero/NNN/ */
+/** Ein Aufbaufilm je Layout (Designs 001–005, 021), als Bildsequenz in public/hero/NNN/ */
 export type HeroFilm = { id: string; slug: string; title: string; desktop: Seq; mobile: Seq };
 type Props = { films: HeroFilm[]; visNote: string };
 
@@ -43,10 +43,14 @@ export function HeroScrub({ films, visNote }: Props) {
   const variant = useMedia(HERO_PORTRAIT_QUERY) ? "mobile" : "desktop";
   const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || lite || weak ? "fallback" : "scrub";
   const layout = useLayout();
-  const film = films.find((f) => f.id === layoutById(layout).design) ?? films[0];
+  const cur = layoutById(layout);
+  const film = films.find((f) => f.id === cur.design) ?? films[0];
+  // Gemeinsames Scroll-Video nur für Layouts ohne eigenen Film (Wood zeigt seine eigene Sequenz)
+  const shared = cur.sharedFilm;
+  const useVideo = shared && customReady;
 
   useEffect(() => {
-    if (mode !== "scrub" || customReady) return;
+    if (mode !== "scrub" || useVideo) return;
     const seq = variant === "mobile" ? film.mobile : film.desktop;
     const cv = canvas.current!;
     const ctx = cv.getContext("2d", { alpha: false })!;
@@ -134,12 +138,12 @@ export function HeroScrub({ films, visNote }: Props) {
     ro.observe(cv);
     size();
     return () => { alive = false; st.kill(); ro.disconnect(); near.disconnect(); window.removeEventListener("load", onLoad); clearTimeout(idle); clearInterval(showWhenReady); };
-  }, [mode, variant, film, customReady]);
+  }, [mode, variant, film, useVideo]);
 
   // Video-Frame wird direkt durch ScrollTrigger gesteuert, auch beim Rueckwaertsscrollen.
   // Falls der MP4-Upload noch fehlt, bleibt die bestehende WebP-Sequenz sichtbar.
   useEffect(() => {
-    if (mode !== "scrub" || !customReady) return;
+    if (mode !== "scrub" || !useVideo) return;
     const video = customVideo.current;
     if (!video || !Number.isFinite(video.duration) || video.duration <= 0) return;
     video.pause();
@@ -166,7 +170,7 @@ export function HeroScrub({ films, visNote }: Props) {
     });
     update(trigger.progress);
     return () => trigger.kill();
-  }, [mode, customReady]);
+  }, [mode, useVideo]);
 
   return (
     <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[260svh] md:h-[320svh]"}`}>
@@ -174,15 +178,15 @@ export function HeroScrub({ films, visNote }: Props) {
         <div className="hero-media absolute inset-0 overflow-hidden bg-black">
           {/* Poster je Layout per CSS (nur das aktive wird geladen); die Sequenz zeichnet darüber */}
           <div aria-hidden className="hero-poster absolute inset-0" />
-          {mode === "scrub" && !customReady && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
-          {mode === "scrub" && (
+          {mode === "scrub" && !useVideo && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
+          {mode === "scrub" && shared && (
             <video
               ref={customVideo}
               src={mediaUrl("custom/homepage-scroll-build.mp4")}
               muted playsInline preload="auto" aria-hidden
               onLoadedData={() => setCustomReady(true)}
               onError={() => setCustomReady(false)}
-              className={"absolute inset-0 h-full w-full object-cover transition-opacity duration-500 " + (customReady ? "opacity-100" : "pointer-events-none opacity-0")}
+              className={"absolute inset-0 h-full w-full object-cover transition-opacity duration-500 " + (useVideo ? "opacity-100" : "pointer-events-none opacity-0")}
               style={{ objectPosition: "50% 50%" }}
             />
           )}

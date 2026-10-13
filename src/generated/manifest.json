@@ -3677,6 +3677,7 @@
    "published": true,
    "title": "Lamello",
    "tags": [
+    "clip",
     "wood",
     "light"
    ],
@@ -3839,7 +3840,12 @@
      "download": "electrical.jpg"
     }
    ],
-   "clip": null,
+   "clip": {
+    "file": "clip.mp4",
+    "poster": "clip-poster.webp",
+    "end": "clip-end.webp",
+    "duration": 10
+   },
    "number": 21,
    "tone": "#040404"
   },

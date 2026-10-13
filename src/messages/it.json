@@ -267,7 +267,25 @@
       "product": "Stand prodotto",
       "real-estate": "Fiera immobiliare",
       "outdoor": "Area esterna"
-    }
+    },
+    "atlas": {
+      "name": "Atlante",
+      "role": "Atlante dei progetti",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "In primo piano",
+      "save": "Salva",
+      "open": "Vedi progetto",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Trascina o usa le frecce · clic su un'immagine per metterla a fuoco · clic sul fuoco per aprirla",
+      "hintTouch": "Scorri lateralmente · tocca un'immagine per metterla a fuoco · tocca di nuovo per aprirla"
+    },
+    "search": "Cerca progetti",
+    "searchPlaceholder": "Nome, numero o dimensione",
+    "loadMore": "Carica altri progetti ({shown}/{total})"
   },
   "detail": {
     "facts": "Dati",
@@ -809,7 +827,8 @@
       "studio": "Antracite e arancione, linee nette, preciso come uno studio di progettazione",
       "aurora": "Superfici scure con menta e viola, carattere con grazie, morbidi movimenti di luce",
       "tide": "Verde petrolio e corallo, carattere espressivo, onde fluide",
-      "mono": "Rigorosamente bianco e nero, forte contrasto, forme geometriche"
+      "mono": "Rigorosamente bianco e nero, forte contrasto, forme geometriche",
+      "wood": "Noce, rovere e crema, carattere graziato e lamelle – caldo come uno stand in legno"
     }
   },
   "radio": {

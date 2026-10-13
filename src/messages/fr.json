@@ -267,7 +267,25 @@
       "product": "Stands produit",
       "real-estate": "Salon immobilier",
       "outdoor": "Extérieur"
-    }
+    },
+    "atlas": {
+      "name": "Atlas",
+      "role": "Atlas des concepts",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "Au centre",
+      "save": "Enregistrer",
+      "open": "Voir le concept",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Faire glisser ou utiliser les flèches · cliquer une image la met au centre · cliquer le centre l'ouvre",
+      "hintTouch": "Balayer latéralement · toucher une image la met au centre · toucher à nouveau l'ouvre"
+    },
+    "search": "Rechercher des concepts",
+    "searchPlaceholder": "Nom, numéro ou taille",
+    "loadMore": "Charger plus de concepts ({shown}/{total})"
   },
   "detail": {
     "facts": "Caractéristiques",
@@ -809,7 +827,8 @@
       "studio": "Anthracite et orange, lignes nettes, précis comme un atelier de planification",
       "aurora": "Surfaces sombres avec menthe et violet, typographie à empattements, mouvements de lumière doux",
       "tide": "Bleu pétrole et corail, typographie expressive, vagues fluides",
-      "mono": "Strictement noir et blanc, fort contraste, formes géométriques"
+      "mono": "Strictement noir et blanc, fort contraste, formes géométriques",
+      "wood": "Noyer, chêne et crème, typographie à empattements et lamelles – chaleureux comme un stand en bois"
     }
   },
   "radio": {

@@ -267,7 +267,25 @@
       "product": "Produktové stánky",
       "real-estate": "Veletrh nemovitostí",
       "outdoor": "Venkovní plocha"
-    }
+    },
+    "atlas": {
+      "name": "Atlas",
+      "role": "Atlas návrhů",
+      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
+      "cursor": "Drag",
+      "focus": "Ve středu",
+      "save": "Uložit",
+      "open": "Zobrazit návrh",
+      "left": "Design to the left",
+      "right": "Design to the right",
+      "up": "Design above",
+      "down": "Design below",
+      "hint": "Táhněte nebo použijte šipky · klik na obrázek jej přesune do středu · klik na střed jej otevře",
+      "hintTouch": "Přejeďte do strany · klepnutí na obrázek jej přesune do středu · dalším klepnutím jej otevřete"
+    },
+    "search": "Hledat návrhy",
+    "searchPlaceholder": "Název, číslo nebo velikost",
+    "loadMore": "Načíst další návrhy ({shown}/{total})"
   },
   "detail": {
     "facts": "Základní údaje",
@@ -809,7 +827,8 @@
       "studio": "Antracit a oranžová, jasné linie, přesné jako plánovací ateliér",
       "aurora": "Tmavé plochy s mátovou a fialovou, patkové písmo, jemné pohyby světla",
       "tide": "Petrolejová a korálová, výrazné písmo, plynulé vlny",
-      "mono": "Důsledně černá a bílá, silný kontrast, geometrické tvary"
+      "mono": "Důsledně černá a bílá, silný kontrast, geometrické tvary",
+      "wood": "Ořech, dub a krémová, patkové písmo a lamely – teplé jako dřevěný stánek"
     }
   },
   "radio": {

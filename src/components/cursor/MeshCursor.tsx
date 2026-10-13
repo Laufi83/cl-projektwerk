@@ -214,6 +214,10 @@ export default function MeshCursor() {
         .mesh-cursor[data-state="grab"] .mesh-cursor__hand .closed { display: block; }
         .mesh-cursor[data-state="grab"] .mesh-cursor__hand { transform: translate(-50%, -50%) scale(.92); }
         /* ── Eigener Cursor je Layout (html[data-layout]) ── */
+        /* Wood: kleine Holzlamelle, Ring mit Lamellenstruktur und warmem Licht */
+        html[data-layout="wood"] .mesh-cursor__cross { width: 14px; height: 22px; border-radius: 3px; background: repeating-linear-gradient(90deg, var(--accent) 0 3px, transparent 3px 5px); mix-blend-mode: normal; }
+        html[data-layout="wood"] .mesh-cursor__cross::before, html[data-layout="wood"] .mesh-cursor__cross::after { display: none; }
+        html[data-layout="wood"] .mesh-cursor__ring { border-color: var(--accent); background: repeating-linear-gradient(90deg, rgb(211 154 94 / .14) 0 2px, transparent 2px 7px); box-shadow: 0 0 30px -8px rgb(227 176 122 / .7); }
         /* Aurora: weicher Lichtpunkt, Ring als leuchtende Linse */
         html[data-layout="aurora"] .mesh-cursor__cross { width: 28px; height: 28px; border-radius: 50%; background: radial-gradient(circle, rgb(124 245 212 / .9) 0 18%, rgb(182 156 255 / .45) 45%, transparent 70%); filter: blur(.6px); }
         html[data-layout="aurora"] .mesh-cursor__cross::before, html[data-layout="aurora"] .mesh-cursor__cross::after { display: none; }
