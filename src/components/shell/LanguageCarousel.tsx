@@ -4,6 +4,7 @@
  * Ziehen/Wischen dreht den Ring (mit Schwung), Pfeiltasten springen zur nächsten Sprache,
  * Klick auf die vordere Karte oder „Auswählen“ wechselt die Sprache (gleiche Seite, andere Sprache).
  * Bei reduzierter Bewegung: keine Eigendrehung, Sprünge ohne Animation.
+ * Mit nur zwei Sprachen (derzeit Deutsch und Englisch) stattdessen ein direkter Umschalter DE | EN.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -21,6 +22,42 @@ const STEP = 360 / N;
 const wrapDeg = (a: number) => ((a % 360) + 540) % 360 - 180;
 
 export function LanguageSwitch({ label }: { label: string }) {
+  return N <= 2 ? <LocaleToggle label={label} /> : <CarouselSwitch label={label} />;
+}
+
+/** Wechselt auf dieselbe Seite in einer anderen Sprache */
+function useSwitchLocale() {
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname() as AppPathname;
+  const params = useParams() as Record<string, string>;
+  return useCallback((code: AppLocale) => {
+    if (code === locale) return;
+    const { locale: _l, ...rest } = params;
+    void _l;
+    const href = (pathname.includes("[") ? { pathname, params: rest } : pathname) as Parameters<typeof router.replace>[0];
+    router.replace(href, { locale: code, scroll: false });
+  }, [locale, params, pathname, router]);
+}
+
+/** Zwei Sprachen: beide sichtbar, ein Klick wechselt */
+function LocaleToggle({ label }: { label: string }) {
+  const locale = useLocale();
+  const go = useSwitchLocale();
+  return (
+    <div role="group" aria-label={label} className="flex h-10 items-center gap-0.5 rounded-full px-1 text-xs font-semibold uppercase tracking-[0.16em]">
+      {LOCALES.map((l) => (
+        <button key={l.code} type="button" lang={l.code} aria-pressed={l.code === locale} aria-label={l.name} onClick={() => go(l.code)}
+          className="inline-flex h-8 items-center gap-1.5 rounded-full px-2.5 text-fg-muted transition-colors duration-300 ease-fluid hover:text-fg aria-pressed:bg-accent-soft aria-pressed:text-fg">
+          <img src={`/flags/${l.flag}.svg`} alt="" width={16} height={16} className="size-4 rounded-full object-cover ring-1 ring-line" />
+          {l.code}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function CarouselSwitch({ label }: { label: string }) {
   const locale = useLocale();
   const [open, setOpen] = useState(false);
   const button = useRef<HTMLButtonElement>(null);
@@ -49,9 +86,7 @@ export function LanguageSwitch({ label }: { label: string }) {
 function Carousel({ onClose }: { onClose: () => void }) {
   const t = useTranslations("lang");
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname() as AppPathname;
-  const params = useParams() as Record<string, string>;
+  const switchTo = useSwitchLocale();
   const startIndex = Math.max(0, LOCALES.findIndex((l) => l.code === locale));
 
   const ring = useRef<HTMLDivElement>(null);
@@ -65,13 +100,9 @@ function Carousel({ onClose }: { onClose: () => void }) {
   const wheelTimer = useRef(0);
 
   const choose = useCallback((code: AppLocale) => {
-    if (code === locale) { onClose(); return; }
-    const { locale: _l, ...rest } = params;
-    void _l;
-    const href = (pathname.includes("[") ? { pathname, params: rest } : pathname) as Parameters<typeof router.replace>[0];
-    router.replace(href, { locale: code, scroll: false });
+    switchTo(code);
     onClose();
-  }, [locale, params, pathname, router, onClose]);
+  }, [switchTo, onClose]);
 
   const goTo = useCallback((i: number) => {
     const m = motion.current;

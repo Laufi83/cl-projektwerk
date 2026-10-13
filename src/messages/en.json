@@ -69,7 +69,13 @@
     "explain": "Time-lapse animation of a design: this is how the planned space could take shape. It is not evidence of a realised stand."
   },
   "tagline": {
-    "text": "Every space starts with documents everyone can rely on. That is what I create."
+    "text": "Every space starts with documents everyone can rely on. That is what I create.",
+    "stomp": [
+      "Briefing.",
+      "Planning.",
+      "Control.",
+      "Handover."
+    ]
   },
   "services": {
     "eyebrow": "Services",
@@ -285,7 +291,15 @@
       "down": "Design below",
       "hint": "Drag or use the arrow keys to explore · click an image to bring it into focus · click the focus to open it",
       "hintTouch": "Swipe sideways to explore · tap an image to bring it into focus · tap again to open it"
-    }
+    },
+    "searchExamples": [
+      "Lamello",
+      "wood",
+      "6 × 4 m",
+      "two-storey",
+      "greenery",
+      "light"
+    ]
   },
   "detail": {
     "facts": "Key facts",

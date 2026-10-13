@@ -3,7 +3,7 @@
  * Entwurfsgalerie: Atlas (endlose Bildwand mit Fokus, siehe DesignAtlas) oder Raster,
  * dazu Suche, Filter, Zufallsentwurf und „Entwurf des Tages“. Öffnet Entwürfe im Overlay.
  */
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { MagnifyingGlass, Shuffle, SquaresFour, Sun, X } from "@phosphor-icons/react";
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
@@ -29,15 +29,19 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
   // Atlas startet bei diesem Entwurf (Zufall, Entwurf des Tages)
   const [lead, setLead] = useState<string | null>(null);
 
+  // Merkmale auch in der Seitensprache durchsuchbar („Holz“ findet „wood“)
+  const tagLabels = useMemo(() => Object.fromEntries(FILTERS.map((f) => [f.key, t(`filter.${f.key}`).toLowerCase()])) as Record<string, string>, [t]);
+
+  const examples = useMemo(() => t.raw("searchExamples") as string[], [t]);
   const counts = useMemo(() => Object.fromEntries(FILTERS.map((f) => [f.key, items.filter((x) => f.test(x)).length])), [items]);
   const list = useMemo(() => {
     const test = FILTERS.find((f) => f.key === filter)?.test ?? (() => true);
     const q = query.trim().toLowerCase();
-    const found = items.filter((d) => test(d) && (!q || [d.title, pad3(d.n), d.size ?? "", ...d.tags].some((s) => s.toLowerCase().includes(q))));
+    const found = items.filter((d) => test(d) && (!q || [d.title, pad3(d.n), d.size ?? "", ...d.tags, ...d.tags.map((x) => tagLabels[x] ?? "")].some((s) => s.toLowerCase().includes(q))));
     // gewählten Entwurf an den Anfang stellen: der Atlas zeigt ihn dann im Fokus
     const i = lead ? found.findIndex((d) => d.slug === lead) : -1;
     return i > 0 ? [...found.slice(i), ...found.slice(0, i)] : found;
-  }, [items, filter, query, lead]);
+  }, [items, filter, query, lead, tagLabels]);
 
   const open = useCallback((d: GalleryItem, el: HTMLElement | null) => {
     overlay.open(d.slug, {
@@ -78,12 +82,7 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
             <button type="button" onClick={random} className={chip}><Shuffle size={16} aria-hidden />{t("random")}</button>
             <button type="button" onClick={jump} className={chip}><Sun size={16} aria-hidden />{t("dayPick")}</button>
           </div>
-          <label className="flex items-center gap-2 rounded-full border border-line-strong bg-bg-raised px-4 py-2 text-sm focus-within:border-accent">
-            <MagnifyingGlass size={17} className="text-accent" aria-hidden />
-            <span className="sr-only">{t("search")}</span>
-            <input type="search" value={query} onChange={(e) => search(e.target.value)} placeholder={t("searchPlaceholder")} className="w-40 bg-transparent text-fg outline-none placeholder:text-fg-subtle sm:w-52" />
-            {query && <button type="button" onClick={() => search("")} aria-label={t("reset")} className="text-fg-subtle hover:text-fg"><X size={14} aria-hidden /></button>}
-          </label>
+          <SearchField value={query} onChange={search} label={t("search")} placeholder={t("searchPlaceholder")} resetLabel={t("reset")} examples={examples} />
         </div>
         <div role="group" aria-label={t("filters")} className="no-scrollbar -mx-[var(--gutter)] mt-4 flex gap-2 overflow-x-auto px-[var(--gutter)] pb-2">
           {FILTERS.filter((f) => counts[f.key] > 0).map((f) => (
@@ -116,5 +115,46 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
         <DesignAtlas items={list} onOpen={open} />
       )}
     </div>
+  );
+}
+
+/**
+ * Suchfeld, das Beispielsuchen vortippt (angelehnt an die Motion-Vorlage „Search Bar Logo Intro“) –
+ * nur solange es leer, nicht fokussiert und sichtbar ist. Eigener Zustand, damit die Galerie nicht mitrendert.
+ */
+function SearchField({ value, onChange, label, placeholder, resetLabel, examples }: {
+  value: string; onChange: (v: string) => void; label: string; placeholder: string; resetLabel: string; examples: string[];
+}) {
+  const ref = useRef<HTMLLabelElement>(null);
+  const [focus, setFocus] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [hint, setHint] = useState("");
+  useEffect(() => {
+    const io = new IntersectionObserver(([e]) => setVisible(e.isIntersecting));
+    io.observe(ref.current!);
+    return () => io.disconnect();
+  }, []);
+  useEffect(() => {
+    if (value || focus || !visible || !examples.length || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let ex = 0, pos = 0, dir = 1, wait = 6;
+    const id = window.setInterval(() => {
+      if (wait > 0) { wait--; return; }
+      const word = examples[ex % examples.length];
+      pos += dir;
+      setHint(word.slice(0, pos));
+      if (dir > 0 && pos >= word.length) { dir = -1; wait = 18; }
+      else if (dir < 0 && pos <= 0) { dir = 1; ex++; wait = 4; }
+    }, 85);
+    return () => clearInterval(id);
+  }, [value, focus, visible, examples]);
+  const typing = !value && !focus && visible && hint;
+  return (
+    <label ref={ref} className="flex items-center gap-2 rounded-full border border-line-strong bg-bg-raised px-4 py-2 text-sm focus-within:border-accent">
+      <MagnifyingGlass size={17} className="text-accent" aria-hidden />
+      <span className="sr-only">{label}</span>
+      <input type="search" value={value} onChange={(e) => onChange(e.target.value)} onFocus={() => setFocus(true)} onBlur={() => setFocus(false)}
+        placeholder={typing ? `${hint}▍` : placeholder} className="w-40 bg-transparent text-fg outline-none placeholder:text-fg-subtle sm:w-52" />
+      {value && <button type="button" onClick={() => onChange("")} aria-label={resetLabel} className="text-fg-subtle hover:text-fg"><X size={14} aria-hidden /></button>}
+    </label>
   );
 }

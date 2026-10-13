@@ -11,7 +11,7 @@ import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
 import { ConstructionExperience } from "@/components/sections/ConstructionExperience";
-import { TaglineReveal } from "@/components/sections/TaglineReveal";
+import { StompTagline } from "@/components/sections/StompTagline";
 import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
 import { World } from "@/components/sections/World";
@@ -109,7 +109,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         visNote={note}
       />
 
-      <TaglineReveal text={t("tagline.text")} />
+      <StompTagline text={t("tagline.text")} beats={t.raw("tagline.stomp") as string[]} />
 
       <section id="designs" aria-labelledby="gallery-title" className="relative scroll-mt-4 py-24 md:py-32">
         <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-6">

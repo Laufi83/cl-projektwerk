@@ -83,7 +83,7 @@ try {
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ["INTERACTIVE STAND CONFIGURATOR", "SMART PROJECT FINDER", "CONSTRUCTION EXPERIENCE", "Mission Control"]) {
+      for (const name of ['aria-roledescription="Entwurfsatlas"', "Projektablauf", "Mission Control", "data-beat"]) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
@@ -121,16 +121,18 @@ try {
     checks.push(locale + ": all 10 dated Merck/Mercedes/Daimler/Salamander references present");
   }
 
+  // Arbeitszeugnisse und Zertifikate werden nicht veröffentlicht (keine Drive-Links mehr im Code)
   const documents = await readFile("src/components/sections/ExperienceHub.tsx","utf8");
-  for (const driveId of [
-    "1g5EI7E9JMf8Ox30mE89qSlQkWobIQNZW",
-    "1u7DvOWpaWccI8_5QjA_r2BNWiPbKteoY",
-    "1hPB-r-DtAEtTivOBZm2FgR0EyGgjEp9e",
-    "1ogFD8V7awSGwr99dtoEguexYs-FBVAKB",
-  ]) {
-    assert(documents.includes(driveId), `Missing scanned document link: ${driveId}`);
+  assert(!/drive\.google\.com/.test(documents), "Document links must not be published");
+  checks.push("No employment references or certificates linked");
+
+  // Nur Deutsch und Englisch; frühere Sprachadressen leiten auf Englisch um
+  for (const [from, to] of [["/fr", "/en"], ["/ru/designs", "/en/designs"]]) {
+    const r = await fetch(base + from, { redirect: "manual", signal: AbortSignal.timeout(30000) });
+    assert(r.status === 308 || r.status === 301, `${from}: expected permanent redirect, got ${r.status}`);
+    assert.equal(new URL(r.headers.get("location"), base).pathname, to);
+    checks.push(`${from} -> ${to}`);
   }
-  checks.push("Original scanned employment references linked from interactive experience explorer");
 
   // The removed media are not part of the deployed static asset bundle anymore.
   for (const asset of [

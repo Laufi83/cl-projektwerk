@@ -4,6 +4,9 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+/** Früher angebotene Sprachen: Adressen dauerhaft auf die englische Fassung umleiten (Pfade sind dort identisch) */
+const RETIRED_LOCALES = "fr|es|it|nl|pl|cs|pt|zh|hi|ru";
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   // eigenständiges Server-Paket (server.js) für den Betrieb auf dem VPS ohne node_modules-Installation
@@ -21,6 +24,12 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [70, 75, 82],
+  },
+  async redirects() {
+    return [
+      { source: `/:lang(${RETIRED_LOCALES})`, destination: "/en", permanent: true },
+      { source: `/:lang(${RETIRED_LOCALES})/:path*`, destination: "/en/:path*", permanent: true },
+    ];
   },
   async headers() {
     return [

@@ -69,7 +69,13 @@
     "explain": "Zeitraffer-Animation eines Entwurfs: So könnte die geplante Fläche entstehen. Sie ist kein Nachweis eines realisierten Stands."
   },
   "tagline": {
-    "text": "Jede Fläche beginnt mit Unterlagen, auf die sich alle verlassen können. Genau die erstelle ich."
+    "text": "Jede Fläche beginnt mit Unterlagen, auf die sich alle verlassen können. Genau die erstelle ich.",
+    "stomp": [
+      "Briefing.",
+      "Planung.",
+      "Steuerung.",
+      "Übergabe."
+    ]
   },
   "services": {
     "eyebrow": "Leistungen",
@@ -285,7 +291,15 @@
       "down": "Entwurf unten",
       "hint": "Ziehen oder Pfeiltasten zum Erkunden · Bild anklicken holt es in den Fokus · Fokus anklicken öffnet den Entwurf",
       "hintTouch": "Seitlich wischen zum Erkunden · Bild antippen holt es in den Fokus · erneut antippen öffnet den Entwurf"
-    }
+    },
+    "searchExamples": [
+      "Lamello",
+      "Holz",
+      "6 × 4 m",
+      "zweigeschossig",
+      "Begrünung",
+      "Licht"
+    ]
   },
   "detail": {
     "facts": "Kenndaten",
