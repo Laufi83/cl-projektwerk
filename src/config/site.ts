@@ -8,7 +8,7 @@ export const site = {
   person: "Christof Laufersweiler",
   role: { de: "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau", en: "External planning and project office for exhibition construction, brand spaces and interior fit-out" },
   claim: { de: "Planung, die auf der Fläche funktioniert.", en: "Planning that works on the floor." },
-  email: "info@cl-projektwerk.de",
+  email: "christof.laufersweiler@web.de",
   phone: "+49 151 59890827",
   /** Nur Ziffern inkl. Ländervorwahl, z. B. „4917612345678“ */
   whatsapp: "+49 151 59890827",

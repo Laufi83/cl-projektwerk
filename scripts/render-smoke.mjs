@@ -195,7 +195,7 @@ try {
       assert.match(response.headers.get("cache-control"), /no-store/);
       const result = await response.json();
       assert.equal(result.delivery, "draft");
-      assert.equal(result.draft.to, "info@cl-projektwerk.de");
+      assert.equal(result.draft.to, "christof.laufersweiler@web.de");
       assert.match(result.draft.body, /Render Test & Müller/);
       if (data.type === "inquiry") {
         assert(result.draft.body.includes(data.message.trim())); // Zod trim() entfernt äußere Leerzeichen
