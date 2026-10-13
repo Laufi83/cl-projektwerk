@@ -2,7 +2,11 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-/** Blendet [data-reveal]-Elemente beim Hineinscrollen ein (IntersectionObserver, kein Scroll-Listener). */
+/** Markierungen, die beim Hineinscrollen auf "in" gesetzt werden: Blöcke, Fließtext (FxWords) und Listen */
+const KEYS = ["reveal", "fx", "fxList"] as const;
+const SELECTOR = "[data-reveal]:not([data-reveal='in']), [data-fx]:not([data-fx='in']), [data-fx-list]:not([data-fx-list='in'])";
+
+/** Blendet [data-reveal]-Elemente, Text- und Listenanimationen beim Hineinscrollen ein (IntersectionObserver, kein Scroll-Listener). */
 export function RevealObserver() {
   const pathname = usePathname();
   useEffect(() => {
@@ -10,13 +14,14 @@ export function RevealObserver() {
       (entries) => {
         for (const e of entries) {
           if (!e.isIntersecting) continue;
-          (e.target as HTMLElement).dataset.reveal = "in";
-          io.unobserve(e.target);
+          const el = e.target as HTMLElement;
+          for (const k of KEYS) if (k in el.dataset) el.dataset[k] = "in";
+          io.unobserve(el);
         }
       },
       { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
     );
-    const scan = () => document.querySelectorAll<HTMLElement>("[data-reveal]:not([data-reveal='in'])").forEach((el) => io.observe(el));
+    const scan = () => document.querySelectorAll<HTMLElement>(SELECTOR).forEach((el) => io.observe(el));
     scan();
     let raf = 0;
     const mo = new MutationObserver((records) => {

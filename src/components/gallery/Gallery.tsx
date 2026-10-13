@@ -11,7 +11,7 @@ import { GridView } from "./GridView";
 import { DesignAtlas } from "./DesignAtlas";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
 
-const BATCH = 16;
+const BATCH = 8;
 const AtlasIcon = () => (
   <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden fill="currentColor">
     <rect x="1" y="2" width="4" height="5" rx="1" /><rect x="6" y="0" width="4" height="5" rx="1" /><rect x="11" y="2" width="4" height="5" rx="1" />

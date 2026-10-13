@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Heart } from "@phosphor-icons/react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useFavorites } from "@/lib/favorites";
@@ -10,19 +10,19 @@ import { Logo } from "@/components/brand/Logo";
 import { LanguageSwitch } from "@/components/shell/LanguageCarousel";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 
+/** Abschnitte der Startseite (Anker) */
 const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
   { id: "ablauf", key: "process" },
-  { id: "weltweit", key: "world" },
-  { id: "messegelande", key: "venues" },
   { id: "ueber", key: "about" },
 ] as const;
+/** Navigation: Abschnitte plus die eigene Seite „Messen“ (Messekalender und Messegelände) nach „Zusammenarbeit“ */
+type NavItem = { id: string; key: "services" | "designs" | "process" | "about" | "fairs" | "contact"; page?: "/messen" };
+const NAV: NavItem[] = [...SECTIONS.slice(0, 3), { id: "messen", key: "fairs", page: "/messen" }, ...SECTIONS.slice(3)];
 
 export function Header() {
   const t = useTranslations("nav");
-  const locale = useLocale();
-  const sectionLabel = (s: typeof SECTIONS[number] | {id:string;key:string}) => s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key as "services" | "designs" | "process" | "world" | "about" | "contact");
   const tc = useTranslations("common");
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -72,7 +72,7 @@ export function Header() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
-  const current = isHome ? active : null;
+  const current = isHome ? active : pathname === "/messen" ? "messen" : null;
 
   const go = (id: string) => (e: React.MouseEvent) => {
     if (!isHome) return; // normale Navigation zur Startseite mit Anker
@@ -108,15 +108,15 @@ export function Header() {
         </Link>
 
         <ul className="hidden items-center gap-0.5 xl:flex">
-          {SECTIONS.map((s) => (
+          {NAV.map((s) => (
             <li key={s.id}>
               <Link
-                href={{ pathname: "/", hash: s.id }}
-                onClick={go(s.id)}
+                href={s.page ?? { pathname: "/", hash: s.id }}
+                onClick={s.page ? undefined : go(s.id)}
                 aria-current={current === s.id ? "true" : undefined}
                 className="group/nav relative inline-flex items-center rounded-2xl px-2.5 py-2.5 text-xs font-semibold text-fg-muted transition-[color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:bg-white/10 hover:text-fg aria-[current]:bg-white/10 aria-[current]:text-fg 2xl:px-3 2xl:text-sm"
               >
-                <Kinetic text={sectionLabel(s)} />
+                <Kinetic text={t(s.key)} />
                 <span
                   aria-hidden
                   className="absolute inset-x-3 -bottom-0.5 h-px origin-left scale-x-0 bg-accent transition-transform duration-700 ease-fluid [[aria-current]>&]:scale-x-100"
@@ -161,11 +161,11 @@ export function Header() {
         onClick={(e) => e.target === e.currentTarget && setOpen(false)}
       >
         <ul className="flex h-full flex-col justify-center gap-2 px-8">
-          {[...SECTIONS, { id: "kontakt", key: "contact" } as const].map((s, i) => (
+          {[...NAV, { id: "kontakt", key: "contact" } as NavItem].map((s, i) => (
             <li key={s.id} className="overflow-hidden">
               <Link
-                href={{ pathname: "/", hash: s.id }}
-                onClick={(e) => { go(s.id)(e); setOpen(false); }}
+                href={s.page ?? { pathname: "/", hash: s.id }}
+                onClick={(e) => { if (!s.page) go(s.id)(e); setOpen(false); }}
                 className="font-display block py-2 text-[clamp(1.75rem,5.5vh,3rem)] font-semibold tracking-tight transition-[transform,opacity,color] duration-500 ease-fluid hover:text-accent"
                 style={{
                   transform: open ? "none" : "translateY(48px)",
@@ -173,7 +173,7 @@ export function Header() {
                   transitionDelay: `${100 + i * 50}ms`,
                 }}
               >
-                {s.id === "messegelande" ? (locale === "de" ? "Messegelände" : "Venues") : t(s.key)}
+                {t(s.key)}
               </Link>
             </li>
           ))}

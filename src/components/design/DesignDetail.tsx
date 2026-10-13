@@ -13,6 +13,8 @@ import { ZoomPan } from "./ZoomPan";
 import { ShareMenu } from "./ShareMenu";
 import { FavoriteButton } from "./FavoriteButton";
 import { contentLocale, localePrefix } from "@/i18n/locales";
+import { useReducedMotion } from "@/hooks/useMedia";
+import { FxWords } from "@/components/kinetic/FxWords";
 
 export type NeighbourRef = { slug: string; title: string; number: number };
 
@@ -51,6 +53,12 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
 
   const count = d.renderings.length;
   const go = useCallback((dir: number) => setActive((a) => (a + dir + count) % count), [count, setActive]);
+  // Entwürfe mit Aufbaufilm öffnen mit dem Film; danach (oder per Pfeil/Miniatur) folgen die Bilder
+  const [film, setFilm] = useState(!!d.clip);
+  const step = (dir: number) => {
+    if (film) { setFilm(false); setActive(dir > 0 ? 0 : count - 1); }
+    else go(dir);
+  };
 
   // Wischgesten für die Bildergalerie
   const swipe = useRef<{ x: number; y: number } | null>(null);
@@ -101,7 +109,7 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
               const s = swipe.current; swipe.current = null;
               if (!s) return;
               const dx = e.clientX - s.x;
-              if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(e.clientY - s.y)) go(dx < 0 ? 1 : -1);
+              if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(e.clientY - s.y)) step(dx < 0 ? 1 : -1);
             }}
           >
             {d.renderings.map((r, i) => (
@@ -125,14 +133,17 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
                 )}
               </div>
             ))}
-            <span className="vis-note absolute left-3 top-3">{note}{d.renderings[active]?.placeholder ? ` · ${t("placeholderImage")}` : ""}</span>
-            <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-2">
+            {d.clip && (
+              <StageFilm design={d} show={film} play={film && heroVisible} onDone={() => setFilm(false)} label={`${d.title} – ${t("clip")} (${note})`} />
+            )}
+            <span className="vis-note absolute left-3 top-3">{note}{!film && d.renderings[active]?.placeholder ? ` · ${t("placeholderImage")}` : ""}</span>
+            <div className="absolute inset-x-3 bottom-4 flex items-center justify-between gap-2">
               <p className="min-w-0 truncate rounded-full bg-black/50 px-3 py-1.5 text-xs backdrop-blur" aria-live="polite">
-                <span className="tabular">{t("imageOf", { current: active + 1, total: d.renderings.length })}</span> · {d.renderings[active]?.label[locale]}
+                {film ? t("clip") : <><span className="tabular">{t("imageOf", { current: active + 1, total: d.renderings.length })}</span> · {d.renderings[active]?.label[locale]}</>}
               </p>
               <div className="flex shrink-0 gap-1">
-                <button type="button" onClick={() => go(-1)} aria-label={tc("prev")} className="grid size-10 place-items-center rounded-full bg-black/50 backdrop-blur hover:bg-black/70"><ArrowLeft size={18} /></button>
-                <button type="button" onClick={() => go(1)} aria-label={tc("next")} className="grid size-10 place-items-center rounded-full bg-black/50 backdrop-blur hover:bg-black/70"><ArrowRight size={18} /></button>
+                <button type="button" onClick={() => step(-1)} aria-label={tc("prev")} className="grid size-10 place-items-center rounded-full bg-black/50 backdrop-blur hover:bg-black/70"><ArrowLeft size={18} /></button>
+                <button type="button" onClick={() => step(1)} aria-label={tc("next")} className="grid size-10 place-items-center rounded-full bg-black/50 backdrop-blur hover:bg-black/70"><ArrowRight size={18} /></button>
                 <button type="button" onClick={() => setLightbox({ index: active })} aria-label={t("fullscreen")} className="grid size-10 place-items-center rounded-full bg-black/50 backdrop-blur hover:bg-black/70"><ArrowsOut size={18} /></button>
               </div>
             </div>
@@ -140,12 +151,26 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
 
           {/* Miniaturen */}
           <ul className="no-scrollbar mt-3 flex gap-2 overflow-x-auto">
+            {d.clip && (
+              <li className="shrink-0">
+                <button
+                  type="button"
+                  onClick={() => setFilm(true)}
+                  aria-current={film}
+                  aria-label={t("clip")}
+                  className="relative block w-28 overflow-hidden rounded-lg opacity-50 ring-accent transition-opacity duration-500 ease-fluid hover:opacity-90 aria-[current=true]:opacity-100 aria-[current=true]:ring-2 md:w-36"
+                >
+                  <img src={designAsset(d.id, d.clip.poster)} alt="" width={160} height={90} loading="lazy" decoding="async" className="aspect-[16/9] w-full object-cover" />
+                  <span className="absolute inset-0 grid place-items-center bg-black/30"><Play size={20} weight="fill" className="text-white drop-shadow" aria-hidden /></span>
+                </button>
+              </li>
+            )}
             {d.renderings.map((r, i) => (
               <li key={r.base} className="shrink-0">
                 <button
                   type="button"
-                  onClick={() => setActive(i)}
-                  aria-current={i === active}
+                  onClick={() => { setFilm(false); setActive(i); }}
+                  aria-current={!film && i === active}
                   aria-label={r.label[locale]}
                   className="block w-28 overflow-hidden rounded-lg opacity-50 ring-accent transition-opacity duration-500 ease-fluid hover:opacity-90 aria-[current=true]:opacity-100 aria-[current=true]:ring-2 md:w-36"
                 >
@@ -162,14 +187,11 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
         {/* Narrative Projektgeschichte auf Basis der vorhandenen Daten und Originalbilder */}
         <DesignStory design={d} />
 
-        {/* Aufbaufilm */}
-        {d.clip && <ClipPlayer design={d} note={note} />}
-
         {/* Beschreibung, Kenndaten, Aktionen */}
         <div className="mt-12 grid gap-10 lg:grid-cols-[1.3fr_1fr]">
           <div>
             <p className="eyebrow">{t("description")}</p>
-            <p className="mt-4 max-w-2xl text-lg text-fg md:text-xl">{d.description[locale] || d.description.de}</p>
+            <p className="mt-4 max-w-2xl text-lg text-fg md:text-xl"><FxWords text={d.description[locale] || d.description.de} /></p>
             <h2 className="eyebrow mt-10">{t("facts")}</h2>
             <dl className="mt-4 grid border-t border-line">
               {/* fehlende Angaben (z. B. Materialien noch nicht erfasst) gar nicht erst zeigen */}
@@ -263,51 +285,62 @@ function NavButton({ to, dir, mode, onNavigate, label }: { to: NeighbourRef; dir
   return <Link href={{ pathname: "/designs/[slug]", params: { slug: to.slug } }} aria-label={`${label}: ${to.title}`} className={cls}>{inner}</Link>;
 }
 
-function ClipPlayer({ design: d, note }: { design: Design; note: string }) {
-  const t = useTranslations("detail");
+/**
+ * Aufbaufilm auf der Bühne: startet beim Öffnen automatisch (stumm), sobald die Bühne sichtbar ist,
+ * zeigt den Fortschritt und blendet nach dem Ende auf die Bilder über. Bei reduzierter Bewegung erst auf Klick.
+ */
+function StageFilm({ design: d, show, play, onDone, label }: { design: Design; show: boolean; play: boolean; onDone: () => void; label: string }) {
   const tc = useTranslations("common");
   const ref = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
+  const done = useRef(0);
+  const reduce = useReducedMotion();
+  const [paused, setPaused] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const v = ref.current;
-    if (!v || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const io = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) v.play().catch(() => {});
-      else v.pause();
-    }, { threshold: 0.4 });
-    io.observe(v);
-    return () => io.disconnect();
-  }, [d.slug]);
+    if (!v) return;
+    clearTimeout(done.current);
+    if (play && !reduce) { v.currentTime = 0; v.play().catch(() => {}); }
+    else v.pause();
+  }, [play, reduce]);
+  useEffect(() => () => clearTimeout(done.current), []);
+
+  const toggle = () => {
+    const v = ref.current;
+    if (!v) return;
+    clearTimeout(done.current);
+    if (v.paused) v.play().catch(() => {}); else v.pause();
+  };
 
   return (
-    <section className="mt-12" aria-labelledby={`clip-${d.id}`}>
-      <h2 id={`clip-${d.id}`} className="eyebrow">{t("clip")}</h2>
-      <div className="relative mt-4 overflow-hidden rounded-2xl bg-black">
-        <video
-          ref={ref}
-          key={d.slug}
-          className="aspect-[16/9] w-full object-cover"
-          src={designAsset(d.id, d.clip!.file)}
-          poster={designAsset(d.id, d.clip!.poster)}
-          muted
-          loop
-          playsInline
-          preload="none"
-          onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
-          aria-label={`${d.title} – ${t("clip")} (${note})`}
-        />
-        <span className="vis-note absolute left-3 top-3">{note}</span>
-        <button
-          type="button"
-          onClick={() => (ref.current?.paused ? ref.current.play() : ref.current?.pause())}
-          className="absolute bottom-3 right-3 inline-flex items-center gap-2 rounded-full bg-black/60 px-4 py-2 text-sm font-semibold backdrop-blur hover:bg-black/80"
-        >
-          {playing ? <Pause size={16} weight="fill" /> : <Play size={16} weight="fill" />} {playing ? tc("pause") : tc("play")}
-        </button>
-      </div>
-    </section>
+    <div className="absolute inset-0 bg-black transition-opacity duration-700 ease-fluid" style={{ opacity: show ? 1 : 0, pointerEvents: show ? "auto" : "none" }} aria-hidden={!show}>
+      <video
+        ref={ref}
+        className="h-full w-full object-cover"
+        src={designAsset(d.id, d.clip!.file)}
+        poster={designAsset(d.id, d.clip!.poster)}
+        muted
+        playsInline
+        preload="auto"
+        onPlay={() => setPaused(false)}
+        onPause={() => setPaused(true)}
+        onTimeUpdate={(e) => setProgress(e.currentTarget.currentTime / (e.currentTarget.duration || 1))}
+        onEnded={() => { done.current = window.setTimeout(onDone, 1400); }}
+        aria-label={label}
+      />
+      <button
+        type="button"
+        onClick={toggle}
+        tabIndex={show ? 0 : -1}
+        className="absolute right-3 top-3 inline-flex items-center gap-2 rounded-full bg-black/60 px-4 py-2 text-sm font-semibold text-white backdrop-blur hover:bg-black/80"
+      >
+        {paused ? <Play size={16} weight="fill" aria-hidden /> : <Pause size={16} weight="fill" aria-hidden />} {paused ? tc("play") : tc("pause")}
+      </button>
+      <span aria-hidden className="absolute inset-x-0 bottom-0 h-[3px] bg-white/15">
+        <span className="block h-full origin-left bg-accent transition-transform duration-300 ease-linear" style={{ transform: `scaleX(${progress})` }} />
+      </span>
+    </div>
   );
 }
 

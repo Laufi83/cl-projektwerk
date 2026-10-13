@@ -14,7 +14,9 @@
     "selectionTitle": "Meine Auswahl",
     "selectionDescription": "Ihre gemerkten Messestand-Entwürfe – auf Wunsch direkt mit Ihrer Anfrage versendet.",
     "imprintDescription": "Anbieterkennzeichnung und rechtliche Angaben.",
-    "privacyDescription": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website."
+    "privacyDescription": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.",
+    "fairsTitle": "Messekalender und Messegelände in Europa",
+    "fairsDescription": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung."
   },
   "common": {
     "skip": "Zum Inhalt springen",
@@ -46,12 +48,13 @@
     "cta": "Projekt besprechen",
     "selection": "Meine Auswahl",
     "home": "Startseite",
-    "main": "Hauptnavigation"
+    "main": "Hauptnavigation",
+    "fairs": "Messen"
   },
   "hero": {
-    "eyebrow": "Externes Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
+    "eyebrow": "Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
     "title": "Planung, die auf der Fläche funktioniert.",
-    "lead": "Technische Planung, Arbeitsvorbereitung und Projektsteuerung für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller – projektbezogen, mit klar vereinbartem Umfang und nachvollziehbaren Unterlagen.",
+    "lead": "Technische Planung, Arbeitsvorbereitung und Projektsteuerung für Messebauer, Agenturen und Aussteller – projektbezogen und mit klar vereinbartem Umfang.",
     "cta": "Planungskapazität anfragen",
     "secondary": "Entwürfe ansehen",
     "scroll": "Scrollen – der Entwurf entsteht",
@@ -79,8 +82,8 @@
   },
   "services": {
     "eyebrow": "Leistungen",
-    "title": "Zusätzliche Planungskapazität, wenn Projekte parallel laufen.",
-    "lead": "Parallele Projekte, knappe Teams, technisch anspruchsvolle Aufgaben: Als externer Planer und Projektsteuerer übernehme ich klar abgegrenzte Teile Ihres Projekts – mit mehr als 20 Jahren Erfahrung im Messe- und Veranstaltungsumfeld. Fertigung, Transport, Montage, Statik, Genehmigungen und Elektroarbeiten erbringen qualifizierte Fachpartner.",
+    "title": "Planungskapazität, wenn Projekte parallel laufen.",
+    "lead": "Als externer Planer übernehme ich klar abgegrenzte Teile Ihres Projekts – mit über 20 Jahren Erfahrung im Messebau. Fertigung, Montage, Statik und Elektro erbringen qualifizierte Fachpartner.",
     "trust": [
       {
         "title": "Ein Ansprechpartner",
@@ -88,160 +91,88 @@
       },
       {
         "title": "Über 20 Jahre Erfahrung",
-        "text": "im Messe- und Veranstaltungsumfeld; technischer Zeichner Holztechnik und zertifizierter Projektleiter Messebau und Event (IHK)."
+        "text": "Technischer Zeichner Holztechnik und Projektleiter Messebau und Event (IHK)."
       },
       {
-        "title": "Klar vereinbarter Umfang",
-        "text": "Leistungen, Korrekturschleifen und Termine lege ich vorab schriftlich fest – Zusatzarbeiten und Reisen nur nach Absprache."
+        "title": "Klarer Umfang",
+        "text": "Leistungen, Korrekturschleifen und Termine stehen vorab schriftlich fest."
       }
     ],
     "package": {
       "badge": "Zusammenarbeit",
       "title": "Projektbezogen oder als Monatskontingent.",
-      "subtitle": "Planungskapazität genau in dem Umfang, den Ihr Projekt braucht.",
-      "text": "Nach Ihrem Briefing schätze ich den Aufwand ein und schlage Umfang, Ergebnisse und Termine vor. Die Zusammenarbeit erfolgt projektbezogen oder im Monatskontingent mit festgelegten Stunden, Reaktionszeiten und Korrekturschleifen. Meine Kapazität ist begrenzt – ich übernehme nur Projekte, die ich mit der nötigen Sorgfalt bearbeiten kann.",
-      "cta": "Planungskapazität anfragen",
-      "more": "So läuft ein Projekt ab",
-      "phases": [
-        {
-          "title": "Briefing & Umfang",
-          "items": [
-            "Klärung von Aufgabe, Termin und vorhandenen Unterlagen",
-            "Schriftlich festgelegter Leistungsumfang",
-            "Vereinbarte Korrekturschleifen und Freigaben",
-            "Individuelles Angebot nach dem Briefing"
-          ]
-        },
-        {
-          "title": "Planung & Unterlagen",
-          "items": [
-            "Bemaßte Detail- und Fertigungszeichnungen",
-            "Bauteillisten und Schnittstellenunterlagen",
-            "Material- und Mengenübersichten",
-            "Versionierte Dateien mit nachvollziehbarem Stand"
-          ]
-        },
-        {
-          "title": "Abstimmung & Steuerung",
-          "items": [
-            "Budget- und Terminübersichten",
-            "Angebotsvergleiche und Beschaffungsplanung",
-            "Abstimmung der Gewerke und Fachpartner",
-            "Dokumentierte Freigaben und Änderungen"
-          ]
-        },
-        {
-          "title": "Übergabe & Dokumentation",
-          "items": [
-            "Partnerbezogene Fertigungsunterlagen zur Übergabe",
-            "Dokumentation der Änderungen und Entscheidungen",
-            "Bestands- und Lagerinformationen für die Wiederverwendung",
-            "Vor-Ort-Termine und Reisen nach vorheriger Vereinbarung"
-          ]
-        }
-      ]
+      "text": "Nach Ihrem Briefing schätze ich den Aufwand ein und schlage Umfang, Ergebnisse und Termine vor – für ein einzelnes Projekt oder als Kontingent mit festen Stunden und Reaktionszeiten. Ich übernehme nur so viele Projekte, wie ich sorgfältig betreuen kann.",
+      "cta": "Planungskapazität anfragen"
     },
     "network": {
-      "title": "Fachpartner für die Ausführung.",
-      "text": "Ich plane und koordiniere – die Ausführung übernehmen qualifizierte Fachbetriebe. In der Regel beauftragen Sie Fertigung und Montage direkt bei Ihren Partnern; auf Wunsch stimme ich mich mit ihnen ab und bereite ihre Unterlagen auf. CL Projektwerk ist keine Produktionswerkstatt und tritt nicht als finanzierender Generalunternehmer auf.",
+      "title": "Ausführung durch Fachpartner",
+      "text": "Ich plane und koordiniere. Fertigung und Montage beauftragen Sie in der Regel direkt bei Ihren Partnern – CL Projektwerk ist keine Werkstatt und kein Generalunternehmer.",
       "items": [
         "CNC-Fertigung",
         "Schreinerei",
         "Metallbau",
-        "Montage und Aufbau",
+        "Montage",
         "Transport und Logistik",
         "Statik und Prüfungen",
-        "Genehmigungen und Abnahmen",
-        "Elektroarbeiten",
-        "Druck und Grafikproduktion",
-        "Medien- und Veranstaltungstechnik",
-        "… und weitere Gewerke nach Bedarf"
+        "Genehmigungen",
+        "Elektro",
+        "Grafikproduktion",
+        "Medientechnik"
       ]
-    },
-    "single": {
-      "eyebrow": "Einzeln buchbar",
-      "title": "Genau die Leistung, die Ihnen fehlt.",
-      "text": "Ihr Team ist da, aber die Planungskapazität reicht nicht? Buchen Sie gezielt den Bereich, der fehlt – etwa Fertigungszeichnungen für ein Projekt oder die Terminsteuerung eines Messeauftritts."
     },
     "items": {
       "tech": {
         "title": "Technische Planung",
-        "text": "Aus Ihrem Briefing erstelle ich bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen, mit denen Ihre Fertigungspartner direkt arbeiten können. Ihr Team spart interne Planungsstunden.",
+        "text": "Bemaßte Detail- und Fertigungszeichnungen, mit denen Ihre Fertigungspartner direkt arbeiten können.",
         "points": [
-          "Bemaßte Detail- und Fertigungszeichnungen",
+          "Detail- und Fertigungszeichnungen",
           "Bauteillisten",
-          "Schnittstellenunterlagen zu Gewerken und Partnern"
-        ],
-        "task": "Aufgabe: Ihr Briefing in eindeutige technische Unterlagen übersetzen.",
-        "result": "Ergebnis: Zeichnungen, Listen und Schnittstellen auf einem abgestimmten Stand.",
-        "benefit": "Nutzen: Weniger Rückfragen in der Fertigung, mehr Zeit für Ihre Kunden.",
-        "link": "Beispiele ansehen"
+          "Schnittstellen zu Gewerken und Partnern"
+        ]
       },
       "prep": {
         "title": "Arbeitsvorbereitung",
-        "text": "Ich bereite Ihr Projekt auf die Ausführung vor: Material- und Mengenübersichten, Fertigungsunterlagen je Partner sowie Beschaffungs- und Terminplanung. Alle Beteiligten wissen, was wann in welcher Menge gebraucht wird.",
+        "text": "Material, Mengen und Termine so geordnet, dass jeder Partner weiß, was wann gebraucht wird.",
         "points": [
           "Material- und Mengenübersichten",
-          "Partnerbezogene Fertigungsunterlagen",
+          "Fertigungsunterlagen je Partner",
           "Beschaffungs- und Terminplanung"
-        ],
-        "task": "Aufgabe: Material, Mengen und Termine für die Ausführung ordnen.",
-        "result": "Ergebnis: Übersichten und Unterlagen, je Partner zusammengestellt.",
-        "benefit": "Nutzen: Weniger Fehlmengen und Terminüberraschungen im Aufbau.",
-        "link": "So arbeite ich"
+        ]
       },
       "control": {
         "title": "Projektsteuerung",
-        "text": "Ich halte Budget und Termine im Blick, vergleiche Angebote, stimme Gewerke ab und dokumentiere Freigaben und Änderungen. Die Entscheidungen treffen Sie – ich bereite sie so vor, dass sie zügig fallen können.",
+        "text": "Budget, Termine und Gewerke im Blick – Entscheidungen vorbereitet, Änderungen dokumentiert.",
         "points": [
           "Budget- und Terminübersichten",
-          "Angebotsvergleiche und Gewerkeabstimmung",
-          "Freigaben und nachvollziehbare Änderungsdokumentation"
-        ],
-        "task": "Aufgabe: Kosten, Termine und Abstimmungen im Blick behalten.",
-        "result": "Ergebnis: Aktuelle Übersichten und dokumentierte Entscheidungen.",
-        "benefit": "Nutzen: Entlastung bei parallelen Projekten und klare Nachvollziehbarkeit.",
-        "link": "Zusammenarbeit ansehen"
+          "Angebotsvergleiche",
+          "Freigaben und Änderungen"
+        ]
       },
       "concept": {
         "title": "Entwurf und Präsentation",
-        "text": "Ich entwickle Stand- und Raumkonzepte und erstelle Visualisierungen sowie druckfertige Grafiken. Umfang und Korrekturschleifen werden vorab vereinbart, damit Aufwand und Ergebnis planbar bleiben.",
+        "text": "Stand- und Raumkonzepte mit Visualisierungen, die Entscheidungen erleichtern.",
         "points": [
           "Stand- und Raumkonzepte",
-          "Visualisierungen für Abstimmung und Präsentation",
-          "Druckfertige Grafiken mit vereinbarten Korrekturschleifen"
-        ],
-        "task": "Aufgabe: Eine Idee so zeigen, dass Sie und Ihre Kunden entscheiden können.",
-        "result": "Ergebnis: Konzept, Visualisierungen und Druckdaten im vereinbarten Umfang.",
-        "benefit": "Nutzen: Frühe Entscheidungen auf Basis verständlicher Bilder und Pläne.",
-        "link": "Entwürfe ansehen"
+          "Visualisierungen",
+          "Druckfertige Grafiken"
+        ]
       },
       "reuse": {
         "title": "Wiederverwendungsplanung",
-        "text": "Ich erfasse vorhandene Bauteile, plane Varianten für neue Einsätze und pflege Material- und Lagerinformationen. So wird Bestehendes gezielt wiederverwendet, statt jedes Mal neu geplant.",
+        "text": "Vorhandene Bauteile erfassen und für neue Einsätze einplanen, statt jedes Mal neu zu bauen.",
         "points": [
-          "Bestandsaufnahme vorhandener Bauteile",
-          "Variantenplanung für neue Einsätze",
+          "Bestandsaufnahme",
+          "Variantenplanung",
           "Material- und Lagerinformationen"
-        ],
-        "task": "Aufgabe: Vorhandene Bauteile erfassen und für neue Aufbauten nutzbar machen.",
-        "result": "Ergebnis: Bestandsliste, Varianten und Lagerinformationen.",
-        "benefit": "Nutzen: Weniger Neuplanung und Materialeinsatz bei wiederkehrenden Aufbauten.",
-        "link": "Anfrage stellen"
+        ]
       }
     },
-    "inquire": "Anfragen",
-    "cta": {
-      "title": "Ihr nächstes Projekt beginnt mit einem Briefing.",
-      "text": "Beschreiben Sie kurz Aufgabe, Termin und vorhandene Unterlagen. Sie erhalten eine erste Einschätzung und die nächsten Schritte; das Angebot folgt individuell nach dem Briefing.",
-      "button": "Briefing senden",
-      "phone": "Lieber direkt sprechen?"
-    }
+    "inquire": "Anfragen"
   },
   "gallery": {
     "eyebrow": "Entwurfsatlas · täglich neu",
     "title": "Jeden Tag ein neuer Entwurf.",
-    "lead": "{count} von {total} Messestand-Konzepten sind sichtbar, von {min} bis {max}. Jeden Morgen um 5:00 Uhr kommt ein neuer hinzu. Alle Bilder sind Visualisierungen. Erkunden, filtern, merken und direkt anfragen.",
+    "lead": "{count} von {total} Messestand-Konzepten von {min} bis {max} – jeden Morgen um 5:00 Uhr kommt eines hinzu. Alle Bilder sind Visualisierungen.",
     "slider": "Slider",
     "grid": "Raster",
     "viewMode": "Ansicht",
@@ -348,45 +279,47 @@
   },
   "process": {
     "eyebrow": "Zusammenarbeit",
-    "title": "Sechs Schritte vom Briefing bis zur Übergabe.",
+    "title": "In sechs Schritten vom Briefing zur Übergabe.",
     "steps": {
       "briefing": {
-        "title": "Briefing & Umfang",
-        "text": "Aufgabe, Termin, vorhandene Unterlagen und gewünschte Ergebnisse. Wir legen fest, was ich liefere, wie viele Korrekturschleifen vorgesehen sind und wer freigibt.",
+        "title": "Briefing und Umfang",
+        "text": "Aufgabe, Termin und vorhandene Unterlagen klären. Wir legen fest, was ich liefere, wie viele Korrekturschleifen vorgesehen sind und wer freigibt.",
         "alt": "Skizzen-Animation zum Briefing (Visualisierung)"
       },
       "concept": {
-        "title": "Entwurf & Abstimmung",
-        "text": "Raumidee, Visualisierungen, Grundriss und Ansichten: Sie sehen die Fläche aus mehreren Perspektiven und entscheiden in Ruhe, bevor die technische Detailplanung beginnt.",
+        "title": "Entwurf und Abstimmung",
+        "text": "Raumidee, Visualisierungen, Grundriss und Ansichten: Sie entscheiden auf klarer Grundlage, bevor die Detailplanung beginnt.",
         "alt": "Konzeptanimation zum Entwurf (Visualisierung)"
       },
       "planning": {
         "title": "Technische Planung",
-        "text": "Bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen. Statik, Genehmigungen und Elektroplanung übernehmen qualifizierte Fachpartner; ich stimme die Schnittstellen ab.",
+        "text": "Bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellen. Statik, Genehmigungen und Elektroplanung liefern Fachpartner.",
         "alt": "Animation zur technischen Planung (Visualisierung)"
       },
       "production": {
-        "title": "Arbeitsvorbereitung & Fertigungsunterlagen",
-        "text": "Material- und Mengenübersichten, Unterlagen je Fertigungspartner sowie Beschaffungs- und Terminplanung. Gefertigt wird beim jeweiligen Fachbetrieb.",
+        "title": "Arbeitsvorbereitung",
+        "text": "Material- und Mengenübersichten, Unterlagen je Fertigungspartner, Beschaffungs- und Terminplanung. Gefertigt wird beim Fachbetrieb.",
         "alt": "Animation einer CNC-Bearbeitung als Beispiel für Fertigungsdaten (Visualisierung); die Fertigung erbringt der Fachpartner"
       },
       "logistics": {
         "title": "Abstimmung der Gewerke",
-        "text": "Terminübersicht, Angebotsvergleiche und Abstimmung der Gewerke, damit Transport, Aufbau und Technik ineinandergreifen. Die Ausführung liegt bei Ihren Fachpartnern.",
+        "text": "Terminübersicht, Angebotsvergleiche und Abstimmung, damit Transport, Aufbau und Technik ineinandergreifen.",
         "alt": "Zeitraffer-Konzeptanimation des Aufbaus (Visualisierung)"
       },
       "onsite": {
-        "title": "Freigaben, Änderungen & Übergabe",
-        "text": "Freigaben und Änderungen dokumentiere ich nachvollziehbar; am Ende erhalten Sie alle Unterlagen. Vor-Ort-Termine sind nach vorheriger Vereinbarung möglich.",
+        "title": "Freigaben und Übergabe",
+        "text": "Freigaben und Änderungen sind dokumentiert, alle Unterlagen werden vollständig übergeben. Vor-Ort-Termine nach Vereinbarung.",
         "alt": "Konzeptanimation zur Übergabe (Visualisierung)"
       }
     },
-    "sketch": "Skizze"
+    "sketch": "Skizze",
+    "lead": "Klare Schritte, ein fester Ansprechpartner und dokumentierte Freigaben: So bleibt jedes Projekt nachvollziehbar.",
+    "note": "Die Filme veranschaulichen einzelne Arbeitsschritte (Visualisierungen). Sie zeigen nicht die Montage eines bestimmten Messestands."
   },
   "world": {
     "eyebrow": "Messekalender",
     "title": "Messen in Deutschland und Europa.",
-    "lead": "Messetermine in Deutschland und Europa als Orientierung für Ihre Projektplanung. Wählen Sie eine Stadt – der Globus zeigt Ort und Luftlinie ab Leipzig. Kalendereinträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus.",
+    "lead": "Wählen Sie eine Stadt – der Globus zeigt Ort und Luftlinie ab Leipzig.",
     "placeholderNote": "Beispielstandorte",
     "listLabel": "Messestädte",
     "drag": "Globus drehen",
@@ -484,8 +417,8 @@
     "eyebrow": "Über mich",
     "name": "Christof Laufersweiler",
     "role": "Planung und Projektsteuerung für Messebau, Markenräume und Innenausbau",
-    "text": "Seit mehr als 20 Jahren arbeite ich im Messe- und Veranstaltungsumfeld. Nach der Ausbildung zum technischen Zeichner der Fachrichtung Holztechnik folgten die Projektleitung im Messebau, die angestellte Geschäftsführung eines Messebauunternehmens und das IHK-Zertifikat als Projektleiter Messebau und Event. Zuletzt war ich von November 2025 bis Oktober 2026 Senior-Projektmanager bei der C3 EXPO GmbH. Mit CL Projektwerk biete ich von Leipzig aus externe Planungs- und Projektkapazität für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller, die fachkundige Unterstützung brauchen.",
-    "close": "Die Entscheidungen bleiben bei Ihnen. Ich sorge für Unterlagen, Überblick und Abstimmung.",
+    "text": "Seit über 20 Jahren arbeite ich im Messe- und Veranstaltungsumfeld – als technischer Zeichner Holztechnik, Projektleiter im Messebau, angestellter Geschäftsführer eines Messebauunternehmens und zuletzt als Senior-Projektmanager bei der C3 EXPO GmbH (11/2025 – 10/2026). Mit CL Projektwerk biete ich von Leipzig aus externe Planungs- und Projektkapazität für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller.",
+    "close": "Die Entscheidungen treffen Sie. Ich sorge für Unterlagen, Überblick und Abstimmung.",
     "photoAlt": "Porträt von Christof Laufersweiler, Gründer von CL Projektwerk",
     "cta": "Projekt mit mir besprechen",
     "career": "Werdegang",
@@ -887,52 +820,29 @@
     "home": "Zur Startseite"
   },
   "seo": {
-    "eyebrow": "Technische Messeplanung",
-    "title": "Technische Planung, Arbeitsvorbereitung und Projektsteuerung für Messebau und Innenausbau.",
-    "intro": "CL Projektwerk ist ein externes Planungs- und Projektbüro in Leipzig. Ich unterstütze Messebauer, Agenturen, Innenausbaubetriebe und mittelständische Aussteller mit bemaßten Fertigungsunterlagen, Arbeitsvorbereitung, externer Projektsteuerung, Entwürfen und Wiederverwendungsplanung. Die Ausführung übernehmen Fachpartner; ich liefere Planung und Koordination.",
-    "blocks": [
-      {
-        "title": "Technische Messeplanung",
-        "text": "Aus dem Briefing entstehen bemaßte Detail- und Fertigungszeichnungen, Bauteillisten und Schnittstellenunterlagen, mit denen Ihre Fertigungspartner arbeiten können – ohne dass Ihr Team jede Zeichnung selbst erstellen muss."
-      },
-      {
-        "title": "Arbeitsvorbereitung für Messebau und Markenräume",
-        "text": "Material- und Mengenübersichten, Unterlagen je Fertigungspartner sowie Beschaffungs- und Terminplanung machen aus Zeichnungen einen Ablauf, der sich organisieren lässt."
-      },
-      {
-        "title": "Externe Projektsteuerung",
-        "text": "Budget- und Terminübersichten, Angebotsvergleiche, Gewerkeabstimmung und dokumentierte Freigaben schaffen Überblick – besonders, wenn mehrere Projekte gleichzeitig laufen."
-      },
-      {
-        "title": "Entwurf, Präsentation und Wiederverwendung",
-        "text": "Stand- und Raumkonzepte, Visualisierungen und druckfertige Grafiken helfen bei der Abstimmung. Die Wiederverwendungsplanung erfasst vorhandene Bauteile und plant Varianten für neue Einsätze."
-      }
-    ],
-    "faqTitle": "Häufige Fragen",
+    "eyebrow": "Häufige Fragen",
+    "title": "Fragen zur Zusammenarbeit.",
+    "intro": "CL Projektwerk ist ein externes Planungs- und Projektbüro in Leipzig für technische Messeplanung, Arbeitsvorbereitung und Projektsteuerung. Die Ausführung übernehmen Fachpartner; ich liefere Planung und Koordination.",
     "faq": [
       {
         "q": "Was kostet die Zusammenarbeit?",
-        "a": "Das hängt von Umfang, Ergebnissen und Terminen ab. Nach einem kurzen Briefing erhalten Sie ein individuelles Angebot für das Projekt oder für ein Monatskontingent."
+        "a": "Das hängt von Umfang, Ergebnissen und Terminen ab. Nach einem kurzen Briefing erhalten Sie ein Angebot – für ein Projekt oder ein Monatskontingent."
       },
       {
         "q": "Wann sollte ich anfragen?",
-        "a": "Am besten, sobald Aufgabe und Termin feststehen – meine monatliche Planungskapazität ist begrenzt. Kurzfristige Anfragen prüfe ich nach aktueller Auslastung."
+        "a": "Sobald Aufgabe und Termin feststehen. Meine Kapazität ist begrenzt; kurzfristige Anfragen prüfe ich nach aktueller Auslastung."
       },
       {
-        "q": "Kann ich auch nur eine einzelne Leistung buchen?",
-        "a": "Ja. Technische Planung, Arbeitsvorbereitung, Projektsteuerung, Entwurf und Präsentation oder Wiederverwendungsplanung sind einzeln buchbar."
+        "q": "Kann ich einzelne Leistungen buchen?",
+        "a": "Ja. Technische Planung, Arbeitsvorbereitung, Projektsteuerung, Entwurf oder Wiederverwendungsplanung sind einzeln buchbar."
       },
       {
         "q": "Fertigen und montieren Sie auch?",
-        "a": "Nein. Fertigung, Transport, Montage, Statik, Genehmigungen und Elektroarbeiten erbringen qualifizierte Fachpartner. Größere Leistungen beauftragen Sie in der Regel direkt; ich plane und koordiniere."
+        "a": "Nein. Fertigung, Transport, Montage, Statik, Genehmigungen und Elektro übernehmen Fachpartner, die Sie in der Regel direkt beauftragen. Ich plane und koordiniere."
       },
       {
-        "q": "Sind Termine vor Ort oder Reisen möglich?",
-        "a": "Geplant wird überwiegend von Leipzig aus. Vor-Ort-Termine und Reisen vereinbaren wir vorab; zusätzliche Leistungen stimmen wir gesondert ab."
-      },
-      {
-        "q": "Bieten Sie Webdesign oder Automatisierung an?",
-        "a": "Das gehört nicht zu meinen Hauptleistungen. Mein Schwerpunkt ist die Planung und Steuerung von Messebau-, Markenraum- und Innenausbauprojekten."
+        "q": "Sind Vor-Ort-Termine möglich?",
+        "a": "Geplant wird überwiegend von Leipzig aus. Vor-Ort-Termine und Reisen stimmen wir vorab ab."
       }
     ]
   },
@@ -974,5 +884,10 @@
   },
   "ogImage": {
     "film": "▶ Konzeptanimation"
+  },
+  "fairs": {
+    "eyebrow": "Messen",
+    "title": "Messekalender und Messegelände.",
+    "lead": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung. Die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus."
   }
 }

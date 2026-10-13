@@ -12,6 +12,7 @@ export const routing = defineRouting({
     "/": "/",
     "/designs": "/designs",
     "/designs/[slug]": "/designs/[slug]",
+    "/messen": paths("/messen", "/trade-fairs"),
     "/auswahl": paths("/auswahl", "/selection"),
     "/anfrage": paths("/anfrage", "/inquiry"),
     "/anfrage/danke": paths("/anfrage/danke", "/inquiry/thanks"),

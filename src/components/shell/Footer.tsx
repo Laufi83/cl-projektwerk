@@ -6,11 +6,16 @@ import { Logo } from "@/components/brand/Logo";
 import { PerformanceSwitcher } from "./PerformanceSwitcher";
 import { LOCALES, pick } from "@/i18n/locales";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
+import { RevealText } from "@/components/ui/reveal-text";
+import { getDesigns } from "@/lib/designs";
+import { designAsset } from "@/lib/media";
 
 export async function Footer() {
   const t = await getTranslations("footer");
   const tn = await getTranslations("nav");
   const locale = await getLocale();
+  // Visualisierungen der eigenen Entwürfe für den Schriftzug (werden erst beim Überfahren geladen)
+  const wordmarkImages = getDesigns().slice(0, 13).map((d) => designAsset(d.id, "render-1-640.webp"));
   return (
     <footer className="relative z-10 overflow-hidden border-t border-line bg-[#0b0e13]">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-70" />
@@ -32,8 +37,8 @@ export async function Footer() {
           <ul className="grid gap-2 text-sm">
             <li><Link href={{ pathname: "/", hash: "leistungen" }} className="text-fg-muted hover:text-fg">{tn("services")}</Link></li>
             <li><Link href="/designs" className="text-fg-muted hover:text-fg">{tn("designs")}</Link></li>
-            <li><Link href={{ pathname: "/", hash: "messegelande" }} className="text-fg-muted hover:text-fg">{locale === "de" ? "Messegelände" : "Exhibition venues"}</Link></li>
             <li><Link href={{ pathname: "/", hash: "ablauf" }} className="text-fg-muted hover:text-fg">{tn("process")}</Link></li>
+            <li><Link href="/messen" className="text-fg-muted hover:text-fg">{tn("fairs")}</Link></li>
             <li><Link href="/auswahl" className="text-fg-muted hover:text-fg">{tn("selection")}</Link></li>
             <li><Link href="/anfrage" className="text-fg-muted hover:text-fg">{tn("cta")}</Link></li>
           </ul>
@@ -52,7 +57,10 @@ export async function Footer() {
           </ul>
         </div>
       </div>
-      <div className="pointer-events-none container-x overflow-hidden select-none pt-3" aria-hidden="true"><p className="whitespace-nowrap font-display text-[clamp(3rem,12.5vw,13rem)] font-bold leading-none tracking-[-0.075em] text-white/[0.055]">CL PROJEKTWERK</p></div>
+      {/* Schriftzug: Buchstaben federn auf, Lichtstreifen; beim Überfahren erscheinen Entwürfe in den Buchstaben */}
+      <div className="container-x overflow-hidden select-none pt-3">
+        <RevealText text="CL PROJEKTWERK" images={wordmarkImages} className="font-display text-[clamp(3rem,12.5vw,13rem)] font-bold leading-none tracking-[-0.075em] text-[#1d2026]" />
+      </div>
       <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-line py-7 text-xs text-fg-subtle">
         <p>{t("rights", { year: new Date().getFullYear(), brand: site.brand })}</p>
         <a href="#main" className="hover:text-fg">{t("top")} ↑</a>

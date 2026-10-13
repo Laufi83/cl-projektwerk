@@ -56,7 +56,7 @@ try {
     checks.push(locale + ": Jungheinrich/Merck/RETTmobil/GenH2 references unique, complete and chronological");
   }
   const homepages = LOCALE_CODES.map((locale) => locale === "de" ? "/" : `/${locale}`);
-  for (const route of ["/api/health", ...homepages, "/designs", "/impressum", "/datenschutz", "/robots.txt"]) {
+  for (const route of ["/api/health", ...homepages, "/designs", "/messen", "/en/trade-fairs", "/impressum", "/datenschutz", "/robots.txt"]) {
     const response = await fetch(base + route, { signal: AbortSignal.timeout(30000) });
     assert.equal(response.status, 200, `${route}: ${response.status}`);
     const body = await response.text();
@@ -83,10 +83,15 @@ try {
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ['aria-roledescription="Entwurfsatlas"', "Projektablauf", "Mission Control", "data-beat"]) {
+      for (const name of ['aria-roledescription="Entwurfsatlas"', "data-steps", "data-beat"]) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
+      // Gekürzte Startseite: Messekalender und Messegelände liegen auf /messen, die sechs Schritte nur einmal
+      for (const moved of ['id="weltweit"', 'id="messegelande"', 'id="bauphasen"']) {
+        assert(!body.includes(moved), `Section should not be on the homepage anymore: ${moved}`);
+      }
+      checks.push("Homepage shortened: calendar and venues moved to /messen");
       const assets = [...new Set(body.match(/\/_next\/static\/[^"\s<>]+\.(?:js|css)/g))].slice(0, 6);
       assert(assets.length > 0, "No client assets in HTML");
       for (const asset of assets) {
@@ -94,6 +99,10 @@ try {
         assert.equal(result.status, 200, asset);
         await result.arrayBuffer();
       }
+    }
+    if (route === "/messen" || route === "/en/trade-fairs") {
+      for (const name of ['id="weltweit"', "Mission Control"]) assert(body.includes(name), `${route}: ${name} missing`);
+      checks.push(`${route}: trade fair calendar and venue explorer`);
     }
     checks.push(route);
   }

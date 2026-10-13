@@ -10,25 +10,24 @@ import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
-import { ConstructionExperience } from "@/components/sections/ConstructionExperience";
 import { StompTagline } from "@/components/sections/StompTagline";
 import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
-import { World } from "@/components/sections/World";
-import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
-import { locations } from "@/config/locations";
-import { tradeFairs, TRADE_FAIRS_CHECKED } from "@/config/trade-fairs";
-import { boardRows } from "@/lib/trade-fairs";
 import { About } from "@/components/sections/About";
 import { SeoSection } from "@/components/sections/SeoSection";
 import { InquiryForm } from "@/components/contact/InquiryForm";
 import { ContactAside } from "@/components/contact/ContactAside";
 import { Link } from "@/i18n/navigation";
 import { Kinetic } from "@/components/kinetic/Kinetic";
+import { FxWords } from "@/components/kinetic/FxWords";
 import { DailyDrop } from "@/components/gallery/DailyDrop";
 import { pick } from "@/i18n/locales";
 
-/** Jeden Morgen um 5:00 Uhr kommt ein Design dazu (lib/release.ts): Seite alle 5 Minuten erneuern */
+/**
+ * Startseite: Hero-Film, Leistungen, Leitsatz, Entwürfe, Zusammenarbeit, Über mich, Fragen, Kontakt.
+ * Messekalender und Messegelände liegen auf der eigenen Seite /messen.
+ * Jeden Morgen um 5:00 Uhr kommt ein Design dazu (lib/release.ts): Seite alle 5 Minuten erneuern.
+ */
 export const revalidate = 300;
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
@@ -39,8 +38,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const note = pick(site.visualisationNote, locale);
 
   const galleryItems = getGalleryItems();
-  // Messekalender: je Stadt die nächste Messe ab heute (Seite wird alle 5 Minuten erneuert)
-  const now = new Date();
   const release = releaseInfo();
   const range = sizeRange();
   // geschützte Leerzeichen: Maße nicht umbrechen
@@ -103,9 +100,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           prep: img(designs[1]),
           control: img(designs.find((d) => d.id === "033") ?? designs[0]),
           concept: img(designs.find((d) => d.id === "026") ?? designs[0]),
-          reuse: img(designs.find((d) => d.id === "033") ?? designs[1]),
+          reuse: img(designs.find((d) => d.id === "022") ?? designs[1]),
         }}
-        packageImage={designAsset((designs.find((d) => d.id === "026") ?? designs[0]).id, "render-1-1280.webp")}
         visNote={note}
       />
 
@@ -115,8 +111,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-[920px]" data-reveal>
             <p className="eyebrow">{t("gallery.eyebrow")}</p>
-            <h2 id="gallery-title" className="font-display mt-4 text-6xl font-semibold leading-none md:text-8xl"><Kinetic text={t("gallery.title")} /></h2>
-            <p className="mt-6 text-lg text-fg-muted">{t("gallery.lead", { ...rangeText, count: release.released, total: release.total })}</p>
+            <h2 id="gallery-title" className="font-display mt-4 text-6xl font-semibold leading-none md:text-8xl"><Kinetic text={t("gallery.title")} stomp /></h2>
+            <p className="mt-6 text-lg text-fg-muted"><FxWords text={t("gallery.lead", { ...rangeText, count: release.released, total: release.total })} delay={350} /></p>
           </div>
           <DailyDrop info={release} className="w-full" />
         </div>
@@ -143,20 +139,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       </section>
 
       <Process images={processImages} visNote={note} />
-      <ConstructionExperience images={processImages} visualisationNote={note} />
-
-      <World rows={boardRows(locations, tradeFairs, now)} nowIso={now.toISOString()} checked={TRADE_FAIRS_CHECKED} />
-      <MesseVenueExplorer />
-      <SeoSection />
       <About />
+      <SeoSection />
 
       <section id="kontakt" aria-labelledby="contact-title" className="relative scroll-mt-24 py-24 md:py-32">
         <div className="container-x">
           <div className="max-w-[920px]" data-reveal>
             <p className="eyebrow">{t("contact.eyebrow")}</p>
-            <h2 id="contact-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl"><Kinetic text={t("contact.title")} /></h2>
+            <h2 id="contact-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl"><Kinetic text={t("contact.title")} stomp /></h2>
             <p className="mt-6 text-lg text-fg-muted">
-              {t("contact.lead")} {t("contact.response", { time: pick(site.responseTime, locale) })}
+              <FxWords text={`${t("contact.lead")} ${t("contact.response", { time: pick(site.responseTime, locale) })}`} delay={350} />
             </p>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-[minmax(0,8fr)_minmax(0,4fr)]">

@@ -12,7 +12,7 @@ export function GridView({ items, onOpen }: { items: GalleryItem[]; onOpen: (slu
   const favs = useFavorites();
   const prefix = localePrefix(useLocale());
   return (
-    <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+    <ul className="grid grid-cols-1 gap-5 md:grid-cols-2">
       {items.map((d, i) => (
         <li key={d.slug} data-grid-card={d.slug} className="group relative" data-reveal style={{ ["--reveal-delay" as string]: `${(i % 4) * 60}ms` }}>
           <a
@@ -27,11 +27,11 @@ export function GridView({ items, onOpen }: { items: GalleryItem[]; onOpen: (slu
           >
             <div className="relative aspect-[16/9] overflow-hidden" style={{ background: d.tone }}>
               <picture>
-                <source type="image/avif" srcSet={`${base}/designs/${d.id}/render-1-640.avif 640w, ${base}/designs/${d.id}/render-1-1280.avif 1280w`} sizes="(min-width:1536px) 25vw, (min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" />
+                <source type="image/avif" srcSet={`${base}/designs/${d.id}/render-1-640.avif 640w, ${base}/designs/${d.id}/render-1-1280.avif 1280w`} sizes="(min-width:768px) 50vw, 100vw" />
                 <img
                   src={`${base}/designs/${d.id}/render-1-640.webp`}
                   srcSet={`${base}/designs/${d.id}/render-1-640.webp 640w, ${base}/designs/${d.id}/render-1-1280.webp 1280w`}
-                  sizes="(min-width:1536px) 25vw, (min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+                  sizes="(min-width:768px) 50vw, 100vw"
                   alt={`${pad3(d.n)} ${d.title}`}
                   width={640}
                   height={360}
@@ -49,7 +49,7 @@ export function GridView({ items, onOpen }: { items: GalleryItem[]; onOpen: (slu
               <div className="absolute inset-x-3 bottom-3 flex items-end justify-between gap-2">
                 <div>
                   <p className="tabular text-xs font-semibold text-accent">{pad3(d.n)}</p>
-                  <p className="text-base font-semibold leading-tight">{d.title}</p>
+                  <p className="font-display text-xl font-semibold leading-tight md:text-2xl">{d.title}</p>
                 </div>
                 {d.size && <p className="tabular text-xs text-fg-muted">{d.size}</p>}
               </div>

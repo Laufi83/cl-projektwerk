@@ -7,6 +7,7 @@ import { locations, locationsArePlaceholders, regions } from "@/config/locations
 import { useReducedMotion } from "@/hooks/useMedia";
 import { useLiteMode } from "@/lib/performance";
 import { Kinetic } from "@/components/kinetic/Kinetic";
+import { FxWords } from "@/components/kinetic/FxWords";
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { useNear } from "@/hooks/useNear";
 import { clockIn, useNow } from "@/hooks/useClock";
@@ -164,7 +165,7 @@ export function World({ rows, nowIso, checked }: Props) {
         <div className="lg:col-start-1 lg:row-start-1 lg:flex lg:min-h-[100svh] lg:flex-col lg:justify-center lg:py-16" data-reveal>
           <p className="eyebrow">{t("eyebrow")}</p>
           <h2 id="world-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl [@media(min-width:64rem)_and_(max-height:47.5rem)]:text-6xl"><Kinetic text={t("title")} /></h2>
-          <p className="mt-5 max-w-2xl text-lg text-fg-muted">{t("lead")}</p>
+          <p className="mt-5 max-w-2xl text-lg text-fg-muted"><FxWords text={t("lead")} delay={300} /></p>
           <h3 className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-fg-subtle">{t("listLabel")}</h3>
           {/* Kompakte Tabelle: Region links, Städte rechts. Deutschland → Europa → Amerika → Asien; Leipzig (Standort) zuerst, sonst alphabetisch */}
           <dl className="mt-2 grid" onMouseLeave={() => setChip(null)}>

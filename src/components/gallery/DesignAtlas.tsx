@@ -15,6 +15,7 @@ import { pad3, thumbUrl, type GalleryItem } from "./types";
 import { favorites, useFavorites } from "@/lib/favorites";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
 import { localePrefix } from "@/i18n/locales";
+import { FxWords } from "@/components/kinetic/FxWords";
 
 type Props = { items: GalleryItem[]; onOpen: (d: GalleryItem, el: HTMLElement | null) => void };
 type Geo = { W: number; H: number; w: number; h: number; sx: number; sy: number };
@@ -35,7 +36,8 @@ function nearest(x: number, y: number, G: Geo) {
 
 function measure(el: HTMLElement): Geo {
   const W = el.clientWidth, H = el.clientHeight;
-  const w = W < 640 ? Math.round(W * 0.68) : Math.round(Math.min(400, Math.max(260, W / 4.3)));
+  // Kacheln groß genug, um Entwürfe zu beurteilen (Desktop rund 1,5-fach der früheren Vorschau)
+  const w = W < 640 ? Math.round(W * 0.84) : Math.round(Math.min(640, Math.max(380, W / 2.75)));
   const h = Math.round(w * 0.625);
   return { W, H, w, h, sx: w + GAP, sy: h + GAP };
 }
@@ -218,6 +220,8 @@ export function DesignAtlas({ items, onOpen }: Props) {
           >
             <img
               src={thumbUrl(d.id, "render-1", 640)}
+              srcSet={`${thumbUrl(d.id, "render-1", 640)} 640w, ${thumbUrl(d.id, "render-1", 1280)} 1280w`}
+              sizes={`${geo.w}px`}
               alt=""
               width={640}
               height={360}
@@ -230,7 +234,7 @@ export function DesignAtlas({ items, onOpen }: Props) {
             <span className="pointer-events-none absolute inset-x-3 bottom-3 flex items-end justify-between gap-2 text-white">
               <span className="min-w-0">
                 <span className="block font-mono text-[10px] font-semibold tracking-[.18em] text-white/70">{pad3(d.n)}</span>
-                <span className="block truncate font-display text-lg font-semibold leading-tight">{d.title}</span>
+                <span className="block truncate font-display text-xl font-semibold leading-tight md:text-2xl">{d.title}</span>
               </span>
               {d.clip && <Play size={14} weight="fill" className="mb-1 shrink-0 text-accent" aria-hidden />}
             </span>
@@ -261,7 +265,7 @@ export function DesignAtlas({ items, onOpen }: Props) {
         onKeyDown={onKeyDown}
         onPointerDown={onPointerDown}
         data-cursor-label={t("atlas.cursor")}
-        className="atlas relative mx-auto mt-6 h-[400px] max-w-[1800px] cursor-grab select-none overflow-hidden rounded-3xl border border-line bg-bg-sunken outline-none [touch-action:pan-y] focus-visible:ring-2 focus-visible:ring-accent active:cursor-grabbing sm:h-[500px] lg:h-[620px]"
+        className="atlas relative mx-auto mt-6 h-[440px] max-w-[1800px] cursor-grab select-none overflow-hidden rounded-3xl border border-line bg-bg-sunken outline-none [touch-action:pan-y] focus-visible:ring-2 focus-visible:ring-accent active:cursor-grabbing sm:h-[560px] lg:h-[700px]"
         style={{ maskImage: "radial-gradient(130% 120% at 50% 50%, #000 62%, transparent 100%)", WebkitMaskImage: "radial-gradient(130% 120% at 50% 50%, #000 62%, transparent 100%)" }}
       >
         <div ref={plane} aria-hidden className="absolute left-0 top-0 will-change-transform">{tiles}</div>
@@ -270,11 +274,11 @@ export function DesignAtlas({ items, onOpen }: Props) {
       {fd && (
         <div className="container-x mt-5">
           <div className="grid gap-4 rounded-2xl border border-line bg-bg-raised p-4 md:grid-cols-[1fr_auto] md:items-center md:p-5">
-            <div aria-live="polite" className="min-w-0">
+            <div aria-live="polite" className="min-w-0" key={fd.slug}>
               <p className="eyebrow text-[0.65rem]">{t("atlas.focus")} · {pad3(fd.n)}</p>
-              <p className="mt-1 font-display text-2xl font-semibold leading-tight md:text-3xl">{fd.title}</p>
+              <p className="mt-1 font-display text-2xl font-semibold leading-tight md:text-3xl"><FxWords text={fd.title} immediate /></p>
               <p className="mt-1.5 text-sm text-fg-muted">
-                {[fd.size, fd.floors ? td("floorsValue", { count: fd.floors }) : null, ...tags.map((x) => t(`filter.${x}`))].filter(Boolean).join(" · ")}
+                <FxWords text={[fd.size, fd.floors ? td("floorsValue", { count: fd.floors }) : null, ...tags.map((x) => t(`filter.${x}`))].filter(Boolean).join(" · ")} immediate delay={180} />
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">

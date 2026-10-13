@@ -327,3 +327,83 @@ html[data-performance="lite"] .vis-note {
 @media (prefers-reduced-motion: reduce) {
   .career-date-enter { animation: none !important; }
 }
+
+/* Zusammenarbeit: Fortschritt des offenen Schritts (Dauer per style) */
+.step-progress { animation: step-progress linear both; }
+@keyframes step-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* Überschriften im „Stomp“-Stil (<Kinetic stomp />): Wörter schlagen nacheinander auf,
+   sobald ihr Block eingeblendet wird ([data-reveal="in"]). Ohne JS oder bei reduzierter Bewegung sofort sichtbar. */
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  [data-reveal] .kinetic-stomp .kinetic-word { opacity: 0; }
+  [data-reveal="in"] .kinetic-stomp .kinetic-word {
+    animation: stomp-word 950ms cubic-bezier(.16, 1, .3, 1) both;
+    animation-delay: calc(280ms + var(--w, 0) * 190ms);
+  }
+}
+@keyframes stomp-word {
+  0% { opacity: 0; transform: scale(1.9) translateY(-8%); filter: blur(10px); }
+  36% { opacity: 1; transform: scale(.94) translateY(3%); filter: blur(0); }
+  56% { transform: scale(1.03) translateY(-1%); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+
+/* ── Textanimationen (FxWords, Listen, Eyebrows, ScrollWords, RevealText) ──
+   Ohne JS, bei reduzierter Bewegung und im Schonmodus steht alles sofort da. */
+.fx-w { display: inline-block; max-width: 100%; overflow-wrap: break-word; }
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  /* Fließtext: Wort für Wort aus der Unschärfe nach oben */
+  [data-fx]:not([data-fx="in"]) .fx-w { opacity: 0; }
+  [data-fx="in"] .fx-w {
+    animation: fx-word 720ms cubic-bezier(.2, .7, .2, 1) both;
+    animation-delay: calc(var(--fx-delay, 0ms) + min(var(--i, 0), 70) * 22ms);
+  }
+  /* Listen und Chips: Eintrag für Eintrag */
+  [data-fx-list]:not([data-fx-list="in"]) > * { opacity: 0; }
+  [data-fx-list="in"] > * {
+    animation: fx-item 640ms cubic-bezier(.2, .7, .2, 1) both;
+    animation-delay: calc(var(--fx-delay, 0ms) + var(--i, 0) * 70ms);
+  }
+  /* Kleine Überzeilen (.eyebrow) ziehen sich beim Einblenden aus weiter Laufweite zusammen */
+  [data-reveal="in"] .eyebrow, .eyebrow[data-reveal="in"] { animation: eyebrow-in 900ms cubic-bezier(.2, .7, .2, 1) both; }
+  /* Antworten der FAQ beim Aufklappen */
+  details[open] > p { animation: fx-word 520ms cubic-bezier(.2, .7, .2, 1) both; }
+  /* ScrollWords: zunächst blass, GSAP hellt beim Scrollen auf */
+  html:not([data-performance="lite"]) .sw-w { opacity: .16; }
+  /* RevealText: Buchstaben federn auf, danach Lichtstreifen */
+  .reveal-text:not([data-on]) .rt-l { opacity: 0; transform: scale(0); }
+  .reveal-text[data-on] .rt-l { animation: rt-spring 950ms linear both; animation-delay: calc(var(--i) * 70ms); }
+  .reveal-text[data-on] .rt-sweep { animation: rt-sweep 560ms ease-in-out both; animation-delay: calc(var(--n) * 70ms + 700ms + var(--i) * 55ms); }
+}
+@keyframes fx-word { from { opacity: 0; transform: translateY(.45em); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes fx-item { from { opacity: 0; transform: translateX(-14px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes eyebrow-in { from { opacity: 0; transform: translateX(-12px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+/* Ab Tablet zusätzlich aus weiter Laufweite zusammenziehen (auf schmalen Schirmen würde das umbrechen) */
+@keyframes eyebrow-in-wide { from { opacity: 0; letter-spacing: .7em; filter: blur(4px); } to { opacity: 1; filter: none; } }
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+  [data-reveal="in"] .eyebrow, .eyebrow[data-reveal="in"] { animation-name: eyebrow-in-wide; }
+}
+/* Feder-Kurve angenähert: überschwingen, zurückfedern, ausschwingen */
+@keyframes rt-spring {
+  0% { opacity: 0; transform: scale(0); }
+  30% { opacity: 1; transform: scale(1.16); }
+  48% { transform: scale(.93); }
+  64% { transform: scale(1.04); }
+  80% { transform: scale(.99); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes rt-sweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
+.reveal-text { display: flex; white-space: nowrap; }
+.rt-l { position: relative; display: inline-block; transform-origin: 50% 85%; cursor: default; }
+.rt-l > .rt-img, .rt-l > .rt-sweep { position: absolute; inset: 0; pointer-events: none; }
+.rt-base { transition: opacity 150ms; }
+.rt-img {
+  color: transparent; -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text;
+  background-size: cover; background-repeat: no-repeat; background-position: 0% center; opacity: 0;
+  transition: opacity 150ms, background-position 3s ease-in-out;
+}
+.rt-sweep { color: var(--accent); opacity: 0; text-shadow: 0 0 30px color-mix(in oklab, var(--accent) 60%, transparent); }
+@media (hover: hover) {
+  .rt-l:hover .rt-base { opacity: 0; }
+  .rt-l:hover .rt-img { opacity: 1; background-image: var(--img); background-position: 35% center; }
+}

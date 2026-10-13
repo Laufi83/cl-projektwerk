@@ -14,7 +14,9 @@
     "selectionTitle": "My selection",
     "selectionDescription": "Your saved exhibition stand designs – sent with your enquiry if you wish.",
     "imprintDescription": "Legal notice and provider information.",
-    "privacyDescription": "Information on how personal data is processed on this website."
+    "privacyDescription": "Information on how personal data is processed on this website.",
+    "fairsTitle": "Trade fair calendar and exhibition venues in Europe",
+    "fairsDescription": "Upcoming trade fair dates in Germany and Europe and 50 exhibition venues at a glance – for orientation in your project planning."
   },
   "common": {
     "skip": "Skip to content",
@@ -46,12 +48,13 @@
     "cta": "Discuss a project",
     "selection": "My selection",
     "home": "Home",
-    "main": "Main navigation"
+    "main": "Main navigation",
+    "fairs": "Trade fairs"
   },
   "hero": {
-    "eyebrow": "External planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
+    "eyebrow": "Planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
     "title": "Planning that works on the floor.",
-    "lead": "Technical planning, work preparation and project management for stand builders, agencies, fit-out companies and exhibitors – per project, with a clearly agreed scope and traceable documents.",
+    "lead": "Technical planning, work preparation and project management for stand builders, agencies and exhibitors – per project, with a clearly agreed scope.",
     "cta": "Request planning capacity",
     "secondary": "View concepts",
     "scroll": "Scroll – watch the design take shape",
@@ -79,169 +82,97 @@
   },
   "services": {
     "eyebrow": "Services",
-    "title": "Additional planning capacity when projects run in parallel.",
-    "lead": "Parallel projects, stretched teams, technically demanding tasks: as an external planner and project manager I take on clearly defined parts of your project – with more than 20 years of experience in exhibitions and events. Production, transport, installation, structural engineering, permits and electrical work are delivered by qualified specialist partners.",
+    "title": "Planning capacity when projects run in parallel.",
+    "lead": "As an external planner I take on clearly defined parts of your project – backed by more than 20 years in exhibition construction. Qualified specialist partners handle production, installation, structural engineering and electrics.",
     "trust": [
       {
         "title": "One point of contact",
-        "text": "for planning, documents and coordination – directly, without intermediaries."
+        "text": "for planning, documents and coordination – direct, without intermediaries."
       },
       {
-        "title": "More than 20 years of experience",
-        "text": "in exhibitions and events; trained technical draughtsman (wood technology) and certified project manager for exhibition construction and events (IHK)."
+        "title": "20+ years of experience",
+        "text": "Technical draughtsman (wood technology) and certified exhibition and event project manager (IHK)."
       },
       {
-        "title": "Clearly agreed scope",
-        "text": "Services, revision rounds and deadlines are agreed in writing up front – additional work and travel only by arrangement."
+        "title": "Clear scope",
+        "text": "Services, revision rounds and deadlines are agreed in writing up front."
       }
     ],
     "package": {
       "badge": "Collaboration",
-      "title": "Project by project or as a monthly quota.",
-      "subtitle": "Planning capacity in exactly the scope your project needs.",
-      "text": "After your briefing I estimate the effort and propose scope, deliverables and dates. We work per project or with a monthly allowance of agreed hours, response times and revision rounds. My capacity is limited – I only take on projects I can handle with the necessary care.",
-      "cta": "Request planning capacity",
-      "more": "How a project works",
-      "phases": [
-        {
-          "title": "Brief & scope",
-          "items": [
-            "Joint clarification of task, deadline and existing documents",
-            "Scope and deliverables defined in writing",
-            "Agreed correction rounds and approval stages",
-            "Individual quotation after the brief"
-          ]
-        },
-        {
-          "title": "Planning & documents",
-          "items": [
-            "Dimensioned detail and production drawings",
-            "Part lists and interface documents",
-            "Material and quantity overviews",
-            "Versioned files with a traceable status"
-          ]
-        },
-        {
-          "title": "Coordination & control",
-          "items": [
-            "Budget and schedule overviews",
-            "Quotation comparisons and procurement planning",
-            "Coordination of trades and specialist partners",
-            "Documented approvals and changes"
-          ]
-        },
-        {
-          "title": "Handover & documentation",
-          "items": [
-            "Partner-specific production documents for handover",
-            "Documentation of changes and decisions",
-            "Inventory and storage information for reuse",
-            "On-site meetings and travel by prior agreement"
-          ]
-        }
-      ]
+      "title": "Per project or as a monthly quota.",
+      "text": "After your brief I estimate the effort and propose scope, deliverables and dates – for a single project or as a quota with fixed hours and response times. I only take on as many projects as I can handle with care.",
+      "cta": "Request planning capacity"
     },
     "network": {
-      "title": "Specialist partners for execution.",
-      "text": "I plan and coordinate; qualified specialist companies carry out the work. In the basic model you commission larger production and assembly services directly from your partners; on request I liaise with them and prepare their documents. CL Projektwerk is not a production workshop and does not act as a general contractor that finances projects.",
+      "title": "Execution by specialist partners",
+      "text": "I plan and coordinate. You normally commission production and installation directly from your partners – CL Projektwerk is neither a workshop nor a general contractor.",
       "items": [
-        "CNC-controlled production only",
-        "Carpentry",
+        "CNC production",
+        "Joinery",
         "Metalwork",
-        "Assembly and build-up",
+        "Installation",
         "Transport and logistics",
         "Structural engineering and inspections",
-        "Permits and approvals",
-        "Electrical work",
-        "Printing and graphic production",
-        "Media and event technology",
-        "… and other trades as needed"
+        "Permits",
+        "Electrics",
+        "Graphics production",
+        "Media technology"
       ]
-    },
-    "single": {
-      "eyebrow": "Bookable individually",
-      "title": "Exactly the service you are missing.",
-      "text": "Your team is in place, but planning capacity is short? Book exactly the area you are missing – for example production drawings for one project or schedule management for a trade fair appearance."
     },
     "items": {
       "tech": {
         "title": "Technical planning",
-        "text": "From your briefing I produce dimensioned detail and production drawings, parts lists and interface documents your production partners can work with directly. Your team saves internal planning hours.",
+        "text": "Dimensioned detail and production drawings your production partners can work with directly.",
         "points": [
-          "Dimensioned detail and production drawings",
+          "Detail and production drawings",
           "Part lists",
-          "Interface documents for trades and partners"
-        ],
-        "task": "Task: translate your brief into unambiguous technical documents.",
-        "result": "Result: drawings, lists and interfaces in an agreed status.",
-        "benefit": "Benefit: fewer queries in production and more time for your clients.",
-        "link": "View examples"
+          "Interfaces to trades and partners"
+        ]
       },
       "prep": {
         "title": "Work preparation",
-        "text": "I prepare your project for execution: material and quantity overviews, production documents per partner, and procurement and schedule planning. Everyone involved knows what is needed, when and in what quantity.",
+        "text": "Materials, quantities and dates organised so every partner knows what is needed when.",
         "points": [
           "Material and quantity overviews",
-          "Partner-specific production documents",
-          "Procurement and schedule planning"
-        ],
-        "task": "Task: organise materials, quantities and dates for execution.",
-        "result": "Result: overviews and documents compiled for each partner.",
-        "benefit": "Benefit: fewer shortages and schedule surprises during build-up.",
-        "link": "How I work"
+          "Production documents per partner",
+          "Procurement and scheduling"
+        ]
       },
       "control": {
         "title": "Project control",
-        "text": "I keep budget and schedule in view, compare quotes, coordinate trades and document approvals and changes. You make the decisions – I prepare them so they can be made quickly.",
+        "text": "Budget, schedule and trades under control – decisions prepared, changes documented.",
         "points": [
           "Budget and schedule overviews",
-          "Quotation comparisons and coordination of trades",
-          "Approvals and traceable change documentation"
-        ],
-        "task": "Task: keep an overview of costs, dates and agreements.",
-        "result": "Result: current overviews and documented decisions.",
-        "benefit": "Benefit: relief with parallel projects and clear traceability.",
-        "link": "View collaboration"
+          "Quotation comparisons",
+          "Approvals and changes"
+        ]
       },
       "concept": {
-        "title": "Design and presentation",
-        "text": "I develop stand and space concepts and create visualisations and print-ready graphics. Scope and revision rounds are agreed in advance so that effort and result remain predictable.",
+        "title": "Concept and presentation",
+        "text": "Stand and space concepts with visualisations that make decisions easier.",
         "points": [
           "Stand and space concepts",
-          "Visualisations for coordination and presentation",
-          "Print-ready graphics with agreed correction rounds"
-        ],
-        "task": "Task: show an idea so that you and your clients can decide.",
-        "result": "Result: concept, visualisations and print data in the agreed scope.",
-        "benefit": "Benefit: early decisions based on understandable images and plans.",
-        "link": "View concepts"
+          "Visualisations",
+          "Print-ready graphics"
+        ]
       },
       "reuse": {
         "title": "Reuse planning",
-        "text": "I record existing components, plan variants for new uses and maintain material and storage information. Existing elements are reused deliberately instead of being re-planned every time.",
+        "text": "Existing components recorded and planned for new uses instead of building from scratch every time.",
         "points": [
-          "Survey of existing components",
-          "Variant planning for new uses",
+          "Inventory survey",
+          "Variant planning",
           "Material and storage information"
-        ],
-        "task": "Task: record existing components and make them usable for new builds.",
-        "result": "Result: inventory list, variants and storage information.",
-        "benefit": "Benefit: less re-planning and material use for recurring builds.",
-        "link": "Make an enquiry"
+        ]
       }
     },
-    "inquire": "Enquire",
-    "cta": {
-      "title": "Your next project starts with a brief.",
-      "text": "Briefly describe the task, dates and existing documents. You will receive an initial assessment and the next steps; a tailored quote follows the briefing.",
-      "button": "Send brief",
-      "phone": "Prefer to talk directly?"
-    }
+    "inquire": "Enquire"
   },
   "gallery": {
     "eyebrow": "Design atlas · new every day",
     "title": "A new concept every day.",
-    "lead": "{count} of {total} exhibition stand concepts are visible, from {min} to {max}. A new one is added every morning at 5:00. All images are visualisations. Explore, filter, save and enquire directly.",
+    "lead": "{count} of {total} exhibition stand concepts from {min} to {max} – a new one is added every morning at 5:00. All images are visualisations.",
     "slider": "Slider",
     "grid": "Grid",
     "viewMode": "View",
@@ -351,42 +282,44 @@
     "title": "Six steps from brief to handover.",
     "steps": {
       "briefing": {
-        "title": "Brief & scope",
-        "text": "Task, deadline, existing documents and desired results. We define what I deliver, how many correction rounds are planned and who gives approval.",
+        "title": "Brief and scope",
+        "text": "Clarify task, deadline and existing documents. We define what I deliver, how many revision rounds are planned and who approves.",
         "alt": "Sketch animation for the brief (visualisation)"
       },
       "concept": {
-        "title": "Concept & coordination",
-        "text": "Spatial idea, visualisations, floor plan and elevations. You see the space from several perspectives and decide calmly before the technical detailing begins.",
+        "title": "Concept and coordination",
+        "text": "Spatial idea, visualisations, floor plan and elevations: you decide on a clear basis before detailed planning starts.",
         "alt": "Concept animation of the design (visualisation)"
       },
       "planning": {
         "title": "Technical planning",
-        "text": "Dimensioned detail and production drawings, part lists and interface documents. Qualified specialist partners handle structural engineering, permits and electrical planning; I coordinate the interfaces.",
+        "text": "Dimensioned detail and production drawings, part lists and interfaces. Specialist partners provide structural engineering, permits and electrical planning.",
         "alt": "Animation of technical planning (visualisation)"
       },
       "production": {
-        "title": "Work preparation & production documents",
-        "text": "Material and quantity overviews and documents for each production partner, plus procurement and schedule planning. Manufacturing takes place at the specialist company, not with me.",
+        "title": "Work preparation",
+        "text": "Material and quantity overviews, documents per production partner, procurement and scheduling. Production takes place at the specialist company.",
         "alt": "Animation of CNC machining as an example of production data (visualisation); the specialist partner carries out the manufacturing"
       },
       "logistics": {
         "title": "Coordination of trades",
-        "text": "Schedule overview, quotation comparisons and coordination between trades so that transport, build-up and technology fit together. Your specialist partners carry out the work.",
+        "text": "Schedule overview, quotation comparisons and coordination so that transport, build-up and technology fit together.",
         "alt": "Time-lapse concept animation of the build-up (visualisation)"
       },
       "onsite": {
-        "title": "Approvals, changes & handover",
-        "text": "I document approvals and changes in a traceable way and hand over all documents at the end. On-site meetings are possible if agreed in advance.",
+        "title": "Approvals and handover",
+        "text": "Approvals and changes are documented and all documents are handed over in full. On-site meetings by arrangement.",
         "alt": "Concept animation of the handover (visualisation)"
       }
     },
-    "sketch": "Sketch"
+    "sketch": "Sketch",
+    "lead": "Clear steps, one fixed point of contact and documented approvals keep every project traceable.",
+    "note": "The films illustrate individual workflow steps (visualisations). They do not show the assembly of a specific exhibition stand."
   },
   "world": {
     "eyebrow": "Fair calendar",
     "title": "Trade fairs in Germany and Europe.",
-    "lead": "Trade fair dates in Germany and Europe as a reference for your project planning. Choose a city – the globe shows its location and the distance as the crow flies from Leipzig. Calendar entries say nothing about contracts or participation by CL Projektwerk.",
+    "lead": "Choose a city – the globe shows its location and the straight-line distance from Leipzig.",
     "placeholderNote": "Sample locations",
     "listLabel": "Fair cities",
     "drag": "Rotate globe",
@@ -484,8 +417,8 @@
     "eyebrow": "About me",
     "name": "Christof Laufersweiler",
     "role": "Planning and project control for exhibition stands, brand spaces and interior fit-out",
-    "text": "I am Christof Laufersweiler and have worked in the trade fair and event sector for more than 20 years. I trained as a technical draughtsman specialising in wood technology, and later added project management in exhibition stand construction, employed managing director of a stand-building company and an IHK certificate as exhibition and event project manager. With CL Projektwerk I offer external planning and project capacity in Leipzig for stand builders, agencies, interior fit-out companies and exhibitors who need extra hands with expertise. Most recently, I worked as a Senior Project Manager at C3 EXPO GmbH from November 2025 to October 2026.",
-    "close": "You keep the decisions. I take care of documents, overview and coordination.",
+    "text": "I have worked in exhibitions and events for more than 20 years – as a technical draughtsman (wood technology), project manager in stand construction, employed managing director of a stand-building company and most recently as Senior Project Manager at C3 EXPO GmbH (11/2025 – 10/2026). With CL Projektwerk I offer external planning and project capacity from Leipzig for stand builders, agencies, interior fit-out companies and exhibitors.",
+    "close": "You make the decisions. I take care of documents, overview and coordination.",
     "photoAlt": "Portrait of Christof Laufersweiler, founder of CL Projektwerk",
     "cta": "Discuss a project with me",
     "career": "Career",
@@ -887,52 +820,29 @@
     "home": "Back to home"
   },
   "seo": {
-    "eyebrow": "Technical exhibition planning",
-    "title": "Technical planning, work preparation and project control for exhibition stands and interior fit-out.",
-    "intro": "CL Projektwerk is an external planning and project office in Leipzig. I support stand builders, agencies, interior fit-out companies and mid-sized exhibitors with exhibition stand planning: dimensioned production documents, work preparation, external project control, concepts and reuse planning. Specialist partners carry out the work; I deliver planning and coordination.",
-    "blocks": [
-      {
-        "title": "Technical exhibition planning",
-        "text": "From the brief come dimensioned detail and production drawings, part lists and interface documents. Your production partners can work with them, without your team having to create every drawing itself."
-      },
-      {
-        "title": "Work preparation for exhibition stands and brand spaces",
-        "text": "Material and quantity overviews, documents for each production partner and procurement and schedule planning turn drawings into a process that can be organised."
-      },
-      {
-        "title": "External project control",
-        "text": "Budget and schedule overviews, quotation comparisons, coordination of trades and documented approvals create clarity, especially when several projects run at once."
-      },
-      {
-        "title": "Concept, presentation and reuse",
-        "text": "Stand and space concepts, visualisations and print-ready graphics help with coordination. Reuse planning records existing components and plans variants for new uses."
-      }
-    ],
-    "faqTitle": "Frequently asked questions",
+    "eyebrow": "FAQ",
+    "title": "Questions about working together.",
+    "intro": "CL Projektwerk is an external planning and project office in Leipzig for technical exhibition planning, work preparation and project control. Specialist partners carry out the work; I deliver planning and coordination.",
     "faq": [
       {
         "q": "What does the collaboration cost?",
-        "a": "It depends on scope, deliverables and deadlines. After a short brief you receive an individual quotation for the project or for a monthly quota."
+        "a": "It depends on scope, deliverables and deadlines. After a short brief you receive a quotation – for a project or a monthly quota."
       },
       {
         "q": "When should I get in touch?",
-        "a": "Ideally as soon as the task and deadline are fixed, because my monthly planning capacity is limited. I check short-notice requests against my current workload."
+        "a": "As soon as task and deadline are fixed. My capacity is limited; I check short-notice requests against my current workload."
       },
       {
-        "q": "Can I book just a single service?",
-        "a": "Yes. Technical planning, work preparation, project control, design and presentation or reuse planning can each be booked individually."
+        "q": "Can I book individual services?",
+        "a": "Yes. Technical planning, work preparation, project control, concept or reuse planning can each be booked individually."
       },
       {
-        "q": "Do you also manufacture and assemble?",
-        "a": "No. Qualified specialist partners carry out manufacturing, transport, assembly, structural engineering, permits and electrical work. You normally commission larger services directly; I plan and coordinate."
+        "q": "Do you also manufacture and install?",
+        "a": "No. Specialist partners handle production, transport, installation, structural engineering, permits and electrics – usually commissioned directly by you. I plan and coordinate."
       },
       {
-        "q": "Are on-site meetings or travel possible?",
-        "a": "Planning is mostly done from Leipzig. We agree on-site meetings and travel in advance, and additional services are agreed separately."
-      },
-      {
-        "q": "Do you offer web design or automation?",
-        "a": "That is not one of my main services. My focus is planning and controlling exhibition stand, brand space and interior fit-out projects."
+        "q": "Are on-site meetings possible?",
+        "a": "Planning is mostly done from Leipzig. On-site meetings and travel are agreed in advance."
       }
     ]
   },
@@ -974,5 +884,10 @@
   },
   "ogImage": {
     "film": "▶ Concept animation"
+  },
+  "fairs": {
+    "eyebrow": "Trade fairs",
+    "title": "Trade fair calendar and venues.",
+    "lead": "Upcoming trade fair dates in Germany and Europe and 50 exhibition venues at a glance – for orientation in your project planning. The entries say nothing about orders or participation by CL Projektwerk."
   }
 }

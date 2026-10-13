@@ -1,6 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
+import { FxWords } from "@/components/kinetic/FxWords";
+import { ScrollWords } from "@/components/kinetic/ScrollWords";
+import { CountUp } from "@/components/kinetic/CountUp";
 import { mediaUrl } from "@/lib/media";
 import { portrait } from "@/config/profile";
 import { ExperienceHub } from "@/components/sections/ExperienceHub";
@@ -40,17 +43,17 @@ export async function About() {
         <div>
           <div data-reveal>
             <p className="eyebrow">{t("eyebrow")}</p>
-            <h2 id="about-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl"><Kinetic text={t("name")} /></h2>
-            <p className="mt-3 text-lg text-accent">{t("role")}</p>
-            <p className="mt-6 max-w-xl text-lg text-fg-muted">{t("text")}</p>
-            <p className="mt-4 max-w-xl text-xl font-semibold md:text-2xl">{t("close")}</p>
+            <h2 id="about-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl"><Kinetic text={t("name")} stomp /></h2>
+            <p className="mt-3 text-lg text-accent"><FxWords text={t("role")} delay={500} /></p>
+            <p className="mt-6 max-w-xl text-lg text-fg-muted"><ScrollWords text={t("text")} /></p>
+            <p className="mt-4 max-w-xl text-xl font-semibold md:text-2xl"><FxWords text={t("close")} delay={150} /></p>
           </div>
 
           <dl className="mt-10 grid max-w-xl grid-cols-3 gap-3 sm:gap-4" data-reveal>
             {facts.map((f) => (
               <div key={f.value} className="flex min-w-0 flex-col-reverse justify-end gap-2 rounded-2xl border border-line p-4">
                 <dt className="text-xs leading-snug text-fg-muted">{f.label}</dt>
-                <dd className="font-display text-xl font-semibold text-accent [overflow-wrap:anywhere] sm:text-2xl">{f.value}</dd>
+                <dd className="font-display text-xl font-semibold text-accent [overflow-wrap:anywhere] sm:text-2xl"><CountUp value={f.value} /></dd>
               </div>
             ))}
           </dl>
@@ -64,20 +67,10 @@ export async function About() {
             {t("cta")} <ArrowUpRight size={18} />
           </a>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2" data-reveal>
-            <div>
-              <h3 className="eyebrow">{t("tools")}</h3>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {tools.map((x) => <li key={x} className="rounded-full border border-line px-3 py-1 text-sm">{x}</li>)}
-              </ul>
-            </div>
-            <div>
-              <h3 className="eyebrow">{t("languages")}</h3>
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {languages.map((x) => <li key={x} className="rounded-full border border-line px-3 py-1 text-sm">{x}</li>)}
-              </ul>
-            </div>
-          </div>
+          <dl className="mt-10 grid max-w-xl gap-2 text-sm" data-reveal>
+            <div className="flex flex-wrap gap-x-3"><dt className="font-semibold">{t("tools")}:</dt><dd className="text-fg-muted">{tools.join(" · ")}</dd></div>
+            <div className="flex flex-wrap gap-x-3"><dt className="font-semibold">{t("languages")}:</dt><dd className="text-fg-muted">{languages.join(" · ")}</dd></div>
+          </dl>
         </div>
       </div>
       <div className="container-x" data-reveal>

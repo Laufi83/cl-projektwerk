@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages: [string, string][] = [
     ["/", "/"],
     ["/designs", "/designs"],
+    ["/messen", "/trade-fairs"],
     ["/anfrage", "/inquiry"],
     ["/impressum", "/imprint"],
     ["/datenschutz", "/privacy"],

@@ -9,6 +9,7 @@ import { useNear } from "@/hooks/useNear";
 import { useReducedMotion } from "@/hooks/useMedia";
 import { useLiteMode } from "@/lib/performance";
 import { InquireLink } from "@/components/ui/InquireLink";
+import { FxWords } from "@/components/kinetic/FxWords";
 import { ExpoMissionControl } from "@/components/sections/ExpoMissionControl";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
 
@@ -69,7 +70,7 @@ export function MesseVenueExplorer() {
               <span className="block text-accent">{de ? "In Europa im Überblick." : "Across Europe at a glance."}</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-fg-muted md:text-lg">
-              {de ? "50 ausgewählte Messegelände in Europa: auf dem Globus entdecken, Standorte vergleichen und Hinweise zu Anreise, Orientierung und Aufenthalt nachlesen." : "50 selected exhibition venues in Europe: explore them on the globe, compare locations and read notes on travel, orientation and accommodation."}
+              <FxWords text={de ? "50 ausgewählte Messegelände in Europa: auf dem Globus entdecken, Standorte vergleichen und Hinweise zu Anreise, Orientierung und Aufenthalt nachlesen." : "50 selected exhibition venues in Europe: explore them on the globe, compare locations and read notes on travel, orientation and accommodation."} delay={300} />
             </p>
           </div>
           <div className="flex items-center gap-3 rounded-full border border-line-strong bg-bg-raised px-5 py-3 text-sm text-fg-muted">
@@ -130,8 +131,8 @@ export function MesseVenueExplorer() {
                 <span className="font-mono text-sm text-accent">NO. {String(active.number).padStart(2,"0")} / 50</span>
                 <span className="text-xs uppercase tracking-widest text-fg-muted">{de?"Standortprofil":"Venue profile"}</span>
               </div>
-              <h3 className="font-display mt-5 text-4xl font-semibold leading-tight md:text-5xl">{active.city}</h3>
-              <p className="mt-2 text-lg text-accent">{active.venue}</p>
+              <h3 key={active.id} className="font-display mt-5 text-4xl font-semibold leading-tight md:text-5xl"><FxWords text={active.city} immediate /></h3>
+              <p key={`${active.id}-v`} className="mt-2 text-lg text-accent"><FxWords text={active.venue} immediate delay={200} /></p>
               <div className="mt-6 flex items-center gap-3">
                 <button type="button" onClick={()=>nav(-1)} aria-label={de?"Vorheriger Standort":"Previous venue"} className="grid size-10 place-items-center rounded-full border border-line-strong text-fg transition-colors hover:border-accent">←</button>
                 <button type="button" onClick={()=>nav(1)} aria-label={de?"Nächster Standort":"Next venue"} className="grid size-10 place-items-center rounded-full border border-line-strong text-fg transition-colors hover:border-accent">→</button>

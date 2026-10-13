@@ -9,25 +9,27 @@ import { useEffect, useRef } from "react";
 import { getLayout, subscribeLayout } from "@/lib/layout";
 import { layoutById, type KineticEffect } from "@/config/layouts";
 
-type Props = { text: string; className?: string };
+/** `stomp`: Wörter schlagen beim Einblenden des umgebenden [data-reveal]-Blocks nacheinander auf (CSS, globals.css) */
+type Props = { text: string; className?: string; stomp?: boolean };
 /** Schriften mit verbundenen Zeichen/Ligaturen (Hebräisch, Arabisch, indische Schriften) */
 const SHAPED = /[\u0590-\u08FF\u0900-\u0DFF\uFB1D-\uFEFC]/;
 
-export function Kinetic({ text, className }: Props) {
+export function Kinetic({ text, className, stomp }: Props) {
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => attach(ref.current!), []);
   const parts = text.split(/(\s+)/);
   // Arabisch, Hindi u. a.: Buchstaben hängen zusammen (Ligaturen) – nicht zerlegen, wortweise animieren
   const shaped = SHAPED.test(text);
+  let word = 0;
   return (
-    <span ref={ref} className={`kinetic ${className ?? ""}`}>
+    <span ref={ref} className={`kinetic ${stomp ? "kinetic-stomp" : ""} ${className ?? ""}`}>
       <span className="sr-only">{text}</span>
       <span aria-hidden className="kinetic-vis" dir="auto">
         {parts.map((w, i) =>
           /^\s+$/.test(w) ? (
             " "
           ) : (
-            <span key={i} className="kinetic-word">
+            <span key={i} className="kinetic-word" style={stomp ? { ["--w" as string]: word++ } : undefined}>
               {(shaped ? [w] : Array.from(w)).map((ch, j) => (
                 <span key={j} className="kinetic-char">{ch}</span>
               ))}
