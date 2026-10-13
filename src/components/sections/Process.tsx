@@ -59,8 +59,9 @@ function Media({ img, play, still, className }: { img: StepImage; play: boolean;
  * nach einigen Sekunden weiter (Fortschrittsbalken). Zeiger über den Leisten hält an, Klick wählt direkt.
  * Mobil: Liste, der gewählte Schritt klappt mit Film auf.
  * Reduzierte Bewegung und Schonmodus: Standbilder, kein automatischer Wechsel.
+ * `embedded`: Teil des Abschnitts „Leistungen & Zusammenarbeit“ (ohne eigenen Rand, Überschrift als h3).
  */
-export function Process({ images, visNote }: { images: StepImage[]; visNote?: string }) {
+export function Process({ images, visNote, embedded }: { images: StepImage[]; visNote?: string; embedded?: boolean }) {
   const t = useTranslations("process");
   const host = useRef<HTMLElement>(null);
   const reduced = useReducedMotion();
@@ -91,11 +92,15 @@ export function Process({ images, visNote }: { images: StepImage[]; visNote?: st
   const text = (s: (typeof STEPS)[number]) => t(`steps.${s}.text`);
 
   return (
-    <section ref={host} id="ablauf" data-steps aria-labelledby="process-title" className="relative scroll-mt-24 py-24 md:py-32">
-      <div className="container-x">
+    <section ref={host} id="ablauf" data-steps aria-labelledby="process-title" className={embedded ? "relative mt-20 scroll-mt-24 md:mt-28" : "relative scroll-mt-24 py-24 md:py-32"}>
+      <div className={embedded ? undefined : "container-x"}>
         <div className="max-w-3xl" data-reveal>
           <p className="eyebrow">{t("eyebrow")}</p>
-          <h2 id="process-title" className="font-display mt-4 text-4xl font-semibold leading-[1.05] md:text-6xl"><Kinetic text={t("title")} stomp /></h2>
+          {embedded ? (
+            <h3 id="process-title" className="font-display mt-4 text-3xl font-semibold leading-[1.05] md:text-5xl"><Kinetic text={t("title")} stomp /></h3>
+          ) : (
+            <h2 id="process-title" className="font-display mt-4 text-4xl font-semibold leading-[1.05] md:text-6xl"><Kinetic text={t("title")} stomp /></h2>
+          )}
           <p className="mt-5 text-lg text-fg-muted"><FxWords text={t("lead")} delay={350} /></p>
         </div>
 

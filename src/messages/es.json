@@ -1,20 +1,22 @@
 {
   "meta": {
     "title": "Planificación técnica de ferias y control de proyectos | {brand}",
-    "description": "Oficina externa de planificación y proyectos para stands de feria, espacios de marca y acondicionamiento interior: planificación técnica, preparación del trabajo y control de proyectos.",
-    "ogTitle": "{brand}: capacidad de planificación para stands de feria, espacios de marca y acondicionamiento interior",
+    "description": "Oficina externa de planificación y gestión de proyectos en Leipzig para stands feriales, espacios de marca e interiorismo: planificación técnica, preparación del trabajo y dirección de proyectos.",
+    "ogTitle": "{brand} – capacidad de planificación para stands, espacios de marca e interiorismo",
     "ogDescription": "Documentación de fabricación acotada, preparación del trabajo y control de proyectos para constructores de stands, agencias, empresas de interiorismo y expositores. Contacto: Christof Laufersweiler, Leipzig.",
-    "socialDescription": "Capacidad adicional de planificación y proyectos para stands de feria, espacios de marca y acondicionamiento interior, por proyecto y con un alcance claramente acordado.",
-    "designsTitle": "Conceptos de stand, uno nuevo cada día",
-    "designsDescription": "Conceptos de diseño de stands con visualizaciones, plantas y alzados, de {min} a {max}. Cada mañana a las 5:00 se añade un concepto más.",
+    "socialDescription": "Capacidad adicional de planificación y gestión de proyectos para stands, espacios de marca e interiorismo – por proyecto, con un alcance claramente acordado.",
+    "designsTitle": "Diseños de stands – uno nuevo cada día",
+    "designsDescription": "Conceptos de stands con visualizaciones, plantas y alzados de {min} a {max}. Cada mañana a las 5:00 se añade un diseño nuevo.",
     "designTitle": "{number} {title} · Concepto de stand",
-    "designDescription": "Concepto {title}: {size}{floors}. {description} Visualización de un concepto, no un stand construido.",
+    "designDescription": "Diseño {title}: {size}{floors}. {description} Visualización de un concepto, no un stand construido.",
     "inquiryTitle": "Hablar de su proyecto",
-    "inquiryDescription": "Envíe un briefing: feria o proyecto, fecha, documentos disponibles y servicio de planificación necesario. Le responderé con una primera valoración.",
+    "inquiryDescription": "Envíe su briefing: proyecto, fechas, documentos existentes y servicio que necesita. Recibirá una primera valoración.",
     "selectionTitle": "Mi selección",
-    "selectionDescription": "Sus conceptos de stand guardados, que puede adjuntar a una consulta.",
+    "selectionDescription": "Sus diseños de stands guardados – enviados con su consulta si lo desea.",
     "imprintDescription": "Aviso legal e información del proveedor.",
-    "privacyDescription": "Información sobre el tratamiento de datos personales en este sitio web."
+    "privacyDescription": "Información sobre el tratamiento de datos personales en este sitio web.",
+    "fairsTitle": "Calendario de ferias y recintos feriales en Europa",
+    "fairsDescription": "Las próximas ferias en Alemania y Europa y 50 recintos feriales de un vistazo – como orientación para la planificación de sus proyectos."
   },
   "common": {
     "skip": "Saltar al contenido",
@@ -46,15 +48,17 @@
     "cta": "Hablar de un proyecto",
     "selection": "Mi selección",
     "home": "Inicio",
-    "main": "Navegación principal"
+    "main": "Navegación principal",
+    "fairs": "Ferias",
+    "hobbies": "Aficiones"
   },
   "hero": {
-    "eyebrow": "Oficina externa de planificación y proyectos · Stands de feria, espacios de marca, interiorismo",
+    "eyebrow": "Oficina de planificación y proyectos · Stands · Espacios de marca · Interiorismo",
     "title": "Planificación que funciona sobre el terreno.",
-    "lead": "Apoyo a constructores de stands, agencias, empresas de interiorismo y expositores con planificación técnica, preparación del trabajo y control de proyectos: por proyecto, con un alcance claramente acordado y documentos trazables.",
+    "lead": "Planificación técnica, preparación del trabajo y dirección de proyectos para constructores de stands, agencias y expositores – por proyecto, con un alcance claramente acordado.",
     "cta": "Solicitar capacidad de planificación",
     "secondary": "Ver conceptos",
-    "scroll": "Desplácese y vea cómo se forma la visualización",
+    "scroll": "Desplácese – el diseño toma forma",
     "progress": "Montaje (visualización)",
     "done": "Espacio terminado",
     "design": "Concepto 001 · Timber Campus"
@@ -62,38 +66,44 @@
   "films": {
     "eyebrow": "Conceptos en time-lapse",
     "title": "5 conceptos.",
-    "lead": "Cinco animaciones conceptuales muestran cómo un diseño pasa del suelo vacío del pabellón al espacio terminado. Son visualizaciones, no grabaciones de stands construidos.",
+    "lead": "Cinco animaciones de concepto muestran cómo un diseño crece desde el suelo vacío del pabellón hasta el espacio terminado – visualizaciones, no grabaciones de stands construidos.",
     "cta": "Reproducir animación",
     "badge": "Animación conceptual",
     "sliderLabel": "Control deslizante con cinco animaciones conceptuales. Las flechas navegan, Intro abre.",
-    "explain": "Animación time-lapse de un concepto. Muestra cómo podría montarse el espacio planificado y no es prueba de un stand realizado."
+    "explain": "Animación en time-lapse de un diseño: así podría tomar forma el espacio planificado. No es prueba de un stand realizado."
   },
   "tagline": {
-    "text": "Cada espacio empieza con documentos en los que pueden confiar todos los implicados. Esos son los documentos que elaboro."
+    "text": "Todo espacio empieza con documentos en los que todos pueden confiar. Eso es lo que yo creo.",
+    "stomp": [
+      "Briefing.",
+      "Planificación.",
+      "Control.",
+      "Entrega."
+    ]
   },
   "services": {
-    "eyebrow": "Servicios",
-    "title": "Más capacidad de planificación cuando varios proyectos van a la vez.",
-    "lead": "Los constructores de stands, las agencias y las empresas de interiorismo llegan a su límite con proyectos paralelos, falta de personal y tareas técnicamente exigentes. Como planificador y gestor de proyectos externo asumo partes claramente delimitadas de su proyecto, con más de 20 años de experiencia en el sector ferial y de eventos. Fabricación, transporte, montaje, cálculo estructural, permisos y trabajos eléctricos los realizan socios especializados cualificados.",
+    "eyebrow": "Servicios y colaboración",
+    "title": "Capacidad de planificación cuando los proyectos coinciden.",
+    "lead": "Como planificador externo asumo partes claramente definidas de su proyecto – con más de 20 años de experiencia en la construcción de stands. Fabricación, montaje, cálculo estructural y electricidad corren a cargo de socios especializados cualificados.",
     "trust": [
       {
         "title": "Un único interlocutor",
-        "text": "para planificación, documentos y coordinación: habla conmigo directamente, sin intermediarios."
+        "text": "para planificación, documentación y coordinación – directo, sin intermediarios."
       },
       {
         "title": "Más de 20 años de experiencia",
-        "text": "en el sector ferial y de eventos, formado como delineante técnico en tecnología de la madera y director de proyectos de ferias y eventos certificado (IHK)."
+        "text": "Delineante técnico (tecnología de la madera) y director de proyectos certificado de stands y eventos (IHK)."
       },
       {
-        "title": "Alcance claramente definido",
-        "text": "Acuerdo por escrito de antemano el alcance, las rondas de corrección y los plazos. Trabajos adicionales y viajes, solo previo acuerdo."
+        "title": "Alcance claro",
+        "text": "Servicios, rondas de correcciones y plazos se fijan por escrito de antemano."
       }
     ],
     "package": {
       "badge": "Colaboración",
-      "title": "Por proyecto o como cupo mensual.",
+      "title": "Por proyecto o como contingente mensual.",
       "subtitle": "Capacidad de planificación en la medida que su proyecto necesita ahora.",
-      "text": "Usted me envía un briefing, yo estimo el esfuerzo y propongo alcance, entregables y plazos. Después trabajo por proyecto o dentro de un cupo mensual con horas, tiempos de respuesta y rondas de corrección fijados. Mi capacidad es limitada; solo acepto proyectos que pueda atender con cuidado.",
+      "text": "Tras su briefing estimo el esfuerzo y propongo alcance, entregables y plazos – para un solo proyecto o como contingente con horas y tiempos de respuesta fijos. Solo acepto los proyectos que puedo atender con el cuidado necesario.",
       "cta": "Solicitar capacidad de planificación",
       "more": "Cómo transcurre un proyecto",
       "phases": [
@@ -136,20 +146,19 @@
       ]
     },
     "network": {
-      "title": "Socios especializados para la ejecución.",
-      "text": "Yo planifico y coordino; la ejecución corre a cargo de empresas especializadas cualificadas. En el modelo básico, usted contrata directamente con sus socios los servicios mayores de fabricación y montaje; si lo desea, me coordino con ellos y preparo su documentación. CL Projektwerk no es un taller de producción ni actúa como contratista general que financia proyectos.",
+      "title": "Ejecución a cargo de socios especializados",
+      "text": "Yo planifico y coordino. Normalmente usted encarga la fabricación y el montaje directamente a sus socios – CL Projektwerk no es un taller ni un contratista general.",
       "items": [
-        "Fabricación exclusivamente con control numérico (CNC)",
+        "Fabricación CNC",
         "Carpintería",
         "Metalistería",
         "Montaje",
         "Transporte y logística",
         "Cálculo estructural e inspecciones",
-        "Permisos y recepciones",
-        "Trabajos eléctricos",
-        "Impresión y producción gráfica",
-        "Técnica de medios y eventos",
-        "… y otros oficios según necesidad"
+        "Permisos",
+        "Electricidad",
+        "Producción gráfica",
+        "Tecnología multimedia"
       ]
     },
     "single": {
@@ -160,11 +169,11 @@
     "items": {
       "tech": {
         "title": "Planificación técnica",
-        "text": "A partir de su briefing elaboro planos de detalle y de fabricación acotados, listas de piezas y documentos de interfaces. Recibe documentos con los que sus socios de fabricación pueden trabajar y ahorra horas internas de planificación.",
+        "text": "Planos de detalle y de fabricación acotados con los que sus socios de fabricación pueden trabajar directamente.",
         "points": [
-          "Planos de detalle y de fabricación acotados",
+          "Planos de detalle y de fabricación",
           "Listas de piezas",
-          "Documentos de interfaces con oficios y socios"
+          "Interfaces con gremios y socios"
         ],
         "task": "Tarea: traducir su briefing en documentos técnicos inequívocos.",
         "result": "Resultado: planos, listas e interfaces en un estado acordado.",
@@ -173,11 +182,11 @@
       },
       "prep": {
         "title": "Preparación del trabajo",
-        "text": "Preparo su proyecto para la ejecución: resúmenes de materiales y cantidades, documentos de fabricación por socio y planificación de compras y plazos. Así todos saben qué se necesita, cuándo y en qué cantidad.",
+        "text": "Materiales, cantidades y plazos organizados para que cada socio sepa qué se necesita y cuándo.",
         "points": [
           "Resúmenes de materiales y cantidades",
-          "Documentos de fabricación por socio",
-          "Planificación de compras y plazos"
+          "Documentación de fabricación por socio",
+          "Compras y planificación de plazos"
         ],
         "task": "Tarea: ordenar materiales, cantidades y fechas para la ejecución.",
         "result": "Resultado: resúmenes y documentos preparados para cada socio.",
@@ -186,11 +195,11 @@
       },
       "control": {
         "title": "Control de proyectos",
-        "text": "Mantengo claros presupuesto y plazos, comparo ofertas, coordino los oficios y documento aprobaciones y cambios. Las decisiones siguen siendo suyas; yo las preparo para que puedan tomarse con rapidez.",
+        "text": "Presupuesto, plazos y gremios bajo control – decisiones preparadas, cambios documentados.",
         "points": [
-          "Resúmenes de presupuesto y calendario",
-          "Comparación de ofertas y coordinación de oficios",
-          "Aprobaciones y documentación trazable de cambios"
+          "Seguimiento de presupuesto y plazos",
+          "Comparación de ofertas",
+          "Aprobaciones y cambios"
         ],
         "task": "Tarea: mantener una visión de costes, fechas y acuerdos.",
         "result": "Resultado: resúmenes actualizados y decisiones documentadas.",
@@ -198,12 +207,12 @@
         "link": "Ver la colaboración"
       },
       "concept": {
-        "title": "Diseño y presentación",
-        "text": "Desarrollo conceptos de stand y de espacio y elaboro visualizaciones y gráficos listos para imprimir. El alcance y el número de rondas de corrección se acuerdan de antemano para que esfuerzo y resultado sean previsibles.",
+        "title": "Concepto y presentación",
+        "text": "Conceptos de stands y espacios con visualizaciones que facilitan las decisiones.",
         "points": [
-          "Conceptos de stand y de espacio",
-          "Visualizaciones para la coordinación y la presentación",
-          "Gráficos listos para imprimir con rondas de corrección acordadas"
+          "Conceptos de stands y espacios",
+          "Visualizaciones",
+          "Gráficos listos para imprimir"
         ],
         "task": "Tarea: mostrar una idea para que usted y sus clientes puedan decidir.",
         "result": "Resultado: concepto, visualizaciones y datos de impresión en el alcance acordado.",
@@ -212,10 +221,10 @@
       },
       "reuse": {
         "title": "Planificación de reutilización",
-        "text": "Registro los elementos existentes, planifico variantes para nuevos usos y mantengo la información de materiales y almacén. Así puede reutilizar lo disponible en lugar de planificar de cero cada vez.",
+        "text": "Registrar los elementos existentes y planificarlos para nuevos usos, en lugar de construir todo de nuevo cada vez.",
         "points": [
-          "Inventario de elementos existentes",
-          "Planificación de variantes para nuevos usos",
+          "Inventario",
+          "Planificación de variantes",
           "Información de materiales y almacén"
         ],
         "task": "Tarea: registrar los elementos existentes y hacerlos utilizables para nuevos montajes.",
@@ -233,9 +242,9 @@
     }
   },
   "gallery": {
-    "eyebrow": "Galería de conceptos · nuevo cada día",
+    "eyebrow": "Atlas de diseños · nuevo cada día",
     "title": "Cada día, un concepto nuevo.",
-    "lead": "Actualmente son visibles {count} de {total} conceptos de diseño de stands, de {min} a {max}. Cada mañana a las 5:00 se añade otro concepto. Todas las imágenes son visualizaciones de conceptos. Hojee, filtre, guarde y consulte directamente.",
+    "lead": "{count} de {total} conceptos de stands de {min} a {max} – cada mañana a las 5:00 se añade uno nuevo. Todas las imágenes son visualizaciones.",
     "slider": "Deslizador",
     "grid": "Cuadrícula",
     "viewMode": "Vista",
@@ -243,7 +252,7 @@
     "dayPick": "Concepto del día",
     "hint": "Arrastre, desplácese o use las flechas",
     "hintTouch": "Deslice hacia un lado",
-    "count": "{count} de {total}",
+    "count": "{count} de {total} diseños",
     "empty": "Ningún concepto coincide con estos filtros.",
     "reset": "Restablecer filtros",
     "filters": "Filtros",
@@ -271,21 +280,29 @@
     "atlas": {
       "name": "Atlas",
       "role": "Atlas de diseños",
-      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
-      "cursor": "Drag",
-      "focus": "En foco",
+      "label": "Atlas de diseños: muro desplazable con todos los diseños. Las flechas lo mueven, Intro abre el diseño enfocado.",
+      "cursor": "Arrastrar",
+      "focus": "Enfocado",
       "save": "Guardar",
       "open": "Ver diseño",
-      "left": "Design to the left",
-      "right": "Design to the right",
-      "up": "Design above",
-      "down": "Design below",
-      "hint": "Arrastre o use las flechas · un clic en una imagen la enfoca · un clic en el foco la abre",
-      "hintTouch": "Deslice lateralmente · toque una imagen para enfocarla · toque de nuevo para abrirla"
+      "left": "Diseño a la izquierda",
+      "right": "Diseño a la derecha",
+      "up": "Diseño arriba",
+      "down": "Diseño abajo",
+      "hint": "Arrastre o use las flechas · haga clic en una imagen para enfocarla · haga clic en el foco para abrirla",
+      "hintTouch": "Deslice lateralmente · toque una imagen para enfocarla · vuelva a tocar para abrirla"
     },
     "search": "Buscar diseños",
     "searchPlaceholder": "Nombre, número o tamaño",
-    "loadMore": "Cargar más diseños ({shown}/{total})"
+    "loadMore": "Cargar más diseños ({shown}/{total})",
+    "searchExamples": [
+      "Lamello",
+      "madera",
+      "6 × 4 m",
+      "dos plantas",
+      "vegetación",
+      "luz"
+    ]
   },
   "detail": {
     "facts": "Datos",
@@ -327,7 +344,7 @@
     "imageOf": "Imagen {current} de {total}",
     "description": "Descripción",
     "placeholderImage": "Imagen próximamente",
-    "conceptNote": "Concepto de diseño. La imagen es una visualización y no muestra un stand construido.",
+    "conceptNote": "Diseño conceptual. Las imágenes son visualizaciones, no un stand construido.",
     "imageAlt": "{title}: {label} (visualización)",
     "planAlt": "{title}: {label} (plano del concepto)",
     "clipAlt": "{title}: animación conceptual del montaje (visualización)"
@@ -338,41 +355,43 @@
     "steps": {
       "briefing": {
         "title": "Briefing y alcance",
-        "text": "Tarea, plazo, documentos disponibles y resultados deseados. Acordamos qué entrego, cuántas rondas de corrección hay previstas y quién da la aprobación.",
+        "text": "Aclarar encargo, plazo y documentación existente. Definimos qué entrego, cuántas rondas de correcciones hay y quién aprueba.",
         "alt": "Animación de bocetos para el briefing (visualización)"
       },
       "concept": {
         "title": "Concepto y coordinación",
-        "text": "Idea espacial, visualizaciones, planta y alzados. Usted ve el espacio desde varias perspectivas y decide con calma antes de entrar en el detalle técnico.",
+        "text": "Idea espacial, visualizaciones, planta y alzados: usted decide sobre una base clara antes de que empiece la planificación de detalle.",
         "alt": "Animación conceptual del diseño (visualización)"
       },
       "planning": {
         "title": "Planificación técnica",
-        "text": "Planos de detalle y de fabricación acotados, listas de piezas y documentos de interfaces. Socios especializados cualificados se ocupan del cálculo estructural, los permisos y la planificación eléctrica; yo coordino las interfaces.",
+        "text": "Planos de detalle y de fabricación acotados, listas de piezas e interfaces. El cálculo estructural, los permisos y la planificación eléctrica los aportan socios especializados.",
         "alt": "Animación de la planificación técnica (visualización)"
       },
       "production": {
-        "title": "Preparación del trabajo y documentos de fabricación",
-        "text": "Resúmenes de materiales y cantidades y documentos para cada socio de fabricación, además de planificación de compras y plazos. La fabricación se realiza en la empresa especializada, no conmigo.",
+        "title": "Preparación del trabajo",
+        "text": "Resúmenes de materiales y cantidades, documentación por socio de fabricación, compras y planificación de plazos. La fabricación se realiza en la empresa especializada.",
         "alt": "Animación de un mecanizado CNC como ejemplo de datos de fabricación (visualización); la fabricación la realiza el socio especializado"
       },
       "logistics": {
         "title": "Coordinación de oficios",
-        "text": "Calendario, comparación de ofertas y coordinación entre oficios para que transporte, montaje y técnica encajen. Sus socios especializados ejecutan el trabajo.",
+        "text": "Calendario, comparación de ofertas y coordinación para que transporte, montaje y técnica encajen.",
         "alt": "Animación conceptual time-lapse del montaje (visualización)"
       },
       "onsite": {
-        "title": "Aprobaciones, cambios y entrega",
-        "text": "Documento aprobaciones y cambios de forma trazable y al final le entrego todos los documentos. Son posibles reuniones in situ si se acuerdan con antelación.",
+        "title": "Aprobaciones y entrega",
+        "text": "Las aprobaciones y los cambios quedan documentados y toda la documentación se entrega completa. Citas in situ previo acuerdo.",
         "alt": "Animación conceptual de la entrega (visualización)"
       }
     },
-    "sketch": "Boceto"
+    "sketch": "Boceto",
+    "lead": "Pasos claros, un interlocutor fijo y aprobaciones documentadas hacen que cada proyecto sea trazable.",
+    "note": "Los vídeos ilustran pasos de trabajo individuales (visualizaciones). No muestran el montaje de un stand concreto."
   },
   "world": {
     "eyebrow": "Calendario de ferias",
     "title": "Ferias en Alemania y Europa.",
-    "lead": "Un resumen de fechas de ferias en Alemania y Europa como orientación para la planificación de su proyecto. Elija una ciudad y el globo muestra el lugar y la distancia en línea recta desde Leipzig. Una fecha del calendario no dice nada sobre encargos ni participación de CL Projektwerk.",
+    "lead": "Elija una ciudad – el globo muestra su ubicación y la distancia en línea recta desde Leipzig.",
     "placeholderNote": "Ubicaciones de ejemplo",
     "listLabel": "Ciudades de feria",
     "drag": "Girar el globo",
@@ -470,8 +489,8 @@
     "eyebrow": "Sobre mí",
     "name": "Christof Laufersweiler",
     "role": "Planificación y control de proyectos para stands de feria, espacios de marca e interiorismo",
-    "text": "Soy Christof Laufersweiler y trabajo desde hace más de 20 años en el sector ferial y de eventos. Me formé como delineante técnico en tecnología de la madera y después añadí la dirección de proyectos de stands, la dirección general como empleado de una empresa de construcción de stands y un certificado IHK como director de proyectos de ferias y eventos. Con CL Projektwerk ofrezco en Leipzig capacidad externa de planificación y proyectos para constructores de stands, agencias, empresas de interiorismo y expositores que necesitan manos adicionales con conocimiento técnico.",
-    "close": "Usted conserva las decisiones. Yo me ocupo de los documentos, la visión de conjunto y la coordinación.",
+    "text": "Llevo más de 20 años trabajando en ferias y eventos – como delineante técnico (tecnología de la madera), director de proyectos en construcción de stands, gerente asalariado de una empresa de stands y, más recientemente, como Senior Project Manager en C3 EXPO GmbH (11/2025 – 10/2026). Con CL Projektwerk ofrezco desde Leipzig capacidad externa de planificación y gestión de proyectos a constructores de stands, agencias, empresas de interiorismo y expositores.",
+    "close": "Usted toma las decisiones. Yo me ocupo de la documentación, la visión de conjunto y la coordinación.",
     "photoAlt": "Retrato de Christof Laufersweiler, fundador de CL Projektwerk",
     "cta": "Hablar de un proyecto conmigo",
     "career": "Trayectoria",
@@ -658,7 +677,7 @@
   "contact": {
     "eyebrow": "Hablar de un proyecto",
     "title": "Cuénteme su proyecto.",
-    "lead": "Cuatro pasos breves, pocos campos obligatorios. Si lo desea, adjunto los conceptos guardados de la galería.",
+    "lead": "Cuatro pasos breves, pocos campos obligatorios. Puedo adjuntar los diseños que haya guardado.",
     "response": "Respondo normalmente en {time}.",
     "steps": {
       "fair": "Proyecto",
@@ -778,7 +797,7 @@
     "imprint": "Aviso legal",
     "privacy": "Privacidad",
     "cookies": "Ajustes de cookies",
-    "note": "Todas las imágenes y animaciones de este sitio web son visualizaciones de conceptos de diseño. No muestran stands construidos.",
+    "note": "Todos los renders y animaciones de este sitio son visualizaciones de conceptos, no stands construidos.",
     "top": "Volver arriba",
     "languages": "Idiomas",
     "tagline": "Oficina externa de planificación y proyectos para stands de feria, espacios de marca y acondicionamiento interior"
@@ -808,7 +827,7 @@
   },
   "notFound": {
     "title": "Esta página no existe.",
-    "text": "Quizá encuentre en la galería de conceptos lo que busca.",
+    "text": "Quizá encuentre lo que busca en el atlas de diseños.",
     "home": "A la página de inicio",
     "designs": "A la galería"
   },
@@ -821,14 +840,21 @@
     "preview": "Vista previa: {name}",
     "hint": "Las flechas cambian el diseño, Escape cierra la selección.",
     "saved": "Su elección se guarda en este dispositivo.",
-    "monoShowColour": "Mostrar colores originales",
-    "monoHideColour": "Mostrar en blanco y negro",
     "items": {
       "studio": "Antracita y naranja, líneas claras, preciso como un estudio de planificación",
-      "aurora": "Superficies oscuras con menta y violeta, tipografía con serifa, movimientos suaves de luz",
-      "tide": "Petróleo y coral, tipografía expresiva, ondas fluidas",
-      "mono": "Estrictamente blanco y negro, fuerte contraste, formas geométricas",
-      "wood": "Nogal, roble y crema, tipografía serif y lamas – cálido como un stand de madera"
+      "wood": "Nogal, roble y crema, tipografía fina y lamas – cálido como un stand de madera",
+      "lumen": "Azul hielo, plata y vidrio, tipografía limpia – retroiluminado como una pared de luz",
+      "atrium": "Espresso, champán y crema, tipografía gótica fina – con luz cálida como un stand redondo con latón",
+      "copper": "Negro acero y cobre, mayúsculas espaciadas – como una estructura de acero con techo de cobre plegado",
+      "violet": "Negro y violeta, grotesca muy ligera – con líneas LED luminosas",
+      "canopy": "Verde hoja, ratán y piedra, tipografía ligera – con celosía de madera y plantas"
+    },
+    "films": {
+      "lumen": "Hero: time-lapse del stand CL luminoso",
+      "atrium": "Hero: time-lapse del stand CL con galería redonda",
+      "copper": "Hero: time-lapse del stand CL con techo de cobre",
+      "violet": "Hero: time-lapse del stand CL con líneas LED",
+      "canopy": "Hero: time-lapse del stand CL con celosía de madera y vegetación"
     }
   },
   "radio": {
@@ -873,9 +899,9 @@
     "home": "A la página de inicio"
   },
   "seo": {
-    "eyebrow": "Planificación técnica de ferias",
-    "title": "Planificación técnica, preparación del trabajo y control de proyectos para stands de feria e interiorismo.",
-    "intro": "CL Projektwerk es una oficina externa de planificación y proyectos en Leipzig. Apoyo a constructores de stands, agencias, empresas de interiorismo y expositores medianos en la planificación de stands: con documentación de fabricación acotada, preparación del trabajo, control externo de proyectos, conceptos y planificación de reutilización. La ejecución corre a cargo de socios especializados; yo aporto planificación y coordinación.",
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Preguntas sobre la colaboración.",
+    "intro": "CL Projektwerk es una oficina externa de planificación y gestión de proyectos en Leipzig para la planificación técnica de stands, la preparación del trabajo y la dirección de proyectos. Socios especializados ejecutan los trabajos; yo aporto la planificación y la coordinación.",
     "blocks": [
       {
         "title": "Planificación técnica de ferias",
@@ -898,33 +924,29 @@
     "faq": [
       {
         "q": "¿Cuánto cuesta la colaboración?",
-        "a": "Depende del alcance, los resultados y los plazos. Tras un breve briefing recibe un presupuesto individual para el proyecto o para un cupo mensual."
+        "a": "Depende del alcance, los entregables y los plazos. Tras un breve briefing recibirá una oferta – para un proyecto o un contingente mensual."
       },
       {
-        "q": "¿Cuándo debería consultarle?",
-        "a": "Lo mejor es en cuanto estén fijados la tarea y el plazo, porque mi capacidad mensual de planificación es limitada. Las consultas de última hora las valoro según mi carga actual."
+        "q": "¿Cuándo debo ponerme en contacto?",
+        "a": "En cuanto el encargo y el plazo estén definidos. Mi capacidad es limitada; reviso las solicitudes urgentes según mi carga de trabajo."
       },
       {
-        "q": "¿Puedo contratar solo un servicio?",
-        "a": "Sí. La planificación técnica, la preparación del trabajo, el control de proyectos, el diseño y presentación o la planificación de reutilización se pueden contratar por separado."
+        "q": "¿Puedo contratar servicios individuales?",
+        "a": "Sí. Planificación técnica, preparación del trabajo, dirección de proyectos, concepto o planificación de reutilización se pueden contratar por separado."
       },
       {
-        "q": "¿Fabrica y monta usted también?",
-        "a": "No. Socios especializados cualificados realizan la fabricación, el transporte, el montaje, el cálculo estructural, los permisos y los trabajos eléctricos. Los servicios mayores los contrata normalmente usted directamente; yo planifico y coordino."
+        "q": "¿También fabrican y montan?",
+        "a": "No. Socios especializados se encargan de la fabricación, el transporte, el montaje, el cálculo estructural, los permisos y la electricidad – normalmente contratados directamente por usted. Yo planifico y coordino."
       },
       {
-        "q": "¿Son posibles reuniones in situ o viajes?",
-        "a": "La planificación se realiza sobre todo desde Leipzig. Las reuniones in situ y los viajes se acuerdan de antemano; los servicios adicionales se pactan por separado."
-      },
-      {
-        "q": "¿Ofrece diseño web o automatización?",
-        "a": "No forman parte de mis servicios principales. Mi foco es la planificación y el control de proyectos de stands de feria, espacios de marca e interiorismo."
+        "q": "¿Son posibles las citas in situ?",
+        "a": "La planificación se hace sobre todo desde Leipzig. Las citas in situ y los viajes se acuerdan de antemano."
       }
     ]
   },
   "lang": {
     "title": "Elegir idioma",
-    "hint": "Arrastre, deslice o gire con las flechas",
+    "hint": "Desplace, arrastre o use las flechas · Intro selecciona",
     "current": "actual",
     "prev": "Idioma anterior",
     "next": "Idioma siguiente",
@@ -960,5 +982,24 @@
   },
   "ogImage": {
     "film": "▶ Animación conceptual"
+  },
+  "fairs": {
+    "eyebrow": "Ferias",
+    "title": "Calendario de ferias y recintos.",
+    "lead": "Las próximas ferias en Alemania y Europa y 50 recintos feriales de un vistazo – como orientación para la planificación de sus proyectos. Las entradas no dicen nada sobre encargos ni sobre una participación de CL Projektwerk.",
+    "teaserTitle": "Próximas ferias.",
+    "teaserLead": "Las próximas fechas en Alemania y Europa. El calendario completo con globo y 50 recintos feriales está en la página de ferias.",
+    "teaserCta": "Ver el calendario de ferias",
+    "teaserLabel": "Próximas fechas de ferias",
+    "teaserRunning": "En curso",
+    "teaserNote": "Orientación para la planificación de proyectos – las entradas no dicen nada sobre encargos ni sobre una participación de CL Projektwerk."
+  },
+  "hobbies": {
+    "eyebrow": "Aficiones",
+    "title": "Esquí y montaña.",
+    "lead": "Para desconectar de la planificación, me gusta salir a esquiar – en pista y en nieve polvo.",
+    "videoLabel": "Vídeo de esquí {n}",
+    "play": "Reproducir vídeo",
+    "pause": "Pausar vídeo"
   }
 }

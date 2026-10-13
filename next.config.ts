@@ -5,7 +5,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** Früher angebotene Sprachen: Adressen dauerhaft auf die englische Fassung umleiten (Pfade sind dort identisch) */
-const RETIRED_LOCALES = "fr|es|it|nl|pl|cs|pt|zh|hi|ru";
+const RETIRED_LOCALES = "nl|pl|zh|hi|ru";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,

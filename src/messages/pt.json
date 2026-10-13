@@ -1,20 +1,22 @@
 {
   "meta": {
     "title": "Planeamento técnico de feiras e controlo de projeto | {brand}",
-    "description": "Gabinete externo de planeamento e projeto para stands de feira, espaços de marca e acabamentos interiores: planeamento técnico, preparação do trabalho e controlo de projeto.",
-    "ogTitle": "{brand}: capacidade de planeamento para stands de feira, espaços de marca e acabamentos interiores",
+    "description": "Gabinete externo de planeamento e gestão de projetos em Leipzig para stands de feira, espaços de marca e design de interiores: planeamento técnico, preparação do trabalho e gestão de projetos.",
+    "ogTitle": "{brand} – capacidade de planeamento para stands, espaços de marca e interiores",
     "ogDescription": "Documentos de fabrico cotados, preparação do trabalho e controlo de projeto para construtores de stands, agências, empresas de acabamentos e expositores. Contacto: Christof Laufersweiler, Leipzig.",
-    "socialDescription": "Capacidade adicional de planeamento e projeto para stands de feira, espaços de marca e acabamentos interiores, projeto a projeto e com um âmbito claramente acordado.",
-    "designsTitle": "Conceitos de stands, um novo todos os dias",
-    "designsDescription": "Conceitos de stands com visualizações, plantas e alçados, de {min} a {max}. Todas as manhãs às 5:00 junta-se mais um conceito.",
+    "socialDescription": "Capacidade adicional de planeamento e gestão de projetos para stands, espaços de marca e interiores – por projeto, com um âmbito claramente acordado.",
+    "designsTitle": "Projetos de stands – um novo todos os dias",
+    "designsDescription": "Conceitos de stands com visualizações, plantas e alçados de {min} a {max}. Todas as manhãs às 5:00 é acrescentado um novo projeto.",
     "designTitle": "{number} {title} · Conceito de stand",
-    "designDescription": "Conceito {title}: {size}{floors}. {description} Visualização de um conceito, não um stand construído.",
+    "designDescription": "Projeto {title}: {size}{floors}. {description} Visualização de um conceito, não um stand construído.",
     "inquiryTitle": "Falar sobre o seu projeto",
-    "inquiryDescription": "Envie um briefing: feira ou projeto, data, documentos disponíveis e serviço de planeamento pretendido. Respondo com uma primeira avaliação.",
+    "inquiryDescription": "Envie o seu briefing: projeto, datas, documentos existentes e serviço pretendido. Receberá uma primeira avaliação.",
     "selectionTitle": "A minha seleção",
-    "selectionDescription": "Os seus conceitos de stand guardados, que pode anexar a um pedido.",
+    "selectionDescription": "Os seus projetos de stands guardados – enviados com o seu pedido, se desejar.",
     "imprintDescription": "Aviso legal e informações do prestador.",
-    "privacyDescription": "Informações sobre o tratamento de dados pessoais neste site."
+    "privacyDescription": "Informações sobre o tratamento de dados pessoais neste site.",
+    "fairsTitle": "Calendário de feiras e recintos de exposições na Europa",
+    "fairsDescription": "As próximas feiras na Alemanha e na Europa e 50 recintos de exposições num relance – como orientação para o planeamento dos seus projetos."
   },
   "common": {
     "skip": "Saltar para o conteúdo",
@@ -46,15 +48,17 @@
     "cta": "Falar sobre um projeto",
     "selection": "A minha seleção",
     "home": "Início",
-    "main": "Navegação principal"
+    "main": "Navegação principal",
+    "fairs": "Feiras",
+    "hobbies": "Passatempos"
   },
   "hero": {
-    "eyebrow": "Gabinete externo de planeamento e projeto · Stands de feira, espaços de marca, acabamentos interiores",
+    "eyebrow": "Gabinete de planeamento e projetos · Stands · Espaços de marca · Interiores",
     "title": "Planeamento que funciona no terreno.",
-    "lead": "Apoio construtores de stands, agências, empresas de acabamentos e expositores com planeamento técnico, preparação do trabalho e controlo de projeto: projeto a projeto, com um âmbito claramente acordado e documentos rastreáveis.",
+    "lead": "Planeamento técnico, preparação do trabalho e gestão de projetos para construtores de stands, agências e expositores – por projeto, com um âmbito claramente acordado.",
     "cta": "Pedir capacidade de planeamento",
     "secondary": "Ver conceitos",
-    "scroll": "Desloque a página e veja como a visualização ganha forma",
+    "scroll": "Desloque – o projeto ganha forma",
     "progress": "Montagem (visualização)",
     "done": "Espaço concluído",
     "design": "Conceito 001 · Timber Campus"
@@ -62,38 +66,44 @@
   "films": {
     "eyebrow": "Conceitos em time-lapse",
     "title": "5 conceitos.",
-    "lead": "Cinco animações concetuais mostram como um projeto passa do piso vazio do pavilhão ao espaço concluído. São visualizações, não gravações de stands construídos.",
+    "lead": "Cinco animações de conceito mostram como um projeto cresce do pavilhão vazio até ao espaço concluído – visualizações, não imagens de stands construídos.",
     "cta": "Reproduzir animação",
     "badge": "Animação concetual",
     "sliderLabel": "Controlo deslizante com cinco animações concetuais. As setas navegam, Enter abre.",
-    "explain": "Animação time-lapse de um conceito. Mostra como o espaço planeado poderia ser montado e não é prova de um stand realizado."
+    "explain": "Animação em time-lapse de um projeto: é assim que o espaço planeado poderia ganhar forma. Não é prova de um stand realizado."
   },
   "tagline": {
-    "text": "Cada espaço começa com documentos em que todos os envolvidos podem confiar. São esses documentos que elaboro."
+    "text": "Cada espaço começa com documentos em que todos podem confiar. É isso que eu crio.",
+    "stomp": [
+      "Briefing.",
+      "Planeamento.",
+      "Gestão.",
+      "Entrega."
+    ]
   },
   "services": {
-    "eyebrow": "Serviços",
-    "title": "Mais capacidade de planeamento quando vários projetos decorrem em simultâneo.",
-    "lead": "Construtores de stands, agências e empresas de acabamentos atingem os seus limites com projetos paralelos, falta de pessoal e tarefas tecnicamente exigentes. Como planeador e gestor de projeto externo, assumo partes claramente delimitadas do seu projeto, com mais de 20 anos de experiência no setor de feiras e eventos. Fabrico, transporte, montagem, cálculo estrutural, licenças e trabalhos elétricos são realizados por parceiros especializados qualificados.",
+    "eyebrow": "Serviços e colaboração",
+    "title": "Capacidade de planeamento quando os projetos se sobrepõem.",
+    "lead": "Como planeador externo, assumo partes claramente definidas do seu projeto – com mais de 20 anos de experiência na construção de stands. Produção, montagem, cálculo estrutural e eletricidade ficam a cargo de parceiros especializados qualificados.",
     "trust": [
       {
-        "title": "Um único interlocutor",
-        "text": "para planeamento, documentos e coordenação: fala diretamente comigo, sem intermediários."
+        "title": "Um único contacto",
+        "text": "para planeamento, documentação e coordenação – direto, sem intermediários."
       },
       {
         "title": "Mais de 20 anos de experiência",
-        "text": "no setor de feiras e eventos, com formação como desenhador técnico em tecnologia da madeira e certificação de gestor de projetos de feiras e eventos (IHK)."
+        "text": "Desenhador técnico (tecnologia da madeira) e gestor de projetos certificado de stands e eventos (IHK)."
       },
       {
-        "title": "Âmbito claramente definido",
-        "text": "Acordo previamente por escrito o âmbito, as rondas de correção e os prazos. Trabalhos adicionais e deslocações apenas por acordo."
+        "title": "Âmbito claro",
+        "text": "Serviços, rondas de revisão e prazos são definidos por escrito antecipadamente."
       }
     ],
     "package": {
       "badge": "Colaboração",
       "title": "Por projeto ou como contingente mensal.",
       "subtitle": "Capacidade de planeamento na medida de que o seu projeto precisa agora.",
-      "text": "Envia-me um briefing, estimo o esforço e proponho âmbito, resultados e prazos. Depois trabalho por projeto ou dentro de um contingente mensal com horas, tempos de resposta e rondas de correção definidos. A minha capacidade é limitada; só aceito projetos que consiga tratar com cuidado.",
+      "text": "Após o seu briefing, estimo o esforço e proponho âmbito, entregáveis e prazos – para um único projeto ou como contingente com horas e tempos de resposta fixos. Só aceito os projetos que posso acompanhar com o devido cuidado.",
       "cta": "Pedir capacidade de planeamento",
       "more": "Como decorre um projeto",
       "phases": [
@@ -136,20 +146,19 @@
       ]
     },
     "network": {
-      "title": "Parceiros especializados para a execução.",
-      "text": "Eu planeio e coordeno; a execução cabe a empresas especializadas qualificadas. No modelo base, contrata diretamente aos seus parceiros os serviços maiores de fabrico e montagem; a pedido, articulo-me com eles e preparo os seus documentos. A CL Projektwerk não é uma oficina de produção nem atua como empreiteiro geral que financia projetos.",
+      "title": "Execução por parceiros especializados",
+      "text": "Eu planeio e coordeno. Normalmente, encomenda a produção e a montagem diretamente aos seus parceiros – a CL Projektwerk não é uma oficina nem um empreiteiro geral.",
       "items": [
-        "Fabrico exclusivamente com comando numérico (CNC)",
+        "Produção CNC",
         "Carpintaria",
         "Serralharia",
         "Montagem",
         "Transporte e logística",
         "Cálculo estrutural e inspeções",
-        "Licenças e vistorias",
-        "Trabalhos elétricos",
-        "Impressão e produção gráfica",
-        "Tecnologia de média e eventos",
-        "… e outras especialidades conforme necessário"
+        "Licenças",
+        "Eletricidade",
+        "Produção gráfica",
+        "Tecnologia multimédia"
       ]
     },
     "single": {
@@ -160,11 +169,11 @@
     "items": {
       "tech": {
         "title": "Planeamento técnico",
-        "text": "Com base no seu briefing, elaboro desenhos de pormenor e de fabrico cotados, listas de peças e documentos de interface. Recebe documentos com que os seus parceiros de fabrico podem trabalhar e poupa horas internas de planeamento.",
+        "text": "Desenhos de pormenor e de produção cotados, com os quais os seus parceiros de produção podem trabalhar diretamente.",
         "points": [
-          "Desenhos de pormenor e de fabrico cotados",
+          "Desenhos de pormenor e de produção",
           "Listas de peças",
-          "Documentos de interface com especialidades e parceiros"
+          "Interfaces com especialidades e parceiros"
         ],
         "task": "Tarefa: traduzir o seu briefing em documentos técnicos inequívocos.",
         "result": "Resultado: desenhos, listas e interfaces num estado acordado.",
@@ -173,11 +182,11 @@
       },
       "prep": {
         "title": "Preparação do trabalho",
-        "text": "Preparo o seu projeto para a execução: resumos de materiais e quantidades, documentos de fabrico por parceiro e planeamento de compras e prazos. Assim, todos sabem o que é necessário, quando e em que quantidade.",
+        "text": "Materiais, quantidades e prazos organizados para que cada parceiro saiba o que é preciso e quando.",
         "points": [
           "Resumos de materiais e quantidades",
-          "Documentos de fabrico por parceiro",
-          "Planeamento de compras e prazos"
+          "Documentação de produção por parceiro",
+          "Aprovisionamento e calendarização"
         ],
         "task": "Tarefa: ordenar materiais, quantidades e datas para a execução.",
         "result": "Resultado: resumos e documentos organizados por parceiro.",
@@ -186,11 +195,11 @@
       },
       "control": {
         "title": "Controlo de projeto",
-        "text": "Mantenho o orçamento e o calendário claros, comparo propostas, articulo as especialidades e documento aprovações e alterações. As decisões ficam consigo; eu preparo-as para que possam ser tomadas depressa.",
+        "text": "Orçamento, prazos e especialidades sob controlo – decisões preparadas, alterações documentadas.",
         "points": [
-          "Resumos de orçamento e calendário",
-          "Comparação de propostas e coordenação de especialidades",
-          "Aprovações e documentação rastreável de alterações"
+          "Mapas de orçamento e prazos",
+          "Comparação de propostas",
+          "Aprovações e alterações"
         ],
         "task": "Tarefa: manter a visão global de custos, datas e acordos.",
         "result": "Resultado: resumos atualizados e decisões documentadas.",
@@ -198,12 +207,12 @@
         "link": "Ver a colaboração"
       },
       "concept": {
-        "title": "Conceção e apresentação",
-        "text": "Desenvolvo conceitos de stand e de espaço e elaboro visualizações e gráficos prontos para impressão. O âmbito e o número de rondas de correção são acordados previamente, para que esforço e resultado sejam previsíveis.",
+        "title": "Conceito e apresentação",
+        "text": "Conceitos de stands e espaços com visualizações que facilitam as decisões.",
         "points": [
-          "Conceitos de stand e de espaço",
-          "Visualizações para articulação e apresentação",
-          "Gráficos prontos para impressão com rondas de correção acordadas"
+          "Conceitos de stands e espaços",
+          "Visualizações",
+          "Grafismos prontos a imprimir"
         ],
         "task": "Tarefa: mostrar uma ideia para que você e os seus clientes possam decidir.",
         "result": "Resultado: conceito, visualizações e dados de impressão no âmbito acordado.",
@@ -212,11 +221,11 @@
       },
       "reuse": {
         "title": "Planeamento de reutilização",
-        "text": "Registo os elementos existentes, planeio variantes para novas utilizações e mantenho a informação de materiais e armazenamento. Assim pode reutilizar o que já tem, em vez de planear de raiz de cada vez.",
+        "text": "Registar os componentes existentes e planeá-los para novas utilizações, em vez de construir tudo de novo.",
         "points": [
-          "Levantamento de elementos existentes",
-          "Planeamento de variantes para novas utilizações",
-          "Informação de materiais e armazenamento"
+          "Levantamento do inventário",
+          "Planeamento de variantes",
+          "Informação de materiais e armazém"
         ],
         "task": "Tarefa: registar elementos existentes e torná-los utilizáveis em novas montagens.",
         "result": "Resultado: lista de inventário, variantes e informação de armazenamento.",
@@ -233,9 +242,9 @@
     }
   },
   "gallery": {
-    "eyebrow": "Galeria de conceitos · novo todos os dias",
+    "eyebrow": "Atlas de projetos · novo todos os dias",
     "title": "Todos os dias um novo conceito.",
-    "lead": "Estão visíveis {count} de {total} conceitos de stands, de {min} a {max}. Todas as manhãs às 5:00 junta-se mais um. Todas as imagens são visualizações de conceitos. Folheie, filtre, guarde e peça diretamente.",
+    "lead": "{count} de {total} conceitos de stands de {min} a {max} – todas as manhãs às 5:00 é acrescentado um novo. Todas as imagens são visualizações.",
     "slider": "Controlo deslizante",
     "grid": "Grelha",
     "viewMode": "Vista",
@@ -243,7 +252,7 @@
     "dayPick": "Conceito do dia",
     "hint": "Arraste, desloque ou use as setas",
     "hintTouch": "Deslize para o lado",
-    "count": "{count} de {total}",
+    "count": "{count} de {total} projetos",
     "empty": "Nenhum conceito corresponde a estes filtros.",
     "reset": "Repor filtros",
     "filters": "Filtros",
@@ -271,21 +280,29 @@
     "atlas": {
       "name": "Atlas",
       "role": "Atlas de projetos",
-      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
-      "cursor": "Drag",
+      "label": "Atlas de projetos: parede arrastável com todos os projetos. As setas movem-na, Enter abre o projeto em foco.",
+      "cursor": "Arrastar",
       "focus": "Em foco",
       "save": "Guardar",
       "open": "Ver projeto",
-      "left": "Design to the left",
-      "right": "Design to the right",
-      "up": "Design above",
-      "down": "Design below",
-      "hint": "Arraste ou use as setas · clique numa imagem para a focar · clique no foco para a abrir",
-      "hintTouch": "Deslize lateralmente · toque numa imagem para a focar · toque de novo para a abrir"
+      "left": "Projeto à esquerda",
+      "right": "Projeto à direita",
+      "up": "Projeto acima",
+      "down": "Projeto abaixo",
+      "hint": "Arraste ou use as setas · clique numa imagem para a pôr em foco · clique no foco para a abrir",
+      "hintTouch": "Deslize para o lado · toque numa imagem para a pôr em foco · toque de novo para a abrir"
     },
     "search": "Pesquisar projetos",
-    "searchPlaceholder": "Nome, número ou tamanho",
-    "loadMore": "Carregar mais projetos ({shown}/{total})"
+    "searchPlaceholder": "Nome, número ou dimensão",
+    "loadMore": "Carregar mais projetos ({shown}/{total})",
+    "searchExamples": [
+      "Lamello",
+      "madeira",
+      "6 × 4 m",
+      "dois pisos",
+      "vegetação",
+      "luz"
+    ]
   },
   "detail": {
     "facts": "Dados",
@@ -327,7 +344,7 @@
     "imageOf": "Imagem {current} de {total}",
     "description": "Descrição",
     "placeholderImage": "Imagem em breve",
-    "conceptNote": "Conceito de design. A imagem é uma visualização e não mostra um stand construído.",
+    "conceptNote": "Projeto conceptual. As imagens são visualizações, não um stand construído.",
     "imageAlt": "{title}: {label} (visualização)",
     "planAlt": "{title}: {label} (planta do conceito)",
     "clipAlt": "{title}: animação concetual da montagem (visualização)"
@@ -338,41 +355,43 @@
     "steps": {
       "briefing": {
         "title": "Briefing e âmbito",
-        "text": "Tarefa, prazo, documentos disponíveis e resultados pretendidos. Definimos o que entrego, quantas rondas de correção estão previstas e quem aprova.",
+        "text": "Clarificar a tarefa, o prazo e os documentos existentes. Definimos o que entrego, quantas rondas de revisão estão previstas e quem aprova.",
         "alt": "Animação de esboços para o briefing (visualização)"
       },
       "concept": {
-        "title": "Conceito e articulação",
-        "text": "Ideia espacial, visualizações, planta e alçados. Vê o espaço de várias perspetivas e decide com calma antes de se entrar no pormenor técnico.",
+        "title": "Conceito e coordenação",
+        "text": "Ideia espacial, visualizações, planta e alçados: decide com base clara antes de começar o planeamento de pormenor.",
         "alt": "Animação concetual do projeto (visualização)"
       },
       "planning": {
         "title": "Planeamento técnico",
-        "text": "Desenhos de pormenor e de fabrico cotados, listas de peças e documentos de interface. Parceiros especializados qualificados tratam do cálculo estrutural, das licenças e do projeto elétrico; eu articulo as interfaces.",
+        "text": "Desenhos de pormenor e de produção cotados, listas de peças e interfaces. O cálculo estrutural, as licenças e o projeto elétrico são assegurados por parceiros especializados.",
         "alt": "Animação do planeamento técnico (visualização)"
       },
       "production": {
-        "title": "Preparação do trabalho e documentos de fabrico",
-        "text": "Resumos de materiais e quantidades e documentos para cada parceiro de fabrico, além de planeamento de compras e prazos. O fabrico faz-se na empresa especializada, não em mim.",
+        "title": "Preparação do trabalho",
+        "text": "Resumos de materiais e quantidades, documentação por parceiro de produção, aprovisionamento e calendarização. A produção decorre na empresa especializada.",
         "alt": "Animação de uma maquinação CNC como exemplo de dados de fabrico (visualização); o fabrico é realizado pelo parceiro especializado"
       },
       "logistics": {
         "title": "Coordenação das especialidades",
-        "text": "Visão do calendário, comparação de propostas e articulação entre especialidades, para que transporte, montagem e técnica encaixem. Os seus parceiros especializados executam o trabalho.",
+        "text": "Calendário, comparação de propostas e coordenação para que transporte, montagem e técnica encaixem.",
         "alt": "Animação concetual em time-lapse da montagem (visualização)"
       },
       "onsite": {
-        "title": "Aprovações, alterações e entrega",
-        "text": "Documento aprovações e alterações de forma rastreável e, no fim, entrego-lhe todos os documentos. São possíveis reuniões no local se acordadas previamente.",
+        "title": "Aprovações e entrega",
+        "text": "Aprovações e alterações ficam documentadas e toda a documentação é entregue completa. Reuniões no local mediante acordo.",
         "alt": "Animação concetual da entrega (visualização)"
       }
     },
-    "sketch": "Esboço"
+    "sketch": "Esboço",
+    "lead": "Passos claros, um contacto fixo e aprovações documentadas tornam cada projeto rastreável.",
+    "note": "Os filmes ilustram etapas de trabalho individuais (visualizações). Não mostram a montagem de um stand específico."
   },
   "world": {
     "eyebrow": "Calendário de feiras",
     "title": "Feiras na Alemanha e na Europa.",
-    "lead": "Uma visão geral de datas de feiras na Alemanha e na Europa como orientação para o planeamento do seu projeto. Escolha uma cidade e o globo mostra o local e a distância em linha reta desde Leipzig. Uma data no calendário nada diz sobre encomendas ou participação da CL Projektwerk.",
+    "lead": "Escolha uma cidade – o globo mostra a sua localização e a distância em linha reta a partir de Leipzig.",
     "placeholderNote": "Locais de exemplo",
     "listLabel": "Cidades de feiras",
     "drag": "Rodar o globo",
@@ -470,8 +489,8 @@
     "eyebrow": "Sobre mim",
     "name": "Christof Laufersweiler",
     "role": "Planeamento e controlo de projeto para stands de feira, espaços de marca e acabamentos interiores",
-    "text": "Sou Christof Laufersweiler e trabalho há mais de 20 anos no setor de feiras e eventos. Formei-me como desenhador técnico na área da tecnologia da madeira; mais tarde juntaram-se a direção de projetos de stands, a gerência por conta de outrem de uma empresa de construção de stands e um certificado IHK como gestor de projetos de feiras e eventos. Com a CL Projektwerk ofereço em Leipzig capacidade externa de planeamento e projeto a construtores de stands, agências, empresas de acabamentos e expositores que precisam de mãos extra com conhecimento técnico.",
-    "close": "As decisões ficam consigo. Eu trato dos documentos, da visão global e da coordenação.",
+    "text": "Trabalho há mais de 20 anos no setor de feiras e eventos – como desenhador técnico (tecnologia da madeira), gestor de projetos na construção de stands, diretor-geral assalariado de uma empresa de stands e, mais recentemente, como Senior Project Manager na C3 EXPO GmbH (11/2025 – 10/2026). Com a CL Projektwerk ofereço, a partir de Leipzig, capacidade externa de planeamento e gestão de projetos a construtores de stands, agências, empresas de interiores e expositores.",
+    "close": "As decisões são suas. Eu trato da documentação, da visão de conjunto e da coordenação.",
     "photoAlt": "Retrato de Christof Laufersweiler, fundador da CL Projektwerk",
     "cta": "Falar de um projeto comigo",
     "career": "Percurso",
@@ -658,7 +677,7 @@
   "contact": {
     "eyebrow": "Falar sobre um projeto",
     "title": "Conte-me o seu projeto.",
-    "lead": "Quatro passos curtos, poucos campos obrigatórios. A pedido, anexo os conceitos guardados da galeria.",
+    "lead": "Quatro passos curtos, poucos campos obrigatórios. Posso anexar os projetos que guardou.",
     "response": "Respondo, em regra, dentro de {time}.",
     "steps": {
       "fair": "Projeto",
@@ -778,7 +797,7 @@
     "imprint": "Aviso legal",
     "privacy": "Privacidade",
     "cookies": "Definições de cookies",
-    "note": "Todas as imagens e animações deste site são visualizações de conceitos de design. Não mostram stands construídos.",
+    "note": "Todos os renders e animações deste site são visualizações de conceitos, não stands construídos.",
     "top": "Para o topo",
     "languages": "Idiomas",
     "tagline": "Gabinete externo de planeamento e projeto para stands de feira, espaços de marca e acabamentos interiores"
@@ -808,7 +827,7 @@
   },
   "notFound": {
     "title": "Esta página não existe.",
-    "text": "Talvez encontre na galeria de conceitos o que procura.",
+    "text": "Talvez encontre o que procura no atlas de projetos.",
     "home": "Para o início",
     "designs": "Para a galeria"
   },
@@ -821,14 +840,21 @@
     "preview": "Pré-visualização: {name}",
     "hint": "As setas mudam o layout, Esc fecha a seleção.",
     "saved": "A sua escolha é guardada neste dispositivo.",
-    "monoShowColour": "Mostrar cores originais",
-    "monoHideColour": "Mostrar a preto e branco",
     "items": {
       "studio": "Antracite e laranja, linhas claras, preciso como um atelier de planeamento",
-      "aurora": "Superfícies escuras com menta e violeta, letra serifada, movimentos suaves de luz",
-      "tide": "Petróleo e coral, letra expressiva, ondas fluidas",
-      "mono": "Estritamente preto e branco, forte contraste, formas geométricas",
-      "wood": "Nogueira, carvalho e creme, tipografia serifada e lamelas – acolhedor como um stand em madeira"
+      "wood": "Nogueira, carvalho e creme, tipografia fina e lamelas – acolhedor como um stand de madeira",
+      "lumen": "Azul gelo, prata e vidro, tipografia limpa – retroiluminado como uma parede de luz",
+      "atrium": "Espresso, champanhe e creme, tipografia gótica fina – luz quente como um stand redondo em latão",
+      "copper": "Preto aço e cobre, maiúsculas espaçadas – como uma estrutura de aço com telhado de cobre dobrado",
+      "violet": "Preto e violeta, grotesca muito leve – com linhas LED luminosas",
+      "canopy": "Verde folha, vime e pedra, tipografia leve – com treliça de madeira e plantas"
+    },
+    "films": {
+      "lumen": "Hero: time-lapse do stand CL luminoso",
+      "atrium": "Hero: time-lapse do stand CL com galeria redonda",
+      "copper": "Hero: time-lapse do stand CL com telhado de cobre",
+      "violet": "Hero: time-lapse do stand CL com linhas LED",
+      "canopy": "Hero: time-lapse do stand CL com treliça de madeira e vegetação"
     }
   },
   "radio": {
@@ -873,9 +899,9 @@
     "home": "Para o início"
   },
   "seo": {
-    "eyebrow": "Planeamento técnico de feiras",
-    "title": "Planeamento técnico, preparação do trabalho e controlo de projeto para stands de feira e acabamentos interiores.",
-    "intro": "A CL Projektwerk é um gabinete externo de planeamento e projeto em Leipzig. Apoio construtores de stands, agências, empresas de acabamentos e expositores de média dimensão no planeamento de stands: com documentos de fabrico cotados, preparação do trabalho, controlo externo de projeto, conceitos e planeamento de reutilização. A execução cabe a parceiros especializados; eu forneço planeamento e coordenação.",
+    "eyebrow": "Perguntas frequentes",
+    "title": "Perguntas sobre a colaboração.",
+    "intro": "A CL Projektwerk é um gabinete externo de planeamento e gestão de projetos em Leipzig para planeamento técnico de stands, preparação do trabalho e gestão de projetos. Parceiros especializados executam os trabalhos; eu forneço o planeamento e a coordenação.",
     "blocks": [
       {
         "title": "Planeamento técnico de feiras",
@@ -898,33 +924,29 @@
     "faq": [
       {
         "q": "Quanto custa a colaboração?",
-        "a": "Depende do âmbito, dos resultados e dos prazos. Após um breve briefing recebe um orçamento individual para o projeto ou para um contingente mensal."
+        "a": "Depende do âmbito, dos entregáveis e dos prazos. Após um breve briefing recebe uma proposta – para um projeto ou um contingente mensal."
       },
       {
-        "q": "Quando devo contactar?",
-        "a": "O melhor é logo que a tarefa e o prazo estejam definidos, porque a minha capacidade mensal de planeamento é limitada. Os pedidos de última hora avalio-os em função da carga atual."
+        "q": "Quando devo entrar em contacto?",
+        "a": "Assim que a tarefa e o prazo estiverem definidos. A minha capacidade é limitada; avalio pedidos urgentes conforme a carga de trabalho atual."
       },
       {
-        "q": "Posso contratar apenas um serviço?",
-        "a": "Sim. Planeamento técnico, preparação do trabalho, controlo de projeto, conceção e apresentação ou planeamento de reutilização podem ser contratados separadamente."
+        "q": "Posso contratar serviços individuais?",
+        "a": "Sim. Planeamento técnico, preparação do trabalho, gestão de projetos, conceito ou planeamento de reutilização podem ser contratados separadamente."
       },
       {
-        "q": "Também fabrica e monta?",
-        "a": "Não. Parceiros especializados qualificados realizam fabrico, transporte, montagem, cálculo estrutural, licenças e trabalhos elétricos. Os serviços maiores contrata-os normalmente diretamente; eu planeio e coordeno."
+        "q": "Também produzem e montam?",
+        "a": "Não. Parceiros especializados tratam da produção, transporte, montagem, cálculo estrutural, licenças e eletricidade – normalmente contratados diretamente por si. Eu planeio e coordeno."
       },
       {
-        "q": "São possíveis reuniões no local ou deslocações?",
-        "a": "O planeamento é feito sobretudo a partir de Leipzig. Reuniões no local e deslocações combinam-se previamente; serviços adicionais são acordados em separado."
-      },
-      {
-        "q": "Oferece web design ou automação?",
-        "a": "Não fazem parte dos meus serviços principais. O meu foco é o planeamento e o controlo de projetos de stands de feira, espaços de marca e acabamentos interiores."
+        "q": "São possíveis reuniões no local?",
+        "a": "O planeamento é feito sobretudo a partir de Leipzig. Reuniões no local e deslocações são combinadas antecipadamente."
       }
     ]
   },
   "lang": {
     "title": "Escolher idioma",
-    "hint": "Arraste, deslize ou rode com as setas",
+    "hint": "Deslize, arraste ou use as setas · Enter seleciona",
     "current": "atual",
     "prev": "Idioma anterior",
     "next": "Idioma seguinte",
@@ -960,5 +982,24 @@
   },
   "ogImage": {
     "film": "▶ Animação concetual"
+  },
+  "fairs": {
+    "eyebrow": "Feiras",
+    "title": "Calendário de feiras e recintos.",
+    "lead": "As próximas feiras na Alemanha e na Europa e 50 recintos de exposições num relance – como orientação para o planeamento dos seus projetos. As entradas nada dizem sobre encomendas ou participação da CL Projektwerk.",
+    "teaserTitle": "Próximas feiras.",
+    "teaserLead": "As próximas datas na Alemanha e na Europa. O calendário completo com globo e 50 recintos de exposições está na página de feiras.",
+    "teaserCta": "Ver o calendário de feiras",
+    "teaserLabel": "Próximas datas de feiras",
+    "teaserRunning": "A decorrer",
+    "teaserNote": "Orientação para o planeamento de projetos – as entradas nada dizem sobre encomendas ou participação da CL Projektwerk."
+  },
+  "hobbies": {
+    "eyebrow": "Passatempos",
+    "title": "Esqui e montanha.",
+    "lead": "Para equilibrar o trabalho de planeamento, gosto de andar de esqui – na pista e em neve fresca.",
+    "videoLabel": "Vídeo de esqui {n}",
+    "play": "Reproduzir vídeo",
+    "pause": "Pausar vídeo"
   }
 }

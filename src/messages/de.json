@@ -49,7 +49,8 @@
     "selection": "Meine Auswahl",
     "home": "Startseite",
     "main": "Hauptnavigation",
-    "fairs": "Messen"
+    "fairs": "Messen",
+    "hobbies": "Hobbys"
   },
   "hero": {
     "eyebrow": "Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
@@ -81,7 +82,7 @@
     ]
   },
   "services": {
-    "eyebrow": "Leistungen",
+    "eyebrow": "Leistungen & Zusammenarbeit",
     "title": "Planungskapazität, wenn Projekte parallel laufen.",
     "lead": "Als externer Planer übernehme ich klar abgegrenzte Teile Ihres Projekts – mit über 20 Jahren Erfahrung im Messebau. Fertigung, Montage, Statik und Elektro erbringen qualifizierte Fachpartner.",
     "trust": [
@@ -768,14 +769,21 @@
     "preview": "Vorschau: {name}",
     "hint": "Pfeiltasten wechseln das Layout, Escape schließt die Auswahl.",
     "saved": "Ihre Auswahl wird auf diesem Gerät gespeichert.",
-    "monoShowColour": "Originalfarben anzeigen",
-    "monoHideColour": "Schwarz-Weiß anzeigen",
     "items": {
       "studio": "Anthrazit und Orange, klare Linien – präzise wie ein Planungsatelier",
-      "aurora": "Dunkle Flächen mit Mint und Violett, Serifenschrift, weiche Lichtbewegungen",
-      "tide": "Petrol und Koralle, ausdrucksstarke Schrift, fließende Wellen",
-      "mono": "Konsequent Schwarz und Weiß, starke Kontraste, geometrische Formen",
-      "wood": "Walnuss, Eiche und Creme, Serifenschrift und Lamellen – warm wie ein Holzstand"
+      "wood": "Walnuss, Eiche und Creme, filigrane Schrift und Lamellen – warm wie ein Holzstand",
+      "lumen": "Eisblau, Silber und Glas, klare Schrift – hell hinterleuchtet wie eine Lichtwand",
+      "atrium": "Espresso, Champagner und Creme, schlanke Gothic-Schrift – warm beleuchtet wie ein Rundstand mit Messing",
+      "copper": "Stahlschwarz und Kupfer, gesperrte Versalien – wie ein Stahlgerüst mit gefaltetem Kupferdach",
+      "violet": "Schwarz und Violett, sehr leichte Grotesk – mit leuchtenden LED-Linien",
+      "canopy": "Blattgrün, Rattan und Stein, leichte Schrift – mit Holzgitter und Pflanzen"
+    },
+    "films": {
+      "lumen": "Hero: Zeitraffer des hellen CL-Stands",
+      "atrium": "Hero: Zeitraffer CL-Stand mit Rundgalerie",
+      "copper": "Hero: Zeitraffer CL-Stand mit Kupferdach",
+      "violet": "Hero: Zeitraffer CL-Stand mit LED-Linien",
+      "canopy": "Hero: Zeitraffer CL-Stand mit Holzgitter und Grün"
     }
   },
   "radio": {
@@ -848,7 +856,7 @@
   },
   "lang": {
     "title": "Sprache wählen",
-    "hint": "Ziehen, wischen oder mit den Pfeiltasten drehen",
+    "hint": "Scrollen, ziehen oder Pfeiltasten · Enter wählt",
     "current": "aktuell",
     "prev": "Vorherige Sprache",
     "next": "Nächste Sprache",
@@ -888,6 +896,20 @@
   "fairs": {
     "eyebrow": "Messen",
     "title": "Messekalender und Messegelände.",
-    "lead": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung. Die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus."
+    "lead": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung. Die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus.",
+    "teaserTitle": "Die nächsten Messen.",
+    "teaserLead": "Die nächsten Termine in Deutschland und Europa. Den vollständigen Kalender mit Globus und 50 Messegeländen finden Sie auf der Messeseite.",
+    "teaserCta": "Zum Messekalender",
+    "teaserLabel": "Nächste Messetermine",
+    "teaserRunning": "Läuft",
+    "teaserNote": "Orientierung für die Projektplanung – die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus."
+  },
+  "hobbies": {
+    "eyebrow": "Hobbys",
+    "title": "Ski und Berge.",
+    "lead": "Zum Ausgleich bin ich gern auf Skiern unterwegs – auf der Piste und im Tiefschnee.",
+    "videoLabel": "Skivideo {n}",
+    "play": "Video abspielen",
+    "pause": "Video anhalten"
   }
 }

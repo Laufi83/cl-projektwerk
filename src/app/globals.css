@@ -255,27 +255,9 @@ html[data-cursor="on"] select { cursor: pointer; }
 @media (max-width: 767px) { .fair-card__body { width: min(14.5rem, 66vw); padding: .7rem .8rem .8rem; } }
 @media (prefers-reduced-motion: reduce) { .fair-card__body, .fair-card__line { transition: none; filter: none; } .fair-card__body::after { display: none; } }
 
-/* ---------- Sprachwahl: 3D-Karussell ---------- */
-.lang-stage { perspective: 1500px; perspective-origin: 50% 35%; transform: rotateX(16deg) scale(.82); opacity: 0; transition: transform 1100ms var(--ease-out-expo), opacity 700ms var(--ease-fluid); }
-.lang-stage--in { transform: none; opacity: 1; }
-.lang-ring { --r: 470px; width: 0; height: 0; transform-style: preserve-3d; will-change: transform; }
-.lang-card { position: absolute; left: -4.75rem; top: -6.25rem; width: 9.5rem; padding: .85rem .75rem 1rem; border-radius: 1.25rem; text-align: center;
-  background: linear-gradient(160deg, color-mix(in oklab, var(--bg-raised) 94%, transparent), color-mix(in oklab, var(--bg) 86%, transparent));
-  border: 1px solid var(--line); box-shadow: 0 30px 60px -30px rgb(0 0 0 / .9), inset 0 1px 0 rgb(255 255 255 / .05);
-  backface-visibility: hidden; -webkit-backface-visibility: hidden; transition: border-color 500ms var(--ease-fluid), box-shadow 500ms var(--ease-fluid); }
-.lang-card[data-front="1"] { border-color: color-mix(in oklab, var(--accent) 65%, transparent); box-shadow: 0 30px 70px -30px rgb(0 0 0 / .9), 0 0 60px -14px var(--accent); }
-.lang-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.lang-card[aria-checked="true"]::after { content: ""; position: absolute; top: .55rem; right: .55rem; width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
-.lang-flag { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .6rem; box-shadow: 0 12px 28px -12px rgb(0 0 0 / .85); transform-origin: left center; }
-/* Flagge der vorderen Karte weht leicht */
-.lang-card[data-front="1"] .lang-flag { animation: flag-wave 3.2s ease-in-out infinite; }
-@keyframes flag-wave { 0%, 100% { transform: perspective(320px) rotateY(0deg) skewY(0deg); } 50% { transform: perspective(320px) rotateY(-12deg) skewY(-1.5deg); } }
-@media (max-width: 640px) {
-  .lang-ring { --r: 330px; }
-  .lang-stage { perspective: 1000px; }
-  .lang-card { width: 7rem; left: -3.5rem; top: -5.25rem; padding: .7rem .6rem .8rem; }
-}
-@media (prefers-reduced-motion: reduce) { .lang-stage { transition: none; transform: none; opacity: 1; } .lang-card[data-front="1"] .lang-flag { animation: none; } }
+/* ---------- Sprachwahl: kleines Menü mit Circular Split Roll (components/shell/LanguageCarousel) ---------- */
+.lang-roll-name { transition: color .3s; }
+.lang-roll-name[tabindex="0"] { text-shadow: 0 0 22px color-mix(in oklab, var(--accent) 45%, transparent); }
 
 /* ---------- Rechts-nach-links-Sprachen (Arabisch) ----------
    Das Layout bleibt stabil (dir="ltr"); jeder Textblock bestimmt seine Richtung selbst:

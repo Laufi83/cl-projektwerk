@@ -69,30 +69,52 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
       near: p > 0.3,
     }),
   },
-  // 03 Aurora – Lupe: Buchstaben wachsen unter dem Zeiger
-  loupe: {
+  // 03 Lumen – Buchstaben leuchten wie hinterleuchtete Paneele auf und heben sich leicht
+  glow: {
     radius: 140,
-    fx: ({ p, h }) => ({
-      transform: `translateY(${-h * 0.08 * p}px) scale(${1 + 0.55 * p * p})`,
-      near: p > 0.35,
-    }),
-  },
-  // 04 Tide – Schriftgewicht und -breite schwellen an (variable Achsen)
-  weight: {
-    radius: 150,
     fx: ({ p }) => ({
-      fvs: `"wght" ${Math.round(560 + 240 * p)}, "wdth" ${Math.round(78 + 22 * p)}, "opsz" 96`,
-      transform: `translateY(${-5 * p}px)`,
+      transform: `translateY(${(-6 * p).toFixed(1)}px) scale(${(1 + 0.04 * p).toFixed(3)})`,
+      textShadow: p > 0.05 ? `0 0 ${Math.round(4 + 22 * p)}px rgba(79,210,247,${(0.85 * p).toFixed(2)}), 0 0 ${Math.round(2 + 6 * p)}px rgba(233,251,255,${(0.6 * p).toFixed(2)})` : "",
       near: p > 0.3,
     }),
   },
-  // 05 Monochrom – präziser Linienversatz: Buchstabe hebt sich, darunter erscheint eine feine Linie
-  line: {
-    radius: 120,
-    fx: ({ p, h }) => ({
-      transform: `translateY(${-Math.min(h * 0.1, 8) * p}px)`,
-      textShadow: p > 0.05 ? `0 ${Math.round(3 + 3 * p)}px 0 rgba(255,255,255,${(0.55 * p).toFixed(2)})` : "",
-      near: p > 0.4,
+  // 04 Atrium – Goldschimmer: Buchstaben heben sich und fangen das warme Messinglicht
+  shimmer: {
+    radius: 140,
+    fx: ({ p, ux }) => ({
+      transform: `translateY(${(-5 * p).toFixed(1)}px)`,
+      textShadow: p > 0.05 ? `${(-ux * 3 * p).toFixed(1)}px 0 ${Math.round(8 + 16 * p)}px rgba(216,176,106,${(0.75 * p).toFixed(2)})` : "",
+      near: p > 0.3,
+    }),
+  },
+  // 05 Copper – Buchstaben klappen nach hinten wie das gefaltete Kupferdach
+  fold: {
+    radius: 130,
+    fx: ({ p }) => ({
+      transform: `perspective(320px) rotateX(${(48 * p).toFixed(1)}deg)`,
+      textShadow: p > 0.05 ? `0 ${(5 * p).toFixed(1)}px 0 rgba(208,122,67,${(0.7 * p).toFixed(2)})` : "",
+      near: p > 0.3,
+    }),
+  },
+  // 06 Violet – Neonlicht: violetter Schein, leicht flackernd
+  neon: {
+    radius: 140,
+    fx: ({ p, i, tick }) => {
+      const f = 0.72 + 0.28 * rand(i, tick % 7);
+      return {
+        transform: `translateY(${(-3 * p).toFixed(1)}px)`,
+        textShadow: p > 0.05 ? `0 0 ${Math.round(2 + 6 * p)}px rgba(233,230,247,${(0.7 * p).toFixed(2)}), 0 0 ${Math.round(10 + 26 * p)}px rgba(155,123,255,${(0.95 * p * f).toFixed(2)})` : "",
+        opacity: p > 0.25 ? f.toFixed(2) : "",
+        near: p > 0.3,
+      };
+    },
+  },
+  // 07 Canopy – Buchstaben wiegen sich wie Blätter zur Seite
+  sway: {
+    radius: 140,
+    fx: ({ p, ux }) => ({
+      transform: `rotate(${(ux * 14 * p).toFixed(1)}deg) translateY(${(-4 * p).toFixed(1)}px)`,
+      near: p > 0.3,
     }),
   },
 };

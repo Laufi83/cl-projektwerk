@@ -1,0 +1,16 @@
+{
+  "id": "atrium",
+  "source": "Zeitraffer CL-Stand (CL-02, 1992x1040, 10 s), Layout atrium",
+  "desktop": {
+    "count": 84,
+    "width": 1280,
+    "height": 720,
+    "bytes": 5929804
+  },
+  "mobile": {
+    "count": 60,
+    "width": 486,
+    "height": 864,
+    "bytes": 1651962
+  }
+}

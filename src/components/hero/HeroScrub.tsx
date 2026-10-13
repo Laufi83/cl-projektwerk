@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, Play } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { scrollToTarget } from "@/lib/scroll";
-import { designAsset, mediaUrl } from "@/lib/media";
+import { mediaUrl } from "@/lib/media";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
@@ -15,8 +15,12 @@ import { useLiteMode } from "@/lib/performance";
 gsap.registerPlugin(ScrollTrigger);
 
 type Seq = { count: number; width: number; height: number };
-/** Ein Aufbaufilm je Layout (Designs 001–005, 021), als Bildsequenz in public/hero/NNN/ */
-export type HeroFilm = { id: string; slug: string; title: string; desktop: Seq; mobile: Seq };
+/**
+ * Aufbaufilm des Heros als Bildsequenz in public/hero/<id>/ (Designs 001–004, „021“: Wood, „start“: Lumen).
+ * Layouts mit `sharedFilm` zeigen stattdessen das gemeinsame Scroll-Video (die Sequenz bleibt Ersatz, falls es fehlt).
+ * `label` steht vor dem Visualisierungshinweis (z. B. „021 Lamello“), `clip` spielt der Ersatz-Loop bei reduzierter Bewegung.
+ */
+export type HeroFilm = { id: string; label: string; clip: string; desktop: Seq; mobile: Seq };
 type Props = { films: HeroFilm[]; visNote: string };
 
 const FOCUS_X = 0.42; // Bildmitte des Stands in den Querformat-Frames (Hochformat-Frames sind schon zentriert)
@@ -44,8 +48,8 @@ export function HeroScrub({ films, visNote }: Props) {
   const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || lite || weak ? "fallback" : "scrub";
   const layout = useLayout();
   const cur = layoutById(layout);
-  const film = films.find((f) => f.id === cur.design) ?? films[0];
-  // Gemeinsames Scroll-Video nur für Layouts ohne eigenen Film (Wood zeigt seine eigene Sequenz)
+  const film = films.find((f) => f.id === cur.film) ?? films[0];
+  // Gemeinsames Scroll-Video nur für Layouts ohne eigenen Film (Wood und Lumen zeigen ihre eigene Sequenz)
   const shared = cur.sharedFilm;
   const useVideo = shared && customReady;
 
@@ -190,7 +194,11 @@ export function HeroScrub({ films, visNote }: Props) {
               style={{ objectPosition: "50% 50%" }}
             />
           )}
-          {mode === "fallback" && !lite && <FallbackLoop key={film.id} id={film.id} playLabel={tc("play")} />}
+          {mode === "fallback" && !lite && <FallbackLoop key={film.id} id={film.id} clip={film.clip} playLabel={tc("play")} />}
+          {/* Schonmodus (z. B. kleine Touch-Geräte): statt der leeren Halle das letzte Bild – der fertige Stand */}
+          {mode === "fallback" && lite && (
+            <img key={film.id + variant} src={`/hero/${film.id}/${variant}/${String((variant === "mobile" ? film.mobile : film.desktop).count).padStart(3, "0")}.webp`} alt="" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: variant === "mobile" ? "50% 50%" : `${FOCUS_X * 100}% 50%` }} />
+          )}
 
           {/* Lesbarkeit */}
           <div aria-hidden className="hero-shade absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/55" />
@@ -202,7 +210,7 @@ export function HeroScrub({ films, visNote }: Props) {
           <div className="container-x flex items-start justify-between gap-4">
             <p className="eyebrow line-clamp-2 max-w-[17rem] text-[0.65rem] md:line-clamp-none md:max-w-none md:text-xs">{t("eyebrow")}</p>
             <span className="vis-note hidden shrink-0 md:inline-flex">
-              {film.id} {film.title} · {visNote}
+              {film.label ? `${film.label} · ${visNote}` : visNote}
             </span>
           </div>
         </div>
@@ -214,7 +222,7 @@ export function HeroScrub({ films, visNote }: Props) {
               <span key={i} className="inline-block overflow-hidden pb-2 align-top">
                 <span
                   className="hero-big-word inline-block transition-all duration-[1100ms] ease-fluid"
-                  style={{ transform: done || mode === "fallback" ? "none" : "translateY(110%)", opacity: done || mode === "fallback" ? 1 : 0, transitionDelay: `${i * 70}ms` }}
+                  style={{ transform: done && mode !== "fallback" ? "none" : "translateY(110%)", opacity: done && mode !== "fallback" ? 1 : 0, transitionDelay: `${i * 70}ms` }}
                 >
                   {w}&nbsp;
                 </span>
@@ -265,13 +273,13 @@ export function HeroScrub({ films, visNote }: Props) {
 }
 
 /** Reduzierte Bewegung / schwache Verbindung: fertiger Stand + stummer Loop auf Wunsch */
-function FallbackLoop({ id, playLabel }: { id: string; playLabel: string }) {
+function FallbackLoop({ id, clip, playLabel }: { id: string; clip: string; playLabel: string }) {
   const [play, setPlay] = useState(false);
   return (
     <>
       <img src={`/hero/${id}/end.webp`} alt="" className="absolute inset-0 h-full w-full object-cover" style={{ objectPosition: `${FOCUS_X * 100}% 50%` }} />
       {play ? (
-        <video className="absolute inset-0 h-full w-full object-cover" src={designAsset(id, "clip.mp4")} poster={`/hero/${id}/end.webp`} muted loop playsInline autoPlay aria-hidden />
+        <video className="absolute inset-0 h-full w-full object-cover" src={clip} poster={`/hero/${id}/end.webp`} muted loop playsInline autoPlay aria-hidden />
       ) : (
         <button type="button" onClick={() => setPlay(true)} className="glass absolute right-[var(--gutter)] top-40 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold">
           <Play size={14} weight="fill" /> {playLabel}

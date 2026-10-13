@@ -1,16 +1,19 @@
 /**
- * Fünf Layouts (01 Studio, 02 Wood, 03 Aurora, 04 Tide, 05 Monochrom), umschaltbar über die Lasche links.
+ * Sieben Layouts (01 Studio, 02 Wood, 03 Lumen, 04 Atrium, 05 Copper, 06 Violet, 07 Canopy),
+ * umschaltbar über die Lasche am rechten Rand (Rollmenü wie die Sprachwahl).
  * Je Layout: Farben, Schriften, Hero-Anordnung (alles in src/app/layouts.css),
- * eigener Aufbaufilm im Hero und eigener Hover-Effekt der animierten Schriften.
- * sharedFilm: true = Hero zeigt das gemeinsame Scroll-Video (media/custom/homepage-scroll-build.mp4),
- * false = die eigene Bildsequenz des Layouts (Wood: Firefly-Zeitraffer von Entwurf 021).
+ * Aufbaufilm im Hero und eigener Hover-Effekt der animierten Schriften.
+ * film = Bildsequenz des Hero-Aufbaufilms in public/hero/<film>/ (auch Poster und Ersatzbild).
+ * sharedFilm: true = Hero zeigt das gemeinsame Scroll-Video (Studio) (media/custom/homepage-scroll-build.mp4),
+ * false = die eigene Bildsequenz (Wood: Entwurf 021 „Lamello“, Lumen: Firefly-Zeitraffer des hellen CL-Stands,
+ * Atrium, Copper, Violet, Canopy: Zeitraffer der CL-Stände CL-02 bis CL-05; Farben je Layout aus dem jeweiligen Film).
  */
 export const LAYOUTS = [
   {
     id: "studio",
     n: "01",
     name: "Studio",
-    design: "001",
+    film: "001",
     sharedFilm: true,
     theme: "#0a0a0b",
     swatch: "linear-gradient(135deg,#0a0a0b 50%,#f26a1b 50%)",
@@ -22,50 +25,79 @@ export const LAYOUTS = [
     id: "wood",
     n: "02",
     name: "Wood",
-    // Entwurf 021 „Lamello“: Aufbaufilm aus dem Firefly-Zeitraffer (public/hero/021)
-    design: "021",
+    // Entwurf 021 „Lamello“: eigener Aufbaufilm aus dem Firefly-Zeitraffer (public/hero/021)
+    film: "021",
     sharedFilm: false,
     theme: "#16100b",
     swatch: "linear-gradient(135deg,#16100b 45%,#c98d55 45% 72%,#efe3cf 72%)",
     effect: "slat",
-    font: "var(--font-fraunces)",
-    desc: { de: "Eiche, Walnuss & Creme · Lamellen drehen sich", en: "Oak, walnut & cream · turning slats" },
+    font: "var(--font-raleway)",
+    desc: { de: "Eiche, Walnuss & Creme · filigrane Schrift · Lamellen drehen sich", en: "Oak, walnut & cream · fine type · turning slats" },
   },
   {
-    id: "aurora",
+    id: "lumen",
     n: "03",
-    name: "Aurora",
-    design: "002",
-    sharedFilm: true,
-    theme: "#070b1d",
-    swatch: "linear-gradient(135deg,#070b1d 45%,#7cf5d4 45% 72%,#b69cff 72%)",
-    effect: "loupe",
-    font: "var(--font-instrument)",
-    desc: { de: "Mitternacht, Mint & Serif · Lupe", en: "Midnight, mint & serif · loupe" },
+    name: "Lumen",
+    // Eigener Aufbaufilm: Firefly-Zeitraffer des hellen CL-Stands mit hinterleuchteter Lichtwand (public/hero/lumen)
+    film: "lumen",
+    sharedFilm: false,
+    theme: "#060b12",
+    swatch: "linear-gradient(135deg,#060b12 45%,#4fd2f7 45% 72%,#e9eef2 72%)",
+    effect: "glow",
+    font: "var(--font-sora)",
+    desc: { de: "Eisblau, Silber & Glas · Buchstaben leuchten auf", en: "Ice blue, silver & glass · letters light up" },
   },
   {
-    id: "tide",
+    id: "atrium",
     n: "04",
-    name: "Tide",
-    design: "004",
-    sharedFilm: true,
-    theme: "#062a2c",
-    swatch: "linear-gradient(135deg,#062a2c 50%,#ff8f6b 50%)",
-    effect: "weight",
-    font: "var(--font-bricolage)",
-    desc: { de: "Petrol & Koralle · Schriftgewicht-Welle", en: "Petrol & coral · weight wave" },
+    name: "Atrium",
+    // Zeitraffer CL-02: runder, zweigeschossiger Stand in Creme mit Messing und warmem Lichtband (public/hero/atrium)
+    film: "atrium",
+    sharedFilm: false,
+    theme: "#14100a",
+    swatch: "linear-gradient(135deg,#14100a 45%,#d8b06a 45% 72%,#f1e7d6 72%)",
+    effect: "shimmer",
+    font: "var(--font-jost)",
+    desc: { de: "Espresso, Champagner & Creme · Goldschimmer", en: "Espresso, champagne & cream · golden shimmer" },
   },
   {
-    id: "mono",
+    id: "copper",
     n: "05",
-    name: "Monochrom",
-    design: "003",
-    sharedFilm: true,
-    theme: "#000000",
-    swatch: "linear-gradient(135deg,#000 50%,#fff 50%)",
-    effect: "line",
-    font: "var(--font-spacegrotesk)",
-    desc: { de: "Schwarz & Weiß · Linienversatz", en: "Black & white · line offset" },
+    name: "Copper",
+    // Zeitraffer CL-03: schwarzes Stahlgerüst mit gefaltetem Kupferdach (public/hero/copper)
+    film: "copper",
+    sharedFilm: false,
+    theme: "#0b0b0c",
+    swatch: "linear-gradient(135deg,#0b0b0c 45%,#d07a43 45% 72%,#5a5a5f 72%)",
+    effect: "fold",
+    font: "var(--font-josefin)",
+    desc: { de: "Stahlschwarz & Kupfer · Buchstaben falten sich", en: "Steel black & copper · folding letters" },
+  },
+  {
+    id: "violet",
+    n: "06",
+    name: "Violet",
+    // Zeitraffer CL-04: schwarzer Stand mit violetten LED-Linien und Lamellenturm (public/hero/violet)
+    film: "violet",
+    sharedFilm: false,
+    theme: "#09080e",
+    swatch: "linear-gradient(135deg,#09080e 45%,#9b7bff 45% 72%,#e9e6f7 72%)",
+    effect: "neon",
+    font: "var(--font-archivo)",
+    desc: { de: "Schwarz & Violett · Neonlicht flackert", en: "Black & violet · flickering neon" },
+  },
+  {
+    id: "canopy",
+    n: "07",
+    name: "Canopy",
+    // Zeitraffer CL-05: Holzgitter, Naturstein und viel Grün (public/hero/canopy)
+    film: "canopy",
+    sharedFilm: false,
+    theme: "#0d120d",
+    swatch: "linear-gradient(135deg,#0d120d 45%,#a9c97a 45% 72%,#c99a62 72%)",
+    effect: "sway",
+    font: "var(--font-mulish)",
+    desc: { de: "Blattgrün, Rattan & Stein · Buchstaben wiegen sich", en: "Leaf green, rattan & stone · swaying letters" },
   },
 ] as const;
 
@@ -89,5 +121,5 @@ export const HERO_PORTRAIT_QUERY = "(orientation: portrait)";
 export const layoutInitScript = `(function(){var d=document.documentElement,l=${JSON.stringify(DEFAULT_LAYOUT)};try{var v=localStorage.getItem(${JSON.stringify(LAYOUT_STORAGE_KEY)});if(${JSON.stringify(
   LAYOUTS.map((l) => l.id),
 )}.indexOf(v)>-1){d.setAttribute("data-layout",v);l=v;}}catch(e){}try{var m=${JSON.stringify(
-  Object.fromEntries(LAYOUTS.map((l) => [l.id, l.design])),
+  Object.fromEntries(LAYOUTS.map((l) => [l.id, l.film])),
 )};var k=document.createElement("link");k.rel="preload";k.as="image";k.setAttribute("fetchpriority","high");k.href="/hero/"+m[l]+"/poster-"+(matchMedia(${JSON.stringify(HERO_PORTRAIT_QUERY)}).matches?"mobile":"desktop")+".webp";document.head.appendChild(k);}catch(e){}})();`;

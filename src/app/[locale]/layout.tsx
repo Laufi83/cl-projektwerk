@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Bricolage_Grotesque, DM_Sans, Fraunces, Geist, Instrument_Serif, Inter_Tight, Mona_Sans, Space_Grotesk } from "next/font/google";
+import { Archivo, Bricolage_Grotesque, DM_Sans, Geist, Instrument_Serif, Inter_Tight, Josefin_Sans, Jost, Mona_Sans, Mulish, Raleway, Sora, Space_Grotesk } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -36,8 +36,14 @@ const interTight = Inter_Tight({ subsets: ["latin", "latin-ext"], variable: "--f
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin", "latin-ext"], variable: "--font-spacegrotesk", display: "swap", preload: false });
 const bricolage = Bricolage_Grotesque({ subsets: ["latin", "latin-ext"], axes: ["wdth", "opsz"], variable: "--font-bricolage", display: "swap", preload: false });
 const dmSans = DM_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-dmsans", display: "swap", preload: false });
-const fraunces = Fraunces({ subsets: ["latin", "latin-ext"], axes: ["opsz", "SOFT"], variable: "--font-fraunces", display: "swap", preload: false });
-const fontVars = [mona, geist, instrument, interTight, spaceGrotesk, bricolage, dmSans, fraunces].map((f) => f.variable).join(" ");
+const raleway = Raleway({ subsets: ["latin", "latin-ext"], variable: "--font-raleway", display: "swap", preload: false });
+const sora = Sora({ subsets: ["latin", "latin-ext"], variable: "--font-sora", display: "swap", preload: false });
+// 07–10: schlanke Grotesk- und Gothic-Schriften
+const jost = Jost({ subsets: ["latin", "latin-ext"], variable: "--font-jost", display: "swap", preload: false });
+const josefin = Josefin_Sans({ subsets: ["latin", "latin-ext"], variable: "--font-josefin", display: "swap", preload: false });
+const archivo = Archivo({ subsets: ["latin", "latin-ext"], variable: "--font-archivo", display: "swap", preload: false });
+const mulish = Mulish({ subsets: ["latin", "latin-ext"], variable: "--font-mulish", display: "swap", preload: false });
+const fontVars = [mona, geist, instrument, interTight, spaceGrotesk, bricolage, dmSans, raleway, sora, jost, josefin, archivo, mulish].map((f) => f.variable).join(" ");
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

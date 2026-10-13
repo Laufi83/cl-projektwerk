@@ -1,0 +1,16 @@
+{
+  "id": "copper",
+  "source": "Zeitraffer CL-Stand (CL-03, 1992x1040, 10 s), Layout copper",
+  "desktop": {
+    "count": 84,
+    "width": 1280,
+    "height": 720,
+    "bytes": 6683804
+  },
+  "mobile": {
+    "count": 60,
+    "width": 486,
+    "height": 864,
+    "bytes": 1874416
+  }
+}

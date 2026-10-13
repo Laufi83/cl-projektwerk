@@ -1,0 +1,16 @@
+{
+  "id": "canopy",
+  "source": "Zeitraffer CL-Stand (CL-05, 1992x1040, 10 s), Layout canopy",
+  "desktop": {
+    "count": 84,
+    "width": 1280,
+    "height": 720,
+    "bytes": 7184672
+  },
+  "mobile": {
+    "count": 60,
+    "width": 486,
+    "height": 864,
+    "bytes": 2067236
+  }
+}

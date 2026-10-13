@@ -1,0 +1,16 @@
+{
+  "id": "violet",
+  "source": "Zeitraffer CL-Stand (CL-04, 1992x1040, 10 s), Layout violet",
+  "desktop": {
+    "count": 84,
+    "width": 1280,
+    "height": 720,
+    "bytes": 7454974
+  },
+  "mobile": {
+    "count": 60,
+    "width": 486,
+    "height": 864,
+    "bytes": 2027048
+  }
+}

@@ -135,8 +135,8 @@ try {
   assert(!/drive\.google\.com/.test(documents), "Document links must not be published");
   checks.push("No employment references or certificates linked");
 
-  // Nur Deutsch und Englisch; frühere Sprachadressen leiten auf Englisch um
-  for (const [from, to] of [["/fr", "/en"], ["/ru/designs", "/en/designs"]]) {
+  // Nicht mehr angebotene Sprachen leiten auf Englisch um
+  for (const [from, to] of [["/nl", "/en"], ["/ru/designs", "/en/designs"]]) {
     const r = await fetch(base + from, { redirect: "manual", signal: AbortSignal.timeout(30000) });
     assert(r.status === 308 || r.status === 301, `${from}: expected permanent redirect, got ${r.status}`);
     assert.equal(new URL(r.headers.get("location"), base).pathname, to);
@@ -179,6 +179,14 @@ try {
     const response = await fetch(base + route, { headers: { Range: "bytes=0-1023" } });
     assert.equal(response.status, 206, route);
     assert.equal((await response.arrayBuffer()).byteLength, 1024, route);
+    checks.push(route);
+  }
+  // Eigene Hero-Aufbaufilme (Bildsequenzen) von Lumen und Wood muessen ausgeliefert werden
+  for (const route of ["/hero/lumen/poster-desktop.webp", "/hero/lumen/desktop/001.webp", "/hero/lumen/desktop/084.webp", "/hero/lumen/mobile/060.webp", "/hero/021/desktop/001.webp",
+    ...["atrium", "copper", "violet", "canopy"].flatMap((id) => [`/hero/${id}/poster-desktop.webp`, `/hero/${id}/poster-mobile.webp`, `/hero/${id}/desktop/084.webp`, `/hero/${id}/mobile/060.webp`, `/media/custom/${id}-aufbau.mp4`]),
+    "/media/hobby/ski-1.mp4", "/media/hobby/ski-2.mp4", "/media/hobby/ski-3.mp4"]) {
+    const response = await fetch(base + route, { signal: AbortSignal.timeout(10000) });
+    assert.equal(response.status, 200, route);
     checks.push(route);
   }
   // Beide kundenseitig gelieferten Videos muessen auch im Render-Standalone-Paket erreichbar sein.

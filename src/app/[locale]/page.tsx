@@ -1,10 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import hero001 from "../../../public/hero/001/hero.json";
-import hero002 from "../../../public/hero/002/hero.json";
-import hero003 from "../../../public/hero/003/hero.json";
-import hero004 from "../../../public/hero/004/hero.json";
-import hero005 from "../../../public/hero/005/hero.json";
 import hero021 from "../../../public/hero/021/hero.json";
+import heroLumen from "../../../public/hero/lumen/hero.json";
+import heroAtrium from "../../../public/hero/atrium/hero.json";
+import heroCopper from "../../../public/hero/copper/hero.json";
+import heroViolet from "../../../public/hero/violet/hero.json";
+import heroCanopy from "../../../public/hero/canopy/hero.json";
 import { getDesigns, getGalleryItems, getMediaDesign, releaseInfo, sizeRange } from "@/lib/designs";
 import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
@@ -15,6 +16,8 @@ import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
 import { About } from "@/components/sections/About";
 import { SeoSection } from "@/components/sections/SeoSection";
+import { FairsTeaser } from "@/components/sections/FairsTeaser";
+import { Hobbies } from "@/components/sections/Hobbies";
 import { InquiryForm } from "@/components/contact/InquiryForm";
 import { ContactAside } from "@/components/contact/ContactAside";
 import { Link } from "@/i18n/navigation";
@@ -24,8 +27,8 @@ import { DailyDrop } from "@/components/gallery/DailyDrop";
 import { pick } from "@/i18n/locales";
 
 /**
- * Startseite: Hero-Film, Leistungen, Leitsatz, Entwürfe, Zusammenarbeit, Über mich, Fragen, Kontakt.
- * Messekalender und Messegelände liegen auf der eigenen Seite /messen.
+ * Startseite: Hero-Film, Leitsatz, Leistungen & Zusammenarbeit, Entwürfe, Messen (nächste Termine),
+ * Über mich, Hobbys, Fragen, Kontakt. Der vollständige Messekalender mit Messegeländen liegt auf /messen.
  * Jeden Morgen um 5:00 Uhr kommt ein Design dazu (lib/release.ts): Seite alle 5 Minuten erneuern.
  */
 export const revalidate = 300;
@@ -47,11 +50,16 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     srcSet: `${designAsset(d.id, `${base}-640.webp`)} 640w, ${designAsset(d.id, `${base}-1280.webp`)} 1280w`,
   });
   const d1 = getMediaDesign("001") ?? designs[0];
-  // Je Layout ein eigener Aufbaufilm im Hero (Designs 001–005 und 021 für Wood, siehe config/layouts.ts)
-  const heroFilms: HeroFilm[] = [hero001, hero002, hero003, hero004, hero005, hero021].map((h) => {
-    const d = getMediaDesign(h.id) ?? d1;
-    return { id: h.id, slug: d.slug, title: d.title, desktop: h.desktop, mobile: h.mobile };
-  });
+  // Hero-Aufbaufilme je Layout (config/layouts.ts): Entwürfe 001 (Studio, Ersatzbild) und 021 (Wood), dazu Zeitraffer der CL-Stände ohne Entwurfsbezug
+  const heroFilms: HeroFilm[] = [
+    ...[hero001, hero021].map((h) => {
+      const d = getMediaDesign(h.id) ?? d1;
+      return { id: h.id, label: `${h.id} ${d.title}`, clip: designAsset(h.id, "clip.mp4"), desktop: h.desktop, mobile: h.mobile };
+    }),
+    ...[heroLumen, heroAtrium, heroCopper, heroViolet, heroCanopy].map((h) => ({
+      id: h.id, label: "", clip: mediaUrl(`custom/${h.id}-aufbau.mp4`), desktop: h.desktop, mobile: h.mobile,
+    })),
+  ];
 
   const processImages = [
           {
@@ -93,6 +101,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroScrub films={heroFilms} visNote={note} />
 
+      <StompTagline text={t("tagline.text")} beats={t.raw("tagline.stomp") as string[]} />
+
+      {/* Leistungen und Zusammenarbeit (sechs Schritte) als ein Abschnitt */}
       <Services
         media={{
           // Bilder aus Designs ohne Fremdlogos
@@ -103,9 +114,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           reuse: img(designs.find((d) => d.id === "022") ?? designs[1]),
         }}
         visNote={note}
-      />
-
-      <StompTagline text={t("tagline.text")} beats={t.raw("tagline.stomp") as string[]} />
+      >
+        <Process images={processImages} visNote={note} embedded />
+      </Services>
 
       <section id="designs" aria-labelledby="gallery-title" className="relative scroll-mt-4 py-24 md:py-32">
         <div className="container-x mb-10 flex flex-wrap items-end justify-between gap-6">
@@ -138,8 +149,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
-      <Process images={processImages} visNote={note} />
+      <FairsTeaser locale={locale} />
       <About />
+      <Hobbies
+        videos={[
+          { src: mediaUrl("hobby/ski-3.mp4"), poster: mediaUrl("hobby/ski-3-poster.webp") },
+          { src: mediaUrl("hobby/ski-1.mp4"), poster: mediaUrl("hobby/ski-1-poster.webp"), portrait: true },
+          { src: mediaUrl("hobby/ski-2.mp4"), poster: mediaUrl("hobby/ski-2-poster.webp"), portrait: true },
+        ]}
+      />
       <SeoSection />
 
       <section id="kontakt" aria-labelledby="contact-title" className="relative scroll-mt-24 py-24 md:py-32">

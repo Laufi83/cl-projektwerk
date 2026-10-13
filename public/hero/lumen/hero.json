@@ -1,0 +1,16 @@
+{
+  "id": "lumen",
+  "source": "Firefly-Zeitraffer heller CL-Stand mit Lichtwand (1920x1080, 8 s), Layout 06 Lumen",
+  "desktop": {
+    "count": 84,
+    "width": 1280,
+    "height": 720,
+    "bytes": 10745132
+  },
+  "mobile": {
+    "count": 60,
+    "width": 486,
+    "height": 863,
+    "bytes": 2711458
+  }
+}

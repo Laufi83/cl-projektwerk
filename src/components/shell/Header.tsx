@@ -14,12 +14,13 @@ import { Kinetic } from "@/components/kinetic/Kinetic";
 const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
-  { id: "ablauf", key: "process" },
+  { id: "messen", key: "fairs" },
   { id: "ueber", key: "about" },
+  { id: "hobbys", key: "hobbies" },
 ] as const;
-/** Navigation: Abschnitte plus die eigene Seite „Messen“ (Messekalender und Messegelände) nach „Zusammenarbeit“ */
-type NavItem = { id: string; key: "services" | "designs" | "process" | "about" | "fairs" | "contact"; page?: "/messen" };
-const NAV: NavItem[] = [...SECTIONS.slice(0, 3), { id: "messen", key: "fairs", page: "/messen" }, ...SECTIONS.slice(3)];
+/** Navigation: Leistungen & Zusammenarbeit, Entwürfe, Messen (Vorschau auf der Startseite), Über mich, Hobbys */
+type NavItem = { id: string; key: "services" | "designs" | "about" | "fairs" | "hobbies" | "contact"; page?: "/messen" };
+const NAV: NavItem[] = [...SECTIONS];
 
 export function Header() {
   const t = useTranslations("nav");

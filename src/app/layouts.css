@@ -1,6 +1,6 @@
 /* ─────────────────────────────────────────────────────────────
-   Fünf Layouts (html[data-layout]): 01 Studio, 02 Wood, 03 Aurora, 04 Tide, 05 Monochrom: Farben, Schriften, Positionen.
-   Umschalten über die Lasche links (components/shell/LayoutDock).
+   Sieben Layouts (html[data-layout]): 01 Studio, 02 Wood, 03 Lumen, 04 Atrium, 05 Copper, 06 Violet, 07 Canopy:
+   Farben, Schriften, Positionen. Umschalten über die Lasche rechts (components/shell/LayoutDock).
    Liste und Zuordnung Film/Effekt: src/config/layouts.ts
    ───────────────────────────────────────────────────────────── */
 
@@ -31,23 +31,27 @@
 /* Poster je Layout – nur das aktive Bild wird geladen */
 html, html[data-layout="studio"] { --hero-poster: url("/hero/001/poster-desktop.webp"); }
 html[data-layout="wood"] { --hero-poster: url("/hero/021/poster-desktop.webp"); }
-html[data-layout="aurora"] { --hero-poster: url("/hero/002/poster-desktop.webp"); }
-html[data-layout="mono"] { --hero-poster: url("/hero/003/poster-desktop.webp"); }
-html[data-layout="tide"] { --hero-poster: url("/hero/004/poster-desktop.webp"); }
+html[data-layout="lumen"] { --hero-poster: url("/hero/lumen/poster-desktop.webp"); }
+html[data-layout="atrium"] { --hero-poster: url("/hero/atrium/poster-desktop.webp"); }
+html[data-layout="copper"] { --hero-poster: url("/hero/copper/poster-desktop.webp"); }
+html[data-layout="violet"] { --hero-poster: url("/hero/violet/poster-desktop.webp"); }
+html[data-layout="canopy"] { --hero-poster: url("/hero/canopy/poster-desktop.webp"); }
 /* Hochformat: eigener 9:16-Ausschnitt (bereits auf den Stand zentriert) – Abfrage wie HERO_PORTRAIT_QUERY in config/layouts.ts */
 @media (orientation: portrait) {
   .hero-poster { background-position: 50% 50%; }
   html, html[data-layout="studio"] { --hero-poster: url("/hero/001/poster-mobile.webp"); }
   html[data-layout="wood"] { --hero-poster: url("/hero/021/poster-mobile.webp"); }
-  html[data-layout="aurora"] { --hero-poster: url("/hero/002/poster-mobile.webp"); }
-  html[data-layout="mono"] { --hero-poster: url("/hero/003/poster-mobile.webp"); }
-  html[data-layout="tide"] { --hero-poster: url("/hero/004/poster-mobile.webp"); }
+  html[data-layout="lumen"] { --hero-poster: url("/hero/lumen/poster-mobile.webp"); }
+  html[data-layout="atrium"] { --hero-poster: url("/hero/atrium/poster-mobile.webp"); }
+  html[data-layout="copper"] { --hero-poster: url("/hero/copper/poster-mobile.webp"); }
+  html[data-layout="violet"] { --hero-poster: url("/hero/violet/poster-mobile.webp"); }
+  html[data-layout="canopy"] { --hero-poster: url("/hero/canopy/poster-mobile.webp"); }
   }
 
 /* ═════════ 01 STUDIO – Anthrazit & Orange, Mona Sans + Geist (Standard aus globals.css) ═════════ */
 html { --font-d: var(--font-mona); --font-t: var(--font-geist); }
 
-/* ═════════ 02 WOOD – Walnuss, Eiche & Creme, Fraunces + DM Sans ═════════
+/* ═════════ 02 WOOD – Walnuss, Eiche & Creme, Raleway (filigran) + DM Sans ═════════
    Holzdesign nach Entwurf 021 „Lamello“: dunkles Walnussholz als Grund, Eichen-Akzent, cremefarbene Schrift,
    feine Lamellenstruktur in Flächen und Linien. Hero: Firefly-Zeitraffer (eigene Sequenz), Text links, warmes Licht.
    Effekt: Lamellen (Buchstaben drehen sich zum Zeiger). */
@@ -56,7 +60,7 @@ html[data-layout="wood"] {
   --fg: #f3e8d6; --accent: #d39a5e; --accent-contrast: #1a0f06; --accent-2: #8a5a32;
   --line: color-mix(in oklab, #e6c79f 16%, transparent);
   --line-strong: color-mix(in oklab, #e6c79f 28%, transparent);
-  --font-d: var(--font-fraunces); --font-t: var(--font-dmsans);
+  --font-d: var(--font-raleway); --font-t: var(--font-dmsans);
   --hero-big-gradient: linear-gradient(90deg, #f6ead6, #e3b07a 55%, #c27f45);
   /* Lamellen: senkrechte Holzleisten als wiederverwendbares Muster */
   --wood-slats: repeating-linear-gradient(90deg, rgb(211 154 94 / .07) 0 2px, transparent 2px 22px);
@@ -68,8 +72,8 @@ html[data-layout="wood"] body {
     var(--bg);
   background-attachment: fixed;
 }
-html[data-layout="wood"] .font-display { font-weight: 500; font-stretch: normal; font-variation-settings: "opsz" 120, "SOFT" 50; letter-spacing: -0.02em; }
-html[data-layout="wood"] h2.font-display { font-weight: 400; }
+html[data-layout="wood"] .font-display { font-weight: 300; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.01em; }
+html[data-layout="wood"] h2.font-display { font-weight: 200; }
 html[data-layout="wood"] .eyebrow { color: var(--accent); letter-spacing: .22em; }
 html[data-layout="wood"] .eyebrow::before { content: ""; display: inline-block; width: 22px; height: 10px; margin-right: 10px; vertical-align: -1px; background: repeating-linear-gradient(90deg, currentColor 0 2px, transparent 2px 5px); opacity: .8; }
 html[data-layout="wood"] .kinetic-char { transition-duration: .5s; transform-origin: 50% 50%; }
@@ -82,109 +86,242 @@ html[data-layout="wood"] .hero-media::after {
 }
 html[data-layout="wood"] .hero-shade-side { background: linear-gradient(to right, rgb(22 16 11 / .78), transparent 58%); }
 html[data-layout="wood"] .hero-copy-text { border-left: 3px solid var(--accent); padding-left: 20px; }
-html[data-layout="wood"] .hero-big-text { font-weight: 400; font-style: italic; }
+html[data-layout="wood"] .hero-big-text { font-weight: 200; letter-spacing: -0.02em; }
 html[data-layout="wood"] .vis-note { background: rgb(22 16 11 / .7); border: 1px solid rgb(230 199 159 / .3); color: var(--fg); }
 html[data-layout="wood"] section + section { border-top: 1px solid var(--line); }
 
-/* ═════════ 03 AURORA – Mitternacht, Mint & Violett, Instrument Serif + Inter Tight ═════════
-   Hero: Film gerahmt mit Abstand und runden Ecken, Text zentriert. Effekt: Lupe. */
-html[data-layout="aurora"] {
-  --bg: #070b1d; --bg-raised: #0e1533; --bg-sunken: #050817;
-  --fg: #eef1ff; --accent: #7cf5d4; --accent-contrast: #04161a; --accent-2: #b69cff;
-  --font-d: var(--font-instrument); --font-t: var(--font-intertight);
-  --hero-big-gradient: linear-gradient(90deg, #7cf5d4, #b69cff 70%, #eef1ff);
+/* ═════════ 03 LUMEN – Nachtblau, Eisblau & Silber, Sora + Inter Tight ═════════
+   Farben aus dem eigenen Hero-Film (heller CL-Stand mit hinterleuchteter Lichtwand): nachtblaue Halle,
+   eisblaues Licht der Lichtwand, Silber des Rahmens, kühles Weiß. Flächen wie Milchglas, feine Lichtstreifen.
+   Hero: Text links auf einer Milchglas-Tafel mit leuchtender Kante. Effekt: Buchstaben leuchten auf. */
+html[data-layout="lumen"] {
+  --bg: #060b12; --bg-raised: #0c1520; --bg-sunken: #04080d;
+  --fg: #eef4f8; --accent: #4fd2f7; --accent-contrast: #021019; --accent-2: #c3ced8;
+  --line: color-mix(in oklab, #bfe9f7 13%, transparent);
+  --line-strong: color-mix(in oklab, #bfe9f7 26%, transparent);
+  --font-d: var(--font-sora); --font-t: var(--font-intertight);
+  --hero-big-gradient: linear-gradient(90deg, #ffffff, #c9f1ff 45%, #4fd2f7);
+  /* Lichtwand: senkrechte, leicht leuchtende Paneelfugen */
+  --lumen-panels: repeating-linear-gradient(90deg, rgb(79 210 247 / .045) 0 1px, transparent 1px 72px);
 }
-html[data-layout="aurora"] .font-display { font-weight: 400; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.012em; font-synthesis: none; }
-html[data-layout="aurora"] h2.font-display, html[data-layout="aurora"] .hero-big-text { font-style: italic; }
-html[data-layout="aurora"] .eyebrow { color: var(--accent-2); }
-html[data-layout="aurora"] .kinetic-char { transition-duration: .35s; transform-origin: 50% 90%; }
-html[data-layout="aurora"] .hero-stage {
+html[data-layout="lumen"] body {
   background:
-    radial-gradient(110% 80% at 85% -10%, #1d2c75 0%, transparent 55%),
-    radial-gradient(90% 70% at -5% 105%, #0f4440 0%, transparent 60%),
+    radial-gradient(70% 55% at 8% -10%, rgb(79 210 247 / .13), transparent 62%),
+    radial-gradient(60% 50% at 100% 110%, rgb(195 206 216 / .07), transparent 60%),
+    var(--lumen-panels),
     var(--bg);
+  background-attachment: fixed;
 }
-html[data-layout="aurora"] .hero-media {
-  inset: 88px var(--gutter) 18px;
-  border-radius: 32px;
-  box-shadow: 0 40px 90px -30px #000c, 0 0 0 1px color-mix(in oklab, var(--accent) 35%, transparent);
+html[data-layout="lumen"] .font-display { font-weight: 600; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.035em; }
+html[data-layout="lumen"] h2.font-display { font-weight: 500; }
+html[data-layout="lumen"] .eyebrow { color: var(--accent); letter-spacing: .24em; }
+html[data-layout="lumen"] .eyebrow::before {
+  content: ""; display: inline-block; width: 16px; height: 8px; margin-right: 10px; vertical-align: 0; border-radius: 2px;
+  background: linear-gradient(#e9fbff, var(--accent)); box-shadow: 0 0 10px var(--accent);
 }
-html[data-layout="aurora"] .hero-top { top: 112px; }
-html[data-layout="aurora"] .hero-top .container-x { padding-inline: calc(var(--gutter) + 24px); }
-html[data-layout="aurora"] .hero-copy { padding-bottom: 92px; }
-html[data-layout="aurora"] .hero-copy-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-html[data-layout="aurora"] .hero-copy-text { margin-inline: auto; }
-html[data-layout="aurora"] .hero-copy-text p { margin-inline: auto; }
-html[data-layout="aurora"] .hero-cta { justify-content: center; }
-html[data-layout="aurora"] .hero-progress { padding-inline: calc(var(--gutter) + 24px); }
-html[data-layout="aurora"] .hero-shade-side { display: none; }
-
-/* ═════════ 04 TIDE – Petrol & Koralle, Bricolage Grotesque + DM Sans ═════════
-   Hero: Text rechtsbündig, Verlauf von rechts, Petrol-Schleier. Effekt: Schriftgewicht-Welle. */
-html[data-layout="tide"] {
-  --bg: #062a2c; --bg-raised: #0b3739; --bg-sunken: #041e20;
-  --fg: #f3ece2; --accent: #ff8f6b; --accent-contrast: #1a0b06; --accent-2: #6fd3c4;
-  --font-d: var(--font-bricolage); --font-t: var(--font-dmsans);
-  --hero-big-gradient: linear-gradient(90deg, #f3ece2, #ffc2ad 55%, #ff8f6b);
+html[data-layout="lumen"] .kinetic-char { transition-duration: .4s; }
+html[data-layout="lumen"] .kinetic-char.is-near { color: #e9fbff; }
+html[data-layout="lumen"] .glass {
+  background: color-mix(in oklab, #0c1520 55%, transparent);
+  border-color: rgb(191 233 247 / .26);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3); backdrop-filter: blur(18px) saturate(1.3);
 }
-html[data-layout="tide"] .font-display { font-weight: 600; font-stretch: normal; font-variation-settings: "wdth" 78, "opsz" 96; letter-spacing: -0.03em; }
-html[data-layout="tide"] .eyebrow::before { content: ""; display: inline-block; width: 28px; height: 1px; margin-right: 10px; vertical-align: middle; background: currentColor; }
-html[data-layout="tide"] .kinetic-char { transition-duration: .45s; }
-html[data-layout="tide"] .hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgb(6 42 44 / .55)); pointer-events: none; }
-html[data-layout="tide"] .hero-shade-side { background: linear-gradient(to left, rgb(4 30 32 / .8), transparent 62%); }
-html[data-layout="tide"] .hero-top .container-x { flex-direction: row-reverse; }
-html[data-layout="tide"] .hero-big { place-items: center end; }
-html[data-layout="tide"] .hero-big-text { text-align: right; }
-html[data-layout="tide"] .hero-copy-grid { grid-template-columns: auto 1fr; }
-html[data-layout="tide"] .hero-cta { order: -1; align-self: end; }
-html[data-layout="tide"] .hero-copy-text { justify-self: end; text-align: right; }
-html[data-layout="tide"] .hero-copy-text p { margin-left: auto; }
+html[data-layout="lumen"] .vis-note { background: rgb(6 11 18 / .55); border: 1px solid rgb(191 233 247 / .35); color: var(--fg); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+html[data-layout="lumen"] .hero-stage { background: var(--bg); }
+html[data-layout="lumen"] .hero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgb(6 11 18 / .35), transparent 28%, transparent 52%, rgb(6 11 18 / .88));
+}
+html[data-layout="lumen"] .hero-shade-side { background: linear-gradient(to right, rgb(4 8 13 / .72), transparent 55%); }
+html[data-layout="lumen"] .hero-copy-text {
+  padding: 22px 26px; border-radius: 22px;
+  background: linear-gradient(135deg, rgb(12 21 32 / .62), rgb(12 21 32 / .32));
+  border: 1px solid rgb(191 233 247 / .22);
+  box-shadow: inset 3px 0 0 var(--accent), 0 0 40px -12px rgb(79 210 247 / .55);
+  -webkit-backdrop-filter: blur(16px) saturate(1.25); backdrop-filter: blur(16px) saturate(1.25);
+}
+html[data-layout="lumen"] .hero-big-text { font-weight: 600; letter-spacing: -0.04em; filter: drop-shadow(0 0 28px rgb(79 210 247 / .35)); }
+html[data-layout="lumen"] section + section { border-top: 1px solid var(--line); }
 @media (max-width: 767px) {
-  html[data-layout="tide"] .hero-copy-grid { grid-template-columns: 1fr; justify-items: end; }
-  html[data-layout="tide"] .hero-cta { order: 0; justify-content: flex-end; }
+  html[data-layout="lumen"] .hero-copy-text { padding: 16px 18px; border-radius: 16px; }
+}
+html[data-performance="lite"][data-layout="lumen"] .hero-copy-text { background: rgb(12 21 32 / .82); }
+
+/* ═════════ 04 ATRIUM – Espresso, Champagner & Creme, Jost ═════════
+   Farben aus dem Zeitraffer CL-02: cremefarbener Rundstand, Messingstützen, warmes Lichtband unter der Decke.
+   Schrift: Jost (geometrische Gothic) in leichten Schnitten. Hero: Text links unter einer goldenen Haarlinie,
+   Bild mit weichem Rundbogen oben. Effekt: Goldschimmer. */
+html[data-layout="atrium"] {
+  --bg: #14100a; --bg-raised: #1e1810; --bg-sunken: #0e0b07;
+  --fg: #f4ece0; --accent: #d8b06a; --accent-contrast: #1a1206; --accent-2: #efe2c8;
+  --line: color-mix(in oklab, #efdcb6 15%, transparent);
+  --line-strong: color-mix(in oklab, #efdcb6 28%, transparent);
+  --font-d: var(--font-jost); --font-t: var(--font-jost);
+  --hero-big-gradient: linear-gradient(90deg, #fbf3e4, #ecd29f 50%, #c99a4e);
+}
+html[data-layout="atrium"] body {
+  background:
+    radial-gradient(80% 50% at 50% -12%, rgb(216 176 106 / .14), transparent 64%),
+    radial-gradient(50% 40% at 100% 100%, rgb(239 226 200 / .05), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+html[data-layout="atrium"] .font-display { font-weight: 300; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.02em; }
+html[data-layout="atrium"] h2.font-display { font-weight: 300; }
+html[data-layout="atrium"] .eyebrow { color: var(--accent); letter-spacing: .3em; font-weight: 500; }
+html[data-layout="atrium"] .eyebrow::before { content: ""; display: inline-block; width: 26px; height: 13px; margin-right: 10px; vertical-align: -1px; border: 1px solid currentColor; border-bottom: 0; border-radius: 13px 13px 0 0; }
+html[data-layout="atrium"] .kinetic-char { transition-duration: .5s; }
+html[data-layout="atrium"] .kinetic-char.is-near { color: #fff4dc; }
+html[data-layout="atrium"] .glass { background: color-mix(in oklab, #1e1810 68%, transparent); border-color: rgb(239 220 182 / .24); }
+html[data-layout="atrium"] .vis-note { background: rgb(20 16 10 / .7); border: 1px solid rgb(216 176 106 / .4); color: var(--fg); }
+html[data-layout="atrium"] .hero-stage { background: var(--bg); }
+html[data-layout="atrium"] .hero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgb(20 16 10 / .4), transparent 30%, transparent 55%, rgb(20 16 10 / .88));
+}
+html[data-layout="atrium"] .hero-shade-side { background: linear-gradient(to right, rgb(20 16 10 / .74), transparent 58%); }
+html[data-layout="atrium"] .hero-copy-text { border-top: 1px solid var(--accent); padding-top: 18px; }
+html[data-layout="atrium"] .hero-big-text { font-weight: 300; letter-spacing: -0.03em; }
+html[data-layout="atrium"] section + section { border-top: 1px solid var(--line); }
+@media (min-width: 768px) {
+  html[data-layout="atrium"] .hero-media { inset: 76px var(--gutter) 0; border-radius: 48vw 48vw 0 0 / 12vw 12vw 0 0; overflow: hidden; box-shadow: 0 0 0 1px rgb(216 176 106 / .35); }
 }
 
-/* ═════════ 05 MONOCHROM – nur Schwarz, Weiß und Neutralgrau, Space Grotesk + Geist ═════════
-   Hero: Film in Graustufen, Headline links oben, geometrische Maske, feine Linien. Effekt: Linienversatz.
-   Medien bleiben farbig erhalten; Schalter „Originalfarben“ (data-mono-colour) hebt die Graustufen auf. */
-html[data-layout="mono"] {
-  --bg: #000; --bg-raised: #0d0d0d; --bg-sunken: #000;
-  --fg: #fff; --accent: #fff; --accent-contrast: #000; --accent-2: #fff;
-  --radius-lg: 0px; --radius-xl: 0px; --radius-2xl: 0px; --radius-3xl: 0px;
-  --font-d: var(--font-spacegrotesk); --font-t: var(--font-geist);
-  --hero-big-gradient: linear-gradient(90deg, #fff, #fff);
+/* ═════════ 05 COPPER – Stahlschwarz & Kupfer, Josefin Sans ═════════
+   Farben aus dem Zeitraffer CL-03: schwarzes Stahlgerüst, gefaltetes Kupferdach, warmes Pendellicht.
+   Schrift: Josefin Sans (schlanke Gothic, Versalien gesperrt). Hero: Text rechts, schräge Kupferkante unten.
+   Effekt: Buchstaben falten sich. */
+html[data-layout="copper"] {
+  --bg: #0b0b0c; --bg-raised: #151516; --bg-sunken: #070708;
+  --fg: #f3ece6; --accent: #d9844c; --accent-contrast: #1b0c03; --accent-2: #f0b47a;
+  --line: color-mix(in oklab, #f0c9a8 13%, transparent);
+  --line-strong: color-mix(in oklab, #f0c9a8 26%, transparent);
+  --radius-lg: 4px; --radius-xl: 6px; --radius-2xl: 8px; --radius-3xl: 10px;
+  --font-d: var(--font-josefin); --font-t: var(--font-intertight);
+  --hero-big-gradient: linear-gradient(90deg, #f8e3d2, #e9a273 50%, #b8602c);
+  --copper-steel: repeating-linear-gradient(90deg, rgb(255 255 255 / .025) 0 1px, transparent 1px 120px);
 }
-html[data-layout="mono"] .font-display { font-weight: 500; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.035em; text-transform: none; }
-html[data-layout="mono"] .rounded-full:not(.size-1\.5):not(.size-2) { border-radius: 0; }
-html[data-layout="mono"] .eyebrow { color: var(--fg); letter-spacing: .2em; border-bottom: 1px solid var(--fg); display: inline-block; padding-bottom: 4px; }
-html[data-layout="mono"] .kinetic-char { transition-duration: .2s; }
-html[data-layout="mono"] .grain::after { opacity: 0; }
-html[data-layout="mono"] .hero-poster,
-html[data-layout="mono"] .hero-media canvas,
-html[data-layout="mono"] img:not([data-keep-colour]),
-html[data-layout="mono"] video { filter: grayscale(1) contrast(1.08); }
-html[data-layout="mono"][data-mono-colour="on"] .hero-poster,
-html[data-layout="mono"][data-mono-colour="on"] .hero-media canvas,
-html[data-layout="mono"][data-mono-colour="on"] img,
-html[data-layout="mono"][data-mono-colour="on"] video { filter: none; }
-html[data-layout="mono"] .hero-media { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 64px), calc(100% - 64px) 100%, 0 100%); }
-html[data-layout="mono"] .hero-big { place-items: start; padding-top: 19vh; }
-html[data-layout="mono"] .hero-big-text { text-align: left; max-width: 100%; font-size: clamp(48px, 7.6vw, 150px); line-height: 1.02; }
-html[data-layout="mono"] .hero-big-word { background: none; color: #fff; }
-html[data-layout="mono"] .hero-copy-grid { grid-template-columns: auto 1fr; }
-html[data-layout="mono"] .hero-cta { order: -1; align-self: end; }
-html[data-layout="mono"] .hero-copy-text { justify-self: end; text-align: right; border-right: 1px solid #fff; padding-right: 20px; }
-html[data-layout="mono"] .hero-copy-text p { margin-left: auto; }
-html[data-layout="mono"] section { border-top: 1px solid #ffffff1f; }
-html[data-layout="mono"] .border-line, html[data-layout="mono"] .border-line-strong { border-color: #ffffff3d; }
-html[data-layout="mono"] .vis-note { background: #000; color: #fff; border: 1px solid #fff; }
+html[data-layout="copper"] body {
+  background:
+    linear-gradient(160deg, rgb(217 132 76 / .12), transparent 38%),
+    var(--copper-steel),
+    var(--bg);
+  background-attachment: fixed;
+}
+html[data-layout="copper"] .font-display { font-weight: 300; font-stretch: normal; font-variation-settings: normal; letter-spacing: 0; }
+html[data-layout="copper"] h2.font-display { font-weight: 300; }
+html[data-layout="copper"] .eyebrow { color: var(--accent); letter-spacing: .28em; }
+html[data-layout="copper"] .eyebrow::before { content: ""; display: inline-block; width: 18px; height: 9px; margin-right: 10px; vertical-align: 0; background: linear-gradient(135deg, var(--accent-2), var(--accent)); clip-path: polygon(0 100%, 50% 0, 100% 100%); }
+html[data-layout="copper"] .kinetic-char { transition-duration: .45s; transform-origin: 50% 100%; }
+html[data-layout="copper"] .glass { background: color-mix(in oklab, #151516 72%, transparent); border-color: rgb(240 201 168 / .2); }
+html[data-layout="copper"] .vis-note { background: rgb(11 11 12 / .75); border: 1px solid rgb(217 132 76 / .45); color: var(--fg); }
+html[data-layout="copper"] .hero-stage { background: var(--bg); }
+html[data-layout="copper"] .hero-media { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw)); }
+html[data-layout="copper"] .hero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgb(11 11 12 / .35), transparent 30%, transparent 55%, rgb(11 11 12 / .86));
+}
+html[data-layout="copper"] .hero-shade-side { background: linear-gradient(to left, rgb(7 7 8 / .78), transparent 60%); }
+html[data-layout="copper"] .hero-copy-grid { grid-template-columns: auto 1fr; }
+html[data-layout="copper"] .hero-cta { order: -1; align-self: end; }
+html[data-layout="copper"] .hero-copy-text { justify-self: end; text-align: right; border-right: 3px solid var(--accent); padding-right: 20px; }
+html[data-layout="copper"] .hero-copy-text p { margin-left: auto; }
+html[data-layout="copper"] .hero-big-text { font-weight: 300; text-transform: uppercase; letter-spacing: .02em; }
+html[data-layout="copper"] section + section { border-top: 1px solid var(--line); }
 @media (max-width: 767px) {
-  html[data-layout="mono"] .hero-copy-grid { grid-template-columns: 1fr; }
-  html[data-layout="mono"] .hero-cta { order: 0; }
-  html[data-layout="mono"] .hero-copy-text { justify-self: start; text-align: left; border-right: 0; border-left: 1px solid #fff; padding: 0 0 0 16px; }
-  html[data-layout="mono"] .hero-media { clip-path: none; }
+  html[data-layout="copper"] .hero-copy-grid { grid-template-columns: 1fr; }
+  html[data-layout="copper"] .hero-cta { order: 0; }
+  html[data-layout="copper"] .hero-copy-text { justify-self: start; text-align: left; border-right: 0; border-left: 3px solid var(--accent); padding: 0 0 0 16px; }
+  html[data-layout="copper"] .hero-media { clip-path: none; }
 }
-@media (prefers-reduced-motion: reduce) { html[data-layout="mono"] .hero-media { clip-path: none; } }
+
+/* ═════════ 06 VIOLET – Schwarz & Violett, Archivo ═════════
+   Farben aus dem Zeitraffer CL-04: schwarzer Stand, violette LED-Linien an Treppe und Decke, kühles Weiß.
+   Schrift: Archivo in sehr leichten Schnitten (schlanke Grotesk wie Arial). Hero: Text links, violette Lichtlinie
+   unter dem Bild. Effekt: Neonlicht flackert. */
+html[data-layout="violet"] {
+  --bg: #09080e; --bg-raised: #121019; --bg-sunken: #060509;
+  --fg: #f1effa; --accent: #9b7bff; --accent-contrast: #0c0620; --accent-2: #d9d2ff;
+  --line: color-mix(in oklab, #cfc4ff 13%, transparent);
+  --line-strong: color-mix(in oklab, #cfc4ff 26%, transparent);
+  --font-d: var(--font-archivo); --font-t: var(--font-archivo);
+  --hero-big-gradient: linear-gradient(90deg, #ffffff, #d9d2ff 45%, #9b7bff);
+}
+html[data-layout="violet"] body {
+  background:
+    radial-gradient(60% 45% at 100% -5%, rgb(155 123 255 / .16), transparent 62%),
+    radial-gradient(50% 40% at -5% 105%, rgb(155 123 255 / .08), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+html[data-layout="violet"] .font-display { font-weight: 200; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.03em; }
+html[data-layout="violet"] h2.font-display { font-weight: 200; }
+html[data-layout="violet"] .eyebrow { color: var(--accent-2); letter-spacing: .26em; }
+html[data-layout="violet"] .eyebrow::before { content: ""; display: inline-block; width: 26px; height: 2px; margin-right: 10px; vertical-align: middle; border-radius: 2px; background: var(--accent); box-shadow: 0 0 8px var(--accent), 0 0 16px var(--accent); }
+html[data-layout="violet"] .kinetic-char { transition-duration: .3s; }
+html[data-layout="violet"] .kinetic-char.is-near { color: #ffffff; }
+html[data-layout="violet"] .glass { background: color-mix(in oklab, #121019 66%, transparent); border-color: rgb(207 196 255 / .22); }
+html[data-layout="violet"] .vis-note { background: rgb(9 8 14 / .72); border: 1px solid rgb(155 123 255 / .5); color: var(--fg); }
+html[data-layout="violet"] .hero-stage { background: var(--bg); }
+html[data-layout="violet"] .hero-media { box-shadow: 0 2px 0 0 var(--accent), 0 6px 30px -4px rgb(155 123 255 / .7); }
+html[data-layout="violet"] .hero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgb(9 8 14 / .4), transparent 28%, transparent 52%, rgb(9 8 14 / .9));
+}
+html[data-layout="violet"] .hero-shade-side { background: linear-gradient(to right, rgb(6 5 9 / .76), transparent 56%); }
+html[data-layout="violet"] .hero-copy-text { box-shadow: inset 2px 0 0 var(--accent); padding-left: 20px; }
+html[data-layout="violet"] .hero-big-text { font-weight: 200; letter-spacing: -0.04em; filter: drop-shadow(0 0 24px rgb(155 123 255 / .4)); }
+html[data-layout="violet"] section + section { border-top: 1px solid var(--line); }
+
+/* ═════════ 07 CANOPY – Blattgrün, Rattan & Stein, Mulish ═════════
+   Farben aus dem Zeitraffer CL-05: Holzgitter-Fassade, heller Naturstein, Pflanzen auf Terrasse und Treppe.
+   Schrift: Mulish in leichten Schnitten. Hero: Film gerahmt mit runden Ecken und Gittermuster,
+   Text links auf heller Tafel. Effekt: Buchstaben wiegen sich. */
+html[data-layout="canopy"] {
+  --bg: #0d120d; --bg-raised: #151c14; --bg-sunken: #090d09;
+  --fg: #eef0e6; --accent: #a9c97a; --accent-contrast: #0f1806; --accent-2: #c99a62;
+  --line: color-mix(in oklab, #d8e6c2 13%, transparent);
+  --line-strong: color-mix(in oklab, #d8e6c2 26%, transparent);
+  --font-d: var(--font-mulish); --font-t: var(--font-mulish);
+  --hero-big-gradient: linear-gradient(90deg, #f3f1e6, #d6e6b6 50%, #a9c97a);
+  --canopy-mesh: repeating-linear-gradient(45deg, rgb(201 154 98 / .05) 0 1px, transparent 1px 14px), repeating-linear-gradient(-45deg, rgb(201 154 98 / .05) 0 1px, transparent 1px 14px);
+}
+html[data-layout="canopy"] body {
+  background:
+    radial-gradient(70% 50% at 0% -10%, rgb(169 201 122 / .12), transparent 62%),
+    var(--canopy-mesh),
+    var(--bg);
+  background-attachment: fixed;
+}
+html[data-layout="canopy"] .font-display { font-weight: 300; font-stretch: normal; font-variation-settings: normal; letter-spacing: -0.025em; }
+html[data-layout="canopy"] h2.font-display { font-weight: 200; }
+html[data-layout="canopy"] .eyebrow { color: var(--accent); letter-spacing: .22em; }
+html[data-layout="canopy"] .eyebrow::before { content: ""; display: inline-block; width: 11px; height: 11px; margin-right: 10px; vertical-align: -1px; border-radius: 0 70% 0 70%; background: var(--accent); }
+html[data-layout="canopy"] .kinetic-char { transition-duration: .6s; transform-origin: 50% 100%; }
+html[data-layout="canopy"] .glass { background: color-mix(in oklab, #151c14 68%, transparent); border-color: rgb(216 230 194 / .22); }
+html[data-layout="canopy"] .vis-note { background: rgb(13 18 13 / .72); border: 1px solid rgb(169 201 122 / .4); color: var(--fg); }
+html[data-layout="canopy"] .hero-stage { background: var(--bg); }
+html[data-layout="canopy"] .hero-media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: var(--canopy-mesh), linear-gradient(180deg, rgb(13 18 13 / .35), transparent 30%, transparent 55%, rgb(13 18 13 / .88));
+}
+html[data-layout="canopy"] .hero-shade-side { background: linear-gradient(to right, rgb(9 13 9 / .74), transparent 58%); }
+html[data-layout="canopy"] .hero-copy-text {
+  padding: 20px 24px; border-radius: 20px;
+  background: rgb(13 18 13 / .55); border: 1px solid rgb(216 230 194 / .2);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+}
+html[data-layout="canopy"] .hero-big-text { font-weight: 200; letter-spacing: -0.03em; }
+html[data-layout="canopy"] section + section { border-top: 1px solid var(--line); }
+@media (min-width: 768px) {
+  html[data-layout="canopy"] .hero-media { inset: 84px var(--gutter) 16px; border-radius: 28px; overflow: hidden; box-shadow: 0 0 0 1px rgb(201 154 98 / .4), 0 40px 80px -30px #000c; }
+  html[data-layout="canopy"] .hero-copy { padding-bottom: 72px; }
+  html[data-layout="canopy"] .hero-top .container-x, html[data-layout="canopy"] .hero-copy .container-x { padding-inline: calc(var(--gutter) + 24px); }
+}
+@media (max-width: 767px) {
+  html[data-layout="canopy"] .hero-copy-text { padding: 14px 16px; border-radius: 14px; }
+}
+html[data-performance="lite"][data-layout="canopy"] .hero-copy-text { background: rgb(13 18 13 / .85); }
 
 /* ───────── Zeichenflächen ohne CSS-Farbe: Hintergrund aus --bg (siehe useCssColor) ───────── */
 @media (prefers-reduced-motion: reduce) {

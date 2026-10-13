@@ -49,7 +49,8 @@
     "selection": "My selection",
     "home": "Home",
     "main": "Main navigation",
-    "fairs": "Trade fairs"
+    "fairs": "Trade fairs",
+    "hobbies": "Hobbies"
   },
   "hero": {
     "eyebrow": "Planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
@@ -81,7 +82,7 @@
     ]
   },
   "services": {
-    "eyebrow": "Services",
+    "eyebrow": "Services & collaboration",
     "title": "Planning capacity when projects run in parallel.",
     "lead": "As an external planner I take on clearly defined parts of your project – backed by more than 20 years in exhibition construction. Qualified specialist partners handle production, installation, structural engineering and electrics.",
     "trust": [
@@ -768,14 +769,21 @@
     "preview": "Preview: {name}",
     "hint": "Arrow keys switch the layout, Escape closes the selection.",
     "saved": "Your choice is saved on this device.",
-    "monoShowColour": "Show original colours",
-    "monoHideColour": "Show black and white",
     "items": {
       "studio": "Charcoal and orange, clear lines, precise like a planning studio",
-      "aurora": "Dark surfaces with mint and violet, serif type, soft light movement",
-      "tide": "Petrol and coral, expressive type, flowing waves",
-      "mono": "Strictly black and white, strong contrast, geometric shapes",
-      "wood": "Walnut, oak and cream, serif type and slats – warm like a timber stand"
+      "wood": "Walnut, oak and cream, fine lettering and slats – warm like a timber stand",
+      "lumen": "Ice blue, silver and glass, clean type – backlit like a light wall",
+      "atrium": "Espresso, champagne and cream, slim gothic type – warmly lit like a round stand with brass",
+      "copper": "Steel black and copper, spaced capitals – like a steel frame with a folded copper roof",
+      "violet": "Black and violet, very light grotesque – with glowing LED lines",
+      "canopy": "Leaf green, rattan and stone, light type – with timber lattice and plants"
+    },
+    "films": {
+      "lumen": "Hero: time-lapse of the bright CL stand",
+      "atrium": "Hero: time-lapse of the CL stand with round gallery",
+      "copper": "Hero: time-lapse of the CL stand with copper roof",
+      "violet": "Hero: time-lapse of the CL stand with LED lines",
+      "canopy": "Hero: time-lapse of the CL stand with timber lattice and greenery"
     }
   },
   "radio": {
@@ -848,7 +856,7 @@
   },
   "lang": {
     "title": "Choose language",
-    "hint": "Drag, swipe or rotate with the arrow keys",
+    "hint": "Scroll, drag or use arrow keys · Enter selects",
     "current": "current",
     "prev": "Previous language",
     "next": "Next language",
@@ -888,6 +896,20 @@
   "fairs": {
     "eyebrow": "Trade fairs",
     "title": "Trade fair calendar and venues.",
-    "lead": "Upcoming trade fair dates in Germany and Europe and 50 exhibition venues at a glance – for orientation in your project planning. The entries say nothing about orders or participation by CL Projektwerk."
+    "lead": "Upcoming trade fair dates in Germany and Europe and 50 exhibition venues at a glance – for orientation in your project planning. The entries say nothing about orders or participation by CL Projektwerk.",
+    "teaserTitle": "Upcoming trade fairs.",
+    "teaserLead": "The next dates in Germany and Europe. The full calendar with globe and 50 exhibition centres is on the trade fairs page.",
+    "teaserCta": "Open the trade fair calendar",
+    "teaserLabel": "Upcoming trade fair dates",
+    "teaserRunning": "On now",
+    "teaserNote": "For orientation when planning projects – the entries say nothing about commissions or participation by CL Projektwerk."
+  },
+  "hobbies": {
+    "eyebrow": "Hobbies",
+    "title": "Skiing and mountains.",
+    "lead": "To balance the planning work, I like to get out on skis – on the piste and in deep snow.",
+    "videoLabel": "Ski video {n}",
+    "play": "Play video",
+    "pause": "Pause video"
   }
 }

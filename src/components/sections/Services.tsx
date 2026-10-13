@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import { ArrowRight, Check, Medal, UserFocus, UsersThree } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
@@ -17,11 +18,11 @@ const TRUST_ICONS = [UserFocus, Medal, UsersThree];
 type Text = { title: string; text: string };
 
 /**
- * Leistungen, kompakt: Versprechen mit drei Vertrauenspunkten, fünf einzeln buchbare Leistungen als Karten
- * und ein Band zur Zusammenarbeit (projektbezogen oder Monatskontingent, Ausführung durch Fachpartner).
- * „Anfragen“ wählt die Leistung im Formular (#kontakt) vor.
+ * Leistungen & Zusammenarbeit in einem Abschnitt: Versprechen mit drei Vertrauenspunkten, fünf einzeln buchbare
+ * Leistungen als Karten, danach die Zusammenarbeit in sechs Schritten (`children`, siehe Process embedded)
+ * und ein Band zu Kontingent und Fachpartnern. „Anfragen“ wählt die Leistung im Formular (#kontakt) vor.
  */
-export async function Services({ media, visNote }: { media: Record<Module, ServiceMedia>; visNote: string }) {
+export async function Services({ media, visNote, children }: { media: Record<Module, ServiceMedia>; visNote: string; children?: ReactNode }) {
   const t = await getTranslations("services");
   const trust = t.raw("trust") as Text[];
   const network = t.raw("network.items") as string[];
@@ -82,8 +83,10 @@ export async function Services({ media, visNote }: { media: Record<Module, Servi
           })}
         </ul>
 
-        {/* Zusammenarbeit und Fachpartner */}
-        <div className="mt-6 grid gap-8 rounded-[2rem] border border-accent/40 bg-bg-raised p-6 md:p-10 lg:grid-cols-[minmax(0,6fr)_minmax(0,6fr)] lg:gap-14" data-reveal>
+        {children}
+
+        {/* Kontingent und Fachpartner */}
+        <div className="mt-10 grid gap-8 rounded-[2rem] border border-accent/40 bg-bg-raised p-6 md:p-10 lg:grid-cols-[minmax(0,6fr)_minmax(0,6fr)] lg:gap-14" data-reveal>
           <div>
             <p className="inline-flex rounded-full bg-accent px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-accent-contrast">{t("package.badge")}</p>
             <h3 className="font-display mt-5 text-3xl font-semibold leading-[1.05] md:text-4xl">{t("package.title")}</h3>

@@ -265,19 +265,24 @@ export default function MeshCursor() {
         /* Wood: kleine Holzlamelle mit warmem Licht */
         html[data-layout="wood"] .mc-dot { width: 6px; height: 13px; border-radius: 2px; background: linear-gradient(#f3c48f, var(--accent)); }
         html[data-layout="wood"] .mc-halo { border-color: rgb(227 176 122 / .85); background: repeating-linear-gradient(90deg, rgb(211 154 94 / .16) 0 2px, transparent 2px 6px); }
-        /* Aurora: Lichtpunkt in Mint, Halo in Violett */
-        html[data-layout="aurora"] .mc-dot { background: radial-gradient(circle, #eafff8 0 30%, var(--accent) 70%); }
-        html[data-layout="aurora"] .mc-halo { border-color: var(--accent-2); box-shadow: 0 0 18px -2px var(--accent-2), inset 0 0 12px -3px var(--accent); }
-        /* Tide: Tropfen, der sich bewegt */
-        html[data-layout="tide"] .mc-dot { width: 10px; height: 10px; border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%; animation: mc-blob 3.6s ease-in-out infinite; }
-        html[data-layout="tide"] .mc-halo { border-radius: 58% 42% 52% 48% / 46% 54% 46% 54%; animation: mc-blob 3.2s ease-in-out infinite; }
-        @keyframes mc-blob { 0%,100% { border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%; } 33% { border-radius: 42% 58% 38% 62% / 58% 42% 60% 40%; } 66% { border-radius: 52% 48% 63% 37% / 40% 60% 42% 58%; } }
-        /* Monochrom: eckig, Schwarz-Weiß mit weißem Schein */
-        html[data-layout="mono"] .mc-dot { border-radius: 1px; background: #fff; box-shadow: 0 0 10px 1px rgb(255 255 255 / .7); }
-        html[data-layout="mono"] .mc-halo { border-radius: 2px; border-color: #fff; background: transparent; box-shadow: 0 0 14px -2px rgb(255 255 255 / .6); }
-        html[data-layout="mono"] .mc-halo::after { box-shadow: 0 0 18px 1px rgb(255 255 255 / .35); }
-        html[data-layout="mono"] .mc-label { background: #fff; color: #000; box-shadow: 0 0 14px rgb(255 255 255 / .5); }
-        html[data-layout="mono"] .mc-ripple { border-color: #fff; box-shadow: 0 0 14px #fff; border-radius: 2px; }
+        /* Lumen: kleines hinterleuchtetes Paneel, Halo wie Milchglas mit eisblauem Licht */
+        html[data-layout="lumen"] .mc-dot { width: 7px; height: 12px; border-radius: 2px; background: linear-gradient(#ffffff, #bff0ff 45%, var(--accent)); box-shadow: 0 0 6px 1px var(--accent), 0 0 18px 4px rgb(79 210 247 / .55), 0 0 40px 10px rgb(79 210 247 / .22); }
+        html[data-layout="lumen"] .mc-halo { border-color: rgb(233 251 255 / .75); background: radial-gradient(circle, rgb(79 210 247 / .18) 0 50%, transparent 74%); -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px); }
+        html[data-layout="lumen"] .mc-label { color: #021019; }
+        /* Atrium: Messingpunkt mit goldenem Lichtring */
+        html[data-layout="atrium"] .mc-dot { background: radial-gradient(circle, #fff6e0 0 30%, var(--accent) 75%); box-shadow: 0 0 8px 1px var(--accent), 0 0 22px 4px rgb(216 176 106 / .4); }
+        html[data-layout="atrium"] .mc-halo { border-color: rgb(241 231 214 / .8); box-shadow: 0 0 16px -2px var(--accent), inset 0 0 10px -4px var(--accent); }
+        html[data-layout="atrium"] .mc-label { color: #1a1206; }
+        /* Copper: Kupferdreieck wie die Dachfalte */
+        html[data-layout="copper"] .mc-dot { width: 11px; height: 9px; border-radius: 0; clip-path: polygon(50% 0, 100% 100%, 0 100%); background: linear-gradient(#f2b285, var(--accent)); }
+        html[data-layout="copper"] .mc-halo { border-radius: 6px; border-color: rgb(208 122 67 / .85); }
+        /* Violet: Neonpunkt, Halo als leuchtende LED-Linie */
+        html[data-layout="violet"] .mc-dot { background: #f1edff; box-shadow: 0 0 6px 1px #fff, 0 0 16px 4px var(--accent), 0 0 36px 10px rgb(155 123 255 / .35); }
+        html[data-layout="violet"] .mc-halo { border-color: var(--accent); box-shadow: 0 0 14px 0 var(--accent), inset 0 0 12px -2px var(--accent); }
+        /* Canopy: Blatt */
+        html[data-layout="canopy"] .mc-dot { width: 10px; height: 10px; border-radius: 0 70% 0 70%; background: linear-gradient(135deg, #d6ebb4, var(--accent)); }
+        html[data-layout="canopy"] .mc-halo { border-color: rgb(201 154 98 / .85); border-style: dashed; }
+        html[data-layout="canopy"] .mc-label { color: #0d120d; }
       `}</style>
     </>
   );
