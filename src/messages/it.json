@@ -1000,6 +1000,10 @@
     "lead": "Per staccare dalla progettazione mi piace andare a sciare – in pista e in neve fresca.",
     "videoLabel": "Video di sci {n}",
     "play": "Riproduci video",
-    "pause": "Metti in pausa il video"
+    "pause": "Metti in pausa il video",
+    "choose": "Altri video di sci",
+    "fullscreen": "Guarda a schermo intero",
+    "now": "In riproduzione",
+    "show": "Guarda"
   }
 }

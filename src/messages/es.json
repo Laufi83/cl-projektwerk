@@ -1000,6 +1000,10 @@
     "lead": "Para desconectar de la planificación, me gusta salir a esquiar – en pista y en nieve polvo.",
     "videoLabel": "Vídeo de esquí {n}",
     "play": "Reproducir vídeo",
-    "pause": "Pausar vídeo"
+    "pause": "Pausar vídeo",
+    "choose": "Más vídeos de esquí",
+    "fullscreen": "Ver en pantalla completa",
+    "now": "Reproduciendo",
+    "show": "Ver"
   }
 }

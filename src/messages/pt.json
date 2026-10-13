@@ -1000,6 +1000,10 @@
     "lead": "Para equilibrar o trabalho de planeamento, gosto de andar de esqui – na pista e em neve fresca.",
     "videoLabel": "Vídeo de esqui {n}",
     "play": "Reproduzir vídeo",
-    "pause": "Pausar vídeo"
+    "pause": "Pausar vídeo",
+    "choose": "Mais vídeos de esqui",
+    "fullscreen": "Ver em ecrã inteiro",
+    "now": "A reproduzir",
+    "show": "Ver"
   }
 }

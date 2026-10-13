@@ -153,9 +153,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <About />
       <Hobbies
         videos={[
-          { src: mediaUrl("hobby/ski-3.mp4"), poster: mediaUrl("hobby/ski-3-poster.webp") },
-          { src: mediaUrl("hobby/ski-1.mp4"), poster: mediaUrl("hobby/ski-1-poster.webp"), portrait: true },
-          { src: mediaUrl("hobby/ski-2.mp4"), poster: mediaUrl("hobby/ski-2-poster.webp"), portrait: true },
+          { src: mediaUrl("hobby/ski-2.mp4?v=2"), poster: mediaUrl("hobby/ski-2-poster.webp?v=2"), portrait: true, duration: "1:31" },
+          { src: mediaUrl("hobby/ski-3.mp4"), poster: mediaUrl("hobby/ski-3-poster.webp"), duration: "2:03" },
+          { src: mediaUrl("hobby/ski-1.mp4"), poster: mediaUrl("hobby/ski-1-poster.webp"), portrait: true, duration: "0:25" },
         ]}
       />
       <SeoSection />

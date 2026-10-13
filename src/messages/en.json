@@ -910,6 +910,10 @@
     "lead": "To balance the planning work, I like to get out on skis – on the piste and in deep snow.",
     "videoLabel": "Ski video {n}",
     "play": "Play video",
-    "pause": "Pause video"
+    "pause": "Pause video",
+    "choose": "More ski videos",
+    "fullscreen": "Watch full screen",
+    "now": "Playing",
+    "show": "Watch"
   }
 }

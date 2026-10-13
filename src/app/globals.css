@@ -255,6 +255,11 @@ html[data-cursor="on"] select { cursor: pointer; }
 @media (max-width: 767px) { .fair-card__body { width: min(14.5rem, 66vw); padding: .7rem .8rem .8rem; } }
 @media (prefers-reduced-motion: reduce) { .fair-card__body, .fair-card__line { transition: none; filter: none; } .fair-card__body::after { display: none; } }
 
+/* ---------- Hobbys: Video tritt nach dem Wechsel weich auf die Bühne ---------- */
+.hobby-stage-in { animation: hobby-in 900ms var(--ease-fluid) both; }
+@keyframes hobby-in { from { opacity: 0; transform: scale(1.06); filter: blur(10px); } }
+@media (prefers-reduced-motion: reduce) { .hobby-stage-in { animation: none; } }
+
 /* ---------- Sprachwahl: kleines Menü mit Circular Split Roll (components/shell/LanguageCarousel) ---------- */
 .lang-roll-name { transition: color .3s; }
 .lang-roll-name[tabindex="0"] { text-shadow: 0 0 22px color-mix(in oklab, var(--accent) 45%, transparent); }

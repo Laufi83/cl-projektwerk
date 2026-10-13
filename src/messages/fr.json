@@ -1000,6 +1000,10 @@
     "lead": "Pour décrocher de la planification, j'aime partir à ski – sur les pistes et dans la poudreuse.",
     "videoLabel": "Vidéo de ski {n}",
     "play": "Lire la vidéo",
-    "pause": "Mettre la vidéo en pause"
+    "pause": "Mettre la vidéo en pause",
+    "choose": "Autres vidéos de ski",
+    "fullscreen": "Voir en plein écran",
+    "now": "En lecture",
+    "show": "Voir"
   }
 }
