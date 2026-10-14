@@ -1,5 +1,5 @@
 /**
- * Prüft die kanonische Messebau-Datenquelle (src/data/messebau/venues.global.v1.json) vor jedem Build:
+ * Prüft die kanonische Messebau-Datenquelle (src/data/messebau/venues.global.v2.json) vor jedem Build:
  *  - Schema (Zod), eindeutige index/id/slug
  *  - Vollständigkeit und Lückenliste stimmen mit den Daten überein (npm run guide:validate -- --fix schreibt sie neu)
  *  - Status-Regeln: S3 nur mit allen P0-Feldern, S4 nur bei 100 % und geklärten Bildrechten
@@ -9,7 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { datasetSchema, completeness, type GlobalVenue } from "../../src/lib/messebau/schema.ts";
 
-const FILE = path.join(import.meta.dirname, "../../src/data/messebau/venues.global.v1.json");
+const FILE = path.join(import.meta.dirname, "../../src/data/messebau/venues.global.v2.json");
 const fix = process.argv.includes("--fix");
 const raw = JSON.parse(fs.readFileSync(FILE, "utf8"));
 const parsed = datasetSchema.safeParse(raw);
@@ -24,6 +24,8 @@ const dup = (key: keyof GlobalVenue) => {
   for (const v of venues) { if (seen.has(v[key])) errors.push(`doppelt ${String(key)}: ${String(v[key])}`); seen.add(v[key]); }
 };
 dup("index"); dup("id"); dup("slug");
+if (venues.length !== 101) errors.push(`Erwartet: 101 Messegelände, gefunden: ${venues.length}`);
+for (let i = 1; i <= 101; i++) if (!venues.some(v => v.index === i && v.id === `venue-${String(i).padStart(3, "0")}`)) errors.push(`Fehlende oder falsch nummerierte Venue ${i}`);
 
 let changed = 0;
 const key = (l: { priority: string; field: string }[]) => l.map((m) => `${m.priority}:${m.field}`).join("|");
