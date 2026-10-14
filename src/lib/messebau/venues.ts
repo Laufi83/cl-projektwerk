@@ -2,7 +2,7 @@
  * Zugriff auf die kanonische Messebau-Datenquelle (ohne Zod – auch im Browser-Bundle).
  * Geprüft wird die Datei vor jedem Build mit `npm run guide:validate`.
  */
-import data from "@/data/messebau/venues.global.v1.json";
+import data from "@/data/messebau/venues.global.v2.json";
 import type { GlobalVenue, GuideDataset, VerificationStatus } from "./schema";
 
 export const guide = data as unknown as GuideDataset;
