@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getDesigns } from "@/lib/designs";
 import { site } from "@/config/site";
 import { designAsset } from "@/lib/media";
+import { globalVenues } from "@/lib/messebau/venues";
 import { languageAlternates, LOCALES } from "@/i18n/locales";
 
 /** Liste der veröffentlichten Designs ändert sich täglich um 5:00 Uhr */
@@ -33,6 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   };
   pages.forEach(([de, en], i) => add(de, en, i === 0 ? 1 : 0.6));
+  // Messebau-Guide: eine Detailseite je Messegelände
+  for (const v of globalVenues) add(`/messen/${v.slug}`, `/trade-fairs/${v.slug}`, 0.5);
   for (const d of getDesigns()) {
     const p = `/designs/${d.slug}`;
     add(p, p, d.clip ? 0.8 : 0.7, d.renderings.slice(0, 3).map((r) => (designAsset(d.id, r.file).startsWith("http") ? designAsset(d.id, r.file) : `${site.url}${designAsset(d.id, r.file)}`)));

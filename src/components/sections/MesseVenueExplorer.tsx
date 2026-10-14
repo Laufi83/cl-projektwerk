@@ -11,6 +11,8 @@ import { useLiteMode } from "@/lib/performance";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { FxWords } from "@/components/kinetic/FxWords";
 import { MesseBuilderGuide } from "@/components/sections/MesseBuilderGuide";
+import { Link } from "@/i18n/navigation";
+import { venueByIndex } from "@/lib/messebau/venues";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
 import { ZOOM_REST } from "@/components/globe/zoom";
 
@@ -289,7 +291,13 @@ export function MesseVenueExplorer({ id = "messegelande" }: { id?: string }) {
                 </section>
               ))}
             </div>
-            <div className="border-t border-line bg-bg/40 p-6">
+            <div className="flex flex-wrap items-center gap-3 border-t border-line bg-bg/40 p-6">
+              {venueByIndex(active.number) && (
+                <Link href={{ pathname: "/messen/[slug]", params: { slug: venueByIndex(active.number)!.slug } }}
+                  className="inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-3 text-sm font-semibold transition-colors hover:border-accent">
+                  {de ? "Detailseite & Quellen" : "Details & sources"} <ArrowSquareOut size={16} aria-hidden="true" />
+                </Link>
+              )}
               <InquireLink className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-accent-contrast">
                 {de?"Messeprojekt anfragen":"Enquire about your project"} <ArrowRight size={17} aria-hidden="true"/>
               </InquireLink>

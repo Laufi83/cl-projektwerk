@@ -56,7 +56,7 @@ try {
     checks.push(locale + ": Jungheinrich/Merck/RETTmobil/GenH2 references unique, complete and chronological");
   }
   const homepages = LOCALE_CODES.map((locale) => locale === "de" ? "/" : `/${locale}`);
-  for (const route of ["/api/health", ...homepages, "/designs", "/messen", "/en/trade-fairs", "/impressum", "/datenschutz", "/robots.txt"]) {
+  for (const route of ["/api/health", ...homepages, "/designs", "/messen", "/en/trade-fairs", "/messen/messe-muenchen", "/en/trade-fairs/leipziger-messe", "/impressum", "/datenschutz", "/robots.txt"]) {
     const response = await fetch(base + route, { signal: AbortSignal.timeout(30000) });
     assert.equal(response.status, 200, `${route}: ${response.status}`);
     const body = await response.text();
@@ -101,6 +101,11 @@ try {
         assert.equal(result.status, 200, asset);
         await result.arrayBuffer();
       }
+    }
+    if (route === "/messen/messe-muenchen" || route === "/en/trade-fairs/leipziger-messe") {
+      // Messebau-Guide: Detailseite aus der kanonischen Datenquelle mit Prüfstufe und Datenlücken
+      for (const name of ['id="core"', 'id="gaps"', 'id="sources"']) assert(body.includes(name), `${route}: ${name} missing`);
+      checks.push(`${route}: venue detail page`);
     }
     if (route === "/messen" || route === "/en/trade-fairs") {
       for (const name of ['id="weltweit"', 'id="messegelande"']) assert(body.includes(name), `${route}: ${name} missing`);

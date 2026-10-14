@@ -14,7 +14,8 @@
     "globe:build": "tsx scripts/build-globe.mts",
     "globe:europe": "tsx scripts/build-globe-europe.mts",
     "test:e2e": "playwright test",
-    "build:render": "node scripts/render-build.mjs",
+    "guide:validate": "tsx scripts/messebau/validate.mts",
+    "build:render": "tsx scripts/messebau/validate.mts && node scripts/render-build.mjs",
     "start:render": "node scripts/render-start.mjs",
     "test:render": "node scripts/render-smoke.mjs"
   },
