@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowSquareOut, MapPin, Warning, Info } from "@phosphor-icons/react/dist/ssr";
 import { Link } from "@/i18n/navigation";
-import { globalVenues, venueBySlug, STATUS_INFO } from "@/lib/messebau/venues";
+import { globalVenues, venueBySlug, STATUS_INFO, legacyIndexForVenue } from "@/lib/messebau/venues";
 import type { GlobalVenue } from "@/lib/messebau/schema";
 import { VenueCompass } from "@/components/messe-guide/VenueCompass";
 import { languageAlternates, localizedPath } from "@/i18n/locales";
@@ -120,7 +120,7 @@ export default async function VenuePage({ params }: { params: Promise<{ locale: 
           {v.event_specific_variations && <p className="mt-4 flex gap-2 text-xs leading-relaxed text-fg-subtle"><Info size={15} className="mt-0.5 shrink-0" aria-hidden />{de ? v.event_specific_variations : "Events may set stricter or different rules (build height, build-up times, traffic routing, rigging)."} {de ? "Keine Angabe ersetzt die Standbaugenehmigung." : "Nothing here replaces the stand approval."}</p>}
         </section>
 
-        {v.legacy.builder && <VenueCompass index={v.index} />}
+        {v.legacy.builder && legacyIndexForVenue(v.index) && <VenueCompass index={Number(legacyIndexForVenue(v.index))} />}
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <section aria-labelledby="sources" className="rounded-[1.75rem] border border-line bg-bg-raised p-6 sm:p-8">
