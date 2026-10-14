@@ -36,8 +36,8 @@ function nearest(x: number, y: number, G: Geo) {
 
 function measure(el: HTMLElement): Geo {
   const W = el.clientWidth, H = el.clientHeight;
-  // Kacheln groß genug, um Entwürfe zu beurteilen (Desktop rund 1,5-fach der früheren Vorschau)
-  const w = W < 640 ? Math.round(W * 0.84) : Math.round(Math.min(640, Math.max(380, W / 2.75)));
+  // Kacheln groß genug, um Entwürfe zu beurteilen, aber mit mehr Umfeld (rund ein Viertel kleiner als zuvor)
+  const w = W < 640 ? Math.round(W * 0.72) : Math.round(Math.min(480, Math.max(300, W / 3.6)));
   const h = Math.round(w * 0.625);
   return { W, H, w, h, sx: w + GAP, sy: h + GAP };
 }

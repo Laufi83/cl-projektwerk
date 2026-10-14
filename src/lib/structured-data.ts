@@ -13,7 +13,6 @@ export function organizationJsonLd(locale: string, txt: OrgText) {
   const l: Locale = contentLocale(locale);
   const contact: Record<string, string> = {};
   if (!isPlaceholder(site.email)) contact.email = site.email;
-  if (!isPlaceholder(site.phone)) contact.telephone = site.phone;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -26,7 +25,7 @@ export function organizationJsonLd(locale: string, txt: OrgText) {
         description: txt.services.join(" · "),
         areaServed: ["Germany", "Europe"],
         founder: { "@type": "Person", name: site.person },
-        address: { "@type": "PostalAddress", streetAddress: site.address.split(", ")[0], postalCode: site.address.split(", ")[1]?.split(" ")[0], addressLocality: "Leipzig", addressCountry: "DE" },
+        address: { "@type": "PostalAddress", addressLocality: "Leipzig", addressCountry: "DE" },
         knowsAbout: txt.keywords,
         keywords: txt.keywords.join(", "),
         ...contact,

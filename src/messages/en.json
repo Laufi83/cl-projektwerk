@@ -72,15 +72,6 @@
     "sliderLabel": "Slider with five concept animations. Arrow keys browse, Enter opens.",
     "explain": "Time-lapse animation of a design: this is how the planned space could take shape. It is not evidence of a realised stand."
   },
-  "tagline": {
-    "text": "Every space starts with documents everyone can rely on. That is what I create.",
-    "stomp": [
-      "Briefing.",
-      "Planning.",
-      "Control.",
-      "Handover."
-    ]
-  },
   "services": {
     "eyebrow": "Services & collaboration",
     "title": "Planning capacity when projects run in parallel.",

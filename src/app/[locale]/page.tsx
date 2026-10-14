@@ -11,7 +11,6 @@ import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
 import { Services } from "@/components/sections/Services";
-import { StompTagline } from "@/components/sections/StompTagline";
 import { Gallery } from "@/components/gallery/Gallery";
 import { Process } from "@/components/sections/Process";
 import { About } from "@/components/sections/About";
@@ -26,7 +25,7 @@ import { FxWords } from "@/components/kinetic/FxWords";
 import { pick } from "@/i18n/locales";
 
 /**
- * Startseite: Hero-Film, Leitsatz, Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass),
+ * Startseite: Hero-Film, Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass),
  * Messen (nächste Termine), Über mich, Fragen, Kontakt. Der vollständige Messekalender liegt auf /messen.
  * Seite alle 5 Minuten erneuern (Messetermine in der Vorschau).
  */
@@ -47,6 +46,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     src: designAsset(d.id, `${base}-1280.webp`),
     srcSet: `${designAsset(d.id, `${base}-640.webp`)} 640w, ${designAsset(d.id, `${base}-1280.webp`)} 1280w`,
   });
+  // vom Auftraggeber gewählte Renderings je Leistung (public/media/services)
+  const svc = (k: string) => ({ src: mediaUrl(`services/${k}-1280.webp`), srcSet: `${mediaUrl(`services/${k}-640.webp`)} 640w, ${mediaUrl(`services/${k}-1280.webp`)} 1280w` });
   const d1 = getMediaDesign("001") ?? designs[0];
   // Hero-Aufbaufilme je Layout (config/layouts.ts): Entwürfe 001 (Studio, Ersatzbild) und 021 (Wood), dazu Zeitraffer der CL-Stände ohne Entwurfsbezug
   const heroFilms: HeroFilm[] = [
@@ -99,17 +100,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     <>
       <HeroScrub films={heroFilms} visNote={note} />
 
-      <StompTagline text={t("tagline.text")} beats={t.raw("tagline.stomp") as string[]} />
-
       {/* Leistungen und Zusammenarbeit (sechs Schritte) als ein Abschnitt */}
       <Services
         media={{
-          // Bilder aus Designs ohne Fremdlogos
-          tech: img(designs.find((d) => d.id === "040") ?? designs[2]),
-          prep: img(designs[1]),
+          tech: svc("tech"),
+          prep: svc("prep"),
           control: img(designs.find((d) => d.id === "033") ?? designs[0]),
-          concept: img(designs.find((d) => d.id === "026") ?? designs[0]),
-          reuse: img(designs.find((d) => d.id === "022") ?? designs[1]),
+          concept: svc("concept"),
+          reuse: svc("reuse"),
         }}
         visNote={note}
       >

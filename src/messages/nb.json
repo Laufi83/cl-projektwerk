@@ -68,9 +68,6 @@
     "sliderLabel": "Glidebryter med fem konseptanimasjoner. Piltastene blar, Enter åpner.",
     "explain": "Tidsforløpsanimasjon av et konsept. Den viser hvordan det planlagte rommet kan bygges opp, og er ikke bevis på en gjennomført stand."
   },
-  "tagline": {
-    "text": "Hvert rom begynner med dokumenter som alle involverte kan stole på. Det er dem jeg lager."
-  },
   "services": {
     "eyebrow": "Tjenester",
     "title": "Mer planleggingskapasitet når flere prosjekter går samtidig.",

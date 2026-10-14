@@ -68,9 +68,6 @@
     "sliderLabel": "Csúszka öt koncepcióanimációval. A nyílbillentyűk lapoznak, az Enter megnyit.",
     "explain": "Egy koncepció gyorsított animációja. Azt mutatja, hogyan épülhetne fel a tervezett tér, és nem bizonyítéka egy megvalósult standnak."
   },
-  "tagline": {
-    "text": "Minden tér olyan dokumentumokkal kezdődik, amelyekre minden érintett támaszkodhat. Én ezeket készítem el."
-  },
   "services": {
     "eyebrow": "Szolgáltatások",
     "title": "Több tervezési kapacitás, ha egyszerre több projekt fut.",

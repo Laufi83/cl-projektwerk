@@ -5,8 +5,8 @@
  * Buchstabe mit einer Visualisierung aus den eigenen Entwürfen, die langsam durchs Bild wandert.
  * Eigene, leichte Umsetzung mit CSS (globals.css, `.rt-*`) – ohne framer-motion und ohne fremde Bilder;
  * die Bilder werden erst beim Überfahren geladen. Rein dekorativ (aria-hidden).
- * Mehrere Zeilen möglich; jede Zeile wird bei Bedarf so weit verkleinert, dass sie vollständig sichtbar bleibt
- * (Fensterbreite, Schrift des Layouts).
+ * Mehrere Zeilen möglich; jede Zeile wird auf fast die volle verfügbare Breite eingepasst (vergrößert oder
+ * verkleinert – je nach Fensterbreite und Schrift des Layouts).
  */
 import { useEffect, useRef, useState } from "react";
 import { subscribeLayout } from "@/lib/layout";
@@ -22,7 +22,7 @@ export function RevealText({ lines, images, className }: { lines: Line[]; images
     return () => io.disconnect();
   }, []);
 
-  // Jede Zeile in die verfügbare Breite einpassen (nur verkleinern)
+  // Jede Zeile auf 98 % der verfügbaren Breite einpassen
   useEffect(() => {
     const host = ref.current!;
     const fit = () => {
@@ -31,9 +31,9 @@ export function RevealText({ lines, images, className }: { lines: Line[]; images
         // Skalierung per transform: ändert die gemessene Breite nicht (keine Rückkopplung, auch bei Font Boosting
         // am Handy); die freiwerdende Höhe gleicht ein negativer Außenabstand aus
         const w = el.offsetWidth;
-        const k = avail && w > avail ? Math.floor(((avail * 0.97) / w) * 1000) / 1000 : 1;
-        el.style.transform = k < 1 ? `scale(${k})` : "";
-        el.style.marginBottom = k < 1 ? `${-(1 - k) * el.offsetHeight}px` : "";
+        const k = avail && w ? Math.floor(((avail * 0.98) / w) * 1000) / 1000 : 1;
+        el.style.transform = k !== 1 ? `scale(${k})` : "";
+        el.style.marginBottom = k !== 1 ? `${(k - 1) * el.offsetHeight}px` : "";
       });
     };
     fit();

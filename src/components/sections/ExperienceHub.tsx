@@ -77,25 +77,25 @@ export function ExperienceHub({career,projects,careerTitle,projectsTitle,project
         </div>
         <div id="experience-stage" role="tabpanel" className="relative isolate min-h-[430px] overflow-hidden rounded-[1.6rem] border border-line-strong bg-[#101820] text-white lg:sticky lg:top-28 lg:self-start">
           <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 opacity-25 [background-image:linear-gradient(#ffffff16_1px,transparent_1px),linear-gradient(90deg,#ffffff16_1px,transparent_1px)] [background-size:56px_56px] [mask-image:linear-gradient(to_bottom,black,transparent)]"/>
-          <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 -z-10 size-80 rounded-full bg-[#f26a1b]/15 blur-3xl"/>
+          <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 -z-10 size-80 rounded-full bg-accent/15 blur-3xl"/>
           <div className="flex items-center justify-between gap-4 border-b border-white/10 px-5 py-5 md:px-8">
-            <span className="font-mono text-[10px] font-bold tracking-[.19em] text-[#ffab73]">{mode==="career"?"CL / CAREER":"CL / PROJECT EXPERIENCE"}</span>
-            <span className="font-mono text-xs tabular text-[#abbac5]">{String(index+1).padStart(2,"0")} / {String(entries.length).padStart(2,"0")}</span>
+            <span className="font-mono text-[10px] font-bold tracking-[.19em] text-accent">{mode==="career"?"CL / CAREER":"CL / PROJECT EXPERIENCE"}</span>
+            <span className="font-mono text-xs tabular text-accent">{String(index+1).padStart(2,"0")} / {String(entries.length).padStart(2,"0")}</span>
           </div>
           <div key={mode+"-"+index} className="p-6 motion-safe:animate-[career-enter_500ms_cubic-bezier(0.2,0.8,0.2,1)_both] md:p-9">
-            <p className="inline-flex items-center gap-3 font-mono text-2xl font-semibold tracking-tight text-[#ffac79] md:text-3xl"><CalendarBlank size={22} aria-hidden="true"/><TypedYear text={careerEntry?.years??projectEntry?.year??""}/></p>
+            <p className="inline-flex items-center gap-3 font-mono text-2xl font-semibold tracking-tight text-accent md:text-3xl"><CalendarBlank size={22} aria-hidden="true"/><TypedYear text={careerEntry?.years??projectEntry?.year??""}/></p>
             <h4 className="mt-6 font-display text-[clamp(2rem,4.3vw,3.7rem)] font-semibold leading-tight tracking-tight"><FxWords text={careerEntry?.role??projectEntry?.client??""} immediate delay={300} /></h4>
             <p className="mt-4 text-base leading-relaxed text-[#c1ccd4]"><FxWords text={careerEntry?.org??projectEntry?.event??""} immediate delay={650} /></p>
-            {projectEntry?.size&&<p className="mt-4 inline-flex rounded-full border border-white/20 px-3 py-1.5 font-mono text-xs text-[#ffae7b]">{projectEntry.size}</p>}
+            {projectEntry?.size&&<p className="mt-4 inline-flex rounded-full border border-white/20 px-3 py-1.5 font-mono text-xs text-accent">{projectEntry.size}</p>}
             {projectEntry?.note&&<p className="mt-5 max-w-lg text-sm leading-relaxed text-[#9eacba]">{projectEntry.note}</p>}
             {mode==="projects"&&<p className="mt-8 border-t border-white/15 pt-5 text-xs text-[#9daeb9]">{de?"Persönliche Projekterfahrung aus früheren Anstellungen – keine Kundenreferenzen von CL Projektwerk.":"Project experience from previous employment – not client work of CL Projektwerk."}</p>}
           </div>
           <div className="mt-auto flex items-center justify-between gap-4 border-t border-white/15 px-6 py-4 md:px-9">
-            <button type="button" onClick={()=>shift(-1)} aria-label={de?"Vorheriger Eintrag":"Previous entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-[#ff9957]"><ArrowLeft size={19} aria-hidden="true"/></button>
+            <button type="button" onClick={()=>shift(-1)} aria-label={de?"Vorheriger Eintrag":"Previous entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowLeft size={19} aria-hidden="true"/></button>
             <div role="progressbar" aria-label={de?"Position":"Position"} aria-valuemin={1} aria-valuemax={entries.length} aria-valuenow={index+1} className="h-[3px] w-2/3 overflow-hidden rounded-full bg-white/15">
-              <div className="h-full bg-[#f26a1b] transition-[width] duration-500 motion-reduce:transition-none" style={{width:((index+1)/entries.length*100)+"%"}}/>
+              <div className="h-full bg-accent transition-[width] duration-500 motion-reduce:transition-none" style={{width:((index+1)/entries.length*100)+"%"}}/>
             </div>
-            <button type="button" onClick={()=>shift(1)} aria-label={de?"Nächster Eintrag":"Next entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-[#ff9957]"><ArrowRight size={19} aria-hidden="true"/></button>
+            <button type="button" onClick={()=>shift(1)} aria-label={de?"Nächster Eintrag":"Next entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowRight size={19} aria-hidden="true"/></button>
           </div>
         </div>
       </div>

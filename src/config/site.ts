@@ -9,9 +9,10 @@ export const site = {
   role: { de: "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau", en: "External planning and project office for exhibition construction, brand spaces and interior fit-out" },
   claim: { de: "Planung, die auf der Fläche funktioniert.", en: "Planning that works on the floor." },
   email: "christof.laufersweiler@web.de",
-  phone: "+49 151 59890827",
-  /** Nur Ziffern inkl. Ländervorwahl, z. B. „4917612345678“ */
-  whatsapp: "+49 151 59890827",
+  /**
+   * Ladungsfähige Anschrift – auf Wunsch nicht mehr im Kontaktbereich, nur noch dort, wo sie gesetzlich
+   * vorgeschrieben ist (Impressum § 5 DDG, Verantwortlicher nach Art. 13 DSGVO). Telefon/WhatsApp entfernt (14.10.2026).
+   */
   address: "Zschochersche Straße 57, 04229 Leipzig",
   /** passend zu „… innerhalb von {time}“ in src/messages/<code>.json (Kasus je Sprache) */
   responseTime: {

@@ -68,9 +68,6 @@
     "sliderLabel": "Liukusäädin viidellä konseptianimaatiolla. Nuolinäppäimet selaavat, Enter avaa.",
     "explain": "Konseptin aikaviiveanimaatio. Se näyttää, miten suunniteltu tila voitaisiin rakentaa, eikä ole todiste toteutetusta osastosta."
   },
-  "tagline": {
-    "text": "Jokainen tila alkaa asiakirjoista, joihin kaikki osapuolet voivat luottaa. Juuri ne laadin."
-  },
   "services": {
     "eyebrow": "Palvelut",
     "title": "Lisää suunnittelukapasiteettia, kun useita projekteja on käynnissä yhtä aikaa.",

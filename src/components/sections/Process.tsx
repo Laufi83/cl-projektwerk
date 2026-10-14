@@ -9,8 +9,11 @@ import { useMedia, useReducedMotion } from "@/hooks/useMedia";
 import { useLiteMode } from "@/lib/performance";
 
 const STEPS = ["briefing", "concept", "planning", "production", "logistics", "onsite"] as const;
-/** So lange bleibt ein Schritt offen, bevor der nächste aufklappt (nur Desktop, nur im Bild) */
-const DWELL = 7000;
+/** So lange bleibt ein Schritt offen, bevor der nächste aufklappt (nur Desktop, nur im Bild);
+ *  jeder Film wird so beschleunigt, dass er in genau dieser Zeit einmal durchläuft. */
+const DWELL = 5000;
+/** so lange darf ein Film laden, bevor der Schritt trotzdem weiterschaltet */
+const LOAD_LIMIT = 12000;
 /**
  * Bild je Schritt; mit `video` läuft ein stummer Prozessfilm (`src` dient als Poster).
  * `once`: nur einmal abspielen und auf dem letzten Bild stehen bleiben (z. B. Skizze);
@@ -19,24 +22,36 @@ const DWELL = 7000;
  */
 export type StepImage = { src: string; alt: string; plan?: boolean; video?: string; once?: boolean; startPoster?: string; clean?: boolean };
 
-/** Stummes Video des offenen Schritts; Quelle erst laden, wenn der Abschnitt in die Nähe kommt. */
-function StepVideo({ media, playing, className }: { media: StepImage; playing: boolean; className: string }) {
+/** Wiedergabetempo, damit der ganze Film in DWELL Millisekunden durchläuft (nie langsamer als normal) */
+const fit = (v: HTMLVideoElement) => {
+  if (Number.isFinite(v.duration) && v.duration > 0) v.playbackRate = Math.min(16, Math.max(1, v.duration / (DWELL / 1000)));
+};
+
+/**
+ * Stummes Video des offenen Schritts; Quelle erst laden, wenn der Abschnitt in die Nähe kommt.
+ * `fast`: in DWELL einmal von vorn bis zum letzten Bild abspielen (Desktop-Abfolge), sonst in Schleife.
+ */
+function StepVideo({ media, playing, fast, className, onStart, onEnd }: { media: StepImage; playing: boolean; fast: boolean; className: string; onStart?: () => void; onEnd?: () => void }) {
   const ref = useRef<HTMLVideoElement>(null);
   const near = useNear(ref);
-  const once = !!media.once;
-  const poster = once && media.startPoster ? media.startPoster : media.src;
+  const once = fast || !!media.once;
+  const poster = media.once && media.startPoster ? media.startPoster : media.src;
   useEffect(() => {
     const v = ref.current;
     if (!v || !near) return;
-    // einmal fertig gezeichnet → stehen lassen (play() würde bei beendetem Video von vorn beginnen)
+    if (fast) fit(v);
+    // einmal fertig → stehen lassen (play() würde bei beendetem Video von vorn beginnen)
     if (playing && !(once && v.ended)) v.play().catch(() => {});
     else v.pause();
-  }, [playing, once, near]);
+  }, [playing, once, fast, near]);
   return (
     <video
       ref={ref}
       src={near ? media.video : undefined}
       poster={near ? poster : undefined}
+      onLoadedMetadata={fast ? (e) => fit(e.currentTarget) : undefined}
+      onPlaying={onStart}
+      onEnded={onEnd}
       muted
       loop={!once}
       playsInline
@@ -48,15 +63,16 @@ function StepVideo({ media, playing, className }: { media: StepImage; playing: b
 }
 
 /** Film des offenen Schritts oder – ohne Bewegung – sein Standbild */
-function Media({ img, play, still, className }: { img: StepImage; play: boolean; still: boolean; className: string }) {
-  if (img.video && !still) return <StepVideo key={img.video} media={img} playing={play} className={className} />;
+function Media({ img, play, still, fast = false, className, onStart, onEnd }: { img: StepImage; play: boolean; still: boolean; fast?: boolean; className: string; onStart?: () => void; onEnd?: () => void }) {
+  if (img.video && !still) return <StepVideo key={img.video} media={img} playing={play} fast={fast} className={className} onStart={onStart} onEnd={onEnd} />;
   return <img src={img.src} alt={img.alt} loading="lazy" decoding="async" className={`${className} ${img.plan ? "bg-white object-contain p-4" : ""}`} />;
 }
 
 /**
  * Zusammenarbeit in sechs Schritten – kompakt statt gepinnter Scroll-Strecke:
- * Desktop: sechs Bildleisten nebeneinander; die offene zeigt ihren Prozessfilm und schaltet im Bild
- * nach einigen Sekunden weiter (Fortschrittsbalken). Zeiger über den Leisten hält an, Klick wählt direkt.
+ * Desktop: sechs Bildleisten nebeneinander; die offene spielt ihren Prozessfilm beschleunigt in 5 Sekunden ab
+ * und schaltet am Filmende automatisch zum nächsten Schritt (Fortschrittsbalken), nach 06 wieder zu 01. Die 5 Sekunden
+ * zählen erst, wenn der Film läuft (Ladezeit zählt nicht mit); lädt er nicht, geht es nach LOAD_LIMIT weiter. Klick wählt direkt.
  * Mobil: Liste, der gewählte Schritt klappt mit Film auf.
  * Reduzierte Bewegung und Schonmodus: Standbilder, kein automatischer Wechsel.
  * `embedded`: Teil des Abschnitts „Leistungen & Zusammenarbeit“ (ohne eigenen Rand, Überschrift als h3).
@@ -70,9 +86,10 @@ export function Process({ images, visNote, embedded }: { images: StepImage[]; vi
   const wide = useMedia("(min-width: 1024px)");
   const [active, setActive] = useState(0);
   const [inView, setInView] = useState(false);
-  const [hold, setHold] = useState(false);
   // zählt manuelle Auswahl hoch: startet Zeitgeber und Fortschrittsbalken neu
   const [round, setRound] = useState(0);
+  // Schritt, dessen Film gerade sichtbar läuft (-1: lädt noch)
+  const [running, setRunning] = useState(-1);
 
   useEffect(() => {
     const io = new IntersectionObserver(([e]) => setInView(e.isIntersecting), { threshold: 0.3 });
@@ -80,13 +97,19 @@ export function Process({ images, visNote, embedded }: { images: StepImage[]; vi
     return () => io.disconnect();
   }, []);
 
-  const auto = wide && inView && !hold && !still;
+  const auto = wide && inView && !still;
+  const next = () => { setRunning(-1); setActive((a) => (a + 1) % STEPS.length); };
+  // läuft der Film: nach DWELL (+ Puffer, falls das Ende-Ereignis ausbleibt) weiter; Schritte ohne Film nach DWELL;
+  // lädt der Film nicht, nach LOAD_LIMIT
+  const hasFilm = !!images[active]?.video;
+  const clock = running === active ? "run" : "wait";
   useEffect(() => {
     if (!auto) return;
-    const id = window.setTimeout(() => setActive((a) => (a + 1) % STEPS.length), DWELL);
+    const ms = !hasFilm ? DWELL : clock === "run" ? DWELL + 600 : LOAD_LIMIT;
+    const id = window.setTimeout(() => { setRunning(-1); setActive((a) => (a + 1) % STEPS.length); }, ms);
     return () => clearTimeout(id);
-  }, [auto, active, round]);
-  const pick = (i: number) => { setActive(i); setRound((r) => r + 1); };
+  }, [auto, active, round, hasFilm, clock]);
+  const pick = (i: number) => { setRunning(-1); setActive(i); setRound((r) => r + 1); };
 
   const title = (s: (typeof STEPS)[number]) => t(`steps.${s}.title`);
   const text = (s: (typeof STEPS)[number]) => t(`steps.${s}.text`);
@@ -107,8 +130,6 @@ export function Process({ images, visNote, embedded }: { images: StepImage[]; vi
         {/* Desktop: aufklappende Bildleisten */}
         <ol
           className="mt-12 hidden h-[clamp(420px,62svh,600px)] gap-2.5 lg:flex"
-          onPointerEnter={() => setHold(true)}
-          onPointerLeave={() => setHold(false)}
         >
           {STEPS.map((s, i) => {
             const on = i === active;
@@ -120,7 +141,7 @@ export function Process({ images, visNote, embedded }: { images: StepImage[]; vi
                 style={{ flexGrow: on ? 6.5 : 1, borderColor: on ? "var(--accent)" : undefined }}
               >
                 {on && wide ? (
-                  <Media img={img} play={inView} still={still} className="absolute inset-0 h-full w-full object-cover" />
+                  <Media key={`${i}-${round}`} img={img} play={inView} still={still} fast onStart={() => setRunning(i)} onEnd={() => { if (auto) next(); }} className="absolute inset-0 h-full w-full object-cover" />
                 ) : (
                   <img src={img.src} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full scale-110 object-cover opacity-45 grayscale-[.35] transition-[opacity,transform] duration-700 ease-fluid" />
                 )}
@@ -134,7 +155,7 @@ export function Process({ images, visNote, embedded }: { images: StepImage[]; vi
                       <h3 className="font-display mt-2 text-3xl font-semibold leading-tight xl:text-4xl"><FxWords text={title(s)} immediate delay={350} /></h3>
                       <p className="mt-3 max-w-[48ch] text-[0.95rem] leading-relaxed text-white/80"><FxWords text={text(s)} immediate delay={600} /></p>
                     </div>
-                    {auto && (
+                    {auto && (!img.video || running === i) && (
                       <span aria-hidden className="absolute inset-x-0 bottom-0 h-[3px] bg-white/10">
                         <span key={`${active}-${round}`} className="step-progress block h-full origin-left bg-accent" style={{ animationDuration: `${DWELL}ms` }} />
                       </span>

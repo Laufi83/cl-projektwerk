@@ -66,7 +66,7 @@ export async function Footer() {
             { text: "Christof Laufersweiler", className: "mt-[0.12em] text-[clamp(1.9rem,6.8vw,7.4rem)]" },
           ]}
           images={wordmarkImages}
-          className="font-display font-bold leading-[0.95] tracking-[-0.06em] text-[#1d2026]"
+          className="font-display font-black leading-[0.95] tracking-[-0.04em] text-[#1d2026]"
         />
       </div>
       <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-line py-7 text-xs text-fg-subtle">

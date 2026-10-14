@@ -96,7 +96,7 @@ export default function CoverflowCarousel({
   return (
     <section
       ref={root}
-      className="relative isolate w-full overflow-hidden bg-[#11151B] text-[#F3F1EC] outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#F26A1B]"
+      className="relative isolate w-full overflow-hidden bg-[#11151B] text-[#F3F1EC] outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent"
       aria-label={label}
       aria-roledescription="carousel"
       tabIndex={0}
@@ -161,7 +161,7 @@ export default function CoverflowCarousel({
                 type="button"
                 aria-label={openLabel + ": " + (item.title ?? item.alt)}
                 aria-current={distance === 0 ? "true" : undefined}
-                className="group relative block aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/15 bg-[#202630] text-left shadow-[0_28px_65px_rgba(0,0,0,.60)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#F26A1B]"
+                className="group relative block aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/15 bg-[#202630] text-left shadow-[0_28px_65px_rgba(0,0,0,.60)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
                 onClick={(event) => select(item, event.currentTarget.querySelector("img"))}
               >
                 <img
@@ -193,15 +193,15 @@ export default function CoverflowCarousel({
         <button type="button" aria-label={previousLabel}
           disabled={!loop && index === 0}
           onClick={() => goTo(index - 1)}
-          className="grid size-12 place-items-center rounded-full border border-white/20 bg-[#202630] text-2xl transition-colors hover:border-[#F26A1B] hover:text-[#F26A1B] focus-visible:outline-2 focus-visible:outline-[#F26A1B] disabled:opacity-30">←</button>
+          className="grid size-12 place-items-center rounded-full border border-white/20 bg-[#202630] text-2xl transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:opacity-30">←</button>
         <p className="min-w-20 text-center text-sm font-medium tabular-nums text-[#F3F1EC]/75" aria-live="polite">
-          <span className="text-[#F26A1B]">{String(index + 1).padStart(2, "0")}</span>
+          <span className="text-accent">{String(index + 1).padStart(2, "0")}</span>
           {" / "}{String(count).padStart(2, "0")}
         </p>
         <button type="button" aria-label={nextLabel}
           disabled={!loop && index === count - 1}
           onClick={() => goTo(index + 1)}
-          className="grid size-12 place-items-center rounded-full border border-white/20 bg-[#202630] text-2xl transition-colors hover:border-[#F26A1B] hover:text-[#F26A1B] focus-visible:outline-2 focus-visible:outline-[#F26A1B] disabled:opacity-30">→</button>
+          className="grid size-12 place-items-center rounded-full border border-white/20 bg-[#202630] text-2xl transition-colors hover:border-accent hover:text-accent focus-visible:outline-2 focus-visible:outline-accent disabled:opacity-30">→</button>
       </div>
     </section>
   );

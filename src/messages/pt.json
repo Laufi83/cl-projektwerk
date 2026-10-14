@@ -72,15 +72,6 @@
     "sliderLabel": "Controlo deslizante com cinco animações concetuais. As setas navegam, Enter abre.",
     "explain": "Animação em time-lapse de um projeto: é assim que o espaço planeado poderia ganhar forma. Não é prova de um stand realizado."
   },
-  "tagline": {
-    "text": "Cada espaço começa com documentos em que todos podem confiar. É isso que eu crio.",
-    "stomp": [
-      "Briefing.",
-      "Planeamento.",
-      "Gestão.",
-      "Entrega."
-    ]
-  },
   "services": {
     "eyebrow": "Serviços e colaboração",
     "title": "Capacidade de planeamento quando os projetos se sobrepõem.",

@@ -72,15 +72,6 @@
     "sliderLabel": "Slider mit fünf Konzeptanimationen. Pfeiltasten blättern, Eingabetaste öffnet.",
     "explain": "Zeitraffer-Animation eines Entwurfs: So könnte die geplante Fläche entstehen. Sie ist kein Nachweis eines realisierten Stands."
   },
-  "tagline": {
-    "text": "Jede Fläche beginnt mit Unterlagen, auf die sich alle verlassen können. Genau die erstelle ich.",
-    "stomp": [
-      "Briefing.",
-      "Planung.",
-      "Steuerung.",
-      "Übergabe."
-    ]
-  },
   "services": {
     "eyebrow": "Leistungen & Zusammenarbeit",
     "title": "Planungskapazität, wenn Projekte parallel laufen.",

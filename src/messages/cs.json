@@ -72,15 +72,6 @@
     "sliderLabel": "Posuvník s pěti konceptovými animacemi. Šipky listují, Enter otevře.",
     "explain": "Časosběrná animace návrhu: takto by mohl plánovaný prostor vzniknout. Nejde o doklad realizovaného stánku."
   },
-  "tagline": {
-    "text": "Každý prostor začíná podklady, na které se mohou všichni spolehnout. Právě ty vytvářím.",
-    "stomp": [
-      "Briefing.",
-      "Plánování.",
-      "Řízení.",
-      "Předání."
-    ]
-  },
   "services": {
     "eyebrow": "Služby a spolupráce",
     "title": "Plánovací kapacita, když projekty běží souběžně.",

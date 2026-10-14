@@ -72,15 +72,6 @@
     "sliderLabel": "Curseur de cinq animations conceptuelles. Les flèches font défiler, Entrée ouvre.",
     "explain": "Animation en accéléré d'un concept : voici comment l'espace prévu pourrait prendre forme. Ce n'est pas la preuve d'un stand réalisé."
   },
-  "tagline": {
-    "text": "Chaque espace commence par des documents sur lesquels tout le monde peut compter. C'est ce que je crée.",
-    "stomp": [
-      "Brief.",
-      "Planification.",
-      "Pilotage.",
-      "Remise."
-    ]
-  },
   "services": {
     "eyebrow": "Prestations et collaboration",
     "title": "De la capacité de planification quand les projets s'enchaînent.",

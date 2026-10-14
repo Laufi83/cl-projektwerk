@@ -68,9 +68,6 @@
     "sliderLabel": "Reglage med fem konceptanimationer. Piltangenterna bläddrar, Enter öppnar.",
     "explain": "Time-lapse-animation av ett koncept. Den visar hur det planerade rummet kan byggas upp och är inget bevis på en genomförd monter."
   },
-  "tagline": {
-    "text": "Varje rum börjar med underlag som alla inblandade kan lita på. Det är de dokumenten jag tar fram."
-  },
   "services": {
     "eyebrow": "Tjänster",
     "title": "Mer planeringskapacitet när flera projekt pågår samtidigt.",

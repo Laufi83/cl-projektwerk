@@ -7,7 +7,7 @@ import { Kinetic } from "@/components/kinetic/Kinetic";
  * Impressum (§ 5 DDG, § 18 MStV) und Datenschutzerklärung (Art. 13 DSGVO), zugeschnitten auf diese Website:
  * keine Cookies, kein Tracking, Schriften lokal, Formular per E-Mail, Radio-Stream erst auf Klick.
  * Texte: src/config/legal-de.json (Entwurf, nur Deutsch, maßgeblich; rechtlich noch zu prüfen).
- * Variablen: {brand}, {person}, {address}, {phone}, {email}, {hosting}, {mailHosting}. Hoster: `site.hosting`.
+ * Variablen: {brand}, {person}, {address}, {email}, {hosting}, {mailHosting}. Hoster: `site.hosting`.
  */
 type Row = { title: string; body: string };
 
@@ -22,7 +22,6 @@ export async function LegalPage({ kind }: { kind: "imprint" | "privacy" }) {
     person: site.person,
     address: site.address.replace(", ", "\n"),
     addressInline: site.address,
-    phone: site.phone,
     email: site.email,
     hosting: site.hosting
       ? `Diese Website wird bei ${site.hosting.name}, ${site.hosting.address} gehostet.`

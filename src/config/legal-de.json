@@ -6,7 +6,7 @@
     },
     {
       "title": "Kontakt",
-      "body": "Telefon: {phone}\nE-Mail: {email}"
+      "body": "E-Mail: {email}\nKontaktformular: auf dieser Website"
     },
     {
       "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
@@ -36,7 +36,7 @@
   "privacy": [
     {
       "title": "1. Verantwortlicher",
-      "body": "Verantwortlich für die Datenverarbeitung auf dieser Website (Art. 4 Nr. 7 DSGVO):\n{brand}\n{person}\n{address}\nDeutschland\nTelefon: {phone}\nE-Mail: {email}\n\nEin Datenschutzbeauftragter ist nicht bestellt, da hierzu keine gesetzliche Pflicht besteht."
+      "body": "Verantwortlich für die Datenverarbeitung auf dieser Website (Art. 4 Nr. 7 DSGVO):\n{brand}\n{person}\n{address}\nDeutschland\nE-Mail: {email}\nKontaktformular: auf dieser Website\n\nEin Datenschutzbeauftragter ist nicht bestellt, da hierzu keine gesetzliche Pflicht besteht."
     },
     {
       "title": "2. Überblick",
@@ -47,8 +47,8 @@
       "body": "{hosting} Beim Aufruf jeder Seite verarbeitet der Server automatisch technische Zugriffsdaten: IP-Adresse, Datum und Uhrzeit, abgerufene Seite bzw. Datei, übertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem. Dies ist für die Auslieferung der Website, ihre Stabilität und Sicherheit (z. B. Abwehr von Angriffen) erforderlich. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt im sicheren und fehlerfreien Betrieb der Website. Die Website ist für die Serverregion Frankfurt konfiguriert. Informationen des Anbieters zur Datenverarbeitung und Auftragsverarbeitung finden Sie unter https://render.com/privacy und https://render.com/dpa. Die Logfiles werden nach den Löschfristen des Hosters automatisch gelöscht; eine Zusammenführung mit anderen Datenquellen findet nicht statt."
     },
     {
-      "title": "4. Anfrage- und Rückrufformular, Kontakt per E-Mail, Telefon oder WhatsApp",
-      "body": "Wenn Sie das Anfrage- oder Rückrufformular nutzen, verarbeite ich die von Ihnen eingegebenen Angaben (z. B. Messe, Veranstaltung oder Projekt, Projektart, Ort, Termin, Flächengröße, vorhandene Unterlagen, benötigte Planungsleistung, gewünschter Umfang, Budgetrahmen, Name, Firma, E-Mail-Adresse, Telefonnummer, Nachricht und gemerkte Entwürfe). Die Angaben werden per verschlüsselter Verbindung an meinen Server übermittelt und von dort als E-Mail an mein Postfach ({email}, E-Mail-Hosting: {mailHosting}) zugestellt. Eine automatische Bestätigung an Sie wird nicht versendet. Dasselbe gilt sinngemäß, wenn Sie mich direkt per E-Mail, Telefon oder WhatsApp kontaktieren. Bei WhatsApp gelten zusätzlich die Datenschutzbestimmungen der WhatsApp Ireland Ltd.; die Nutzung ist freiwillig, alternativ erreichen Sie mich per E-Mail oder Telefon.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung bzw. Durchführung eines Vertrags) sowie Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie jederzeit mit Wirkung für die Zukunft widerrufen können. Ihre Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und kein Auftrag zustande kommt, spätestens nach 12 Monaten. Kommt ein Auftrag zustande, gelten die gesetzlichen Aufbewahrungsfristen (bis zu 10 Jahre, § 147 AO, § 257 HGB).\n\nZum Schutz vor Spam enthält das Formular ein unsichtbares Prüffeld und eine Zeitprüfung; zur Begrenzung massenhafter Anfragen wird die IP-Adresse höchstens 10 Minuten im Arbeitsspeicher des Servers gehalten und nicht dauerhaft gespeichert (Art. 6 Abs. 1 lit. f DSGVO)."
+      "title": "4. Anfrage- und Rückrufformular, Kontakt per E-Mail",
+      "body": "Wenn Sie das Anfrage- oder Rückrufformular nutzen, verarbeite ich die von Ihnen eingegebenen Angaben (z. B. Messe, Veranstaltung oder Projekt, Projektart, Ort, Termin, Flächengröße, vorhandene Unterlagen, benötigte Planungsleistung, gewünschter Umfang, Budgetrahmen, Name, Firma, E-Mail-Adresse, Telefonnummer, Nachricht und gemerkte Entwürfe). Die Angaben werden per verschlüsselter Verbindung an meinen Server übermittelt und von dort als E-Mail an mein Postfach ({email}, E-Mail-Hosting: {mailHosting}) zugestellt. Eine automatische Bestätigung an Sie wird nicht versendet. Dasselbe gilt sinngemäß, wenn Sie mich direkt per E-Mail kontaktieren.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung bzw. Durchführung eines Vertrags) sowie Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie jederzeit mit Wirkung für die Zukunft widerrufen können. Ihre Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und kein Auftrag zustande kommt, spätestens nach 12 Monaten. Kommt ein Auftrag zustande, gelten die gesetzlichen Aufbewahrungsfristen (bis zu 10 Jahre, § 147 AO, § 257 HGB).\n\nZum Schutz vor Spam enthält das Formular ein unsichtbares Prüffeld und eine Zeitprüfung; zur Begrenzung massenhafter Anfragen wird die IP-Adresse höchstens 10 Minuten im Arbeitsspeicher des Servers gehalten und nicht dauerhaft gespeichert (Art. 6 Abs. 1 lit. f DSGVO)."
     },
     {
       "title": "5. Speicherung im Browser (localStorage)",

@@ -68,9 +68,6 @@
     "sliderLabel": "Slider med fem konceptanimationer. Piletasterne blader, Enter åbner.",
     "explain": "Tidsforløbsanimation af et koncept. Den viser, hvordan det planlagte rum kunne opbygges, og er ikke bevis for en realiseret stand."
   },
-  "tagline": {
-    "text": "Ethvert rum begynder med dokumenter, som alle involverede kan stole på. Det er dem, jeg laver."
-  },
   "services": {
     "eyebrow": "Ydelser",
     "title": "Mere planlægningskapacitet, når flere projekter kører samtidig.",

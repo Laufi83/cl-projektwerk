@@ -1,13 +1,13 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Phone, WhatsappLogo, EnvelopeSimple, Check } from "@phosphor-icons/react";
+import { Phone, EnvelopeSimple, Check } from "@phosphor-icons/react";
 import { Link } from "@/i18n/navigation";
 import { site, isPlaceholder } from "@/config/site";
 import { EMAIL_DRAFT_MODE, type EmailDraft } from "@/lib/email-draft";
 import { EmailDraftPanel } from "./EmailDraftPanel";
 
-/** WhatsApp, Rückruf und direkter Kontakt neben dem Formular. */
+/** Rückruf und direkter Kontakt (E-Mail) neben dem Formular. */
 export function ContactAside() {
   const t = useTranslations("contact");
   const tf = useTranslations("contact.fields");
@@ -18,7 +18,6 @@ export function ContactAside() {
   const [draft, setDraft] = useState<EmailDraft | null>(null);
   const startedAt = useRef(0);
   useEffect(() => { startedAt.current = Date.now(); }, []);
-  const waReady = !isPlaceholder(site.whatsapp);
 
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -41,20 +40,6 @@ export function ContactAside() {
 
   return (
     <aside className="grid content-start gap-3">
-      <a
-        href={waReady ? `https://wa.me/${site.whatsapp.replace(/\D/g, "")}` : undefined}
-        aria-disabled={!waReady}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`flex items-center gap-4 rounded-2xl border border-line bg-bg-raised p-5 transition-colors duration-500 ease-fluid ${waReady ? "hover:border-accent" : "cursor-not-allowed opacity-70"}`}
-      >
-        <span className="grid size-11 shrink-0 place-items-center rounded-full bg-[#25d366]/15 text-[#25d366]"><WhatsappLogo size={22} weight="fill" /></span>
-        <span>
-          <span className="block font-semibold">{t("whatsapp")}</span>
-          <span className={`block text-sm ${waReady ? "text-fg-muted" : "ph w-max"}`}>{waReady ? site.whatsapp : site.whatsapp}</span>
-        </span>
-      </a>
-
       <div className="rounded-2xl border border-line bg-bg-raised p-5">
         <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} className="flex w-full items-center gap-4 text-left">
           <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent-soft text-accent"><Phone size={22} weight="fill" /></span>
@@ -83,8 +68,6 @@ export function ContactAside() {
       <div className="rounded-2xl border border-line p-5 text-sm">
         <p className="eyebrow">{t("direct")}</p>
         <p className="mt-3 flex items-center gap-2"><EnvelopeSimple size={16} className="text-accent" /> {isPlaceholder(site.email) ? <span className="ph">{site.email}</span> : <a href={`mailto:${site.email}`} className="underline underline-offset-4">{site.email}</a>}</p>
-        <p className="mt-2 flex items-center gap-2"><Phone size={16} className="text-accent" /> {isPlaceholder(site.phone) ? <span className="ph">{site.phone}</span> : <a href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>}</p>
-        <p className="mt-2 text-fg-muted"><span className={isPlaceholder(site.address) ? "ph" : ""}>{site.address}</span></p>
       </div>
     </aside>
   );

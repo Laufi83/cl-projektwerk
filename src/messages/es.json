@@ -72,15 +72,6 @@
     "sliderLabel": "Control deslizante con cinco animaciones conceptuales. Las flechas navegan, Intro abre.",
     "explain": "Animación en time-lapse de un diseño: así podría tomar forma el espacio planificado. No es prueba de un stand realizado."
   },
-  "tagline": {
-    "text": "Todo espacio empieza con documentos en los que todos pueden confiar. Eso es lo que yo creo.",
-    "stomp": [
-      "Briefing.",
-      "Planificación.",
-      "Control.",
-      "Entrega."
-    ]
-  },
   "services": {
     "eyebrow": "Servicios y colaboración",
     "title": "Capacidad de planificación cuando los proyectos coinciden.",

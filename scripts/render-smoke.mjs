@@ -83,12 +83,12 @@ try {
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ['aria-roledescription="Entwurfsatlas"', "data-steps", "data-beat"]) {
+      for (const name of ['aria-roledescription="Entwurfsatlas"', "data-steps"]) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
       // Gekürzte Startseite: Messekalender liegt auf /messen, die sechs Schritte nur einmal
-      for (const moved of ['id="weltweit"', 'id="bauphasen"']) {
+      for (const moved of ['id="weltweit"', 'id="bauphasen"', "data-beat"]) {
         assert(!body.includes(moved), `Section should not be on the homepage anymore: ${moved}`);
       }
       // Messestandorte (Atlas + Messebau-Kompass) seit 15.10.2026 wieder auf der Startseite, eigener Menüpunkt
@@ -103,7 +103,7 @@ try {
       }
     }
     if (route === "/messen" || route === "/en/trade-fairs") {
-      for (const name of ['id="weltweit"', "Mission Control"]) assert(body.includes(name), `${route}: ${name} missing`);
+      for (const name of ['id="weltweit"', 'id="messegelande"']) assert(body.includes(name), `${route}: ${name} missing`);
       checks.push(`${route}: trade fair calendar and venue explorer`);
     }
     checks.push(route);
