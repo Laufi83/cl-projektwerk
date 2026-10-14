@@ -12,7 +12,7 @@ import { InquireLink } from "@/components/ui/InquireLink";
 import { FxWords } from "@/components/kinetic/FxWords";
 import { MesseBuilderGuide } from "@/components/sections/MesseBuilderGuide";
 import { Link } from "@/i18n/navigation";
-import { venueByIndex } from "@/lib/messebau/venues";
+import { venueByLegacyIndex } from "@/lib/messebau/venues";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
 import { ZOOM_REST } from "@/components/globe/zoom";
 
@@ -292,8 +292,8 @@ export function MesseVenueExplorer({ id = "messegelande" }: { id?: string }) {
               ))}
             </div>
             <div className="flex flex-wrap items-center gap-3 border-t border-line bg-bg/40 p-6">
-              {venueByIndex(active.number) && (
-                <Link href={{ pathname: "/messen/[slug]", params: { slug: venueByIndex(active.number)!.slug } }}
+              {venueByLegacyIndex(active.number) && (
+                <Link href={{ pathname: "/messen/[slug]", params: { slug: venueByLegacyIndex(active.number)!.slug } }}
                   className="inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-3 text-sm font-semibold transition-colors hover:border-accent">
                   {de ? "Detailseite & Quellen" : "Details & sources"} <ArrowSquareOut size={16} aria-hidden="true" />
                 </Link>
