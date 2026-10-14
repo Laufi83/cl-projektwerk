@@ -380,7 +380,9 @@ html[data-performance="lite"] .vis-note {
   100% { opacity: 1; transform: none; }
 }
 @keyframes rt-sweep { 0% { opacity: 0; } 12% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
-.reveal-text { display: flex; white-space: nowrap; }
+/* text-size-adjust: Mobilbrowser dürfen den Schriftzug nicht selbst vergrößern (sonst passt die Einpassung nicht) */
+.reveal-text { display: flex; flex-direction: column; white-space: nowrap; -webkit-text-size-adjust: none; text-size-adjust: none; }
+.rt-space { display: inline-block; width: .3em; }
 .rt-l { position: relative; display: inline-block; transform-origin: 50% 85%; cursor: default; }
 .rt-l > .rt-img, .rt-l > .rt-sweep { position: absolute; inset: 0; pointer-events: none; }
 .rt-base { transition: opacity 150ms; }

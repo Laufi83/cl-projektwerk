@@ -60,7 +60,14 @@ export async function Footer() {
       </div>
       {/* Schriftzug: Buchstaben federn auf, Lichtstreifen; beim Überfahren erscheinen Entwürfe in den Buchstaben */}
       <div className="container-x overflow-hidden select-none pt-3">
-        <RevealText text="CL PROJEKTWERK" images={wordmarkImages} className="font-display text-[clamp(3rem,12.5vw,13rem)] font-bold leading-none tracking-[-0.075em] text-[#1d2026]" />
+        <RevealText
+          lines={[
+            { text: "CL Projektwerk", className: "text-[clamp(3rem,11vw,12rem)]" },
+            { text: "Christof Laufersweiler", className: "mt-[0.12em] text-[clamp(1.9rem,6.8vw,7.4rem)]" },
+          ]}
+          images={wordmarkImages}
+          className="font-display font-bold leading-[0.95] tracking-[-0.06em] text-[#1d2026]"
+        />
       </div>
       <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-line py-7 text-xs text-fg-subtle">
         <p>{t("rights", { year: new Date().getFullYear(), brand: site.brand })}</p>
