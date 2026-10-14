@@ -54,3 +54,6 @@ media-originals
 *.zip
 Desktop.ini
 Thumbs.db
+
+# lokale Sicherungen (nie hochladen)
+/BACKUP
