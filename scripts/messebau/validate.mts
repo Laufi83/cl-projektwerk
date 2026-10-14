@@ -24,6 +24,7 @@ const dup = (key: keyof GlobalVenue) => {
   for (const v of venues) { if (seen.has(v[key])) errors.push(`doppelt ${String(key)}: ${String(v[key])}`); seen.add(v[key]); }
 };
 dup("index"); dup("id"); dup("slug");
+venues.forEach((v, i) => { if (v.index !== i + 1 || v.id !== `venue-${String(i + 1).padStart(3, "0")}`) errors.push(`Nummerierung nicht lückenlos bei Position ${i + 1}: ${v.id}`); });
 
 let changed = 0;
 const key = (l: { priority: string; field: string }[]) => l.map((m) => `${m.priority}:${m.field}`).join("|");

@@ -17,7 +17,8 @@
     "guide:validate": "tsx scripts/messebau/validate.mts",
     "build:render": "tsx scripts/messebau/validate.mts && node scripts/render-build.mjs",
     "start:render": "node scripts/render-start.mjs",
-    "test:render": "node scripts/render-smoke.mjs"
+    "test:render": "node scripts/render-smoke.mjs",
+    "guide:check": "tsx scripts/messebau/check-stand-smoke.mts"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

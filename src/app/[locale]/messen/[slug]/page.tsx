@@ -6,6 +6,8 @@ import { Link } from "@/i18n/navigation";
 import { globalVenues, venueBySlug, STATUS_INFO } from "@/lib/messebau/venues";
 import type { GlobalVenue } from "@/lib/messebau/schema";
 import { VenueCompass } from "@/components/messe-guide/VenueCompass";
+import { StandCheckPanel } from "@/components/messe-guide/StandCheckPanel";
+import type { Venue as CheckVenue } from "@/lib/expo-intelligence/types";
 import { languageAlternates, localizedPath } from "@/i18n/locales";
 
 /**
@@ -31,7 +33,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const description = de
     ? `Technische Eckwerte, Richtlinien, Logistik, Kontakte und Quellen zum Messegelände ${v.official_name} in ${v.city} – mit Prüfstand und offenen Datenlücken.`
     : `Technical key data, regulations, logistics, contacts and sources for ${v.official_name} in ${v.city} – with verification status and open data gaps.`;
-  return { title, description, alternates: { canonical: localizedPath(locale, dp, ep), languages: languageAlternates(dp, ep) } };
+  // nur vorgemerkte Standorte (S0) nicht indexieren, solange Recherche aussteht
+  const robots = v.verification.status === "S0_SCOPE_ONLY" ? { index: false, follow: true } : undefined;
+  return { title, description, robots, alternates: { canonical: localizedPath(locale, dp, ep), languages: languageAlternates(dp, ep) } };
 }
 
 const fmt = (n: number, de: boolean, digits = 2) => n.toLocaleString(de ? "de-DE" : "en-GB", { maximumFractionDigits: digits });
@@ -61,6 +65,19 @@ export default async function VenuePage({ params }: { params: Promise<{ locale: 
   const facts = (v.legacy.guide?.facts ?? {}) as Record<string, string>;
   const notices = ((v.legacy.builder as { notices?: { level: string; title: string; text: string; source?: { label: string; url: string } }[] } | null)?.notices) ?? [];
   const h = v.typical_max_stand_build_height;
+  // Stand-Check: Höhe gilt nur ab S3 mit Richtlinie als belegt, sonst als ungeprüfter Richtwert
+  const checkVenue: CheckVenue = {
+    id: v.id, name: v.official_name, city: v.city, country: v.country, continent: v.region,
+    technical: {
+      maximumConstructionHeight: h.height_m === null ? undefined : {
+        value: h.height_m, unit: "m",
+        status: (v.verification.status === "S3_PRIMARY_VERIFIED" || v.verification.status === "S4_RELEASE_READY") && v.technical_rules.length > 0 ? "verified" : "unverified",
+        scope: h.rule_type ?? undefined,
+        source: v.technical_rules[0] ? { title: v.technical_rules[0].title, url: v.technical_rules[0].url, checkedAt: v.date_accessed ?? undefined } : undefined,
+      },
+    },
+    sources: v.sources.map((s) => ({ title: s.label, url: s.url, checkedAt: s.accessed ?? undefined })),
+  };
   const coords = v.coordinates.lat !== null && v.coordinates.lon !== null ? `${fmt(v.coordinates.lat, de, 4)}, ${fmt(v.coordinates.lon, de, 4)}` : null;
   const guideLabels: [string, string, string][] = [["area", "Gelände", "Venue"], ["insider", "Insider & Orientierung", "Venue tips"], ["travel", "Anreise", "Getting there"], ["hotels", "Hotels", "Hotels"], ["dining", "Gastronomie", "Dining"], ["cityInfo", "Stadt", "City"]];
   const i = globalVenues.findIndex((x) => x.slug === v.slug);
@@ -119,6 +136,8 @@ export default async function VenuePage({ params }: { params: Promise<{ locale: 
           </dl>
           {v.event_specific_variations && <p className="mt-4 flex gap-2 text-xs leading-relaxed text-fg-subtle"><Info size={15} className="mt-0.5 shrink-0" aria-hidden />{de ? v.event_specific_variations : "Events may set stricter or different rules (build height, build-up times, traffic routing, rigging)."} {de ? "Keine Angabe ersetzt die Standbaugenehmigung." : "Nothing here replaces the stand approval."}</p>}
         </section>
+
+        <StandCheckPanel venue={checkVenue} de={de} />
 
         {v.legacy.builder && <VenueCompass index={v.index} />}
 
