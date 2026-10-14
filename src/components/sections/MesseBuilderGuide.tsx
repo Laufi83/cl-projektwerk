@@ -18,6 +18,8 @@ import { useReducedMotion } from "@/hooks/useMedia";
 import { Box, FLOOR, Person, Tag, Upright, UnitCtx, fmt } from "./builder-3d";
 import { LogisticsScene } from "./BuilderLogistics";
 import { SupplyScene, type Supply } from "./BuilderSupply";
+import { VenueTour } from "./VenueTour";
+import { venueTours } from "@/config/venue-tours";
 
 type Topic = "hoehe" | "rigging" | "decke" | "doppelstock" | "logistik" | Supply;
 const TOPICS: { id: Topic; de: string; en: string }[] = [
@@ -494,6 +496,9 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
           </p>
         </article>
       </div>
+
+      {/* 3D-Rundgang über das Gelände, sofern ein Modell vorliegt */}
+      {venueTours[venueNumber] && <VenueTour key={venueNumber} tour={venueTours[venueNumber]} title={de ? `3D-Rundgang ${venue.venue}` : `3D tour ${venue.venue}`} />}
 
       {/* weitere quellengeprüfte Einzelangaben (Europa) */}
       {!!b.facts?.length && (

@@ -165,10 +165,10 @@ try {
     assert(resource.byteLength > 100, route);
     if (route === `/designs/${first.slug}`) {
       const html = new TextDecoder().decode(resource);
-      assert(html.includes("DESIGN TO REALITY"), "X-Ray project comparison missing");
+      assert(!html.includes("DESIGN TO REALITY"), "Plan/rendering comparison was removed on request and must stay off");
       assert(html.includes("CL / PROJECT STORY"), "Interactive project story missing");
       checks.push("Project detail: three-stage interactive story from existing design content");
-      checks.push("Project detail: real drawing/rendering X-Ray comparison");
+      checks.push("Project detail: plan/rendering comparison absent");
     }
     checks.push(route);
   }
