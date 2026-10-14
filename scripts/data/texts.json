@@ -1005,5 +1005,374 @@
     "tags": [
       "product"
     ]
+  },
+  "153": {
+    "title": "Transit Platform",
+    "de": "Zweigeschossiger Stand in Marineblau mit roten Akzenten: ein Drehgestell als Exponat, ein Signal, ein Waggonsegment mit Sitzreihe und Gleisstück. Oben eine Lounge mit Glasbrüstung, darüber Traverse mit Großbildschirm. Branche: Bahn & Verkehrsinfrastruktur.",
+    "en": "Two-storey stand in navy blue with red accents: a bogie as the exhibit, a signal, a carriage segment with seats and a stretch of track. A glass-railed lounge above, a truss with a large screen overhead. Sector: rail & transport infrastructure.",
+    "width": 20,
+    "depth": 15,
+    "floors": 2,
+    "height": 7.0,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "154": {
+    "title": "Retail Avenue",
+    "de": "Ladenstraße auf zwei Ebenen: dunkle Rahmen, warme Regalwände mit Produkten, ein digitales Plakat und Self-Checkout-Terminals. Eine Treppe führt zur Besprechungsebene, rote Lichtlinien am Traversenrahmen. Branche: Retail & Ladenbau.",
+    "en": "A two-level shop street: dark frames, warm shelving walls with products, a digital poster and self-checkout terminals. A stair leads to the meeting level, red light lines run along the truss frame. Sector: retail & shopfitting.",
+    "width": 16,
+    "depth": 12,
+    "floors": 2,
+    "height": 6.4,
+    "tags": [
+      "light"
+    ]
+  },
+  "155": {
+    "title": "Bio Ribbon",
+    "de": "Ein geschwungenes, hinterleuchtetes Band in Weiß und Flieder schwebt über hellen Laborvitrinen. Weiße Tresen mit violetten Lichtkanten, Geräte-Exponate und Bildschirme. Branche: Pharma & Biotechnologie.",
+    "en": "A curved, backlit ribbon in white and lilac floats above bright lab showcases. White counters with violet light edges, instrument exhibits and screens. Sector: pharma & biotech.",
+    "width": 12,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.2,
+    "tags": [
+      "light"
+    ]
+  },
+  "156": {
+    "title": "Flow Terminal",
+    "de": "Offene Halle aus Traversen mit blauen Lichtkanten: Förderstrecke, Regalsystem, autonomer Transportroboter und gelb-schwarze Bodenmarkierungen. Vorne eine graue Theke mit Logo. Branche: Logistik & Intralogistik.",
+    "en": "An open truss hall with blue light edges: conveyor line, racking system, an autonomous mobile robot and yellow-and-black floor markings. A grey counter with logo at the front. Sector: logistics & intralogistics.",
+    "width": 18,
+    "depth": 10,
+    "floors": 1,
+    "height": 5.0,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "157": {
+    "title": "Care Halo",
+    "de": "Weich gerundeter Stand in Weiß und Hellblau mit einer leuchtenden Halo-Blende. Medizingeräte auf runden Podesten, Holzlamellen und Pflanzen sorgen für eine ruhige, klinisch helle Atmosphäre. Branche: Medizintechnik.",
+    "en": "A softly rounded stand in white and light blue with a glowing halo fascia. Medical devices on round plinths, timber slats and plants create a calm, clinically bright atmosphere. Sector: medical technology.",
+    "width": 10,
+    "depth": 6,
+    "floors": 1,
+    "height": 3.8,
+    "tags": [
+      "light",
+      "wood"
+    ]
+  },
+  "158": {
+    "title": "Tide Deck",
+    "de": "Maritimer Stand in Marineblau und Holz: eine gebogene LED-Wand mit Containerschiff, Schiffspropeller und Schiffsmotor als Exponate, Schiffsmodell in der Vitrine. Branche: Schifffahrt & maritime Technik.",
+    "en": "A maritime stand in navy and wood: a curved LED wall showing a container ship, a ship propeller and marine engine as exhibits, a ship model in a showcase. Sector: shipping & maritime technology.",
+    "width": 15,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.2,
+    "tags": [
+      "wood",
+      "light"
+    ]
+  },
+  "159": {
+    "title": "Fold Factory",
+    "de": "Ein Faltdach aus Karton-Facetten in Natur, Schwarz und Orange überspannt eine Verpackungsmaschine. Podeste aus Wellpappe, gestapelte Kartons und Pflanzen erzählen vom Kreislauf. Branche: Verpackung & Kreislaufwirtschaft.",
+    "en": "A folded roof of cardboard facets in natural, black and orange spans a packaging machine. Corrugated-board plinths, stacked boxes and plants tell the circular story. Sector: packaging & circular economy.",
+    "width": 15,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.5,
+    "tags": [
+      "wood"
+    ]
+  },
+  "160": {
+    "title": "Urban Courtyard",
+    "de": "Ein Stadthof auf zwei Ebenen: Kubaturen in Sandstein und Dunkelgrün, Bäume, ein großes Stadtmodell in der Mitte und eine Terrasse mit Besprechungstischen im Obergeschoss. Branche: Immobilien & Stadtentwicklung.",
+    "en": "An urban courtyard on two levels: sandstone and dark-green volumes, trees, a large city model in the centre and a terrace with meeting tables upstairs. Sector: real estate & urban development.",
+    "width": 16,
+    "depth": 10,
+    "floors": 2,
+    "height": 6.4,
+    "tags": [
+      "green",
+      "wood"
+    ]
+  },
+  "161": {
+    "title": "Machine Loft",
+    "de": "Industrieloft in Anthrazit mit orangen Lichtkanten: Bearbeitungszentren als Exponate, Werkstücke in Vitrinen, eine Treppe zur Lounge im Obergeschoss. Branche: Maschinenbau & Werkzeugmaschinen.",
+    "en": "An industrial loft in anthracite with orange light edges: machining centres as exhibits, workpieces in showcases, a stair up to the lounge. Sector: mechanical engineering & machine tools.",
+    "width": 20,
+    "depth": 12,
+    "floors": 2,
+    "height": 6.8,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "162": {
+    "title": "Engine Tower",
+    "de": "Dreigeschossiger Turmstand in Schwarz und Gelb: Großmotoren und Generatoren im Erdgeschoss, verglaste Besprechungsebenen darüber und ein beleuchtetes Treppenhaus. Branche: Baumaschinen & Großmotoren.",
+    "en": "A three-storey tower stand in black and yellow: large engines and generators on the ground floor, glazed meeting levels above and a lit stair tower. Sector: construction machinery & large engines.",
+    "width": 20,
+    "depth": 15,
+    "floors": 3,
+    "height": 9.6,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "163": {
+    "title": "Bloom Atelier",
+    "de": "Bögen in Altrosa und Creme rahmen ein Beauty-Atelier: Regale mit Flakons, ein Beratungstisch mit runden Spiegeln, Polsterhocker und warmes Licht. Branche: Kosmetik & Beauty.",
+    "en": "Arches in dusty rose and cream frame a beauty atelier: shelves of bottles, a consultation table with round mirrors, upholstered stools and warm light. Sector: cosmetics & beauty.",
+    "width": 10,
+    "depth": 6,
+    "floors": 1,
+    "height": 3.6,
+    "tags": [
+      "light"
+    ]
+  },
+  "164": {
+    "title": "Kinetic Loop",
+    "de": "Ein schwebender Ring mit gelber Lichtlinie über einer Roboterzelle: Industrieroboter hinter Glas, Cobot am Tisch und eine schwarz-gelbe Theke. Branche: Robotik & Automation.",
+    "en": "A floating ring with a yellow light line above a robot cell: industrial robots behind glass, a cobot at a table and a black-and-yellow counter. Sector: robotics & automation.",
+    "width": 10,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.2,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "165": {
+    "title": "Brew Orbit",
+    "de": "Eine runde Bar in Flaschengrün mit goldener Lichtkante, dahinter Edelstahltanks und Flaschenregale. Barhocker, Pflanzen und Pendelleuchten machen den Stand zum Treffpunkt. Branche: Getränke & Brauereitechnik.",
+    "en": "A round bar in bottle green with a golden light edge, steel tanks and bottle shelves behind. Bar stools, plants and pendant lights turn the stand into a meeting point. Sector: beverages & brewing technology.",
+    "width": 12,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.2,
+    "tags": [
+      "green",
+      "wood",
+      "light"
+    ]
+  },
+  "166": {
+    "title": "Secure Atrium",
+    "de": "Zweigeschossiges Atrium in Weiß, Anthrazit und Holz: Zutrittsschranken, Kameras und Bedienterminals als Exponate, darüber eine verglaste Besprechungsebene. Branche: Sicherheits- & Gebäudetechnik.",
+    "en": "A two-storey atrium in white, anthracite and wood: access gates, cameras and control terminals as exhibits, a glazed meeting level above. Sector: security & building technology.",
+    "width": 15,
+    "depth": 10,
+    "floors": 2,
+    "height": 6.6,
+    "tags": [
+      "wood",
+      "light"
+    ]
+  },
+  "167": {
+    "title": "Aero Wing",
+    "de": "Eine weiße Flügelform mit blauer Lichtkante überspannt den Stand. Ein Triebwerk als Hauptexponat, dazu Satellit, Drohne und eine Erdansicht auf der Rückwand. Branche: Luftfahrt & Raumfahrt.",
+    "en": "A white wing form with a blue light edge spans the stand. A jet engine as the main exhibit, plus a satellite, a drone and an Earth view on the back wall. Sector: aerospace.",
+    "width": 20,
+    "depth": 10,
+    "floors": 1,
+    "height": 5.0,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "168": {
+    "title": "Photon Gallery",
+    "de": "Facettierte Glaswände mit eisblauem Licht und eine schwarze Stele mit Logo. Optische Komponenten stehen in beleuchteten Vitrinen wie in einer Galerie. Branche: Optik & Photonik.",
+    "en": "Faceted glass walls in ice-blue light and a black stele with the logo. Optical components sit in lit showcases like in a gallery. Sector: optics & photonics.",
+    "width": 10,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.2,
+    "tags": [
+      "light"
+    ]
+  },
+  "169": {
+    "title": "Hydrogen Forum",
+    "de": "Zweigeschossiger Stand mit Holz, Glas und einer Moos-Wand: ein Elektrolyseur im Glaskubus als Exponat, Infoterminals und eine Treppe zur Lounge mit Pflanzen. Branche: Erneuerbare Energien & Wasserstoff.",
+    "en": "A two-storey stand with timber, glass and a moss wall: an electrolyser in a glass cube as the exhibit, info terminals and a stair to a planted lounge. Sector: renewables & hydrogen.",
+    "width": 18,
+    "depth": 12,
+    "floors": 2,
+    "height": 6.8,
+    "tags": [
+      "green",
+      "wood",
+      "light"
+    ]
+  },
+  "170": {
+    "title": "Data Prism",
+    "de": "Kristalline Prismen in Anthrazit mit violetten Lichtkanten: Serverschränke als Exponat, Bildschirme mit Datenvisualisierung und ein Touch-Tisch. Branche: IT & Rechenzentren.",
+    "en": "Crystalline prisms in anthracite with violet light edges: server racks as the exhibit, screens with data visualisation and a touch table. Sector: IT & data centres.",
+    "width": 10,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.5,
+    "tags": [
+      "metal",
+      "light"
+    ]
+  },
+  "171": {
+    "title": "Habitat Rooms",
+    "de": "Wohnliche Raumfolge aus Holzlamellen und Salbeigrün: Sofa-Lounge, Regalwand, Theke und ein Olivenbaum – der Stand zeigt Möbel im Raum statt auf Podesten. Branche: Möbel & Innenausbau.",
+    "en": "A homely sequence of rooms in timber slats and sage green: sofa lounge, shelving wall, counter and an olive tree – furniture shown in rooms rather than on plinths. Sector: furniture & interiors.",
+    "width": 12,
+    "depth": 10,
+    "floors": 1,
+    "height": 3.8,
+    "tags": [
+      "wood",
+      "green"
+    ]
+  },
+  "172": {
+    "title": "Harvest Market",
+    "de": "Ein Markthaus mit Satteldach in Terrakotta: Kisten mit Obst und Gemüse, ein Vertical-Farming-Turm, hängende Pflanzen und eine kleine Holzhütte als Verkostungsbar. Branche: Lebensmittel & Foodtech.",
+    "en": "A gabled market house in terracotta: crates of fruit and vegetables, a vertical-farming tower, hanging plants and a small timber hut as a tasting bar. Sector: food & foodtech.",
+    "width": 12,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.5,
+    "tags": [
+      "wood",
+      "green"
+    ]
+  },
+  "173": {
+    "title": "Grid Field",
+    "de": "Grüne Wandscheiben mit Holz und Pflanzen: Batteriespeicher, Wärmepumpe und ein Solarmodul als Exponate, dahinter eine Lounge mit Besprechungstisch. Branche: Energie & Speicher.",
+    "en": "Green wall panels with timber and plants: battery storage, a heat pump and a solar module as exhibits, a lounge with meeting table behind. Sector: energy & storage.",
+    "width": 12,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.5,
+    "tags": [
+      "green",
+      "wood"
+    ]
+  },
+  "174": {
+    "title": "Learning Landscape",
+    "de": "Zwei Holzhäuser unter einem blau-orangen Deckenrahmen: Lerninseln mit Tablets, ein interaktives Whiteboard, bunte Hocker und ein kleiner Roboter. Branche: Bildung & Lerntechnologie.",
+    "en": "Two timber houses under a blue-and-orange ceiling frame: learning islands with tablets, an interactive whiteboard, colourful stools and a small robot. Sector: education & learning technology.",
+    "width": 10,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.0,
+    "tags": [
+      "wood"
+    ]
+  },
+  "175": {
+    "title": "Precision Lab",
+    "de": "Klares Labor in Weiß und Kobaltblau: Analysegeräte auf weißen Podesten, ein Glasraum für Gespräche und eine Rückwand aus blauen Leuchtpunkten. Branche: Labor & Analytik.",
+    "en": "A clean lab in white and cobalt blue: analytical instruments on white plinths, a glass room for meetings and a back wall of blue light dots. Sector: laboratory & analytics.",
+    "width": 10,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.0,
+    "tags": [
+      "light"
+    ]
+  },
+  "176": {
+    "title": "Velocity Bridge",
+    "de": "Ein schräger Brückenbogen in Weiß und Petrol überspannt ein Elektroauto und ein freigelegtes Fahrgestell mit Batterie auf beleuchteten Podesten. Branche: Mobilität & Automotive.",
+    "en": "A sloping bridge arch in white and petrol spans an electric car and an exposed chassis with battery on lit plinths. Sector: mobility & automotive.",
+    "width": 15,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.8,
+    "tags": [
+      "light"
+    ]
+  },
+  "177": {
+    "title": "Destination Terrace",
+    "de": "Hotelterrasse auf zwei Ebenen: helle Rundungen, Holzlamellen, eine Wand mit Inselmotiv und Palmen. Unten Empfang und Lounge, oben eine Terrasse mit Gästen. Branche: Tourismus & Hotellerie.",
+    "en": "A two-level hotel terrace: pale curves, timber slats, a wall with an island motif and palms. Reception and lounge below, a terrace with guests above. Sector: tourism & hospitality.",
+    "width": 14,
+    "depth": 10,
+    "floors": 2,
+    "height": 6.4,
+    "tags": [
+      "wood",
+      "green"
+    ]
+  },
+  "178": {
+    "title": "Weave Studio",
+    "de": "Bordeauxrote Stoffbahnen und helle Segel hängen von der Decke: Schneiderpuppen mit Mänteln, Stoffmuster auf Tischen und eine Textildruckmaschine. Branche: Textil & Modeproduktion.",
+    "en": "Burgundy drapes and pale sails hang from the ceiling: mannequins in coats, fabric samples on tables and a textile printing machine. Sector: textiles & fashion production.",
+    "width": 10,
+    "depth": 8,
+    "floors": 1,
+    "height": 4.0,
+    "tags": [
+      "light"
+    ]
+  },
+  "179": {
+    "title": "Circuit Terrace",
+    "de": "Weißer, zweigeschossiger Stand mit blauen Leiterbahn-Linien: Bildschirme mit Chip-Motiven, Exponattische und eine Terrasse für Gespräche im Obergeschoss. Branche: Elektronik & Halbleiter.",
+    "en": "A white two-storey stand with blue circuit-trace lines: screens with chip motifs, exhibit tables and a terrace for meetings upstairs. Sector: electronics & semiconductors.",
+    "width": 15,
+    "depth": 10,
+    "floors": 2,
+    "height": 6.2,
+    "tags": [
+      "light"
+    ]
+  },
+  "180": {
+    "title": "Terra Yard",
+    "de": "Hofartiger Stand aus Holzlamellen und olivgrünen Stützen: ein Traktor als Hauptexponat zwischen Pflanzbeeten, Feldpanoramen an den Wänden und eine lange Empfangstheke. Branche: Landwirtschaft & Agrartechnik.",
+    "en": "A farmyard-style stand of timber slats and olive-green posts: a tractor as the main exhibit among planted beds, field panoramas on the walls and a long reception counter. Sector: agriculture & agritech.",
+    "width": 20,
+    "depth": 12,
+    "floors": 1,
+    "height": 5.0,
+    "tags": [
+      "wood",
+      "green"
+    ]
+  },
+  "181": {
+    "title": "Aqua Circuit",
+    "de": "Geschwungene Bögen in Weiß und Türkis wie ein Wasserkreislauf: eine Aufbereitungsanlage mit Pumpen als Exponat, eine Moos-Wand und Infoterminals. Branche: Wasser & Umwelttechnik.",
+    "en": "Sweeping arches in white and turquoise like a water cycle: a treatment unit with pumps as the exhibit, a moss wall and info terminals. Sector: water & environmental technology.",
+    "width": 12,
+    "depth": 10,
+    "floors": 1,
+    "height": 4.5,
+    "tags": [
+      "green",
+      "light"
+    ]
   }
 }

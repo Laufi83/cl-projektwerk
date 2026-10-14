@@ -221,7 +221,15 @@
       "zweigeschossig",
       "Begrünung",
       "Licht"
-    ]
+    ],
+    "rows": {
+      "name": "Laufband",
+      "label": "Entwürfe in zwei Laufbändern",
+      "prev": "Zurück",
+      "next": "Weiter",
+      "hint": "Maus auf eine Reihe: zum Rand zeigen steuert sie, in der Mitte bleibt sie stehen · Ziehen oder Pfeile · Klick öffnet den Entwurf",
+      "hintTouch": "Seitlich wischen oder Pfeile antippen · Bild antippen öffnet den Entwurf"
+    }
   },
   "detail": {
     "facts": "Kenndaten",

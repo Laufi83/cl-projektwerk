@@ -35,7 +35,7 @@ const ARCHIVE_FILE = path.join(ROOT, "content", "designs.archive.json");
 const selection = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/selection.json"), "utf8"));
 type TextEntry = {
   de?: string; en?: string; materialsDe?: string; materialsEn?: string; coloursDe?: string; coloursEn?: string;
-  title?: string; width?: number; depth?: number; floors?: number; standType?: "corner" | "head" | "island"; outdoor?: boolean; tags?: string[];
+  title?: string; width?: number; depth?: number; height?: number; floors?: number; standType?: "corner" | "head" | "island"; outdoor?: boolean; tags?: string[];
 };
 const texts: Record<string, TextEntry> =
   JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/texts.json"), "utf8"));
@@ -218,7 +218,8 @@ for (const folder of folders) {
   const outDir = path.join(PUBLIC_DESIGNS, id);
   fs.mkdirSync(outDir, { recursive: true });
 
-  const files = fs.readdirSync(srcDir).filter((f) => /^\d{2}[_ ]/.test(f) && /\.(jpe?g|png|webp)$/i.test(f)).sort();
+  // Präsentationstafeln (00_Tafel_Original) und KI-Proben nie übernehmen – sie gehören nicht auf die Website
+  const files = fs.readdirSync(srcDir).filter((f) => /^\d{2}[_ ]/.test(f) && /\.(jpe?g|png|webp)$/i.test(f) && !/tafel|ki_probe/i.test(f)).sort();
   const renderFiles = files.filter((f) => /^0[1-6]_/.test(f)).slice(0, 6);
   const planFiles = files.filter((f) => !renderFiles.includes(f));
   const floorplans = planFiles.filter((f) => /grundriss/i.test(f));
@@ -285,7 +286,7 @@ for (const folder of folders) {
     tags: prev?.tags ?? [...tags],
     size: width && depth ? { width, depth, area: Math.round(width * depth * 100) / 100 } : null,
     floors: floors || null,
-    height: brief?.height || null,
+    height: brief?.height || t.height || null,
     standType,
     description: prev?.description ?? { de: descDe, en: descEn },
     materials: prev?.materials ?? (t.materialsDe ? { de: t.materialsDe, en: t.materialsEn ?? "" } : null),

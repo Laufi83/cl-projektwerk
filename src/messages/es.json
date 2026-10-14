@@ -292,7 +292,15 @@
       "dos plantas",
       "vegetación",
       "luz"
-    ]
+    ],
+    "rows": {
+      "name": "Carrusel",
+      "label": "Diseños en dos filas en movimiento",
+      "prev": "Atrás",
+      "next": "Siguiente",
+      "hint": "Pase el ratón por una fila: hacia un borde la dirige, en el centro se detiene · arrastre o use las flechas · clic abre el diseño",
+      "hintTouch": "Deslice lateralmente o toque las flechas · toque una imagen para abrir el diseño"
+    }
   },
   "detail": {
     "facts": "Datos",

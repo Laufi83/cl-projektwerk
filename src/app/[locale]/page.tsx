@@ -47,7 +47,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     srcSet: `${designAsset(d.id, `${base}-640.webp`)} 640w, ${designAsset(d.id, `${base}-1280.webp`)} 1280w`,
   });
   // vom Auftraggeber gewählte Renderings je Leistung (public/media/services)
-  const svc = (k: string) => ({ src: mediaUrl(`services/${k}-1280.webp`), srcSet: `${mediaUrl(`services/${k}-640.webp`)} 640w, ${mediaUrl(`services/${k}-1280.webp`)} 1280w` });
+  // ein Klick aufs Bild öffnet den abgebildeten Entwurf (Ordner 142 → 010, 29 → 043, 36 → 048, 48 → 112)
+  const linked = (id: string) => {
+    const g = galleryItems.find((x) => x.id === id);
+    return g ? { slug: g.slug, label: `${id} ${g.title}`, tone: g.tone } : undefined;
+  };
+  const svc = (k: string, id: string) => ({ src: mediaUrl(`services/${k}-1280.webp`), srcSet: `${mediaUrl(`services/${k}-640.webp`)} 640w, ${mediaUrl(`services/${k}-1280.webp`)} 1280w`, design: linked(id) });
   const d1 = getMediaDesign("001") ?? designs[0];
   // Hero-Aufbaufilme je Layout (config/layouts.ts): Entwürfe 001 (Studio, Ersatzbild) und 021 (Wood), dazu Zeitraffer der CL-Stände ohne Entwurfsbezug
   const heroFilms: HeroFilm[] = [
@@ -103,11 +108,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       {/* Leistungen und Zusammenarbeit (sechs Schritte) als ein Abschnitt */}
       <Services
         media={{
-          tech: svc("tech"),
-          prep: svc("prep"),
-          control: img(designs.find((d) => d.id === "033") ?? designs[0]),
-          concept: svc("concept"),
-          reuse: svc("reuse"),
+          tech: svc("tech", "010"),
+          prep: svc("prep", "043"),
+          control: { ...img(designs.find((d) => d.id === "033") ?? designs[0]), design: linked("033") },
+          concept: svc("concept", "048"),
+          reuse: svc("reuse", "112"),
         }}
         visNote={note}
       >

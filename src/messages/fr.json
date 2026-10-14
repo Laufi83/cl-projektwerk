@@ -292,7 +292,15 @@
       "deux niveaux",
       "végétal",
       "lumière"
-    ]
+    ],
+    "rows": {
+      "name": "Carrousel",
+      "label": "Concepts sur deux bandes défilantes",
+      "prev": "Retour",
+      "next": "Suivant",
+      "hint": "Survolez une bande : vers un bord pour la diriger, au centre elle s'arrête · glissez ou utilisez les flèches · un clic ouvre le concept",
+      "hintTouch": "Balayez latéralement ou touchez les flèches · touchez une image pour ouvrir le concept"
+    }
   },
   "detail": {
     "facts": "Caractéristiques",

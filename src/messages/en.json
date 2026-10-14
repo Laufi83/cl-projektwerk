@@ -221,7 +221,15 @@
       "two-storey",
       "greenery",
       "light"
-    ]
+    ],
+    "rows": {
+      "name": "Carousel",
+      "label": "Designs in two moving rows",
+      "prev": "Back",
+      "next": "Next",
+      "hint": "Hover a row: point towards an edge to steer it, the centre stops it · drag or use the arrows · click opens the design",
+      "hintTouch": "Swipe sideways or tap the arrows · tap an image to open the design"
+    }
   },
   "detail": {
     "facts": "Key facts",

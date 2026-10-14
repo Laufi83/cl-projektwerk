@@ -83,7 +83,7 @@ try {
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ['aria-roledescription="Entwurfsatlas"', "data-steps"]) {
+      for (const name of ['aria-label="Entwürfe in zwei Laufbändern"', "data-steps"]) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }

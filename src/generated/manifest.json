@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-10-14T02:08:17.467Z",
- "count": 165,
+ "generatedAt": "2026-10-14T17:37:43.284Z",
+ "count": 194,
  "designs": [
   {
    "id": "001",
@@ -29374,6 +29374,5179 @@
    "clip": null,
    "number": 165,
    "tone": "#0d0d0d"
+  },
+  {
+   "id": "166",
+   "slug": "166-transit-platform",
+   "source": "153",
+   "published": true,
+   "title": "Transit Platform",
+   "tags": [
+    "two-storey",
+    "metal",
+    "light"
+   ],
+   "size": {
+    "width": 20,
+    "depth": 15,
+    "area": 300
+   },
+   "floors": 2,
+   "height": 7,
+   "standType": null,
+   "description": {
+    "de": "Zweigeschossiger Stand in Marineblau mit roten Akzenten: ein Drehgestell als Exponat, ein Signal, ein Waggonsegment mit Sitzreihe und Gleisstück. Oben eine Lounge mit Glasbrüstung, darüber Traverse mit Großbildschirm. Branche: Bahn & Verkehrsinfrastruktur.",
+    "en": "Two-storey stand in navy blue with red accents: a bogie as the exhibit, a signal, a carriage segment with seats and a stretch of track. A glass-railed lounge above, a truss with a large screen overhead. Sector: rail & transport infrastructure."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBbZMZKZKe49mZyzoDZHBHriAAD+5fDBMzTMvMwZ63RHtFmHC/OPUChOtBKBV3syxvsAP12agYblip99PrHfn9CZJ+Va3xvYm7mSgDlg3L7BZ7UdyzyjC7fANWDvJ5+nq99Umv4OtSOGhGiNa1DQSj9fJKlHJGKd8d2NxLiP1uymvQpqfySDPX9AAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwCsAYvW10rpo2qboJUWEAD+5bTaPFOyZfLLQj6h9UWGLAil3JMhIoc999Fdp4jwkn2x3OZnJNKoIEGvpohKBOKyjYbhv0s+58vjRozynK+IAWS3h5mBcOAwsGAPjCVZMwBtIN4agOUGJ/93JCpR/PK9DM/J7ssc9J9/2UrBZobOpavJMxbOhy+nxCiDWfSu7IXPdJsItCg5bIvoq5wUA8xwAAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBbZZYJy0UvovIDSzWCh4UdgAAD+5CcTw8OBVk1qVFaJTAZ0v9ClfLA7d0Xqg2oYB846HhO1uwhalRj7LLTUBRwMBfx2PEkdfk6BV/eiCaE4AkYNmiqwpJLTk/yYKkiobwHyMnrFtrPycXYr3kaQYprPGCcrUc3pnt9RjSKh2ptrJlnW4Ba2vkoXRDxPkWQ8nwDfgAw898/AAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgC2yywTnAmz5IgQ3H7jf9FAAP7Q+dPq+opdtx0LSmS9OXFkhNv5wYkoY8f6gHahbfygKHTgTDE1NLaNntV+K5XDFmmXPnexQ0pYNNwWYJyyTVajWHkqiUfkBp5aPAYrNBaBW4odhxWsHysj7JFoaRAy017Cx16N28OiDz2jYuNPSGWuKb+jwZzFXOWr9ER7J1isx60B1AAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgO4FwRJeuFEKDSZJUak7gYAD+rGIJZgF4FSt/WhZCFEwTr+fq4gsFs2kvchwpKHWsWMz9ltoh0e+eHVKML4QKtNo0s5huYvnd7+1NBBqTJl+IvWLXcezbi0iH6x8FxXr2qnfxLgg47mpqbHKf2R67/DsKBL5nduOEL6aedoGltO1mfAEkrF2f1YJYyA715OthfIncGIUQAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgMZUZ1sKiGK3Q8QrdGWWAAP7Q8LXC9TXeS1sr6swGIFgTx2WNC/DtVLph+Hd78sZJDWdrk3qPdqJIuqtBgr01Db5N5SlkbMOS7IBq7qGRJcKWiIRL4fdrGQ62xndwb2XKdx3ysGOXQrMMlbYIKOKsW1xv/A++MlFkBnP2e0qXBqt5KBjbxWakL5ELMxyv2m2qHCztsDvsyy9+YuaLrJMMAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 166,
+   "tone": "#040404"
+  },
+  {
+   "id": "167",
+   "slug": "167-retail-avenue",
+   "source": "154",
+   "published": true,
+   "title": "Retail Avenue",
+   "tags": [
+    "two-storey",
+    "light"
+   ],
+   "size": {
+    "width": 16,
+    "depth": 12,
+    "area": 192
+   },
+   "floors": 2,
+   "height": 6.4,
+   "standType": null,
+   "description": {
+    "de": "Ladenstraße auf zwei Ebenen: dunkle Rahmen, warme Regalwände mit Produkten, ein digitales Plakat und Self-Checkout-Terminals. Eine Treppe führt zur Besprechungsebene, rote Lichtlinien am Traversenrahmen. Branche: Retail & Ladenbau.",
+    "en": "A two-level shop street: dark frames, warm shelving walls with products, a digital poster and self-checkout terminals. A stair leads to the meeting level, red light lines run along the truss frame. Sector: retail & shopfitting."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdL1BlgIIDWYh9FmEUgbK5wAD+5fZEfxj08cZDLelvqXNl9ZFXjv6z2zFDfwdRRkjmRpii9bUB5zTeOVwMlSt9xmGYUc+p0a9zD5YTAc9My4UJL8gWPiK2+WVc1Q2PJV5RK3MbFtyve2en9D7QiGEQf9h1TyDV/KbmrB9V7cYfHVECNM1EjA4Ah1bgQdo6IJpGolfJwGiamsAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAltxiiyTmWoo16t8KfMAD+wbvq6o59Yvg0XrEyg7+CuaPSsHddK7ee2Rf4MV4E5PRR9fdzSMAhONTIv1Aunp+2kD8mYYZ7fEUc0p6BZfKiEvWn0XzYX4vagnEgI4pCMP6bAVCzqP5HemIdXvWrrV1X61bb7yvGNzDarfy8V/Sh53+oyGYMt0eAmBFAfewo6YsCwR8AAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdAYwS1bPZntKNsBKD/qUQAP7p92TuVCGp5rYBNUM7cval+xUh2JChaDYFgJiGDgVa7aA+T34IZ+syvEYqpy61VnHKBAhqvu1xRAWEELficzKPcH6EhMy/yBT7wrBs0d79dclFgwXV9gFrpCOe1Rg7GyfYUrpXi7ijjP+ItOTO3smC0f6TQwX0b0Z/03wkBq165imJmMZdpgzAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAlpxPzxbsbFTJCvK8vM1H6JQAA/uRd+obUBYbv8bfuY4lVdZKRNQJBld4PuLCzoF+oW5/fvUY2OcWKF+lvHi8rw23vRu4CDBXFsdxzlKlfRYvcTIcaKYoKfu1Z/p6dBcZuVPoPJf3+IyNxXplFXolVelDkVBC+Na+Sdn9H8rdZFUmyvLKHaTsaDIg5XoNJxQAAAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdL1AVgwfit42zkYSpuNaFAAD+oyH5e94+iyMjDVJPsD8y9jWrU41wX2AD/ZkYv+Uq5LfwxUP9r3LWF2uhjf73FNFBmAc0aItyynblKBp4F773uMUpj8f3vtzR2sunSaMvljfjmgZZRBoBwMNWAj0bFBwXlSf3KJoe+cpCTTt5GQlYPiIgB3PMq2hhxkG9IVdJdpvRR/83FjfJ+c6fgAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoAluAwMF5qe2rrrdDe3AAD+hBUrDZxXrwFAnLUB/CpmJlKHGuycBT/zq1dVrqHpA9YkftsWFhJJP46Mu7NMH6VUh5yVB6ENrXP8rESmvLXUSH+zOq38teQhgP6V5CGHbdeuNrBcHWfkKVxmzt//BvKrotUrUf0lqQaA3R5TwTVsx+V7o3jXe36otmOZhFYtBIxolcrzDgp4aQAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 167,
+   "tone": "#040404"
+  },
+  {
+   "id": "168",
+   "slug": "168-bio-ribbon",
+   "source": "155",
+   "published": true,
+   "title": "Bio Ribbon",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 8,
+    "area": 96
+   },
+   "floors": 1,
+   "height": 4.2,
+   "standType": null,
+   "description": {
+    "de": "Ein geschwungenes, hinterleuchtetes Band in Weiß und Flieder schwebt über hellen Laborvitrinen. Weiße Tresen mit violetten Lichtkanten, Geräte-Exponate und Bildschirme. Branche: Pharma & Biotechnologie.",
+    "en": "A curved, backlit ribbon in white and lilac floats above bright lab showcases. White counters with violet light edges, instrument exhibits and screens. Sector: pharma & biotech."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgMYxcipbBdHKTrW5YAexgBdLAAP7CSN60YWA+IbEnDhEADesKQSsyfundOe0xLIlH0Y4G3T70m7FUMpelpdUhk+4G18c9LLuWeiB3G6uf4t/bFfUNEqLEnYqOikNM0/Y4v5sZbrOiNJ0R/W1OIhE4Ar/cJBFHo/rIht1KxqYq+7gPaJnmiK3oC3atIZBk+oPLWIAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC/OYxsykDqsZtEPewMZlrcgAD+3Z6zF7bSCk0eieoyaCt8UyLYs6+KYx7b7TNERQqqJLPJqCeJYcV/btXOktPiKxyvRZGLfg+qf0rLi8axRJ9Vtn8EfCIq3oBfTWbE/LgNAbSNVYnBNu9ShbjoPea1t8LbV2sFMy3kCP8soyYRKLy3zQAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBadZdMME0KK07IYYbtUAd5EI7YAAP7l6IqwLV+NrKL1zuPt7f043w9sbVOfK0VYR/qfLV8Z3ILOxeykojzZnR6t7DWnNXKbEXtugiEjcYiyfOuHzYxpOPxIfyU5lg4zjn/ly0hy5s34Ag2eHdba9IobHxkmDvq9fcRQjJ1Ih25DvIDVgniIRh9iuuK8mZCEM/YA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwCsG1/AXklXZDYI5UH4QAD+0fItXvBZuu7fSLe5uK9ujQePmPZZnPwL9Fp7phq6cL1J1s+0nuiI/dQGyGFMTAn/4p5EBlFS6aqurS/JtwJNd/oCz711Gnb4WwWOs6e5qzi6o5v3SihxxpE//090IWh8M9pAUhkqfXjiRctpPx9gxuInOtIiy5x4H1AA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwCdAYtAyBHfHAvmu2kzwAD92g3I80YNRjy6OA9v8cFel+Xb99cKRLnidJ11VIzk+ztGoRNT7UIzIrO04bshUh0R7ztlIIYKhITj1KdeC/HSs9h/eUFgXpXle1WRpyupuO7U3eMhg8VfY/56XusB7fryA6AKetv1YwsL6JzKdexTkFIAl6rdMAAAAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUABwRp2cgCyrbf7rZlPIiNgA+OWybl9bUHfhPBdCpf9d4ojXjGAieiN7nWlLoWIhnrAMuyi1xjBvRq7l9W7wV9WFWYep+jyQs78r6Sebwc6ZFJz2uxv1oeaPBL9AGYnujm9pULnGlH3dVI4ttyJjwNSgm/zFKLIFUrbMle4c+7Gg817b1w3MPdvQQ/EAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 168,
+   "tone": "#040404"
+  },
+  {
+   "id": "169",
+   "slug": "169-flow-terminal",
+   "source": "156",
+   "published": true,
+   "title": "Flow Terminal",
+   "tags": [
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 18,
+    "depth": 10,
+    "area": 180
+   },
+   "floors": 1,
+   "height": 5,
+   "standType": null,
+   "description": {
+    "de": "Offene Halle aus Traversen mit blauen Lichtkanten: Förderstrecke, Regalsystem, autonomer Transportroboter und gelb-schwarze Bodenmarkierungen. Vorne eine graue Theke mit Logo. Branche: Logistik & Intralogistik.",
+    "en": "An open truss hall with blue light edges: conveyor line, racking system, an autonomous mobile robot and yellow-and-black floor markings. A grey counter with logo at the front. Sector: logistics & intralogistics."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAD5UHSOwvUW1RSAAD+6fiwSJKmBGL5IueYq8GTk1OXt2sVRzyoAT1b0KJyxkI2Oy0fJo76tSkHdnR082k7PjREg+qzWAeezaI688aw5cAk3ECOwqM9PHI+bJVnW/EN3auoByZ+bG4P+dhZEXVtUBOsk0cKkEcY/PUxMdd7sATW8yAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC7AywYYJnIXuhhsCf/ER6/tDgA/tzh1sE0SJGMP4FwnpwxncV4NjsND7LtMztnQ5UwaKrqe+KDWYkCcOBnFjJr/VHRhAdQpzlynGOhFrfAAZmjx9rcDZAO9hTsOPR+lZxdztVvw/4PzyLOoOJqmsLvKe0vK5/bcN5IkYOy/9SoJ9nQzrNjGFc34YMFIUq+NAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQAECAILvTfMgT95siR710nLQAP7sALCABzPNrct3ezvKA2exmiPAAgLNeNuDXNkFkYtc313f/SwQJAd1mrTRdh5tl2KUViES0Ujb8zH04r7XzgxG3W6IsvGoNcML6Al3E9u+EUbziahjElsmYftvX1kHLxQaHFd5Zc97J4wq6WV9+QuZoA6Fd1gAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwDE2ywTo4v3bbb/yYJ8oh/M3ugA/un+WDbC2oIBbAaazLd+pPERc1sLeA7TAN//imXFEBVKzD0WSb6qa8KQDN0/PM6FoikHf1EVha01Q22SSPKv8RT+5NS/RAX9Wye7nsXLqmOivYVjOIKgzBIINmdty4GgJrrrh3ZfIHGKo2IAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdAywTowvDPknxjPflUldFbMAA/sEcF7r6mSmfK0p4xehd0exin2keyDHPdj/5UQNUI+F1ht5DpDvRIk3XhD1fVs68LxSfGy3HS2LRz/xFyVxWK1sAQ9AF97OYXizeZuleE/jJ7ptrj1nCvDT0BbRzBlkvwTcJvbVX3kXafaUBMtIPPZJaZ9XlsyMFOBVEkmIF7VmrIZiYQrkA3819uAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdIIk4YCIAWKu8GL5PW1JexWNQAP7b3u72UQeeBZ4K5cKdjSjN6K4XbR/efiqnFKLuwZGxH2qnMJGS5jXGkd6yWBWDf6M5vI9l1BCpUjsBQyon2B4QbpF2LL2RQmSTnNPZrFoUdlL9MYhXXS9UJLhfBh5s8TukPeyvOS0mrKTSd0JPBIKkHkFnZwAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 169,
+   "tone": "#040404"
+  },
+  {
+   "id": "170",
+   "slug": "170-care-halo",
+   "source": "157",
+   "published": true,
+   "title": "Care Halo",
+   "tags": [
+    "wood",
+    "green",
+    "light"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 6,
+    "area": 60
+   },
+   "floors": 1,
+   "height": 3.8,
+   "standType": null,
+   "description": {
+    "de": "Weich gerundeter Stand in Weiß und Hellblau mit einer leuchtenden Halo-Blende. Medizingeräte auf runden Podesten, Holzlamellen und Pflanzen sorgen für eine ruhige, klinisch helle Atmosphäre. Branche: Medizintechnik.",
+    "en": "A softly rounded stand in white and light blue with a glowing halo fascia. Medical devices on round plinths, timber slats and plants create a calm, clinically bright atmosphere. Sector: medical technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBbZMXcbisjuqcxc1WSqzmAQAP7l9L//pgajJZ3CutCzVKJWbz46mWT9P+9ABGhCZEqezAimnOayD+/m3sUwaWbBwl/95Ud63nxC5sPP28tKfh5x4xEbXgkKD1aw8GPKdpL92rEKJxvQrbiW/KvVLxSvC5jkfaAiyZKXAAcwyuIy3t0p59B1qb79HTGTIKq+AAAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBbZMYTb+9loS0eTh0wzmBuF44AA/t2A6CtNqoREEcNYNqNvk0smXDd/cTbu7NSgcQyUPtecZvHMWbHmyll74f15sd3L+KL4zwYlXaLbaYXhSnHzlLRURzLsTsaa6zDZrnqWGgpSuBN+Z4+QdVi+d7rMBCMX7dhtqSswwhQzSNBdmm+0QW145CLnf9MmAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC7AYwwyaE9SOh2P/g37T8SAAD+5EBGuzbI52QQHnae2X6omNdLWQ5FknN6yC8DwJzA/PVr9ORPqnLMX+1QsHpTh80NVV85Oj7hPF24jyxptP+91WD2MWXEcfjPkAL2WuHVu37+pT2zN76kA5P4eEL8Rxu2pb7HSlh2h+4xA9xdkM/uFGjJ7RHSAwIsrCyDXKrgAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBYeDmATXIN65rtfFyhcEAD+2qvp8nddBtp7UXR3IEcnViE2KZD1K7pn4Z8f5G85J6wU+oerzthRBVmOxTfaxhasfv4oELmr9SJOJ4epoEJcmxXzkzcCI5WkdGydB8X/PPnn0ZLZrTLKcox+qZneRsxH0dxuGcPYcrMf4zPJcnd84r66O34Vvx5Li8+lDkAAAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAluBiDO0Tctw+hL6yEuSgAAP5BOao12PZazeuVA5b5Mk/R6bNTuGi5UIUS/ULE7mGq25u3Npp3w07wcv4Mk5LMsVbzaC5t5M0SuimMCnhE6quTb/OtiK7PdyO2vM7dw/psW0XTNNL6JX1hVRTDhheoYVX05T5XatmW2C65fXnhuJvqEco17BSlxYzItz13KuAAAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoRwAdEw+5scyam/lA16iWLAdgAA/AIzG9r8/3z+jYsVKOU/A7AlWWa2KRlGMCe3jr2z8AkEStAX4EPY8PEGEY0+CEWraUzC1IWv5U37rzd8lcEKS0CK8H/KvUk80bV187HqLV6ML8yjDAZbbS359cHytxe0zO5jThz9YoUaCtBpsDU6fx8oAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 170,
+   "tone": "#040404"
+  },
+  {
+   "id": "171",
+   "slug": "171-tide-deck",
+   "source": "158",
+   "published": true,
+   "title": "Tide Deck",
+   "tags": [
+    "wood",
+    "light",
+    "container"
+   ],
+   "size": {
+    "width": 15,
+    "depth": 8,
+    "area": 120
+   },
+   "floors": 1,
+   "height": 4.2,
+   "standType": null,
+   "description": {
+    "de": "Maritimer Stand in Marineblau und Holz: eine gebogene LED-Wand mit Containerschiff, Schiffspropeller und Schiffsmotor als Exponate, Schiffsmodell in der Vitrine. Branche: Schifffahrt & maritime Technik.",
+    "en": "A maritime stand in navy and wood: a curved LED wall showing a container ship, a ship propeller and marine engine as exhibits, a ship model in a showcase. Sector: shipping & maritime technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYyKuYR7QOn1/7OGFZ7wAP7c9ZdxlR4kg5sRadzYdNCITit3QqXz5rVCuFxPictZjcxq0EwH4s5ev15UxilcdRFGMCMSJjugIfr5Exl/IhGabJzvaQe6T0nyx3zdO+ULTkuYqDJiqc0YA7kYP9vso1hM0msqj78mOGUWhFKCmcA12JH5752M70Wjou2JXX98WPCLRiFF4kAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdAYv+3E6Wkx4StjxSQOkAAP7Q2ae5TydM9GZxPGKVQ1MNNbpENLHPtNZvIw4k/9wjpe+ExewaZSvGTJFRSewU7ZgNzwPWXvuZlBR8AnfTXfAdXQ32gPfJxqsPbhLlPaAaOp91Y0HnyCaMAIboXwoDiPrd0UTAJeyCwWT0NUrny7uy7oiW4aEedxNG+lk8bCba4REE/DhhgcAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgDBFUAKkncEWgzfoxC9x1+JXPZ4AP7o+5oE/PetW4kXNj33dSVKkwGl61tztrLPsW8PK0iE8/kDONbfQCCkBVP7yA5+pmxsB/1KHqifGaLB69Yl43AkEPbLaO9cUvr9hAzNeocXJ/HrWECZFxEjO8sE05GiRNaL2Umz+oQq+J+OUHw64XNTBkX2m7H+9h0lLvMGcIMAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBdgMZPdlz8K5LFhLD2zWgAA/uQ/tKs8h+mnJHmARz6DwzJb/XwJlt/g16JQ/tWjm+OMPeJTPkZcpp8QvW+eZbCqplfhzFL2QksxmjA51v6u3+IUDXLvLmWgz4pn792nx8feXmMcNGiJFUqZiK/Dakx7fk3dcK2yWGhEr+qlZrOoGeLplPFwTqCb0hr5Dbu8hspwo0TN+fogAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoAlvxSs/OoYOzbeds2AAM4mSOHgC1tz1p4f47a5YH5TpOUm7Fwao+D8O26kb7AU99uK8JhJ9rPrhJWiLhCZUoZqKE1XzbZCstxIyHpIr8vr9vATjK/iWr0/zCA3sU5t7Y9r7/f+OXnEj6F3CU1i4/Y5dfYCz+2TvwGak3AvG5EpW6XGRgDNUh+0NIN2Af4XwLjPRoPw0aSljaGNsyL9SwF/y2KaQh/ZMyV69NaJSHPv4fXg3X/0LpWKWh0uAAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoAlpBW6hXjjPjJZL76/cAD+z1+uOpX5GquteVXwxQX3xhtM02gIrlP5b7Dr/pUUsETF0jT/KL0wvQDS/BIpxSfJBmCPKMpxEEEMt2JdrAF5SS7Hp1OXYBv2EHOaFiU2KIWE4G/23hd+jrxXpbpENXl/e4WqgmVT9j2YkJm62PUc6Q5GO2xxyySB8vhx9pj/4H/PM4eAXLfioFvTDmMvDMDlwDgAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 171,
+   "tone": "#040404"
+  },
+  {
+   "id": "172",
+   "slug": "172-fold-factory",
+   "source": "159",
+   "published": true,
+   "title": "Fold Factory",
+   "tags": [
+    "green",
+    "wood"
+   ],
+   "size": {
+    "width": 15,
+    "depth": 10,
+    "area": 150
+   },
+   "floors": 1,
+   "height": 4.5,
+   "standType": null,
+   "description": {
+    "de": "Ein Faltdach aus Karton-Facetten in Natur, Schwarz und Orange überspannt eine Verpackungsmaschine. Podeste aus Wellpappe, gestapelte Kartons und Pflanzen erzählen vom Kreislauf. Branche: Verpackung & Kreislaufwirtschaft.",
+    "en": "A folded roof of cardboard facets in natural, black and orange spans a packaging machine. Corrugated-board plinths, stacked boxes and plants tell the circular story. Sector: packaging & circular economy."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdAYu42EtND1rDR3XonoHUAP7avkE6wLmTEcQrs18XWlcCx9/TBeqnShi513DaUmcUTj3bcyNf6IdU8ZKLoHqbuzzZ+86Im5vbu4IGSlBFaF7ADLGjMIfeUrcPcSoqTKZDrtqXR0Xw5GjoieRc4B8yCf3CtCyfo3v/ZXDkdNRHSY5l9q50KXX+fJxDw1CCmp6cRtSQRSAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAlvhgpvrDST+8HHa35hJeAAP7c8c8Hlir2VWrlm9MHTyJamORPhPF7OabMvHSjvGD1VLCjSKTeCTL7dKmxptpVqT53O1YI4eRs9RnWYwtlbpAl7MxKhb7mWNvOkcACPixGbgmzR9w9EoRa6N5bY1d3+02sY1+dy22yVCAFhCxYmHNnTh+1E8SZhHQL3J4/CTMX19nQCBAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdL1AVgm3KwOfnxzoE4xgAAP7kMa37Rbg+S/6DTuUWVlM9dpmaruErK+IBFOgdzNkpQvmNJjtUXVXTX1v88kLeyP9Qu16IX3YFC0suY+b9KeIdMdTqoBwt/O17ZbYDcCyOlDtxH75vMirnOtqNWntxSj8c6TcIXW8tk8X9HNx/GweKUKpGj3ZIbcJ0ZoDVZLuPzHggAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoR3AdDcr5JrNcvDWu7m6OAA/tq/dRU5eXQCliv4fudtAooORJEcB41Rh2oTu9asm4fbKMreqlgOKZm9hISj91ncQDPf91MU9CZl8QvPo2RDaRGEslKvyUhw58fIshs27Xo1+tWOPeaSSVPCuOAGZHfg5y1v7o8JHAkMak1QG8kM3Anm01nKLxdQz96bAAAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAAAwBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdMoR3Ff/l2CLrCqe5XAM3tnBAfHcqAAD9d6sS3vtyr6XSyUsZ7/fclID6eTPJBm1XyJRBX1eiMCXso5c+rfAtH54QaRVTmbQ1okUPH+9Bpt+tFxpyGQxnunZvvk2Tof4CgjEwD+SKRbQY1fkASlSXq95yy+FmWkqGrJDT2tuELfDkBavTs38oW8ituxJaDPj4VjNAFf0ez9Chs7XAJ9tPfdflpEYXfH35Dh8AAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR3DhHSIkFLh07pMUrH05XhVXAA8BokKPHPWXmuB96ag+ZwdTgCfv3xU6ErmPPiFrN2VJGb30vkXQ8k0eb9/wIqBZjP3MjrmMdJ/z9JJvpPMB6rhgR324UlEWrTGLJyn4Y9iWLrLk+elqV2i/lDDfjJS46S11w2ALyz8ep/ty2Plpzt7uByBKbATR/qxksT935gJBQlUHf5WmFQumw26CJlB20eSaj+v0hh9wcQAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 172,
+   "tone": "#0d0d0d"
+  },
+  {
+   "id": "173",
+   "slug": "173-urban-courtyard",
+   "source": "160",
+   "published": true,
+   "title": "Urban Courtyard",
+   "tags": [
+    "two-storey",
+    "green",
+    "wood"
+   ],
+   "size": {
+    "width": 16,
+    "depth": 10,
+    "area": 160
+   },
+   "floors": 2,
+   "height": 6.4,
+   "standType": null,
+   "description": {
+    "de": "Ein Stadthof auf zwei Ebenen: Kubaturen in Sandstein und Dunkelgrün, Bäume, ein großes Stadtmodell in der Mitte und eine Terrasse mit Besprechungstischen im Obergeschoss. Branche: Immobilien & Stadtentwicklung.",
+    "en": "An urban courtyard on two levels: sandstone and dark-green volumes, trees, a large city model in the centre and a terrace with meeting tables upstairs. Sector: real estate & urban development."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdL1yVhY7cePNQv8lADlAiirLk8AD+5fC8NON3TCA+/e0/JUixtJP/Q59HDw7RwSD/26b6/m7ue5U2NbPWIV94aesLtVHWBy7kwIGWO2LMmHTrinG8WxRB2fxl6seCc6wWAbOIjMQcdkr+WFvOGEsbj/zZs8zYVORDl0FDOTGu2hlS1FRO7WBTKZRmtP5IAAAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoADTs0IXo1Dj9m3nCgYAP7c4dWodnEaVLtw6BAjJU0rjl75HyeC4hoNsqzVsSy7OtL0oEH7MK17tkdBxc1OQezjIaRIbSs8OP1et30ABh1pb3dEt2aPz1t5e8nHBIMGZHr66nrN3q5mvVWl/nAre9cTqJJ63c4eknJAtV+xG1UUTS/NE7kuHgtMQ8fchFdeAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAlsRA3N1JEWxQs3598TwVAAP7s2pEValGgVk7KeCsHDIywUSCqpssMvBWVj1MohNPqTcB4s1SiBSer0du8dYrcMdn9ykkaBZ3seIQQA8+roknuHBBXQv0vN53aapTl2LPL/03b95loRZswsWxZBxvxyNXeTw8H/IGOfFESinQVtejNQzQA80dwXRgil60F8/63fZUaXjhaXFgAAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoADNcp0kl4B1eVP93IYAAD+2tDOOec8MH8WXYkAa/vFHT5T59oY46M0SLOhdxP0zQ4lRatbAET6PtdI8ssPBC3JKfLieLmNZLZ5SYuJOpcsD6sUYkylOf5werTfk1u3f5ufffb9u+USBIvco37FCFGY8yL68MMAr0r7hNptmvtd1sZAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoACkFDWg2UAYfyDRdcyAgAA/sA6VqFeTEosnkFEM2GzcJVvMIveYeOnX1gBNKL2l6kNEtCoY+sHnEG5UHs0NARSAr8XpJv/9FitO+la3KHcVuMyVLdjvomVG7rpzYs2njQPxXGav44ju+dS/nXqH+gTumcPOxb6JhmMg7ziGbKhKGyeQ++RP2zb9XMjTiYor8l55zCxSlHlFQAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdEf/i1/03C7Y6hOBvyboAAP7aez4Ty6T1+mtpyhU9jUSLrkiL3UOq40pgNb1HT+YcIpiS/1/XDalmKjUibSYGdz9hhiM9Temd2G6B2ad1McLGp6Mwk18UaU83MVV5dv35W1GIDIcoyWqiZj0ElacKQP3Vy2kO94iYIwD05oXD9LbOYRdPnJaPVcLnEVRhibVdjMAJuqcAAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 173,
+   "tone": "#040404"
+  },
+  {
+   "id": "174",
+   "slug": "174-machine-loft",
+   "source": "161",
+   "published": true,
+   "title": "Machine Loft",
+   "tags": [
+    "two-storey",
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 20,
+    "depth": 12,
+    "area": 240
+   },
+   "floors": 2,
+   "height": 6.8,
+   "standType": null,
+   "description": {
+    "de": "Industrieloft in Anthrazit mit orangen Lichtkanten: Bearbeitungszentren als Exponate, Werkstücke in Vitrinen, eine Treppe zur Lounge im Obergeschoss. Branche: Maschinenbau & Werkzeugmaschinen.",
+    "en": "An industrial loft in anthracite with orange light edges: machining centres as exhibits, workpieces in showcases, a stair up to the lounge. Sector: mechanical engineering & machine tools."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdAYww4IjpQd2dq5BzdgAA/uXtHg1F2BOR3hYaa/EAODzQ7q91MRgLLrLpHrCEnoz8GvWH50WFis35ZUwQyeMxCJjyOHqsym3wggjnPOcfejmGZ6VQCe4B2jRg4ta+fppbHyWIaiCdZBUw8G24DlkMUuu7VKHjzvim9He//QCRKtAaJSqgAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYye3skOGZdqI6nAAP7l9lB2NDydPd1VBa1MzhPvUc1Vb7zVabQafGqcFnZ/gTqbmlywOu1G0QKY7lBboDXw/+ANxeIL5M5MQbFQ7OTrdgkTo552Nf5wtvhVI0Mza4FBNPnDq5S3wa6HSfOYV/sujsfSM/As80/YSwP7CDXjHdmhOH7QdKNP3vHBuGfNcpVe+wAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdAYxErC+S0bS/9S1/939AAP7p/T9SjcL3vD3VIAdvNxsVn6lrvXa84f0LuLuvQYCelg3li86jvyVVIdhQuDdkZHulyEbpcqE/qKKYRIyEePiCtMMvr9Dfr9OWVE3x/84kGARdohTnzQTvfS42iqvwZWjv0CGG+8Jrk+VQDrTSpjrDsU5G9snggAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoACSzF2eXmvplwCedecAP7pSTGTKSQyzCSBWzvq8ZZwQ1+qYsAwi6ylId1RBD3Y1DK8TbrcJrgx7AVtFtbvrSF349noBc8LjbYnaExNQFnC1tseSJeGnuBCORAAxCU9taYI01cR5gca+cZSFd1z8Ofhln+E/mny9g6gOjgAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAS3YwNchSIeHACsYonudGyQAPfd1QfDqfjkA2lsEQGjWgaYnEcdEp3aXLj3Heyo2BdsH5XeonCs11/RBthE2z80FEPgnaUS7J/gmhkaTBaNAPfX0eR4W/dw/4VZKe73Oj8GIyxhSkO7Yht/MEMocdskjbsyyf8XlL8shpj5RhTF8BTkO1+OqfQm+nZFXKC/+CLUEbUMwO998gzwAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR3AdE8oAyAA5/KJ3UNQquTAAD+z0xNzwzFGgJYKFYN4AF2R2TebHYv/5HZTsYIf6couRpI1Hdq3eM3tMOZ7MMPL/jmuxKTMblc8ycG4wPbqTM6lnrry30sr2wHAcJYNpOo30yolf99DeC9INTBqEtbAWTc3Im9NIpzOicTOoMMSdZMIPdZL6Xkl1W2VngWarRf7tU32AA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 174,
+   "tone": "#040404"
+  },
+  {
+   "id": "175",
+   "slug": "175-engine-tower",
+   "source": "162",
+   "published": true,
+   "title": "Engine Tower",
+   "tags": [
+    "two-storey",
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 20,
+    "depth": 15,
+    "area": 300
+   },
+   "floors": 3,
+   "height": 9.6,
+   "standType": null,
+   "description": {
+    "de": "Dreigeschossiger Turmstand in Schwarz und Gelb: Großmotoren und Generatoren im Erdgeschoss, verglaste Besprechungsebenen darüber und ein beleuchtetes Treppenhaus. Branche: Baumaschinen & Großmotoren.",
+    "en": "A three-storey tower stand in black and yellow: large engines and generators on the ground floor, glazed meeting levels above and a lit stair tower. Sector: construction machinery & large engines."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCsAYv+l+QOnYQnyWJkwAD+3Nu93xpJflIbVLqQNFt53CwR89YqsqYNDuK7Zeg0G5icbOVrPg5g+XW8lt3m6vkUOCvHhX8yrcO1ySb0iZQdaH6Z71lf3b5ZzHp3sx6mXWeKGANSYoAMmIVRobFpUPAehKv3MJ8DyzdRFDTJpxz3ZpszhM+IRB3pD+AkevG7U8aRDdxt+3GAAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdBagBV6yNQVWjAPwAAP7lqcbc/9rPK9iZrZ+vCqpu4kbHH8eztKVdsz1XTwiyeHbJs+TrGv1xciB2vaQTcT43ACu70nchJBXq4bH7Uf5RO+47Bwaa0T38XnK0PE3Woorr07t63XakMEYQtgmOZQE0+5mq6/Nz3BXZSYJguOHV7Ie7+Ayvp/typTqXnHjvhbKmLJ2oYO9AAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdBazSAwrSy5Ff+M92qlho9AAA/un9z5hvIIlDgIIK9ZNzohv8EwLajWN2vVFAHsBY+rFg9nFJYzHDOL+QhQo/IJ7HXXFLXmxbCLmr4nGg7IN2UHypjXg2C3rRQKu2oMOfcxUIeoAo/3rs69fc2W66v1X5p8oOTbgTYT6+8MsJ2oCnPwkwRGbyMN5v4S0QAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdAYx2sOGhkz0bHj8FUAD+3NvzSrND/NoOKcdW8ZA4ZPxc9SQHo0uN159CLawKW3t2E28gd+xssPmOXgL0yUszqvpN9a1QO5LV9OsQv0qlYnn7cM7xxyf5yWJ/FNmFm3IvvBR8tZrE5ckA+cU5zb7kOMD/uftkp8L8hHkLH+waa3amsX7He1DlAdkQRvYcb7bmhQtygAAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR3DhUK4AoKQkNgSPqjaKQAAMo2/q22kaueb1rLCVOd33CYzr5YyV4E1zCzPIRO8mkUBtcBGlcerfQcGAeWt+fbXAhH5U9vloC1uhebYOkq9o0geny3m4FW59JhcP94BBDFS6AI+SCBfk9cnLI4ZUbtzHry5LizNiKnsnJ+IzPoW+HOdu+Pu+Q9gG2TtcEvvP+uUnxrHvjnjQPltKYJaA7jqNCgAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoR3A8AVzawsh/UuQMz+ngAA/rtFfPjNRm1KB8jH2719rRayM7DUVnz7y0VR5M3nL9qoKch0RrCB/+Oucf5pr0QGFl7ZrqO/ofORJo+VwdwOUZxyiUEz2stzrgDNJSb77CSdrHBLWZ81DbnmGNUiozXjchHRmQtPUyRQb+B5aynOlGe/GEgLPFjrcPLpIVK+Q0jmj5c9aA6gAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG1",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "floorplan-3.webp",
+     "base": "floorplan-3",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG2",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-3.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 175,
+   "tone": "#040404"
+  },
+  {
+   "id": "176",
+   "slug": "176-bloom-atelier",
+   "source": "163",
+   "published": true,
+   "title": "Bloom Atelier",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 6,
+    "area": 60
+   },
+   "floors": 1,
+   "height": 3.6,
+   "standType": null,
+   "description": {
+    "de": "Bögen in Altrosa und Creme rahmen ein Beauty-Atelier: Regale mit Flakons, ein Beratungstisch mit runden Spiegeln, Polsterhocker und warmes Licht. Branche: Kosmetik & Beauty.",
+    "en": "Arches in dusty rose and cream frame a beauty atelier: shelves of bottles, a consultation table with round mirrors, upholstered stools and warm light. Sector: cosmetics & beauty."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAQBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoR3Ff/i2DnMYjE6DJgJITHAMKmgAP6H6BLnTlje+0+TpPJCHL+1OcbksQ/AShRVjUumkt+Eqe9ZH7y7EoW/e174Eww9k3MNyw3Eb4LS0jOqmi1lZZujXjGrq2ZqVMXNJgWQ++3lXfQQcUHRBMHugxXv6vimQ+Tuf1pXO7zHbQ/LgBN8teU2+Z814dtqNZ++pdtPYk3b3a8y1RzKvLAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoR3AdEY1HQ9XxPZu9wA/trTpvfrcILJ/qYeSxbwev0pVQHRZEKa8HfYD/NnoEiTPPt7K3LQCvUBpVujrnT0U5i2EY/gyt3oWgsl2qi2cKr8CvOSOytvW2Z6kjYeORBhL7vdrrey8sO2jK8SAQsCSF94ncvjgn4suHDxtHl8RRXaT5uJy6zPbBRV31LyLMb8aDw68IAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoR3JoArdJU3kp7yMQePb7IegAD+5DyzY3kB8SbjgUF1mTzBmLS3GQOdQgq8Xppjn+TyS7LApvibtYoDo/Nu3hIDqGkEmQN9/odcmQauEjBeKc34dNjY00gxq1rjmmnlqPnLOAOE+UI7xfq9B/aBN80VSLtamFigJNIKBtTUlN/fgF972pYnGAu9UhKeXy2U2JGUf1VKcxzhFhS2CHetWAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoMYAEKRus1aetszosyCXumZIAD+0PoyikcWZpUiv9MYfCaRcLfFTKJWVKsQitiQJA1bpKxrwGMzG1N0vPMYFoNorY5Y0tlEQcWGM9/0zyiEbv5TR900RbtDgMGvbxVIP+PdrjE/45L7PadqbniN/+keBiwCR30QOaK56BDRfw3fpXi5QulQbeQA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAlxg992+LmIyCTMAD7Ex3FsO4Ka5d7zISBQqoL50WqPMpQhhulPjkdAuLH8FlXfklcLBhVn68wb6h7UCKMF2ktDkd4U1oQUI9I+8IPMpV3p2s/gvvCM2tpKgfCgcD0k3sS5ZDAcuJC1+y5hegPKzeUYn1AdB/gt04yTSXB3hIpOvOPt7AUgAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCxG1yB4eZsm01QcnEErRbeCQAA+4d52Q025wLcNQyD2DwXoLtejPMI2zRRq9N+Q8r3bbMbUhG4HZyygLw1czhN7XtRr1gLm4MQ36cnFNLE0kCzAFF9/h34cLNyN9iRqiqbVVoYrr26Svfjy69Dk7U25lW0xGJ0/SOkeHhpIex6dLzi4AAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 176,
+   "tone": "#040404"
+  },
+  {
+   "id": "177",
+   "slug": "177-kinetic-loop",
+   "source": "164",
+   "published": true,
+   "title": "Kinetic Loop",
+   "tags": [
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 8,
+    "area": 80
+   },
+   "floors": 1,
+   "height": 4.2,
+   "standType": null,
+   "description": {
+    "de": "Ein schwebender Ring mit gelber Lichtlinie über einer Roboterzelle: Industrieroboter hinter Glas, Cobot am Tisch und eine schwarz-gelbe Theke. Branche: Robotik & Automation.",
+    "en": "A floating ring with a yellow light line above a robot cell: industrial robots behind glass, a cobot at a table and a black-and-yellow counter. Sector: robotics & automation."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCw7B87ePmVfsX98TPnwAD+6fdZQK8Y4oqxnvNdEYrbGQCWIdK3kGQexmId8l7Qidoi+E9r3S5sNu2BoUjE6ssEpVb8sXloEIIGS3DzOkTiimbJYKpt8rsH6mr1CWA+sEviyqBT1bhIaLNMyh4rvwSzRs60Ou6KHpclEqzTgqTO5WIAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYvMcb3ilsz+quyRXmw7gAD+5bv0RucM9k9mi55VQdoNvsUBW6osnj30FQp/9mbAjin1FBwS10b56Chluj+J4qNRzS0Rx/BJbwM0abgEwmlcW51RO7jN1TanUgAbvBk/wb2bDt82/r+i3axejpbiieXfl7eWylRkpraHHgHidVtQAxEVH7L1cFXWZHflkclCmAIVggAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBWAMZAb7wADFKD86eyHJ2DAAP7pTrcR8hv1rtFtAGYoaF3BlSK+F44Hvyx2Olm7/hApF9TscFEBnW52M3v+WR4yHOO73WlHZXO5+ch6FCL/yh9FLnz/kVcUiaRjxuG22hzMbwPd13XdByUO4ixJmjcb4y1YizQQ5XMCCQ2NNqQD5g+YZdtn1NDLiLOy+h0fahgA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCw7Yxs3sAb7HcxfYLsAP7kRKjQtU10YoK6uN0F9ArqMKnssgpa946AzqGRwJPeMuJsxK1IiAKmpHZImzkeFspffWTzf1hnqlC7bAVp7bq0VZWWE4K0BZx7i+5UjwDQTELJZgmV8elV7rhh5OYGfKgKGQGUXwAcjGlUAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdLwAVfqpAoWvDTk7nvztwAP47oxpg8QR4fPigigA18usGWOcE+VvTv6CLfXuxBSRRTqa3oSZi9gLeeJKkFme/Eg828sFcmXl7IaD/V29usriXYtyELJwGoU0dHGZllQ0zpUyRZ/ahrPmY+J4nZhNmEbzpENawQohZs7JKBH2zRref/r40XwMs1NBlCKxJxnJt21n4wAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoACOp/Z+QcHHHgAAP7kJBLihQFCD/wZCBfc0rINT392leYnz4UIzgYkr3YV6WdG8I85LDlsBpG4OIEs+zEHdr0ucI9Wu6iCtb/T9o6ScO3jEPsT7FPhNftzm8ODXiWt0Moj8fWbxzWQBohfuMsMQkeu27gTrssHpegO/fqEJjqVD6lijS/lx94HhkAAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 177,
+   "tone": "#040404"
+  },
+  {
+   "id": "178",
+   "slug": "178-brew-orbit",
+   "source": "165",
+   "published": true,
+   "title": "Brew Orbit",
+   "tags": [
+    "green",
+    "metal",
+    "light",
+    "wood"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 8,
+    "area": 96
+   },
+   "floors": 1,
+   "height": 4.2,
+   "standType": null,
+   "description": {
+    "de": "Eine runde Bar in Flaschengrün mit goldener Lichtkante, dahinter Edelstahltanks und Flaschenregale. Barhocker, Pflanzen und Pendelleuchten machen den Stand zum Treffpunkt. Branche: Getränke & Brauereitechnik.",
+    "en": "A round bar in bottle green with a golden light edge, steel tanks and bottle shelves behind. Bar stools, plants and pendant lights turn the stand into a meeting point. Sector: beverages & brewing technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAlxRh9PDl7tPpWv64O1HLkgAD+6U6cz5z+puz/ub2DHcFyXWKa0IT+N+Xco+hEtl6/stF85UQVm+rv7zhUkt2CmAGsG3o+hudi+SmnbIgAEvJ+EGgaeGbp8qBMpUQR7/3Z4NBRzu1oW7Q1Mev6eNBROXOFF3ZDOsqycgQDiD40VIQA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoGv/i2T2RcUE4tKtrVksY2AAAD+5fcNHuwm0TVTqI9OoSNJop18M46JPXEL55T3oyycZDcN3sYx7NE+lzdWKGV/mv41Bp8mkK+Ltt45TyLU7rJYEkzarYt4WY1Nl5iZqOUSijYhBPhm8b2xy32hI9ZeMabqu8nFQRd2kYQZ5ldK/o86gDz+JetdSP3iOMJzcdgAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdAYxE3sj3cZ8rUAl0DETAAP7pRAlxUIEIddQXzaeQN+QrLTER7Nq49k6oRcnaQQiHtz432YVVENxBkFSb63My+/3mdcT24NFESbALXB+/CXVAM5MHVC53PuXSYmsuU0wluRIr/DEaoX43ETTqoG5uk411adfDSCpbe0xgnRmMqg1+d2XP6AYwAAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdApnIdM25mW9ic7CjC+jamAD+5ey2xHhLNLQLSZXNctCaL6MaTwGrCdq/Py3hs+DC6onkuqtzb8gqv20dLel0JGA5DNcULtCJJx6W3WdxIyyh7AwNO+ExA13U3o8/TKg1mQCfN2hrzj7v5ECDjk7HMxd1lYLvzYraQV1l+SBGOGKyS3gdYwAAAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoMYJn/UoAH29skDMCPx4AD+eHKepNBoeaTESYjpvO8h9HR60X417Edpizn1eAaPUYWr6bCJMKktGIBOmjzyxCgceknehMHSkB0N295/ahYJ+nLkf2abHP8ROv8DbDvf0Brlhv7tR9x9o0lGictPxrPLlK/r88qryiD5yBGHljFc8Q5M6ySjzXzNhkAVbUcWlXcGvYAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdMoRwAdEk7hpUvMYx30wk07hgwugA/s9xZ4VoLmZL+VgvnLhas7LT0Jpp6l5OldbXTLrdGEKSpwVdbfvFA8ckrZMyiPxHMjbbVGYfgoXpWTgd4X1RZhg7POPfMjLzu5Z3u314N2dW7lWUUKNZw9CZPRGC1GxErOeLDjU5zcawFPrTZ7+HTly7B8TNyRhRmS9ib/jvCXz6MT2IEkAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 178,
+   "tone": "#040404"
+  },
+  {
+   "id": "179",
+   "slug": "179-secure-atrium",
+   "source": "166",
+   "published": true,
+   "title": "Secure Atrium",
+   "tags": [
+    "two-storey",
+    "wood",
+    "green",
+    "light"
+   ],
+   "size": {
+    "width": 15,
+    "depth": 10,
+    "area": 150
+   },
+   "floors": 2,
+   "height": 6.6,
+   "standType": null,
+   "description": {
+    "de": "Zweigeschossiges Atrium in Weiß, Anthrazit und Holz: Zutrittsschranken, Kameras und Bedienterminals als Exponate, darüber eine verglaste Besprechungsebene. Branche: Sicherheits- & Gebäudetechnik.",
+    "en": "A two-storey atrium in white, anthracite and wood: access gates, cameras and control terminals as exhibits, a glazed meeting level above. Sector: security & building technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYxEOSDlFv0XTUHE4AD+0d0BK9Lb9W9Vmmn0b1Saf3cyNh+KAoNQdearlSmhm9MlPDS0PcOn1Vh9TMevQ10rplqP/GzQvgzKNf0jpeQ3hPBID9urK0oZPtqDxeDNXfx/7XOZpvmigCSYrUjGcPuPr6GLbBGCCeNV5EZgSIKaMGEmolzrWzm3yrgufb+HSMf6uRLSpISIAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdAdwLg7cmEVYZg8gxXp1TTK1wAP7Q1cu6hftrJoXUQD4DamX9VDA9TtroJxFnk3HuQSS4AWRbVsL0Cxmh3Fhx676ltFpUCPagWJYemZ+Qtz1+tOXkIlXymAzghvPSLKWvrPPqWQ8nxb8VOxz6/RgzyDzz7Cfc/h5Ei4kMyvz7Wrg0Ydy9yeprrSMHgDsNMc7XIAiEVQGtgKviUlAAAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACw7YwmtYOY5t0sQUM5b1CAMmAA/uWjWBjO1A/x3bKdhaLro+bbo6+urGwXIqSaaW53HioKhqUzsqZybUi6PUz0LPdYr0sp+OE+iO6vGvN7aUCap/fQvZq+56g4Y5bza14WsSOrSuiZEMaIKLhOK00k1lfBqLFlJOI222Sbwi7DcdswZ2y+lza2AkWHjHhOk9oOnZNoYKc1GoQLAAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoR4GdFUt3xLJcPS/ZI7CBAA/uYBViMqHiX0PvLH50fvO7eREGCbfaZPIIoVtGQFVyuFYnLAjMrQyBveDWn48CHqTtMhtygTrarpfo+RmPv9h12k+mktqFNpTv70WOKJ4J0/MBK//vt626aPvq8FQtxnpdq6Pz4uwVAy7L9DX3PLlaMM0JBwIrGwAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoMumsAnOhHRLFFo+ZQVLLiJyoAAyyAkEJdSiPXU/tjFopjBHrh35dtdSDhvusWHuGc5LtWFtJbhF29Vql37P1nqkDOrD8OqHYL3LV8HvNPPSrvrGvnlXieq15oC3EDZrEJ1Jqy1DuAm1/chSjpIBfw4Xo8FTKZImGWbguNfPWYZ1mdB04VkWLbKDesgAc6NAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoGv/qUD4BdHbG+zW4p4almAAP6f4aSaVmRoqVWqCVnJVeHFQPg2Dsz52VE7NzqQEz1nuUOs3gsX6LT2Gol6DcRk7blTsywxffWAHqHHj9xPtuSNgauehMJDYou28AwUz4384rjE8PkzxPf0F2tQAHt3aV46aHpxCFP5VTp0zrcKNV7MzvDieHAaM+/3mf9f4pc3XkUzG0d4ZsxyjtDiF6OIAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 179,
+   "tone": "#040404"
+  },
+  {
+   "id": "180",
+   "slug": "180-aero-wing",
+   "source": "167",
+   "published": true,
+   "title": "Aero Wing",
+   "tags": [
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 20,
+    "depth": 10,
+    "area": 200
+   },
+   "floors": 1,
+   "height": 5,
+   "standType": null,
+   "description": {
+    "de": "Eine weiße Flügelform mit blauer Lichtkante überspannt den Stand. Ein Triebwerk als Hauptexponat, dazu Satellit, Drohne und eine Erdansicht auf der Rückwand. Branche: Luftfahrt & Raumfahrt.",
+    "en": "A white wing form with a blue light edge spans the stand. A jet engine as the main exhibit, plus a satellite, a drone and an Earth view on the back wall. Sector: aerospace."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAFEB7rjusoDF2rTkyQ5oaAAP7OAHKgSKFeMHI7dBCktfCzP0XYa9OXpXsWH9fK9iYhttxTLCILd9JyZocTIiRjxcEfLEiHwMXdAWXQSEYyz2W1h0WxVSda/RO5fxtAY2LBnzKP88g0pN+KZry9noFy+N/BhZK+HutZZ6F/cKz+bYixlGTmXU5rLHlmKUWAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAD5dIO/V+QXvAFyAd8PDgA/s3wWhHXR9IRUwo0OSbneHi9tOv0dl83OLTNpsVlH1KOyWGi2a4jgLYjs1NkKDL7u9MlvQtf31aEAK2uxAiZnf7Wkb7Om738nCfF+VHEfDJw7tE2xr5u8gplMbFcIpOU3nNu2mQnWIWRiERDl4Vrzp4DMwlgAWIYAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQBTAFvSrXgEt6sF9tZxAoAA/uwAniVgCy/GPpYYO4Y7uGOBmt6tEZLwvlPwEgUA3Svd/2U3NOEsFPxIArAD2/WBlWYhouzOdZGR9uLID00QAZ4v2LtD6Lw7j06UzEwnQc3R+0Tv+HUZsoy/yb43XSxv6+DO77G5ir/pQ1DP1E+f6+6iSqX9x5gpVxXVCdbaj8UR8J7j5O2WVPGQoAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBjeg4MsZt/zfqbNrO4dkAD+5FmSe8gLWkBx/QUDguy/cJ2di8PGdq3AFJDI0OjGMnoTMBaWQ3sGIJRb323gyOKIi5zEeC7Sm3+3sdkfy8Ph1hhI9fRjWVRLk6fb/Eb+r8EJiM6FsjdJgiefOEHszDqVedR0660Mz9FR9eDAx+xaIAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOg7UrdBOdB8hXfZQ6X9OjGAAD+rM8VSs2JFb5iiwlKN18NaymYUBwbpIPWOc90TM6RtwOwB/ZOGAgh1c+lu3XGs0WTfWrUOB0D58XyI8JzYtqwSfb9DWnS1H1XjUHBJnz4TDAcgYUC/SkolsAJLiklcauTrQ7b4Q/JjrKfWNhgpEPHFpmA18ogUe6e4n+75/BeuEAAAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAS1Iy7AfGWuZSVn1thQAADiWBGP5wnkdhq6HPU1iFiglYNi7B80u7Hfzl6iWkvu+Nb4Sqq+8xr7wv03OgDc6zbu6GVGwg+dBWVbWENBUgn0KXmUp7lGufeDzkWNayt3dQ23mYy3rwzOQv2o6ij4hiAVFuL1+SwdzWIbAQlgdG3eKouuNxpQYJJWFF6UAAAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 180,
+   "tone": "#040404"
+  },
+  {
+   "id": "181",
+   "slug": "181-photon-gallery",
+   "source": "168",
+   "published": true,
+   "title": "Photon Gallery",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 8,
+    "area": 80
+   },
+   "floors": 1,
+   "height": 4.2,
+   "standType": null,
+   "description": {
+    "de": "Facettierte Glaswände mit eisblauem Licht und eine schwarze Stele mit Logo. Optische Komponenten stehen in beleuchteten Vitrinen wie in einer Galerie. Branche: Optik & Photonik.",
+    "en": "Faceted glass walls in ice-blue light and a black stele with the logo. Optical components sit in lit showcases like in a gallery. Sector: optics & photonics."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBicxABHgClClQlO7uIqZoMLZJQAAP7Byz/7oxTOWQh1FPH4GX8X4OizVjFI4d5Er9r/i9KCOiwakJXW+5jj1YS4cjKIYkuaCcaApaik57Rc8MV8k7zm2Vejt5HYBk5wHU3r37kuKpC9zm/b/EaUYEVrD1sz8qgFVMcVt3h1sLWRXeIa5eSQNhAhLF9wmrUqj2EiEiB9Z1qFAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC+SdwA9BQ+6/IvqY1oT7HhoAAA/t2icTQWLQdOf6Visib3o5/I6GDJYPfuOpDL95mrTrmn9eyFBkDIJDe36eL2sxLgWzuzS6dVPySHxzGgNaeQMt8JvM1i00w5zAnN76bJTVfIZ2Vg53AoVpwf7g0SwbsZuzi+9aH0StxDpoHhjtHVQxZtkMiR3yfskkKTSL7Zx6rxIuwW1pegT4X+w5DBAAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQApgKYB3lj7+olHzpza3vsi22zAAAP7l9OgRKqTG/SsAPCbOIqeGJh68D8NnRO81+NA9a0xI/tpJfHuYy0GfDaWateQUfYAn1r6WL8DWTl0dIyy0If3YyRmxEAcApuOOSP8Xo05UqdqAfhW22JMb8MlxbHvXttceM/odyQofhdn2+sEayaY0FOin6nwgExSnsjJvRjIrX/QmmU8IdRuXlI38SmoAAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCw7ywBLBndaxDbOsdEgAD+2kwPO0Hx9n72Be0VGJUjUPXSDmd8hNdD/R2IrX9NlXW/CLu4cOOtEhBmvZjRecP4mdoTQh8nYqQ14ZIzMc4+zHBlNOr0ExZdnI6Xu3nlA6OGCgljUmqjOlW/hTnxJ5VCHV+lN2C5b/vuHwMp8p8I9LceMRRIAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgMXNTfOZjnHjt7XvYvAAA/r/9M3ufH/qBIgZ8iMyZxqbqF+mxYq4+W7tuL2oMgLDpJdoHnyP3/Vd/qvRMHLx62tyWCl2IGgjfs6JFoRWKze5ThqOUDwGPwpnUQkPzBWP23d32paIJ3khyUcv/5sNAXE0YIR+YA+B4ZYhrWej6fLyCwVxjO3JDoP90fTl2nHYp8s0Sx99MHx9zoFrCveCFrh2tNIWTabpfda6yR6IZ/NSBAAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdAdwLe+b9UJnuxuBnVOVcbzikbQAA/Z1O63DIEjv+wKehORsXcbJvi2nZM8QfOzJGtBqW6OBy1g+qtA88pykn28mbK/VOk2WOQZDz7w3Nifl5pyoXbLYMrTLSC6L8KrpZkmv4f2gue6N01l0nyFZtP651k/rghXArTOlVDHna7aHeZ1GFUxPLTSpSB/adHauB/PW+ZOGd2pkZM0+Bw9Yj/PHZTfS3yMgRtMaMgagAAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 181,
+   "tone": "#0d0d0d"
+  },
+  {
+   "id": "182",
+   "slug": "182-hydrogen-forum",
+   "source": "169",
+   "published": true,
+   "title": "Hydrogen Forum",
+   "tags": [
+    "two-storey",
+    "wood",
+    "green",
+    "light"
+   ],
+   "size": {
+    "width": 18,
+    "depth": 12,
+    "area": 216
+   },
+   "floors": 2,
+   "height": 6.8,
+   "standType": null,
+   "description": {
+    "de": "Zweigeschossiger Stand mit Holz, Glas und einer Moos-Wand: ein Elektrolyseur im Glaskubus als Exponat, Infoterminals und eine Treppe zur Lounge mit Pflanzen. Branche: Erneuerbare Energien & Wasserstoff.",
+    "en": "A two-storey stand with timber, glass and a moss wall: an electrolyser in a glass cube as the exhibit, info terminals and a stair to a planted lounge. Sector: renewables & hydrogen."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdAYxswFgRuR1NpFJvi4WoboAA/tHzBv7xG3Kr+D+dS0SSGLap8xsJ874UgxcHtyAAoe+Q/ni07/FAEnV212nyW9Pk7yCEOm9IwNDlggcNkXDBS2+GIHfzvTEjgFbzwC/DecithzV9a7zKF8NU5ImR+DNNdCyCjyj+wZz0C9ihO70xOYEwo2rsBJ3C45fVIouLyZlD8EAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdAdwLgxdl3YzkKve33Dt2lXpoAAD+5l6/Yqftr8irw40BLx75d1orV0kkYIgSnIZ5jnHzp0L+3KsHnyzravSDPWOeROoQwl+s/VoPCRvbvBwXY/huf30L/1x9F5II0t4sp614/20LyLKUflxpEMm/sOGPZ8dIxkGDxd+g/dJCanM6pPKr9LEJeqSQYk+D81CIV94FMgyrFPD25oXshIAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAlvBPz9v/Zwl6cIYqOXWAA/uYA5I4n21MrIGDAUx9QHVHyIxFF1I1ga4Vut4GA2mbhD6qMGwWyCrxr5HiGcJ0LaRQsIIIRXNRL0Oa1PDa1v1J/X2DofsYh64X9wxJc54x6TiBQ5BmAR8taP2SS5AqjfcOHOEyC0VqtuMAAL/7peBNNYfFDwkGUrCWD6qxaPtF8AAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoR4GCfOg+e/IjCb8WTAgAD+g+KK6LUuC38Vt9UywcFvJEx5wpZQ+HcFQTAw4DQITRdvtnLTVttAgWX9jnfVp8R2b2a3NR95AMNnjMlHP4mtzdvh5qN2CV26Sa/+feVanHXBVf/lmqHPJ03YlNvJvX5Kfuwwz73vaLHZRngjGdRPpo0IgysmbTKvjHnQAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdH8AgvhB0lvv/kvt48f90RLjgAADMmI2bD2w+KnktktQ3vYdwnvua26OyzerQ8oV+3jj+l8rfpX8BwJXtklBOBlq7ziJnfUrTdUXZ+xynUFX1o+hgR92p/7liP8uOYV8+atSCpUmC6oI7Im8zwrubpYU0Wv2KApyipQUPAq4OpONmH7dPUdw/0oJcC8gt8O4ldTJVPFNpKLuWD9RoFayT55mZQudQAAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdL1G/lDwBboX83KaLKtK3lje1gAD+0G/I3AXscJWKrKfp0H5jXCx3WoRZJYI1ZNcg4p3hVFZn2aKfgSZyVT/eHgFawzeT/j2zXdP3PssB5tNDXm/Bu3hckoWSh6w1qiyK9WNrihczWx/QNchzy6Pr+Fkiv5tC4nY7rvWAEr9XNqrWGPMgYz/kAqAeAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 182,
+   "tone": "#040404"
+  },
+  {
+   "id": "183",
+   "slug": "183-data-prism",
+   "source": "170",
+   "published": true,
+   "title": "Data Prism",
+   "tags": [
+    "light",
+    "metal"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 10,
+    "area": 100
+   },
+   "floors": 1,
+   "height": 4.5,
+   "standType": null,
+   "description": {
+    "de": "Kristalline Prismen in Anthrazit mit violetten Lichtkanten: Serverschränke als Exponat, Bildschirme mit Datenvisualisierung und ein Touch-Tisch. Branche: IT & Rechenzentren.",
+    "en": "Crystalline prisms in anthracite with violet light edges: server racks as the exhibit, screens with data visualisation and a touch table. Sector: IT & data centres."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC/OywBz0s7FVuRZ9BejX9jAAD+5AviZLQUXsHKeJ5812jqAzTk/Bg6ba8P57nbmlilkQ9rSJIe3QKfr8Vye2Z1NohlsBbUfVEGNlaN0zAaEf4CAbhSL+X0v9+54l3Y1aBWY8PWPr0Z7kG16CoMsQZaGZTvwe4wK8LD+jA5RKOoNjmj8ouAAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC06Yyo7eJuBvh7wN+jd4AA/uW0CSYKIPDGOhqoTZlhtgo9OsU3SLHgiNXAiciZw0LZ8gaQ9G6HBgE4GLmaWr2MTIMzffXsAISp4xccXcyM9ypfw78kLol+j/yFV9pFDeKaLtIB8/MXP5kLg9aeZW3BK/YPVZndPaUiZNzvAjMGHhCAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC7AYyKsGYXfNaPO/+FAAD+5DI3rWcHEAioLYWAf0nNPUiq6ICm0//laFsuw/VZjsrv/e21ItPFM7XmImKsdWpEzqNIDzeksm5kwo6D+yaaE+NKR8zP8ANJPl+3i1XgwjvcZ+1Qkl4uO/R7Wj9pJKNzKCgrvgYeaCD5JOqGeRyAAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBfnZYAu/P7nUXYhAbpy+ZjLoAD+2r9A+XGsoO9FQfso6o1ax66mdtEz1y1o5I6O4Wn3WQyO8L3uO1ylLVYAJ75TUGA/rdEQQXq+ScW7CSa/J5k9zBdyh3hbooC775QxLTmEkM+Pp32ZTqWrQt/JnwAAAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZAC7AdwLgsc1qkakGCQoDGitIAlZAAD+zNT4ckgXFNlfzmeMTsxdk0UHmpRZydOenIF6MUMCUu2iGfBQbL9AH8fEG1UuU/fqB3iG+fv9tIBdlemxNjbEPt9XTAhGoVFW6YVp4uCgcgA7ceLAe42lC3SafKZyYTo8Av/JmT/3WKwiyRHaBm2Nd1cyD4gUhpmsZvfZWF36wAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYx2qnWJylc8fIwkj8iJwAD+olQgRHpRQFVFGXXvILM1bIwKoKHJXPnwkC3LYAAsNdFfu78GsB+UlGZryEFiHhX/Lwdr2cCEyhT7mo8fBuGK2RH9EGXaQ4lQIG5IWEU6TGIj51EMsL/VeNNvbJA7UdFasOumfcb6QUy7u94NFCGN6c5Rvk8SL+r2QJAAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 183,
+   "tone": "#0d0d0d"
+  },
+  {
+   "id": "184",
+   "slug": "184-habitat-rooms",
+   "source": "171",
+   "published": true,
+   "title": "Habitat Rooms",
+   "tags": [
+    "wood",
+    "green"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 10,
+    "area": 120
+   },
+   "floors": 1,
+   "height": 3.8,
+   "standType": null,
+   "description": {
+    "de": "Wohnliche Raumfolge aus Holzlamellen und Salbeigrün: Sofa-Lounge, Regalwand, Theke und ein Olivenbaum – der Stand zeigt Möbel im Raum statt auf Podesten. Branche: Möbel & Innenausbau.",
+    "en": "A homely sequence of rooms in timber slats and sage green: sofa lounge, shelving wall, counter and an olive tree – furniture shown in rooms rather than on plinths. Sector: furniture & interiors."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoR3A8ABAPJathQqzYVAAP7aiwLOgxRX3GO6LwHstZLt0SGjmW9v+AT4AccM4wj3U3/h7HP/Ai6dYKl0+GsJXpoIropuLKAUChN7jDCH8Enf8NOpmjR6uZNxnL2o1qZRPq8T8Ip6Eb7jjy9XclH+xfH9vDbWe5UOaj6H9HPF3eUkQR2rCEi+9mkGUEgAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAluRgS0bW9ltTd1AgA/tDykrdjkzUVwFE7FzXGWE1Sbxac5JonMdT0kgowIrvC3iw1PBMsNEaVcw8edmCTnAQe/ev0r9kB/mPMsWMnBCXYlBMfGwTNYt3/t77HEYNrCe6/KCtfMChkPufLtECq0X+FRRoLwYtVDXa2EDtTQHqB0sGLoUeAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAlwxe88g8u3DhRNP9lwj4AAP7logV2NW7UeoOkvK1TWdS1l/adrxxOw2vsp59CcdIYpWRlR3oo2S3B/IDp8+XGWAHLS618MLK1sx0oj8c0szwCKAHpJDlnUc7g41t/GVf3t0X5r0Afu3s3OyNhBBp7Xbe1pCCFnE3L+c2jwdxOz1AtPRQAmYsjGbShafgA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUABsPhZgIqji+TAA/tq+ak1VaUzRogHMk0/eAQXAHKE/aE2//43zjY89oN8dlQCxiUEaXeFXmXunN3YcMRhW0UnF7NQUqUeE7BwGJ3h6M8hqfJoRN5kouDxhEN/Ku/k0i7uczjWGNft8ZvxaZGghUpKWIndy1zUOZonsnFmZoEYW6Muru4qLQAAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACQBACdASoYAA4APu1iqU2ppaQiMAgBMB2JZACdLwAVhixYJPdlFAe6fbOergAA/kCZD0ah4QUnNIWzxuvf/zVst72RjpJBznVb5Kj+OZ89rYK61kv11HMv6jyfybI6JJe0qTdFpueqtzxXsDF6T/P5QnEYiZlUwNCv9AZOcy+RJC6SHwzEgKKhXs/1CLPTZIrHfXbyvd/L4BmH++ZZDyHWWe4cQAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUAS14luWz+OUGBGgAP0rV41ssUB5RlKnuHhLqvu/GnZt20O1X42e65y+psqHH5mEYmV5S1LT5UxdORlsBgMFFTnr/eqCqQpvqaPfw8BxqO4YdVs7YFn33LL8BCx2hYPMPphmGNXdfev2z98AHzl9pyEP6AW174jWOEsXhaYM1+ksiRvNgAx3wjfaZl3hidRE4AA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 184,
+   "tone": "#040404"
+  },
+  {
+   "id": "185",
+   "slug": "185-harvest-market",
+   "source": "172",
+   "published": true,
+   "title": "Harvest Market",
+   "tags": [
+    "wood",
+    "green"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 10,
+    "area": 120
+   },
+   "floors": 1,
+   "height": 4.5,
+   "standType": null,
+   "description": {
+    "de": "Ein Markthaus mit Satteldach in Terrakotta: Kisten mit Obst und Gemüse, ein Vertical-Farming-Turm, hängende Pflanzen und eine kleine Holzhütte als Verkostungsbar. Branche: Lebensmittel & Foodtech.",
+    "en": "A gabled market house in terracotta: crates of fruit and vegetables, a vertical-farming tower, hanging plants and a small timber hut as a tasting bar. Sector: food & foodtech."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoAlvBYgIEfxEPgC/t6aagAA/uka0cOIOVlZy0K2QqAC+onlHQhjq9vyr0WdKfNwF2uXufszK1InGxIdHBpSLV5ydR6ifUO+GRP/Ja2xv79SjK/qlWfzvsQGmm+NwAqeVLRORUl9H2+2JC6vUCUrLezzxX/84/Y3/QzMfcpiSu1x45mfty/aeqXS4ifkTk55YMAAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoMYA0f9LOpUdFbffpEwAP7p4qhfiaLbGhoZ/8rAeaPqeWRVzcp0q1qLWF2DjMZd2X/FtsDOaRe6jtxNj+MYlyJv4ZFzpt8ncdo0rmHUXDIcqPXo4qXaJu8ProhtO1pp8ezSBQl818huxHQuew/KAuxQNV55tARg7t8Epc1pAGVWM4PMUTImp21LQ8TP5gNAAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoR4G8T9z3BYaoSpSPkZBhnAAP7p8Gqf8R3gheLvwb7jlk102BihvuL7NZvD0SHGqzIucFA9ds4XaPAusiEc7+E+tzSUnbOiPZy2aBG9b6rhLPIdMp4gdDqyo2Rg6MkE24bOb0p0DTxz6FDYmt3o3tw+iCdKGgydfDlg6S2rHPVhS7fWRazaV0qoTswAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdMoRwACaKG39rlBQ2sAQEwAD+6UNoaW7HOY/oiocyq00TiFj9+AvRfMMp51yXOlqL7gBM00CqebyNSxExpjtDATbkiXdbAmjcXHncHzyGTNQw9ox2BK6mxogc0tG2hxOf6CKsJ0wjqlKVUqvmG/0zi1Y1vm/PNxlwwxTB8kcMAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdMoR4Lf/i2MT3S38Ht9AA+/qz+9uBk75yI40oB3oTrbZD7+1UUACVan2EUpKRR0nI686IJxPRVIRRb5qI+Txn1twnfqB/XMdcH28EYt3fLyzu1280du/ld93zRRLXaT96wtEKNrYlINb5GzpyeRna/eJ1oxrmGBAo2wP1qVD8xTulaR5XfC55MYOCuf8fOw2Du1xrAOs/i/gWgAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdMoRwAkgPeeZPsM2sx/CPT6CFwAD+ugGCMU7ML+vfzabR7DKUT8IAkTbBwZqpBg2+g7+kVGfgP4qFDP6aav3rzUK0+9h0gf5u1bZZ+T7YdTEyxv/raDHj+eRsuX1oMMClgtL/FmS4/dydDBZdY064YgPiX4AkDB1EztzJEgGgCCA7QajwioBrBe8nQKyyQ2AA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 185,
+   "tone": "#040404"
+  },
+  {
+   "id": "186",
+   "slug": "186-grid-field",
+   "source": "173",
+   "published": true,
+   "title": "Grid Field",
+   "tags": [
+    "wood",
+    "green"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 10,
+    "area": 120
+   },
+   "floors": 1,
+   "height": 4.5,
+   "standType": null,
+   "description": {
+    "de": "Grüne Wandscheiben mit Holz und Pflanzen: Batteriespeicher, Wärmepumpe und ein Solarmodul als Exponate, dahinter eine Lounge mit Besprechungstisch. Branche: Energie & Speicher.",
+    "en": "Green wall panels with timber and plants: battery storage, a heat pump and a solar module as exhibits, a lounge with meeting table behind. Sector: energy & storage."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoBOACLIXpi+hNO9EEteQq2mAAD+5e/QnvLVB27n6wQR54BqPCjiRZenujPpzaervaZZAjmjZcdTLTV7pGN3ZYT28Wq3ttisw/0LYMIIql5+CKifzY0ayyu63tUcf68j/AyJVXAS7KkLsPoTkEpKTSI7+FaPhBlTT+VtwnC1irXcijaZTcgAAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoAluRfuHR1lauj/KVFAAP7c5Eq2mud2xhwp+YiOpEELH0mOGyEpe23nyGT0GaSMseH7mqsKm6cRSiqlWatqFnptEIaNJwnYfnC7QZVU1LrHNgNcKSojne9u36SXaglDb04NW7rf1Eo/+qfr/fToQmmT5v3bKh+vFKQvEgzz7VIk5v8hUfoXJWewAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdAYye1bY8ZrCYw9eMQjtUAAD+6U6+ipUK3axZl/mMKVxLj9SaQPpgL/wGgp+FhRaxXSb9JuD0hU8Ne5BqtMrjUdY/x8XLm2Y6xUAe1dhtQGUur/XXbjTP9+xUQfcfMNa2I+deLd1MpRi6ERoQ24AI4Pr36kt7fT+F26iYr0v8+tur/hi3BACNcIUixa0tnEAAAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoABzfzHmWGoN0cmngD+7NlG9V5ctXNDIykOt/Tvbt+pEpUB4mKfoJkmbP+a21rgNxWvAd2KypjYxiqaHt9a3KygVEVPYZfBR1aXbC9+9/dRnZyH71E3v22CttMEDKlile3tJRMZkBdcmXLXc3sA4QLFfrfelMf49y+SCAAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoR3AdEkj2+CCxKaLVYmmPPgAP7awORNPT8BJSXWpeQKjEi4orF97ZUp6QxItbTad6TVynSQZsBdKlK1PK2KcHUEaJqv2pDO2I9pHZefw0c5sV1B/bBfSS1D3o3zVpFO20hT3QquTAGCn5DfP50lXahyNMSmqxz3N/80bfz8zXpnVCfyHaJe0lSVToASiT8p4pL32Zq6QKBAwtGTlIjQAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoR8edC4nhUbJQC+GXIc/AAA/qM1kL0InqPtJNgw1dBw5OivO0NnjiI9/zRzuo1uum/ooMnq31GBNupcnOpGsT3YN14kALc02Pq+thpmHVqcqfmIrsADTfdYO07G2x1F+lCQp6HUWefe86zN0eV7u07/IhLM9J3RSDzAM45MT/qCQdozFBl+B+Q3MOQUv5psnQAAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 186,
+   "tone": "#040404"
+  },
+  {
+   "id": "187",
+   "slug": "187-learning-landscape",
+   "source": "174",
+   "published": true,
+   "title": "Learning Landscape",
+   "tags": [
+    "wood"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 8,
+    "area": 80
+   },
+   "floors": 1,
+   "height": 4,
+   "standType": null,
+   "description": {
+    "de": "Zwei Holzhäuser unter einem blau-orangen Deckenrahmen: Lerninseln mit Tablets, ein interaktives Whiteboard, bunte Hocker und ein kleiner Roboter. Branche: Bildung & Lerntechnologie.",
+    "en": "Two timber houses under a blue-and-orange ceiling frame: learning islands with tablets, an interactive whiteboard, colourful stools and a small robot. Sector: education & learning technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdAYwSwNjRQkf8aEs+qmf+JAAA/un3WLg3c4r+oMJfqU0OuSIyvYiJIuxCifdRsGJnb4jFaTiEQz1bEy/gyI7dMb5ai6RC3xEqWjEYyeDpGigB3PT68suhHpz+CuFYKaU/7++cc3+1+F/Aj8xpXURtE8Ntb1aAUPEiW7ayF0T8edtXY4SlCpU787kf/E3xXOLcgn+NCWlnO4XgAA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAltBWuSsJuGMTvg2IAAP7qL+EajeOxqGDIRPjWQdLy14gmAn2mrsp+rejCRdsjhiwuFg905GgmggjFOPiqWzlbMRniQ6dOvCe8ZiwSO38XNQqz0ReKr4dtZTGGRHRsnWtpzPuSRFOnOk4lcfzkw1nHq7wtmB8ZKCYZgySt9Q5mH4F/2/+AauBWfpJmYGkcep4emaDNvA3to+yEo37AbXCRGyQEAAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JagCsAywTkYpfwGfJswT9hvYAAP7s1c2FedHUo9cmKXQ9DgLfhIGW1e6BqUHN0+lhX0ltzodancmGyxZkwuRSMjVadRpidM3sRRuG8HQBnvY8x8mmqBtWAoQOf7Tpn6gRl9WTuttw1S+GP6+6PfKvNidGC1wwDznPHfM++QO+Fw5/YjrZcLmFJk4VimURn53JoRVkeIKfyAsFUKhQrMqv10AAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JagCdAB0wigdzZRteoAD+3Naaqz1VkcqtEEixU680W/PC32Q8hGghhYHXPxdQ92kBMRcsDRax3mHcMcUCKWmMsPmjFCOBIJ9yD9jhYFNgh10Kff49CZj5mJponPQW8C0QXP09RJtDFo6wClCSVhQbXiVfOHjeUCsu55NzAgLsRPAycc3TAIFbk+24sdYLZ+AgzXDuRla0cREp6ni7HVkgAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoAlphgmlP/UEPWkwKnWVWwAAP13qdsI6eo6MIu6pr047pRxZvpZI+SPFHphje/fUylRQx+4c1ekShddgPGxv9J54Sw8ofvdyz4WEbV2TAjs4Yf0n24me/LsAbck3YHKZj1XJk+M3UTjZhKp2I/U/a2z5/eU8cLNL4B//tLoeGO9fB7gM7WiyKdx7MDTkqCJ4v8UfmitpQyPos3dMBjtHxqx/EHYuCTtXPP2pqDn9wAAAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoMjb0fVLtRap6St4gc8AP40aUWNlOxFPDSxIQxtzwi897lAaWTRU9nLzx4WbJP7H+NfneerHSD/QUvyqgM5Fj2tV44Djc7F0f6T0VhHV1FI9LXynLsQ7az3Xfx/xMGcQpVxsmVFpUF6EbaPqLo6d6zy3txj6YJ8l/HX4cMRLkJfjMZldVTaKeTfAdfIw0ir/HAvP7MXfw77o3RItTD9B0pf9XbIjwtYVw9maSOoAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 187,
+   "tone": "#040404"
+  },
+  {
+   "id": "188",
+   "slug": "188-precision-lab",
+   "source": "175",
+   "published": true,
+   "title": "Precision Lab",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 8,
+    "area": 80
+   },
+   "floors": 1,
+   "height": 4,
+   "standType": null,
+   "description": {
+    "de": "Klares Labor in Weiß und Kobaltblau: Analysegeräte auf weißen Podesten, ein Glasraum für Gespräche und eine Rückwand aus blauen Leuchtpunkten. Branche: Labor & Analytik.",
+    "en": "A clean lab in white and cobalt blue: analytical instruments on white plinths, a glass room for meetings and a back wall of blue light dots. Sector: laboratory & analytics."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBYebQDdBOZh2uIh2VYdfNUkRxcIAP7p80nIXFdgwUWybxxvNXeLYCPCenYfE4pM4OkFNC0g4SXBzQvCjpF0wa5bw48uPooHyKdeNX9KHZPvYztDuYvgqQuittNs+0j8PSGehInsZgCWNsgin6+32wJgrkoYEYcuOJFg55MUUDLc9G3Lkuc4aNrKyjVb+p1oAAAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaAC2yywTmYqmIn82VwYMO4PwAP7qJ2sl/g0MYjpnTxInF0HYL+0o2zhIjpVTDtGZ6hYkKhfiSkiJw6ukBzY1mAy2+t4DMuU43outlX7a/FSLYzft6o4a1RnU7YDLGxpc6kPYyfKqCcdbzeFvroLbgYKwwSuNvFRnACVwyzL76EGJeT5dHT9jeNdYCrhAAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBdgMZKatswe+DM2TOh0Mmu8sAD+6f3RfnWsRvPCNTr+RezeGLA7DBvYrnCanIcgLA/JTADIsNzAjU9wZnr6gC5i5CEo254EFWdQA2RxZyBGsmWduW6kEFv520MCebEAG7FxM/bWOn4sa3IkrZfdp5cajDhkMd1fAqyfvUbA6aV8/7VRxNHsfKMiqi9VTXgNNsAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwC7BrAW4Iv0UtflSyn7pwaUTOtAAP7sSBOWm7vS88XQJmh2wZunok5pgnC72/ap19uPmf/x8ldFXon02xJVjmSMcLbrxusWQiX5+513M3l7YcWQpwjAR7m87xy4AJg6bLN0rTeYva3TCFlOrMXjnmZGE05hnxRVnPVDWZE1W14e62q+DiiAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADwBACdASoYAA4APu1iqU2ppaQiMAgBMB2JYgCdMoMwt0hNzTwmtaWNIv+S9gDmBAAA/svWSbR/GNU8Gu0dXvt3qutcdIl8db7A6s4ZqPsd+u/81ZMFCEdP/1eSNbAKxZm5biFpdZkl0RNUMVgCUGkQ59X/LP38HbQdj8i9bk38hGai5Y2y+G7+qETGNO4MyDBXz81pEXjy8o6av/VFDW1naLCK/TtAhGSfPef+JoopdvjTtIYmARwtmXoOIAAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgAutMLYHdb191k4AA/uQjxPtrQbybxydRFrugOJt+yR+YLNGdHGWDva44pkQln2KPcIvacOoH8eKBrwbtAscxQzho/nf5xFyJGmpQ8WruEWoO7b4mr8kiXwF8+hBvDI6xGmsBvvKte6k6quecWDs4zn1/WBM0aThy0MgAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 188,
+   "tone": "#040404"
+  },
+  {
+   "id": "189",
+   "slug": "189-velocity-bridge",
+   "source": "176",
+   "published": true,
+   "title": "Velocity Bridge",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 15,
+    "depth": 10,
+    "area": 150
+   },
+   "floors": 1,
+   "height": 4.8,
+   "standType": null,
+   "description": {
+    "de": "Ein schräger Brückenbogen in Weiß und Petrol überspannt ein Elektroauto und ein freigelegtes Fahrgestell mit Batterie auf beleuchteten Podesten. Branche: Mobilität & Automotive.",
+    "en": "A sloping bridge arch in white and petrol spans an electric car and an exposed chassis with battery on lit plinths. Sector: mobility & automotive."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQBTAFv9MlfGHOTAYgeDXlgXbtwAAP7l9jc2l3cIojp4I+MYEub9eGZI0xIzE4Epu/5AnDss0w0nsWrQTQR5CYT4uBk1nbxLSCed4TuhHkAFE4G4Yb4kfOQN48cE8E5AcQn/AhFn5bVf/537pYAShdmSvEvRW7eUtC814sx4HQa+mcW77POgdUffQLKBUIXOKKJYdbVfrpAAAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwDCgdwLgxZRuAU7t5u4QqZWuhZgAP7daoc6JE0Vc1lBAElb/3BU4vCK2eK7b/EZ/7etikCkxlrlJT6yXDycMUj1AaUTMVhHw43fLpqnji99sIbIjuOt95evGIJvPhzDytRFfmyLKHS/r4+r/QD3QUx9fibPYphATQj2T+x3EOuE0LEHSFTXYt35JAt1ABBfJRwqA1sGIiTYPjf+AAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBfnMYddv8/c+3X7MV3P1nAAAP7p/ntgyOkkJwHwS0PMTAC/LG0vxbMdNbWQrq1fxbuKytiI25D1UFYIonfJ+RXETyr/7LRoF0CZeUalIla3jhlxW6mZmKNcLuWlCplGVcRESPTo5WKVH3+cdNHeQOhxSjEukVoTYP/SvHL8BZ+Qqz8WmO+Ai2WCNX/+qVYT5trTt2r0CKQPmM1jIE2ehwYiSPTkAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBibZYJzgZeHh893tvRpPk1hUIAA/un2e9Fi+de6h6rffnZOqa2abFFzrqeLChE8pN2o9PQOLE85UISpiPE7N2BGhcVrtPaRrdj5tVNMHibCfJ1nvF0IhTPU61r4tw1q56BNPeqsIv/Lbwh0UXjb3AXLPJil5OUnRlBWv8Gud/J+eDcy42zGpR/wZoByUr2s8NWvboAAAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAwBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JQBWD+AVAB/Ztls8AGNrw2YwfaPYxBdX+gAD97uJg0XfUNd80yZI6KLlvgVEAem7d7JcKQbFHO7L75NNkuxhLMhxmfUR5Xbhz3HP0Y3vmLcLKyZX9WN8CN6dxsuAekFVKw8r30FieyzEz7TcyOJoHidbzZBtMfSBOxDiHC/6HEalzbkfGDBStNi9SARGJA8elYMO+OKRym0LQQSQDyDtvjcojOZu7+MXqnGpQAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCsEf/jeBcETAKLfIeicndqZK++8AD+0G49J4e2c3jDbZVLJI0qm+p/Q0oPUfOQ+bNalBYYphINAY9It3ulZv5EYVEl8nKpTkDDwVnWcRyzs52vms0lzZ8RAhZU9dlxX1S92H2zL/cr1f0PQ7OwjSZmt8Yx29NxMKb14981useh9hOl6PTjVRySDR9ZQpYC5jggX5L2RstMWornqAAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 189,
+   "tone": "#040404"
+  },
+  {
+   "id": "190",
+   "slug": "190-destination-terrace",
+   "source": "177",
+   "published": true,
+   "title": "Destination Terrace",
+   "tags": [
+    "two-storey",
+    "wood",
+    "green"
+   ],
+   "size": {
+    "width": 14,
+    "depth": 10,
+    "area": 140
+   },
+   "floors": 2,
+   "height": 6.4,
+   "standType": null,
+   "description": {
+    "de": "Hotelterrasse auf zwei Ebenen: helle Rundungen, Holzlamellen, eine Wand mit Inselmotiv und Palmen. Unten Empfang und Lounge, oben eine Terrasse mit Gästen. Branche: Tourismus & Hotellerie.",
+    "en": "A two-level hotel terrace: pale curves, timber slats, a wall with an island motif and palms. Reception and lounge below, a terrace with guests above. Sector: tourism & hospitality."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdL1AagJmITY3AlTou77714gN2QAD+5b0RBTmp3gbfepShenpHuqkccBmoTnhMv1d36dstqZ5wU1iVaRD9DDowu24iXiXTmk3g+qf2ajaiigpPeBkgV9lSztxvDbbUAJ/7Q3iWso+P99zd5I1pPPp20ajiSPT5mPOmSvtH82nNvX68C+47vnQqAx4/g9TkuITiEAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoAluBYkVe+hPuOjdq0AIP+aAAD+6i/Nt//WLEjIYJTr+0UQx0eaQAjeXX+XrHYtIl/8NYRARAmtq6do1WSlv0LIOGfEOJaPkDMTODi36Ph2mwVXENSegzUrFH3hLezBiBpGgLuT5pBRa8KY6J4bJTJIcCb7MCIOJYitS//c7LY585r88nAOM3iX7f243c9uUIAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdL1AagJnfdki5hHPlXvaTuXLQAP7p9cp5p7C47S647hbfwmtrygPFBoQQ4EmwTvgRbof2VdzNzMbDVWvfVwNMVgrPvrlxqbQvZu6CUskG9MegJ4P+iLZRZsSfl21bEcgNkimIQva9YNSgevPu7yXd4IemKTM35FD3W3W4v5HHmhuFkWyltUFx/XtRimW4IyJBYSgMs/7aRqAAAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdLwAagJngW8/PSXH8qDvtnoAA/uQ87N/D3r8InbHn6Fm6V8A7V+GfLAz5qZDLdoghWV9YiHTfsODqgYu5KMzSR0Zf3lJni/L3CTNi7o0N1cu9WjObkxlqxxA9BnFtFfo3r9i0O9SZwAp1gzL5O4tOhGjAgMtsSwQ9oi4NVD/OlzTy03mJ1jSKaOjvDP0LYAAA"
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAAAQBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoRwDhSUa5tNECSCPzcQrtqTfbpwAMsEopeGUwWaKpuP5zb2bYZXGQUAjF5CluRDE/eTO3alQKw3gv2BpikQj2cCuQieYuV8hIeS5ybAFhaUy3TcP8BP/cHtPU0odP2WGYIFLi9wMDD7MwcDggzH6D+qka7/0GqoyuoqFo59IRQfIz2OM+TgqVwnjMr3xBFLy/IK2IOg0P6GZ9nz3wgOo2AxquAB+VO/k4tjrYAwQRt0tmQIAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoMrZ0eYyA9sYH9m0PYIAAD+3OWYE0abZ/2gOyMfgGU5VKozcG/ojYfS2q0CVhGvK5/vkpns2DOs/YZUp6KtG/ll7kDBXd3eL0uv/+5Cft+bgVPpIxA89uZi51gE3c6aL8esr9Z2sS2eABxJ3hyEsBF6Uk9AoOziLhbQjX3JKVeFlPDlmol/Ze3IHsjJEWu/mM/YIA3OKDzX8vTDJMyNkLGYwAAAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 190,
+   "tone": "#040404"
+  },
+  {
+   "id": "191",
+   "slug": "191-weave-studio",
+   "source": "178",
+   "published": true,
+   "title": "Weave Studio",
+   "tags": [
+    "light"
+   ],
+   "size": {
+    "width": 10,
+    "depth": 8,
+    "area": 80
+   },
+   "floors": 1,
+   "height": 4,
+   "standType": null,
+   "description": {
+    "de": "Bordeauxrote Stoffbahnen und helle Segel hängen von der Decke: Schneiderpuppen mit Mänteln, Stoffmuster auf Tischen und eine Textildruckmaschine. Branche: Textil & Modeproduktion.",
+    "en": "Burgundy drapes and pale sails hang from the ceiling: mannequins in coats, fabric samples on tables and a textile printing machine. Sector: textiles & fashion production."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAwBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoRwAvQHXMPv4rVM5R3rwh2F9SRKAAD+42VdqvSPBV+572/iuPfBrvQD1L7tYUld7x/6epHogl2T8XqXNeIYqgWrbw8r9OnLjVNXSi6HTuFwppc9Wuv1lpk5FDDe4LymkJPvcJZxK6R164DhwBrvj3i1g7jJ3IeBWXVhmYhOOSVSBS9PaKG0CYGC/qb0AA=="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCdMoAusAnct8pV11i9xw5eoAD+3a6x2nXv/SCxbFELjRl/oRZTAdZNUj+jqtNu1zxJrEyAVcTO4P29631g1NTb6Krd8lN4ZmHDVAdewO9VfdgniNW5cK/ocWuVyvfpVUZ+CMpZ3TiXn6++Ia2wUsZ6FBumSpBduj+A/OYSgfl10Hq1s851+DnEA6Jk4rWIpoVzmYvNO4NwAAA="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOl65KxFcHxeQVbRB4RxFzZWQAA/ujcEcuubN4iDwUDCov8Hzsf2lQ6rf4t7yVyVkzrPr+h30drszlcAHSc+MeQDlOyTNgg8fwqTIWkL3XhqrTZJfH1puh59L5D+4mC72sEhnPn5DSmntDdHwDZr46JnrcB3GvX6lhP3UrepAwdiE5RpSriL7q90mppde7bod/ygmlr9LeoAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOiP/xbGKqwr0vEd0apIEEAAP7Qzu6VNrJNtyudguWsc9yRyPfsIBWlwO/wzzgvhq3WeaQI4FwzmXnhfxbnL2SJQUu2LfZHBD5gprCJ3QQIG9WobKrMQOm0Hzqrv+0dFGbfXmQjvyJNhRyW0XVu3p9i23PA2m5S3U8+Ym/KTkzULJlR0+GAQCr5JYryFgxy1/ocR5QTzf4LcA+At0jAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOgZYJy8QEl15Kz9RsMvIpAAP5IDX1z9cixqeXD/i5/dOzotYuTnQAFJC0waVNjS5Ear93q62xq3WG+5xhBYqiFyLT84Qjq0xK3OwHEIvMWISFshzB8XKE3Ydw+ik+eSu+f78vMcyhaRa/waTfqSD5NZMnbWfsWhqek1wKMWqN3FncylTSKGTaUKcFKEVCv36gHRy3xEKtWEzY2SDUMAAA="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUGMAaQw37Jam/fYPh/bMOEAAAP68hbGMdMOcM5KZnX3JMQdBQj1MVEyuBalUAkiFx4wNvEpp6yY4kJe5fblJc7Gsk0h7CZecBqVgqrv+55oyC5lSkZ0yR+5XHPCIDsLRHfED+k0sQLJryGglytgD2C2ovFK74AjI1bMzJ8HpC7z0rTrd/WqRx19cygE993LgtOkKAAAA"
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 191,
+   "tone": "#040404"
+  },
+  {
+   "id": "192",
+   "slug": "192-circuit-terrace",
+   "source": "179",
+   "published": true,
+   "title": "Circuit Terrace",
+   "tags": [
+    "two-storey",
+    "light"
+   ],
+   "size": {
+    "width": 15,
+    "depth": 10,
+    "area": 150
+   },
+   "floors": 2,
+   "height": 6.2,
+   "standType": null,
+   "description": {
+    "de": "Weißer, zweigeschossiger Stand mit blauen Leiterbahn-Linien: Bildschirme mit Chip-Motiven, Exponattische und eine Terrasse für Gespräche im Obergeschoss. Branche: Elektronik & Halbleiter.",
+    "en": "A white two-storey stand with blue circuit-trace lines: screens with chip motifs, exhibit tables and a terrace for meetings upstairs. Sector: electronics & semiconductors."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYwALACwA9vYfo+xJo2K2gA60AAD+6fJeCdEO+1Ah6elSaq0PmwpBwrNYOmL1SKxxRA10jpfKQ4wWzPa2ex3nPYQOVjRnVpBorti4ggZa3LD0X0MTcdJaWuuWeQoA7XelqIVkI6q2zhcBS1gVetf0aFds0qaSFX2gwO8WFp22+f0+f57u+BPvOr5/vTtSLl3xcgAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQACIVeUAzpajLG3ExdmRZwAA/tBt7MajFSFSgMkAW/tTYCIWoOmzr84rYO0fQw+tyrEE+6qWpL9iGpQ4HXZn+e0oIcyGpF3dLwZ1l4Li7os8+dAjNeMDdrSwvNPCjJ+WKnFSCUNlhnMOX/dk0iQaE3XDfQtBZ1dbnhPAEyhe9eU/fvbhmW+QdY91t0xcpRXS/2Y0cSx8Jy+8D5d6EQAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgATwBQcB/HugwMBMOO06qgAAP7p+PXTksdvRw9G//ha2TLf4HWuZ0jVzI/3F6EWWbBwJr4cAFYv/5xyjfkPlykcQOhSTBbKiTuNCGnmKFoF8h3mmD98QLXQ1MqUOHvum/bZcnyYncoHKBQaVhMqGFuziHja+YulDjErLnJwKzjfhdzUiiUeiCV0AAAA"
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZQAIEC6LG23tnC9fJHt998gAAP7mAAvcA61EmEpuGGBvB4PvRia2dXoPcOMUqClwA84vlWeFkI3QwCG3JuNDOzAIku3Aw6MXzXllYAuynmA0RU/9u+eT8v7jTARFMn/F8+Pv+8qrZNzmnMBfmXhlsDwyJ8AuGEAN0peAra0QAjEQA/yUDVmQgAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQAh/4mwPeSdMr+hr+04gkhPls1PgAM2mq2BOyCz9K5KRsQkitrWhizzoqLZerhIpHLen5CKzmkfcuYKaAioFwdxhimL1qpEj6pLKjLcFLsQT/2nXV0AHhMcz+XcrS4fU5eSVN9Q5UDov0vk//bNbwP+pt4/36sjoyNkuj63ikTgvwFo0opAV6JWRIrSD3NICVYo+ZmBirAi/c6NljWJz2rf9iHiXuxWT8AAA"
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBhQZYJzEZct7cH8R+DBHvVgAP7l980OGAADDvZ2Yh9Vnoe5/3YdUcEtKiNHuyup8bnqEm7oIqFSR2viwF0cmwMC+bcqrD6oCeIhf5ZHSH6Q4ffpR7Ko4+R5xlUVgxX9ePz/5HgswAP1j1ZAmsSv/76EO6q3tXFgUKzPHtZ+ebmSd9bMxHnYVYgKvJRTo5+0H3xRMRZxV3uNLV6wWaxjo+AAAA=="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "floorplan-2.webp",
+     "base": "floorplan-2",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Grundriss OG",
+      "en": "Floor plan, upper floor"
+     },
+     "download": "floorplan-2.jpg"
+    },
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 192,
+   "tone": "#040404"
+  },
+  {
+   "id": "193",
+   "slug": "193-terra-yard",
+   "source": "180",
+   "published": true,
+   "title": "Terra Yard",
+   "tags": [
+    "wood",
+    "green"
+   ],
+   "size": {
+    "width": 20,
+    "depth": 12,
+    "area": 240
+   },
+   "floors": 1,
+   "height": 5,
+   "standType": null,
+   "description": {
+    "de": "Hofartiger Stand aus Holzlamellen und olivgrünen Stützen: ein Traktor als Hauptexponat zwischen Pflanzbeeten, Feldpanoramen an den Wänden und eine lange Empfangstheke. Branche: Landwirtschaft & Agrartechnik.",
+    "en": "A farmyard-style stand of timber slats and olive-green posts: a tractor as the main exhibit among planted beds, field panoramas on the walls and a long reception counter. Sector: agriculture & agritech."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAlwRl222wHNqvj1xATo1AA/ulaeYNGPmRHgEg5PS2ZHXJmNHy2kCzg5u/8SdCzCSW/Jw7l7cGqmb8Fe7dRFSGdHvF0vY8654WxymdS8Jeb1Jmn06fp4ugOsXv5rUXz3PLOJemLF/JrIU2W/q5leSQYbz8M+8+9Qh5Tx0zwdsKTHwyXcZ+bFeNFAAA="
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoAlxBgpzU/qtEnfMp1YAAD+5fcKJzh2Nl+FqUCPpEqKv8R4oaApLm5gx4Lf48eOf7dBInkiJodLCEEJWOkCZKSjlNr6p6ihbDsRMhM4SA1tOclNvoh5ePMQfhowDL00Shurw3+oPQn09hKLY2rPKMz6D6ixWwE16MD3tq2avy6kUDkSeGH4qMFeVQAAAA=="
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoR3A8AawLgdL7EqMHGW8TtlqAAA/uwH5pwVQIMGLyz6YXqog6MynpO/H+x7adPbvUzSvU6nKPxIOpSjTuYWNH2LrOZXw02yjRY4WNc/5mo92St9ZgeVFLVaqrMtsfJqdgpzhbcXOkbBmj1LERfRALLxC5OhfjWEfYxy/bQwSkWgKgppY7PDLNHgHs8AAA=="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACdMoADghs7JAO3CQymyZEAAP7s2raSFsBu70DRM7h5bzwaxCmZBfAWnes2YgGfXTy/9IPhn5AQYzFHBRa1Lj7APFjaUJUEq7M6/wadmGB+BK/RE/A2KBcST0zqSE3zZ1pwkr0G+3GmTV1ZJrq8Np2gcYcoAYrnTVKuIulVadIq1AQg3VOAAAA="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAwBQCdASoYAA4APu1iqU2ppaOiMAgBMB2JZgCdMoR4GdDRDlIN6eoe/INvLgIGo7poAAD+xRT5KVepvKXB8JTarirkdJ5NdBmDezEei4lVAB8mx6+ohQjraahcm4eWEzl1DHTx4deqIn3xuevOLHYuGY7hrn/IJD6mk9R4SPH7DalLcGPkFgWa/r0W+Pfyr+gE4BEsZpilk9wdvE/D89aWH/Jp/XkhVLDM2+ZHbayAVi2P67FDLCiYlOR82cvujXAAAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JaACdMoAlvRAdUJ1qXsRahjKgAP7Q8MByhdF1ZbYD9bleHT+sXZPZeb0Ex7oiziBQ8Ibi8Ejjk6W7ctSgEm4jIQYCrJqbRgclC+fi29WGyTmww7iZnSD2EqHr0kwVREqgfq6bkQVPAmGPjl0B8bpi0GS3HPdQzsfPq1LfXGECiq1E7jYG882RwgZbVfud7zAzI2zwAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 193,
+   "tone": "#040404"
+  },
+  {
+   "id": "194",
+   "slug": "194-aqua-circuit",
+   "source": "181",
+   "published": true,
+   "title": "Aqua Circuit",
+   "tags": [
+    "green",
+    "light"
+   ],
+   "size": {
+    "width": 12,
+    "depth": 10,
+    "area": 120
+   },
+   "floors": 1,
+   "height": 4.5,
+   "standType": null,
+   "description": {
+    "de": "Geschwungene Bögen in Weiß und Türkis wie ein Wasserkreislauf: eine Aufbereitungsanlage mit Pumpen als Exponat, eine Moos-Wand und Infoterminals. Branche: Wasser & Umwelttechnik.",
+    "en": "Sweeping arches in white and turquoise like a water cycle: a treatment unit with pumps as the exhibit, a moss wall and info terminals. Sector: water & environmental technology."
+   },
+   "materials": null,
+   "colours": null,
+   "renderings": [
+    {
+     "file": "render-1.webp",
+     "base": "render-1",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne links",
+      "en": "Front left perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBfJMXmasipwpYj9Xu4lznsDMAD+6fdpg6JuB4p3+5T6WRD0Xs4kZ7Kab/3m3dV6k2zvlrHqIultdPtsA1IE6DzVz6EVLVZFKFz6k5UqhFeJjXwX4Hcip7n2Ep5rjino3QC9KCA41aTvBbAakY7x2HbbMpCZAVxdu2ule31+XN+I50IjHQdt+8bUfWXi5eTlID2mg9HbcMAA"
+    },
+    {
+     "file": "render-2.webp",
+     "base": "render-2",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Frontalansicht",
+      "en": "Front view"
+     },
+     "blur": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBibMYnW1dUInELKme5UOy+AgAD+3LGu+r/iyXrtDg5BWMgg5RaCqKYUqvBBWsJYuuc1h3NHTUHaswTHxBv3na3rZ2jBmNOea+bZ1vMgR8g6FKvYb7M7ggTqHZ3fUBLjXFJQckN0/nXuLDxYVoRpcdN5I41CVNf90sVA8iRjfW3ie+YxgekJohe4jl4RjzVMyxvuXDcpADcM3WrAAAAA"
+    },
+    {
+     "file": "render-3.webp",
+     "base": "render-3",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Perspektive vorne rechts",
+      "en": "Front right perspective"
+     },
+     "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBfJMX1Wo3awJi+aOL2UDEh3hlAA/uXwwydFVdPBOvBtGgqaNhtUPjLLlmpaSOZLE2QS+Kg6NdW2J7gum2JkTUwgXzLYJBDhb/VZmuKMv3UM17PtdPmn57+KNz8AkLAPiVCyH2Zx3/+DtxtPrIpbK3uOSx/ABaCmjH3KxYgr5wCPsTQ21tqPam+H1c128vW/fxKTH+JcvlRJDEBjoK4gAAA="
+    },
+    {
+     "file": "render-4.webp",
+     "base": "render-4",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Rückansicht",
+      "en": "Rear view"
+     },
+     "blur": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQAJ4AyATP4q5arDdkHrWRnsEAAD+5fDjF8Eiok5MZ+PXqRDK43DVio/Bkzhzlm18CMndeXM6VQstXGVCfHZFXWQpGTYDEQXpn9m9qz9Fn9Mp0Kyd3Kg882QVYZ4TzR5sv5pme/+SpPcgMTerlYj9tp336v6ZPs2mThGuQjalb/LMVXwMMAvwDAmt5Gid3xyrRQ+hI39jLmN5Wb0AAA=="
+    },
+    {
+     "file": "render-5.webp",
+     "base": "render-5",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Exponate, Detail",
+      "en": "Exhibits detail"
+     },
+     "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAAAQBACdASoYAA4APu1iqU2ppaOiMAgBMB2JZACsAYwweXVoyzBq1//nAADNoWVtc6WAf1XVMe0Hk6LqsLDEG8YpF/2NDYxEXHOkGyrmjE9WjRMIWTFLAOrQFQppjpJ/S/OO9e4ZUgr6Nu2CHSdH4RVdK9/WznIaM3qwiE3MlNkJP/N95DVnzYPgybJoAnCUbeuUwOmwwNSde4n+fapN6MUGEV/SA7Kbtf1t3y4loK0QAA=="
+    },
+    {
+     "file": "render-6.webp",
+     "base": "render-6",
+     "width": 1920,
+     "height": 1080,
+     "widths": [
+      640,
+      1280,
+      1920
+     ],
+     "label": {
+      "de": "Rendering Lounge",
+      "en": "Lounge detail"
+     },
+     "blur": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JYgCsBagR/Ay6nGZI/hS00Lhe5AD+iUVn36J/eyWn/ErbUyiglXgyjB4ZuPYl6s6ZrDY1V5sYx/1exKN885daxjC1ol6AanlI8q2gzeLQ5UrgHOB3r+iqEz3aEDNslKFiUoJY1M5Pn2hZoRvduUHfRgo5oxnZO/x7+z43pFN/zCvzThCa6ClH+IbP6/rBa/tq+SdfezoIXRU8yDHYzmN/3FDAVkgQAAA="
+    }
+   ],
+   "floorplan": {
+    "file": "floorplan.webp",
+    "base": "floorplan",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Grundriss EG",
+     "en": "Floor plan, ground floor"
+    },
+    "download": "floorplan.jpg"
+   },
+   "elevation": {
+    "file": "elevation.webp",
+    "base": "elevation",
+    "width": 2400,
+    "height": 1350,
+    "widths": [
+     1280,
+     2400
+    ],
+    "label": {
+     "de": "Vorderansicht Höhenschnitt",
+     "en": "Section A–A"
+    },
+    "download": "elevation.jpg"
+   },
+   "extraPlans": [
+    {
+     "file": "electrical.webp",
+     "base": "electrical",
+     "width": 2400,
+     "height": 1350,
+     "widths": [
+      1280,
+      2400
+     ],
+     "label": {
+      "de": "Elektro und Lichtplan",
+      "en": "Electrical plan"
+     },
+     "download": "electrical.jpg"
+    }
+   ],
+   "clip": null,
+   "number": 194,
+   "tone": "#040404"
   }
  ]
 }

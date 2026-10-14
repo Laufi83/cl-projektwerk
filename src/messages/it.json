@@ -292,7 +292,15 @@
       "due piani",
       "verde",
       "luce"
-    ]
+    ],
+    "rows": {
+      "name": "Carosello",
+      "label": "Progetti su due nastri scorrevoli",
+      "prev": "Indietro",
+      "next": "Avanti",
+      "hint": "Passate sopra una fila: verso un bordo la guidate, al centro si ferma · trascinate o usate le frecce · un clic apre il progetto",
+      "hintTouch": "Scorrete lateralmente o toccate le frecce · toccate un'immagine per aprire il progetto"
+    }
   },
   "detail": {
     "facts": "Dati",

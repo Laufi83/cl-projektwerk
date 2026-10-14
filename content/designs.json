@@ -15965,6 +15965,2779 @@
         }
       ],
       "clip": null
+    },
+    {
+      "id": "166",
+      "slug": "166-transit-platform",
+      "source": "153",
+      "published": true,
+      "title": "Transit Platform",
+      "tags": [
+        "two-storey",
+        "metal",
+        "light"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 15,
+        "area": 300
+      },
+      "floors": 2,
+      "height": 7,
+      "standType": null,
+      "description": {
+        "de": "Zweigeschossiger Stand in Marineblau mit roten Akzenten: ein Drehgestell als Exponat, ein Signal, ein Waggonsegment mit Sitzreihe und Gleisstück. Oben eine Lounge mit Glasbrüstung, darüber Traverse mit Großbildschirm. Branche: Bahn & Verkehrsinfrastruktur.",
+        "en": "Two-storey stand in navy blue with red accents: a bogie as the exhibit, a signal, a carriage segment with seats and a stretch of track. A glass-railed lounge above, a truss with a large screen overhead. Sector: rail & transport infrastructure."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "167",
+      "slug": "167-retail-avenue",
+      "source": "154",
+      "published": true,
+      "title": "Retail Avenue",
+      "tags": [
+        "two-storey",
+        "light"
+      ],
+      "size": {
+        "width": 16,
+        "depth": 12,
+        "area": 192
+      },
+      "floors": 2,
+      "height": 6.4,
+      "standType": null,
+      "description": {
+        "de": "Ladenstraße auf zwei Ebenen: dunkle Rahmen, warme Regalwände mit Produkten, ein digitales Plakat und Self-Checkout-Terminals. Eine Treppe führt zur Besprechungsebene, rote Lichtlinien am Traversenrahmen. Branche: Retail & Ladenbau.",
+        "en": "A two-level shop street: dark frames, warm shelving walls with products, a digital poster and self-checkout terminals. A stair leads to the meeting level, red light lines run along the truss frame. Sector: retail & shopfitting."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "168",
+      "slug": "168-bio-ribbon",
+      "source": "155",
+      "published": true,
+      "title": "Bio Ribbon",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 8,
+        "area": 96
+      },
+      "floors": 1,
+      "height": 4.2,
+      "standType": null,
+      "description": {
+        "de": "Ein geschwungenes, hinterleuchtetes Band in Weiß und Flieder schwebt über hellen Laborvitrinen. Weiße Tresen mit violetten Lichtkanten, Geräte-Exponate und Bildschirme. Branche: Pharma & Biotechnologie.",
+        "en": "A curved, backlit ribbon in white and lilac floats above bright lab showcases. White counters with violet light edges, instrument exhibits and screens. Sector: pharma & biotech."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "169",
+      "slug": "169-flow-terminal",
+      "source": "156",
+      "published": true,
+      "title": "Flow Terminal",
+      "tags": [
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 18,
+        "depth": 10,
+        "area": 180
+      },
+      "floors": 1,
+      "height": 5,
+      "standType": null,
+      "description": {
+        "de": "Offene Halle aus Traversen mit blauen Lichtkanten: Förderstrecke, Regalsystem, autonomer Transportroboter und gelb-schwarze Bodenmarkierungen. Vorne eine graue Theke mit Logo. Branche: Logistik & Intralogistik.",
+        "en": "An open truss hall with blue light edges: conveyor line, racking system, an autonomous mobile robot and yellow-and-black floor markings. A grey counter with logo at the front. Sector: logistics & intralogistics."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "170",
+      "slug": "170-care-halo",
+      "source": "157",
+      "published": true,
+      "title": "Care Halo",
+      "tags": [
+        "wood",
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 6,
+        "area": 60
+      },
+      "floors": 1,
+      "height": 3.8,
+      "standType": null,
+      "description": {
+        "de": "Weich gerundeter Stand in Weiß und Hellblau mit einer leuchtenden Halo-Blende. Medizingeräte auf runden Podesten, Holzlamellen und Pflanzen sorgen für eine ruhige, klinisch helle Atmosphäre. Branche: Medizintechnik.",
+        "en": "A softly rounded stand in white and light blue with a glowing halo fascia. Medical devices on round plinths, timber slats and plants create a calm, clinically bright atmosphere. Sector: medical technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "171",
+      "slug": "171-tide-deck",
+      "source": "158",
+      "published": true,
+      "title": "Tide Deck",
+      "tags": [
+        "wood",
+        "light",
+        "container"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 8,
+        "area": 120
+      },
+      "floors": 1,
+      "height": 4.2,
+      "standType": null,
+      "description": {
+        "de": "Maritimer Stand in Marineblau und Holz: eine gebogene LED-Wand mit Containerschiff, Schiffspropeller und Schiffsmotor als Exponate, Schiffsmodell in der Vitrine. Branche: Schifffahrt & maritime Technik.",
+        "en": "A maritime stand in navy and wood: a curved LED wall showing a container ship, a ship propeller and marine engine as exhibits, a ship model in a showcase. Sector: shipping & maritime technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "172",
+      "slug": "172-fold-factory",
+      "source": "159",
+      "published": true,
+      "title": "Fold Factory",
+      "tags": [
+        "green",
+        "wood"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 10,
+        "area": 150
+      },
+      "floors": 1,
+      "height": 4.5,
+      "standType": null,
+      "description": {
+        "de": "Ein Faltdach aus Karton-Facetten in Natur, Schwarz und Orange überspannt eine Verpackungsmaschine. Podeste aus Wellpappe, gestapelte Kartons und Pflanzen erzählen vom Kreislauf. Branche: Verpackung & Kreislaufwirtschaft.",
+        "en": "A folded roof of cardboard facets in natural, black and orange spans a packaging machine. Corrugated-board plinths, stacked boxes and plants tell the circular story. Sector: packaging & circular economy."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "173",
+      "slug": "173-urban-courtyard",
+      "source": "160",
+      "published": true,
+      "title": "Urban Courtyard",
+      "tags": [
+        "two-storey",
+        "green",
+        "wood"
+      ],
+      "size": {
+        "width": 16,
+        "depth": 10,
+        "area": 160
+      },
+      "floors": 2,
+      "height": 6.4,
+      "standType": null,
+      "description": {
+        "de": "Ein Stadthof auf zwei Ebenen: Kubaturen in Sandstein und Dunkelgrün, Bäume, ein großes Stadtmodell in der Mitte und eine Terrasse mit Besprechungstischen im Obergeschoss. Branche: Immobilien & Stadtentwicklung.",
+        "en": "An urban courtyard on two levels: sandstone and dark-green volumes, trees, a large city model in the centre and a terrace with meeting tables upstairs. Sector: real estate & urban development."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "174",
+      "slug": "174-machine-loft",
+      "source": "161",
+      "published": true,
+      "title": "Machine Loft",
+      "tags": [
+        "two-storey",
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 12,
+        "area": 240
+      },
+      "floors": 2,
+      "height": 6.8,
+      "standType": null,
+      "description": {
+        "de": "Industrieloft in Anthrazit mit orangen Lichtkanten: Bearbeitungszentren als Exponate, Werkstücke in Vitrinen, eine Treppe zur Lounge im Obergeschoss. Branche: Maschinenbau & Werkzeugmaschinen.",
+        "en": "An industrial loft in anthracite with orange light edges: machining centres as exhibits, workpieces in showcases, a stair up to the lounge. Sector: mechanical engineering & machine tools."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "175",
+      "slug": "175-engine-tower",
+      "source": "162",
+      "published": true,
+      "title": "Engine Tower",
+      "tags": [
+        "two-storey",
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 15,
+        "area": 300
+      },
+      "floors": 3,
+      "height": 9.6,
+      "standType": null,
+      "description": {
+        "de": "Dreigeschossiger Turmstand in Schwarz und Gelb: Großmotoren und Generatoren im Erdgeschoss, verglaste Besprechungsebenen darüber und ein beleuchtetes Treppenhaus. Branche: Baumaschinen & Großmotoren.",
+        "en": "A three-storey tower stand in black and yellow: large engines and generators on the ground floor, glazed meeting levels above and a lit stair tower. Sector: construction machinery & large engines."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG1",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "floorplan-3.webp",
+          "label": {
+            "de": "Grundriss OG2",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "176",
+      "slug": "176-bloom-atelier",
+      "source": "163",
+      "published": true,
+      "title": "Bloom Atelier",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 6,
+        "area": 60
+      },
+      "floors": 1,
+      "height": 3.6,
+      "standType": null,
+      "description": {
+        "de": "Bögen in Altrosa und Creme rahmen ein Beauty-Atelier: Regale mit Flakons, ein Beratungstisch mit runden Spiegeln, Polsterhocker und warmes Licht. Branche: Kosmetik & Beauty.",
+        "en": "Arches in dusty rose and cream frame a beauty atelier: shelves of bottles, a consultation table with round mirrors, upholstered stools and warm light. Sector: cosmetics & beauty."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "177",
+      "slug": "177-kinetic-loop",
+      "source": "164",
+      "published": true,
+      "title": "Kinetic Loop",
+      "tags": [
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": 4.2,
+      "standType": null,
+      "description": {
+        "de": "Ein schwebender Ring mit gelber Lichtlinie über einer Roboterzelle: Industrieroboter hinter Glas, Cobot am Tisch und eine schwarz-gelbe Theke. Branche: Robotik & Automation.",
+        "en": "A floating ring with a yellow light line above a robot cell: industrial robots behind glass, a cobot at a table and a black-and-yellow counter. Sector: robotics & automation."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "178",
+      "slug": "178-brew-orbit",
+      "source": "165",
+      "published": true,
+      "title": "Brew Orbit",
+      "tags": [
+        "green",
+        "metal",
+        "light",
+        "wood"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 8,
+        "area": 96
+      },
+      "floors": 1,
+      "height": 4.2,
+      "standType": null,
+      "description": {
+        "de": "Eine runde Bar in Flaschengrün mit goldener Lichtkante, dahinter Edelstahltanks und Flaschenregale. Barhocker, Pflanzen und Pendelleuchten machen den Stand zum Treffpunkt. Branche: Getränke & Brauereitechnik.",
+        "en": "A round bar in bottle green with a golden light edge, steel tanks and bottle shelves behind. Bar stools, plants and pendant lights turn the stand into a meeting point. Sector: beverages & brewing technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "179",
+      "slug": "179-secure-atrium",
+      "source": "166",
+      "published": true,
+      "title": "Secure Atrium",
+      "tags": [
+        "two-storey",
+        "wood",
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 10,
+        "area": 150
+      },
+      "floors": 2,
+      "height": 6.6,
+      "standType": null,
+      "description": {
+        "de": "Zweigeschossiges Atrium in Weiß, Anthrazit und Holz: Zutrittsschranken, Kameras und Bedienterminals als Exponate, darüber eine verglaste Besprechungsebene. Branche: Sicherheits- & Gebäudetechnik.",
+        "en": "A two-storey atrium in white, anthracite and wood: access gates, cameras and control terminals as exhibits, a glazed meeting level above. Sector: security & building technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "180",
+      "slug": "180-aero-wing",
+      "source": "167",
+      "published": true,
+      "title": "Aero Wing",
+      "tags": [
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 10,
+        "area": 200
+      },
+      "floors": 1,
+      "height": 5,
+      "standType": null,
+      "description": {
+        "de": "Eine weiße Flügelform mit blauer Lichtkante überspannt den Stand. Ein Triebwerk als Hauptexponat, dazu Satellit, Drohne und eine Erdansicht auf der Rückwand. Branche: Luftfahrt & Raumfahrt.",
+        "en": "A white wing form with a blue light edge spans the stand. A jet engine as the main exhibit, plus a satellite, a drone and an Earth view on the back wall. Sector: aerospace."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "181",
+      "slug": "181-photon-gallery",
+      "source": "168",
+      "published": true,
+      "title": "Photon Gallery",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": 4.2,
+      "standType": null,
+      "description": {
+        "de": "Facettierte Glaswände mit eisblauem Licht und eine schwarze Stele mit Logo. Optische Komponenten stehen in beleuchteten Vitrinen wie in einer Galerie. Branche: Optik & Photonik.",
+        "en": "Faceted glass walls in ice-blue light and a black stele with the logo. Optical components sit in lit showcases like in a gallery. Sector: optics & photonics."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "182",
+      "slug": "182-hydrogen-forum",
+      "source": "169",
+      "published": true,
+      "title": "Hydrogen Forum",
+      "tags": [
+        "two-storey",
+        "wood",
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 18,
+        "depth": 12,
+        "area": 216
+      },
+      "floors": 2,
+      "height": 6.8,
+      "standType": null,
+      "description": {
+        "de": "Zweigeschossiger Stand mit Holz, Glas und einer Moos-Wand: ein Elektrolyseur im Glaskubus als Exponat, Infoterminals und eine Treppe zur Lounge mit Pflanzen. Branche: Erneuerbare Energien & Wasserstoff.",
+        "en": "A two-storey stand with timber, glass and a moss wall: an electrolyser in a glass cube as the exhibit, info terminals and a stair to a planted lounge. Sector: renewables & hydrogen."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "183",
+      "slug": "183-data-prism",
+      "source": "170",
+      "published": true,
+      "title": "Data Prism",
+      "tags": [
+        "light",
+        "metal"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 10,
+        "area": 100
+      },
+      "floors": 1,
+      "height": 4.5,
+      "standType": null,
+      "description": {
+        "de": "Kristalline Prismen in Anthrazit mit violetten Lichtkanten: Serverschränke als Exponat, Bildschirme mit Datenvisualisierung und ein Touch-Tisch. Branche: IT & Rechenzentren.",
+        "en": "Crystalline prisms in anthracite with violet light edges: server racks as the exhibit, screens with data visualisation and a touch table. Sector: IT & data centres."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "184",
+      "slug": "184-habitat-rooms",
+      "source": "171",
+      "published": true,
+      "title": "Habitat Rooms",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "area": 120
+      },
+      "floors": 1,
+      "height": 3.8,
+      "standType": null,
+      "description": {
+        "de": "Wohnliche Raumfolge aus Holzlamellen und Salbeigrün: Sofa-Lounge, Regalwand, Theke und ein Olivenbaum – der Stand zeigt Möbel im Raum statt auf Podesten. Branche: Möbel & Innenausbau.",
+        "en": "A homely sequence of rooms in timber slats and sage green: sofa lounge, shelving wall, counter and an olive tree – furniture shown in rooms rather than on plinths. Sector: furniture & interiors."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "185",
+      "slug": "185-harvest-market",
+      "source": "172",
+      "published": true,
+      "title": "Harvest Market",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "area": 120
+      },
+      "floors": 1,
+      "height": 4.5,
+      "standType": null,
+      "description": {
+        "de": "Ein Markthaus mit Satteldach in Terrakotta: Kisten mit Obst und Gemüse, ein Vertical-Farming-Turm, hängende Pflanzen und eine kleine Holzhütte als Verkostungsbar. Branche: Lebensmittel & Foodtech.",
+        "en": "A gabled market house in terracotta: crates of fruit and vegetables, a vertical-farming tower, hanging plants and a small timber hut as a tasting bar. Sector: food & foodtech."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "186",
+      "slug": "186-grid-field",
+      "source": "173",
+      "published": true,
+      "title": "Grid Field",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "area": 120
+      },
+      "floors": 1,
+      "height": 4.5,
+      "standType": null,
+      "description": {
+        "de": "Grüne Wandscheiben mit Holz und Pflanzen: Batteriespeicher, Wärmepumpe und ein Solarmodul als Exponate, dahinter eine Lounge mit Besprechungstisch. Branche: Energie & Speicher.",
+        "en": "Green wall panels with timber and plants: battery storage, a heat pump and a solar module as exhibits, a lounge with meeting table behind. Sector: energy & storage."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "187",
+      "slug": "187-learning-landscape",
+      "source": "174",
+      "published": true,
+      "title": "Learning Landscape",
+      "tags": [
+        "wood"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": 4,
+      "standType": null,
+      "description": {
+        "de": "Zwei Holzhäuser unter einem blau-orangen Deckenrahmen: Lerninseln mit Tablets, ein interaktives Whiteboard, bunte Hocker und ein kleiner Roboter. Branche: Bildung & Lerntechnologie.",
+        "en": "Two timber houses under a blue-and-orange ceiling frame: learning islands with tablets, an interactive whiteboard, colourful stools and a small robot. Sector: education & learning technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "188",
+      "slug": "188-precision-lab",
+      "source": "175",
+      "published": true,
+      "title": "Precision Lab",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": 4,
+      "standType": null,
+      "description": {
+        "de": "Klares Labor in Weiß und Kobaltblau: Analysegeräte auf weißen Podesten, ein Glasraum für Gespräche und eine Rückwand aus blauen Leuchtpunkten. Branche: Labor & Analytik.",
+        "en": "A clean lab in white and cobalt blue: analytical instruments on white plinths, a glass room for meetings and a back wall of blue light dots. Sector: laboratory & analytics."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "189",
+      "slug": "189-velocity-bridge",
+      "source": "176",
+      "published": true,
+      "title": "Velocity Bridge",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 10,
+        "area": 150
+      },
+      "floors": 1,
+      "height": 4.8,
+      "standType": null,
+      "description": {
+        "de": "Ein schräger Brückenbogen in Weiß und Petrol überspannt ein Elektroauto und ein freigelegtes Fahrgestell mit Batterie auf beleuchteten Podesten. Branche: Mobilität & Automotive.",
+        "en": "A sloping bridge arch in white and petrol spans an electric car and an exposed chassis with battery on lit plinths. Sector: mobility & automotive."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "190",
+      "slug": "190-destination-terrace",
+      "source": "177",
+      "published": true,
+      "title": "Destination Terrace",
+      "tags": [
+        "two-storey",
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 14,
+        "depth": 10,
+        "area": 140
+      },
+      "floors": 2,
+      "height": 6.4,
+      "standType": null,
+      "description": {
+        "de": "Hotelterrasse auf zwei Ebenen: helle Rundungen, Holzlamellen, eine Wand mit Inselmotiv und Palmen. Unten Empfang und Lounge, oben eine Terrasse mit Gästen. Branche: Tourismus & Hotellerie.",
+        "en": "A two-level hotel terrace: pale curves, timber slats, a wall with an island motif and palms. Reception and lounge below, a terrace with guests above. Sector: tourism & hospitality."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "191",
+      "slug": "191-weave-studio",
+      "source": "178",
+      "published": true,
+      "title": "Weave Studio",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": 4,
+      "standType": null,
+      "description": {
+        "de": "Bordeauxrote Stoffbahnen und helle Segel hängen von der Decke: Schneiderpuppen mit Mänteln, Stoffmuster auf Tischen und eine Textildruckmaschine. Branche: Textil & Modeproduktion.",
+        "en": "Burgundy drapes and pale sails hang from the ceiling: mannequins in coats, fabric samples on tables and a textile printing machine. Sector: textiles & fashion production."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "192",
+      "slug": "192-circuit-terrace",
+      "source": "179",
+      "published": true,
+      "title": "Circuit Terrace",
+      "tags": [
+        "two-storey",
+        "light"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 10,
+        "area": 150
+      },
+      "floors": 2,
+      "height": 6.2,
+      "standType": null,
+      "description": {
+        "de": "Weißer, zweigeschossiger Stand mit blauen Leiterbahn-Linien: Bildschirme mit Chip-Motiven, Exponattische und eine Terrasse für Gespräche im Obergeschoss. Branche: Elektronik & Halbleiter.",
+        "en": "A white two-storey stand with blue circuit-trace lines: screens with chip motifs, exhibit tables and a terrace for meetings upstairs. Sector: electronics & semiconductors."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "193",
+      "slug": "193-terra-yard",
+      "source": "180",
+      "published": true,
+      "title": "Terra Yard",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 12,
+        "area": 240
+      },
+      "floors": 1,
+      "height": 5,
+      "standType": null,
+      "description": {
+        "de": "Hofartiger Stand aus Holzlamellen und olivgrünen Stützen: ein Traktor als Hauptexponat zwischen Pflanzbeeten, Feldpanoramen an den Wänden und eine lange Empfangstheke. Branche: Landwirtschaft & Agrartechnik.",
+        "en": "A farmyard-style stand of timber slats and olive-green posts: a tractor as the main exhibit among planted beds, field panoramas on the walls and a long reception counter. Sector: agriculture & agritech."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "194",
+      "slug": "194-aqua-circuit",
+      "source": "181",
+      "published": true,
+      "title": "Aqua Circuit",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 10,
+        "area": 120
+      },
+      "floors": 1,
+      "height": 4.5,
+      "standType": null,
+      "description": {
+        "de": "Geschwungene Bögen in Weiß und Türkis wie ein Wasserkreislauf: eine Aufbereitungsanlage mit Pumpen als Exponat, eine Moos-Wand und Infoterminals. Branche: Wasser & Umwelttechnik.",
+        "en": "Sweeping arches in white and turquoise like a water cycle: a treatment unit with pumps as the exhibit, a moss wall and info terminals. Sector: water & environmental technology."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Rendering Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Rendering Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rendering Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Rendering Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rendering Lounge",
+            "en": "Lounge detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Vorderansicht Höhenschnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro und Lichtplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
     }
   ]
 }

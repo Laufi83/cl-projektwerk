@@ -292,7 +292,15 @@
       "dvoupatrový",
       "zeleň",
       "světlo"
-    ]
+    ],
+    "rows": {
+      "name": "Pás",
+      "label": "Návrhy ve dvou pohyblivých řadách",
+      "prev": "Zpět",
+      "next": "Další",
+      "hint": "Najeďte myší na řadu: ke kraji ji řídíte, uprostřed se zastaví · táhněte nebo použijte šipky · kliknutí otevře návrh",
+      "hintTouch": "Přejeďte do strany nebo klepněte na šipky · klepnutím na obrázek otevřete návrh"
+    }
   },
   "detail": {
     "facts": "Základní údaje",

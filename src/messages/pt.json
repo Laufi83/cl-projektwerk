@@ -292,7 +292,15 @@
       "dois pisos",
       "vegetação",
       "luz"
-    ]
+    ],
+    "rows": {
+      "name": "Carrossel",
+      "label": "Projetos em duas faixas em movimento",
+      "prev": "Voltar",
+      "next": "Seguinte",
+      "hint": "Passe o rato por uma faixa: para uma margem conduz, ao centro para · arraste ou use as setas · clique abre o projeto",
+      "hintTouch": "Deslize para o lado ou toque nas setas · toque numa imagem para abrir o projeto"
+    }
   },
   "detail": {
     "facts": "Dados",

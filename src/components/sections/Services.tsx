@@ -1,13 +1,14 @@
 import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Check, Medal, UserFocus, UsersThree } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, ArrowUpRight, Check, Medal, UserFocus, UsersThree } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { FxWords } from "@/components/kinetic/FxWords";
 import { ScrollWords } from "@/components/kinetic/ScrollWords";
+import { ServiceDesignLink } from "./ServiceDesignLink";
 
-/** Bild einer Leistungskarte */
-export type ServiceMedia = { src: string; srcSet?: string };
+/** Bild einer Leistungskarte; `design`: abgebildeter Entwurf – ein Klick aufs Bild öffnet ihn im Overlay */
+export type ServiceMedia = { src: string; srcSet?: string; design?: { slug: string; label: string; tone?: string } };
 
 const MODULES = ["tech", "prep", "control", "concept", "reuse"] as const;
 type Module = (typeof MODULES)[number];
@@ -24,6 +25,7 @@ type Text = { title: string; text: string };
  */
 export async function Services({ media, visNote, children }: { media: Record<Module, ServiceMedia>; visNote: string; children?: ReactNode }) {
   const t = await getTranslations("services");
+  const tg = await getTranslations("gallery");
   const trust = t.raw("trust") as Text[];
   const network = t.raw("network.items") as string[];
 
@@ -58,14 +60,27 @@ export async function Services({ media, visNote, children }: { media: Record<Mod
             return (
               <li key={k} data-reveal style={{ ["--reveal-delay" as string]: `${(i % 3) * 80}ms` }}
                 className={`group flex flex-col overflow-hidden rounded-[1.6rem] border border-line bg-bg-raised transition-colors duration-500 hover:border-accent/60 ${SPAN[k]} ${i === 4 ? "md:col-span-2 lg:col-span-2" : ""}`}>
-                <div className={`relative overflow-hidden ${big ? "aspect-[16/8]" : "aspect-[16/9]"}`}>
-                  <img src={m.src} srcSet={m.srcSet} sizes="(min-width: 1024px) 50vw, 100vw" alt={`${t(`items.${k}.title`)} – ${visNote}`}
-                    loading="lazy" decoding="async" width={1280} height={720}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-fluid group-hover:scale-[1.04]" />
-                  <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-bg-raised via-transparent to-transparent" />
-                  <span className="vis-note absolute left-4 top-4">{visNote}</span>
-                  <span className="tabular absolute bottom-3 right-5 font-display text-5xl font-semibold text-white/90 [text-shadow:0_2px_24px_rgba(0,0,0,.65)]">0{i + 1}</span>
-                </div>
+                {(() => {
+                  const inner = (
+                    <>
+                      <img src={m.src} srcSet={m.srcSet} sizes="(min-width: 1024px) 50vw, 100vw" alt={`${t(`items.${k}.title`)} – ${visNote}`}
+                        loading="lazy" decoding="async" width={1280} height={720}
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1200ms] ease-fluid group-hover:scale-[1.04]" />
+                      <span aria-hidden className="absolute inset-0 bg-gradient-to-t from-bg-raised via-transparent to-transparent" />
+                      <span className="vis-note absolute left-4 top-4">{visNote}</span>
+                      {m.design && (
+                        <span className="absolute bottom-4 left-4 inline-flex max-w-[70%] items-center gap-1.5 truncate rounded-full bg-black/60 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur transition-[opacity,transform] duration-500 ease-fluid lg:translate-y-1 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100 lg:group-focus-within:translate-y-0 lg:group-focus-within:opacity-100">
+                          <ArrowUpRight size={14} weight="bold" className="shrink-0 text-accent" aria-hidden />{tg("atlas.open")} · {m.design.label}
+                        </span>
+                      )}
+                      <span className="tabular absolute bottom-3 right-5 font-display text-5xl font-semibold text-white/90 [text-shadow:0_2px_24px_rgba(0,0,0,.65)]">0{i + 1}</span>
+                    </>
+                  );
+                  const box = `relative block overflow-hidden ${big ? "aspect-[16/8]" : "aspect-[16/9]"}`;
+                  return m.design ? (
+                    <ServiceDesignLink slug={m.design.slug} image={m.src} tone={m.design.tone} label={`${tg("atlas.open")}: ${m.design.label}`} className={`${box} outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent`}>{inner}</ServiceDesignLink>
+                  ) : <div className={box}>{inner}</div>;
+                })()}
                 <div className="flex flex-1 flex-col p-6 md:p-7">
                   <h3 className={`font-display font-semibold leading-tight hyphens-auto ${big ? "text-2xl md:text-3xl" : "text-2xl"}`}>{t(`items.${k}.title`)}</h3>
                   <p className="mt-3 text-fg-muted"><FxWords text={t(`items.${k}.text`)} delay={180} /></p>

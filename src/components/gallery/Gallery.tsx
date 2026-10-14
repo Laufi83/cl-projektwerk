@@ -1,6 +1,6 @@
 "use client";
 /**
- * Entwurfsgalerie: Atlas (endlose Bildwand mit Fokus, siehe DesignAtlas) oder Raster,
+ * Entwurfsgalerie: zwei Laufbänder (DesignRows: oben nach rechts, unten nach links, per Maus steuerbar) oder Raster,
  * dazu Suche, Filter, Zufallsentwurf und „Entwurf des Tages“. Öffnet Entwürfe im Overlay.
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 import { MagnifyingGlass, Shuffle, SquaresFour, X } from "@phosphor-icons/react";
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
 import { GridView } from "./GridView";
-import { DesignAtlas } from "./DesignAtlas";
+import { DesignRows } from "./DesignRows";
 import { useDesignOverlay } from "@/components/overlay/DesignOverlay";
 
 const BATCH = 8;
@@ -49,7 +49,7 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
       rect: el?.getBoundingClientRect(),
       image: thumbUrl(d.id, "render-1", 1280),
       tone: d.tone,
-      getReturnRect: (slug) => document.querySelector<HTMLElement>(`[data-atlas-tile="${slug}"][data-atlas-focus] img, [data-grid-card="${slug}"] img`)?.getBoundingClientRect() ?? null,
+      getReturnRect: (slug) => document.querySelector<HTMLElement>(`[data-row-card="${slug}"] img, [data-grid-card="${slug}"] img`)?.getBoundingClientRect() ?? null,
     });
   }, [overlay]);
 
@@ -73,7 +73,7 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
       <div className="container-x">
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-line-strong pt-5">
           <div role="group" aria-label={t("viewMode")} className="flex flex-wrap gap-2">
-            <button type="button" onClick={() => setGrid(false)} aria-pressed={!grid} className={toggle}><AtlasIcon />{t("atlas.name")}</button>
+            <button type="button" onClick={() => setGrid(false)} aria-pressed={!grid} className={toggle}><AtlasIcon />{t("rows.name")}</button>
             <button type="button" onClick={() => setGrid(true)} aria-pressed={grid} className={toggle}><SquaresFour size={16} aria-hidden />{t("grid")}</button>
             <button type="button" onClick={random} className={chip}><Shuffle size={16} aria-hidden />{t("random")}</button>
           </div>
@@ -107,7 +107,7 @@ export function Gallery({ items }: { items: GalleryItem[] }) {
           )}
         </div>
       ) : (
-        <DesignAtlas items={list} onOpen={open} />
+        <DesignRows items={list} onOpen={open} />
       )}
     </div>
   );
