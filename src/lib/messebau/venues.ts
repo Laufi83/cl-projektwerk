@@ -2,12 +2,28 @@
  * Zugriff auf die kanonische Messebau-Datenquelle (ohne Zod – auch im Browser-Bundle).
  * Geprüft wird die Datei vor jedem Build mit `npm run guide:validate`.
  */
-import data from "@/data/messebau/venues.global.v1.json";
+import data from "@/data/messebau/venues.global.v2.json";
+import legacyData from "@/data/messebau/venues.global.v1.json";
 import type { GlobalVenue, GuideDataset, VerificationStatus } from "./schema";
 
 export const guide = data as unknown as GuideDataset;
 export const globalVenues: GlobalVenue[] = guide.venues;
+/** Originaler 50er-Europa-Atlas, mit seiner historischen Nummerierung. */
+export const legacyEuropeanVenues: GlobalVenue[] = legacyData.venues as unknown as GlobalVenue[];
 export const venueBySlug = (slug: string) => globalVenues.find((v) => v.slug === slug);
+
+/**
+ * Zuordnung der alten 50er-Europa-Atlas-Nummern zur neuen 101er-Reihenfolge.
+ * Nicht übernommene Altstandorte bleiben im v1-Datensatz erhalten.
+ */
+const LEGACY_TO_GLOBAL: Record<number, number> = {
+  1:1,2:5,3:2,4:3,5:4,6:7,7:6,8:8,9:9,10:10,
+  11:21,12:25,13:26,14:28,15:29,16:30,17:22,18:23,19:31,20:32,
+  21:38,22:39,23:36,24:34,25:35,28:27,29:40,30:48,31:47,32:46,33:45,35:50,43:44,
+};
+export const venueByLegacyIndex = (legacyIndex: number) => venueByIndex(LEGACY_TO_GLOBAL[legacyIndex] ?? -1);
+export const legacyIndexForVenue = (index: number) => Object.entries(LEGACY_TO_GLOBAL).find(([, global]) => global === index)?.[0];
+
 export const venueByIndex = (index: number) => globalVenues.find((v) => v.index === index);
 
 /** Anzeige der Prüfstufen (Badge, Farbe, Bedeutung) */

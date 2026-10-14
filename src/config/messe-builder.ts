@@ -8,7 +8,7 @@
  * Daten: legacy.builder in der kanonischen Quelle src/data/messebau/venues.global.v1.json (lib/messebau/schema.ts);
  * ursprünglich erzeugt mit scratchpad/gen_builder.py aus den Recherchepaketen.
  */
-import { globalVenues } from "@/lib/messebau/venues";
+import { legacyEuropeanVenues } from "@/lib/messebau/venues";
 export type BuilderTrade = "strom" | "wasser" | "it" | "rigging" | "reinigung" | "catering" | "moebel" | "grafik" | "boden" | "logistik" | "parken" | "entsorgung" | "shop" | "zentrale" | "abnahme" | "ausweise" | "arbeitsschutz" | "service";
 export type BuilderContact = { trade: BuilderTrade; partner: string; phone: string; email?: string; scope?: string; location?: string; hours?: string; note?: string; source?: string };
 export type VenueBuilder = {
@@ -43,7 +43,7 @@ export type VenueBuilder = {
 
 export const BUILDER_CHECKED = "2026-10-14";
 
-export const venueBuilders: VenueBuilder[] = globalVenues.filter((v) => v.legacy.builder).map((v) => v.legacy.builder as unknown as VenueBuilder);
+export const venueBuilders: VenueBuilder[] = legacyEuropeanVenues.filter((v) => v.legacy.builder).map((v) => v.legacy.builder as unknown as VenueBuilder);
 
 export const builderFor = (n: number) => venueBuilders.find((b) => b.number === n);
 

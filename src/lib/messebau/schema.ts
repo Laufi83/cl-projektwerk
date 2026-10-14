@@ -1,5 +1,5 @@
 /**
- * Kanonisches Datenmodell des CL Messebau-Guides (Quelle: src/data/messebau/venues.global.v1.json).
+ * Kanonisches Datenmodell des CL Messebau-Guides (Quelle: src/data/messebau/venues.global.v2.json).
  * Regeln: Unbekanntes bleibt null – nie schätzen. Jede nichttriviale Angabe hängt an einer Quelle mit Abrufdatum.
  * Venue-Regeln sind keine Standbaugenehmigung; Veranstaltungen können strengere Regeln setzen.
  * Atlas (config/messe-venues.ts) und Messebau-Kompass (config/messe-builder.ts) werden per Adapter hieraus erzeugt;

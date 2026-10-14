@@ -3,14 +3,16 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, ArrowSquareOut, MapPin, Warning, Info } from "@phosphor-icons/react/dist/ssr";
 import { Link } from "@/i18n/navigation";
-import { globalVenues, venueBySlug, STATUS_INFO } from "@/lib/messebau/venues";
+import { globalVenues, venueBySlug, STATUS_INFO, legacyIndexForVenue } from "@/lib/messebau/venues";
 import type { GlobalVenue } from "@/lib/messebau/schema";
 import { VenueCompass } from "@/components/messe-guide/VenueCompass";
+import { StandCheckPanel } from "@/components/messe-guide/StandCheckPanel";
+import type { Venue as CheckVenue } from "@/lib/expo-intelligence/types";
 import { languageAlternates, localizedPath } from "@/i18n/locales";
 
 /**
  * Detailseite je Messegelände – eine Route für alle Standorte der kanonischen Datenquelle
- * (src/data/messebau/venues.global.v1.json). Nicht belegte Felder erscheinen als „nicht belegt – prüfen“,
+ * (src/data/messebau/venues.global.v2.json). Nicht belegte Felder erscheinen als „nicht belegt – prüfen“,
  * dazu Prüfstufe, Vollständigkeit und die priorisierten Datenlücken.
  */
 export const dynamicParams = false;
@@ -61,6 +63,19 @@ export default async function VenuePage({ params }: { params: Promise<{ locale: 
   const facts = (v.legacy.guide?.facts ?? {}) as Record<string, string>;
   const notices = ((v.legacy.builder as { notices?: { level: string; title: string; text: string; source?: { label: string; url: string } }[] } | null)?.notices) ?? [];
   const h = v.typical_max_stand_build_height;
+  const checkVenue: CheckVenue = {
+    id: v.id, name: v.official_name, city: v.city, country: v.country, continent: v.region,
+    technical: {
+      maximumConstructionHeight: h.height_m === null ? undefined : {
+        value: h.height_m,
+        unit: "m",
+        status: (v.verification.status === "S3_PRIMARY_VERIFIED" || v.verification.status === "S4_RELEASE_READY") && v.technical_rules.length > 0 ? "verified" : "unverified",
+        scope: h.rule_type ?? undefined,
+        source: v.technical_rules[0] ? { title: v.technical_rules[0].title, url: v.technical_rules[0].url, checkedAt: v.date_accessed ?? undefined } : undefined,
+      },
+    },
+    sources: v.sources.map(source => ({ title: source.label, url: source.url, checkedAt: source.accessed ?? undefined })),
+  };
   const coords = v.coordinates.lat !== null && v.coordinates.lon !== null ? `${fmt(v.coordinates.lat, de, 4)}, ${fmt(v.coordinates.lon, de, 4)}` : null;
   const guideLabels: [string, string, string][] = [["area", "Gelände", "Venue"], ["insider", "Insider & Orientierung", "Venue tips"], ["travel", "Anreise", "Getting there"], ["hotels", "Hotels", "Hotels"], ["dining", "Gastronomie", "Dining"], ["cityInfo", "Stadt", "City"]];
   const i = globalVenues.findIndex((x) => x.slug === v.slug);
@@ -120,7 +135,9 @@ export default async function VenuePage({ params }: { params: Promise<{ locale: 
           {v.event_specific_variations && <p className="mt-4 flex gap-2 text-xs leading-relaxed text-fg-subtle"><Info size={15} className="mt-0.5 shrink-0" aria-hidden />{de ? v.event_specific_variations : "Events may set stricter or different rules (build height, build-up times, traffic routing, rigging)."} {de ? "Keine Angabe ersetzt die Standbaugenehmigung." : "Nothing here replaces the stand approval."}</p>}
         </section>
 
-        {v.legacy.builder && <VenueCompass index={v.index} />}
+        <StandCheckPanel venue={checkVenue} de={de} />
+
+        {v.legacy.builder && legacyIndexForVenue(v.index) && <VenueCompass index={Number(legacyIndexForVenue(v.index))} />}
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <section aria-labelledby="sources" className="rounded-[1.75rem] border border-line bg-bg-raised p-6 sm:p-8">

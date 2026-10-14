@@ -24,5 +24,6 @@ jobs:
           node-version-file: .node-version
           cache: npm
       - run: npm ci --include=dev --no-audit --no-fund
+      - run: npm run guide:check
       - run: npm run build:render
       - run: npm run test:render

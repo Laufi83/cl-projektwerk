@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { World } from "@/components/sections/World";
 import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
+import { GlobalVenueExplorer } from "@/components/messe-guide/GlobalVenueExplorer";
+import { globalVenues } from "@/lib/messebau/venues";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { FxWords } from "@/components/kinetic/FxWords";
 import { locations } from "@/config/locations";
@@ -38,6 +40,12 @@ export default async function FairsPage({ params }: { params: Promise<{ locale: 
         </div>
       </header>
       <World rows={boardRows(locations, tradeFairs, now)} nowIso={now.toISOString()} checked={TRADE_FAIRS_CHECKED} />
+      <GlobalVenueExplorer de={locale === "de"} venues={globalVenues.map(v => ({
+        index: v.index, slug: v.slug, name: v.official_name, city: v.city, country: v.country,
+        region: v.region, status: v.verification.status, completeness: v.verification.completeness_pct,
+        heightM: v.typical_max_stand_build_height.height_m, riggingKg: v.rigging.max_load_kg_per_point,
+        officialUrl: v.official_website_url, rulesCount: v.technical_rules.length,
+      }))} />
       <MesseVenueExplorer />
     </div>
   );
