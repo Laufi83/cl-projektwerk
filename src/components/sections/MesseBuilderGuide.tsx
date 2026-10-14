@@ -2,26 +2,106 @@
 /**
  * Messebau-Kompass für alle 50 Messegelände im Atlas (Daten: config/messe-builder.ts).
  * Links eine drehbare 3D-Bühne aus CSS-3D (kein WebGL nötig): Bauhöhe, Abhängungen, Decke & Sprinkler,
- * Doppelstock und Logistik werden als animiertes Standmodell gezeigt – mit echten Werten des Geländes.
+ * Doppelstock, Logistik (Lkw + Stapler, BuilderLogistics) sowie Strom, Wasser, Internet und Druckluft (BuilderSupply)
+ * werden als animiertes Standmodell gezeigt – mit echten Werten des Geländes. Bei den Versorgungsthemen:
+ * Bestell-Checkliste (aus den Messebauer-Schulungsunterlagen), belegte Angaben des Geländes und zuständige Partner.
  * Darunter Ablauf bis zur Übergabe, Servicestellen, offizielle Quellen und die Gewerke-Kontakte zum Filtern.
  * Nicht belegte Werte erscheinen als „prüfen“, nie geschätzt; Reise-/Sanktionshinweise stehen als eigener Block über der Technik.
  * Reduzierte Bewegung: keine automatische Drehung, keine Fahr-Animationen.
  */
-import { createContext, useContext, useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useLocale } from "next-intl";
-import { ArrowSquareOut, Envelope, Phone, ShieldWarning, CheckCircle, MapPin, Clock, Lightning, Warning, Info, Copy, Check } from "@phosphor-icons/react";
+import { ArrowSquareOut, Envelope, Phone, ShieldWarning, CheckCircle, MapPin, Clock, Warning, Info, Copy, Check, ListChecks, ArrowDown } from "@phosphor-icons/react";
 import { venueBuilders, BUILDER_CHECKED, REQUEST_TEMPLATE, type BuilderContact, type BuilderTrade, type VenueBuilder } from "@/config/messe-builder";
 import { messeVenues } from "@/config/messe-venues";
 import { useReducedMotion } from "@/hooks/useMedia";
+import { Box, FLOOR, Person, Tag, Upright, UnitCtx, fmt } from "./builder-3d";
+import { LogisticsScene } from "./BuilderLogistics";
+import { SupplyScene, type Supply } from "./BuilderSupply";
 
-type Topic = "hoehe" | "rigging" | "decke" | "doppelstock" | "logistik";
+type Topic = "hoehe" | "rigging" | "decke" | "doppelstock" | "logistik" | Supply;
 const TOPICS: { id: Topic; de: string; en: string }[] = [
   { id: "hoehe", de: "Bauhöhe", en: "Height" },
   { id: "rigging", de: "Abhängungen", en: "Rigging" },
   { id: "decke", de: "Decke & Sprinkler", en: "Ceiling & sprinklers" },
   { id: "doppelstock", de: "Doppelstock", en: "Double-deck" },
   { id: "logistik", de: "Logistik", en: "Logistics" },
+  { id: "strom", de: "Elektro / Strom", en: "Electrical / power" },
+  { id: "wasser", de: "Wasser / Sanitär", en: "Water / plumbing" },
+  { id: "it", de: "Internet / IT", en: "Internet / IT" },
+  { id: "druckluft", de: "Druckluft", en: "Compressed air" },
 ];
+
+/**
+ * Versorgung: was zu bestellen ist (Checkliste aus den Messebauer-Schulungen, gilt für alle Gelände),
+ * Suchmuster für belegte Angaben des Geländes und das zuständige Gewerk in den Kontakten.
+ */
+const SUPPLY: Record<Supply, { trade?: BuilderTrade; match: RegExp; lead: [string, string]; order: [string, string][] }> = {
+  strom: {
+    trade: "strom",
+    match: /strom|elektr|power|electric|\d{3} ?v\b|\bkw\b|cee/i,
+    lead: ["Strom wird ausschließlich über die offizielle Messe- bzw. Partnerbestellung gebucht. Anschlussformen, Preise, Position und Betriebszeit stehen im jeweiligen Event-Shop.", "Power is booked only via the official venue or partner order. Connection types, prices, position and operating hours are listed in the event shop."],
+    order: [
+      ["Lastenliste aller Verbraucher (kW, Gleichzeitigkeit, Phasen) – daraus die Anschlussleistung bestellen", "Load list of all consumers (kW, simultaneity, phases) – order the connection load from it"],
+      ["Anschlussart: 230-V-Steckdosen und/oder 400-V-Drehstrom (CEE) – nur, was das Veranstaltungsangebot vorsieht", "Connection type: 230 V sockets and/or 400 V three-phase (CEE) – only what the event offers"],
+      ["24-h-Strom separat bestellen, z. B. für Kühlung oder Server", "Order 24 h power separately, e.g. for refrigeration or servers"],
+      ["Standverteiler mit FI/RCD, Leitungswege und Übergabepunkt im Freigabeplan; Prüfnachweis bereithalten", "Distribution board with RCD, cable routes and connection point in the approval plan; keep the test certificate"],
+      ["Hallenbodenkanäle nicht selbst öffnen – Anschluss durch den Vertragspartner", "Do not open floor ducts yourself – connection by the contracted partner"],
+    ],
+  },
+  wasser: {
+    trade: "wasser",
+    match: /wasser|sanit|water|plumb|\bdn ?\d/i,
+    lead: ["Zu- und Abwasser werden je Veranstaltung und Halle bestellt. Die Hallen-DN-Werte sagen nichts über den Anschluss am Gerät.", "Water supply and drainage are ordered per event and hall. Hall pipe sizes say nothing about the connection at the appliance."],
+    order: [
+      ["Bedarf je Gerät erfassen: Kaffeemaschine, Spüle, Spülmaschine, Kühltechnik", "List the demand per appliance: coffee machine, sink, dishwasher, refrigeration"],
+      ["Frischwasser-Zulauf und Abwasser-Anschluss bestellen – Anschlussstelle, Druck und Rohrdimension je Halle", "Order fresh-water supply and drainage – position, pressure and pipe size per hall"],
+      ["Trinkwasserhygiene und Rückflusssicherung mit dem Sanitärpartner abstimmen", "Agree drinking-water hygiene and backflow prevention with the plumbing partner"],
+      ["Bei Küche oder Catering: Abwasser und ggf. Fettabscheider einplanen", "For kitchens or catering: plan drainage and a grease trap if required"],
+      ["Hallen-DN-Werte nie direkt auf den Geräteanschluss übertragen", "Never transfer hall pipe sizes directly to the appliance connection"],
+    ],
+  },
+  it: {
+    trade: "it",
+    match: /internet|wlan|wi-?fi|\blan\b|telekom|telecom|ethernet|glasfaser|utp|\bit\b|it-|mbit/i,
+    lead: ["Verfügbare Pakete und Anbieter stehen im Ausstellershop bzw. Partnerverzeichnis. Für den Produktivbetrieb immer kabelgebunden planen.", "Available packages and providers are listed in the exhibitor shop or partner directory. Always plan a wired line for production use."],
+    order: [
+      ["Kabelgebundenen Internetanschluss (LAN) mit garantierter Bandbreite – für Demos, Kasse/Zahlung und Video", "Wired internet (LAN) with guaranteed bandwidth – for demos, payment and video"],
+      ["Bandbreite Up/Down, feste bzw. öffentliche IP, Anzahl LAN-Ports und VLAN festlegen", "Define up/down bandwidth, static or public IP, number of LAN ports and VLAN"],
+      ["Switch, Router und Technikzugang am Stand einplanen", "Plan switch, router and technical access at the stand"],
+      ["Messe-WLAN und Mobilfunk sind keine garantierte Verbindung; eigenes WLAN nur, sofern zugelassen", "Venue Wi-Fi and mobile data are not guaranteed; own Wi-Fi only where permitted"],
+    ],
+  },
+  druckluft: {
+    match: /druckluft|compressed air/i,
+    lead: ["Druckluft ist nicht auf jedem Gelände Standard. Nur bestellen, wenn Exponate sie brauchen – und vorab freigeben lassen.", "Compressed air is not standard at every venue. Only order it if exhibits need it – and get it approved in advance."],
+    order: [
+      ["Erforderliche Luftqualität und Betriebsdruck (bar) angeben", "State the required air quality and operating pressure (bar)"],
+      ["Schlauch- bzw. Anschlusspunkt am Stand festlegen und im Plan eintragen", "Define the hose or connection point at the stand and mark it in the plan"],
+      ["Sonderfreigabe einholen; Bestellung über Ausstellerservice bzw. Serviceportal", "Obtain special approval; order via exhibitor services or the service portal"],
+    ],
+  },
+};
+const isSupply = (t: Topic): t is Supply => t in SUPPLY;
+
+/** Kennwert aus belegten Angaben: Spannung, Rohrdimension/Druck, Bandbreite bzw. Anschlussart */
+function specFor(kind: Supply, notes: string[]): string | undefined {
+  const all = notes.join(" ");
+  if (kind === "strom") {
+    const volts = [...new Set([...all.matchAll(/(\d{3}) ?V\b/g)].map((m) => m[1]))];
+    const amps = all.match(/(\d{2,3}) ?A\b/)?.[1];
+    return volts.length ? `${volts.join(" / ")} V${amps ? ` · ${amps} A` : ""}` : undefined;
+  }
+  if (kind === "wasser") {
+    const dn = all.match(/DN ?\d+/)?.[0], bar = all.match(/[\d,.]+ ?bar/)?.[0], inch = all.match(/\d\/\d Zoll/)?.[0];
+    return [dn, bar && `≥ ${bar}`, inch].filter(Boolean).join(" · ") || undefined;
+  }
+  if (kind === "it") {
+    const mbit = all.match(/[\d/]+ ?Mbit\/s/)?.[0];
+    return mbit ?? (/RJ45/.test(all) ? "LAN · RJ45" : undefined);
+  }
+  return undefined;
+}
 const TRADES: Record<BuilderTrade, [string, string]> = {
   strom: ["Elektro / Strom", "Electrical"], wasser: ["Wasser / Sanitär", "Water / plumbing"], it: ["Internet / IT", "Internet / IT"],
   rigging: ["Rigging", "Rigging"], reinigung: ["Standreinigung", "Stand cleaning"], catering: ["Catering", "Catering"],
@@ -40,56 +120,7 @@ const STEPS: { when: string; de: [string, string]; en: [string, string] }[] = [
   { when: "✓", de: ["Übergabe", "Standabnahme, Brandschutznachweise, Entsorgung, Reinigung und Übergabeprotokoll."], en: ["Handover", "Stand acceptance, fire certificates, waste disposal, cleaning and handover report."] },
 ];
 
-const fmt = (n: number, de: boolean) => n.toLocaleString(de ? "de-DE" : "en-GB", { minimumFractionDigits: n % 1 ? 2 : 2, maximumFractionDigits: 2 });
 const telHref = (p: string) => "tel:" + p.split(";")[0].replace(/\(.*?\)/g, "").replace(/[^\d+]/g, "");
-
-/* ───────── CSS-3D-Grundbausteine (1 m = U px, Koordinaten in m ab Bühnenmitte) ───────── */
-const UnitCtx = createContext(24);
-const FLOOR = { w: 16, d: 11 };
-
-function Box({ x, y, w, d, h, z = 0, tone = "wall", top = true, style }: { x: number; y: number; w: number; d: number; h: number; z?: number; tone?: string; top?: boolean; style?: CSSProperties }) {
-  const U = useContext(UnitCtx);
-  const W = w * U, D = d * U, H = Math.max(h * U, 0.5);
-  return (
-    <div className={`bs-obj bs-${tone}`} style={{ left: `calc(50% + ${(x - w / 2) * U}px)`, top: `calc(50% + ${(y - d / 2) * U}px)`, width: W, height: D, transform: `translateZ(${z * U}px)`, ...style }}>
-      {top && <div className="bs-face bs-top" style={{ inset: 0, transform: `translateZ(${H}px)` }} />}
-      <div className="bs-face bs-back" style={{ left: 0, top: -H, width: W, height: H, transformOrigin: "bottom", transform: "rotateX(-90deg)" }} />
-      <div className="bs-face bs-front" style={{ left: 0, top: D - H, width: W, height: H, transformOrigin: "bottom", transform: "rotateX(-90deg)" }} />
-      <div className="bs-face bs-left" style={{ left: -H, top: 0, width: H, height: D, transformOrigin: "right", transform: "rotateY(90deg)" }} />
-      <div className="bs-face bs-right" style={{ left: W, top: 0, width: H, height: D, transformOrigin: "left", transform: "rotateY(-90deg)" }} />
-    </div>
-  );
-}
-
-/** senkrechte Fläche entlang der x-Achse (z. B. Maßstab, Person) */
-function Upright({ x, y, w, h, z = 0, className, children }: { x: number; y: number; w: number; h: number; z?: number; className?: string; children?: ReactNode }) {
-  const U = useContext(UnitCtx);
-  return (
-    <div className={`bs-obj ${className ?? ""}`} style={{ left: `calc(50% + ${(x - w / 2) * U}px)`, top: `calc(50% + ${y * U - h * U}px)`, width: w * U, height: h * U, transformOrigin: "bottom", transform: `translateZ(${z * U}px) rotateX(-90deg)` }}>
-      {children}
-    </div>
-  );
-}
-
-/** Beschriftung, die immer zum Betrachter zeigt */
-function Tag({ x, y, z, children, tone = "accent" }: { x: number; y: number; z: number; children: ReactNode; tone?: "accent" | "warn" | "plain" }) {
-  const U = useContext(UnitCtx);
-  return (
-    <div className="bs-obj" style={{ left: `calc(50% + ${x * U}px)`, top: `calc(50% + ${y * U}px)`, transform: `translateZ(${z * U}px) rotateZ(calc(var(--rz) * -1)) rotateX(calc(var(--rx) * -1))` }}>
-      <span className={`bs-tag bs-tag-${tone}`}>{children}</span>
-    </div>
-  );
-}
-
-function Person({ x, y }: { x: number; y: number }) {
-  return (
-    <Upright x={x} y={y} w={0.6} h={1.8} className="bs-person">
-      <svg viewBox="0 0 30 90" preserveAspectRatio="none" aria-hidden className="h-full w-full">
-        <circle cx="15" cy="9" r="7" /><path d="M6 20h18l3 30h-6l-1 38h-6l-1-30-1 30H6l-1-38H1z" />
-      </svg>
-    </Upright>
-  );
-}
 
 /* ───────── Szenen ───────── */
 function HeightScene({ h, ghost, wallMin, unknown, unknownLabel, de }: { h: number; ghost: number | null; wallMin: number | null; unknown: boolean; unknownLabel: string; de: boolean }) {
@@ -182,26 +213,6 @@ function DeckScene({ b, de }: { b: VenueBuilder; de: boolean }) {
         {b.stairs.widths.length ? `${de ? "Treppe" : "Stair"} ≥ ${b.stairs.widths.map((x) => fmt(x, de)).join(" / ")} m` : de ? "Treppenmaß lt. TR" : "stair width per TR"}
       </Tag>
       <Person x={-1.5} y={1.4} />
-    </>
-  );
-}
-
-function LogisticsScene({ names, reduced }: { names: string[]; reduced: boolean }) {
-  return (
-    <>
-      <Box x={2.5} y={-1.5} w={5} d={0.14} h={3} tone="wall" />
-      <Box x={0.07} y={-0.4} w={0.14} d={2.4} h={3} tone="wall2" />
-      <div className={reduced ? "" : "bs-anim-truck"} style={{ transformStyle: "preserve-3d", position: "absolute", inset: 0 }}>
-        <Box x={-5.4} y={3.1} w={6.5} d={2.4} h={2.8} z={0.6} tone="trailer" />
-        <Box x={-1.4} y={3.1} w={1.6} d={2.4} h={2.2} z={0.6} tone="cab" />
-        {[-7.6, -6.6, -3.4, -1.4].map((x) => <Box key={x} x={x} y={3.1} w={0.9} d={2.5} h={0.6} tone="wheel" />)}
-      </div>
-      <div className={reduced ? "" : "bs-anim-lift"} style={{ transformStyle: "preserve-3d", position: "absolute", inset: 0 }}>
-        <Box x={1.6} y={1.1} w={1.4} d={1} h={1.3} tone="forklift" />
-        <Box x={2.45} y={1.1} w={0.12} d={0.9} h={2.4} tone="truss" />
-        <Box x={2.9} y={1.1} w={1.1} d={1} h={0.9} z={0.3} tone="crate" />
-      </div>
-      {names.slice(0, 2).map((n, i) => <Tag key={n} x={-4 + i * 4.4} y={4.6} z={3.6 + i * 0.6} tone={i ? "plain" : "accent"}>{n}</Tag>)}
     </>
   );
 }
@@ -311,6 +322,11 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
   const logisticsNames = b.contacts.filter((c) => c.trade === "logistik").map((c) => c.partner.replace(/ GmbH.*| \(AG.*| –.*$/g, ""));
 
   const eu = b.region === "eu";
+  // Versorgung: belegte Angaben des Geländes (Anschlüsse, geprüfte Einzelangaben) und zuständige Partner
+  const supply = isSupply(topic) ? SUPPLY[topic] : null;
+  const supplyNotes = supply ? [...(b.connections ?? []), ...(b.facts ?? []).map((f) => `${f.label}: ${f.text}`)].filter((x) => supply.match.test(x)) : [];
+  const supplyPartners = supply?.trade ? b.contacts.filter((c) => c.trade === supply.trade) : [];
+  const supplySpec = isSupply(topic) ? specFor(topic, supplyNotes) : undefined;
   const check = de ? "prüfen" : "to check";
   const unverified = de ? "nicht verifiziert – vor Planung prüfen" : "not verified – check before planning";
   const value = (() => {
@@ -320,6 +336,8 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
       case "decke": return b.ceiling.m2 ? `> ${b.ceiling.m2} m²` : eu ? check : de ? "Freigabe" : "approval";
       case "doppelstock": return b.stairs.clear ? `${fmt(b.stairs.clear, de)} m` : b.stairs.widths.length ? `${b.stairs.widths.map((x) => fmt(x, de)).join(" / ")} m` : eu ? check : de ? "Antrag" : "application";
       case "logistik": return logisticsNames[0] ?? (eu ? check : de ? "Messespedition" : "official forwarder");
+      case "druckluft": return supplyNotes.length ? (de ? "bestellbar" : "available") : de ? "anfragen" : "ask";
+      default: return supplySpec ?? supplyPartners[0]?.partner.replace(/ GmbH.*| \(.*$/g, "") ?? (supplyNotes.length ? (de ? "bestellbar" : "available") : de ? "anfragen" : "ask");
     }
   })();
   const valueLabel = {
@@ -328,11 +346,14 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
     decke: eu && !b.ceiling.m2 ? unverified : de ? "geschlossene Überdachung, ab der Schutz nötig ist" : "closed ceiling area requiring protection",
     doppelstock: eu && !b.stairs.clear && !b.stairs.widths.length ? unverified : b.stairs.clear ? (de ? "lichte Höhe EG und OG" : "clear height per level") : de ? "Treppenbreite" : "stair width",
     logistik: eu && !logisticsNames.length ? (de ? "Logistikpartner veranstaltungsbezogen anfragen" : "ask for the forwarder per event") : de ? "Messespedition / Stapler" : "forwarder / forklifts",
-  }[topic];
+    strom: "", wasser: "", it: "",
+    druckluft: supplyNotes.length ? (de ? "laut offizieller Quelle des Geländes" : "according to the venue's official source") : de ? "kein Angebot öffentlich belegt – beim Ausstellerservice anfragen" : "no public offer – ask exhibitor services",
+  }[topic] || (supplySpec ? (de ? "laut Richtlinie des Geländes" : "according to venue regulations") : supplyPartners.length ? (de ? "Bestellung über" : "order via") : supplyNotes.length ? (de ? "laut offizieller Quelle des Geländes" : "according to the venue's official source") : de ? "Bestellweg nicht öffentlich belegt" : "ordering channel not publicly confirmed");
   const badge = b.maturity === "C" ? "border-rose-400/60 text-rose-300" : b.tr.current ? "border-emerald-400/50 text-emerald-300" : "border-amber-400/60 text-amber-300";
   const regionVenues = venueBuilders.filter((x) => x.region === b.region);
   const central = b.contacts.find((c) => c.email && (c.trade === "zentrale" || c.trade === "abnahme" || c.trade === "service"));
-  const text = { hoehe: b.height.text, rigging: b.rigging.text, decke: b.ceiling.text, doppelstock: b.stairs.text, logistik: `${b.logistics} ${b.parking}` }[topic];
+  const text = supply ? supply.lead[de ? 0 : 1] : { hoehe: b.height.text, rigging: b.rigging.text, decke: b.ceiling.text, doppelstock: b.stairs.text, logistik: `${b.logistics} ${b.parking}` }[topic as Exclude<Topic, Supply>];
+  const showContacts = (k: BuilderTrade) => { setTrade(k); setMore(false); document.getElementById("builder-contacts")?.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" }); };
 
   return (
     <section aria-labelledby="builder-title" className="mt-14 border-t border-line pt-14">
@@ -400,7 +421,7 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
         ))}
       </ul>
 
-      <div role="tablist" aria-label={de ? "Thema" : "Topic"} className="mt-8 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+      <div role="tablist" aria-label={de ? "Thema" : "Topic"} className="mt-8 flex flex-wrap gap-2">
         {TOPICS.map((tp) => (
           <button key={tp.id} type="button" role="tab" aria-selected={topic === tp.id} onClick={() => setTopic(tp.id)}
             className="shrink-0 rounded-full border border-line px-4 py-2 text-sm font-semibold transition-colors hover:border-accent aria-selected:border-accent aria-selected:bg-accent aria-selected:text-accent-contrast">
@@ -417,7 +438,8 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
               {topic === "rigging" && <RiggingScene kg={b.rigging.kg} heavy={b.rigging.kgHeavy} reduced={reduced} de={de} />}
               {topic === "decke" && <CeilingScene area={area} b={b} de={de} />}
               {topic === "doppelstock" && <DeckScene b={b} de={de} />}
-              {topic === "logistik" && <LogisticsScene names={logisticsNames} reduced={reduced} />}
+              {topic === "logistik" && <LogisticsScene names={logisticsNames} reduced={reduced} de={de} />}
+              {isSupply(topic) && <SupplyScene kind={topic} spec={supplySpec} offered={supplyNotes.length > 0} de={de} />}
             </div>
           </Stage>
           <p className="mt-2 text-xs text-fg-subtle">{de ? "Schematisches Modell, nicht maßstabsgetreu zum Gelände · ziehen oder Pfeiltasten zum Drehen" : "Schematic model, not a venue plan · drag or use arrow keys to rotate"}</p>
@@ -425,7 +447,7 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
 
         <article className="flex flex-col rounded-[1.75rem] border border-line bg-bg-raised p-6 sm:p-8" aria-live="polite">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-accent">{de ? TOPICS.find((x) => x.id === topic)!.de : TOPICS.find((x) => x.id === topic)!.en}</p>
-          <p key={`${topic}-${venueNumber}-${hall}`} className={`bs-value font-display mt-4 font-semibold leading-none ${topic === "logistik" ? "text-3xl md:text-4xl" : "text-5xl md:text-6xl"}`}>{value}</p>
+          <p key={`${topic}-${venueNumber}-${hall}`} className={`bs-value font-display mt-4 font-semibold leading-none ${topic === "logistik" || String(value).length > 12 ? "text-3xl md:text-4xl" : "text-5xl md:text-6xl"}`}>{value}</p>
           <p className="mt-2 text-xs uppercase tracking-[0.14em] text-fg-subtle">{valueLabel}</p>
           {topic === "hoehe" && b.height.note && <p className="mt-3 rounded-xl border border-amber-400/40 bg-amber-400/10 px-3 py-2 text-xs leading-relaxed text-fg">{b.height.note}</p>}
 
@@ -448,10 +470,24 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
 
           <p className="mt-5 text-sm leading-relaxed text-fg-muted">{text}</p>
           {topic === "hoehe" && <p className="mt-3 text-sm leading-relaxed text-fg-muted">{b.wall.text}</p>}
-          {topic === "logistik" && b.connections && (
-            <ul className="mt-4 space-y-2 text-sm text-fg-muted">
-              {b.connections.map((c) => <li key={c} className="flex gap-2"><Lightning size={16} className="mt-0.5 shrink-0 text-accent" aria-hidden />{c}</li>)}
-            </ul>
+          {supply && (
+            <>
+              <h5 className="mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-fg"><ListChecks size={16} className="text-accent" aria-hidden />{de ? "Zu bestellen" : "To order"}</h5>
+              <ul className="mt-3 space-y-2 text-sm text-fg-muted">
+                {supply.order.map(([d, e]) => <li key={d} className="flex gap-2"><Check size={16} weight="bold" className="mt-0.5 shrink-0 text-accent" aria-hidden />{de ? d : e}</li>)}
+              </ul>
+              <h5 className="mt-6 text-xs font-bold uppercase tracking-[0.16em] text-fg">{de ? `Belegt für ${venue.city}` : `Confirmed for ${venue.city}`}</h5>
+              {supplyNotes.length ? (
+                <ul className="mt-3 space-y-2 border-l-2 border-accent/60 pl-4 text-sm text-fg-muted">{supplyNotes.map((n) => <li key={n}>{n}</li>)}</ul>
+              ) : (
+                <p className="mt-3 text-sm text-fg-muted">{de ? "Keine geländespezifischen Werte öffentlich belegt – Pakete und Preise im Ausstellershop bzw. beim Ausstellerservice anfragen." : "No venue-specific values publicly confirmed – ask the exhibitor shop or exhibitor services for packages and prices."}</p>
+              )}
+              {supply.trade && supplyPartners.length > 0 && (
+                <button type="button" onClick={() => showContacts(supply.trade!)} className="mt-5 inline-flex w-max items-center gap-2 rounded-full border border-line-strong px-4 py-2 text-xs font-semibold transition-colors hover:border-accent">
+                  <ArrowDown size={14} aria-hidden />{de ? `${supplyPartners.length} Ansprechpartner ${TRADES[supply.trade][0]}` : `${supplyPartners.length} ${TRADES[supply.trade][1]} contact${supplyPartners.length === 1 ? "" : "s"}`}
+                </button>
+              )}
+            </>
           )}
           <p className="mt-auto pt-6 text-[11px] leading-relaxed text-fg-subtle">
             {de ? "Die technischen Informationen dienen der Planungsunterstützung und ersetzen weder die gültigen technischen Richtlinien des Veranstalters bzw. Geländebetreibers noch eine erforderliche Standbaugenehmigung. Veranstaltungsspezifische Vorgaben können allgemeine Angaben überschreiben." : "The technical information supports planning only and replaces neither the organiser's or venue's current technical regulations nor any required stand approval. Event-specific rules may override general information."}
@@ -513,7 +549,7 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
       {/* Kontakte */}
       <div className="mt-12">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <h4 className="font-display text-2xl font-semibold md:text-3xl">{de ? "Gewerke & Kontakte" : "Trades & contacts"}</h4>
+          <h4 id="builder-contacts" className="scroll-mt-28 font-display text-2xl font-semibold md:text-3xl">{de ? "Gewerke & Kontakte" : "Trades & contacts"}</h4>
           <p className="font-mono text-xs text-fg-muted">{contacts.length} {de ? "Einträge" : "entries"}</p>
         </div>
         <div role="group" aria-label={de ? "Gewerk filtern" : "Filter by trade"} className="mt-4 flex flex-wrap gap-2">
