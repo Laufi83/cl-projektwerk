@@ -50,7 +50,7 @@
     "home": "Accueil",
     "main": "Navigation principale",
     "fairs": "Salons",
-    "hobbies": "Loisirs"
+    "venues": "Parcs d’expo"
   },
   "hero": {
     "eyebrow": "Bureau de planification et de projet · Stands · Espaces de marque · Aménagement intérieur",
@@ -1006,17 +1006,5 @@
     "teaserLabel": "Prochaines dates de salons",
     "teaserRunning": "En cours",
     "teaserNote": "Repère pour la planification de projets – les entrées ne disent rien sur des commandes ni sur une participation de CL Projektwerk."
-  },
-  "hobbies": {
-    "eyebrow": "Loisirs",
-    "title": "Ski et montagne.",
-    "lead": "Pour décrocher de la planification, j'aime partir à ski – sur les pistes et dans la poudreuse.",
-    "videoLabel": "Vidéo de ski {n}",
-    "play": "Lire la vidéo",
-    "pause": "Mettre la vidéo en pause",
-    "choose": "Autres vidéos de ski",
-    "fullscreen": "Voir en plein écran",
-    "now": "En lecture",
-    "show": "Voir"
   }
 }

@@ -118,7 +118,7 @@ export const messeVenues: MesseVenue[] = [
   {
     "number": 8,
     "city": "Stuttgart",
-    "venue": "Hierarchie-Korrektur / Fortsetzung der Top-Standorte: Stuttgart",
+    "venue": "Messe Stuttgart",
     "facts": {
       "area": "ca. 130.000 m² Gesamtfläche. Direkt an der Startbahn des Stuttgarter Flughafens gelegen.",
       "insider": "Durch die Lage direkt über der Autobahn A8 und neben dem Flughafen ist dies das logistisch am schnellsten erreichbare Gelände Deutschlands. Der Innenhof (\"Messepiazza\") ist ein windgeschützter Treffpunkt.",
@@ -726,7 +726,7 @@ export const messeVenues: MesseVenue[] = [
   {
     "number": 46,
     "city": "Genua",
-    "venue": "Hierarchie-Ergänzung / Alternativstandort Südeuropa: Genua, Italien - Fiera di Genova",
+    "venue": "Fiera di Genova",
     "facts": {
       "area": "ca. 70.000 m² Ausstellungsfläche, spektakulär direkt im Hafenbecken von Genau an der ligurischen Küste gelegen.",
       "insider": "Schauplatz der Salone Nautico (internationale Bootsmesse). Das absolute Highlight ist der von Jean Nouvel entworfene Pavillon B, eine riesige, blau spiegelnde Glashalle, in der sich das Meerwasser direkt bricht.",

@@ -17,7 +17,7 @@ import { Process } from "@/components/sections/Process";
 import { About } from "@/components/sections/About";
 import { SeoSection } from "@/components/sections/SeoSection";
 import { FairsTeaser } from "@/components/sections/FairsTeaser";
-import { Hobbies } from "@/components/sections/Hobbies";
+import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { InquiryForm } from "@/components/contact/InquiryForm";
 import { ContactAside } from "@/components/contact/ContactAside";
 import { Link } from "@/i18n/navigation";
@@ -26,8 +26,8 @@ import { FxWords } from "@/components/kinetic/FxWords";
 import { pick } from "@/i18n/locales";
 
 /**
- * Startseite: Hero-Film, Leitsatz, Leistungen & Zusammenarbeit, Entwürfe, Messen (nächste Termine),
- * Über mich, Hobbys, Fragen, Kontakt. Der vollständige Messekalender mit Messegeländen liegt auf /messen.
+ * Startseite: Hero-Film, Leitsatz, Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass),
+ * Messen (nächste Termine), Über mich, Fragen, Kontakt. Der vollständige Messekalender liegt auf /messen.
  * Seite alle 5 Minuten erneuern (Messetermine in der Vorschau).
  */
 export const revalidate = 300;
@@ -146,15 +146,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         </div>
       </section>
 
+      <MesseVenueExplorer id="messestandorte" />
       <FairsTeaser locale={locale} />
       <About />
-      <Hobbies
-        videos={[
-          { src: mediaUrl("hobby/ski-2.mp4?v=2"), poster: mediaUrl("hobby/ski-2-poster.webp?v=2"), portrait: true, duration: "1:31" },
-          { src: mediaUrl("hobby/ski-3.mp4"), poster: mediaUrl("hobby/ski-3-poster.webp"), duration: "2:03" },
-          { src: mediaUrl("hobby/ski-1.mp4"), poster: mediaUrl("hobby/ski-1-poster.webp"), portrait: true, duration: "0:25" },
-        ]}
-      />
       <SeoSection />
 
       <section id="kontakt" aria-labelledby="contact-title" className="relative scroll-mt-24 py-24 md:py-32">

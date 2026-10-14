@@ -50,7 +50,7 @@
     "home": "Home",
     "main": "Navigazione principale",
     "fairs": "Fiere",
-    "hobbies": "Hobby"
+    "venues": "Quartieri fieristici"
   },
   "hero": {
     "eyebrow": "Studio di progettazione e project management · Stand · Spazi di marca · Allestimenti d'interni",
@@ -1006,17 +1006,5 @@
     "teaserLabel": "Prossime date fieristiche",
     "teaserRunning": "In corso",
     "teaserNote": "Orientamento per la pianificazione dei progetti – le voci non dicono nulla su incarichi o sulla partecipazione di CL Projektwerk."
-  },
-  "hobbies": {
-    "eyebrow": "Hobby",
-    "title": "Sci e montagna.",
-    "lead": "Per staccare dalla progettazione mi piace andare a sciare – in pista e in neve fresca.",
-    "videoLabel": "Video di sci {n}",
-    "play": "Riproduci video",
-    "pause": "Metti in pausa il video",
-    "choose": "Altri video di sci",
-    "fullscreen": "Guarda a schermo intero",
-    "now": "In riproduzione",
-    "show": "Guarda"
   }
 }

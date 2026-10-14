@@ -11,6 +11,7 @@ import { useLiteMode } from "@/lib/performance";
 import { InquireLink } from "@/components/ui/InquireLink";
 import { FxWords } from "@/components/kinetic/FxWords";
 import { ExpoMissionControl } from "@/components/sections/ExpoMissionControl";
+import { MesseBuilderGuide } from "@/components/sections/MesseBuilderGuide";
 import type { GlobePin } from "@/components/globe/GlobeCanvas";
 
 const GlobeCanvas = dynamic(() => import("@/components/globe/GlobeCanvas"), { ssr: false });
@@ -22,7 +23,8 @@ const labels = [
   ["dining","Gastronomie","Dining"],["travel","Anreise & Logistik","Travel & logistics"],
 ] as const;
 
-export function MesseVenueExplorer() {
+/** `id`: Anker der Sektion – auf der Startseite „messestandorte“ (Menüpunkt), auf /messen „messegelande“ */
+export function MesseVenueExplorer({ id = "messegelande" }: { id?: string }) {
   const locale = useLocale();
   const de = locale === "de";
   const [region, setRegion] = useState<"all"|"de"|"eu">("all");
@@ -60,17 +62,17 @@ export function MesseVenueExplorer() {
   };
 
   return (
-    <section id="messegelande" aria-labelledby="venues-title" className="relative scroll-mt-24 border-t border-line py-24 md:py-32">
+    <section id={id} aria-labelledby={`${id}-title`} className="relative scroll-mt-24 border-t border-line py-24 md:py-32">
       <div className="container-x">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-4xl">
             <p className="eyebrow">{de ? "Messestandorte · Europa" : "Exhibition venues · Europe"}</p>
-            <h2 id="venues-title" className="font-display mt-4 text-5xl font-semibold leading-[0.98] md:text-7xl">
+            <h2 id={`${id}-title`} className="font-display mt-4 text-5xl font-semibold leading-[0.98] md:text-7xl">
               {de ? "Messegelände." : "Exhibition venues."}
               <span className="block text-accent">{de ? "In Europa im Überblick." : "Across Europe at a glance."}</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-fg-muted md:text-lg">
-              <FxWords text={de ? "50 ausgewählte Messegelände in Europa: auf dem Globus entdecken, Standorte vergleichen und Hinweise zu Anreise, Orientierung und Aufenthalt nachlesen." : "50 selected exhibition venues in Europe: explore them on the globe, compare locations and read notes on travel, orientation and accommodation."} delay={300} />
+              <FxWords text={de ? "50 ausgewählte Messegelände in Europa: auf dem Globus entdecken, Standorte vergleichen, Hinweise zu Anreise und Aufenthalt nachlesen – und im Messebau-Kompass technische Eckwerte, Gewerke-Kontakte und Quellen für den Standbau." : "50 selected exhibition venues in Europe: explore them on the globe, compare locations, read notes on travel and accommodation – and find technical key data, trade contacts and sources for stand building in the compass."} delay={300} />
             </p>
           </div>
           <div className="flex items-center gap-3 rounded-full border border-line-strong bg-bg-raised px-5 py-3 text-sm text-fg-muted">
@@ -154,6 +156,7 @@ export function MesseVenueExplorer() {
             </div>
           </article>
         </div>
+        <MesseBuilderGuide venueNumber={active.number} onPickVenue={(n) => setSelected(`venue-${String(n).padStart(2, "0")}`)} />
         <div className="mt-8">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
             <h3 className="font-display text-2xl font-semibold md:text-3xl">{de?"Alle Messegelände im Überblick":"All exhibition venues"}</h3>

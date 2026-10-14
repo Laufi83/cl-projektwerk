@@ -87,11 +87,13 @@ try {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
-      // Gekürzte Startseite: Messekalender und Messegelände liegen auf /messen, die sechs Schritte nur einmal
-      for (const moved of ['id="weltweit"', 'id="messegelande"', 'id="bauphasen"']) {
+      // Gekürzte Startseite: Messekalender liegt auf /messen, die sechs Schritte nur einmal
+      for (const moved of ['id="weltweit"', 'id="bauphasen"']) {
         assert(!body.includes(moved), `Section should not be on the homepage anymore: ${moved}`);
       }
-      checks.push("Homepage shortened: calendar and venues moved to /messen");
+      // Messestandorte (Atlas + Messebau-Kompass) seit 15.10.2026 wieder auf der Startseite, eigener Menüpunkt
+      assert(body.includes('id="messestandorte"'), "Venue atlas missing on homepage (#messestandorte)");
+      checks.push("Homepage: calendar on /messen, venue atlas at #messestandorte");
       const assets = [...new Set(body.match(/\/_next\/static\/[^"\s<>]+\.(?:js|css)/g))].slice(0, 6);
       assert(assets.length > 0, "No client assets in HTML");
       for (const asset of assets) {
@@ -183,8 +185,7 @@ try {
   }
   // Eigene Hero-Aufbaufilme (Bildsequenzen) von Lumen und Wood muessen ausgeliefert werden
   for (const route of ["/hero/lumen/poster-desktop.webp", "/hero/lumen/desktop/001.webp", "/hero/lumen/desktop/084.webp", "/hero/lumen/mobile/060.webp", "/hero/021/desktop/001.webp",
-    ...["atrium", "copper", "violet", "canopy"].flatMap((id) => [`/hero/${id}/poster-desktop.webp`, `/hero/${id}/poster-mobile.webp`, `/hero/${id}/desktop/084.webp`, `/hero/${id}/mobile/060.webp`, `/media/custom/${id}-aufbau.mp4`]),
-    "/media/hobby/ski-1.mp4", "/media/hobby/ski-2.mp4", "/media/hobby/ski-3.mp4"]) {
+    ...["atrium", "copper", "violet", "canopy"].flatMap((id) => [`/hero/${id}/poster-desktop.webp`, `/hero/${id}/poster-mobile.webp`, `/hero/${id}/desktop/084.webp`, `/hero/${id}/mobile/060.webp`, `/media/custom/${id}-aufbau.mp4`])]) {
     const response = await fetch(base + route, { signal: AbortSignal.timeout(10000) });
     assert.equal(response.status, 200, route);
     checks.push(route);

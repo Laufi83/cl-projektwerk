@@ -50,7 +50,7 @@
     "home": "Inicio",
     "main": "Navegación principal",
     "fairs": "Ferias",
-    "hobbies": "Aficiones"
+    "venues": "Recintos"
   },
   "hero": {
     "eyebrow": "Oficina de planificación y proyectos · Stands · Espacios de marca · Interiorismo",
@@ -1006,17 +1006,5 @@
     "teaserLabel": "Próximas fechas de ferias",
     "teaserRunning": "En curso",
     "teaserNote": "Orientación para la planificación de proyectos – las entradas no dicen nada sobre encargos ni sobre una participación de CL Projektwerk."
-  },
-  "hobbies": {
-    "eyebrow": "Aficiones",
-    "title": "Esquí y montaña.",
-    "lead": "Para desconectar de la planificación, me gusta salir a esquiar – en pista y en nieve polvo.",
-    "videoLabel": "Vídeo de esquí {n}",
-    "play": "Reproducir vídeo",
-    "pause": "Pausar vídeo",
-    "choose": "Más vídeos de esquí",
-    "fullscreen": "Ver en pantalla completa",
-    "now": "Reproduciendo",
-    "show": "Ver"
   }
 }

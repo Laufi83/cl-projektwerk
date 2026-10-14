@@ -14,12 +14,12 @@ import { Kinetic } from "@/components/kinetic/Kinetic";
 const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
+  { id: "messestandorte", key: "venues" },
   { id: "messen", key: "fairs" },
   { id: "ueber", key: "about" },
-  { id: "hobbys", key: "hobbies" },
 ] as const;
-/** Navigation: Leistungen & Zusammenarbeit, Entwürfe, Messen (Vorschau auf der Startseite), Über mich, Hobbys */
-type NavItem = { id: string; key: "services" | "designs" | "about" | "fairs" | "hobbies" | "contact"; page?: "/messen" };
+/** Navigation: Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass), Messen (Vorschau), Über mich */
+type NavItem = { id: string; key: "services" | "designs" | "venues" | "about" | "fairs" | "contact"; page?: "/messen" };
 const NAV: NavItem[] = [...SECTIONS];
 
 export function Header() {

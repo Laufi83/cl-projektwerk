@@ -50,7 +50,7 @@
     "home": "Startseite",
     "main": "Hauptnavigation",
     "fairs": "Messen",
-    "hobbies": "Hobbys"
+    "venues": "Messestandorte"
   },
   "hero": {
     "eyebrow": "Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
@@ -916,17 +916,5 @@
     "teaserLabel": "Nächste Messetermine",
     "teaserRunning": "Läuft",
     "teaserNote": "Orientierung für die Projektplanung – die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus."
-  },
-  "hobbies": {
-    "eyebrow": "Hobbys",
-    "title": "Ski und Berge.",
-    "lead": "Zum Ausgleich bin ich gern auf Skiern unterwegs – auf der Piste und im Tiefschnee.",
-    "videoLabel": "Skivideo {n}",
-    "play": "Video abspielen",
-    "pause": "Video anhalten",
-    "choose": "Weitere Skivideos",
-    "fullscreen": "Im Vollbild ansehen",
-    "now": "Läuft",
-    "show": "Ansehen"
   }
 }

@@ -50,7 +50,7 @@
     "home": "Home",
     "main": "Main navigation",
     "fairs": "Trade fairs",
-    "hobbies": "Hobbies"
+    "venues": "Venues"
   },
   "hero": {
     "eyebrow": "Planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
@@ -916,17 +916,5 @@
     "teaserLabel": "Upcoming trade fair dates",
     "teaserRunning": "On now",
     "teaserNote": "For orientation when planning projects – the entries say nothing about commissions or participation by CL Projektwerk."
-  },
-  "hobbies": {
-    "eyebrow": "Hobbies",
-    "title": "Skiing and mountains.",
-    "lead": "To balance the planning work, I like to get out on skis – on the piste and in deep snow.",
-    "videoLabel": "Ski video {n}",
-    "play": "Play video",
-    "pause": "Pause video",
-    "choose": "More ski videos",
-    "fullscreen": "Watch full screen",
-    "now": "Playing",
-    "show": "Watch"
   }
 }

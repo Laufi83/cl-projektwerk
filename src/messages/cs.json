@@ -50,7 +50,7 @@
     "home": "Úvod",
     "main": "Hlavní navigace",
     "fairs": "Veletrhy",
-    "hobbies": "Koníčky"
+    "venues": "Výstaviště"
   },
   "hero": {
     "eyebrow": "Plánovací a projektová kancelář · Stánky · Značkové prostory · Interiéry",
@@ -1006,17 +1006,5 @@
     "teaserLabel": "Nejbližší termíny veletrhů",
     "teaserRunning": "Probíhá",
     "teaserNote": "Pro orientaci při plánování projektů – údaje neříkají nic o zakázkách ani o účasti CL Projektwerk."
-  },
-  "hobbies": {
-    "eyebrow": "Koníčky",
-    "title": "Lyže a hory.",
-    "lead": "Jako vyvážení k plánování rád vyrážím na lyže – na sjezdovku i do hlubokého sněhu.",
-    "videoLabel": "Lyžařské video {n}",
-    "play": "Přehrát video",
-    "pause": "Pozastavit video",
-    "choose": "Další lyžařská videa",
-    "fullscreen": "Přehrát na celou obrazovku",
-    "now": "Přehrává se",
-    "show": "Zobrazit"
   }
 }

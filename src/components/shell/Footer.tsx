@@ -37,9 +37,9 @@ export async function Footer() {
           <ul className="grid gap-2 text-sm">
             <li><Link href={{ pathname: "/", hash: "leistungen" }} className="text-fg-muted hover:text-fg">{tn("services")}</Link></li>
             <li><Link href="/designs" className="text-fg-muted hover:text-fg">{tn("designs")}</Link></li>
+            <li><Link href={{ pathname: "/", hash: "messestandorte" }} className="text-fg-muted hover:text-fg">{tn("venues")}</Link></li>
             <li><Link href="/messen" className="text-fg-muted hover:text-fg">{tn("fairs")}</Link></li>
             <li><Link href={{ pathname: "/", hash: "ueber" }} className="text-fg-muted hover:text-fg">{tn("about")}</Link></li>
-            <li><Link href={{ pathname: "/", hash: "hobbys" }} className="text-fg-muted hover:text-fg">{tn("hobbies")}</Link></li>
             <li><Link href="/auswahl" className="text-fg-muted hover:text-fg">{tn("selection")}</Link></li>
             <li><Link href="/anfrage" className="text-fg-muted hover:text-fg">{tn("cta")}</Link></li>
           </ul>
