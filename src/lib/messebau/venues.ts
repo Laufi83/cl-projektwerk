@@ -3,10 +3,13 @@
  * Geprüft wird die Datei vor jedem Build mit `npm run guide:validate`.
  */
 import data from "@/data/messebau/venues.global.v2.json";
+import legacyData from "@/data/messebau/venues.global.v1.json";
 import type { GlobalVenue, GuideDataset, VerificationStatus } from "./schema";
 
 export const guide = data as unknown as GuideDataset;
 export const globalVenues: GlobalVenue[] = guide.venues;
+/** Originaler 50er-Europa-Atlas, mit seiner historischen Nummerierung. */
+export const legacyEuropeanVenues: GlobalVenue[] = legacyData.venues as unknown as GlobalVenue[];
 export const venueBySlug = (slug: string) => globalVenues.find((v) => v.slug === slug);
 
 /**
