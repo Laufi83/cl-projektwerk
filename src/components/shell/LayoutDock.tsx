@@ -1,7 +1,8 @@
 "use client";
 /**
  * Layout-Auswahl am rechten Rand: senkrechte Lasche, daneben öffnet sich dasselbe dezente Rollmenü wie bei der
- * Sprachwahl (components/ui/RollPicker) – Namen in der Schrift des Layouts, rechts das Farbmuster.
+ * Sprachwahl (components/ui/RollPicker) – Namen in der Schrift des Layouts, rechts ein Standbild des Layouts.
+ * Schon beim Durchblättern zeigt das Menü Bild, Hintergrund, Text- und Akzentfarbe sowie Schrift des Layouts in der Mitte.
  * Sieben Layouts (01 Studio, 02 Wood, 03 Lumen, 04 Atrium, 05 Copper, 06 Violet, 07 Canopy);
  * die Wahl bleibt gerätelokal gespeichert (localStorage, siehe lib/layout).
  */
@@ -11,14 +12,19 @@ import { LAYOUTS, layoutById } from "@/config/layouts";
 import { setLayout, useLayout } from "@/lib/layout";
 import { RollPicker, type RollItem } from "@/components/ui/RollPicker";
 
+/** Standbild des Layouts (Ende des Aufbaufilms, ohne Fremdlogos; public/hero/<film>/menu.webp) */
+const menuImage = (l: (typeof LAYOUTS)[number]) => `/hero/${l.film}/menu.webp`;
+
 const ITEMS: RollItem[] = LAYOUTS.map((l) => ({
   key: l.id,
   label: l.name,
   code: l.n,
   style: { fontFamily: l.font },
   visual: (
-    <span className="grid place-items-end p-1.5 text-lg font-semibold leading-none text-white [text-shadow:0_1px_6px_rgba(0,0,0,.6)]" style={{ background: l.swatch, fontFamily: l.font }}>
-      Aa
+    <span className="relative block">
+      <img src={menuImage(l)} alt="" draggable={false} className="absolute inset-0 h-full w-full object-cover" />
+      <span className="absolute inset-x-0 bottom-0 h-2" style={{ background: l.swatch }} />
+      <span className="absolute right-1 top-0.5 text-sm font-semibold leading-none text-white [text-shadow:0_1px_6px_rgba(0,0,0,.8)]" style={{ fontFamily: l.font }}>Aa</span>
     </span>
   ),
 }));
@@ -75,6 +81,8 @@ export function LayoutDock() {
           hint={tl("hint")}
           currentLabel={t("active")}
           placement="left"
+          preview={(i) => LAYOUTS[i].id}
+          backdrop={(i) => menuImage(LAYOUTS[i])}
           detail={(i) => (
             <>
               {t(`items.${LAYOUTS[i].id}`)}

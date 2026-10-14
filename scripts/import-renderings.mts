@@ -4,9 +4,12 @@
  *
  *   npm run designs:import            (Quellpfad aus DESIGNS_SOURCE_DIR in .env.local)
  *   npm run designs:import -- --force (bereits vorhandene Master-Dateien überschreiben)
+ *   npm run designs:import -- --only-new (vorhandene Einträge unverändert lassen, nur neue Ordner importieren)
  *
  * Reihenfolge der Designs: scripts/data/selection.json
- * Texte DE/EN:             scripts/data/texts.json
+ * Texte DE/EN:             scripts/data/texts.json (optional auch title, width, depth, floors, standType, outdoor, tags –
+ *                          für Ordner ohne Briefing und ohne Eintrag im Vorgängerprojekt)
+ * Unterordner (z. B. Größenvarianten) als „Ordner/Unterordner“ in selection.json eintragen.
  * Bereits vorhandene Einträge in content/designs.json werden zusammengeführt:
  * Hand-Änderungen an title/description/tags/published bleiben erhalten.
  */
@@ -19,6 +22,7 @@ import type { DesignEntry, LocalizedText, MediaRef } from "./lib/types.mts";
 
 loadEnv();
 const FORCE = process.argv.includes("--force");
+const ONLY_NEW = process.argv.includes("--only-new");
 const SRC = process.env.DESIGNS_SOURCE_DIR;
 if (!SRC || !fs.existsSync(SRC)) {
   console.error("DESIGNS_SOURCE_DIR fehlt oder existiert nicht. In .env.local setzen.");
@@ -29,7 +33,11 @@ const PUBLIC_DESIGNS = path.join(ROOT, "public", "media", "designs");
 const CONTENT_FILE = path.join(ROOT, "content", "designs.json");
 const ARCHIVE_FILE = path.join(ROOT, "content", "designs.archive.json");
 const selection = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/selection.json"), "utf8"));
-const texts: Record<string, { de?: string; en?: string; materialsDe?: string; materialsEn?: string; coloursDe?: string; coloursEn?: string }> =
+type TextEntry = {
+  de?: string; en?: string; materialsDe?: string; materialsEn?: string; coloursDe?: string; coloursEn?: string;
+  title?: string; width?: number; depth?: number; floors?: number; standType?: "corner" | "head" | "island"; outdoor?: boolean; tags?: string[];
+};
+const texts: Record<string, TextEntry> =
   JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/data/texts.json"), "utf8"));
 
 /* ---------- Metadaten aus dem Vorgängerprojekt (Standgrößen, Beschreibungen) ---------- */
@@ -183,6 +191,10 @@ const folders: string[] = [...selection.featured, ...selection.series, ...select
 const featured = new Set<string>(selection.featured);
 const series = new Set<string>([...selection.featured, ...selection.series]);
 const allFolders = fs.readdirSync(SRC).filter((d) => /^\d+(\s|$)/.test(d) && fs.statSync(path.join(SRC, d)).isDirectory());
+// Unterordner aus selection.json (z. B. „#01# Alpin Design/Alpine Gear - 3x3m“)
+for (const f of [...selection.featured, ...selection.series, ...selection.main] as string[]) {
+  if (f.includes("/") && fs.existsSync(path.join(SRC, f)) && fs.statSync(path.join(SRC, f)).isDirectory()) allFolders.push(f);
+}
 const missing = folders.filter((f) => !allFolders.includes(f));
 if (missing.length) {
   console.error("Ordner aus selection.json fehlen im Quellordner:", missing);
@@ -194,6 +206,14 @@ let n = 0;
 for (const folder of folders) {
   n++;
   const id = pad(n);
+  if (ONLY_NEW) {
+    const kept = existingBySource.get(folder);
+    if (kept) {
+      if (kept.id !== id) { console.error(`✗ ${folder}: vorhandene Nummer ${kept.id} ≠ Position ${id} – Reihenfolge in selection.json prüfen`); process.exit(1); }
+      designs.push(kept);
+      continue;
+    }
+  }
   const srcDir = path.join(SRC, folder);
   const outDir = path.join(PUBLIC_DESIGNS, id);
   fs.mkdirSync(outDir, { recursive: true });
@@ -231,17 +251,17 @@ for (const folder of folders) {
   }
 
   const brief = briefs[folder];
-  const old = brief ? undefined : findOld(folder);
   const t = texts[folder] ?? {};
+  const old = brief || t.title ? undefined : findOld(folder);
   const sizeMatch = old?.size.match(/(\d+(?:[.,]\d+)?)\s*×\s*(\d+(?:[.,]\d+)?)/);
-  const width = brief?.width || (sizeMatch ? parseFloat(sizeMatch[1]) : 0);
-  const depth = brief?.depth || (sizeMatch ? parseFloat(sizeMatch[2]) : 0);
-  const floors = brief?.floors || (old ? (/zweigeschossig/.test(old.size) ? 2 : 1) : 0);
-  const title = brief?.title ?? (old && !OLD_NAME_OVERRIDES[folder] ? old.name : folder.replace(/^\d+\s+/, ""));
+  const width = brief?.width || t.width || (sizeMatch ? parseFloat(sizeMatch[1]) : 0);
+  const depth = brief?.depth || t.depth || (sizeMatch ? parseFloat(sizeMatch[2]) : 0);
+  const floors = brief?.floors || t.floors || (old ? (/zweigeschossig/.test(old.size) ? 2 : 1) : 0);
+  const title = brief?.title ?? t.title ?? (old && !OLD_NAME_OVERRIDES[folder] ? old.name : folder.replace(/^\d+\s+/, ""));
   const descDe = t.de ?? old?.text ?? "";
   const descEn = t.en ?? "";
-  const outdoor = old?.cat === "frei";
-  const standType = brief?.standType ?? (/Eckstand/.test(descDe) ? "corner" : /Kopfstand/.test(descDe) ? "head" : /Inselstand/.test(descDe) ? "island" : null);
+  const outdoor = t.outdoor ?? old?.cat === "frei";
+  const standType = brief?.standType ?? t.standType ?? (/Eckstand/.test(descDe) ? "corner" : /Kopfstand/.test(descDe) ? "head" : /Inselstand/.test(descDe) ? "island" : null);
 
   const styleSource = [descDe, t.materialsEn ?? "", t.materialsDe ?? ""].join(" ");
   const tags = new Set<string>();
@@ -251,6 +271,7 @@ for (const folder of folders) {
   if (series.has(folder)) tags.add("real-estate");
   if (/^(9\d|10\d) /.test(folder)) tags.add("product");
   for (const [tag, re] of STYLE_RULES) if (re.test(styleSource)) tags.add(tag);
+  for (const tag of t.tags ?? []) tags.add(tag);
 
   const prev = existingBySource.get(folder);
   const entry: DesignEntry = {

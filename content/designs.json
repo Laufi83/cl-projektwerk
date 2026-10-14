@@ -1,6 +1,6 @@
 {
   "$schema": "./designs.schema.json",
-  "_hinweis": "Zentrale Design-Liste. Reihenfolge = Nummer. Neue Designs: Ordner public/designs/NNN anlegen, Eintrag ergänzen, `npm run designs:build`.",
+  "_hinweis": "Zentrale Design-Liste. Reihenfolge = Nummer. Neue Designs: Ordner public/media/designs/NNN anlegen, Eintrag ergänzen, `npm run designs:build`.",
   "designs": [
     {
       "id": "001",
@@ -9826,6 +9826,6140 @@
           "file": "electrical.webp",
           "label": {
             "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "101",
+      "slug": "101-galerie",
+      "source": "06 Galerie",
+      "published": true,
+      "title": "Galerie",
+      "tags": [
+        "green",
+        "metal",
+        "light"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 16,
+        "area": 192
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein weißer Rahmenstand mit messingfarbenen Pfeilern und umlaufender Lichtfuge unter der Decke. An den Wänden großformatige Landschaftsbilder, dazu Olivenbäume in Kübeln, eine Lounge mit hellen Sofas und eine weiße Theke.",
+        "en": "A white frame stand with brass-coloured piers and a continuous light reveal below the ceiling. Large landscape pictures on the walls, olive trees in planters, a lounge with pale sofas and a white counter."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "102",
+      "slug": "102-textilforum",
+      "source": "11 Textilforum",
+      "published": true,
+      "title": "Textilforum",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 14,
+        "depth": 10,
+        "area": 140
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein schwebender, runder Lichtring auf schlanken Bronzestützen überspannt die Fläche. Darunter geschwungene cremefarbene Wände, eine Empfangstheke in Rosé, Kleiderständer mit Stoffen und eine Lounge in Salbeigrün und Weiß.",
+        "en": "A floating ring of light on slender bronze columns spans the space. Below it, curved cream walls, a rosé reception counter, rails with fabrics and a lounge in sage green and white."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge, Detail",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht, Theke",
+            "en": "Interior, counter"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht A–A",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzeptplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "103",
+      "slug": "103-papierfaecher",
+      "source": "20 Papierfaecher",
+      "published": true,
+      "title": "Papierfächer",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 12,
+        "depth": 16,
+        "area": 192
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Gefaltete weiße Wandelemente wie aufgefächertes Papier, am Boden hinterleuchtet, dazwischen Flächen in Terrakotta. Eine schwarze Logowand, eine Lounge in Lachs und Creme und viele Pflanzen.",
+        "en": "Folded white wall elements like fanned-out paper, backlit at the base, with terracotta surfaces in between. A black logo wall, a lounge in salmon and cream and plenty of plants."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontal",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzeptplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "104",
+      "slug": "104-mineralhof",
+      "source": "21 Mineralhof",
+      "published": true,
+      "title": "Mineralhof",
+      "tags": [
+        "metal",
+        "light"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 5,
+        "area": 35
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Portal aus hellem Naturstein mit Lichtfuge, darunter eine Theke in gebürstetem Messing. Kupferfarbene Pendelleuchten über einem Besprechungstisch, ein Regal und eine helle Sofaecke.",
+        "en": "A portal of pale natural stone with a light reveal, beneath it a brushed-brass counter. Copper pendant lights above a meeting table, a shelf and a pale sofa corner."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge, Detail",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht Rezeption",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht rechts",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro-Anschlussplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "105",
+      "slug": "105-lichtfalte",
+      "source": "23 Lichtfalte",
+      "published": true,
+      "title": "Lichtfalte",
+      "tags": [
+        "green",
+        "metal",
+        "light"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "area": 48
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein gefaltetes, von unten beleuchtetes Textildach auf vier Stahlstützen. Darunter ein Besprechungsraum aus satiniertem Glas, eine runde weiße Theke und üppige Pflanzen.",
+        "en": "A folded textile roof, lit from below, on four steel columns. Beneath it a meeting room of frosted glass, a round white counter and lush planting."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Meeting Lounge links",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Empfangsbereich",
+            "en": "Reception detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro-Anschlussplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "106",
+      "slug": "106-lehm-terrassen",
+      "source": "27 Lehm-Terrassen",
+      "published": true,
+      "title": "Lehm-Terrassen",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 13,
+        "depth": 8,
+        "area": 104
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Gestufte Podeste und Wandblöcke in Lehmoptik mit warmem Licht in den Fugen. Sitznischen mit Polstern, ein Olivenbaum und eine goldfarbene Theke.",
+        "en": "Stepped platforms and wall blocks with a clay finish and warm light in the joints. Seating niches with cushions, an olive tree and a gold-coloured counter."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontal",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro-Anschlussplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "107",
+      "slug": "107-spiralkabinett",
+      "source": "33 Spiralkabinett",
+      "published": true,
+      "title": "Spiralkabinett",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 9,
+        "depth": 9,
+        "area": 81
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Eine spiralförmig gewundene Wand aus hellen Holzlamellen fasst einen runden Besprechungsbereich unter einem Olivenbaum. Davor eine Theke in Lamellenoptik und Sessel in Petrol.",
+        "en": "A spiralling wall of pale timber slats encloses a round meeting area beneath an olive tree. In front, a slatted counter and petrol-blue armchairs."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "108",
+      "slug": "108-faltkarton",
+      "source": "35 Faltkarton",
+      "published": true,
+      "title": "Faltkarton",
+      "tags": [
+        "wood"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 6,
+        "area": 42
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Wände aus Wellpappe mit Wabenkanten, ein dreieckiger Holztisch und eine gelbe Theke auf dunklem Boden. Dazu ein Lagerraum von zwei mal zwei Metern.",
+        "en": "Corrugated-board walls with honeycomb edges, a triangular timber table and a yellow counter on a dark floor. Plus a two-by-two-metre storeroom."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang Theke",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "109",
+      "slug": "109-wasserhof",
+      "source": "37 Wasserhof",
+      "published": true,
+      "title": "Wasserhof",
+      "tags": [
+        "green"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Weiße Wandscheiben umschließen ein flaches Wasserbecken, darüber hängen Ranken. Theke, eine Lounge in Rostrot und ein Besprechungstisch reihen sich um das Becken.",
+        "en": "White wall planes enclose a shallow pool with trailing plants above. A counter, a rust-red lounge and a meeting table are arranged around the water."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge Detailansicht",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang Rezeption",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "110",
+      "slug": "110-seidenstrasse",
+      "source": "41 Seidenstrasse",
+      "published": true,
+      "title": "Seidenstraße",
+      "tags": [
+        "wood",
+        "green",
+        "metal"
+      ],
+      "size": {
+        "width": 13,
+        "depth": 7,
+        "area": 91
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Messingrahmen trägt hängende Seidenbahnen mit Tuschelandschaften. Dazwischen eine weiße Theke mit Holzlamellen, Pflanzen und eine helle Lounge.",
+        "en": "A brass frame carries hanging silk panels with ink-wash landscapes. In between, a white counter with timber slats, plants and a pale lounge."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rezeption",
+            "en": "Rezeption"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "111",
+      "slug": "111-glasprisma",
+      "source": "47 Glasprisma",
+      "published": true,
+      "title": "Glasprisma",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 7,
+        "area": 70
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein gläsernes Prisma mit Schrägdach dient als Besprechungsraum, daneben eine schwarze Logowand mit Bildschirm. Eine runde, hinterleuchtete Theke und ein blauer Sessel.",
+        "en": "A glass prism with a sloping roof serves as the meeting room, next to a black logo wall with a screen. A round backlit counter and a blue armchair."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge Meeting",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rezeption",
+            "en": "Rezeption"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "112",
+      "slug": "112-kiesgarten",
+      "source": "48 Kiesgarten",
+      "published": true,
+      "title": "Kiesgarten",
+      "tags": [
+        "wood",
+        "green"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 8,
+        "area": 64
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Dunkle Natursteinplatten, Kiesflächen und Olivenbäume bilden einen Garten. Ein Besprechungstisch steht im Kies, die Theke aus Holzlamellen vor einem Holzkubus.",
+        "en": "Dark stone slabs, gravel beds and olive trees form a garden. A meeting table stands in the gravel, the slatted timber counter in front of a timber cube."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge, Detail",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang Rezeption",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "113",
+      "slug": "113-flechtwand",
+      "source": "50 Flechtwand",
+      "published": true,
+      "title": "Flechtwand",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 5,
+        "area": 35
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Eine geschwungene Wand aus Rattangeflecht trägt das Logo. Davor zwei helle Sessel auf einem runden Teppich, eine weiße Theke und Korbleuchten auf salbeigrünem Boden.",
+        "en": "A curved wall of woven rattan carries the logo. In front, two pale armchairs on a round rug, a white counter and wicker pendants on a sage-green floor."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge Meeting",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfangstheke",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Ansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "114",
+      "slug": "114-schubladenwand",
+      "source": "54 Schubladenwand",
+      "published": true,
+      "title": "Schubladenwand",
+      "tags": [],
+      "size": {
+        "width": 8,
+        "depth": 7,
+        "area": 56
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Eine Rückwand aus hellen Schubladen und offenen Fächern mit blauer Logotafel. Davor eine blaue Bartheke mit Hockern, ein Besprechungstisch und eine blaue Info-Theke.",
+        "en": "A back wall of pale drawers and open compartments with a blue logo panel. In front, a blue bar counter with stools, a meeting table and a blue info desk."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "115",
+      "slug": "115-travertin-band",
+      "source": "57 Travertin-Band",
+      "published": true,
+      "title": "Travertin-Band",
+      "tags": [
+        "green"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 5,
+        "area": 35
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Dachband aus Travertin ruht auf schlanken Bronzestützen mit Strahlerschienen. Darunter eine Steintheke, Sessel in Olivgrün und ein Besprechungstisch.",
+        "en": "A travertine roof band rests on slender bronze columns with spotlight tracks. Beneath it, a stone counter, olive-green armchairs and a meeting table."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontal",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro-Anschlussplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "116",
+      "slug": "116-ziegelpassage-xl",
+      "source": "62 Ziegelpassage 18x10",
+      "published": true,
+      "title": "Ziegelpassage XL",
+      "tags": [
+        "light"
+      ],
+      "size": {
+        "width": 18,
+        "depth": 10,
+        "area": 180
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Rahmen aus Ziegelmauerwerk mit durchbrochener Ziegelwand fasst Produktpräsentation, Empfang und zwei Besprechungsräume. Dazu dunkelrote Möbel und warmes Licht.",
+        "en": "A brickwork frame with a perforated brick wall holds a product display, reception and two meeting rooms. Dark red furniture and warm light."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontal",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenschnitt A–A",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro-Anschlussplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "117",
+      "slug": "117-glasbaustein-atelier",
+      "source": "63 Glasbaustein-Atelier",
+      "published": true,
+      "title": "Glasbaustein-Atelier",
+      "tags": [
+        "wood",
+        "light"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "area": 48
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Wände aus Glasbausteinen mit petrolfarbenen Kanten, dahinter Licht. Eine weinrote Theke, rote Sessel und ein langer Holztisch unter Pendelleuchten.",
+        "en": "Glass-block walls with petrol-blue edges, lit from behind. A wine-red counter, red armchairs and a long timber table beneath pendant lights."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "118",
+      "slug": "118-filzfluegel",
+      "source": "65 Filzfluegel",
+      "published": true,
+      "title": "Filzflügel",
+      "tags": [
+        "wood"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 5,
+        "area": 35
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Drei schräg gestellte Filzwände in Anthrazit tragen Logo und Leitsatz. Davor eine Theke aus Holzlamellen und Sessel in Orange.",
+        "en": "Three angled felt walls in anthracite carry the logo and claim. In front, a slatted timber counter and orange armchairs."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "119",
+      "slug": "119-keramikhof",
+      "source": "66 Keramikhof",
+      "published": true,
+      "title": "Keramikhof",
+      "tags": [
+        "green",
+        "light"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 8,
+        "area": 64
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Wände und Theke aus terrakottafarbenen Keramikfliesen, darüber Lichterketten. Ein Besprechungstisch mit grünen Stühlen, eine Lounge und Olivenbäume.",
+        "en": "Walls and counter clad in terracotta ceramic tiles, with festoon lights above. A meeting table with green chairs, a lounge and olive trees."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontal",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Innenansicht",
+            "en": "Interior view"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzeptplan",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "120",
+      "slug": "120-lichtzylinder-ii",
+      "source": "67 Lichtzylinder Version 2",
+      "published": true,
+      "title": "Lichtzylinder II",
+      "tags": [
+        "green",
+        "metal",
+        "light"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 8,
+        "area": 80
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Fünf gestaffelte, von innen leuchtende Zylinder stehen vor einer dunklen Rückwand. Dazu eine Edelstahl-Theke, Sessel in Olivgrün, ein langer Besprechungstisch und hinten ein Lager.",
+        "en": "Five staggered cylinders glowing from within stand in front of a dark back wall. Plus a stainless-steel counter, olive-green armchairs, a long meeting table and a storeroom at the back."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "121",
+      "slug": "121-steglandschaft",
+      "source": "68 Steglandschaft",
+      "published": true,
+      "title": "Steglandschaft",
+      "tags": [
+        "green",
+        "metal"
+      ],
+      "size": {
+        "width": 18,
+        "depth": 14,
+        "area": 252
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Erhöhte Stege in Salbeigrün führen über die Fläche zu Lounge, Besprechungstischen und einem Pavillon. Zwei kupferfarbene Stelen mit Logo und eine Theke in Lamellenoptik.",
+        "en": "Raised walkways in sage green lead across the space to a lounge, meeting tables and a pavilion. Two copper-coloured pylons with the logo and a slatted counter."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Lounge",
+            "en": "Lounge detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "122",
+      "slug": "122-pocket-dock",
+      "source": "73 Pocket Dock",
+      "published": true,
+      "title": "Pocket Dock",
+      "tags": [
+        "two-storey",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 10,
+        "depth": 10,
+        "area": 100
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein zweigeschossiger Containerstand in Anthrazit mit orangen Kanten. Unten Bar und Empfang, oben eine begrünte Lounge-Terrasse, erreichbar über eine offene Treppe.",
+        "en": "A two-storey container stand in anthracite with orange edges. Bar and reception below, a planted lounge terrace above, reached by an open staircase."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "123",
+      "slug": "123-studio-boulevard",
+      "source": "74 Studio Boulevard",
+      "published": true,
+      "title": "Studio Boulevard",
+      "tags": [
+        "two-storey",
+        "green",
+        "light",
+        "container"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 18,
+        "area": 360
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Einzelne Container-Studios mit orangen Rahmen säumen einen Boulevard mit Lichtkante. Gläserne Besprechungsboxen, Pflanzinseln und eine Treppe zur oberen Ebene.",
+        "en": "Individual container studios with orange frames line a boulevard edged with light. Glazed meeting boxes, planting islands and a stair to the upper level."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "124",
+      "slug": "124-winter-trail",
+      "source": "75 Winter Trail",
+      "published": true,
+      "title": "Winter Trail",
+      "tags": [
+        "green",
+        "product"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "area": 48
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Outdoor-Stand mit Bergwald-Panorama, Kleiderstangen voller Jacken und zwei Figuren in Skibekleidung. Darüber eine dunkelgrüne Blende mit Logo, dazu Präsentationstische und eine Theke.",
+        "en": "An outdoor stand with a mountain-forest panorama, rails full of jackets and two figures in ski wear. A dark green fascia with logo above, plus display tables and a counter."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "125",
+      "slug": "125-sternforum",
+      "source": "78 Sternforum",
+      "published": true,
+      "title": "Sternforum",
+      "tags": [
+        "two-storey",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 22,
+        "depth": 22,
+        "area": 484
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Container in Silbergrau gruppieren sich um ein begrüntes Forum mit Baum und Rundbank. Unten gläserne Besprechungsräume, oben Terrassen mit Schirmen.",
+        "en": "Silver-grey containers are grouped around a planted forum with a tree and a circular bench. Glazed meeting rooms below, terraces with parasols above."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "126",
+      "slug": "126-kreuzpunkt",
+      "source": "80 Kreuzpunkt",
+      "published": true,
+      "title": "Kreuzpunkt",
+      "tags": [
+        "two-storey",
+        "container"
+      ],
+      "size": {
+        "width": 20,
+        "depth": 16,
+        "area": 320
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Vier orange gerahmte Container-Module an den Ecken, oben miteinander verbunden, in der Mitte ein offener Platz mit Baum. Dazu eine Treppe, Arbeitsplätze und Bildschirme.",
+        "en": "Four orange-framed container modules at the corners, linked at the upper level, with an open square and a tree in the middle. Plus a staircase, workstations and screens."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "127",
+      "slug": "127-hafenkamm",
+      "source": "86 Hafenkamm",
+      "published": true,
+      "title": "Hafenkamm",
+      "tags": [
+        "two-storey",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 25,
+        "depth": 20,
+        "area": 500
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Lange anthrazitfarbene Containerriegel mit orangen Kanten, Treppen und einer umlaufenden Galerie. Dazwischen kleine Pavillons mit Bildschirmen und eine Lounge mit Pflanzen.",
+        "en": "Long anthracite container blocks with orange edges, stairs and a wraparound gallery. Small pavilions with screens and a planted lounge in between."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "128",
+      "slug": "128-schaufenster",
+      "source": "87 Schaufenster",
+      "published": true,
+      "title": "Schaufenster",
+      "tags": [
+        "two-storey",
+        "container"
+      ],
+      "size": {
+        "width": 14,
+        "depth": 14,
+        "area": 196
+      },
+      "floors": 2,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein zweigeschossiger Containerbau mit großer Glasfront wie ein Schaufenster. Unten Präsentationstische, oben eine Terrasse mit Schirmen, die Treppe an der Seite.",
+        "en": "A two-storey container building with a large glass front like a shop window. Display tables below, a terrace with parasols above, the stair at the side."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Front",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Obergeschoss",
+            "en": "Upper floor"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss EG",
+          "en": "Floor plan, ground floor"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht Schnitt",
+          "en": "Section A–A"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "floorplan-2.webp",
+          "label": {
+            "de": "Grundriss OG",
+            "en": "Floor plan, upper floor"
+          }
+        },
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept EG",
+            "en": "Electrical plan"
+          }
+        },
+        {
+          "file": "electrical-2.webp",
+          "label": {
+            "de": "Elektrokonzept OG",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "129",
+      "slug": "129-light-gallery",
+      "source": "91 Light Gallery",
+      "published": true,
+      "title": "Light Gallery",
+      "tags": [
+        "product",
+        "wood",
+        "light"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 9,
+        "area": 63
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Leuchten aller Art hängen und stehen vor einer dunklen Wand mit warmem Lichtbogen. Sockel mit Tischleuchten, eine Theke mit Holzlamellen und ein Besprechungstisch.",
+        "en": "Lights of every kind hang and stand in front of a dark wall with a warm arc of light. Plinths with table lamps, a slatted counter and a meeting table."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "130",
+      "slug": "130-window-studio",
+      "source": "93 Window Studio",
+      "published": true,
+      "title": "Window Studio",
+      "tags": [
+        "product",
+        "wood"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 3,
+        "area": 21
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Reihenstand mit Fenstermustern in Weiß, Anthrazit und Holz an der Rückwand. Dazu ein Prospektständer, eine weiße Theke, ein Stehtisch und Holzlamellen.",
+        "en": "A row stand with window samples in white, anthracite and wood on the back wall. Plus a brochure stand, a white counter, a high table and timber slats."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "131",
+      "slug": "131-auto-tech-ii",
+      "source": "98 Auto Tech",
+      "published": true,
+      "title": "Auto Tech II",
+      "tags": [
+        "product"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 6,
+        "area": 48
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Bremsscheiben, Motor- und Fahrwerksteile auf Betonsockeln vor einer dunklen Wand mit blauen Diagonalen. Ein Felgenregal, eine Theke und ein Besprechungstisch.",
+        "en": "Brake discs, engine and chassis parts on concrete plinths in front of a dark wall with blue diagonals. A wheel rack, a counter and a meeting table."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "132",
+      "slug": "132-urban-winter",
+      "source": "102 Urban Winter",
+      "published": true,
+      "title": "Urban Winter",
+      "tags": [
+        "product"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 3,
+        "area": 21
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein Reihenstand mit Wintermode: Kleiderstangen, Rucksäcke und eine Figur mit Snowboard. Dunkelblaue Blende und Wände, ein Bergmotiv und eine kleine Lounge.",
+        "en": "A row stand with winter apparel: clothes rails, backpacks and a figure with a snowboard. Dark blue fascia and walls, a mountain motif and a small lounge."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "133",
+      "slug": "133-filter-lab",
+      "source": "104 Filter Lab",
+      "published": true,
+      "title": "Filter Lab",
+      "tags": [
+        "product",
+        "light"
+      ],
+      "size": {
+        "width": 3,
+        "depth": 3,
+        "area": 9
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Ein kompakter Stand mit Luft- und Ölfiltern auf hinterleuchteten Regalen. Eine schwarze Logowand mit orangem Streifen, eine weiße Theke und ein Stehtisch.",
+        "en": "A compact stand with air and oil filters on backlit shelves. A black logo wall with an orange stripe, a white counter and a high table."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "134",
+      "slug": "134-cycle-studio",
+      "source": "105 Cycle Studio",
+      "published": true,
+      "title": "Cycle Studio",
+      "tags": [
+        "product",
+        "wood"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 9,
+        "area": 63
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Mountainbikes und E-Bikes vor einem großen Bergpanorama, daneben ein Regal mit Helmen. Darüber eine dunkle Blende mit Logo, vorn eine Theke mit Holzlamellen.",
+        "en": "Mountain bikes and e-bikes in front of a large mountain panorama, next to a shelf of helmets. A dark fascia with logo above, a slatted counter in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "135",
+      "slug": "135-siebwerk",
+      "source": "109 Siebwerk",
+      "published": true,
+      "title": "Siebwerk",
+      "tags": [
+        "outdoor",
+        "product",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 36,
+        "depth": 30,
+        "area": 1080
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Siebanlagen und Förderbänder mit Haufwerk in verschiedenen Körnungen auf dem Freigelände. Ein grüner Containerbau mit Dachterrasse, Fahnen und Pflanzinseln.",
+        "en": "Screening plants and conveyors with stockpiles of different grain sizes on the open-air site. A green container building with roof terrace, flags and planting islands."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "136",
+      "slug": "136-rammfeld",
+      "source": "111 Rammfeld",
+      "published": true,
+      "title": "Rammfeld",
+      "tags": [
+        "outdoor",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 30,
+        "depth": 30,
+        "area": 900
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Drei Ramm- und Bohrgeräte mit grünen Akzenten stehen neben Spundwand-Mustern. Ein anthrazitfarbener Containerbau mit Dachterrasse und Infostelen.",
+        "en": "Three piling and drilling rigs with green accents stand beside sheet-pile samples. An anthracite container building with roof terrace and info pylons."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "137",
+      "slug": "137-bohrfeld",
+      "source": "112 Bohrfeld",
+      "published": true,
+      "title": "Bohrfeld",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 36,
+        "depth": 30,
+        "area": 1080
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Bohrgeräte mit violetten Akzenten, Bohrwerkzeuge und Schnecken in einer Reihe auf dem Gelände. Ein schwarzer Container mit Logo, Fahnen und eine Lounge.",
+        "en": "Drilling rigs with violet accents, drilling tools and augers in a row on the site. A black container with logo, flags and a lounge."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "138",
+      "slug": "138-fraesenfeld",
+      "source": "114 Fraesenfeld",
+      "published": true,
+      "title": "Fräsenfeld",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 30,
+        "depth": 24,
+        "area": 720
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Kaltfräsen auf einer Musterfläche mit abgefrästem Asphalt, davor eine Fräswalze. Ein Containerbau mit Dachterrasse, rote Fahnen und ein Pavillon.",
+        "en": "Cold milling machines on a sample surface of milled asphalt, with a milling drum in front. A container building with roof terrace, red flags and a pavilion."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "139",
+      "slug": "139-fertigerhof",
+      "source": "115 Fertigerhof",
+      "published": true,
+      "title": "Fertigerhof",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 30,
+        "depth": 24,
+        "area": 720
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Straßenfertiger und eine Walze in Orange und Schwarz auf Asphaltflächen. Ein schwarzer Containerbau mit Logo und Terrasse, ein Zelt und Infostelen.",
+        "en": "Road pavers and a roller in orange and black on asphalt surfaces. A black container building with logo and terrace, a tent and info pylons."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "140",
+      "slug": "140-graderallee",
+      "source": "116 Graderallee",
+      "published": true,
+      "title": "Graderallee",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 36,
+        "depth": 24,
+        "area": 864
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Gelbe Grader stehen an einer Allee mit türkis markierten Wegen, dazwischen Schichtmodelle des Straßenbaus. Ein Containerbau mit Terrasse und Fahnen.",
+        "en": "Yellow graders line an avenue with turquoise-marked paths, with layered road-building models in between. A container building with terrace and flags."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "141",
+      "slug": "141-radladerplatz",
+      "source": "118 Radladerplatz",
+      "published": true,
+      "title": "Radladerplatz",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 30,
+        "depth": 24,
+        "area": 720
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Radlader und Kompaktlader neben Schüttgutflächen aus Sand, Kies und Steinen. Ein dunkelblauer Containerbau mit Terrasse und blauen Fahnen.",
+        "en": "Wheel loaders and compact loaders next to bulk-material beds of sand, gravel and stone. A dark blue container building with terrace and blue flags."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "142",
+      "slug": "142-pumpwerk",
+      "source": "119 Pumpwerk",
+      "published": true,
+      "title": "Pumpwerk",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 30,
+        "depth": 24,
+        "area": 720
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Kreisel- und Schmutzwasserpumpen in Petrol und Orange mit Rohrleitungen und einem Wasserbecken. Ein Containerbau mit Terrasse und ein weißes Zelt.",
+        "en": "Centrifugal and wastewater pumps in petrol blue and orange with pipework and a water basin. A container building with terrace and a white tent."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "143",
+      "slug": "143-kipperfaecher",
+      "source": "120 Kipperfaecher",
+      "published": true,
+      "title": "Kipperfächer",
+      "tags": [
+        "outdoor",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 45,
+        "depth": 35,
+        "area": 1575
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Muldenkipper und Dumper fächern sich über das Gelände, markiert durch gelbe Linien. Ein dunkelgrüner Containerbau mit Terrasse und Fahnen.",
+        "en": "Dump trucks and dumpers fan out across the site, marked by yellow lines. A dark green container building with terrace and flags."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "144",
+      "slug": "144-walzenhof",
+      "source": "121 Walzenhof",
+      "published": true,
+      "title": "Walzenhof",
+      "tags": [
+        "outdoor",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 24,
+        "depth": 24,
+        "area": 576
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Walzen und Rüttelplatten in Lindgrün auf Pflaster- und Kiesmustern. Ein Containerbau mit Dachterrasse und ein weißes Zelt.",
+        "en": "Rollers and vibratory plates in lime green on paving and gravel samples. A container building with roof terrace and a white tent."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "145",
+      "slug": "145-trennschnitt",
+      "source": "123 Trennschnitt",
+      "published": true,
+      "title": "Trennschnitt",
+      "tags": [
+        "outdoor",
+        "green",
+        "container"
+      ],
+      "size": {
+        "width": 24,
+        "depth": 20,
+        "area": 480
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Wand- und Fugensägen mit großen roten Sägeblättern neben Betonblöcken. Ein schwarzroter Containerbau mit Terrasse und ein Zelt.",
+        "en": "Wall and joint saws with large red blades next to concrete blocks. A black-and-red container building with terrace and a tent."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "146",
+      "slug": "146-mischerplatz",
+      "source": "125 Mischerplatz",
+      "published": true,
+      "title": "Mischerplatz",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 15,
+        "depth": 12,
+        "area": 180
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Betonmischer und ein Silo mit Mischanlage, dazu Proben von Zement, Sand und Kies. Ein weißes Zelt mit Bar und ein schwarzroter Container.",
+        "en": "Concrete mixers and a silo with a mixing plant, plus samples of cement, sand and gravel. A white tent with a bar and a black-and-red container."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "147",
+      "slug": "147-grabenfraese",
+      "source": "126 Grabenfraese",
+      "published": true,
+      "title": "Grabenfräse",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 18,
+        "depth": 15,
+        "area": 270
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Grabenfräsen arbeiten auf einer Musterfläche mit offenem Graben und Leerrohren. Ein weißes Zelt, ein Containerbau und orange Fahnen.",
+        "en": "Trenchers work on a sample area with an open trench and cable ducts. A white tent, a container building and orange flags."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "148",
+      "slug": "148-teleskophof",
+      "source": "128 Teleskophof",
+      "published": true,
+      "title": "Teleskophof",
+      "tags": [
+        "outdoor",
+        "container"
+      ],
+      "size": {
+        "width": 24,
+        "depth": 20,
+        "area": 480
+      },
+      "floors": 1,
+      "height": null,
+      "standType": null,
+      "description": {
+        "de": "Teleskoplader in Blau und Weiß mit angehobener Gabel, dazu Anbaugeräte. Ein Containerbau mit Dachterrasse, Fahnen und Infotafeln.",
+        "en": "Telehandlers in blue and white with raised forks, plus attachments. A container building with roof terrace, flags and info boards."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Gesamtansicht",
+            "en": "Gesamtansicht"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Vogelperspektive",
+            "en": "Vogelperspektive"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Terrasse Empfang",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektro Erschliessung",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "149",
+      "slug": "149-alpine-gear-3-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 3x3m",
+      "published": true,
+      "title": "Alpine Gear 3 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 3,
+        "depth": 3,
+        "area": 9
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 3 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 3 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "150",
+      "slug": "150-alpine-gear-4-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 4x3m",
+      "published": true,
+      "title": "Alpine Gear 4 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 4,
+        "depth": 3,
+        "area": 12
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 4 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 4 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "151",
+      "slug": "151-alpine-gear-5-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 5x3m",
+      "published": true,
+      "title": "Alpine Gear 5 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 5,
+        "depth": 3,
+        "area": 15
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 5 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 5 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "152",
+      "slug": "152-alpine-gear-4-4-m",
+      "source": "#01# Alpin Design/Alpine Gear - 4x4m",
+      "published": true,
+      "title": "Alpine Gear 4 × 4 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 4,
+        "depth": 4,
+        "area": 16
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 4 × 4 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 4 × 4 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "153",
+      "slug": "153-alpine-gear-6-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 6x3m",
+      "published": true,
+      "title": "Alpine Gear 6 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 6,
+        "depth": 3,
+        "area": 18
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 6 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 6 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "154",
+      "slug": "154-alpine-gear-7-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 7x3m",
+      "published": true,
+      "title": "Alpine Gear 7 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 3,
+        "area": 21
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 7 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 7 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "155",
+      "slug": "155-alpine-gear-4-6-m",
+      "source": "#01# Alpin Design/Alpine Gear - 4x6m",
+      "published": true,
+      "title": "Alpine Gear 4 × 6 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 4,
+        "depth": 6,
+        "area": 24
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 4 × 6 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 4 × 6 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "156",
+      "slug": "156-alpine-gear-8-3-m",
+      "source": "#01# Alpin Design/Alpine Gear - 8x3m",
+      "published": true,
+      "title": "Alpine Gear 8 × 3 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 3,
+        "area": 24
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 8 × 3 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 8 × 3 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "157",
+      "slug": "157-alpine-gear-4-7-m",
+      "source": "#01# Alpin Design/Alpine Gear - 4x7m",
+      "published": true,
+      "title": "Alpine Gear 4 × 7 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 4,
+        "depth": 7,
+        "area": 28
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 4 × 7 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 4 × 7 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "158",
+      "slug": "158-alpine-gear-5-6-m",
+      "source": "#01# Alpin Design/Alpine Gear - 5x6m",
+      "published": true,
+      "title": "Alpine Gear 5 × 6 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 5,
+        "depth": 6,
+        "area": 30
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 5 × 6 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 5 × 6 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "159",
+      "slug": "159-alpine-gear-4-8-m",
+      "source": "#01# Alpin Design/Alpine Gear - 4x8m",
+      "published": true,
+      "title": "Alpine Gear 4 × 8 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 4,
+        "depth": 8,
+        "area": 32
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 4 × 8 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 4 × 8 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "160",
+      "slug": "160-alpine-gear-5-7-m",
+      "source": "#01# Alpin Design/Alpine Gear - 5x7m",
+      "published": true,
+      "title": "Alpine Gear 5 × 7 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 5,
+        "depth": 7,
+        "area": 35
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 5 × 7 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 5 × 7 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "161",
+      "slug": "161-alpine-gear-5-8-m",
+      "source": "#01# Alpin Design/Alpine Gear - 5x8m - Korrigierte Version",
+      "published": true,
+      "title": "Alpine Gear 5 × 8 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 5,
+        "depth": 8,
+        "area": 40
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 5 × 8 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 5 × 8 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "162",
+      "slug": "162-alpine-gear-6-7-m",
+      "source": "#01# Alpin Design/Alpine Gear - 6x7m",
+      "published": true,
+      "title": "Alpine Gear 6 × 7 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 6,
+        "depth": 7,
+        "area": 42
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 6 × 7 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 6 × 7 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "163",
+      "slug": "163-alpine-gear-7-7-m",
+      "source": "#01# Alpin Design/Alpine Gear - 7x7m",
+      "published": true,
+      "title": "Alpine Gear 7 × 7 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 7,
+        "depth": 7,
+        "area": 49
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 7 × 7 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 7 × 7 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "164",
+      "slug": "164-alpine-gear-8-7-m",
+      "source": "#01# Alpin Design/Alpine Gear - 8x7m",
+      "published": true,
+      "title": "Alpine Gear 8 × 7 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 7,
+        "area": 56
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 8 × 7 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 8 × 7 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
+            "en": "Electrical plan"
+          }
+        }
+      ],
+      "clip": null
+    },
+    {
+      "id": "165",
+      "slug": "165-alpine-gear-8-8-m",
+      "source": "#01# Alpin Design/Alpine Gear - 8x8m",
+      "published": true,
+      "title": "Alpine Gear 8 × 8 m",
+      "tags": [
+        "light",
+        "product"
+      ],
+      "size": {
+        "width": 8,
+        "depth": 8,
+        "area": 64
+      },
+      "floors": 1,
+      "height": null,
+      "standType": "corner",
+      "description": {
+        "de": "Größenvariante des Outdoor-Stands Alpine Gear als Eckstand mit 8 × 8 m: Bergpanorama, Regale mit Jacken, Rucksäcken und Helmen, Skier an der Wand. Darüber eine schwarze Blende mit orangefarbener Lichtkante, vorn eine weiße Theke und eine Figur im Skioutfit.",
+        "en": "Size variant of the Alpine Gear outdoor stand as a 8 × 8 m corner stand: mountain panorama, shelves of jackets, backpacks and helmets, skis on the wall. A black fascia with an orange light edge above, a white counter and a figure in ski gear in front."
+      },
+      "materials": null,
+      "colours": null,
+      "renderings": [
+        {
+          "file": "render-1.webp",
+          "label": {
+            "de": "Perspektive vorne links",
+            "en": "Front left perspective"
+          }
+        },
+        {
+          "file": "render-2.webp",
+          "label": {
+            "de": "Frontalansicht",
+            "en": "Front view"
+          }
+        },
+        {
+          "file": "render-3.webp",
+          "label": {
+            "de": "Perspektive vorne rechts",
+            "en": "Front right perspective"
+          }
+        },
+        {
+          "file": "render-4.webp",
+          "label": {
+            "de": "Rückansicht",
+            "en": "Rear view"
+          }
+        },
+        {
+          "file": "render-5.webp",
+          "label": {
+            "de": "Exponate, Detail",
+            "en": "Exhibits detail"
+          }
+        },
+        {
+          "file": "render-6.webp",
+          "label": {
+            "de": "Empfang, Detail",
+            "en": "Reception detail"
+          }
+        }
+      ],
+      "floorplan": {
+        "file": "floorplan.webp",
+        "label": {
+          "de": "Grundriss",
+          "en": "Floor plan"
+        }
+      },
+      "elevation": {
+        "file": "elevation.webp",
+        "label": {
+          "de": "Höhenansicht",
+          "en": "Elevation"
+        }
+      },
+      "extraPlans": [
+        {
+          "file": "electrical.webp",
+          "label": {
+            "de": "Elektrokonzept",
             "en": "Electrical plan"
           }
         }

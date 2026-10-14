@@ -3,7 +3,7 @@
  *
  *   npm run designs:build
  *   npm run designs:build -- --force       (alle Varianten neu erzeugen)
- *   npm run designs:build -- --only=007    (nur ein Design)
+ *   npm run designs:build -- --only=007    (nur ein Design; mehrere: --only=101,102,103)
  *
  * Erwartet je Design in public/media/designs/NNN/:
  *   render-1 … render-6, floorplan, elevation   (.webp, .jpg, .png oder .avif)
@@ -21,6 +21,7 @@ import type { Design, DesignEntry, DesignIndexItem, ImageInfo, MediaRef } from "
 
 const FORCE = process.argv.includes("--force");
 const ONLY = process.argv.find((a) => a.startsWith("--only="))?.slice(7);
+const ONLY_IDS = ONLY ? new Set(ONLY.split(",")) : null;
 const CONTENT_FILE = path.join(ROOT, "content", "designs.json");
 const PUBLIC_DESIGNS = path.join(ROOT, "public", "media", "designs");
 const ORIGINALS = path.join(ROOT, "media-originals");
@@ -205,14 +206,14 @@ async function buildDesign(entry: DesignEntry, index: number): Promise<Design> {
 /* ---------- Lauf ---------- */
 const t0 = Date.now();
 const results: Design[] = new Array(entries.length);
-const queue = entries.map((e, i) => ({ e, i })).filter(({ e }) => !ONLY || e.id === ONLY);
+const queue = entries.map((e, i) => ({ e, i })).filter(({ e }) => !ONLY_IDS || ONLY_IDS.has(e.id));
 const previous: Design[] = ONLY && fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, "utf8")).designs : [];
 let done = 0;
 async function worker() {
   for (let job = queue.shift(); job; job = queue.shift()) {
     results[job.i] = await buildDesign(job.e, job.i);
     done++;
-    process.stdout.write(`\r  ${done}/${ONLY ? 1 : entries.length} Designs verarbeitet`);
+    process.stdout.write(`\r  ${done}/${ONLY_IDS ? ONLY_IDS.size : entries.length} Designs verarbeitet`);
   }
 }
 await Promise.all(Array.from({ length: 3 }, worker));

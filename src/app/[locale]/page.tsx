@@ -6,7 +6,7 @@ import heroAtrium from "../../../public/hero/atrium/hero.json";
 import heroCopper from "../../../public/hero/copper/hero.json";
 import heroViolet from "../../../public/hero/violet/hero.json";
 import heroCanopy from "../../../public/hero/canopy/hero.json";
-import { getDesigns, getGalleryItems, getMediaDesign, releaseInfo, sizeRange } from "@/lib/designs";
+import { getDesigns, getGalleryItems, getMediaDesign, sizeRange } from "@/lib/designs";
 import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
 import { HeroScrub, type HeroFilm } from "@/components/hero/HeroScrub";
@@ -23,13 +23,12 @@ import { ContactAside } from "@/components/contact/ContactAside";
 import { Link } from "@/i18n/navigation";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { FxWords } from "@/components/kinetic/FxWords";
-import { DailyDrop } from "@/components/gallery/DailyDrop";
 import { pick } from "@/i18n/locales";
 
 /**
  * Startseite: Hero-Film, Leitsatz, Leistungen & Zusammenarbeit, Entwürfe, Messen (nächste Termine),
  * Über mich, Hobbys, Fragen, Kontakt. Der vollständige Messekalender mit Messegeländen liegt auf /messen.
- * Jeden Morgen um 5:00 Uhr kommt ein Design dazu (lib/release.ts): Seite alle 5 Minuten erneuern.
+ * Seite alle 5 Minuten erneuern (Messetermine in der Vorschau).
  */
 export const revalidate = 300;
 
@@ -41,7 +40,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const note = pick(site.visualisationNote, locale);
 
   const galleryItems = getGalleryItems();
-  const release = releaseInfo();
   const range = sizeRange();
   // geschützte Leerzeichen: Maße nicht umbrechen
   const rangeText = { min: `${range.min.width}\u00a0×\u00a0${range.min.depth}\u00a0m`, max: `${range.max.width}\u00a0×\u00a0${range.max.depth}\u00a0m` };
@@ -123,11 +121,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           <div className="max-w-[920px]" data-reveal>
             <p className="eyebrow">{t("gallery.eyebrow")}</p>
             <h2 id="gallery-title" className="font-display mt-4 text-6xl font-semibold leading-none md:text-8xl"><Kinetic text={t("gallery.title")} stomp /></h2>
-            <p className="mt-6 text-lg text-fg-muted"><FxWords text={t("gallery.lead", { ...rangeText, count: release.released, total: release.total })} delay={350} /></p>
+            <p className="mt-6 text-lg text-fg-muted"><FxWords text={t("gallery.lead", { ...rangeText, count: galleryItems.length, total: galleryItems.length })} delay={350} /></p>
           </div>
-          <DailyDrop info={release} className="w-full" />
         </div>
-        <Gallery items={galleryItems} dayPick={release.latest.slug} />
+        <Gallery items={galleryItems} />
 
         {/* Crawlbare Liste aller Designs (semantisches HTML) */}
         <div className="container-x mt-12">

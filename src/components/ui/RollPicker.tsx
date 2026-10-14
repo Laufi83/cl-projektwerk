@@ -34,6 +34,10 @@ type Props = {
   placement?: "below" | "left";
   /** Zeile unter dem Rad zum Eintrag in der Mitte (z. B. Beschreibung des Layouts) */
   detail?: (i: number) => ReactNode;
+  /** Vorschau: Wert für data-layout-preview am Menü (Farben und Schriften des Eintrags in der Mitte) */
+  preview?: (i: number) => string;
+  /** großes Bild hinter dem Rad je Eintrag (blendet beim Rollen über) */
+  backdrop?: (i: number) => string;
   onChoose: (i: number, el: HTMLElement | null) => void;
   onClose: (refocus?: boolean) => void;
 };
@@ -43,7 +47,7 @@ const STEP = 13;
 const R = 230;
 const W = 320, H = 264;
 
-export function RollPicker({ anchor, items, current, title, hint, currentLabel, placement = "below", detail, onChoose, onClose }: Props) {
+export function RollPicker({ anchor, items, current, title, hint, currentLabel, placement = "below", detail, preview, backdrop, onChoose, onClose }: Props) {
   const N = items.length;
   const wrap = useCallback((d: number) => ((((d + N / 2) % N) + N) % N) - N / 2, [N]);
   const mod = useCallback((i: number) => ((i % N) + N) % N, [N]);
@@ -230,9 +234,20 @@ export function RollPicker({ anchor, items, current, title, hint, currentLabel, 
       role="dialog"
       aria-label={title}
       data-lenis-prevent
+      data-layout-preview={preview?.(focus)}
       className={`roll-picker fixed z-[80] overflow-hidden rounded-[1.4rem] border border-line-strong bg-bg/90 shadow-[0_28px_70px_-24px_rgba(0,0,0,.85)] backdrop-blur-2xl transition-[opacity,transform] duration-500 ease-fluid ${shown ? "opacity-100" : `scale-[.97] opacity-0 ${placement === "left" ? "translate-x-2" : "-translate-y-2"}`}`}
       style={{ top: place.top, left: place.left, width: place.width, transformOrigin: placement === "left" ? "right center" : "top right" }}
     >
+      {backdrop && (
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          {items.map((it, i) => (
+            <img key={it.key} src={backdrop(i)} alt="" decoding="async"
+              className={`absolute inset-0 h-full w-full object-cover transition-[opacity,transform] duration-700 ease-fluid ${i === focus ? "scale-100 opacity-60" : "scale-110 opacity-0"}`} />
+          ))}
+          <span className="absolute inset-0 bg-[linear-gradient(90deg,var(--bg)_8%,color-mix(in_oklab,var(--bg)_55%,transparent)_55%,color-mix(in_oklab,var(--bg)_20%,transparent))] transition-colors duration-500" />
+          <span className="absolute inset-x-0 bottom-0 h-1/2 bg-[linear-gradient(transparent,var(--bg))] transition-colors duration-500" />
+        </div>
+      )}
       <p className="eyebrow absolute left-[18px] top-3.5 z-10 text-[10px]">{title}</p>
       {reduced ? (
         <ul role="radiogroup" aria-label={title} className="grid gap-1 p-3 pb-8 pt-10" onKeyDown={onKey}>
@@ -259,7 +274,7 @@ export function RollPicker({ anchor, items, current, title, hint, currentLabel, 
         </ul>
       ) : (
         <div
-          className="relative touch-none select-none [mask-image:linear-gradient(transparent,#000_20%,#000_80%,transparent)]"
+          className="relative z-[1] touch-none select-none [mask-image:linear-gradient(transparent,#000_20%,#000_80%,transparent)]"
           style={{ height: H }}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
@@ -302,8 +317,8 @@ export function RollPicker({ anchor, items, current, title, hint, currentLabel, 
           ))}
         </div>
       )}
-      {detail && !reduced && <p className="mx-4 -mt-4 mb-8 min-h-[30px] text-center text-[11px] leading-snug text-fg-muted">{detail(focus)}</p>}
-      <p className="pointer-events-none absolute inset-x-0 bottom-2.5 text-center text-[10px] text-fg-subtle">{hint}</p>
+      {detail && !reduced && <p className="relative z-[1] mx-4 -mt-4 mb-8 min-h-[30px] text-center text-[11px] leading-snug text-fg-muted">{detail(focus)}</p>}
+      <p className="pointer-events-none absolute inset-x-0 bottom-2.5 z-[1] text-center text-[10px] text-fg-subtle">{hint}</p>
     </div>,
     document.body,
   );

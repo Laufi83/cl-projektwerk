@@ -5,7 +5,7 @@
  */
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { MagnifyingGlass, Shuffle, SquaresFour, Sun, X } from "@phosphor-icons/react";
+import { MagnifyingGlass, Shuffle, SquaresFour, X } from "@phosphor-icons/react";
 import { FILTERS, pad3, thumbUrl, type FilterKey, type GalleryItem } from "./types";
 import { GridView } from "./GridView";
 import { DesignAtlas } from "./DesignAtlas";
@@ -19,7 +19,7 @@ const AtlasIcon = () => (
   </svg>
 );
 
-export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: string }) {
+export function Gallery({ items }: { items: GalleryItem[] }) {
   const t = useTranslations("gallery");
   const overlay = useDesignOverlay();
   const [filter, setFilter] = useState<FilterKey>("all");
@@ -64,10 +64,6 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
     const pool = list.length > 1 ? list.slice(1) : items;
     focusOn(pool[Math.floor(Math.random() * pool.length)].slug);
   };
-  const jump = () => {
-    const d = items.find((x) => x.slug === dayPick);
-    if (d) focusOn(d.slug);
-  };
 
   const chip = "inline-flex items-center gap-2 rounded-full border border-line-strong px-4 py-2 text-xs font-semibold transition-colors hover:border-accent";
   const toggle = `${chip} aria-pressed:border-accent aria-pressed:bg-accent aria-pressed:text-accent-contrast`;
@@ -80,7 +76,6 @@ export function Gallery({ items, dayPick }: { items: GalleryItem[]; dayPick: str
             <button type="button" onClick={() => setGrid(false)} aria-pressed={!grid} className={toggle}><AtlasIcon />{t("atlas.name")}</button>
             <button type="button" onClick={() => setGrid(true)} aria-pressed={grid} className={toggle}><SquaresFour size={16} aria-hidden />{t("grid")}</button>
             <button type="button" onClick={random} className={chip}><Shuffle size={16} aria-hidden />{t("random")}</button>
-            <button type="button" onClick={jump} className={chip}><Sun size={16} aria-hidden />{t("dayPick")}</button>
           </div>
           <SearchField value={query} onChange={search} label={t("search")} placeholder={t("searchPlaceholder")} resetLabel={t("reset")} examples={examples} />
         </div>

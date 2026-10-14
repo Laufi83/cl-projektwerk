@@ -396,3 +396,69 @@ html[data-performance="lite"] .vis-note {
   .rt-l:hover .rt-base { opacity: 0; }
   .rt-l:hover .rt-img { opacity: 1; background-image: var(--img); background-position: 35% center; }
 }
+
+/* ---------- Radio „Studio-Tuner“ (components/shell/RadioDock) ---------- */
+.radio-disc {
+  background:
+    radial-gradient(circle, hsl(var(--hue) 80% 55%) 0 26%, transparent 27%),
+    repeating-radial-gradient(circle, #16171b 0 1.5px, #0b0b0d 1.5px 3px);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / .12), 0 2px 10px rgb(0 0 0 / .5);
+}
+.radio-spin { animation: radio-spin 1.8s linear infinite; }
+@keyframes radio-spin { to { transform: rotate(1turn); } }
+.radio-eq {
+  display: inline-block; width: 14px; height: 12px;
+  background:
+    linear-gradient(var(--accent), var(--accent)) 0 100% / 3px 40% no-repeat,
+    linear-gradient(var(--accent), var(--accent)) 5.5px 100% / 3px 80% no-repeat,
+    linear-gradient(var(--accent), var(--accent)) 11px 100% / 3px 55% no-repeat;
+  animation: radio-eq .9s ease-in-out infinite alternate;
+}
+@keyframes radio-eq {
+  50% { background-size: 3px 90%, 3px 35%, 3px 75%; }
+  100% { background-size: 3px 55%, 3px 95%, 3px 30%; }
+}
+.radio-panel-in { transform-origin: 100% 100%; animation: radio-in 650ms cubic-bezier(.2, .9, .25, 1.15) both; }
+@keyframes radio-in { from { opacity: 0; transform: translateY(18px) scale(.86); filter: blur(6px); } }
+.radio-flip { animation: radio-flip 620ms cubic-bezier(.2, .8, .25, 1.2) both; transform-origin: 50% 0; }
+@keyframes radio-flip { from { opacity: 0; transform: perspective(500px) rotateX(-95deg); } }
+.radio-onair { border-color: color-mix(in oklab, var(--fg) 25%, transparent); transition: color .4s, background-color .4s, border-color .4s; }
+.radio-onair.is-on { border-color: #ff3b30; color: #fff; background: #ff3b30; box-shadow: 0 0 14px #ff3b30aa; animation: radio-onair 2.4s ease-in-out infinite; }
+@keyframes radio-onair { 50% { box-shadow: 0 0 4px #ff3b3055; } }
+.radio-play { box-shadow: 0 10px 24px -8px color-mix(in oklab, var(--accent) 80%, transparent); }
+.radio-dock[data-playing] .radio-play { animation: radio-beat 1.6s ease-out infinite; }
+@keyframes radio-beat {
+  0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 55%, transparent), 0 10px 24px -8px var(--accent); }
+  100% { box-shadow: 0 0 0 16px transparent, 0 10px 24px -8px var(--accent); }
+}
+.radio-busy::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid transparent; border-top-color: var(--accent); animation: radio-spin .9s linear infinite; }
+.radio-knob { box-shadow: 0 0 calc(var(--lvl) * 26px) calc(var(--lvl) * 2px) color-mix(in oklab, var(--accent) 35%, transparent); transition: box-shadow .3s; }
+@media (prefers-reduced-motion: reduce) {
+  .radio-spin, .radio-eq, .radio-panel-in, .radio-flip, .radio-onair.is-on, .radio-dock[data-playing] .radio-play, .radio-busy::after { animation: none; }
+}
+
+/* Radio: Musikrichtungen als Chips (aktiver Chip in der Farbe des Senders, leuchtet kurz auf) */
+.radio-chip {
+  --chip: var(--accent);
+  flex: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .3rem .7rem;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  color: var(--fg-muted);
+  transition: color .3s var(--ease-fluid), border-color .3s var(--ease-fluid), background-color .3s var(--ease-fluid), box-shadow .4s var(--ease-fluid), transform .3s var(--ease-fluid);
+}
+.radio-chip:hover { color: var(--fg); border-color: var(--chip); transform: translateY(-1px); }
+.radio-chip:focus-visible { outline: 2px solid var(--chip); outline-offset: 2px; }
+.radio-chip[aria-pressed="true"] {
+  color: #0b0b0c;
+  border-color: var(--chip);
+  background: var(--chip);
+  box-shadow: 0 0 18px -2px var(--chip);
+  animation: radio-chip-in .45s var(--ease-fluid);
+}
+@keyframes radio-chip-in { 0% { transform: scale(.86); } 60% { transform: scale(1.08); } 100% { transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .radio-chip, .radio-chip[aria-pressed="true"] { animation: none; transition: none; } }

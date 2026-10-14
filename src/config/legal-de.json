@@ -1,15 +1,15 @@
 {
   "imprint": [
     {
-      "title": "Angaben gemÃ¤ÃŸ Â§ 5 DDG",
-      "body": "{brand}\n{person}\n{address}\nDeutschland\n\nExternes Planungs- und ProjektbÃ¼ro fÃ¼r Messebau, MarkenrÃ¤ume und Innenausbau"
+      "title": "Angaben gemäß § 5 DDG",
+      "body": "{brand}\n{person}\n{address}\nDeutschland\n\nExternes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau"
     },
     {
       "title": "Kontakt",
       "body": "Telefon: {phone}\nE-Mail: {email}"
     },
     {
-      "title": "Verantwortlich fÃ¼r den Inhalt nach Â§ 18 Abs. 2 MStV",
+      "title": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV",
       "body": "{person}, {addressInline}"
     },
     {
@@ -17,66 +17,66 @@
       "body": "Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
     },
     {
-      "title": "Haftung fÃ¼r Inhalte und Links",
-      "body": "Die Inhalte dieser Website wurden mit grÃ¶ÃŸter Sorgfalt erstellt. FÃ¼r die Richtigkeit, VollstÃ¤ndigkeit und AktualitÃ¤t kann ich jedoch keine GewÃ¤hr Ã¼bernehmen. Die Messetermine im Messekalender entstammen den Angaben der jeweiligen Veranstalter; maÃŸgeblich sind deren Websites.\nFÃ¼r Inhalte externer Websites, auf die verlinkt wird, sind ausschlieÃŸlich deren Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren keine RechtsverstÃ¶ÃŸe erkennbar. Bei Bekanntwerden von Rechtsverletzungen entferne ich entsprechende Links umgehend."
+      "title": "Haftung für Inhalte und Links",
+      "body": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität kann ich jedoch keine Gewähr übernehmen. Die Messetermine im Messekalender entstammen den Angaben der jeweiligen Veranstalter; maßgeblich sind deren Websites.\nFür Inhalte externer Websites, auf die verlinkt wird, sind ausschließlich deren Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen entferne ich entsprechende Links umgehend."
     },
     {
       "title": "Urheberrecht und Bildnachweis",
-      "body": "Texte, EntwÃ¼rfe, Visualisierungen, PlÃ¤ne, Konzeptanimationen und Fotos auf dieser Website sind urheberrechtlich geschÃ¼tzt (Â© Christof Laufersweiler), soweit nicht anders angegeben. VervielfÃ¤ltigung, Bearbeitung und Verwendung auÃŸerhalb dieser Website nur mit vorheriger schriftlicher Zustimmung.\nBeispielclips im Bereich â€žBildschirmflÃ¤chen in der Planungâ€œ: Adobe Stock (lizenziert); sie sind keine Projekte von CL Projektwerk.\nGeografische Grunddaten der 3D-Weltkugel: Natural Earth (gemeinfrei). LÃ¤nderflaggen: Projekt flag-icons (MIT-Lizenz)."
+      "body": "Texte, Entwürfe, Visualisierungen, Pläne, Konzeptanimationen und Fotos auf dieser Website sind urheberrechtlich geschützt (© Christof Laufersweiler), soweit nicht anders angegeben. Vervielfältigung, Bearbeitung und Verwendung außerhalb dieser Website nur mit vorheriger schriftlicher Zustimmung.\nBeispielclips im Bereich „Bildschirmflächen in der Planung“: Adobe Stock (lizenziert); sie sind keine Projekte von CL Projektwerk.\nGeografische Grunddaten der 3D-Weltkugel: Natural Earth (gemeinfrei). Länderflaggen: Projekt flag-icons (MIT-Lizenz)."
     },
     {
       "title": "Hinweis zu Visualisierungen",
-      "body": "Alle Renderings und Animationen auf dieser Website sind Visualisierungen von Entwurfskonzepten (teilweise digital bzw. KI-gestÃ¼tzt erstellt). Sie zeigen keine realisierten MessestÃ¤nde und sind kein Nachweis eines ausgefÃ¼hrten Projekts."
+      "body": "Alle Renderings und Animationen auf dieser Website sind Visualisierungen von Entwurfskonzepten (teilweise digital bzw. KI-gestützt erstellt). Sie zeigen keine realisierten Messestände und sind kein Nachweis eines ausgeführten Projekts."
     },
     {
       "title": "Projekterfahrung und Marken",
-      "body": "Die unter â€žProjekterfahrung aus frÃ¼herer TÃ¤tigkeitâ€œ genannten Beispiele stammen aus meiner frÃ¼heren TÃ¤tigkeit als angestellter Projektleiter. Es sind keine Projekte von CL Projektwerk; zwischen den genannten Unternehmen und CL Projektwerk besteht keine Auftraggeberbeziehung. Genannte Marken und Firmennamen gehÃ¶ren ihren jeweiligen Inhabern."
+      "body": "Die unter „Projekterfahrung aus früherer Tätigkeit“ genannten Beispiele stammen aus meiner früheren Tätigkeit als angestellter Projektleiter. Es sind keine Projekte von CL Projektwerk; zwischen den genannten Unternehmen und CL Projektwerk besteht keine Auftraggeberbeziehung. Genannte Marken und Firmennamen gehören ihren jeweiligen Inhabern."
     }
   ],
   "privacy": [
     {
       "title": "1. Verantwortlicher",
-      "body": "Verantwortlich fÃ¼r die Datenverarbeitung auf dieser Website (Art. 4 Nr. 7 DSGVO):\n{brand}\n{person}\n{address}\nDeutschland\nTelefon: {phone}\nE-Mail: {email}\n\nEin Datenschutzbeauftragter ist nicht bestellt, da hierzu keine gesetzliche Pflicht besteht."
+      "body": "Verantwortlich für die Datenverarbeitung auf dieser Website (Art. 4 Nr. 7 DSGVO):\n{brand}\n{person}\n{address}\nDeutschland\nTelefon: {phone}\nE-Mail: {email}\n\nEin Datenschutzbeauftragter ist nicht bestellt, da hierzu keine gesetzliche Pflicht besteht."
     },
     {
-      "title": "2. Ãœberblick",
-      "body": "Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken, nutzt keine Tracking-, Statistik- oder Marketingdienste und bindet keine Social-Media-Plugins ein. Personenbezogene Daten werden nur verarbeitet, soweit dies fÃ¼r die Bereitstellung der Website und die Bearbeitung Ihrer Anfragen erforderlich ist."
+      "title": "2. Überblick",
+      "body": "Diese Website setzt keine Cookies zu Analyse- oder Werbezwecken, nutzt keine Tracking-, Statistik- oder Marketingdienste und bindet keine Social-Media-Plugins ein. Personenbezogene Daten werden nur verarbeitet, soweit dies für die Bereitstellung der Website und die Bearbeitung Ihrer Anfragen erforderlich ist."
     },
     {
       "title": "3. Hosting und Server-Logfiles",
-      "body": "{hosting} Beim Aufruf jeder Seite verarbeitet der Server automatisch technische Zugriffsdaten: IP-Adresse, Datum und Uhrzeit, abgerufene Seite bzw. Datei, Ã¼bertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem. Dies ist fÃ¼r die Auslieferung der Website, ihre StabilitÃ¤t und Sicherheit (z. B. Abwehr von Angriffen) erforderlich. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt im sicheren und fehlerfreien Betrieb der Website. Die Website ist für die Serverregion Frankfurt konfiguriert. Informationen des Anbieters zur Datenverarbeitung und Auftragsverarbeitung finden Sie unter https://render.com/privacy und https://render.com/dpa. Die Logfiles werden nach den LÃ¶schfristen des Hosters automatisch gelÃ¶scht; eine ZusammenfÃ¼hrung mit anderen Datenquellen findet nicht statt."
+      "body": "{hosting} Beim Aufruf jeder Seite verarbeitet der Server automatisch technische Zugriffsdaten: IP-Adresse, Datum und Uhrzeit, abgerufene Seite bzw. Datei, übertragene Datenmenge, Referrer-URL, Browsertyp und Betriebssystem. Dies ist für die Auslieferung der Website, ihre Stabilität und Sicherheit (z. B. Abwehr von Angriffen) erforderlich. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein berechtigtes Interesse liegt im sicheren und fehlerfreien Betrieb der Website. Die Website ist für die Serverregion Frankfurt konfiguriert. Informationen des Anbieters zur Datenverarbeitung und Auftragsverarbeitung finden Sie unter https://render.com/privacy und https://render.com/dpa. Die Logfiles werden nach den Löschfristen des Hosters automatisch gelöscht; eine Zusammenführung mit anderen Datenquellen findet nicht statt."
     },
     {
-      "title": "4. Anfrage- und RÃ¼ckrufformular, Kontakt per E-Mail, Telefon oder WhatsApp",
-      "body": "Wenn Sie das Anfrage- oder RÃ¼ckrufformular nutzen, verarbeite ich die von Ihnen eingegebenen Angaben (z. B. Messe, Veranstaltung oder Projekt, Projektart, Ort, Termin, FlÃ¤chengrÃ¶ÃŸe, vorhandene Unterlagen, benÃ¶tigte Planungsleistung, gewÃ¼nschter Umfang, Budgetrahmen, Name, Firma, E-Mail-Adresse, Telefonnummer, Nachricht und gemerkte EntwÃ¼rfe). Die Angaben werden per verschlÃ¼sselter Verbindung an meinen Server Ã¼bermittelt und von dort als E-Mail an mein Postfach ({email}, E-Mail-Hosting: {mailHosting}) zugestellt. Eine automatische BestÃ¤tigung an Sie wird nicht versendet. Dasselbe gilt sinngemÃ¤ÃŸ, wenn Sie mich direkt per E-Mail, Telefon oder WhatsApp kontaktieren. Bei WhatsApp gelten zusÃ¤tzlich die Datenschutzbestimmungen der WhatsApp Ireland Ltd.; die Nutzung ist freiwillig, alternativ erreichen Sie mich per E-Mail oder Telefon.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung bzw. DurchfÃ¼hrung eines Vertrags) sowie Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie jederzeit mit Wirkung fÃ¼r die Zukunft widerrufen kÃ¶nnen. Ihre Daten werden gelÃ¶scht, sobald die Anfrage abschlieÃŸend bearbeitet ist und kein Auftrag zustande kommt, spÃ¤testens nach 12 Monaten. Kommt ein Auftrag zustande, gelten die gesetzlichen Aufbewahrungsfristen (bis zu 10 Jahre, Â§ 147 AO, Â§ 257 HGB).\n\nZum Schutz vor Spam enthÃ¤lt das Formular ein unsichtbares PrÃ¼ffeld und eine ZeitprÃ¼fung; zur Begrenzung massenhafter Anfragen wird die IP-Adresse hÃ¶chstens 10 Minuten im Arbeitsspeicher des Servers gehalten und nicht dauerhaft gespeichert (Art. 6 Abs. 1 lit. f DSGVO)."
+      "title": "4. Anfrage- und Rückrufformular, Kontakt per E-Mail, Telefon oder WhatsApp",
+      "body": "Wenn Sie das Anfrage- oder Rückrufformular nutzen, verarbeite ich die von Ihnen eingegebenen Angaben (z. B. Messe, Veranstaltung oder Projekt, Projektart, Ort, Termin, Flächengröße, vorhandene Unterlagen, benötigte Planungsleistung, gewünschter Umfang, Budgetrahmen, Name, Firma, E-Mail-Adresse, Telefonnummer, Nachricht und gemerkte Entwürfe). Die Angaben werden per verschlüsselter Verbindung an meinen Server übermittelt und von dort als E-Mail an mein Postfach ({email}, E-Mail-Hosting: {mailHosting}) zugestellt. Eine automatische Bestätigung an Sie wird nicht versendet. Dasselbe gilt sinngemäß, wenn Sie mich direkt per E-Mail, Telefon oder WhatsApp kontaktieren. Bei WhatsApp gelten zusätzlich die Datenschutzbestimmungen der WhatsApp Ireland Ltd.; die Nutzung ist freiwillig, alternativ erreichen Sie mich per E-Mail oder Telefon.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Anbahnung bzw. Durchführung eines Vertrags) sowie Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, die Sie jederzeit mit Wirkung für die Zukunft widerrufen können. Ihre Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und kein Auftrag zustande kommt, spätestens nach 12 Monaten. Kommt ein Auftrag zustande, gelten die gesetzlichen Aufbewahrungsfristen (bis zu 10 Jahre, § 147 AO, § 257 HGB).\n\nZum Schutz vor Spam enthält das Formular ein unsichtbares Prüffeld und eine Zeitprüfung; zur Begrenzung massenhafter Anfragen wird die IP-Adresse höchstens 10 Minuten im Arbeitsspeicher des Servers gehalten und nicht dauerhaft gespeichert (Art. 6 Abs. 1 lit. f DSGVO)."
     },
     {
       "title": "5. Speicherung im Browser (localStorage)",
-      "body": "Damit die Website Ihre Einstellungen behÃ¤lt, speichert sie folgende Angaben ausschlieÃŸlich lokal in Ihrem Browser: Ihre gemerkten EntwÃ¼rfe (â€žMeine Auswahlâ€œ), das gewÃ¤hlte Layout, die gewÃ¤hlte Sprache, Radio-Einstellungen (Sender, LautstÃ¤rke) und Ihre Auswahl im Hinweis zu Cookies und Einstellungen. Diese Daten werden nicht an mich oder Dritte Ã¼bertragen. Die Speicherung ist fÃ¼r die von Ihnen gewÃ¼nschten Funktionen unbedingt erforderlich (Â§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO). Sie kÃ¶nnen sie jederzeit Ã¼ber die Einstellungen Ihres Browsers lÃ¶schen."
+      "body": "Damit die Website Ihre Einstellungen behält, speichert sie folgende Angaben ausschließlich lokal in Ihrem Browser: Ihre gemerkten Entwürfe („Meine Auswahl“), das gewählte Layout, die gewählte Sprache, Radio-Einstellungen (Sender, Lautstärke) und Ihre Auswahl im Hinweis zu Cookies und Einstellungen. Diese Daten werden nicht an mich oder Dritte übertragen. Die Speicherung ist für die von Ihnen gewünschten Funktionen unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. f DSGVO). Sie können sie jederzeit über die Einstellungen Ihres Browsers löschen."
     },
     {
       "title": "6. Radio-Player",
-      "body": "Der Radio-Player startet nie von selbst. Erst wenn Sie ihn aktiv einschalten, baut Ihr Browser eine Verbindung zum Stream-Server des gewÃ¤hlten Senders auf (HITRADIO RTL, ROCK ANTENNE, sunshine live oder TechnoBase.FM). Dabei erhÃ¤lt der jeweilige Anbieter technisch bedingt Ihre IP-Adresse und Angaben zu Ihrem Browser; fÃ¼r diese Verarbeitung ist der Anbieter selbst verantwortlich. Rechtsgrundlage ist Ihr ausdrÃ¼cklicher Abruf (Art. 6 Abs. 1 lit. a und f DSGVO, Â§ 25 Abs. 2 Nr. 2 TDDDG). Wenn Sie den Player nicht nutzen, findet keine Verbindung statt."
+      "body": "Der Radio-Player startet nie von selbst. Erst wenn Sie ihn aktiv einschalten, baut Ihr Browser eine Verbindung zum Stream-Server des gewählten Senders auf (Bayern 1 und Bayern 3 vom Bayerischen Rundfunk, SWR3 und SWR1 Baden-Württemberg vom Südwestrundfunk, WDR 2 und 1LIVE vom Westdeutschen Rundfunk, NDR 2 vom Norddeutschen Rundfunk – ausgeliefert über den Streamingdienst der ARD –, hr3 vom Hessischen Rundfunk, ANTENNE BAYERN, RADIO BOB!, HIT RADIO FFH, HITRADIO RTL Leipzig, bigFM, sunshine live sowie die Musikkanäle von ROCK ANTENNE, N-JOY, ANTENNE BAYERN, 80s80s, 90s90s, HIT RADIO FFH und RPR1). Dabei erhält der jeweilige Anbieter technisch bedingt Ihre IP-Adresse und Angaben zu Ihrem Browser; für diese Verarbeitung ist der Anbieter selbst verantwortlich. Rechtsgrundlage ist Ihr ausdrücklicher Abruf (Art. 6 Abs. 1 lit. a und f DSGVO, § 25 Abs. 2 Nr. 2 TDDDG). Wenn Sie den Player nicht nutzen, findet keine Verbindung statt. Die Pegelanzeige wird ausschließlich lokal in Ihrem Browser aus dem empfangenen Ton berechnet; dabei werden keine Daten übertragen."
     },
     {
       "title": "7. Schriftarten, Bilder, Videos, Karten- und Flaggendaten",
-      "body": "Alle Schriftarten sind lokal auf dem Server dieser Website eingebunden. Beim Seitenaufruf wird keine Verbindung zu Google oder anderen Schriftanbietern hergestellt. Bilder, Videos, LÃ¤nderflaggen und die Geodaten der 3D-Weltkugel werden ebenfalls von dieser Website bzw. ihrem Hoster ausgeliefert; es werden keine externen Videoplattformen (z. B. YouTube) und keine externen Kartendienste eingebunden."
+      "body": "Alle Schriftarten sind lokal auf dem Server dieser Website eingebunden. Beim Seitenaufruf wird keine Verbindung zu Google oder anderen Schriftanbietern hergestellt. Bilder, Videos, Länderflaggen und die Geodaten der 3D-Weltkugel werden ebenfalls von dieser Website bzw. ihrem Hoster ausgeliefert; es werden keine externen Videoplattformen (z. B. YouTube) und keine externen Kartendienste eingebunden."
     },
     {
       "title": "8. Teilen-Funktion und externe Links",
-      "body": "Die SchaltflÃ¤chen zum Teilen per WhatsApp oder LinkedIn sind einfache Links. Erst wenn Sie darauf klicken, wird eine Verbindung zum jeweiligen Anbieter hergestellt; vorher werden keine Daten an diese Dienste Ã¼bertragen. Dasselbe gilt fÃ¼r die Links zu den Websites der Messeveranstalter im Messekalender."
+      "body": "Die Schaltflächen zum Teilen per WhatsApp oder LinkedIn sind einfache Links. Erst wenn Sie darauf klicken, wird eine Verbindung zum jeweiligen Anbieter hergestellt; vorher werden keine Daten an diese Dienste übertragen. Dasselbe gilt für die Links zu den Websites der Messeveranstalter im Messekalender."
     },
     {
       "title": "9. Ihre Rechte",
-      "body": "Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), LÃ¶schung (Art. 17), EinschrÃ¤nkung der Verarbeitung (Art. 18), DatenÃ¼bertragbarkeit (Art. 20) sowie auf Widerruf erteilter Einwilligungen mit Wirkung fÃ¼r die Zukunft (Art. 7 Abs. 3). Soweit die Verarbeitung auf Art. 6 Abs. 1 lit. f DSGVO beruht, kÃ¶nnen Sie ihr aus GrÃ¼nden, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO). Eine formlose Nachricht an {email} genÃ¼gt.\n\nAuÃŸerdem kÃ¶nnen Sie sich bei einer Datenschutz-AufsichtsbehÃ¶rde beschweren (Art. 77 DSGVO), zum Beispiel bei der fÃ¼r mich zustÃ¤ndigen BehÃ¶rde: Die SÃ¤chsische Datenschutz- und Transparenzbeauftragte, DevrientstraÃŸe 5, 01067 Dresden."
+      "body": "Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie auf Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3). Soweit die Verarbeitung auf Art. 6 Abs. 1 lit. f DSGVO beruht, können Sie ihr aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO). Eine formlose Nachricht an {email} genügt.\n\nAußerdem können Sie sich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), zum Beispiel bei der für mich zuständigen Behörde: Die Sächsische Datenschutz- und Transparenzbeauftragte, Devrientstraße 5, 01067 Dresden."
     },
     {
       "title": "10. Keine automatisierte Entscheidungsfindung",
-      "body": "Eine automatisierte Entscheidungsfindung einschlieÃŸlich Profiling (Art. 22 DSGVO) findet nicht statt."
+      "body": "Eine automatisierte Entscheidungsfindung einschließlich Profiling (Art. 22 DSGVO) findet nicht statt."
     },
     {
       "title": "11. Standortabfrage in der Entfernungsansicht",
-      "body": "Im Bereich â€žMessekalenderâ€œ kÃ¶nnen Sie freiwillig Ihren Standort als Startpunkt fÃ¼r die Luftlinien-Anzeige verwenden. Erst nach Ihrem Klick fragt Ihr Browser Ihre Zustimmung ab (Art. 6 Abs. 1 lit. a DSGVO, Â§ 25 Abs. 1 TDDDG). Die Koordinaten werden ausschlieÃŸlich in Ihrem Browser mit den Koordinaten der MessestÃ¤dte verglichen; sie werden weder an mich noch an Dritte Ã¼bertragen und nicht gespeichert. Lokal gemerkt wird nur, dass Sie die Funktion genutzt haben (Eintrag â€žorigin:v1â€œ im localStorage), damit sie beim nÃ¤chsten Besuch ohne erneute Nachfrage angewendet werden kann, sofern Ihr Browser die Freigabe noch hÃ¤lt. Sie kÃ¶nnen die Freigabe jederzeit in den Einstellungen Ihres Browsers widerrufen oder Ã¼ber â€žZurÃ¼ckâ€œ zum Standardstartpunkt Leipzig zurÃ¼ckkehren."
+      "body": "Im Bereich „Messekalender“ können Sie freiwillig Ihren Standort als Startpunkt für die Luftlinien-Anzeige verwenden. Erst nach Ihrem Klick fragt Ihr Browser Ihre Zustimmung ab (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Die Koordinaten werden ausschließlich in Ihrem Browser mit den Koordinaten der Messestädte verglichen; sie werden weder an mich noch an Dritte übertragen und nicht gespeichert. Lokal gemerkt wird nur, dass Sie die Funktion genutzt haben (Eintrag „origin:v1“ im localStorage), damit sie beim nächsten Besuch ohne erneute Nachfrage angewendet werden kann, sofern Ihr Browser die Freigabe noch hält. Sie können die Freigabe jederzeit in den Einstellungen Ihres Browsers widerrufen oder über „Zurück“ zum Standardstartpunkt Leipzig zurückkehren."
     }
   ]
 }
