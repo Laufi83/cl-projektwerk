@@ -10,7 +10,7 @@ import { languageAlternates, localizedPath } from "@/i18n/locales";
 
 /**
  * Detailseite je Messegelände – eine Route für alle Standorte der kanonischen Datenquelle
- * (src/data/messebau/venues.global.v1.json). Nicht belegte Felder erscheinen als „nicht belegt – prüfen“,
+ * (src/data/messebau/venues.global.v2.json). Nicht belegte Felder erscheinen als „nicht belegt – prüfen“,
  * dazu Prüfstufe, Vollständigkeit und die priorisierten Datenlücken.
  */
 export const dynamicParams = false;
