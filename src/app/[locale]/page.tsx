@@ -58,7 +58,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const heroFilms: HeroFilm[] = [
     ...[hero001, hero021].map((h) => {
       const d = getMediaDesign(h.id) ?? d1;
-      return { id: h.id, label: `${h.id} ${d.title}`, clip: designAsset(h.id, "clip.mp4"), desktop: h.desktop, mobile: h.mobile };
+      // Ruhephase des Heros: belegte Eckdaten des Entwurfs, Link nur bei veröffentlichtem Entwurf
+      const facts = [
+        d.size && `${d.size.width} × ${d.size.depth} m`,
+        d.standType && t(`detail.standTypes.${d.standType}`),
+        d.floors && d.floors > 1 && t("detail.floorsValue", { count: d.floors }),
+      ].filter(Boolean).join(" · ");
+      const slug = galleryItems.find((g) => g.id === d.id)?.slug ?? null;
+      return { id: h.id, label: `${h.id} ${d.title}`, clip: designAsset(h.id, "clip.mp4"), desktop: h.desktop, mobile: h.mobile, info: { facts, slug } };
     }),
     ...[heroLumen, heroAtrium, heroCopper, heroViolet, heroCanopy].map((h) => ({
       id: h.id, label: "", clip: mediaUrl(`custom/${h.id}-aufbau.mp4`), desktop: h.desktop, mobile: h.mobile,

@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, Play } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { scrollToTarget } from "@/lib/scroll";
+import { Link } from "@/i18n/navigation";
 import { mediaUrl } from "@/lib/media";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
@@ -20,10 +21,13 @@ type Seq = { count: number; width: number; height: number };
  * Layouts mit `sharedFilm` zeigen stattdessen das gemeinsame Scroll-Video (die Sequenz bleibt Ersatz, falls es fehlt).
  * `label` steht vor dem Visualisierungshinweis (z. B. „021 Lamello“), `clip` spielt der Ersatz-Loop bei reduzierter Bewegung.
  */
-export type HeroFilm = { id: string; label: string; clip: string; desktop: Seq; mobile: Seq };
+/** `info`: Eckdaten des Entwurfs für die Ruhephase (Maße · Standart · Geschosse) und Slug der Entwurfsseite */
+export type HeroFilm = { id: string; label: string; clip: string; desktop: Seq; mobile: Seq; info?: { facts: string; slug: string | null } };
 type Props = { films: HeroFilm[]; visNote: string };
 
 const FOCUS_X = 0.42; // Bildmitte des Stands in den Querformat-Frames (Hochformat-Frames sind schon zentriert)
+/** Anteil des Scrollwegs für den Aufbau; danach 3D-Headline und eine Ruhephase mit freiem Blick auf den fertigen Stand */
+const BUILD = 0.7;
 const noop = () => () => {};
 function weakConnection() {
   const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
@@ -40,6 +44,11 @@ export function HeroScrub({ films, visNote }: Props) {
   const bar = useRef<HTMLDivElement>(null);
   const pct = useRef<HTMLSpanElement>(null);
   const [done, setDone] = useState(false);
+  // Stand fertig aufgebaut → 3D-Headline läuft; danach „clean“: Headline weg, Abdunklung zurückgenommen
+  const [built, setBuilt] = useState(false);
+  const [clean, setClean] = useState(false);
+  const bigText = useRef<HTMLParagraphElement>(null);
+  const media = useRef<HTMLDivElement>(null);
   const hydrated = useSyncExternalStore(noop, () => true, () => false);
   const reduce = useReducedMotion();
   const lite = useLiteMode();
@@ -52,6 +61,12 @@ export function HeroScrub({ films, visNote }: Props) {
   // Gemeinsames Scroll-Video nur für Layouts ohne eigenen Film (Wood und Lumen zeigen ihre eigene Sequenz)
   const shared = cur.sharedFilm;
   const useVideo = shared && customReady;
+
+  // Ruhephase: langsamer Zoom auf den fertigen Stand (an den Scrollweg gebunden)
+  const holdZoom = (progress: number) => {
+    const h = Math.max(0, (progress - BUILD) / (1 - BUILD));
+    if (media.current) media.current.style.transform = h > 0 ? `scale(${1 + 0.08 * h})` : "";
+  };
 
   useEffect(() => {
     if (mode !== "scrub" || useVideo) return;
@@ -125,13 +140,16 @@ export function HeroScrub({ films, visNote }: Props) {
       end: "bottom bottom",
       scrub: true,
       onUpdate: (self) => {
-        const p = self.progress;
-        current = Math.min(seq.count - 1, Math.round(p * 1.08 * (seq.count - 1)));
+        const b = Math.min(1, self.progress / BUILD);
+        holdZoom(self.progress);
+        current = Math.round(b * (seq.count - 1));
         draw();
-        if (bar.current) bar.current.style.transform = `scaleX(${Math.min(1, p * 1.08)})`;
-        const v = Math.min(100, Math.round(p * 108));
+        if (bar.current) bar.current.style.transform = `scaleX(${b})`;
+        const v = Math.round(b * 100);
         if (pct.current && v !== shownPct) { shownPct = v; pct.current.textContent = String(v); }
-        setDone(p > 0.86);
+        setDone(b > 0.86);
+        setBuilt(b >= 0.995);
+        if (b < 0.995) setClean(false);
       },
     });
     // Beim Layoutwechsel: Leinwand leeren, bis der neue Film da ist (Poster scheint durch)
@@ -153,7 +171,8 @@ export function HeroScrub({ films, visNote }: Props) {
     video.pause();
     let shownPct = -1;
     const update = (progress: number) => {
-      const p = Math.min(1, Math.max(0, progress * 1.08));
+      const p = Math.min(1, Math.max(0, progress / BUILD));
+      holdZoom(progress);
       const targetTime = Math.min(Math.max(0, video.duration - 0.025), p * video.duration);
       if (Math.abs(video.currentTime - targetTime) > 0.045) {
         try { video.currentTime = targetTime; } catch { /* Safari may defer seek */ }
@@ -164,7 +183,9 @@ export function HeroScrub({ films, visNote }: Props) {
         shownPct = percent;
         pct.current.textContent = String(percent);
       }
-      setDone(progress > 0.86);
+      setDone(p > 0.86);
+      setBuilt(p >= 0.995);
+      if (p < 0.995) setClean(false);
     };
     const trigger = ScrollTrigger.create({
       trigger: section.current,
@@ -176,10 +197,36 @@ export function HeroScrub({ films, visNote }: Props) {
     return () => trigger.kill();
   }, [mode, useVideo]);
 
+  // 3D-Headline: Wörter kommen aus der Tiefe (gekippt, unscharf), ein Lichtschimmer läuft darüber, kurze Pause,
+  // dann fliegen sie von der Mitte aus auf den Betrachter zu und geben den Blick auf den fertigen Stand frei.
+  useEffect(() => {
+    const el = bigText.current;
+    if (!el || mode !== "scrub") return;
+    const words = el.querySelectorAll<HTMLElement>(".hero-big-word");
+    if (!built) { gsap.killTweensOf(words); gsap.set(words, { opacity: 0 }); return; }
+    // Handy: etwas langsamer und ohne Neigung
+    const slow = variant === "mobile" ? 1.35 : 1;
+    const tl = gsap.timeline();
+    tl.timeScale(1 / slow);
+    tl.fromTo(words,
+      { opacity: 0, rotateX: -85, z: -420, yPercent: 60, filter: "blur(14px)", backgroundPosition: "100% 0" },
+      { opacity: 1, rotateX: 0, z: 0, yPercent: 0, filter: "blur(0px)", duration: 1.1, ease: "expo.out", stagger: 0.08 })
+      .to(words, { backgroundPosition: "0% 0", duration: 1.1, ease: "power2.inOut", stagger: 0.05 }, "<0.35")
+      .to(words, { opacity: 0, z: 560, scale: 1.3, filter: "blur(10px)", duration: 0.75, ease: "power3.in", stagger: { each: 0.05, from: "center" } }, "+=0.5")
+      .call(() => setClean(true));
+    // leichte Neigung mit der Maus, solange die Headline steht
+    const tilt = (e: PointerEvent) => {
+      const x = e.clientX / window.innerWidth - 0.5, y = e.clientY / window.innerHeight - 0.5;
+      gsap.to(el, { rotateY: x * 10, rotateX: -y * 7, duration: 0.8, ease: "power2.out" });
+    };
+    if (variant !== "mobile") window.addEventListener("pointermove", tilt);
+    return () => { tl.kill(); window.removeEventListener("pointermove", tilt); gsap.set(el, { rotateX: 0, rotateY: 0 }); };
+  }, [built, mode, variant]);
+
   return (
-    <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[260svh] md:h-[320svh]"}`}>
+    <section ref={section} id="top" aria-labelledby="hero-title" className={`hero relative ${mode === "fallback" ? "h-[100svh]" : "h-[300svh] md:h-[380svh]"}`}>
       <div className="hero-stage sticky top-0 h-[100svh] w-full overflow-hidden">
-        <div className="hero-media absolute inset-0 overflow-hidden bg-black">
+        <div ref={media} className="hero-media absolute inset-0 overflow-hidden bg-black will-change-transform">
           {/* Poster je Layout per CSS (nur das aktive wird geladen); die Sequenz zeichnet darüber */}
           <div aria-hidden className="hero-poster absolute inset-0" />
           {mode === "scrub" && !useVideo && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
@@ -201,8 +248,8 @@ export function HeroScrub({ films, visNote }: Props) {
           )}
 
           {/* Lesbarkeit */}
-          <div aria-hidden className="hero-shade absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/55" />
-          <div aria-hidden className="hero-shade-side absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent" />
+          <div aria-hidden className="hero-shade absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/55 transition-opacity duration-1000 ease-fluid" style={{ opacity: clean ? 0.45 : 1 }} />
+          <div aria-hidden className="hero-shade-side absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent transition-opacity duration-1000 ease-fluid" style={{ opacity: clean ? 0.2 : 1 }} />
         </div>
 
         {/* oben: Einordnung */}
@@ -215,21 +262,35 @@ export function HeroScrub({ films, visNote }: Props) {
           </div>
         </div>
 
-        {/* große Headline, sobald der Stand steht */}
-        <div aria-hidden className="hero-big pointer-events-none absolute inset-0 grid place-items-center px-[var(--gutter)]">
-          <p className="hero-big-text font-display max-w-[14ch] text-center text-5xl font-semibold leading-none sm:text-6xl md:text-8xl xl:text-9xl">
+        {/* große 3D-Headline, sobald der Stand steht – fliegt herein, steht kurz und fliegt dann auf den Betrachter zu */}
+        <div aria-hidden className="hero-big pointer-events-none absolute inset-0 grid place-items-center px-[var(--gutter)]" style={{ perspective: "1100px" }}>
+          <p ref={bigText} className="hero-big-text font-display max-w-[14ch] text-center text-5xl font-semibold leading-none sm:text-6xl md:text-8xl xl:text-9xl" style={{ transformStyle: "preserve-3d" }}>
             {t("title").split(" ").map((w, i) => (
-              <span key={i} className="inline-block overflow-hidden pb-2 align-top">
-                <span
-                  className="hero-big-word inline-block transition-all duration-[1100ms] ease-fluid"
-                  style={{ transform: done && mode !== "fallback" ? "none" : "translateY(110%)", opacity: done && mode !== "fallback" ? 1 : 0, transitionDelay: `${i * 70}ms` }}
-                >
+              <span key={i} className="inline-block pb-2 align-top" style={{ transformStyle: "preserve-3d" }}>
+                <span className="hero-big-word inline-block will-change-transform" style={{ opacity: 0, backgroundSize: "200% 100%" }}>
                   {w}&nbsp;
                 </span>
               </span>
             ))}
           </p>
         </div>
+
+        {/* Ruhephase: Eckdaten des fertigen Stands mit Link zum Entwurf */}
+        {mode === "scrub" && film.info?.facts && (
+          <div className="pointer-events-none absolute inset-x-0 top-36 md:top-40">
+            <div className="container-x">
+              <div className={`glass inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl px-4 py-3 text-sm transition-all duration-700 ease-fluid ${clean ? "pointer-events-auto translate-y-0 opacity-100" : "translate-y-3 opacity-0"}`}>
+                <span className="font-semibold">{film.label}</span>
+                <span className="text-fg/75">{film.info.facts}</span>
+                {film.info.slug && (
+                  <Link href={{ pathname: "/designs/[slug]", params: { slug: film.info.slug } }} tabIndex={clean ? 0 : -1} className="inline-flex items-center gap-1 font-semibold text-accent hover:underline">
+                    {t("viewDesign")} <ArrowUpRight size={14} />
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* unten: Kernbotschaft + CTA (ohne Scrollen sichtbar) */}
         <div className="hero-copy absolute inset-x-0 bottom-0 pb-[max(5.5rem,calc(env(safe-area-inset-bottom)+4.5rem))] md:pb-20">
@@ -258,7 +319,13 @@ export function HeroScrub({ films, visNote }: Props) {
           </div>
           {mode === "scrub" && (
             <div className="hero-progress container-x mt-4 flex md:mt-8 items-center gap-4 text-xs uppercase tracking-[0.18em] text-fg/70">
-              <span className="inline-flex items-center gap-2"><ArrowDown size={14} className="animate-bounce" /> <span className="hidden sm:inline">{t("scroll")}</span></span>
+              {clean ? (
+                <button type="button" onClick={() => scrollToTarget("#leistungen")} className="pointer-events-auto inline-flex items-center gap-2 uppercase tracking-[0.18em] text-fg transition-colors hover:text-accent">
+                  <ArrowDown size={14} className="animate-bounce" /> {t("next")}
+                </button>
+              ) : (
+                <span className="inline-flex items-center gap-2"><ArrowDown size={14} className="animate-bounce" /> <span className="hidden sm:inline">{t("scroll")}</span></span>
+              )}
               <span className="ml-auto">{t("progress")}</span>
               <div className="relative h-px w-32 bg-white/20 md:w-56">
                 <div ref={bar} className="absolute inset-0 origin-left scale-x-0 bg-accent" />

@@ -52,10 +52,10 @@ export function CookieBanner() {
     <section
       role="dialog"
       aria-labelledby="consent-title"
-      className="glass fixed inset-x-3 bottom-3 z-[70] mx-auto max-w-xl rounded-3xl p-6 shadow-2xl md:bottom-6"
+      className="glass fixed inset-x-3 bottom-3 z-[70] max-w-md rounded-2xl p-4 shadow-2xl md:inset-x-auto md:bottom-6 md:left-6 md:p-5"
     >
       <h2 id="consent-title" className="text-base font-semibold">{t("title")}</h2>
-      <p className="mt-2 text-sm text-fg-muted">{t("text")}</p>
+      <p className="mt-1.5 text-xs leading-relaxed text-fg-muted md:text-sm">{t("text")}</p>
       {detail && (
         <ul className="mt-4 grid gap-3 text-sm">
           <Row label={t("categories.necessary")} text={t("categories.necessaryText")} checked disabled />
@@ -63,7 +63,7 @@ export function CookieBanner() {
           <Row label={t("categories.media")} text={t("categories.mediaText")} checked={media} onChange={setMedia} />
         </ul>
       )}
-      <div className="mt-5 flex flex-wrap gap-2">
+      <div className="mt-4 flex flex-wrap gap-2">
         <button type="button" onClick={() => done({ stats: false, media: false })} className="rounded-full border border-line-strong px-4 py-2 text-sm font-semibold hover:bg-white/5">
           {t("necessary")}
         </button>
