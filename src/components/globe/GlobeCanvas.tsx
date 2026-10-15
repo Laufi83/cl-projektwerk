@@ -52,6 +52,12 @@ const MASK = "radial-gradient(closest-side, #000 80%, transparent 100%)";
 /** kleinster Zoomfaktor: Kamera ca. 0,25 Erdradien über dem Boden (Bildbreite rund 1.100 km) */
 export const ZOOM_MIN = 0.06;
 const EARTH_KM = 6371;
+/**
+ * Darstellung der Erde: "textured" = Erdkugel aus Texturen (public/globe/earth-*.webp, Grundlage „EARTH“ von
+ * Stéphane Agullo, CC-BY-4.0), in den Farben des aktiven Layouts; "dots" = bisherige Landmassen als Punktwolke.
+ * Zurück zur alten Kugel: hier "dots" eintragen.
+ */
+const EARTH_STYLE: "textured" | "dots" = "textured";
 /** Entfernungsringe um Leipzig */
 const RINGS_KM = [250, 500, 1000, 1500, 2000];
 const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v));
@@ -158,7 +164,7 @@ function Scene({ pins, route, step, focus, reduced, overlay, onArrive, zoom, onZ
   const layout = useLayout();
   const group = useRef<THREE.Group>(null);
   const { gl, camera } = useThree();
-  const points = useLandPoints("/globe/land.bin", 1.001);
+  const points = useLandPoints(EARTH_STYLE === "dots" ? "/globe/land.bin" : "", 1.001);
   const detailPoints = useLandPoints("/globe/europe.bin", 1.0012);
   const coast = useLines("/globe/coast.bin", 1.0016);
   const borders = useLines("/globe/borders.bin", 1.0017);
@@ -926,14 +932,20 @@ function Scene({ pins, route, step, focus, reduced, overlay, onArrive, zoom, onZ
     <>
       <primitive object={warpLines} />
       <group ref={group}>
-        <mesh>
-          <sphereGeometry args={[0.995, 64, 64]} />
-          <meshBasicMaterial color="#0e0c0b" />
-        </mesh>
-        <mesh scale={1.16} material={mats.atmosphere}>
-          <sphereGeometry args={[1, 48, 48]} />
-        </mesh>
-        {points && <points geometry={points} material={mats.land} />}
+        {EARTH_STYLE === "textured" ? (
+          <TexturedEarth sun={sun} accent={accent} layout={layout} reduced={reduced} />
+        ) : (
+          <>
+            <mesh>
+              <sphereGeometry args={[0.995, 64, 64]} />
+              <meshBasicMaterial color="#0e0c0b" />
+            </mesh>
+            <mesh scale={1.16} material={mats.atmosphere}>
+              <sphereGeometry args={[1, 48, 48]} />
+            </mesh>
+            {points && <points geometry={points} material={mats.land} />}
+          </>
+        )}
         {detailPoints && <points geometry={detailPoints} material={mats.detail} />}
         {coast && <lineSegments geometry={coast} material={mats.coastLine} frustumCulled={false} />}
         {borders && <lineSegments geometry={borders} material={mats.borderLine} frustumCulled={false} />}
@@ -1050,6 +1062,7 @@ function useLandPoints(url: string, r: number) {
   useEffect(() => {
     let alive = true;
     let g: THREE.BufferGeometry | null = null;
+    if (!url) return;
     fetch(url)
       .then((r) => r.arrayBuffer())
       .then((buf) => {
@@ -1068,4 +1081,83 @@ function useLandPoints(url: string, r: number) {
     return () => { alive = false; g?.dispose(); };
   }, [url, r]);
   return geometry;
+}
+
+/* ---------- Erdkugel aus Texturen (EARTH_STYLE = "textured") ---------- */
+const SPH_UV = /* glsl */ `
+  // Kugelkoordinaten wie toVec(): u = (Länge + 180°) / 360°, v = Breite (Norden oben)
+  vec2 sphUv(vec3 p) { vec3 n = normalize(p); float phi = acos(clamp(n.y, -1.0, 1.0)); float th = atan(n.z, -n.x); if (th < 0.0) th += 6.2831853; return vec2(th / 6.2831853, 1.0 - phi / 3.1415927); }`;
+const cssColor = (name: string, fallback: string) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
+
+function TexturedEarth({ sun, accent, layout, reduced }: { sun: THREE.Vector3; accent: THREE.Color; layout: string; reduced: boolean }) {
+  const clouds = useRef<THREE.Mesh>(null);
+  const [tex, setTex] = useState<Record<"day" | "night" | "water" | "clouds", THREE.Texture> | null>(null);
+  useEffect(() => {
+    let alive = true;
+    const loader = new THREE.TextureLoader();
+    const load = (k: string) => loader.loadAsync(`/globe/earth-${k}.webp`).then((t) => { t.colorSpace = k === "day" ? THREE.SRGBColorSpace : THREE.NoColorSpace; t.anisotropy = 4; return t; });
+    Promise.all(["day", "night", "water", "clouds"].map(load)).then(([day, night, water, cl]) => {
+      if (alive) setTex({ day, night, water, clouds: cl }); else [day, night, water, cl].forEach((t) => t.dispose());
+    }).catch(() => {});
+    return () => { alive = false; };
+  }, []);
+  useEffect(() => () => { if (tex) Object.values(tex).forEach((t) => t.dispose()); }, [tex]);
+
+  const mats = useMemo(() => {
+    if (!tex) return null;
+    const surface = new THREE.ShaderMaterial({
+      uniforms: { uDay: { value: tex.day }, uNight: { value: tex.night }, uWater: { value: tex.water }, uBg: { value: new THREE.Color() }, uFg: { value: new THREE.Color() }, uA2: { value: new THREE.Color() }, uAcc: { value: accent }, uSun: { value: sun } },
+      vertexShader: `varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+      fragmentShader: SPH_UV + `
+        uniform sampler2D uDay, uNight, uWater; uniform vec3 uBg, uFg, uA2, uAcc, uSun; varying vec3 vP;
+        void main() {
+          vec2 uv = sphUv(vP);
+          float lum = dot(texture2D(uDay, uv).rgb, vec3(0.299, 0.587, 0.114));
+          float wat = smoothstep(0.35, 0.65, texture2D(uWater, uv).r);
+          float lights = texture2D(uNight, uv).r;
+          // Ozean im Grundton des Layouts, Land getönt aus Helligkeit der Tagkarte
+          vec3 ocean = mix(uBg * 2.2 + 0.018, uA2 * 0.16, 0.35);
+          vec3 land = mix(mix(uBg * 3.0 + 0.03, uFg * 0.58, smoothstep(0.12, 0.7, lum)), uAcc * 0.55, 0.14);
+          vec3 col = mix(land, ocean, wat);
+          float dayF = smoothstep(-0.12, 0.35, dot(normalize(vP), uSun));
+          col *= mix(0.3, 1.05, dayF);
+          // Stadtlichter auf der Nachtseite in der Akzentfarbe
+          col += uAcc * pow(lights, 1.2) * 1.5 * (1.0 - dayF) * (1.0 - wat);
+          gl_FragColor = vec4(col, 1.0);
+        }`,
+    });
+    const cloud = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false,
+      uniforms: { uC: { value: tex.clouds }, uFg: { value: new THREE.Color() }, uSun: { value: sun } },
+      vertexShader: `varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+      fragmentShader: SPH_UV + `uniform sampler2D uC; uniform vec3 uFg, uSun; varying vec3 vP;
+        void main(){ float a = texture2D(uC, sphUv(vP)).a; float dayF = smoothstep(-0.1, 0.4, dot(normalize(vP), uSun)); gl_FragColor = vec4(uFg * mix(0.25, 1.0, dayF), a * 0.22 * mix(0.1, 1.0, dayF)); }`,
+    });
+    return { surface, cloud };
+  }, [tex, accent, sun]);
+  useEffect(() => () => { mats?.surface.dispose(); mats?.cloud.dispose(); }, [mats]);
+
+  // Farben des aktiven Layouts
+  useEffect(() => {
+    if (!mats) return;
+    void layout;
+    mats.surface.uniforms.uBg.value.set(cssColor("--bg", "#0a0a0b"));
+    mats.surface.uniforms.uFg.value.set(cssColor("--fg", "#f4efe6"));
+    mats.surface.uniforms.uA2.value.set(cssColor("--accent-2", "#4a1f3d"));
+    mats.cloud.uniforms.uFg.value.set(cssColor("--fg", "#f4efe6"));
+  }, [mats, layout]);
+
+  // Wolken ziehen langsam (eine Umdrehung in rund 10 Minuten)
+  useFrame((_, delta) => { if (!reduced && clouds.current) clouds.current.rotation.y += delta * 0.01; });
+
+  if (!mats) {
+    // bis die Texturen da sind: dunkle Kugel wie bisher
+    return <mesh><sphereGeometry args={[0.995, 64, 64]} /><meshBasicMaterial color="#0e0c0b" /></mesh>;
+  }
+  return (
+    <>
+      <mesh material={mats.surface}><sphereGeometry args={[0.998, 128, 96]} /></mesh>
+      <mesh ref={clouds} material={mats.cloud}><sphereGeometry args={[1.006, 96, 72]} /></mesh>
+    </>
+  );
 }
