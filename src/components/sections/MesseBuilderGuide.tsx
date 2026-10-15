@@ -2,7 +2,7 @@
 /**
  * Messebau-Kompass für alle 50 Messegelände im Atlas (Daten: config/messe-builder.ts).
  * Links eine drehbare 3D-Bühne aus CSS-3D (kein WebGL nötig): Bauhöhe, Abhängungen, Decke & Sprinkler,
- * Doppelstock, Logistik (echte 3D-Szene mit Lkw und Stapler: BuilderLogisticsGL, CSS-Fassung BuilderLogistics als Rückfall) sowie Strom, Wasser, Internet und Druckluft (BuilderSupply)
+ * Doppelstock, Logistik (echte 3D-Bühne für alle Themen: Kompass3D mit OC-Stand 6 × 4 m, Traverse, Lkw und Stapler; CSS-Fassung als Rückfall) sowie Strom, Wasser, Internet und Druckluft (BuilderSupply)
  * werden als animiertes Standmodell gezeigt – mit echten Werten des Geländes. Bei den Versorgungsthemen:
  * Bestell-Checkliste (aus den Messebauer-Schulungsunterlagen), belegte Angaben des Geländes und zuständige Partner.
  * Darunter Ablauf bis zur Übergabe, Servicestellen, offizielle Quellen und die Gewerke-Kontakte zum Filtern.
@@ -17,7 +17,8 @@ import { messeVenues } from "@/config/messe-venues";
 import { useReducedMotion } from "@/hooks/useMedia";
 import { Box, FLOOR, Person, Tag, Upright, UnitCtx, fmt } from "./builder-3d";
 import { LogisticsScene } from "./BuilderLogistics";
-import { LogisticsGL } from "./BuilderLogisticsGL";
+import { Kompass3D } from "./Kompass3D";
+import type { KompassDesc } from "./kompass3d/types";
 import { SupplyScene, type Supply } from "./BuilderSupply";
 import { VenueTour } from "./VenueTour";
 import { venueTours } from "@/config/venue-tours";
@@ -358,7 +359,16 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
   const text = supply ? supply.lead[de ? 0 : 1] : { hoehe: b.height.text, rigging: b.rigging.text, decke: b.ceiling.text, doppelstock: b.stairs.text, logistik: `${b.logistics} ${b.parking}` }[topic as Exclude<Topic, Supply>];
   const showContacts = (k: BuilderTrade) => { setTrade(k); setMore(false); document.getElementById("builder-contacts")?.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" }); };
 
-  // CSS-3D-Bühne; bei „Logistik“ nur Rückfall, falls WebGL fehlt
+  // echte 3D-Szene (OC-Stand 6 × 4 m) mit den Werten des Geländes
+  const desc3d: KompassDesc =
+    topic === "hoehe" ? { topic, h: unknownHeight ? 4.5 : h, ghost, wallMin: b.wall.min, unknown: unknownHeight, unknownLabel: eu ? check : de ? "je Messe" : "per event" }
+    : topic === "rigging" ? { topic, kg: b.rigging.kg, heavy: b.rigging.kgHeavy }
+    : topic === "decke" ? { topic, area, m2: b.ceiling.m2, perHead: b.ceiling.perHead }
+    : topic === "doppelstock" ? { topic, clear: b.stairs.clear, widths: b.stairs.widths }
+    : topic === "logistik" ? { topic, names: logisticsNames }
+    : { topic, spec: supplySpec, offered: supplyNotes.length > 0 };
+  const stageLabel = de ? `3D-Modell: ${TOPICS.find((x) => x.id === topic)!.de} in ${venue.city}. Ziehen dreht die Ansicht.` : `3D model: ${TOPICS.find((x) => x.id === topic)!.en} in ${venue.city}. Drag to orbit.`;
+  // CSS-3D-Bühne als Rückfall, falls WebGL fehlt
   const cssStage = (
     <Stage reduced={reduced} label={de ? `3D-Modell: ${TOPICS.find((x) => x.id === topic)!.de} in ${venue.city}. Ziehen oder Pfeiltasten drehen das Modell.` : `3D model: ${TOPICS.find((x) => x.id === topic)!.en} in ${venue.city}. Drag or use arrow keys to rotate.`}>
       <div key={`${topic}-${venueNumber}`} className="bs-scene">
@@ -449,10 +459,8 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
 
       <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
         <div>
-          {topic === "logistik" ? <LogisticsGL names={logisticsNames} reduced={reduced} de={de} fallback={cssStage} /> : cssStage}
-          <p className="mt-2 text-xs text-fg-subtle">{topic === "logistik"
-            ? de ? "Beispielhafter Ablauf, nicht maßstabsgetreu zum Gelände · ziehen dreht, Mausrad zoomt" : "Example sequence, not a venue plan · drag to orbit, scroll to zoom"
-            : de ? "Schematisches Modell, nicht maßstabsgetreu zum Gelände · ziehen oder Pfeiltasten zum Drehen" : "Schematic model, not a venue plan · drag or use arrow keys to rotate"}</p>
+          <Kompass3D desc={desc3d} label={stageLabel} reduced={reduced} de={de} fallback={cssStage} />
+          <p className="mt-2 text-xs text-fg-subtle">{de ? "Beispielstand 6 × 4 m, Werte laut Gelände – kein Hallenplan · ziehen dreht, Mausrad zoomt" : "Example 6 × 4 m stand with the venue's values – not a hall plan · drag to orbit, scroll to zoom"}</p>
         </div>
 
         <article className="flex flex-col rounded-[1.75rem] border border-line bg-bg-raised p-6 sm:p-8" aria-live="polite">
