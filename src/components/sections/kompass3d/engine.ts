@@ -24,7 +24,7 @@ export type Built = {
   shadowCenter?: [number, number, number];
   dispose?: () => void;
 };
-export type Assets = { oc: THREE.Object3D; truss: THREE.Object3D; lkw?: THREE.Object3D; stapler?: THREE.Object3D };
+export type Assets = { oc: THREE.Object3D; truss: THREE.Object3D; van: THREE.Object3D; lkw?: THREE.Object3D; stapler?: THREE.Object3D };
 export type Ctx = {
   de: boolean;
   accent: THREE.Color;
@@ -33,6 +33,9 @@ export type Ctx = {
   setPhase: (text: string) => void;
   tex: (w: number, h: number, draw: (g: CanvasRenderingContext2D) => void, repeat?: [number, number]) => THREE.CanvasTexture;
 };
+
+const FREEZE = process.env.NODE_ENV !== "production" && typeof location !== "undefined" && new URLSearchParams(location.search).has("kt")
+  ? Number(new URLSearchParams(location.search).get("kt")) : null;
 
 export const fmt = (n: number, de: boolean) => n.toLocaleString(de ? "de-DE" : "en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
@@ -99,7 +102,7 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
   const resize = () => { const w = el.clientWidth, h = el.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); };
   const ro = new ResizeObserver(resize); ro.observe(el); resize();
 
-  // Modelle (Stand + Traverse sofort, Lkw + Stapler erst für „Logistik“)
+  // Modelle (Stand, Traverse und Van sofort, Lkw + Stapler erst für „Logistik“)
   const loader = new GLTFLoader();
   loader.setMeshoptDecoder(MeshoptDecoder);
   const load = async (f: string) => {
@@ -107,8 +110,8 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
     g.scene.traverse((m) => { if ((m as THREE.Mesh).isMesh) { m.castShadow = true; m.receiveShadow = true; } });
     return g.scene;
   };
-  const [oc, truss] = await Promise.all([load("oc-6x4.glb"), load("truss-5x3.glb")]);
-  const assets: Assets = { oc, truss };
+  const [oc, truss, van] = await Promise.all([load("oc-6x4.glb"), load("truss-5x3.glb"), load("van.glb")]);
+  const assets: Assets = { oc, truss, van };
   const accentCss = getComputedStyle(el).getPropertyValue("--accent").trim() || "#f26a1b";
 
   // Beschriftungen
@@ -184,7 +187,8 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
     last = now;
     if (!opts.reduced) {
       if (!controls.autoRotate && idleUntil && now > idleUntil) { controls.autoRotate = true; idleUntil = 0; }
-      current?.update?.((now - sceneStart - paused) / 1000, dt);
+      // nur im Dev-Server: ?kt=Sekunden hält die Szene für Prüfungen auf einem Zeitpunkt fest
+      current?.update?.(FREEZE ?? (now - sceneStart - paused) / 1000, dt);
     }
     controls.update();
     renderer.render(scene, camera);

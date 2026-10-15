@@ -10,15 +10,17 @@ import { fmt } from "./engine";
 import type { KompassDesc, SupplyKind } from "./types";
 import { at, box, cyl, ease, flow, mat, model, person, planks, ruler, stand, STAND } from "./kit";
 import { buildLogistics } from "./logistics";
+import { withCrew } from "./crew";
 
 export function buildScene(ctx: Ctx, d: KompassDesc): Built {
+  if (d.topic === "logistik") return buildLogistics(ctx, d.names);
+  // bei allen Stand-Themen: Van fährt vor, zwei Monteure steigen aus und beraten sich vor der Standfläche
   switch (d.topic) {
-    case "hoehe": return height(ctx, d);
-    case "rigging": return rigging(ctx, d);
-    case "decke": return ceiling(ctx, d);
-    case "doppelstock": return deck(ctx, d);
-    case "logistik": return buildLogistics(ctx, d.names);
-    default: return supply(ctx, d.topic, d.spec, d.offered);
+    case "hoehe": return withCrew(ctx, height(ctx, d));
+    case "rigging": return withCrew(ctx, rigging(ctx, d));
+    case "decke": return withCrew(ctx, ceiling(ctx, d));
+    case "doppelstock": return withCrew(ctx, deck(ctx, d));
+    default: return withCrew(ctx, supply(ctx, d.topic, d.spec, d.offered));
   }
 }
 

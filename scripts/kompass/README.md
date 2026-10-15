@@ -7,6 +7,7 @@ Die 3D-Bühne `src/components/sections/Kompass3D.tsx` (Szenen in `kompass3d/`) l
 | `lkw.glb` | `LKW.glb` (Sattelzug mit Kühlkoffer, SketchUp → FabConvert) | `body`, `door_l`, `door_r`, Achsen `w1`–`w5` |
 | `stapler.glb` | `Gabelstapler.glb` (SketchUp → FabConvert) | `body`, `carriage` (Gabel), `pallet`, `load`, `wheel_*` |
 | `oc-6x4.glb` | `OC 6x4m.glb` (Systemstand 6 × 4 m, SketchUp → FabConvert) – Standmodell aller Themen | `body` |
+| `van.glb` | `iveco_daily_van_2014.glb` (Sketchfab, „Max“, CC BY 4.0 – Credit im Impressum); nur `gltf-transform optimize --flatten false --join false`, Türen bleiben eigene Knoten | `Front_door_L/R`, `Back_door_1/2` |
 | `truss-5x3.glb` | `Truss 5x3.glb` (Traversenrahmen 5 × 3 m) – Abhängungen an vier Kettenzügen | `body` |
 
 `split.mjs` teilt ein Modell nach Lage und Material in benannte Gruppen (Drehpunkte für Räder und Türen),

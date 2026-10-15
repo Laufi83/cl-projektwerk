@@ -95,3 +95,84 @@ export function planks(ctx: Ctx, repeat: [number, number]) {
     for (let i = 0; i < 8; i++) { const v = 150 + Math.random() * 30; g.fillStyle = `rgb(${v + 40},${v + 12},${v - 30})`; g.fillRect(0, i * 32, 256, 32); g.fillStyle = "rgba(60,35,15,.35)"; g.fillRect(0, i * 32, 256, 2); g.fillRect((i * 97) % 256, i * 32, 2, 32); }
   }, repeat);
 }
+
+/* ───────── Messemonteure ───────── */
+export type Worker = { g: THREE.Group; legs: THREE.Object3D[]; head: THREE.Object3D };
+/** Monteur mit Arbeitskleidung, Warnweste und Helm; Beine schwingen beim Gehen (Ursprung am Boden) */
+export function worker(parent: THREE.Object3D, vest = "#f5c400") {
+  const g = new THREE.Group();
+  const cloth = mat("#2c3440", 0.85), hi = mat(vest, 0.6, 0, { emissive: vest, emissiveIntensity: 0.08 });
+  const legs: THREE.Object3D[] = [];
+  for (const s of [-1, 1]) {
+    const hip = new THREE.Group(); hip.position.set(s * 0.1, 0.86, 0);
+    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.075, 0.065, 0.84, 10), cloth); leg.position.y = -0.42; leg.castShadow = true;
+    const boot = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.08, 0.24), mat("#1a1a1a", 0.7)); boot.position.set(0, -0.82, 0.04); boot.castShadow = true;
+    hip.add(leg, boot); g.add(hip); legs.push(hip);
+  }
+  const body = new THREE.Mesh(new THREE.CapsuleGeometry(0.2, 0.46, 6, 12), cloth); body.position.y = 1.18; body.scale.z = 0.62; body.castShadow = true; g.add(body);
+  const vestM = new THREE.Mesh(new THREE.CapsuleGeometry(0.212, 0.3, 6, 12), hi); vestM.position.y = 1.24; vestM.scale.z = 0.64; g.add(vestM);
+  for (const s of [-1, 1]) { const arm = new THREE.Mesh(new THREE.CapsuleGeometry(0.055, 0.5, 4, 8), cloth); arm.position.set(s * 0.25, 1.15, 0); arm.rotation.z = s * 0.08; arm.castShadow = true; g.add(arm); }
+  const head = new THREE.Group(); head.position.y = 1.69; g.add(head);
+  const face = new THREE.Mesh(new THREE.SphereGeometry(0.11, 16, 12), mat("#c9a98c", 0.7)); face.castShadow = true; head.add(face);
+  const helmet = new THREE.Mesh(new THREE.SphereGeometry(0.13, 16, 10, 0, Math.PI * 2, 0, Math.PI / 2), mat("#f4f4f2", 0.4)); helmet.position.y = 0.03; head.add(helmet);
+  const brim = new THREE.Mesh(new THREE.CylinderGeometry(0.15, 0.15, 0.015, 18), mat("#f4f4f2", 0.4)); brim.position.y = 0.03; head.add(brim);
+  parent.add(g);
+  return { g, legs, head } as Worker;
+}
+/** Weg eines Monteurs: [t, x, z]; Blickrichtung folgt der Bewegung, Beine schwingen beim Gehen. `face`: Blickrichtung im Stand (rad) */
+export function walk(w: Worker, keys: [number, number, number][], t: number, face?: number) {
+  const xs = keys.map(([tt, x]) => [tt, x] as Key), zs = keys.map(([tt, , z]) => [tt, z] as Key);
+  const lin = (k: Key[], tt: number) => {
+    if (tt <= k[0][0]) return k[0][1];
+    for (let i = 1; i < k.length; i++) if (tt <= k[i][0]) { const [t0, v0] = k[i - 1], [t1, v1] = k[i]; return v0 + (v1 - v0) * ((tt - t0) / (t1 - t0)); }
+    return k[k.length - 1][1];
+  };
+  const x = lin(xs, t), z = lin(zs, t), x2 = lin(xs, t + 0.05), z2 = lin(zs, t + 0.05);
+  w.g.position.set(x, 0, z);
+  const moving = Math.hypot(x2 - x, z2 - z) > 0.001;
+  if (moving) w.g.rotation.y = Math.atan2(x2 - x, z2 - z);
+  else if (face !== undefined) w.g.rotation.y = face;
+  const swing = moving ? Math.sin(t * 9) * 0.45 : 0;
+  w.legs[0].rotation.x = swing; w.legs[1].rotation.x = -swing;
+  return moving;
+}
+
+/* ───────── Van (Iveco Daily, Modell: „Iveco Daily Van 2014“ von Max, CC BY 4.0) ───────── */
+export type Van = { g: THREE.Group; door: (name: "fl" | "fr" | "bl" | "br", open: number) => void; floor: number; rear: number; front: number; doorZ: number; side: number };
+/**
+ * Van mit Ursprung Mitte am Boden, Fahrtrichtung +z (Front bei z = +3,99, Heck bei −3,31, Ladeboden 0,6 m).
+ * Herstellerzeichen und Kennzeichen der Vorlage werden mit neutralen Flächen abgedeckt.
+ */
+export function van(ctx: Ctx): Van {
+  const g = new THREE.Group();
+  const m = model(ctx.assets.van);
+  m.position.y = 0.5676;
+  g.add(m);
+  g.updateMatrixWorld(true);
+  const find = (n: string) => m.getObjectByName(n) ?? new THREE.Object3D();
+  const doors = { fl: find("Front_door_L"), fr: find("Front_door_R"), bl: find("Back_door_1"), br: find("Back_door_2") };
+  const base = new Map<THREE.Object3D, number>(), sign = new Map<THREE.Object3D, number>();
+  const c = new THREE.Vector3();
+  for (const d of Object.values(doors)) { base.set(d, d.rotation.y); new THREE.Box3().setFromObject(d).getCenter(c); sign.set(d, c.x < 0 ? 1 : -1); }
+  // Abdeckungen: Strahl von außen auf die Karosserie, Fläche auf die getroffene Stelle (bewegt sich mit der Tür)
+  const ray = new THREE.Raycaster();
+  const cover = (x: number, y: number, fromZ: number, w: number, h: number, color: string) => {
+    // Fläche quer zum Strahl, knapp vor dem ersten Treffer (die Schriftzüge sind erhabene 3D-Buchstaben)
+    const back = new THREE.Vector3(0, 0, Math.sign(fromZ));
+    ray.set(new THREE.Vector3(x, y, fromZ), back.clone().negate());
+    const hit = ray.intersectObject(m, true)[0];
+    if (!hit) return;
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat(color, 0.35, 0.1, { polygonOffset: true, polygonOffsetFactor: -4 }));
+    p.position.copy(hit.point).addScaledVector(back, 0.012);
+    p.lookAt(p.position.clone().add(back));
+    g.add(p); hit.object.attach(p);
+  };
+  cover(0, 0.78 + 0.5676, 8, 0.66, 0.16, "#eceeef");   // Schriftzug Haube
+  cover(0, 0.0 + 0.5676, 8, 0.58, 0.15, "#2b2e33");     // Kennzeichen vorn
+  cover(0.6, 0.635 + 0.5676, -8, 0.38, 0.1, "#eceeef"); // Schriftzug Hecktür
+  return {
+    g,
+    door: (name, open) => { const d = doors[name]; d.rotation.y = base.get(d)! + sign.get(d)! * open * (name[0] === "f" ? 1.25 : 1.75); },
+    floor: 0.6, rear: -3.31, front: 3.99, doorZ: 2.0, side: 1.05,
+  };
+}
