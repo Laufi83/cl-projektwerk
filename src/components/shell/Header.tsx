@@ -19,8 +19,9 @@ const SECTIONS = [
   { id: "ueber", key: "about" },
 ] as const;
 /** Navigation: Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass), Messen (Vorschau), Über mich */
-type NavItem = { id: string; key: "services" | "designs" | "venues" | "about" | "fairs" | "contact"; page?: "/messen" };
-const NAV: NavItem[] = [...SECTIONS];
+type NavItem = { id: string; key: "services" | "designs" | "venues" | "about" | "fairs" | "contact" | "pm"; page?: "/messen" | "/projektleitung" };
+/** Projektleitung als eigene Seite nach „Messen“ */
+const NAV: NavItem[] = [...SECTIONS.slice(0, 4), { id: "projektleitung", key: "pm", page: "/projektleitung" }, ...SECTIONS.slice(4)];
 
 export function Header() {
   const t = useTranslations("nav");

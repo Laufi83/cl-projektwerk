@@ -14,7 +14,9 @@
     "selectionTitle": "Seçimim",
     "selectionDescription": "Kaydettiğiniz stand konseptleri; bir talebe ekleyebilirsiniz.",
     "imprintDescription": "Yasal bilgiler ve hizmet sağlayıcı bilgileri.",
-    "privacyDescription": "Bu web sitesinde kişisel verilerin işlenmesine ilişkin bilgiler."
+    "privacyDescription": "Bu web sitesinde kişisel verilerin işlenmesine ilişkin bilgiler.",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "İçeriğe geç",
@@ -46,7 +48,8 @@
     "cta": "Proje görüşmesi",
     "selection": "Seçimim",
     "home": "Ana sayfa",
-    "main": "Ana gezinme"
+    "main": "Ana gezinme",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Harici planlama ve proje ofisi · Fuar standları, marka alanları, iç mekân uygulamaları",
@@ -948,5 +951,12 @@
   },
   "ogImage": {
     "film": "▶ Konsept animasyonu"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

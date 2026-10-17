@@ -14,7 +14,9 @@
     "selectionTitle": "Mijn selectie",
     "selectionDescription": "Uw opgeslagen standconcepten, die u bij een aanvraag kunt meesturen.",
     "imprintDescription": "Juridische kennisgeving en gegevens van de aanbieder.",
-    "privacyDescription": "Informatie over de verwerking van persoonsgegevens op deze website."
+    "privacyDescription": "Informatie over de verwerking van persoonsgegevens op deze website.",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "Naar de inhoud",
@@ -46,7 +48,8 @@
     "cta": "Project bespreken",
     "selection": "Mijn selectie",
     "home": "Home",
-    "main": "Hoofdnavigatie"
+    "main": "Hoofdnavigatie",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Extern plannings- en projectbureau · Beursstands, merkruimtes, interieurbouw",
@@ -967,5 +970,12 @@
   },
   "ogImage": {
     "film": "▶ Conceptanimatie"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

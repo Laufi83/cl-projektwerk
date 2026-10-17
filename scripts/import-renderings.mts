@@ -223,7 +223,7 @@ for (const folder of folders) {
   const renderFiles = files.filter((f) => /^0[1-6]_/.test(f)).slice(0, 6);
   const planFiles = files.filter((f) => !renderFiles.includes(f));
   const floorplans = planFiles.filter((f) => /grundriss/i.test(f));
-  const elevationFile = planFiles.find((f) => /hoehen|schnitt/i.test(f));
+  const elevationFile = planFiles.find((f) => /hoehen|schnitt|ansicht/i.test(f) && !/grundriss|elektro/i.test(f));
   const electrical = planFiles.filter((f) => /elektro/i.test(f));
   if (renderFiles.length < 6 || !floorplans.length || !elevationFile) {
     console.warn(`! ${folder}: unvollständig (Renderings ${renderFiles.length}/6, Grundriss ${floorplans.length}, Höhe ${elevationFile ? 1 : 0})`);

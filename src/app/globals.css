@@ -150,18 +150,6 @@ body {
 }
 }
 
-/* Eigener Cursor: nativen Zeiger nur ausblenden, wenn der Effekt aktiv ist */
-html[data-cursor="on"] body,
-html[data-cursor="on"] a,
-html[data-cursor="on"] button,
-html[data-cursor="on"] [role="button"],
-html[data-cursor="on"] label,
-html[data-cursor="on"] summary { cursor: none; }
-html[data-cursor="on"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
-html[data-cursor="on"] textarea,
-html[data-cursor="on"] select,
-html[data-cursor="on"] [contenteditable="true"] { cursor: text; }
-html[data-cursor="on"] select { cursor: pointer; }
 
 /* Einblenden beim Scrollen (per IntersectionObserver, siehe RevealObserver).
    Nur wenn JavaScript läuft – ohne JS bleibt alles sichtbar. */
@@ -695,4 +683,15 @@ html[data-performance="lite"] .vis-note {
 @media (prefers-reduced-motion: reduce) {
   .bs-scene, .bs-value, .bs-fact, .bs-flow .bs-face, .bs-led, .bs-rackfront, .bs-wifi, .bs-gauge i, .bs-piston, .bs-beacon .bs-face { animation: none; }
   .bs-obj, .bs-face, .bs-ruler { transition: none; }
+}
+
+/* Projektleiter-Werkzeuge: nur den gewählten Bereich drucken bzw. als PDF speichern (components/pm/project.ts → printArea) */
+@media print {
+  body.pm-printing * { visibility: hidden !important; }
+  body.pm-printing .pm-print, body.pm-printing .pm-print * { visibility: visible !important; }
+  body.pm-printing .pm-print { position: absolute; inset: 0 0 auto 0; background: #fff !important; color: #111 !important; }
+  body.pm-printing .pm-print * { color: #111 !important; border-color: #bbb !important; box-shadow: none !important; }
+  body.pm-printing .pm-print *:not([style]) { background-color: transparent !important; }
+  body.pm-printing .pm-print input, body.pm-printing .pm-print select, body.pm-printing .pm-print textarea { border-color: transparent !important; }
+  body.pm-printing .pm-print i[style], body.pm-printing .pm-print canvas, body.pm-printing .pm-print img { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }

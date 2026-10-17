@@ -16,7 +16,9 @@
     "imprintDescription": "Anbieterkennzeichnung und rechtliche Angaben.",
     "privacyDescription": "Informationen zur Verarbeitung personenbezogener Daten auf dieser Website.",
     "fairsTitle": "Messekalender und Messegelände in Europa",
-    "fairsDescription": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung."
+    "fairsDescription": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung.",
+    "pmTitle": "Projektleitung im Messebau – Werkzeuge für Projektleiter",
+    "pmDescription": "Terminablaufplan, Fristen-Radar, Machbarkeit in 3D, 4D-Aufbau, Logistik- und Ladeplanung, Schichtplan, Budget, Aufbautag-Leitstand und Übergabeprotokoll – kostenlos im Browser."
   },
   "common": {
     "skip": "Zum Inhalt springen",
@@ -50,7 +52,8 @@
     "home": "Startseite",
     "main": "Hauptnavigation",
     "fairs": "Messen",
-    "venues": "Messestandorte"
+    "venues": "Messestandorte",
+    "pm": "Projektleitung"
   },
   "hero": {
     "eyebrow": "Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
@@ -917,5 +920,12 @@
     "teaserLabel": "Nächste Messetermine",
     "teaserRunning": "Läuft",
     "teaserNote": "Orientierung für die Projektplanung – die Einträge sagen nichts über Aufträge oder eine Teilnahme von CL Projektwerk aus."
+  },
+  "pm": {
+    "eyebrow": "Für Projektleiter im Messebau",
+    "title": "Projekte steuern, bevor die Halle öffnet.",
+    "lead": "Zehn Werkzeuge für die Projektleitung – vom Terminablaufplan bis zur unterschriebenen Übergabe. Alles läuft im Browser, nichts wird übertragen.",
+    "cta": "Werkzeuge öffnen",
+    "teaser": "Neu: Werkzeuge für Projektleiter"
   }
 }

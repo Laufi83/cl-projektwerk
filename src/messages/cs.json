@@ -16,7 +16,9 @@
     "imprintDescription": "Právní informace a údaje o poskytovateli.",
     "privacyDescription": "Informace o zpracování osobních údajů na těchto stránkách.",
     "fairsTitle": "Kalendář veletrhů a výstaviště v Evropě",
-    "fairsDescription": "Nejbližší veletrhy v Německu a Evropě a 50 výstavišť na jednom místě – pro orientaci při plánování vašich projektů."
+    "fairsDescription": "Nejbližší veletrhy v Německu a Evropě a 50 výstavišť na jednom místě – pro orientaci při plánování vašich projektů.",
+    "pmTitle": "Řízení projektů stánků – nástroje",
+    "pmDescription": "Harmonogram, termíny, proveditelnost 3D, montáž 4D, logistika, směny, rozpočet a předávací protokol – zdarma v prohlížeči."
   },
   "common": {
     "skip": "Přeskočit na obsah",
@@ -50,7 +52,8 @@
     "home": "Úvod",
     "main": "Hlavní navigace",
     "fairs": "Veletrhy",
-    "venues": "Výstaviště"
+    "venues": "Výstaviště",
+    "pm": "Řízení projektů"
   },
   "hero": {
     "eyebrow": "Plánovací a projektová kancelář · Stánky · Značkové prostory · Interiéry",
@@ -1007,5 +1010,12 @@
     "teaserLabel": "Nejbližší termíny veletrhů",
     "teaserRunning": "Probíhá",
     "teaserNote": "Pro orientaci při plánování projektů – údaje neříkají nic o zakázkách ani o účasti CL Projektwerk."
+  },
+  "pm": {
+    "eyebrow": "Pro projektové manažery veletrhů",
+    "title": "Řiďte projekt dřív, než se otevře hala.",
+    "lead": "Deset nástrojů pro řízení projektu – od harmonogramu po podepsané předání. Vše běží v prohlížeči.",
+    "cta": "Otevřít nástroje",
+    "teaser": "Nové: nástroje pro projektové manažery"
   }
 }

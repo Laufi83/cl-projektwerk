@@ -1374,5 +1374,826 @@
       "green",
       "light"
     ]
+  },
+  "182 Garden Tools": {
+    "title": "Garden Tools",
+    "de": "Eckstand für Gartengeräte: Grünwand mit Blattmotiv und orangem Akzent, Regal mit Akku-Geräten, Rasenmäher auf einem Rasenpodest, Theke und Besprechungstisch.",
+    "en": "Corner stand for garden tools: a green leaf-motif wall with an orange accent, shelves with cordless tools, a lawnmower on a turf plinth, a counter and a meeting table.",
+    "floors": 1,
+    "standType": "corner"
+  },
+  "183 Shower Studio": {
+    "title": "Shower Studio",
+    "de": "Stand für Bad und Sanitär: Wände in Naturstein- und Marmoroptik, Duschwände mit Armaturen als Exponate, Theke aus Stein und eine Sitzgruppe.",
+    "en": "Stand for bathrooms and sanitaryware: stone and marble-look walls, shower enclosures with fittings as exhibits, a stone counter and a seating area.",
+    "floors": 1,
+    "standType": "corner"
+  },
+  "184 CL32-01 Eckstand 4x4m": {
+    "title": "CL32 Eckstand 4×4 m",
+    "de": "Kompakter Eckstand 4 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 4 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 4.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "185 CL32-02 Eckstand 5x4m": {
+    "title": "CL32 Eckstand 5×4 m",
+    "de": "Kompakter Eckstand 5 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 5 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 5.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "186 CL32-03 Eckstand 6x4m": {
+    "title": "CL32 Eckstand 6×4 m",
+    "de": "Kompakter Eckstand 6 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 6 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "187 CL32-04 Eckstand 7x4m": {
+    "title": "CL32 Eckstand 7×4 m",
+    "de": "Kompakter Eckstand 7 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 7 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "188 CL32-05 Eckstand 8x4m": {
+    "title": "CL32 Eckstand 8×4 m",
+    "de": "Kompakter Eckstand 8 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 8 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "189 CL32-06 Eckstand 6x5m": {
+    "title": "CL32 Eckstand 6×5 m",
+    "de": "Kompakter Eckstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "190 CL32-07 Eckstand 7x5m": {
+    "title": "CL32 Eckstand 7×5 m",
+    "de": "Kompakter Eckstand 7 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 7 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "191 CL32-08 Eckstand 8x5m": {
+    "title": "CL32 Eckstand 8×5 m",
+    "de": "Kompakter Eckstand 8 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact corner stand 8 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "corner"
+  },
+  "192 CL32-09 Reihenstand 4x4m": {
+    "title": "CL32 Reihenstand 4×4 m",
+    "de": "Kompakter Reihenstand 4 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 4 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 4.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "193 CL32-10 Reihenstand 5x4m": {
+    "title": "CL32 Reihenstand 5×4 m",
+    "de": "Kompakter Reihenstand 5 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 5 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 5.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "194 CL32-11 Reihenstand 6x4m": {
+    "title": "CL32 Reihenstand 6×4 m",
+    "de": "Kompakter Reihenstand 6 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 6 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "195 CL32-12 Reihenstand 7x4m": {
+    "title": "CL32 Reihenstand 7×4 m",
+    "de": "Kompakter Reihenstand 7 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 7 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "196 CL32-13 Reihenstand 8x4m": {
+    "title": "CL32 Reihenstand 8×4 m",
+    "de": "Kompakter Reihenstand 8 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 8 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "197 CL32-14 Reihenstand 6x5m": {
+    "title": "CL32 Reihenstand 6×5 m",
+    "de": "Kompakter Reihenstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "198 CL32-15 Reihenstand 7x5m": {
+    "title": "CL32 Reihenstand 7×5 m",
+    "de": "Kompakter Reihenstand 7 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 7 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "199 CL32-16 Reihenstand 8x5m": {
+    "title": "CL32 Reihenstand 8×5 m",
+    "de": "Kompakter Reihenstand 8 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact row stand 8 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "200 CL32-17 Inselstand 4x4m": {
+    "title": "CL32 Inselstand 4×4 m",
+    "de": "Kompakter Inselstand 4 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 4 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 4.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "201 CL32-18 Inselstand 5x4m": {
+    "title": "CL32 Inselstand 5×4 m",
+    "de": "Kompakter Inselstand 5 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 5 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 5.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "202 CL32-19 Inselstand 6x4m": {
+    "title": "CL32 Inselstand 6×4 m",
+    "de": "Kompakter Inselstand 6 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 6 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "203 CL32-20 Inselstand 7x4m": {
+    "title": "CL32 Inselstand 7×4 m",
+    "de": "Kompakter Inselstand 7 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 7 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "204 CL32-21 Inselstand 8x4m": {
+    "title": "CL32 Inselstand 8×4 m",
+    "de": "Kompakter Inselstand 8 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 8 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "205 CL32-22 Inselstand 6x5m": {
+    "title": "CL32 Inselstand 6×5 m",
+    "de": "Kompakter Inselstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "206 CL32-23 Inselstand 7x5m": {
+    "title": "CL32 Inselstand 7×5 m",
+    "de": "Kompakter Inselstand 7 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 7 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "207 CL32-24 Inselstand 8x5m": {
+    "title": "CL32 Inselstand 8×5 m",
+    "de": "Kompakter Inselstand 8 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact island stand 8 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "island"
+  },
+  "208 CL32-25 Kopfstand 4x4m": {
+    "title": "CL32 Kopfstand 4×4 m",
+    "de": "Kompakter Kopfstand 4 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 4 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 4.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "209 CL32-26 Kopfstand 5x4m": {
+    "title": "CL32 Kopfstand 5×4 m",
+    "de": "Kompakter Kopfstand 5 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 5 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 5.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "210 CL32-27 Kopfstand 6x4m": {
+    "title": "CL32 Kopfstand 6×4 m",
+    "de": "Kompakter Kopfstand 6 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 6 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "211 CL32-28 Kopfstand 7x4m": {
+    "title": "CL32 Kopfstand 7×4 m",
+    "de": "Kompakter Kopfstand 7 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 7 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "212 CL32-29 Kopfstand 8x4m": {
+    "title": "CL32 Kopfstand 8×4 m",
+    "de": "Kompakter Kopfstand 8 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 8 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "213 CL32-30 Kopfstand 6x5m": {
+    "title": "CL32 Kopfstand 6×5 m",
+    "de": "Kompakter Kopfstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "214 CL32-31 Kopfstand 7x5m": {
+    "title": "CL32 Kopfstand 7×5 m",
+    "de": "Kompakter Kopfstand 7 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 7 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "215 CL32-32 Kopfstand 8x5m": {
+    "title": "CL32 Kopfstand 8×5 m",
+    "de": "Kompakter Kopfstand 8 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen.",
+    "en": "Compact peninsula stand 8 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants.",
+    "width": 8.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "216 CL32-14 Variante B": {
+    "title": "CL32 Reihenstand 6×5 m · Variante B",
+    "de": "Kompakter Reihenstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact row stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "row"
+  },
+  "217 CL32-25 Variante B": {
+    "title": "CL32 Kopfstand 4×4 m · Variante B",
+    "de": "Kompakter Kopfstand 4 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 4 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 4.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "218 CL32-26 Variante B": {
+    "title": "CL32 Kopfstand 5×4 m · Variante B",
+    "de": "Kompakter Kopfstand 5 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 5 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 5.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "219 CL32-27 Variante B": {
+    "title": "CL32 Kopfstand 6×4 m · Variante B",
+    "de": "Kompakter Kopfstand 6 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 6 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 6.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "220 CL32-28 Variante B": {
+    "title": "CL32 Kopfstand 7×4 m · Variante B",
+    "de": "Kompakter Kopfstand 7 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 7 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 7.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "221 CL32-29 Variante B": {
+    "title": "CL32 Kopfstand 8×4 m · Variante B",
+    "de": "Kompakter Kopfstand 8 × 4 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 8 × 4 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 8.0,
+    "depth": 4.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "222 CL32-30 Variante B": {
+    "title": "CL32 Kopfstand 6×5 m · Variante B",
+    "de": "Kompakter Kopfstand 6 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 6 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 6.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "223 CL32-31 Variante B": {
+    "title": "CL32 Kopfstand 7×5 m · Variante B",
+    "de": "Kompakter Kopfstand 7 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 7 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "224 CL32-32 Variante B": {
+    "title": "CL32 Kopfstand 8×5 m · Variante B",
+    "de": "Kompakter Kopfstand 8 × 5 m aus der Baureihe CL32: schwarze Wände mit blauen Diagonalgrafiken, umlaufender Traversenrahmen mit Logo-Blende und Spots, beleuchtete Theke, Besprechungstisch und Pflanzen. Variante B mit geänderter Wand- und Grafikaufteilung.",
+    "en": "Compact peninsula stand 8 × 5 m from the CL32 series: black walls with blue diagonal graphics, a surrounding truss frame with logo fascia and spots, an illuminated counter, a meeting table and plants. Variant B with a revised wall and graphic layout.",
+    "width": 8.0,
+    "depth": 5.0,
+    "floors": 1,
+    "standType": "head"
+  },
+  "225 EXPO REAL 05 Terrace District": {
+    "title": "Terrace District · Variante B",
+    "de": "Weitere Variante des EXPO-REAL-Konzepts „Terrace District“ mit eigener Material- und Lichtstimmung, zweigeschossig mit Lounge im Obergeschoss und Architekturmodellen.",
+    "en": "Another variant of the EXPO REAL concept “Terrace District” with its own material and lighting mood, two storeys with an upper-level lounge and architectural models.",
+    "width": 14,
+    "depth": 12,
+    "floors": 2,
+    "height": 5.5,
+    "standType": "corner",
+    "tags": [
+      "real-estate"
+    ]
+  },
+  "226 EXPO REAL 04 Graphite Forum Variante A": {
+    "title": "Graphite Forum · Variante A",
+    "de": "Weitere Variante des EXPO-REAL-Konzepts „Graphite Forum“ mit eigener Material- und Lichtstimmung, zweigeschossig mit Lounge im Obergeschoss und Architekturmodellen.",
+    "en": "Another variant of the EXPO REAL concept “Graphite Forum” with its own material and lighting mood, two storeys with an upper-level lounge and architectural models.",
+    "width": 16,
+    "depth": 10,
+    "floors": 2,
+    "height": 6,
+    "standType": "corner",
+    "tags": [
+      "real-estate"
+    ]
+  },
+  "227 EXPO REAL 12 Ribbon Bridge Variante A": {
+    "title": "Ribbon Bridge · Variante A",
+    "de": "Weitere Variante des EXPO-REAL-Konzepts „Ribbon Bridge“ mit eigener Material- und Lichtstimmung, zweigeschossig mit Lounge im Obergeschoss und Architekturmodellen.",
+    "en": "Another variant of the EXPO REAL concept “Ribbon Bridge” with its own material and lighting mood, two storeys with an upper-level lounge and architectural models.",
+    "width": 16,
+    "depth": 10,
+    "floors": 2,
+    "height": 5.6,
+    "standType": "head",
+    "tags": [
+      "real-estate"
+    ]
+  },
+  "228 EXPO REAL 12 Ribbon Bridge Variante B": {
+    "title": "Ribbon Bridge · Variante B",
+    "de": "Weitere Variante des EXPO-REAL-Konzepts „Ribbon Bridge“ mit eigener Material- und Lichtstimmung, zweigeschossig mit Lounge im Obergeschoss und Architekturmodellen.",
+    "en": "Another variant of the EXPO REAL concept “Ribbon Bridge” with its own material and lighting mood, two storeys with an upper-level lounge and architectural models.",
+    "width": 16,
+    "depth": 10,
+    "floors": 2,
+    "height": 5.6,
+    "standType": "head",
+    "tags": [
+      "real-estate"
+    ]
+  },
+  "229 CL29 Print Panorama": {
+    "title": "Print Panorama",
+    "de": "Zweigeschossiger Stand für Druck und Digitaldruck: große leuchtende Bildflächen, ein Großformatdrucker als Exponat, Farbmuster-Stelen und eine Treppe zur Lounge im Obergeschoss.",
+    "en": "Two-storey stand for print and digital printing: large illuminated image walls, a wide-format printer as the exhibit, colour-sample stands and a stair to the upper-level lounge.",
+    "floors": 2
+  },
+  "230 CL50-001 Vital Arc": {
+    "title": "Vital Arc",
+    "de": "Zweigeschossiger Eckstand für Medizintechnik und Labor: Ein einziger weiter asymmetrischer Bogen aus weißem Formbau trägt eine schmale echte OG-Galerie. Exponate: Ultraschall-Demowagen, Patientenmonitor, kompakter Laboranalysator und sterile Instrumentenvitrine. Farben: Weiß, Petrol, gebürstetes Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for medical technology & lab, with an ultrasound demo cart, a patient monitor, a compact lab analyser and a sterile instrument showcase. Colours: white, petrol and brushed metal. CL50 series, concept design.",
+    "width": 8.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "231 CL50-002 Cleanroom Canopy": {
+    "title": "Cleanroom Canopy",
+    "de": "Zweigeschossiger Kopfstand für Medizintechnik und Labor: Zwei gegeneinander verschobene rechtwinklige OG-Platten, eine kürzer und schmaler, verbunden durch eine echte begehbare Galerie an der geschlossenen Nachbarwand. Exponate: Ultraschall-Demowagen, Patientenmonitor, kompakter Laboranalysator und sterile Instrumentenvitrine. Farben: Weiß, Petrol, gebürstetes Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for medical technology & lab, with an ultrasound demo cart, a patient monitor, a compact lab analyser and a sterile instrument showcase. Colours: white, petrol and brushed metal. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "232 CL50-004 Precision Fold": {
+    "title": "Precision Fold",
+    "de": "Eingeschossiger Eckstand für Medizintechnik und Labor: Eingeschossige, einmal scharf gefaltete hohe Wand aus drei großen geraden Flächen mit kleinen tiefen Produktnischen. Exponate: Ultraschall-Demowagen, Patientenmonitor, kompakter Laboranalysator und sterile Instrumentenvitrine. Farben: Weiß, Petrol, gebürstetes Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey corner stand for medical technology & lab, with an ultrasound demo cart, a patient monitor, a compact lab analyser and a sterile instrument showcase. Colours: white, petrol and brushed metal. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "corner"
+  },
+  "233 CL50-005 BioCell Studio": {
+    "title": "BioCell Studio",
+    "de": "Eingeschossiger Kopfstand für Medizintechnik und Labor: Drei lose verschränkte rechteckige Labor-Podeste auf ebenerdigem Boden, jeweils mit einer halbhohen milchigen Glasschotte; hohe doppelte vertikale Markenscheiben als Abschluss an Nachbarseiten. Exponate: Ultraschall-Demowagen, Patientenmonitor, kompakter Laboranalysator und sterile Instrumentenvitrine. Farben: Weiß, Petrol, gebürstetes Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey peninsula stand for medical technology & lab, with an ultrasound demo cart, a patient monitor, a compact lab analyser and a sterile instrument showcase. Colours: white, petrol and brushed metal. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 7.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "head"
+  },
+  "234 CL50-003 Diagnostic Spine": {
+    "title": "Diagnostic Spine",
+    "de": "Zweigeschossiger Reihenstand für Medizintechnik und Labor: Ein tiefer hoher gerader geschlossener Service-Rücken mit durchlaufender OG-Besprechungsebene, davor auf EG eine schräg gestellte schlanke Untersuchungs-Demobar. Exponate: Ultraschall-Demowagen, Patientenmonitor, kompakter Laboranalysator und sterile Instrumentenvitrine. Farben: Weiß, Petrol, gebürstetes Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for medical technology & lab, with an ultrasound demo cart, a patient monitor, a compact lab analyser and a sterile instrument showcase. Colours: white, petrol and brushed metal. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "235 CL50-006 Solar Crest": {
+    "title": "Solar Crest",
+    "de": "Zweigeschossiger Reihenstand für Energie und Speicher: Echte OG-Besprechungsebene mit einer einzigen sanft konkaven Frontkante unter einer nach oben gefalteten nicht begehbaren Dachscheibe. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "236 CL50-007 Battery Stack Loft Variante A": {
+    "title": "Battery Stack Loft · Variante A",
+    "de": "Zweigeschossiger Eckstand für Energie und Speicher: Drei unterschiedlich breite rechteckige geschlossene Serviceblöcke wirken wie präzise Batteriegehäuse und tragen eine versetzte echte OG-Lounge. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "237 CL50-007 Battery Stack Loft Variante B": {
+    "title": "Battery Stack Loft · Variante B",
+    "de": "Zweigeschossiger Eckstand für Energie und Speicher: Drei unterschiedlich breite rechteckige geschlossene Serviceblöcke wirken wie präzise Batteriegehäuse und tragen eine versetzte echte OG-Lounge. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "238 CL50-009 Charge Gate": {
+    "title": "Charge Gate",
+    "de": "Eingeschossiger Reihenstand für Energie und Speicher: Ein übergroßes asymmetrisches offenes Tor aus zwei geraden Schenkeln ohne Obergeschoss überspannt nur die vordere Demozone. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey row stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "row"
+  },
+  "239 CL50-010 Energy Steps": {
+    "title": "Energy Steps",
+    "de": "Eingeschossiger Eckstand für Energie und Speicher: Eingeschossige Ausstellungslandschaft aus drei nur 100mm hohen nicht begehbaren Produktpodesten mit diagonal wechselnden gelben Stirnseiten; Wege bleiben ebenerdig ohne Stufen. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey corner stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 11.0,
+    "depth": 6.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "corner"
+  },
+  "240 CL50-008 Gridline Terrace": {
+    "title": "Gridline Terrace",
+    "de": "Zweigeschossiger Kopfstand für Energie und Speicher: Echte L-förmige OG-Fläche auf drei schlanken Stützen vor einer ruhigen vollständig geschlossenen Rückwand; zwei große rechteckige Öffnungen im inneren Luftraum lassen Blick auf EG-Batteriedemos. Exponate: Zwei Photovoltaikmodule, ein Batteriespeicherschrank, ein Wechselrichter und ein kompakter Leistungselektronik-Schnittdemonstrator. Farben: Dunkelblau, Weiß, warmes Solargelb. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for energy & storage, with two PV modules, a battery storage cabinet, an inverter and a power-electronics cutaway. Colours: dark blue, white and warm solar yellow. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "241 CL50-014 Cobot Workshop": {
+    "title": "Cobot Workshop",
+    "de": "Eingeschossiger Kopfstand für Robotik und Automation: Eingeschossiger offener Werkstattaufbau aus zwei hohen geraden gelochten Metall-Schotten und einer schmalen horizontalen Markenkonsole. Exponate: Eine kompakte geschützte Sechsachsroboter-Demozelle, ein Cobot auf Arbeitstisch, eine Linearachse und eine Sensorvitrine. Farben: Anthrazit, Signalorange, Aluminium. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey peninsula stand for robotics & automation, with a guarded six-axis robot cell, a cobot on a workbench, a linear axis and a sensor showcase. Colours: anthracite, signal orange and aluminium. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "head"
+  },
+  "242 CL50-015 Sensor Blades": {
+    "title": "Sensor Blades",
+    "de": "Eingeschossiger Reihenstand für Robotik und Automation: Eingeschossig: vier schlanke vertikale aluminiumfarbene Produktflossen fächern von einem geschlossenen Servicekörper nach innen auf. Exponate: Eine kompakte geschützte Sechsachsroboter-Demozelle, ein Cobot auf Arbeitstisch, eine Linearachse und eine Sensorvitrine. Farben: Anthrazit, Signalorange, Aluminium. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey row stand for robotics & automation, with a guarded six-axis robot cell, a cobot on a workbench, a linear axis and a sensor showcase. Colours: anthracite, signal orange and aluminium. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 7.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "row"
+  },
+  "243 CL50-018 Chassis Grid": {
+    "title": "Chassis Grid",
+    "de": "Zweigeschossiger Reihenstand für Mobilität und Fahrzeugtechnik: Echte U-förmige obere Besprechungsebene an geschlossenen Nachbarflächen, darunter sichtbare gerade schlanke Stahlstützen wie ein abstrahiertes Fahrgestell. Exponate: Ein kompakter E-Antriebs-Schnitt, ein Bremsmodul, eine Achsbaugruppe und ein Cockpit-Demonstrator, kein komplettes Fahrzeug. Farben: Silber, Graphit, kräftiges Rot. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for mobility & automotive, with an e-drive cutaway, a brake module, an axle assembly and a cockpit demonstrator. Colours: silver, graphite and strong red. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "244 CL50-017 Drive Tunnel Loft": {
+    "title": "Drive Tunnel Loft",
+    "de": "Zweigeschossiger Kopfstand für Mobilität und Fahrzeugtechnik: Ein großer asymmetrischer rechteckiger Tunnelrahmen bildet die Front einer echten OG-Galerie; der tiefe Rückenkörper umfasst OG-Besprechung und EG-Lager. Exponate: Ein kompakter E-Antriebs-Schnitt, ein Bremsmodul, eine Achsbaugruppe und ein Cockpit-Demonstrator, kein komplettes Fahrzeug. Farben: Silber, Graphit, kräftiges Rot. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for mobility & automotive, with an e-drive cutaway, a brake module, an axle assembly and a cockpit demonstrator. Colours: silver, graphite and strong red. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "245 CL50-016 Velocity Wing": {
+    "title": "Velocity Wing",
+    "de": "Zweigeschossiger Eckstand für Mobilität und Fahrzeugtechnik: Echte OG-Lounge mit spitz zulaufender, innerhalb der Standgrenze liegender Flügel-Stirn über einem schlanken EG-Empfangsbereich. Exponate: Ein kompakter E-Antriebs-Schnitt, ein Bremsmodul, eine Achsbaugruppe und ein Cockpit-Demonstrator, kein komplettes Fahrzeug. Farben: Silber, Graphit, kräftiges Rot. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for mobility & automotive, with an e-drive cutaway, a brake module, an axle assembly and a cockpit demonstrator. Colours: silver, graphite and strong red. CL50 series, concept design.",
+    "width": 8.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "246 CL50-019 Torque Gallery": {
+    "title": "Torque Gallery",
+    "de": "Eingeschossiger Eckstand für Mobilität und Fahrzeugtechnik: Eingeschossig: eine dynamisch diagonal gestellte silberne hohe Wandscheibe mit vier tiefen rechteckigen Produktnischen, davor niedriges rotes Empfangsband. Exponate: Ein kompakter E-Antriebs-Schnitt, ein Bremsmodul, eine Achsbaugruppe und ein Cockpit-Demonstrator, kein komplettes Fahrzeug. Farben: Silber, Graphit, kräftiges Rot. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey corner stand for mobility & automotive, with an e-drive cutaway, a brake module, an axle assembly and a cockpit demonstrator. Colours: silver, graphite and strong red. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "corner"
+  },
+  "247 CL50-020 Roadline Pavilion": {
+    "title": "Roadline Pavilion",
+    "de": "Eingeschossiger Kopfstand für Mobilität und Fahrzeugtechnik: Eingeschossige Architektur aus drei kurzen parallel versetzten flachen Pultdach-Scheiben auf schlanken Stützen; darunter kompakte Technikstationen. Exponate: Ein kompakter E-Antriebs-Schnitt, ein Bremsmodul, eine Achsbaugruppe und ein Cockpit-Demonstrator, kein komplettes Fahrzeug. Farben: Silber, Graphit, kräftiges Rot. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey peninsula stand for mobility & automotive, with an e-drive cutaway, a brake module, an axle assembly and a cockpit demonstrator. Colours: silver, graphite and strong red. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 7.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "head"
+  },
+  "248 CL50-021 Harvest Loft": {
+    "title": "Harvest Loft",
+    "de": "Zweigeschossiger Reihenstand für Lebensmittel und Getränketechnik: Echte obere Lounge mit breiter weich geschwungener Balkonfront, darunter leicht zurückgesetzte gerade Edelstahl-Demolinie. Exponate: Eine kompakte Abfüll-Demomaschine, eine hygienische Pumpen-/Ventilbaugruppe, eine Verpackungsmuster-Vitrine und eine kleine Probiertheke. Farben: Cremeweiß, Salbeigrün, Edelstahl. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for food & beverage technology, with a compact filling machine, a hygienic pump/valve assembly, a packaging showcase and a tasting counter. Colours: cream white, sage green and stainless steel. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "249 CL50-022 Stainless Salon": {
+    "title": "Stainless Salon",
+    "de": "Zweigeschossiger Eckstand für Lebensmittel und Getränketechnik: Zwei gegeneinander versetzte echte OG-Besprechungsfelder verbinden sich durch eine schmale hintere Galerie an der Nachbarwand. Exponate: Eine kompakte Abfüll-Demomaschine, eine hygienische Pumpen-/Ventilbaugruppe, eine Verpackungsmuster-Vitrine und eine kleine Probiertheke. Farben: Cremeweiß, Salbeigrün, Edelstahl. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for food & beverage technology, with a compact filling machine, a hygienic pump/valve assembly, a packaging showcase and a tasting counter. Colours: cream white, sage green and stainless steel. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "250 CL50-024 Fresh Fold": {
+    "title": "Fresh Fold",
+    "de": "Eingeschossiger Reihenstand für Lebensmittel und Getränketechnik: Eingeschossiges mehrfach stumpfwinklig geknicktes weißes Wandband mit eingesetzten hygienischen Produktvitrinen. Exponate: Eine kompakte Abfüll-Demomaschine, eine hygienische Pumpen-/Ventilbaugruppe, eine Verpackungsmuster-Vitrine und eine kleine Probiertheke. Farben: Cremeweiß, Salbeigrün, Edelstahl. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey row stand for food & beverage technology, with a compact filling machine, a hygienic pump/valve assembly, a packaging showcase and a tasting counter. Colours: cream white, sage green and stainless steel. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "row"
+  },
+  "251 CL50-027 Cloud Bridge": {
+    "title": "Cloud Bridge",
+    "de": "Zweigeschossiger Reihenstand für Digitalisierung und Cybersicherheit: Eine echte gerade OG-Brücke mit verbreitertem Besprechungsende überspannt einen offenen EG-Demoraum zwischen zwei blickdichten Servicekernen. Exponate: Ein Serverschrank, ein Edge-Computer, drei interaktive Software-Demostationen und ein neutraler Security-Dashboard-Bildschirm ohne fremde Marken. Farben: Mitternachtsblau, Cyan, Weiß. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for digitalisation & cyber security, with a server rack, an edge computer, three interactive software demos and a security dashboard. Colours: midnight blue, cyan and white. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "252 CL50-026 Data Halo Loft": {
+    "title": "Data Halo Loft",
+    "de": "Zweigeschossiger Kopfstand für Digitalisierung und Cybersicherheit: Echte schmale OG-Galerie mit einer großen dünnen offenen eckigen Halo-Deckenleuchte darüber, keine kreisrunde Vollfassade. Exponate: Ein Serverschrank, ein Edge-Computer, drei interaktive Software-Demostationen und ein neutraler Security-Dashboard-Bildschirm ohne fremde Marken. Farben: Mitternachtsblau, Cyan, Weiß. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for digitalisation & cyber security, with a server rack, an edge computer, three interactive software demos and a security dashboard. Colours: midnight blue, cyan and white. CL50 series, concept design.",
+    "width": 8.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "253 CL50-029 Signal Cubicles": {
+    "title": "Signal Cubicles",
+    "de": "Eingeschossiger Kopfstand für Digitalisierung und Cybersicherheit: Eingeschossig: drei offene nach innen orientierte große rechteckige Software-Demokojen mit verschieden tiefen blauen Wangen; dünne weiße Linien bilden die Markenkommunikation. Exponate: Ein Serverschrank, ein Edge-Computer, drei interaktive Software-Demostationen und ein neutraler Security-Dashboard-Bildschirm ohne fremde Marken. Farben: Mitternachtsblau, Cyan, Weiß. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey peninsula stand for digitalisation & cyber security, with a server rack, an edge computer, three interactive software demos and a security dashboard. Colours: midnight blue, cyan and white. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "head"
+  },
+  "254 CL50-028 Secure Layers": {
+    "title": "Secure Layers",
+    "de": "Zweigeschossiger Eckstand für Digitalisierung und Cybersicherheit: Zweigeschossige Architektur aus zwei räumlich gegeneinander verschobenen großen rechteckigen Scheiben; nur die untere der oberen Scheiben ist die echte OG-Besprechungsfläche, darüber ein dünnes unbegehbares Dach. Exponate: Ein Serverschrank, ein Edge-Computer, drei interaktive Software-Demostationen und ein neutraler Security-Dashboard-Bildschirm ohne fremde Marken. Farben: Mitternachtsblau, Cyan, Weiß. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for digitalisation & cyber security, with a server rack, an edge computer, three interactive software demos and a security dashboard. Colours: midnight blue, cyan and white. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "255 CL50-030 Cyber Prism": {
+    "title": "Cyber Prism",
+    "de": "Eingeschossiger Reihenstand für Digitalisierung und Cybersicherheit: Ein einziger facettierter hoher nicht begehbarer Marken- und Servicekörper bildet das Rückgrat des eingeschossigen Standes, mit echten Serverrack-Nischen und geschlossener Lagerkabine. Exponate: Ein Serverschrank, ein Edge-Computer, drei interaktive Software-Demostationen und ein neutraler Security-Dashboard-Bildschirm ohne fremde Marken. Farben: Mitternachtsblau, Cyan, Weiß. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey row stand for digitalisation & cyber security, with a server rack, an edge computer, three interactive software demos and a security dashboard. Colours: midnight blue, cyan and white. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 7.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "row"
+  },
+  "256 CL50-031 Material Vault": {
+    "title": "Material Vault",
+    "de": "Zweigeschossiger Eckstand für Bau und innovative Materialien: Echte obere Galerie unter drei flachen segmentartigen Gewölbebögen aus hellen Leichtbau-Sonderteilen, keine Kirchenarchitektur. Exponate: Ein Fassaden-Musterfeld, ein Tragwerksknoten-Schnitt, ein Dämmstoff-Demonstrator und ein kompaktes Architekturmodell. Farben: Sand, Terrakotta, dunkles Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for construction & innovative materials, with a façade sample, a structural node cutaway, an insulation demonstrator and an architectural model. Colours: sand, terracotta and dark metal. CL50 series, concept design.",
+    "width": 8.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "257 CL50-034 Strata Wall": {
+    "title": "Strata Wall",
+    "de": "Eingeschossiger Eckstand für Bau und innovative Materialien: Eingeschossige hohe geschichtete gerade Materialwand in drei unterschiedlichen Dicken und Oberflächen; die Schichten laufen als niedrige Ausstellungssockel nach vorne aus. Exponate: Ein Fassaden-Musterfeld, ein Tragwerksknoten-Schnitt, ein Dämmstoff-Demonstrator und ein kompaktes Architekturmodell. Farben: Sand, Terrakotta, dunkles Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey corner stand for construction & innovative materials, with a façade sample, a structural node cutaway, an insulation demonstrator and an architectural model. Colours: sand, terracotta and dark metal. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "corner"
+  },
+  "258 CL50-032 Tectonic Balcony": {
+    "title": "Tectonic Balcony",
+    "de": "Zweigeschossiger Kopfstand für Bau und innovative Materialien: Zwei große gegeneinander versetzte steinoptische Rahmen tragen eine echte OG-Besprechungsebene, deren freie Front durch einen abgestuften nicht begehbaren Reliefsockel gegliedert ist. Exponate: Ein Fassaden-Musterfeld, ein Tragwerksknoten-Schnitt, ein Dämmstoff-Demonstrator und ein kompaktes Architekturmodell. Farben: Sand, Terrakotta, dunkles Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for construction & innovative materials, with a façade sample, a structural node cutaway, an insulation demonstrator and an architectural model. Colours: sand, terracotta and dark metal. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "259 CL50-035 Open Joint": {
+    "title": "Open Joint",
+    "de": "Eingeschossiger Kopfstand für Bau und innovative Materialien: Eingeschossig: zwei große offene rechtwinklige Rahmen treffen sich fast, bleiben aber durch eine breite sichtbare Fuge getrennt. Exponate: Ein Fassaden-Musterfeld, ein Tragwerksknoten-Schnitt, ein Dämmstoff-Demonstrator und ein kompaktes Architekturmodell. Farben: Sand, Terrakotta, dunkles Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey peninsula stand for construction & innovative materials, with a façade sample, a structural node cutaway, an insulation demonstrator and an architectural model. Colours: sand, terracotta and dark metal. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 7.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "head"
+  },
+  "260 CL50-036 Aqua Loop Loft": {
+    "title": "Aqua Loop Loft",
+    "de": "Zweigeschossiger Reihenstand für Wasser und Umwelttechnik: Echte obere Lounge mit leicht wellenförmiger freier Frontkante und transparenter Brüstung; gerade geschlossene Nachbarwände bilden ruhige blaue Technikflächen. Exponate: Eine kompakte Pumpe, ein Filtrationsmodul, ein Ventil-/Rohrdemonstrator und ein kleines Wasseraufbereitungsmodell. Farben: Weiß, Aquablau, dunkles Graphit. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for water & environmental technology, with a compact pump, a filtration module, a valve/pipe demonstrator and a water-treatment model. Colours: white, aqua blue and dark graphite. CL50 series, concept design.",
+    "width": 9.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "261 CL50-033 Construction Gallery": {
+    "title": "Construction Gallery",
+    "de": "Zweigeschossiger Reihenstand für Bau und innovative Materialien: Echte L-förmige OG-Fläche mit einer deutlich diagonalen Galeriebrüstung, getragen von wenigen sichtbaren dunklen Stahlrahmen vor geschlossenen sandfarbenen Nachbarwänden. Exponate: Ein Fassaden-Musterfeld, ein Tragwerksknoten-Schnitt, ein Dämmstoff-Demonstrator und ein kompaktes Architekturmodell. Farben: Sand, Terrakotta, dunkles Metall. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for construction & innovative materials, with a façade sample, a structural node cutaway, an insulation demonstrator and an architectural model. Colours: sand, terracotta and dark metal. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
+  },
+  "262 CL50-037 Filter House": {
+    "title": "Filter House",
+    "de": "Zweigeschossiger Eckstand für Wasser und Umwelttechnik: Echte rechteckige OG-Lounge zwischen zwei ungleich breiten vertikalen lamellenartigen Servicewänden, darüber gerade dünne auskragende Dachplatte. Exponate: Eine kompakte Pumpe, ein Filtrationsmodul, ein Ventil-/Rohrdemonstrator und ein kleines Wasseraufbereitungsmodell. Farben: Weiß, Aquablau, dunkles Graphit. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey corner stand for water & environmental technology, with a compact pump, a filtration module, a valve/pipe demonstrator and a water-treatment model. Colours: white, aqua blue and dark graphite. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "corner"
+  },
+  "263 CL50-038 Blue Current Terrace": {
+    "title": "Blue Current Terrace",
+    "de": "Zweigeschossiger Kopfstand für Wasser und Umwelttechnik: Echte OG-Galerie besteht aus zwei breiten rechteckigen Abschnitten mit einer schrägen Verbindung innerhalb der Grundfläche. Exponate: Eine kompakte Pumpe, ein Filtrationsmodul, ein Ventil-/Rohrdemonstrator und ein kleines Wasseraufbereitungsmodell. Farben: Weiß, Aquablau, dunkles Graphit. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for water & environmental technology, with a compact pump, a filtration module, a valve/pipe demonstrator and a water-treatment model. Colours: white, aqua blue and dark graphite. CL50 series, concept design.",
+    "width": 12.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "264 CL50-039 Hydro Screen": {
+    "title": "Hydro Screen",
+    "de": "Eingeschossiger Reihenstand für Wasser und Umwelttechnik: Eingeschossiger Stand mit einer einzigen langen frei stehenden perforierten aquablauen Metall-Schotte vor geschlossener Nachbarwand, davor Pumpen und Filtrationsinseln. Exponate: Eine kompakte Pumpe, ein Filtrationsmodul, ein Ventil-/Rohrdemonstrator und ein kleines Wasseraufbereitungsmodell. Farben: Weiß, Aquablau, dunkles Graphit. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey row stand for water & environmental technology, with a compact pump, a filtration module, a valve/pipe demonstrator and a water-treatment model. Colours: white, aqua blue and dark graphite. CL50 series, concept design.",
+    "width": 7.0,
+    "depth": 5.0,
+    "floors": 1,
+    "height": 4.0,
+    "standType": "row"
+  },
+  "265 CL50-040 Flow Chambers": {
+    "title": "Flow Chambers",
+    "de": "Eingeschossiger Eckstand für Wasser und Umwelttechnik: Eingeschossig: drei asymmetrisch breite eckige Produktkammern, deren schräg stehende Innenwangen einen offenen Besucherweg formen. Exponate: Eine kompakte Pumpe, ein Filtrationsmodul, ein Ventil-/Rohrdemonstrator und ein kleines Wasseraufbereitungsmodell. Farben: Weiß, Aquablau, dunkles Graphit. Baureihe CL50, Konzeptplanung.",
+    "en": "A single-storey corner stand for water & environmental technology, with a compact pump, a filtration module, a valve/pipe demonstrator and a water-treatment model. Colours: white, aqua blue and dark graphite. CL50 series, concept design.",
+    "width": 11.0,
+    "depth": 6.0,
+    "floors": 1,
+    "height": 5.0,
+    "standType": "corner"
+  },
+  "266 CL50-041 Cargo Loft": {
+    "title": "Cargo Loft",
+    "de": "Zweigeschossiger Kopfstand für Logistik und Intralogistik: Echte OG-Meetingebene als asymmetrisch versetztes rechteckiges Deck auf drei dunklen präzisen Stützen, optisch an Logistikplattformen angelehnt. Exponate: Ein kompakter autonomer Transportroboter, ein kurzer Rollenförderer, eine Behälter-Testwand und ein Scannerterminal. Farben: Dunkelgrau, Weiß, Limettengrün. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey peninsula stand for logistics & intralogistics, with an autonomous mobile robot, a short roller conveyor, a container test wall and a scanner terminal. Colours: dark grey, white and lime green. CL50 series, concept design.",
+    "width": 8.0,
+    "depth": 6.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "head"
+  },
+  "267 CL50-042 Conveyor Bridge": {
+    "title": "Conveyor Bridge",
+    "de": "Zweigeschossiger Reihenstand für Logistik und Intralogistik: Echte OG-Galerie als breiter gerader Steg mit vertikal gerippten dunkelgrauen Brüstungsstirnen und Glasgeländer. Exponate: Ein kompakter autonomer Transportroboter, ein kurzer Rollenförderer, eine Behälter-Testwand und ein Scannerterminal. Farben: Dunkelgrau, Weiß, Limettengrün. Baureihe CL50, Konzeptplanung.",
+    "en": "A two-storey row stand for logistics & intralogistics, with an autonomous mobile robot, a short roller conveyor, a container test wall and a scanner terminal. Colours: dark grey, white and lime green. CL50 series, concept design.",
+    "width": 10.0,
+    "depth": 7.0,
+    "floors": 2,
+    "height": 6.0,
+    "standType": "row"
   }
 }

@@ -14,7 +14,9 @@
     "selectionTitle": "Mój wybór",
     "selectionDescription": "Zapisane koncepcje stoisk, które możesz dołączyć do zapytania.",
     "imprintDescription": "Nota prawna i dane dostawcy usług.",
-    "privacyDescription": "Informacje o przetwarzaniu danych osobowych na tej stronie."
+    "privacyDescription": "Informacje o przetwarzaniu danych osobowych na tej stronie.",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "Przejdź do treści",
@@ -46,7 +48,8 @@
     "cta": "Omówmy projekt",
     "selection": "Mój wybór",
     "home": "Strona główna",
-    "main": "Nawigacja główna"
+    "main": "Nawigacja główna",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Zewnętrzne biuro planowania i projektów · Zabudowy targowe, przestrzenie marek, wykończenia wnętrz",
@@ -967,5 +970,12 @@
   },
   "ogImage": {
     "film": "▶ Animacja koncepcyjna"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

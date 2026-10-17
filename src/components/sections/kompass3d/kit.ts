@@ -37,7 +37,7 @@ export function model(src: THREE.Object3D) {
   return c;
 }
 
-/** OC-Stand 6 × 4 m, mittig auf dem Ursprung: Rückwand bei z = −3 (4 m), Seitenwand bei x = +2 (6 m), Kabine hinten rechts; vorn und links offen */
+/** OC-Stand 6 × 4 m (ohne Kabine), mittig auf dem Ursprung: Rückwand bei z = −3 (4 m), Seitenwand bei x = +2 (6 m); vorn und links offen */
 export const STAND = { w: 4, d: 6, h: 2.47, back: -3, side: 2 };
 export function stand(ctx: Ctx) {
   const g = new THREE.Group();
@@ -45,6 +45,16 @@ export function stand(ctx: Ctx) {
   s.position.set(-2, 0, 3);
   g.add(s);
   return g;
+}
+
+/** CL-Logo (orange) als Textur mit transparentem Hintergrund */
+export function clLogo(ctx: Ctx, wide = false) {
+  return ctx.tex(wide ? 1024 : 512, 256, (g) => {
+    g.fillStyle = "#f26a1b"; g.textBaseline = "middle";
+    g.font = "italic 800 190px system-ui, sans-serif"; g.fillText("CL", 20, 140);
+    g.font = "700 110px system-ui, sans-serif"; g.fillText("↗", 300, 82);
+    if (wide) { g.font = "500 120px system-ui, sans-serif"; g.fillText("Projektwerk", 430, 150); }
+  });
 }
 
 /** stilisierte Person (1,80 m) als Größenvergleich */
@@ -145,6 +155,14 @@ export type Van = { g: THREE.Group; door: (name: "fl" | "fr" | "bl" | "br", open
  */
 export function van(ctx: Ctx): Van {
   const g = new THREE.Group();
+  // Lackierung einmal am geladenen Modell: Karosserie schwarz (Texturdetails bleiben), Scheiben und Leuchten unverändert
+  if (!ctx.assets.van.userData.styled) {
+    ctx.assets.van.userData.styled = true;
+    ctx.assets.van.traverse((o) => {
+      const mm = (o as THREE.Mesh).material as THREE.MeshStandardMaterial | undefined;
+      if (mm && /^(Body_exterior|Front_door|Back_door|Lateral_door)/.test(mm.name)) { mm.color.set("#1d1e21"); mm.roughness = 0.38; mm.metalness = 0.35; }
+    });
+  }
   const m = model(ctx.assets.van);
   m.position.y = 0.5676;
   g.add(m);
@@ -154,25 +172,162 @@ export function van(ctx: Ctx): Van {
   const base = new Map<THREE.Object3D, number>(), sign = new Map<THREE.Object3D, number>();
   const c = new THREE.Vector3();
   for (const d of Object.values(doors)) { base.set(d, d.rotation.y); new THREE.Box3().setFromObject(d).getCenter(c); sign.set(d, c.x < 0 ? 1 : -1); }
-  // Abdeckungen: Strahl von außen auf die Karosserie, Fläche auf die getroffene Stelle (bewegt sich mit der Tür)
+  // Flächen auf die Karosserie legen: Strahl von außen, Fläche knapp vor dem ersten Treffer (bewegt sich mit Türen mit)
   const ray = new THREE.Raycaster();
-  const cover = (x: number, y: number, fromZ: number, w: number, h: number, color: string) => {
-    // Fläche quer zum Strahl, knapp vor dem ersten Treffer (die Schriftzüge sind erhabene 3D-Buchstaben)
-    const back = new THREE.Vector3(0, 0, Math.sign(fromZ));
-    ray.set(new THREE.Vector3(x, y, fromZ), back.clone().negate());
+  const decal = (o: [number, number, number], dir: [number, number, number], w: number, h: number, material: THREE.Material) => {
+    const d = new THREE.Vector3(...dir).normalize();
+    ray.set(new THREE.Vector3(...o), d);
     const hit = ray.intersectObject(m, true)[0];
     if (!hit) return;
-    const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), mat(color, 0.35, 0.1, { polygonOffset: true, polygonOffsetFactor: -4 }));
-    p.position.copy(hit.point).addScaledVector(back, 0.012);
-    p.lookAt(p.position.clone().add(back));
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(w, h), material);
+    p.position.copy(hit.point).addScaledVector(d, -0.012);
+    p.lookAt(p.position.clone().sub(d));
     g.add(p); hit.object.attach(p);
   };
-  cover(0, 0.78 + 0.5676, 8, 0.66, 0.16, "#eceeef");   // Schriftzug Haube
-  cover(0, 0.0 + 0.5676, 8, 0.58, 0.15, "#2b2e33");     // Kennzeichen vorn
-  cover(0.6, 0.635 + 0.5676, -8, 0.38, 0.1, "#eceeef"); // Schriftzug Hecktür
+  const Y = 0.5676, body = mat("#1d1e21", 0.38, 0.35, { polygonOffset: true, polygonOffsetFactor: -4 });
+  decal([0, 0.78 + Y, 8], [0, 0, -1], 0.66, 0.16, body); // Herstellerschriftzug Haube
+  decal([0, 0 + Y, 8], [0, 0, -1], 0.58, 0.15, mat("#2b2e33", 0.5, 0, { polygonOffset: true, polygonOffsetFactor: -4 })); // Kennzeichen
+  decal([0.6, 0.635 + Y, -8], [0, 0, 1], 0.38, 0.1, body); // Schriftzug Hecktür
+  // CL-Logo orange auf beiden Seiten und auf der Hecktür
+  const logo = new THREE.MeshStandardMaterial({ map: clLogo(ctx, true), transparent: true, roughness: 0.4, polygonOffset: true, polygonOffsetFactor: -6, emissive: "#f26a1b", emissiveIntensity: 0.15 });
+  decal([5, 1.15 + Y, -0.9], [-1, 0, 0], 2.9, 0.72, logo);
+  decal([-5, 1.15 + Y, -0.9], [1, 0, 0], 2.9, 0.72, logo);
+  decal([0.5, 1.3 + Y, -8], [0, 0, 1], 0.8, 0.4, new THREE.MeshStandardMaterial({ map: clLogo(ctx), transparent: true, roughness: 0.4, polygonOffset: true, polygonOffsetFactor: -6 }));
+  // orange Felgen mit dunkler Nabe (Radmitten z 2,65 / −1,98, Höhe 0,47)
+  const rim = mat("#f26a1b", 0.35, 0.6), hub = mat("#202226", 0.4, 0.6);
+  for (const z of [2.65, -1.98]) for (const sx of [-1, 1]) {
+    const disc = new THREE.Mesh(new THREE.CircleGeometry(0.25, 28), rim);
+    disc.position.set(sx * 1.316, 0.473, z); disc.rotation.y = sx * Math.PI / 2; g.add(disc);
+    const cap = new THREE.Mesh(new THREE.CircleGeometry(0.075, 18), hub);
+    cap.position.set(sx * 1.32, 0.473, z); cap.rotation.y = sx * Math.PI / 2; g.add(cap);
+  }
   return {
     g,
     door: (name, open) => { const d = doors[name]; d.rotation.y = base.get(d)! + sign.get(d)! * open * (name[0] === "f" ? 1.25 : 1.75); },
     floor: 0.6, rear: -3.31, front: 3.99, doorZ: 2.0, side: 1.05,
   };
+}
+
+/* ───────── Sattelzug (schwarz, orange CL-Kofferplane und Felgen, eigene Türflügel, Marken der Vorlage abgedeckt) ───────── */
+/** Ladefläche des Koffers: Boden y = DECK, Heck bei z = REAR, Stirnwand bei z = −3,7, innen x −1,2…1,18, Höhe bis y = 4,0 */
+export const TRUCK = { DECK: 1.36, REAR: -16.84, FRONT: -3.7, X0: -1.2, X1: 1.18, TOP: 4.0 };
+export function truckModel(ctx: Ctx) {
+  const { DECK, REAR } = TRUCK;
+  // Lackierung einmal am geladenen Modell: alles schwarz außer Glas und Leuchten, Felgen (helle Teile der Achsen) orange
+  const lkw = ctx.assets.lkw!;
+  if (!lkw.userData.styled) {
+    lkw.userData.styled = true;
+    const keep = /Translucent|Color_D01|^\*[3-6]$/;
+    const rim = mat("#f26a1b", 0.35, 0.6);
+    const inWheel = (o: THREE.Object3D) => { for (let q: THREE.Object3D | null = o; q; q = q.parent) if (/^w[1-5]$/.test(q.name)) return true; return false; };
+    const done = new Set<THREE.Material>();
+    lkw.traverse((o) => {
+      const m = o as THREE.Mesh;
+      if (!m.isMesh) return;
+      const mm = m.material as THREE.MeshStandardMaterial;
+      if (inWheel(m) && !mm.transparent && mm.color.getHSL({ h: 0, s: 0, l: 0 }).l > 0.12) { m.material = rim; return; }
+      if (done.has(mm) || mm.transparent || keep.test(mm.name)) return;
+      done.add(mm); mm.color.set("#17181b"); mm.roughness = Math.min(mm.roughness, 0.45); mm.metalness = Math.max(mm.metalness, 0.3);
+    });
+  }
+  const truck = model(lkw);
+  // orange Felgen als Scheiben auf den Radachsen (drehen mit), Außenflächen links/rechts je Achse gemessen
+  const rimMat = mat("#f26a1b", 0.35, 0.6), hubMat = mat("#1c1d20", 0.4, 0.6);
+  const faces: [string, number, number, number][] = [["w1", -1.225, 1.112, 0.3], ["w2", -1.245, 1.116, 0.3], ["w3", -1.19, 1.237, 0.28], ["w4", -1.19, 1.237, 0.28], ["w5", -1.19, 1.237, 0.28]];
+  for (const [n, l, r, rad] of faces) {
+    const axle = truck.getObjectByName(n);
+    if (!axle) continue;
+    for (const [x, s2] of [[l, -1], [r, 1]] as const) {
+      const disc = new THREE.Mesh(new THREE.CircleGeometry(rad, 28), rimMat); disc.position.set(x, 0, 0); disc.rotation.y = s2 * Math.PI / 2; axle.add(disc);
+      const cap = new THREE.Mesh(new THREE.CircleGeometry(0.08, 18), hubMat); cap.position.set(x + s2 * 0.004, 0, 0); cap.rotation.y = s2 * Math.PI / 2; axle.add(cap);
+    }
+  }
+  // Front des Kühlaggregats (Herstellerschriftzug der Vorlage) schwarz abdecken
+  const reefer = new THREE.Mesh(new THREE.PlaneGeometry(2.1, 1.3), mat("#17181b", 0.45, 0.3));
+  reefer.position.set(-0.07, 3.25, -3.585); truck.add(reefer);
+  const print = ctx.tex(2048, 388, (g) => {
+    g.fillStyle = "#17181b"; g.fillRect(0, 0, 2048, 388);
+    g.fillStyle = "#f26a1b"; g.fillRect(0, 360, 2048, 10);
+    // mittig, damit die aufgeklappten Türen (hinten) nichts verdecken
+    g.fillStyle = "#f26a1b"; g.textBaseline = "middle"; g.textAlign = "center";
+    g.font = "700 180px system-ui, sans-serif"; g.fillText("CL ↗ Projektwerk", 1024, 150);
+    g.font = "500 54px system-ui, sans-serif"; g.fillStyle = "#e9e3dc"; g.fillText("Messebau · Planung · Logistik", 1024, 275);
+  });
+  // eigene Kofferplane über die ganze Seite; Koffer: x −1,25/+1,23, y 1,48…4,06, z −3,6…−17,1
+  for (const [x, s] of [[-1.262, -1], [1.242, 1]]) {
+    const p = new THREE.Mesh(new THREE.PlaneGeometry(13.5, 2.58), new THREE.MeshStandardMaterial({ map: print, roughness: 0.55, polygonOffset: true, polygonOffsetFactor: -2 }));
+    p.position.set(x, 2.77, -10.35); p.rotation.y = s * Math.PI / 2; p.castShadow = true; truck.add(p);
+  }
+  // Innenverkleidung des Koffers (sichtbar bei offenen Türen) und neutrales Heckschild
+  const liner = mat("#3b3f45", 0.85);
+  const inner = (w: number, h: number, pos: [number, number, number], ry: number, rx = 0) => {
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), liner); m.position.set(...pos); m.rotation.set(rx, ry, 0, "YXZ"); m.receiveShadow = true; truck.add(m);
+  };
+  const len = -3.7 - REAR, midZ = (REAR + -3.7) / 2;
+  inner(len, 2.66, [-1.2, DECK + 1.33, midZ], Math.PI / 2);
+  inner(len, 2.66, [1.18, DECK + 1.33, midZ], -Math.PI / 2);
+  inner(2.38, len, [-0.01, 4.0, midZ], 0, Math.PI / 2);
+  inner(2.38, len, [-0.01, DECK + 0.005, midZ], 0, -Math.PI / 2);
+  inner(2.38, 2.66, [-0.01, DECK + 1.33, -3.7], Math.PI);
+  const plate = new THREE.Mesh(new THREE.PlaneGeometry(0.84, 0.34), mat("#686b6f", 0.7));
+  plate.position.set(0, 1.22, REAR - 0.006); plate.rotation.y = Math.PI; truck.add(plate);
+  const node = (r: THREE.Object3D, n: string) => r.getObjectByName(n) ?? new THREE.Object3D();
+  const wheels = ["w1", "w2", "w3", "w4", "w5"].map((n) => node(truck, n));
+  const doorL = node(truck, "door_l"), doorR = node(truck, "door_r");
+  // eigene Türflügel statt der Vorlage; Scharniere an den Kofferkanten
+  const doorMat = mat("#17181b", 0.45, 0.3), barMat = mat("#b8bcc2", 0.35, 0.8);
+  for (const [dr, s] of [[doorL, 1], [doorR, -1]] as const) {
+    dr.children.forEach((c) => { c.visible = false; });
+    box(dr, 1.23, 2.66, 0.05, doorMat, s * 0.615, DECK, -0.03);
+    for (const x of [0.32, 0.9]) { const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 2.6, 8), barMat); bar.position.set(s * x, DECK + 1.33, -0.07); dr.add(bar); }
+  }
+
+  return { g: truck, wheels, doorL, doorR };
+}
+
+/* ───────── Podestboden: Stellfüße 70 mm (Auflage 90 × 85 mm) im 1-m-Raster, Deckplatten 1 × 1 m × 40 mm ───────── */
+/** Boden über w × d (Mitte im Ursprung). `set(p)`: 0 … 1 – erst die Füße nacheinander, dann die Platten. Höhe 0,11 m. */
+export function raisedFloor(ctx: Ctx, parent: THREE.Object3D, w: number, d: number) {
+  const FOOT = 0.07, DECK = 0.04, FH = FOOT + DECK;
+  const zinc = mat("#b9bec4", 0.45, 0.75), rubber = mat("#1f2023", 0.85, 0), pinM = mat("#d2d6db", 0.3, 0.9);
+  const gBase = new THREE.BoxGeometry(0.09, 0.006, 0.085), gNeck = new THREE.CylinderGeometry(0.014, 0.022, 0.03, 16), gSpindle = new THREE.CylinderGeometry(0.008, 0.008, 0.026, 12);
+  const gHead = new THREE.BoxGeometry(0.08, 0.004, 0.08), gPad = new THREE.BoxGeometry(0.074, 0.003, 0.074), gPin = new THREE.CylinderGeometry(0.0035, 0.0035, 0.012, 8);
+  const foot = () => {
+    const f = new THREE.Group();
+    const add = (g: THREE.BufferGeometry, m: THREE.Material, y: number, x = 0, z = 0) => { const o = new THREE.Mesh(g, m); o.position.set(x, y, z); o.castShadow = true; f.add(o); };
+    add(gBase, zinc, 0.003); add(gNeck, zinc, 0.021); add(gSpindle, pinM, 0.049); add(gHead, zinc, 0.064); add(gPad, rubber, 0.0675);
+    for (const [x, z] of [[-0.03, -0.03], [0.03, -0.03], [-0.03, 0.03], [0.03, 0.03]]) add(gPin, pinM, 0.07, x, z);
+    return f;
+  };
+  // Oberseite rotbraun (Linoleum-Optik) mit Bohrungen, Kanten Holz
+  const top = ctx.tex(512, 512, (g) => {
+    g.fillStyle = "#8a3a2b"; g.fillRect(0, 0, 512, 512);
+    for (let k = 0; k < 2600; k++) { g.strokeStyle = `rgba(${150 + Math.random() * 40},${60 + Math.random() * 20},45,0.18)`; g.lineWidth = 0.6; const x = Math.random() * 512, y = Math.random() * 512, a = Math.random() * 6.3; g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * 9, y + Math.sin(a) * 9); g.stroke(); }
+    g.fillStyle = "#c7a46a";
+    for (const [x, y] of [[26, 26], [486, 26], [26, 486], [486, 486], [256, 256], [256, 40], [40, 256], [472, 256], [256, 472]]) { g.beginPath(); g.arc(x, y, 6, 0, 6.3); g.fill(); }
+    g.strokeStyle = "rgba(40,15,10,.5)"; g.lineWidth = 3; g.strokeRect(1, 1, 510, 510);
+  });
+  const wood = ctx.tex(256, 32, (g) => { g.fillStyle = "#cfb07a"; g.fillRect(0, 0, 256, 32); for (let y = 2; y < 32; y += 4) { g.fillStyle = `rgba(150,110,60,${0.15 + Math.random() * 0.2})`; g.fillRect(0, y, 256, 1); } });
+  const sideM = mat("#ffffff", 0.7, 0, { map: wood }), topM = mat("#ffffff", 0.55, 0, { map: top });
+  const nx = Math.max(1, Math.round(w)), nz = Math.max(1, Math.round(d)), px = w / nx, pz = d / nz;
+  const deckGeo = new THREE.BoxGeometry(px - 0.004, DECK, pz - 0.004);
+  const feet: THREE.Object3D[] = [], decks: THREE.Mesh[] = [];
+  for (let iz = 0; iz <= nz; iz++) for (let ix = 0; ix <= nx; ix++) {
+    const f = foot();
+    // am Rand nach innen versetzt, damit die Füße nicht in den Wänden stehen
+    f.position.set(Math.min(w / 2 - 0.06, Math.max(-w / 2 + 0.06, -w / 2 + ix * px)), 0, Math.min(d / 2 - 0.06, Math.max(-d / 2 + 0.06, -d / 2 + iz * pz)));
+    parent.add(f); feet.push(f);
+  }
+  for (let iz = 0; iz < nz; iz++) for (let ix = 0; ix < nx; ix++) {
+    const m = new THREE.Mesh(deckGeo, [sideM, sideM, topM, sideM, sideM, sideM]);
+    m.position.set(-w / 2 + (ix + 0.5) * px, FOOT + DECK / 2, -d / 2 + (iz + 0.5) * pz); m.castShadow = m.receiveShadow = true; parent.add(m); decks.push(m);
+  }
+  const tf = feet.length * 0.07, td = decks.length * 0.1, duration = tf + 0.4 + td + 0.4;
+  const set = (p: number) => {
+    const t = Math.min(1, Math.max(0, p)) * duration;
+    feet.forEach((f, k) => { const a = ease((t - k * 0.07) / 0.35); f.visible = t > k * 0.07; f.position.y = (1 - a) * 0.5; });
+    decks.forEach((m, k) => { const t0 = tf + 0.4 + k * 0.1, b = ease((t - t0) / 0.4); m.visible = t > t0; m.position.y = FOOT + DECK / 2 + (1 - b) * 0.6; });
+  };
+  set(0);
+  return { set, duration, FH };
 }

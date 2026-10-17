@@ -7,6 +7,7 @@ import { DesignOverlayProvider } from "@/components/overlay/DesignOverlay";
 import { useFinePointer, useReducedMotion } from "@/hooks/useMedia";
 import { PerformanceModeSync, useLiteMode } from "@/lib/performance";
 
+/** interaktiver Hintergrund (Raster mit Mulde zum Zeiger); der native Mauszeiger bleibt */
 const MeshCursor = dynamic(() => import("@/components/cursor/MeshCursor"), { ssr: false });
 
 export function ClientShell({ children }: { children: ReactNode }) {

@@ -12,7 +12,7 @@ import type { KompassDesc } from "./kompass3d/types";
 
 type Engine = Awaited<ReturnType<typeof import("./kompass3d/engine").createEngine>>;
 
-export function Kompass3D({ desc, label, reduced, de, fallback }: { desc: KompassDesc; label: string; reduced: boolean; de: boolean; fallback: ReactNode }) {
+export function Kompass3D({ desc, label, reduced, de, fallback, value, className }: { desc: KompassDesc; label: string; reduced: boolean; de: boolean; fallback: ReactNode; value?: number; className?: string }) {
   const host = useRef<HTMLDivElement>(null);
   const layer = useRef<HTMLDivElement>(null);
   const near = useNear(host);
@@ -20,6 +20,7 @@ export function Kompass3D({ desc, label, reduced, de, fallback }: { desc: Kompas
   const [phase, setPhase] = useState("");
   const engine = useRef<Engine | null>(null);
   const latest = useRef(desc);
+  const pendingValue = useRef<number | undefined>(value);
   useEffect(() => { latest.current = desc; }, [desc]);
 
   useEffect(() => {
@@ -33,6 +34,7 @@ export function Kompass3D({ desc, label, reduced, de, fallback }: { desc: Kompas
       if (disposed) { e.dispose(); return; }
       engine.current = e;
       await e.show(latest.current);
+      if (pendingValue.current !== undefined) e.set(pendingValue.current);
       if (!disposed) setState("ready");
     })().catch(() => { if (!disposed) setState("error"); });
     return () => { disposed = true; engine.current?.dispose(); engine.current = null; };
@@ -42,13 +44,20 @@ export function Kompass3D({ desc, label, reduced, de, fallback }: { desc: Kompas
   const key = JSON.stringify(desc);
   useEffect(() => {
     if (state !== "ready" || !engine.current) return;
-    engine.current.show(latest.current).catch(() => setState("error"));
+    engine.current.show(latest.current).then(() => { if (pendingValue.current !== undefined) engine.current?.set(pendingValue.current); }).catch(() => setState("error"));
   }, [key, state]);
+
+  // gesteuerter Wert (z. B. Zeitregler) ohne Neuaufbau der Szene
+  useEffect(() => {
+    if (state !== "ready" || value === undefined) return;
+    pendingValue.current = value;
+    engine.current?.set(value);
+  }, [value, state, key]);
 
   if (state === "error") return <>{fallback}</>;
   return (
     <div ref={host} role="img" aria-label={label}
-      className="relative h-[380px] cursor-grab touch-pan-y select-none overflow-hidden rounded-[1.75rem] border border-line bg-[#bfc4ca] active:cursor-grabbing sm:h-[460px]">
+      className={`relative cursor-grab touch-pan-y select-none overflow-hidden rounded-[1.75rem] border border-line bg-[#bfc4ca] active:cursor-grabbing ${className ?? "h-[380px] sm:h-[460px]"}`}>
       <div ref={layer} className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden />
       {state !== "ready" && <p className="absolute inset-0 grid place-items-center text-sm text-neutral-600">{de ? "3D-Szene wird geladen …" : "Loading 3D scene …"}</p>}
       {phase && (

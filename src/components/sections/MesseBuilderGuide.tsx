@@ -11,8 +11,8 @@
  */
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useLocale } from "next-intl";
-import { ArrowSquareOut, Envelope, Phone, ShieldWarning, CheckCircle, MapPin, Clock, Warning, Info, Copy, Check, ListChecks, ArrowDown } from "@phosphor-icons/react";
-import { venueBuilders, BUILDER_CHECKED, REQUEST_TEMPLATE, type BuilderContact, type BuilderTrade, type VenueBuilder } from "@/config/messe-builder";
+import { ArrowSquareOut, Envelope, Phone, ShieldWarning, CheckCircle, MapPin, Clock, Warning, Info, Check, ListChecks, ArrowDown } from "@phosphor-icons/react";
+import { venueBuilders, BUILDER_CHECKED, type BuilderContact, type BuilderTrade, type VenueBuilder } from "@/config/messe-builder";
 import { messeVenues } from "@/config/messe-venues";
 import { useReducedMotion } from "@/hooks/useMedia";
 import { Box, FLOOR, Person, Tag, Upright, UnitCtx, fmt } from "./builder-3d";
@@ -355,7 +355,6 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
   }[topic] || (supplySpec ? (de ? "laut Richtlinie des Geländes" : "according to venue regulations") : supplyPartners.length ? (de ? "Bestellung über" : "order via") : supplyNotes.length ? (de ? "laut offizieller Quelle des Geländes" : "according to the venue's official source") : de ? "Bestellweg nicht öffentlich belegt" : "ordering channel not publicly confirmed");
   const badge = b.maturity === "C" ? "border-rose-400/60 text-rose-300" : b.tr.current ? "border-emerald-400/50 text-emerald-300" : "border-amber-400/60 text-amber-300";
   const regionVenues = venueBuilders.filter((x) => x.region === b.region);
-  const central = b.contacts.find((c) => c.email && (c.trade === "zentrale" || c.trade === "abnahme" || c.trade === "service"));
   const text = supply ? supply.lead[de ? 0 : 1] : { hoehe: b.height.text, rigging: b.rigging.text, decke: b.ceiling.text, doppelstock: b.stairs.text, logistik: `${b.logistics} ${b.parking}` }[topic as Exclude<Topic, Supply>];
   const showContacts = (k: BuilderTrade) => { setTrade(k); setMore(false); document.getElementById("builder-contacts")?.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" }); };
 
@@ -602,7 +601,6 @@ export function MesseBuilderGuide({ venueNumber, onPickVenue }: { venueNumber: n
         </p>
       </div>
 
-      <RequestTemplate de={de} email={central?.email} venue={venue.venue} />
     </section>
   );
 }
@@ -625,38 +623,3 @@ function ContactCard({ c, de }: { c: BuilderContact; de: boolean }) {
 }
 
 /** Fehlende Angaben anfragen: Vorlage (DE/EN) kopieren oder direkt als E-Mail öffnen */
-function RequestTemplate({ de, email, venue }: { de: boolean; email?: string; venue: string }) {
-  const [lang, setLang] = useState<"de" | "en">(de ? "de" : "en");
-  const [copied, setCopied] = useState(false);
-  const body = REQUEST_TEMPLATE[lang];
-  const copy = async () => {
-    try { await navigator.clipboard.writeText(`${REQUEST_TEMPLATE.subject}\n\n${body}`); setCopied(true); window.setTimeout(() => setCopied(false), 2200); } catch { /* Zwischenablage gesperrt */ }
-  };
-  const mail = email ? `mailto:${email}?subject=${encodeURIComponent(REQUEST_TEMPLATE.subject.replace("[VERANSTALTUNG]", venue))}&body=${encodeURIComponent(body)}` : undefined;
-  return (
-    <div className="mt-12 rounded-[1.75rem] border border-line bg-bg-raised p-6 sm:p-8">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div className="max-w-2xl">
-          <h4 className="font-display text-2xl font-semibold md:text-3xl">{de ? "Fehlende Angaben anfragen" : "Request missing details"}</h4>
-          <p className="mt-2 text-sm leading-relaxed text-fg-muted">{de ? "Vorlage an die technische Ausstellerbetreuung: Bauhöhen, Sprinkler, Doppelstock, Rigging, Anschlüsse, Gewerke, Logistik und Lageplan schriftlich bestätigen lassen." : "Template for the technical exhibitor services: get heights, sprinklers, double-deck, rigging, connections, trades, logistics and site plan confirmed in writing."}</p>
-        </div>
-        <div role="group" aria-label={de ? "Sprache der Vorlage" : "Template language"} className="inline-flex gap-1 rounded-full border border-line p-1">
-          {(["de", "en"] as const).map((l) => (
-            <button key={l} type="button" aria-pressed={lang === l} onClick={() => setLang(l)} className="rounded-full px-3 py-1.5 text-xs font-semibold aria-pressed:bg-accent aria-pressed:text-accent-contrast">{l === "de" ? "Deutsch" : "English"}</button>
-          ))}
-        </div>
-      </div>
-      <pre className="mt-5 max-h-56 overflow-auto whitespace-pre-wrap rounded-2xl border border-line bg-bg p-4 font-mono text-[11px] leading-relaxed text-fg-muted">{body}</pre>
-      <div className="mt-4 flex flex-wrap gap-3">
-        <button type="button" onClick={copy} className="inline-flex items-center gap-2 rounded-full border border-line-strong px-5 py-2.5 text-sm font-semibold transition-colors hover:border-accent">
-          {copied ? <Check size={16} className="text-accent" aria-hidden /> : <Copy size={16} aria-hidden />}{copied ? (de ? "Kopiert" : "Copied") : de ? "Vorlage kopieren" : "Copy template"}
-        </button>
-        {mail && (
-          <a href={mail} className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-contrast">
-            <Envelope size={16} aria-hidden />{de ? `Als E-Mail an ${email}` : `Email to ${email}`}
-          </a>
-        )}
-      </div>
-    </div>
-  );
-}

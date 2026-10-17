@@ -16,7 +16,9 @@
     "imprintDescription": "Mentions légales et informations sur le prestataire.",
     "privacyDescription": "Informations sur le traitement des données personnelles sur ce site.",
     "fairsTitle": "Calendrier des salons et parcs des expositions en Europe",
-    "fairsDescription": "Les prochains salons en Allemagne et en Europe et 50 parcs des expositions en un coup d'œil – pour vous orienter dans la planification de vos projets."
+    "fairsDescription": "Les prochains salons en Allemagne et en Europe et 50 parcs des expositions en un coup d'œil – pour vous orienter dans la planification de vos projets.",
+    "pmTitle": "Gestion de projet de stands – outils",
+    "pmDescription": "Planning, échéances, faisabilité 3D, montage 4D, logistique, équipes, budget et procès-verbal de remise – gratuit dans le navigateur."
   },
   "common": {
     "skip": "Aller au contenu",
@@ -50,7 +52,8 @@
     "home": "Accueil",
     "main": "Navigation principale",
     "fairs": "Salons",
-    "venues": "Parcs d’expo"
+    "venues": "Parcs d’expo",
+    "pm": "Gestion de projet"
   },
   "hero": {
     "eyebrow": "Bureau de planification et de projet · Stands · Espaces de marque · Aménagement intérieur",
@@ -1007,5 +1010,12 @@
     "teaserLabel": "Prochaines dates de salons",
     "teaserRunning": "En cours",
     "teaserNote": "Repère pour la planification de projets – les entrées ne disent rien sur des commandes ni sur une participation de CL Projektwerk."
+  },
+  "pm": {
+    "eyebrow": "Pour les chefs de projet salon",
+    "title": "Piloter le projet avant l’ouverture du hall.",
+    "lead": "Dix outils pour la gestion de projet, du planning à la remise signée. Tout fonctionne dans votre navigateur.",
+    "cta": "Ouvrir les outils",
+    "teaser": "Nouveau : outils pour chefs de projet"
   }
 }

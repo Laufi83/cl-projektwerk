@@ -14,7 +14,9 @@
     "selectionTitle": "मेरा चयन",
     "selectionDescription": "आपके सहेजे गए स्टैंड कॉन्सेप्ट, जिन्हें आप अनुरोध के साथ जोड़ सकते हैं।",
     "imprintDescription": "क़ानूनी जानकारी और सेवा प्रदाता का विवरण।",
-    "privacyDescription": "इस वेबसाइट पर व्यक्तिगत डेटा के प्रसंस्करण की जानकारी।"
+    "privacyDescription": "इस वेबसाइट पर व्यक्तिगत डेटा के प्रसंस्करण की जानकारी।",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "सामग्री पर जाएँ",
@@ -46,7 +48,8 @@
     "cta": "प्रोजेक्ट पर चर्चा",
     "selection": "मेरा चयन",
     "home": "मुखपृष्ठ",
-    "main": "मुख्य नेविगेशन"
+    "main": "मुख्य नेविगेशन",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "बाहरी योजना और प्रोजेक्ट कार्यालय · प्रदर्शनी स्टैंड, ब्रांड स्पेस, इंटीरियर फिट-आउट",
@@ -967,5 +970,12 @@
   },
   "ogImage": {
     "film": "▶ कॉन्सेप्ट एनिमेशन"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

@@ -14,7 +14,9 @@
     "selectionTitle": "我的选择",
     "selectionDescription": "您保存的展台概念，可随询价一并发送。",
     "imprintDescription": "法律声明及服务提供者信息。",
-    "privacyDescription": "关于本网站个人数据处理的说明。"
+    "privacyDescription": "关于本网站个人数据处理的说明。",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "跳到内容",
@@ -46,7 +48,8 @@
     "cta": "洽谈项目",
     "selection": "我的选择",
     "home": "首页",
-    "main": "主导航"
+    "main": "主导航",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "外部规划与项目办公室 · 展会展台、品牌空间、室内装修",
@@ -967,5 +970,12 @@
   },
   "ogImage": {
     "film": "▶ 概念动画"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

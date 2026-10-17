@@ -16,6 +16,7 @@ import { Process } from "@/components/sections/Process";
 import { About } from "@/components/sections/About";
 import { SeoSection } from "@/components/sections/SeoSection";
 import { FairsTeaser } from "@/components/sections/FairsTeaser";
+import { PmTeaser } from "@/components/sections/PmTeaser";
 import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { InquiryForm } from "@/components/contact/InquiryForm";
 import { ContactAside } from "@/components/contact/ContactAside";
@@ -158,6 +159,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
       <MesseVenueExplorer id="messestandorte" />
       <FairsTeaser locale={locale} />
+      <PmTeaser locale={locale} />
       <About />
       <SeoSection />
 

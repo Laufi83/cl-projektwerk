@@ -14,7 +14,9 @@
     "selectionTitle": "Mitt urval",
     "selectionDescription": "Dina sparade montterkoncept som du kan bifoga en förfrågan.",
     "imprintDescription": "Juridisk information och uppgifter om leverantören.",
-    "privacyDescription": "Information om behandling av personuppgifter på denna webbplats."
+    "privacyDescription": "Information om behandling av personuppgifter på denna webbplats.",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "Hoppa till innehållet",
@@ -46,7 +48,8 @@
     "cta": "Diskutera ett projekt",
     "selection": "Mitt urval",
     "home": "Startsida",
-    "main": "Huvudnavigering"
+    "main": "Huvudnavigering",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Externt plannings- och projektkontor · Mässmontrar, varumärkesrum, inredning",
@@ -948,5 +951,12 @@
   },
   "ogImage": {
     "film": "▶ Konceptanimation"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

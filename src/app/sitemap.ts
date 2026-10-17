@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/", "/"],
     ["/designs", "/designs"],
     ["/messen", "/trade-fairs"],
+    ["/projektleitung", "/project-management"],
     ["/anfrage", "/inquiry"],
     ["/impressum", "/imprint"],
     ["/datenschutz", "/privacy"],

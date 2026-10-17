@@ -17,6 +17,8 @@ export type Built = {
   root: THREE.Object3D;
   /** t: Sekunden seit Szenenstart (ohne Pausen), dt: Bildabstand */
   update?: (t: number, dt: number) => void;
+  /** von außen gesteuerter Wert (z. B. Zeitregler des 4D-Aufbaus) */
+  set?: (v: number) => void;
   /** Standbild für reduzierte Bewegung */
   still?: number;
   camera: { pos: [number, number, number]; target: [number, number, number]; min?: number; max?: number };
@@ -24,7 +26,7 @@ export type Built = {
   shadowCenter?: [number, number, number];
   dispose?: () => void;
 };
-export type Assets = { oc: THREE.Object3D; truss: THREE.Object3D; van: THREE.Object3D; lkw?: THREE.Object3D; stapler?: THREE.Object3D };
+export type Assets = { oc: THREE.Object3D; truss: THREE.Object3D; van: THREE.Object3D; par: THREE.Object3D; lkw?: THREE.Object3D; stapler?: THREE.Object3D };
 export type Ctx = {
   de: boolean;
   accent: THREE.Color;
@@ -110,8 +112,8 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
     g.scene.traverse((m) => { if ((m as THREE.Mesh).isMesh) { m.castShadow = true; m.receiveShadow = true; } });
     return g.scene;
   };
-  const [oc, truss, van] = await Promise.all([load("oc-6x4.glb"), load("truss-5x3.glb"), load("van.glb")]);
-  const assets: Assets = { oc, truss, van };
+  const [oc, truss, van, par] = await Promise.all([load("oc-6x4.glb"), load("truss-5x3.glb"), load("van.glb"), load("par64.glb")]);
+  const assets: Assets = { oc, truss, van, par };
   const accentCss = getComputedStyle(el).getPropertyValue("--accent").trim() || "#f26a1b";
 
   // Beschriftungen
@@ -147,7 +149,7 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
   let pending: Promise<void> | null = null;
 
   const show = async (desc: KompassDesc) => {
-    if (desc.topic === "logistik" && !assets.lkw) {
+    if ((desc.topic === "logistik" || (desc.topic === "ladung" && desc.vehicle === "lkw")) && !assets.lkw) {
       const [lkw, stapler] = await Promise.all([load("lkw.glb"), load("stapler.glb")]);
       Object.assign(assets, { lkw, stapler });
     }
@@ -198,6 +200,7 @@ export async function createEngine(el: HTMLElement, layer: HTMLElement, opts: { 
 
   return {
     show: showQueued,
+    set: (v: number) => current?.set?.(v),
     dispose() {
       cancelAnimationFrame(raf); io.disconnect(); ro.disconnect(); controls.dispose();
       labels.forEach((l) => l.el.remove());

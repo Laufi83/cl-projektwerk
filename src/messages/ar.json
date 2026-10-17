@@ -14,7 +14,9 @@
     "selectionTitle": "اختياراتي",
     "selectionDescription": "مفاهيم الأجنحة التي حفظتها، ويمكنك إرفاقها بطلب.",
     "imprintDescription": "المعلومات القانونية وبيانات مزوّد الخدمة.",
-    "privacyDescription": "معلومات حول معالجة البيانات الشخصية على هذا الموقع."
+    "privacyDescription": "معلومات حول معالجة البيانات الشخصية على هذا الموقع.",
+    "pmTitle": "Project management for exhibition stands – tools for project managers",
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "انتقل إلى المحتوى",
@@ -46,7 +48,8 @@
     "cta": "ناقش مشروعًا",
     "selection": "اختياراتي",
     "home": "الصفحة الرئيسية",
-    "main": "التنقل الرئيسي"
+    "main": "التنقل الرئيسي",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "مكتب خارجي للتخطيط والمشاريع · أجنحة المعارض، مساحات العلامات التجارية، التشطيبات الداخلية",
@@ -948,5 +951,12 @@
   },
   "ogImage": {
     "film": "▶ رسم متحرك مفاهيمي"
+  },
+  "pm": {
+    "eyebrow": "For exhibition project managers",
+    "title": "Run the project before the hall opens.",
+    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "cta": "Open the tools",
+    "teaser": "New: tools for project managers"
   }
 }

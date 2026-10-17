@@ -16,7 +16,9 @@
     "imprintDescription": "Aviso legal e información del proveedor.",
     "privacyDescription": "Información sobre el tratamiento de datos personales en este sitio web.",
     "fairsTitle": "Calendario de ferias y recintos feriales en Europa",
-    "fairsDescription": "Las próximas ferias en Alemania y Europa y 50 recintos feriales de un vistazo – como orientación para la planificación de sus proyectos."
+    "fairsDescription": "Las próximas ferias en Alemania y Europa y 50 recintos feriales de un vistazo – como orientación para la planificación de sus proyectos.",
+    "pmTitle": "Gestión de proyectos de stands – herramientas",
+    "pmDescription": "Planificación, plazos, viabilidad 3D, montaje 4D, logística, turnos, presupuesto y acta de entrega – gratis en el navegador."
   },
   "common": {
     "skip": "Saltar al contenido",
@@ -50,7 +52,8 @@
     "home": "Inicio",
     "main": "Navegación principal",
     "fairs": "Ferias",
-    "venues": "Recintos"
+    "venues": "Recintos",
+    "pm": "Gestión de proyectos"
   },
   "hero": {
     "eyebrow": "Oficina de planificación y proyectos · Stands · Espacios de marca · Interiorismo",
@@ -1007,5 +1010,12 @@
     "teaserLabel": "Próximas fechas de ferias",
     "teaserRunning": "En curso",
     "teaserNote": "Orientación para la planificación de proyectos – las entradas no dicen nada sobre encargos ni sobre una participación de CL Projektwerk."
+  },
+  "pm": {
+    "eyebrow": "Para jefes de proyecto de ferias",
+    "title": "Dirija el proyecto antes de que abra el pabellón.",
+    "lead": "Diez herramientas para la dirección de proyectos, del cronograma a la entrega firmada. Todo funciona en su navegador.",
+    "cta": "Abrir herramientas",
+    "teaser": "Nuevo: herramientas para jefes de proyecto"
   }
 }

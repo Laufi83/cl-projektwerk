@@ -16,7 +16,9 @@
     "imprintDescription": "Note legali e informazioni sul fornitore.",
     "privacyDescription": "Informazioni sul trattamento dei dati personali su questo sito.",
     "fairsTitle": "Calendario fiere e quartieri fieristici in Europa",
-    "fairsDescription": "Le prossime fiere in Germania e in Europa e 50 quartieri fieristici a colpo d'occhio – come orientamento per la pianificazione dei vostri progetti."
+    "fairsDescription": "Le prossime fiere in Germania e in Europa e 50 quartieri fieristici a colpo d'occhio – come orientamento per la pianificazione dei vostri progetti.",
+    "pmTitle": "Project management per stand fieristici – strumenti",
+    "pmDescription": "Cronoprogramma, scadenze, fattibilità 3D, montaggio 4D, logistica, turni, budget e verbale di consegna – gratis nel browser."
   },
   "common": {
     "skip": "Vai al contenuto",
@@ -50,7 +52,8 @@
     "home": "Home",
     "main": "Navigazione principale",
     "fairs": "Fiere",
-    "venues": "Quartieri fieristici"
+    "venues": "Quartieri fieristici",
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Studio di progettazione e project management · Stand · Spazi di marca · Allestimenti d'interni",
@@ -1007,5 +1010,12 @@
     "teaserLabel": "Prossime date fieristiche",
     "teaserRunning": "In corso",
     "teaserNote": "Orientamento per la pianificazione dei progetti – le voci non dicono nulla su incarichi o sulla partecipazione di CL Projektwerk."
+  },
+  "pm": {
+    "eyebrow": "Per project manager fieristici",
+    "title": "Guidare il progetto prima che apra il padiglione.",
+    "lead": "Dieci strumenti per il project management, dal cronoprogramma alla consegna firmata. Tutto funziona nel browser.",
+    "cta": "Apri gli strumenti",
+    "teaser": "Nuovo: strumenti per project manager"
   }
 }

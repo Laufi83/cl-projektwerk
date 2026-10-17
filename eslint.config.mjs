@@ -21,6 +21,8 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    // lokale Sicherungen (nicht im Repository)
+    "BACKUP/**",
     "out/**",
     "build/**",
     "next-env.d.ts",

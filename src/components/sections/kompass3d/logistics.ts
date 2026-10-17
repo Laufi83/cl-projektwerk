@@ -1,13 +1,13 @@
 /**
  * Logistik: Ein Sattelzug fährt durch das Hallentor vor, die Hecktüren öffnen, der Frontstapler hebt die Gabel auf
  * Ladeflächenhöhe, holt nacheinander zwei Paletten aus dem Koffer und stellt sie am OC-Stand 6 × 4 m ab; danach
- * schließen die Türen und der Lkw fährt ab. Danach lädt der Stapler eine Werkzeugpalette in den Van, zwei Monteure
- * steigen ein und der Van fährt durch das Hallentor ab. Fremde Marken der Lkw-Vorlage sind entfernt bzw. abgedeckt
+ * schließen die Türen und der Lkw fährt ab. Danach lädt der Stapler eine Werkzeugpalette in den Van, der hinter dem
+ * Stand parkt; zwei Monteure steigen ein und der Van fährt ab. Lkw und Van: schwarz, orange CL-Logos und Felgen. Fremde Marken der Lkw-Vorlage sind entfernt bzw. abgedeckt
  * (scripts/kompass/README.md): eigene Kofferplane, eigene Türflügel, Innenverkleidung, neutrales Heckschild.
  */
 import * as THREE from "three";
 import type { Built, Ctx } from "./engine";
-import { at, box, mat, model, stand, van, walk, worker, type Key } from "./kit";
+import { at, box, mat, model, stand, truckModel, van, walk, worker, type Key } from "./kit";
 
 /** Dauer eines Durchlaufs in s */
 const T = 76;
@@ -25,9 +25,9 @@ const STAND_AT: [number, number] = [10.1, -18.4];
 const PARK: [number, number] = [6.2, -23.6];
 /** Anfahrpunkt hinter dem Heck */
 const BACK = REAR - REACH - 2.6;
-/** Van neben dem Lkw, Front zum Hallentor (−z): Mitte x, Mitte z; Heck bei VZ + 3,31; Werkzeugpalette am Stand */
-const VX = 2.45, VZ = -8.0, VREAR = VZ + 3.31, P3: [number, number] = [7.4, -16.6];
-/** Palettenplatz im Van und Stellung des Staplers davor (Gabel zeigt nach −z) */
+/** Van parkt hinter dem Stand, Front nach −x: Mitte x, z; Heck bei VX + 3,31; Werkzeugpalette nordöstlich vor dem Stand */
+const VX = 10.6, VZ = -26.3, VREAR = VX + 3.31, P3: [number, number] = [13.8, -12.6];
+/** Palettenplatz im Van und Stellung des Staplers davor (x; Gabel zeigt nach −x) */
 const VPICK = VREAR - 0.55 + REACH, VBACK = VPICK + 2.6, VFLOOR = 0.6;
 
 /** eine Fahrt des Staplers: Palette `i` aus dem Koffer holen und am Stand abstellen; Start bei t0 */
@@ -53,38 +53,45 @@ const TRIPS = [trip(0, 7), trip(1, 22.5)];
 /** dritte Fahrt: Werkzeugpalette vom Stand in den Van */
 const T3 = 47;
 const k3 = (dt: number, x: number, z: number, yaw: number, lift: number) => [T3 + dt, x, z, yaw, lift] as const;
+// Winkel fortlaufend (270 = Gabel nach +z, 360 = +x, 450 = −z, 540 = −x), damit der Stapler sich nicht im Kreis dreht
 const TRIP3 = [
   k3(0, PARK[0], PARK[1], 180, 0.12),
-  k3(2.2, P3[0] - REACH - 1.6, P3[1], 0, 0.05),
-  k3(3.4, P3[0] - REACH, P3[1], 0, 0.05),
-  k3(3.9, P3[0] - REACH, P3[1], 0, 0.15), // anheben
-  k3(5.0, P3[0] - REACH - 1.6, P3[1], 0, 0.15),
-  k3(7.0, 5.4, -12, -90, 0.15),
-  k3(9.0, 5.4, VBACK + 0.4, -90, 0.15),
-  k3(10.6, VX, VBACK, 90, 0.15),
-  k3(11.4, VX, VBACK, 90, VFLOOR + 0.06),
-  k3(12.8, VX, VPICK, 90, VFLOOR + 0.06),
-  k3(13.3, VX, VPICK, 90, VFLOOR - 0.02), // absetzen im Van
-  k3(14.5, VX, VBACK, 90, VFLOOR - 0.02),
-  k3(15.2, VX, VBACK, 90, 0.12),
-  k3(16.4, 5.4, VBACK + 0.4, 180, 0.12),
-  k3(19.4, PARK[0], PARK[1], 180, 0.12),
+  k3(1.6, 5.5, -20.5, 270, 0.12),
+  k3(3.4, 5.5, -12.6, 270, 0.12),
+  k3(4.6, P3[0] - REACH - 1.6, P3[1], 360, 0.05),
+  k3(5.6, P3[0] - REACH, P3[1], 360, 0.05),
+  k3(6.1, P3[0] - REACH, P3[1], 360, 0.15), // anheben
+  k3(7.0, P3[0] - REACH - 1.6, P3[1], 360, 0.15),
+  k3(8.6, VBACK, P3[1], 360, 0.15),
+  k3(10.6, VBACK, VZ, 450, 0.15),
+  k3(11.4, VBACK, VZ, 540, 0.15),
+  k3(12.0, VBACK, VZ, 540, VFLOOR + 0.06),
+  k3(13.4, VPICK, VZ, 540, VFLOOR + 0.06),
+  k3(13.9, VPICK, VZ, 540, VFLOOR - 0.02), // absetzen im Van
+  k3(15.1, VBACK, VZ, 540, VFLOOR - 0.02),
+  k3(15.7, VBACK, VZ, 540, 0.12),
+  k3(21.0, VBACK, VZ, 540, 0.12), // warten, bis der Van abgefahren ist
+  k3(22.4, VBACK, VZ - 3.3, 450, 0.12),
+  k3(25.4, 5.2, VZ - 3.3, 540, 0.12),
+  k3(27.6, 5.2, -25.0, 540, 0.12),
+  k3(28.6, PARK[0], PARK[1], 540, 0.12),
 ];
 const FL = [...TRIPS[0], ...TRIPS[1], ...TRIP3];
 const col = (c: number) => FL.map((r) => [r[0], r[c]] as Key);
 const TRACKS = {
   tz: [[0, -46], [5.2, 0], [41, 0], [47, 48]] as Key[],
   // Van: kommt von vorn (+z) und fährt nach dem Beladen durch das Hallentor (−z) ab
-  vz: [[0, 34], [7, VZ], [64.5, VZ], [72, -48]] as Key[],
-  vback: [[0, 0], [47.5, 0], [49, 1], [62, 1], [63.5, 0]] as Key[],
-  vfront: [[0, 0], [60.6, 0], [61.4, 1], [62.6, 1], [63.4, 0]] as Key[],
+  // Van: kommt von Osten, parkt hinter dem Stand, fährt nach dem Beladen nach Westen ab (Front −x)
+  vx: [[0, 52], [7, VX], [67.6, VX], [75.5, -45]] as Key[],
+  vback: [[0, 0], [57, 0], [58.3, 1], [61.6, 1], [62.8, 0]] as Key[],
+  vfront: [[0, 0], [64.8, 0], [65.4, 1], [66.6, 1], [67.2, 0]] as Key[],
   door: [[0, 0], [5.4, 0], [7.2, 1], [38.5, 1], [40.5, 0]] as Key[],
   fx: col(1), fz: col(2), fyaw: col(3), lift: col(4),
 };
 /** Palette i: 0 = im Koffer, 1 = auf der Gabel, 2 = am Stand */
 const palletState = (i: number, t: number) => { const s = TRIPS[i][0][0]; return t < s + 5.8 ? 0 : t < s + 11.9 ? 1 : 2; };
 /** Werkzeugpalette: 0 = am Stand, 1 = auf der Gabel, 2 = im Van */
-const pallet3State = (t: number) => (t < T3 + 3.9 ? 0 : t < T3 + 13.3 ? 1 : 2);
+const pallet3State = (t: number) => (t < T3 + 6.1 ? 0 : t < T3 + 13.9 ? 1 : 2);
 
 const PHASES: [number, string, string][] = [
   [5.2, "Lkw fährt in die Halle", "Truck enters the hall"],
@@ -95,9 +102,9 @@ const PHASES: [number, string, string][] = [
   [38.5, "Palette 2 an den Stand", "Pallet 2 to the stand"],
   [40.5, "Türen schließen", "Doors close"],
   [47, "Lkw fährt ab", "Truck departs"],
-  [T3 + 13.3, "Werkzeugpalette in den Van", "Tool pallet into the van"],
-  [63.5, "Monteure steigen ein", "Crew gets in"],
-  [72, "Van fährt ab", "Van departs"],
+  [T3 + 13.9, "Werkzeugpalette in den Van", "Tool pallet into the van"],
+  [66.6, "Monteure steigen ein", "Crew gets in"],
+  [75.5, "Van fährt ab", "Van departs"],
   [T, "Ladezone frei", "Loading zone clear"],
 ];
 
@@ -126,43 +133,9 @@ export function buildLogistics(ctx: Ctx, names: string[]): Built {
   box(root, 7, 0.9, 0.5, mat("#7c838b", 0.6, 0.4), 0, 5.65, wallZ + 0.2);
 
   // Lkw
-  const truck = model(ctx.assets.lkw!); root.add(truck);
-  const print = tex(2048, 388, (g) => {
-    g.fillStyle = "#262a30"; g.fillRect(0, 0, 2048, 388);
-    g.fillStyle = "#3a3f46"; g.fillRect(0, 352, 2048, 36);
-    // mittig, damit die aufgeklappten Türen (hinten) nichts verdecken
-    g.fillStyle = "#ffffff"; g.textBaseline = "middle"; g.textAlign = "center";
-    g.font = "700 180px system-ui, sans-serif"; g.fillText("CL ↗ Projektwerk", 1024, 150);
-    g.font = "500 54px system-ui, sans-serif"; g.fillStyle = "#c9ced5"; g.fillText("Messebau · Planung · Logistik", 1024, 275);
-  });
-  // eigene Kofferplane über die ganze Seite; Koffer: x −1,25/+1,23, y 1,48…4,06, z −3,6…−17,1
-  for (const [x, s] of [[-1.262, -1], [1.242, 1]]) {
-    const p = new THREE.Mesh(new THREE.PlaneGeometry(13.5, 2.58), new THREE.MeshStandardMaterial({ map: print, roughness: 0.55, polygonOffset: true, polygonOffsetFactor: -2 }));
-    p.position.set(x, 2.77, -10.35); p.rotation.y = s * Math.PI / 2; p.castShadow = true; truck.add(p);
-  }
-  // Innenverkleidung des Koffers (sichtbar bei offenen Türen) und neutrales Heckschild
-  const liner = mat("#3b3f45", 0.85);
-  const inner = (w: number, h: number, pos: [number, number, number], ry: number, rx = 0) => {
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), liner); m.position.set(...pos); m.rotation.set(rx, ry, 0, "YXZ"); m.receiveShadow = true; truck.add(m);
-  };
-  const len = -3.7 - REAR, midZ = (REAR + -3.7) / 2;
-  inner(len, 2.66, [-1.2, DECK + 1.33, midZ], Math.PI / 2);
-  inner(len, 2.66, [1.18, DECK + 1.33, midZ], -Math.PI / 2);
-  inner(2.38, len, [-0.01, 4.0, midZ], 0, Math.PI / 2);
-  inner(2.38, len, [-0.01, DECK + 0.005, midZ], 0, -Math.PI / 2);
-  inner(2.38, 2.66, [-0.01, DECK + 1.33, -3.7], Math.PI);
-  const plate = new THREE.Mesh(new THREE.PlaneGeometry(0.84, 0.34), mat("#686b6f", 0.7));
-  plate.position.set(0, 1.22, REAR - 0.006); plate.rotation.y = Math.PI; truck.add(plate);
+  const T_ = truckModel(ctx); const truck = T_.g; root.add(truck);
   const node = (r: THREE.Object3D, n: string) => r.getObjectByName(n) ?? new THREE.Object3D();
-  const wheels = ["w1", "w2", "w3", "w4", "w5"].map((n) => node(truck, n));
-  const doorL = node(truck, "door_l"), doorR = node(truck, "door_r");
-  // eigene Türflügel statt der Vorlage; Scharniere an den Kofferkanten
-  const doorMat = mat("#262a30", 0.55), barMat = mat("#b8bcc2", 0.35, 0.8);
-  for (const [dr, s] of [[doorL, 1], [doorR, -1]] as const) {
-    dr.children.forEach((c) => { c.visible = false; });
-    box(dr, 1.23, 2.66, 0.05, doorMat, s * 0.615, DECK, -0.03);
-    for (const x of [0.32, 0.9]) { const bar = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 2.6, 8), barMat); bar.position.set(s * x, DECK + 1.33, -0.07); dr.add(bar); }
-  }
+  const wheels = T_.wheels, doorL = T_.doorL, doorR = T_.doorR;
 
   // Stapler
   const fork = model(ctx.assets.stapler!); root.add(fork);
@@ -189,14 +162,14 @@ export function buildLogistics(ctx: Ctx, names: string[]): Built {
   const pallet3 = makePallet(); root.add(pallet3);
 
   // Van (Front zum Hallentor) und zwei Monteure, die am Stand warten
-  const v = van(ctx); v.g.rotation.y = Math.PI; root.add(v.g);
+  const v = van(ctx); v.g.rotation.y = -Math.PI / 2; root.add(v.g);
   const crewA = worker(root), crewB = worker(root, "#ff7a1a");
-  // Türen: Fahrerseite (+x im Modell) liegt durch die Drehung bei −x
-  const doorA: [number, number] = [VX - v.side - 0.3, VZ - v.doorZ], doorB: [number, number] = [VX + v.side + 0.3, VZ - v.doorZ];
-  const waitA: [number, number] = [9.0, -14.6], waitB: [number, number] = [9.8, -14.3];
-  const pathA: [number, number, number][] = [[55, ...waitA], [57.5, 5.6, -13.4], [59.5, doorA[0], VZ - v.front - 0.9], [61.2, ...doorA], [62.2, VX - 0.4, doorA[1]]];
-  const pathB: [number, number, number][] = [[55.4, ...waitB], [58, 6.2, -12.6], [60.9, ...doorB], [62.2, VX + 0.4, doorB[1]]];
-  for (let i = 0; i < 4; i++) { const p = palletProto.clone(); p.position.set(PARK[0] - 0.6 - REACH, i * 0.12, PARK[1] + 1.6); root.add(p); }
+  // Drehung −90°: Fahrerseite (lokal +x) zum Stand (+z), Beifahrerseite nach Süden; Türen bei x = VX − 2,0
+  const doorX = VX - v.doorZ, zA = VZ + v.side + 0.3, zB = VZ - v.side - 0.3;
+  const waitA: [number, number] = [9.2, -14.4], waitB: [number, number] = [10.1, -14.0];
+  // westlich um den Stand (der Stapler fährt östlich zum Van), dann zu den Vordertüren
+  const pathA: [number, number, number][] = [[59.5, ...waitA], [61.0, 5.6, -14.8], [64.2, 5.6, -24.0], [65.4, doorX, zA], [65.8, doorX + 0.4, zA - 0.4]];
+  const pathB: [number, number, number][] = [[59.8, ...waitB], [61.6, 5.0, -14.6], [65.0, 5.0, zB], [66.2, doorX, zB], [66.4, doorX + 0.4, zB + 0.4]];
 
   // Ziel: OC-Stand 6 × 4 m
   const st = stand(ctx); st.position.set(STAND_AT[0], 0, STAND_AT[1]); root.add(st);
@@ -230,14 +203,14 @@ export function buildLogistics(ctx: Ctx, names: string[]): Built {
     const s3 = pallet3State(t);
     if (s3 === 0) { pallet3.position.set(P3[0], 0, P3[1]); pallet3.rotation.y = 0; }
     else if (s3 === 1) { pallet3.position.set(fx + Math.cos(yaw) * REACH, lift, fz - Math.sin(yaw) * REACH); pallet3.rotation.y = yaw; }
-    else { const vz = at(TRACKS.vz, t); pallet3.position.set(VX, VFLOOR - 0.02, VREAR - 0.55 + (vz - VZ)); pallet3.rotation.y = Math.PI / 2; }
-    v.g.position.set(VX, 0, at(TRACKS.vz, t));
+    else { const vx = at(TRACKS.vx, t); pallet3.position.set(VREAR - 0.55 + (vx - VX), VFLOOR - 0.02, VZ); pallet3.rotation.y = Math.PI; }
+    v.g.position.set(at(TRACKS.vx, t), 0, VZ);
     const vb = at(TRACKS.vback, t), vf = at(TRACKS.vfront, t);
     v.door("bl", vb); v.door("br", vb); v.door("fl", vf); v.door("fr", vf);
     // Monteure: warten am Stand, gehen zum Van und steigen ein
     walk(crewA, pathA, t, -2.4); walk(crewB, pathB, t, -2.0);
-    crewA.g.visible = t < 62.2; crewB.g.visible = t < 62.2;
-    if (t < 55) { crewA.head.rotation.x = Math.max(0, Math.sin(t * 1.6)) * 0.16; crewA.g.rotation.y = 0.9 + Math.sin(t * 0.8) * 0.15; crewB.g.rotation.y = -2.2 + Math.sin(t * 0.6) * 0.12; }
+    crewA.g.visible = t < 65.8; crewB.g.visible = t < 66.4;
+    if (t < 59.5) { crewA.head.rotation.x = Math.max(0, Math.sin(t * 1.6)) * 0.16; crewA.g.rotation.y = 0.9 + Math.sin(t * 0.8) * 0.15; crewB.g.rotation.y = -2.2 + Math.sin(t * 0.6) * 0.12; }
     const ph = PHASES.findIndex(([end]) => t < end);
     const next = ph < 0 ? "" : `${ph + 1} · ${PHASES[ph][de ? 1 : 2]}`;
     if (next !== label) { label = next; ctx.setPhase(next); }

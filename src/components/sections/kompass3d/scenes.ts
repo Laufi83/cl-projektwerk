@@ -8,12 +8,16 @@ import * as THREE from "three";
 import type { Built, Ctx } from "./engine";
 import { fmt } from "./engine";
 import type { KompassDesc, SupplyKind } from "./types";
-import { at, box, cyl, ease, flow, mat, model, person, planks, ruler, stand, STAND } from "./kit";
+import { at, box, cyl, ease, flow, mat, model, person, planks, raisedFloor, ruler, stand, STAND } from "./kit";
 import { buildLogistics } from "./logistics";
 import { withCrew } from "./crew";
+import { konfig, ladung, sim } from "./pm-scenes";
 
 export function buildScene(ctx: Ctx, d: KompassDesc): Built {
   if (d.topic === "logistik") return buildLogistics(ctx, d.names);
+  if (d.topic === "konfig") return konfig(ctx, d);
+  if (d.topic === "sim") return sim(ctx, d);
+  if (d.topic === "ladung") return ladung(ctx, d);
   // bei allen Stand-Themen: Van fährt vor, zwei Monteure steigen aus und beraten sich vor der Standfläche
   switch (d.topic) {
     case "hoehe": return withCrew(ctx, height(ctx, d));
@@ -64,15 +68,13 @@ function height(ctx: Ctx, d: Extract<KompassDesc, { topic: "hoehe" }>): Built {
 }
 
 /* ───────── Abhängungen: Traverse 5 × 3 m an vier Kettenzügen ───────── */
-const TRUSS_H = 0.29, LIFT = 4, ROOF = 7.6;
+const TRUSS_H = 0.29, START = 0.6, LIFT = 4, ROOF = 7.6;
 function rigging(ctx: Ctx, d: Extract<KompassDesc, { topic: "rigging" }>): Built {
   const { de } = ctx;
   const root = new THREE.Group();
   root.add(stand(ctx));
   // Hallendach: Stahlträger mit Abhängepunkten
-  const steel = mat("#4b5058", 0.55, 0.6);
-  for (const x of [-6, -2, 2, 6]) box(root, 0.22, 0.5, 18, steel, x, ROOF, 0, false);
-  for (const z of [0.5 - 2.36, 0.5 + 2.36]) box(root, 18, 0.32, 0.18, steel, 0, ROOF - 0.32, z, false);
+  hallRoof(ctx, root, [0.5 - 7.2, 0.5 - 2.36, 0.5 + 2.36, 0.5 + 7.2]);
   // Traverse (Modell: 5 × 3 m, 0,29 m hoch) – mittig, Längsseite in Standtiefe
   const cx = -0.5, cz = 0.5;
   const truss = new THREE.Group(); root.add(truss);
@@ -80,6 +82,21 @@ function rigging(ctx: Ctx, d: Extract<KompassDesc, { topic: "rigging" }>): Built
   t3.position.set(-3.5, -4.0, 1.5);
   const turn = new THREE.Group(); turn.rotation.y = Math.PI / 2; turn.add(t3); truss.add(turn);
   truss.position.set(cx, 0, cz);
+  // 8 PAR-64-Scheinwerfer unter dem Untergurt: je 3 an den Längsseiten, je 1 an den Stirnseiten, leicht nach innen geneigt
+  const parBody = mat("#141518", 0.45, 0.6), parLens = mat("#fff3d6", 0.2, 0, { emissive: "#ffd9a0", emissiveIntensity: 2.4 });
+  const parSpots: [number, number][] = [[-1.36, -1.6], [-1.36, 0], [-1.36, 1.6], [1.36, -1.6], [1.36, 0], [1.36, 1.6], [0, -2.36], [0, 2.36]];
+  for (const [px, pz] of parSpots) {
+    const holder = new THREE.Group(); holder.position.set(px, -0.04, pz); truss.add(holder);
+    box(holder, 0.04, 0.08, 0.04, parBody, 0, -0.08, 0, false); // Haken
+    const yoke = new THREE.Group(); yoke.position.y = -0.1; holder.add(yoke);
+    yoke.quaternion.setFromUnitVectors(new THREE.Vector3(0, -1, 0), new THREE.Vector3(-px * 0.35, -1, -pz * 0.22).normalize());
+    // PAR-64-Modell (Bügel oben bei y = 0, Öffnung unten bei y = −0,44), schwarz lackiert
+    const can = model(ctx.assets.par); yoke.add(can);
+    can.traverse((o) => { const m = o as THREE.Mesh; if (m.isMesh) { m.material = parBody; m.castShadow = true; } });
+    const lens = new THREE.Mesh(new THREE.CircleGeometry(0.1, 24), parLens); lens.rotation.x = Math.PI / 2; lens.position.y = -0.4; yoke.add(lens);
+  }
+  const parLight = new THREE.SpotLight("#ffe2b0", 0, 9, 0.75, 0.6); parLight.position.set(0, -0.3, 0); truss.add(parLight);
+  parLight.target.position.set(0, -6, 0); truss.add(parLight.target);
   // Kettenzüge über den Ecken
   const pts: [number, number][] = [[-1.36, -2.36], [1.36, -2.36], [-1.36, 2.36], [1.36, 2.36]].map(([x, z]) => [cx + x, cz + z]);
   const hoistMat = mat("#2a2c30", 0.45, 0.4), motorMat = mat("#3a3d42", 0.35, 0.6), bagMat = mat("#16171a", 0.9);
@@ -103,11 +120,12 @@ function rigging(ctx: Ctx, d: Extract<KompassDesc, { topic: "rigging" }>): Built
     ctx.label(d.kg ? `≤ ${d.kg} kg` : "kg ?", [x, HOIST_Y + 0.6, z], d.kg ? "accent" : "warn");
   }
   if (d.heavy) ctx.label(de ? `Schwerlast bis ${d.heavy} kg auf Anfrage` : `Heavy points up to ${d.heavy} kg on request`, [cx, ROOF + 0.4, cz], "plain");
-  const hLabel = ctx.label("0,00 m", [cx - 1.9, 0.4, cz + 2.5], "plain");
+  const hLabel = ctx.label("0,60 m", [cx - 1.9, 0.4, cz + 2.5], "plain");
   const T = 34;
-  const keys: [number, number][] = [[0, 0], [3, 0], [19, LIFT], [26, LIFT], [34, 0]];
+  // Traverse ist auf 0,60 m vormontiert (Arbeitshöhe für Scheinwerfer und Kabel), dann Hub auf 4,00 m
+  const keys: [number, number][] = [[0, START], [3, START], [19, LIFT], [26, LIFT], [34, START]];
   const phases: [number, string, string][] = [
-    [3, "Traverse liegt auf dem Hallenboden", "Truss lies on the hall floor"],
+    [3, "Traverse auf 0,60 m vormontiert", "Truss pre-rigged at 0.60 m"],
     [19, "4 Kettenzüge heben die Traverse", "4 chain hoists lift the truss"],
     [26, "Traverse auf 4,00 m", "Truss at 4.00 m"],
     [34, "Traverse wird abgelassen", "Truss is lowered"],
@@ -126,11 +144,14 @@ function rigging(ctx: Ctx, d: Extract<KompassDesc, { topic: "rigging" }>): Built
     hLabel.pos.y = lift + 0.45;
     const ht = `${fmt(lift, de)} m`;
     if (ht !== lastH) { hLabel.set(ht); lastH = ht; }
+    // Scheinwerfer leuchten, sobald die Traverse oben ankommt
+    const on = Math.min(1, Math.max(0, (lift - 2.6) / 1.2));
+    parLens.emissiveIntensity = 0.3 + 2.4 * on; parLight.intensity = 22 * on;
     const p = phases.find(([end]) => t % T < end) ?? phases[phases.length - 1];
     const txt = p[de ? 1 : 2];
     if (txt !== lastPhase) { ctx.setPhase(txt); lastPhase = txt; }
   };
-  set(0, 0);
+  set(START, 0);
   return {
     root,
     still: 22,
@@ -239,7 +260,8 @@ function deck(ctx: Ctx, d: Extract<KompassDesc, { topic: "doppelstock" }>): Buil
 }
 
 /* ───────── Versorgung: Strom, Wasser, IT, Druckluft ───────── */
-const DUCT_Z = 4.1;
+/** Versorgungskanal der Halle läuft quer (entlang x) durch die Standfläche */
+const DUCT_Z = 0.75;
 function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: boolean): Built {
   const { de } = ctx;
   const root = new THREE.Group();
@@ -248,7 +270,7 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
   const anims: ((t: number) => void)[] = [];
   // Versorgungskanal der Halle vor dem Stand
   const lid = ctx.tex(256, 32, (g) => { g.fillStyle = "#4a4e55"; g.fillRect(0, 0, 256, 32); g.fillStyle = "#3a3d43"; for (let x = 0; x < 256; x += 64) g.fillRect(x, 0, 3, 32); g.fillStyle = "#5a5f66"; g.fillRect(0, 0, 256, 3); g.fillRect(0, 29, 256, 3); }, [6, 1]);
-  box(root, 16, 0.02, 0.6, mat("#ffffff", 0.5, 0.5, { map: lid }), 0, 0, DUCT_Z, false);
+  box(root, 16, 0.02, 0.5, mat("#ffffff", 0.5, 0.5, { map: lid }), 0, 0, DUCT_Z, false);
   ctx.label(de ? "Versorgungskanal Halle" : "Hall service duct", [-4.2, 0.15, DUCT_Z], "plain");
   const desk = (x: number, z: number, w: number, top = "#2a2d33") => {
     const g = new THREE.Group(); root.add(g);
@@ -256,19 +278,19 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
     box(g, w + 0.06, 0.04, 0.76, mat(top, 0.35, 0.1), x, 1.0, z);
     return g;
   };
-  const connBox = (x: number, color: string) => box(root, 0.5, 0.32, 0.42, mat(color, 0.45, 0.3), x, 0, DUCT_Z);
+  const connBox = (x: number, color: string, h = 0.32) => box(root, 0.5, h, 0.42, mat(color, 0.45, 0.3), x, 0, DUCT_Z);
 
   if (kind === "strom") {
     connBox(1.4, "#f2b81e");
     ctx.label(de ? "Übergabepunkt" : "Connection point", [1.4, 0.55, DUCT_Z], "plain");
     const Y = "#141414", G = "#ffcf33";
-    flows.push(flow(ctx, root, [[1.4, 0.05, DUCT_Z - 0.2], [1.4, 0.05, 2.2], [1.9, 0.05, 2.2], [1.9, 1.0, 2.2]], 0.03, Y, G));
-    // Standverteiler mit FI/RCD an der Seitenwand
-    box(root, 0.2, 0.85, 0.62, mat("#e9eaec", 0.5), 1.86, 1.0, 2.2);
-    box(root, 0.02, 0.7, 0.5, mat("#2d3036", 0.4, 0, { emissive: "#1aa34a", emissiveIntensity: 0.15 }), 1.75, 1.08, 2.2, false);
-    ctx.label(de ? "Standverteiler · FI/RCD" : "Distribution board · RCD", [1.8, 2.05, 2.2], "accent");
+    flows.push(flow(ctx, root, [[1.4, 0.05, DUCT_Z - 0.2], [1.4, 0.05, -2.45], [1.75, 0.05, -2.45], [1.75, 1.0, -2.45]], 0.03, Y, G));
+    // Hauptanschluss / Standverteiler mit FI/RCD hinten rechts an der Seitenwand
+    box(root, 0.2, 0.85, 0.62, mat("#e9eaec", 0.5), 1.8, 1.0, -2.45);
+    box(root, 0.02, 0.7, 0.5, mat("#2d3036", 0.4, 0, { emissive: "#1aa34a", emissiveIntensity: 0.15 }), 1.69, 1.08, -2.45, false);
+    ctx.label(de ? "Standverteiler · FI/RCD" : "Distribution board · RCD", [1.45, 2.05, -2.45], "accent");
     // LED-Wand an der Seitenwand
-    flows.push(flow(ctx, root, [[1.9, 0.05, 1.85], [1.9, 0.05, -0.6], [1.9, 0.8, -0.6]], 0.025, Y, G));
+    flows.push(flow(ctx, root, [[1.75, 0.05, -2.15], [1.75, 0.05, -0.6], [1.75, 0.8, -0.6]], 0.025, Y, G));
     const ledTex = ctx.tex(512, 256, (g) => { const gr = g.createLinearGradient(0, 0, 512, 256); gr.addColorStop(0, "#1b3cff"); gr.addColorStop(0.5, "#c23bff"); gr.addColorStop(1, "#ff7a1a"); g.fillStyle = gr; g.fillRect(0, 0, 512, 256); g.fillStyle = "rgba(255,255,255,.9)"; g.font = "700 46px system-ui"; g.fillText("CL ↗ Projektwerk", 40, 140); });
     ledTex.wrapS = THREE.RepeatWrapping;
     const led = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 1.46), new THREE.MeshStandardMaterial({ map: ledTex, emissive: "#ffffff", emissiveMap: ledTex, emissiveIntensity: 1.1, roughness: 0.3 }));
@@ -278,11 +300,11 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
     // Theke mit Lichtband
     desk(-0.5, 1.5, 2.2);
     box(root, 2.1, 0.03, 0.02, mat("#ffffff", 0.2, 0, { emissive: "#fff1c4", emissiveIntensity: 2 }), -0.5, 0.06, 1.86, false);
-    flows.push(flow(ctx, root, [[1.9, 0.05, 2.5], [-0.5, 0.05, 2.5], [-0.5, 0.05, 1.85]], 0.022, Y, G));
+    flows.push(flow(ctx, root, [[1.55, 0.05, -2.2], [1.55, 0.05, -1.6], [-0.5, 0.05, -1.6], [-0.5, 0.05, 1.15]], 0.022, Y, G));
     // Kühlschrank (24-h-Strom) hinten links
     box(root, 0.65, 1.85, 0.62, mat("#f5f6f7", 0.35, 0.2), -1.55, 0, -2.6);
     box(root, 0.6, 1.7, 0.02, mat("#1d2026", 0.15, 0, { transparent: true, opacity: 0.55, emissive: "#9fd4ff", emissiveIntensity: 0.15 }), -1.55, 0.08, -2.28, false);
-    flows.push(flow(ctx, root, [[1.9, 0.05, 1.9], [0.8, 0.05, 1.9], [0.8, 0.05, -1.8], [-1.55, 0.05, -1.8], [-1.55, 0.05, -2.25]], 0.022, Y, G));
+    flows.push(flow(ctx, root, [[1.45, 0.05, -2.75], [-1.0, 0.05, -2.75], [-1.0, 0.05, -2.6], [-1.2, 0.05, -2.6]], 0.022, Y, G));
     ctx.label(de ? "24-h-Strom" : "24 h power", [-1.55, 2.0, -2.6], "warn");
     // Strahler auf der Rückwand
     const spotMat = mat("#1e2024", 0.4, 0.6), lens = mat("#fff6dd", 0.2, 0, { emissive: "#fff2cc", emissiveIntensity: 3 });
@@ -296,27 +318,42 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
   }
 
   if (kind === "wasser") {
-    connBox(-1.4, "#2f7fd6");
-    ctx.label(de ? "Übergabepunkt" : "Connection point", [-1.4, 0.55, DUCT_Z], "plain");
-    flows.push(flow(ctx, root, [[-1.45, 0.06, DUCT_Z - 0.2], [-1.45, 0.06, 1.95], [0.3, 0.06, 1.95], [0.3, 0.85, 1.95]], 0.026, "#1f5fa8", "#7cc9ff"));
-    flows.push(flow(ctx, root, [[0.55, 0.85, 1.95], [0.55, 0.1, 1.95], [0.55, 0.1, 2.35], [-1.15, 0.1, 2.35], [-1.15, 0.1, DUCT_Z - 0.2]], 0.045, "#5b5f66", "#a7adb5"));
-    box(root, 0.26, 0.14, 0.14, mat("#b88a2a", 0.35, 0.8), -0.6, 0, 1.95);
-    ctx.label(de ? "Frischwasser · Rückflusssicherung" : "Fresh water · backflow preventer", [-0.6, 0.45, 1.95], "accent");
-    ctx.label(de ? "Abwasser" : "Waste water", [-1.15, 0.45, 3.0], "plain");
-    // Theke mit Spüle, Armatur und Kaffeemaschine
-    desk(-0.2, 1.4, 2.6, "#d9d5cc");
+    // Podestboden 11 cm: Stellfüße (70 mm, Auflage 90 × 85 mm) im 1-m-Raster, darauf Deckplatten 1 × 1 m (40 mm).
+    // Erst setzen sich die Füße nacheinander, dann die Platten; Frisch- und Abwasser laufen darunter zur Theke hinten rechts.
+    const FH = 0.11;
+    connBox(1.4, "#2f7fd6", 0.05);
+    ctx.label(de ? "Übergabepunkt" : "Connection point", [1.4, 0.35, DUCT_Z + 0.25], "plain");
+    flows.push(flow(ctx, root, [[1.3, 0.035, DUCT_Z - 0.2], [1.3, 0.035, -1.9], [1.62, 0.035, -1.9], [1.62, 0.85 + FH, -1.9]], 0.022, "#1f5fa8", "#7cc9ff"));
+    flows.push(flow(ctx, root, [[1.78, 0.85 + FH, -2.35], [1.78, 0.035, -2.35], [1.5, 0.035, -2.35], [1.5, 0.035, DUCT_Z - 0.2]], 0.028, "#5b5f66", "#a7adb5"));
+    box(root, 0.12, 0.05, 0.2, mat("#b88a2a", 0.35, 0.8), 1.3, 0.01, -0.5);
+    ctx.label(de ? "Frischwasser · Rückflusssicherung" : "Fresh water · backflow preventer", [0.6, 0.45, -0.5], "accent");
+    ctx.label(de ? "Abwasser unter dem Podest" : "Waste water below the raised floor", [0.2, 0.3, -2.6], "plain");
+    const floor = raisedFloor(ctx, root, STAND.w, STAND.d);
+    // Theke hinten rechts in der Ecke, Längsseite an der 6-m-Seitenwand (x = +2), mit Spüle und Kaffeemaschine
+    const counter = new THREE.Group(); counter.position.y = FH; root.add(counter);
+    const before = root.children.length;
+    box(root, 0.68, 1.0, 2.6, mat("#f4f3ef", 0.55), 1.6, 0, -1.65);
+    box(root, 0.74, 0.04, 2.66, mat("#d9d5cc", 0.35, 0.1), 1.6, 1.0, -1.65);
     const steelM = mat("#cfd3d8", 0.25, 0.9);
-    box(root, 0.5, 0.02, 0.4, steelM, 0.4, 1.04, 1.4);
-    box(root, 0.42, 0.012, 0.32, mat("#8e949b", 0.3, 0.9), 0.4, 1.02, 1.4, false);
-    cyl(root, 0.02, 0.32, steelM, 0.4, 1.04, 1.18, 10);
-    box(root, 0.04, 0.03, 0.2, steelM, 0.4, 1.33, 1.26, false);
+    box(root, 0.42, 0.02, 0.5, steelM, 1.58, 1.04, -2.15);
+    box(root, 0.34, 0.012, 0.42, mat("#8e949b", 0.3, 0.9), 1.58, 1.02, -2.15, false);
+    cyl(root, 0.02, 0.32, steelM, 1.86, 1.04, -2.15, 10);
+    box(root, 0.22, 0.03, 0.04, steelM, 1.76, 1.33, -2.15, false);
     const wTex = ctx.tex(8, 64, (g) => { g.fillStyle = "rgba(120,200,255,.4)"; g.fillRect(0, 0, 8, 64); g.fillStyle = "rgba(230,248,255,.9)"; g.fillRect(0, 0, 8, 20); }, [1, 3]);
     const stream = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.28, 8), new THREE.MeshStandardMaterial({ map: wTex, transparent: true, emissive: "#bfe8ff", emissiveIntensity: 0.4 }));
-    stream.position.set(0.4, 1.19, 1.35); root.add(stream);
-    anims.push((t) => { wTex.offset.y = (t * 2) % 1; });
-    box(root, 0.36, 0.44, 0.38, mat("#1d1f23", 0.4, 0.4), -0.9, 1.04, 1.35);
-    if (spec) ctx.label(spec, [-0.2, 1.8, 1.4], "accent");
-    person(root, -0.2, 0.55, 0);
+    stream.position.set(1.66, 1.19, -2.15); root.add(stream);
+    box(root, 0.38, 0.44, 0.36, mat("#1d1f23", 0.4, 0.4), 1.6, 1.04, -0.8);
+    person(root, 0.85, -1.6, Math.PI / 2);
+    root.children.slice(before).forEach((c) => counter.add(c));
+    if (spec) ctx.label(spec, [1.6, 1.85 + FH, -1.65], "accent");
+    const done = 0.6 + floor.duration + 0.4;
+    ctx.label(de ? "Podestboden · Stellfüße 70 mm + Platte 40 mm = 11 cm" : "Raised floor · 70 mm feet + 40 mm panel = 11 cm", [-1.9, FH + 0.25, 3.1], "plain");
+    anims.push((t) => {
+      floor.set((t - 0.6) / floor.duration);
+      counter.visible = t > done;
+      counter.scale.setScalar(Math.max(0.001, ease((t - done) / 0.5)));
+      wTex.offset.y = (t * 2) % 1;
+    });
   }
 
   if (kind === "it") {
@@ -339,7 +376,7 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
     box(root, 1.98, 1.15, 0.05, mat("#111316", 0.4), -0.2, 0.93, STAND.back + 0.04);
     ctx.label(de ? "feste IP · Ports · VLAN" : "static IP · ports · VLAN", [-0.2, 2.2, STAND.back + 0.1], "plain");
     desk(0.4, 1.6, 2.2);
-    flows.push(flow(ctx, root, [[-1.6, 0.04, 2.3], [0.4, 0.04, 2.3], [0.4, 0.04, 1.95]], 0.016, B, L));
+    flows.push(flow(ctx, root, [[-1.75, 0.04, DUCT_Z + 0.2], [-1.75, 0.04, 2.3], [0.4, 0.04, 2.3], [0.4, 0.04, 1.95]], 0.016, B, L));
     box(root, 0.36, 0.015, 0.25, mat("#c9ccd1", 0.3, 0.8), 0.1, 1.04, 1.6);
     const lap = new THREE.Mesh(new THREE.PlaneGeometry(0.36, 0.23), new THREE.MeshStandardMaterial({ color: "#1d2a3a", emissive: "#4aa3ff", emissiveIntensity: 0.6 }));
     lap.position.set(0.1, 1.17, 1.48); lap.rotation.x = -0.25; root.add(lap);
@@ -358,22 +395,23 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
   }
 
   if (kind === "druckluft") {
-    connBox(-1.2, "#7fb8e6");
-    ctx.label(de ? "Übergabepunkt" : "Connection point", [-1.2, 0.55, DUCT_Z], "plain");
+    connBox(1.4, "#7fb8e6");
+    ctx.label(de ? "Übergabepunkt" : "Connection point", [1.4, 0.55, DUCT_Z], "plain");
     const A = "#3c6f9c", AL = "#cfe9ff";
-    flows.push(flow(ctx, root, [[-1.2, 0.04, DUCT_Z - 0.2], [-1.2, 0.04, 2.5], [-0.6, 0.04, 2.5], [-0.6, 0.78, 2.5]], 0.02, A, AL));
-    // Wartungseinheit: Filter, Druckregler, Manometer
+    // vom Kanal in die Ecke hinten rechts zur Wartungseinheit an der 6-m-Seitenwand
+    flows.push(flow(ctx, root, [[1.4, 0.04, DUCT_Z - 0.2], [1.4, 0.04, -2.45], [1.84, 0.04, -2.45], [1.84, 0.78, -2.45]], 0.02, A, AL));
+    // Wartungseinheit: Filter, Druckregler, Manometer (zum Stand hin ausgerichtet)
     const steelM = mat("#cfd3d8", 0.25, 0.9);
-    cyl(root, 0.03, 1.35, steelM, -0.6, 0, 2.62, 8);
-    cyl(root, 0.07, 0.24, mat("#9ec9ec", 0.1, 0, { transparent: true, opacity: 0.6 }), -0.6, 0.78, 2.5, 16);
-    box(root, 0.18, 0.12, 0.18, steelM, -0.6, 1.02, 2.5);
+    cyl(root, 0.03, 1.35, steelM, 1.92, 0, -2.45, 8);
+    cyl(root, 0.07, 0.24, mat("#9ec9ec", 0.1, 0, { transparent: true, opacity: 0.6 }), 1.84, 0.78, -2.45, 16);
+    box(root, 0.18, 0.12, 0.18, steelM, 1.84, 1.02, -2.45);
     const gauge = new THREE.Mesh(new THREE.CylinderGeometry(0.08, 0.08, 0.03, 24), mat("#ffffff", 0.3));
-    gauge.rotation.x = Math.PI / 2; gauge.position.set(-0.6, 1.24, 2.44); root.add(gauge);
-    const needle = new THREE.Mesh(new THREE.BoxGeometry(0.005, 0.06, 0.004), mat("#d01b1b", 0.4));
-    needle.geometry.translate(0, 0.03, 0); needle.position.set(-0.6, 1.24, 2.42); root.add(needle);
-    anims.push((t) => { needle.rotation.z = -0.6 + Math.sin(t * 1.3) * 0.08; });
-    ctx.label(de ? "Wartungseinheit · bar" : "Service unit · bar", [-0.6, 1.55, 2.5], "accent");
-    flows.push(flow(ctx, root, [[-0.45, 1.08, 2.5], [-0.2, 1.08, 2.5], [-0.2, 0.04, 2.5], [0.5, 0.04, 2.5], [0.5, 0.04, 0.45], [0.5, 0.6, 0.45]], 0.018, A, AL));
+    gauge.rotation.z = Math.PI / 2; gauge.position.set(1.74, 1.24, -2.45); root.add(gauge);
+    const needle = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.06, 0.005), mat("#d01b1b", 0.4));
+    needle.geometry.translate(0, 0.03, 0); needle.position.set(1.72, 1.24, -2.45); root.add(needle);
+    anims.push((t) => { needle.rotation.x = -0.6 + Math.sin(t * 1.3) * 0.08; });
+    ctx.label(de ? "Wartungseinheit · bar" : "Service unit · bar", [1.6, 1.6, -2.45], "accent");
+    flows.push(flow(ctx, root, [[1.84, 1.08, -2.3], [1.84, 1.08, -2.1], [1.84, 0.04, -2.1], [0.9, 0.04, -2.1], [0.9, 0.04, -0.95], [0.9, 0.6, -0.95]], 0.018, A, AL));
     // Exponat mit Pneumatikzylinder
     const mach = mat("#d9dde2", 0.45, 0.3);
     box(root, 2.0, 1.45, 1.3, mach, 0.3, 0, -0.3);
@@ -383,14 +421,44 @@ function supply(ctx: Ctx, kind: SupplyKind, spec: string | undefined, offered: b
     const piston = cyl(root, 0.035, 0.6, mat("#eef0f2", 0.15, 1), 0.5, 1.54, -0.3, 12);
     piston.rotation.z = Math.PI / 2;
     anims.push((t) => { piston.position.x = 0.55 + (Math.sin(t * 2.2) > 0 ? 0.25 : 0) * ease((Math.sin(t * 2.2) + 1) / 2); });
-    ctx.label(offered ? (de ? "laut Quelle bestellbar" : "orderable per source") : de ? "Angebot anfragen" : "ask for availability", [0.3, 2.2, -0.3], offered ? "accent" : "warn");
+    ctx.label(offered ? (de ? "laut Quelle bestellbar" : "orderable per source") : de ? "Angebot anfragen" : "ask for availability", [-0.6, 1.75, 0.45], offered ? "accent" : "warn");
     person(root, -1.2, 1.0, 0.8);
   }
 
   return {
     root,
-    still: 4,
+    still: kind === "wasser" ? 16 : 4,
     camera: { pos: [-6.8, 5.4, 9.8], target: [0, 0.9, 0.6], max: 30 },
     update: (t, dt) => { flows.forEach((f) => f(dt)); anims.forEach((a) => a(t)); },
   };
+}
+
+/** Hallendach: Fachwerkbinder (Ober-/Untergurt, Diagonalen) entlang x, Pfetten, Trapezblech und Hallenleuchten */
+function hallRoof(ctx: Ctx, root: THREE.Object3D, girders: number[]) {
+  const steel = mat("#59606a", 0.5, 0.65), H = 1.3, Y0 = ROOF - 0.32, L = 22, step = 1.25;
+  const diag = Math.hypot(step, H);
+  for (const z of girders) {
+    box(root, L, 0.14, 0.16, steel, 0, Y0, z, false);
+    box(root, L, 0.14, 0.16, steel, 0, Y0 + H, z, false);
+    for (let i = 0; i * step < L; i++) {
+      const x = -L / 2 + i * step;
+      box(root, 0.07, H, 0.07, steel, x, Y0 + 0.07, z, false);
+      const d = new THREE.Mesh(new THREE.BoxGeometry(0.06, diag, 0.06), steel);
+      d.position.set(x + step / 2, Y0 + 0.07 + H / 2, z); d.rotation.z = (i % 2 ? 1 : -1) * Math.atan2(step, H); root.add(d);
+    }
+  }
+  for (let x = -10.5; x <= 10.5; x += 1.5) box(root, 0.1, 0.18, 22, steel, x, Y0 + H + 0.14, 0.5, false);
+  const sheet = ctx.tex(256, 64, (g) => {
+    g.fillStyle = "#7b8189"; g.fillRect(0, 0, 256, 64);
+    for (let x = 0; x < 256; x += 32) { g.fillStyle = "#5f656d"; g.fillRect(x, 0, 10, 64); g.fillStyle = "#8d939b"; g.fillRect(x + 10, 0, 3, 64); }
+  }, [12, 1]);
+  const deck = new THREE.Mesh(new THREE.PlaneGeometry(26, 26), mat("#ffffff", 0.75, 0.4, { map: sheet, side: THREE.DoubleSide }));
+  deck.rotation.x = Math.PI / 2; deck.position.set(0, Y0 + H + 0.33, 0.5); root.add(deck);
+  // Hallenleuchten (LED-Hallenstrahler) zwischen den Bindern
+  const lampBody = mat("#2b2e33", 0.5, 0.5), lampGlow = mat("#fffaf0", 0.3, 0, { emissive: "#fff6e0", emissiveIntensity: 2.2 });
+  for (const x of [-8, -4, 0, 4, 8]) for (const z of [0.5 - 4.8, 0.5, 0.5 + 4.8]) {
+    cyl(root, 0.01, 0.9, steel, x, Y0 + H - 0.5, z, 6);
+    const shade = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.32, 0.22, 20, 1, true), lampBody); shade.position.set(x, Y0 + H - 0.62, z); root.add(shade);
+    const disc = new THREE.Mesh(new THREE.CircleGeometry(0.3, 20), lampGlow); disc.rotation.x = Math.PI / 2; disc.position.set(x, Y0 + H - 0.73, z); root.add(disc);
+  }
 }
