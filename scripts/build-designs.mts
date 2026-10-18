@@ -113,14 +113,17 @@ async function variants(master: string, widths: number[], opts: { avif: boolean 
   const base = master.replace(/\.webp$/, "");
   const made: number[] = [];
   for (const w of widths) {
-    if (!meta.width || w >= meta.width) continue;
+    if (!meta.width) continue;
+    // kleinere Quellen (z. B. aus Tafeln geschnitten): Datei trotzdem anlegen, ohne Hochskalieren –
+    // Galerie und Slider fragen die festen Größen 640/1280 direkt ab
+    const small = w >= meta.width;
     const webp = `${base}-${w}.webp`;
-    if (!isFresh(webp, master)) await sharp(master).resize({ width: w }).webp({ quality: 78, effort: 5 }).toFile(webp);
+    if (!isFresh(webp, master)) await sharp(master).resize({ width: w, withoutEnlargement: true }).webp({ quality: 78, effort: 5 }).toFile(webp);
     if (opts.avif) {
       const avif = `${base}-${w}.avif`;
-      if (!isFresh(avif, master)) await sharp(master).resize({ width: w }).avif({ quality: 52, effort: 4 }).toFile(avif);
+      if (!isFresh(avif, master)) await sharp(master).resize({ width: w, withoutEnlargement: true }).avif({ quality: 52, effort: 4 }).toFile(avif);
     }
-    made.push(w);
+    if (!small) made.push(w);
   }
   return { width: meta.width ?? 0, height: meta.height ?? 0, widths: [...made, meta.width ?? 0] };
 }
