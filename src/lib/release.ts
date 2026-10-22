@@ -8,8 +8,11 @@ export const RELEASE = {
    * Seit 14.10.2026 auf Wunsch des Inhabers leer: auch 009–018 (EXPO-REAL-Serie, mit Fremdlogos anderer Aussteller
    * in den Hallenhintergründen) sind sichtbar. Die Ordner 129–132 (Brillen-Stände mit Fremdlogos) sind nicht importiert.
    */
-  /** 227–236 auf Wunsch des Inhabers seit 22.10.2026 nicht auf der Website (alle übrigen Entwürfe werden gezeigt) */
-  exclude: Array.from({ length: 10 }, (_, i) => 227 + i) as readonly number[],
+  /**
+   * Auf Wunsch des Inhabers nicht auf der Website (Stand 22.10.2026): 149–165 (Alpine-Gear-Größenreihe) und
+   * 197–237 (CL32-Reihe inkl. Varianten B). „79 Alpine Gear“ bleibt sichtbar. Alle übrigen Entwürfe werden gezeigt.
+   */
+  exclude: [...Array.from({ length: 17 }, (_, i) => 149 + i), ...Array.from({ length: 41 }, (_, i) => 197 + i)] as readonly number[],
   /** Optional: nur diese Nummern zeigen (leer = alle außer exclude). Seit 22.10.2026 leer – alle Entwürfe außer exclude. */
   show: [] as readonly number[],
 } as const;
