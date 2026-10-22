@@ -74,16 +74,16 @@ try {
       for (const marker of ["C3 EXPO GmbH", "11/2025", "10/2026", "BMW", "Amazon", "CL / PROFESSIONAL EXPERIENCE", "CL / CAREER"]) {
         assert(body.includes(marker), `Professional experience missing on ${route}: ${marker}`);
       }
-      for (const marker of ["CL / CAREER", "Motion mode"]) {
-        assert(body.includes(marker) || (marker === "Motion mode" && body.includes("Animationsmodus")), `Interactive career/performance missing on ${route}: ${marker}`);
-      }
-      checks.push(`${route}: unified interactive career/projects and performance controls`);
+      // Schonmodus samt Animations-Schalter seit 22.10.2026 entfernt
+      assert(!body.includes("Animationsmodus") && !body.includes("Motion mode"), `Performance switcher should be gone on ${route}`);
+      checks.push(`${route}: unified interactive career/projects, no performance switcher`);
       if (route === "/") assert(body.includes("Projektleitung im individuellen Messebau"), "Messeprojekt role title missing");
     }
     if (route === "/") {
       assert.match(body, /CL Projektwerk/);
       // Approved interactive experiences must be present in server-rendered HTML.
-      for (const name of ['aria-label="Entwürfe in zwei Laufbändern"', "data-steps"]) {
+      // Sechs-Schritte-Block (data-steps) seit 22.10.2026 nicht mehr auf der Startseite
+      for (const name of ['aria-label="Entwürfe in zwei Laufbändern"']) {
         assert(body.includes(name), `Approved experience missing in homepage: ${name}`);
         checks.push(`Homepage experience: ${name}`);
       }
@@ -91,9 +91,13 @@ try {
       for (const moved of ['id="weltweit"', 'id="bauphasen"', "data-beat"]) {
         assert(!body.includes(moved), `Section should not be on the homepage anymore: ${moved}`);
       }
-      // Messestandorte (Atlas + Messebau-Kompass) seit 15.10.2026 wieder auf der Startseite, eigener Menüpunkt
-      assert(body.includes('id="messestandorte"'), "Venue atlas missing on homepage (#messestandorte)");
-      checks.push("Homepage: calendar on /messen, venue atlas at #messestandorte");
+      // Verkaufsseite seit 20.10.2026: Referenzen direkt nach „Über mich“, ohne Atlas, Messen-Vorschau, Tools und Cookie-Banner
+      assert(body.includes('id="referenzen"'), "References missing on homepage (#referenzen)");
+      assert(body.indexOf('id="ueber"') < body.indexOf('id="referenzen"'), "References must follow the about section");
+      for (const gone of ['id="messestandorte"', 'id="messen"', 'id="consent-title"']) {
+        assert(!body.includes(gone), `Section should not be on the homepage anymore: ${gone}`);
+      }
+      checks.push("Homepage: references after about, no atlas/fairs/tools/cookie banner");
       const assets = [...new Set(body.match(/\/_next\/static\/[^"\s<>]+\.(?:js|css)/g))].slice(0, 6);
       assert(assets.length > 0, "No client assets in HTML");
       for (const asset of assets) {
@@ -143,7 +147,7 @@ try {
   checks.push("No employment references or certificates linked");
 
   // Nicht mehr angebotene Sprachen leiten auf Englisch um
-  for (const [from, to] of [["/nl", "/en"], ["/ru/designs", "/en/designs"]]) {
+  for (const [from, to] of [["/pt", "/en"], ["/ru/designs", "/en/designs"]]) {
     const r = await fetch(base + from, { redirect: "manual", signal: AbortSignal.timeout(30000) });
     assert(r.status === 308 || r.status === 301, `${from}: expected permanent redirect, got ${r.status}`);
     assert.equal(new URL(r.headers.get("location"), base).pathname, to);

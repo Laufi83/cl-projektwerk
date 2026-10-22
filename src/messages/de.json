@@ -5,8 +5,8 @@
     "ogTitle": "{brand} – Planungskapazität für Messebau, Markenräume und Innenausbau",
     "ogDescription": "Bemaßte Fertigungsunterlagen, Arbeitsvorbereitung und Projektsteuerung für Messebauer, Agenturen, Innenausbaubetriebe und Aussteller. Ansprechpartner: Christof Laufersweiler, Leipzig.",
     "socialDescription": "Zusätzliche Planungs- und Projektkapazität für Messebau, Markenräume und Innenausbau – projektbezogen, mit klar vereinbartem Umfang.",
-    "designsTitle": "Messestand-Entwürfe",
-    "designsDescription": "Messestand-Konzepte mit Visualisierungen, Grundrissen und Ansichten von {min} bis {max} – alle Entwürfe auf einen Blick.",
+    "designsTitle": "Designstudien für Messestände",
+    "designsDescription": "Freie Designstudien für Messestände von {min} bis {max} – Visualisierungen von CL Projektwerk, keine gebauten Stände.",
     "designTitle": "{number} {title} · Messestand-Entwurf",
     "designDescription": "Entwurf {title}: {size}{floors}. {description} Visualisierung eines Konzepts, kein realisierter Stand.",
     "inquiryTitle": "Projekt besprechen",
@@ -18,7 +18,7 @@
     "fairsTitle": "Messekalender und Messegelände in Europa",
     "fairsDescription": "Die nächsten Messetermine in Deutschland und Europa und 50 Messegelände im Überblick – als Orientierung für Ihre Projektplanung.",
     "pmTitle": "Projektleitung im Messebau – Werkzeuge für Projektleiter",
-    "pmDescription": "Terminablaufplan, Fristen-Radar, Machbarkeit in 3D, 4D-Aufbau, Logistik- und Ladeplanung, Schichtplan, Budget, Aufbautag-Leitstand und Übergabeprotokoll – kostenlos im Browser."
+    "pmDescription": "Terminablaufplan, Fristen-Radar, Machbarkeit in 3D, 4D-Aufbau, Logistik- und Ladeplanung, Strombedarf, Boden & Mengen, Druckdaten, Schichtplan, Budget, Aufbautag-Leitstand und Übergabeprotokoll – kostenlos im Browser."
   },
   "common": {
     "skip": "Zum Inhalt springen",
@@ -42,7 +42,7 @@
   },
   "nav": {
     "services": "Leistungen",
-    "designs": "Entwürfe",
+    "designs": "Designstudien",
     "process": "Zusammenarbeit",
     "world": "Messekalender",
     "about": "Über mich",
@@ -52,15 +52,16 @@
     "home": "Startseite",
     "main": "Hauptnavigation",
     "fairs": "Messen",
-    "venues": "Messestandorte",
-    "pm": "Projektleitung"
+    "venues": "Messegelände",
+    "pm": "Projektleitung",
+    "references": "Referenzen"
   },
   "hero": {
     "eyebrow": "Planungs- und Projektbüro · Messebau · Markenräume · Innenausbau",
     "title": "Planung, die auf der Fläche funktioniert.",
-    "lead": "Technische Planung, Arbeitsvorbereitung und Projektsteuerung für Messebauer, Agenturen und Aussteller – projektbezogen und mit klar vereinbartem Umfang.",
+    "lead": "Technische Planung und Projektsteuerung für Messebauer, Agenturen und Aussteller.",
     "cta": "Planungskapazität anfragen",
-    "secondary": "Entwürfe ansehen",
+    "secondary": "Referenzen ansehen",
     "scroll": "Scrollen – der Entwurf entsteht",
     "progress": "Aufbau (Visualisierung)",
     "done": "Fertige Fläche",
@@ -234,7 +235,8 @@
       "next": "Weiter",
       "hint": "Maus auf eine Reihe: zum Rand zeigen steuert sie, in der Mitte bleibt sie stehen · Ziehen oder Pfeile · Klick öffnet den Entwurf",
       "hintTouch": "Seitlich wischen oder Pfeile antippen · Bild antippen öffnet den Entwurf"
-    }
+    },
+    "tunnelHint": "Scrollen und durch die Entwürfe fliegen"
   },
   "detail": {
     "facts": "Kenndaten",
@@ -924,8 +926,23 @@
   "pm": {
     "eyebrow": "Für Projektleiter im Messebau",
     "title": "Projekte steuern, bevor die Halle öffnet.",
-    "lead": "Zehn Werkzeuge für die Projektleitung – vom Terminablaufplan bis zur unterschriebenen Übergabe. Alles läuft im Browser, nichts wird übertragen.",
+    "lead": "Dreizehn Werkzeuge für die Projektleitung – vom Terminablaufplan über Strombedarf, Boden und Druckdaten bis zur unterschriebenen Übergabe. Alles läuft im Browser, nichts wird übertragen.",
     "cta": "Werkzeuge öffnen",
     "teaser": "Neu: Werkzeuge für Projektleiter"
+  },
+  "references": {
+    "eyebrow": "Referenzen",
+    "title": "Projekte, die ich geleitet habe.",
+    "lead": "Eine Auswahl aus meiner Zeit als angestellter Projektleiter und Geschäftsführer im Messebau – vom Fahrzeug-Launch bis zur 1.200-m²-Halle.",
+    "size": "Fläche",
+    "role": "Meine Rolle",
+    "note": "Projekte aus meiner früheren Anstellung beim jeweils genannten Arbeitgeber. Es sind keine Projekte von CL Projektwerk, und die genannten Unternehmen sind keine Kunden von CL Projektwerk.",
+    "all": "Werdegang und weitere Projekte"
+  },
+  "studies": {
+    "eyebrow": "Designstudien",
+    "title": "Ideen für jede Fläche.",
+    "lead": "{count} freie Entwurfsstudien – Visualisierungen, keine gebauten Stände.",
+    "all": "Alle Designstudien ansehen"
   }
 }

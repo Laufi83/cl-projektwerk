@@ -6,8 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, Play } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { scrollToTarget } from "@/lib/scroll";
-import { Link } from "@/i18n/navigation";
 import { mediaUrl } from "@/lib/media";
+import { Glare } from "@/components/ui/Glare";
 import { useLayout } from "@/lib/layout";
 import { HERO_PORTRAIT_QUERY, layoutById } from "@/config/layouts";
 import { useMedia, useReducedMotion } from "@/hooks/useMedia";
@@ -24,6 +24,15 @@ type Seq = { count: number; width: number; height: number };
 /** `info`: Eckdaten des Entwurfs für die Ruhephase (Maße · Standart · Geschosse) und Slug der Entwurfsseite */
 export type HeroFilm = { id: string; label: string; clip: string; desktop: Seq; mobile: Seq; info?: { facts: string; slug: string | null } };
 type Props = { films: HeroFilm[]; visNote: string };
+
+/**
+ * Handy-Aufbaufilm (Higgsfield-Clip „Machine Loft“, Visualisierung) als Bildsequenz public/hero/phone/mobile/001–061.webp:
+ * ersetzt im Hochformat die Filme der Layouts. Ersatz-Loop und Schonbild nutzen dieselbe Sequenz.
+ */
+const PHONE_FILM: HeroFilm = {
+  id: "phone", label: "", clip: mediaUrl("custom/mobile-hero.mp4"),
+  desktop: { count: 61, width: 486, height: 864 }, mobile: { count: 61, width: 486, height: 864 },
+};
 
 const FOCUS_X = 0.42; // Bildmitte des Stands in den Querformat-Frames (Hochformat-Frames sind schon zentriert)
 /** Anteil des Scrollwegs für den Aufbau; danach 3D-Headline und eine Ruhephase mit freiem Blick auf den fertigen Stand */
@@ -54,12 +63,15 @@ export function HeroScrub({ films, visNote }: Props) {
   const lite = useLiteMode();
   const weak = useSyncExternalStore(noop, weakConnection, () => false);
   const variant = useMedia(HERO_PORTRAIT_QUERY) ? "mobile" : "desktop";
-  const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || lite || weak ? "fallback" : "scrub";
+  // Smartphone/Hochformat: eigener Aufbaufilm (PHONE_FILM) baut sich beim Scrollen auf – auch im Schonmodus, die
+  // Bildfolge ist klein; nur bei reduzierter Bewegung oder schwacher Verbindung das Standbild
+  const phone = variant === "mobile";
+  const mode: "pending" | "scrub" | "fallback" = !hydrated ? "pending" : reduce || weak || (lite && !phone) ? "fallback" : "scrub";
   const layout = useLayout();
   const cur = layoutById(layout);
-  const film = films.find((f) => f.id === cur.film) ?? films[0];
+  const film = phone ? PHONE_FILM : films.find((f) => f.id === cur.film) ?? films[0];
   // Gemeinsames Scroll-Video nur für Layouts ohne eigenen Film (Wood und Lumen zeigen ihre eigene Sequenz)
-  const shared = cur.sharedFilm;
+  const shared = cur.sharedFilm && !phone;
   const useVideo = shared && customReady;
 
   // Ruhephase: langsamer Zoom auf den fertigen Stand (an den Scrollweg gebunden)
@@ -229,6 +241,8 @@ export function HeroScrub({ films, visNote }: Props) {
         <div ref={media} className="hero-media absolute inset-0 overflow-hidden bg-black will-change-transform">
           {/* Poster je Layout per CSS (nur das aktive wird geladen); die Sequenz zeichnet darüber */}
           <div aria-hidden className="hero-poster absolute inset-0" />
+          {/* Handy: Startbild des eigenen Aufbaufilms statt des Layout-Posters (liegt unter der Leinwand) */}
+          {phone && <img aria-hidden alt="" src={`/hero/${PHONE_FILM.id}/poster-mobile.webp`} className="absolute inset-0 h-full w-full object-cover" />}
           {mode === "scrub" && !useVideo && <canvas ref={canvas} aria-hidden className="absolute inset-0 h-full w-full transition-opacity duration-500" />}
           {mode === "scrub" && shared && (
             <video
@@ -256,8 +270,8 @@ export function HeroScrub({ films, visNote }: Props) {
         <div className="hero-top absolute inset-x-0 top-24 md:top-28">
           <div className="container-x flex items-start justify-between gap-4">
             <p className="eyebrow line-clamp-2 max-w-[17rem] text-[0.65rem] md:line-clamp-none md:max-w-none md:text-xs">{t("eyebrow")}</p>
-            <span className="vis-note hidden shrink-0 md:inline-flex">
-              {film.label ? `${film.label} · ${visNote}` : visNote}
+            <span className={`vis-note shrink-0 ${phone ? "inline-flex" : "hidden md:inline-flex"}`}>
+              {phone ? visNote : film.label ? `${film.label} · ${visNote}` : visNote}
             </span>
           </div>
         </div>
@@ -275,23 +289,6 @@ export function HeroScrub({ films, visNote }: Props) {
           </p>
         </div>
 
-        {/* Ruhephase: Eckdaten des fertigen Stands mit Link zum Entwurf */}
-        {mode === "scrub" && film.info?.facts && (
-          <div className="pointer-events-none absolute inset-x-0 top-36 md:top-40">
-            <div className="container-x">
-              <div className={`glass inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl px-4 py-3 text-sm transition-all duration-700 ease-fluid ${clean ? "pointer-events-auto translate-y-0 opacity-100" : "translate-y-3 opacity-0"}`}>
-                <span className="font-semibold">{film.label}</span>
-                <span className="text-fg/75">{film.info.facts}</span>
-                {film.info.slug && (
-                  <Link href={{ pathname: "/designs/[slug]", params: { slug: film.info.slug } }} tabIndex={clean ? 0 : -1} className="inline-flex items-center gap-1 font-semibold text-accent hover:underline">
-                    {t("viewDesign")} <ArrowUpRight size={14} />
-                  </Link>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
-
         {/* unten: Kernbotschaft + CTA (ohne Scrollen sichtbar) */}
         <div className="hero-copy absolute inset-x-0 bottom-0 pb-[max(5.5rem,calc(env(safe-area-inset-bottom)+4.5rem))] md:pb-20">
           <div className="hero-copy-grid container-x grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
@@ -304,13 +301,14 @@ export function HeroScrub({ films, visNote }: Props) {
                 href="#kontakt"
                 onClick={(e) => { e.preventDefault(); scrollToTarget("#kontakt"); }}
                 data-magnetic
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-accent-contrast transition-transform duration-500 ease-fluid hover:scale-[1.03] md:px-5 md:py-3 md:text-base active:scale-[0.98]"
+                className="relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-accent-contrast transition-transform duration-500 ease-fluid hover:scale-[1.03] md:px-5 md:py-3 md:text-base active:scale-[0.98]"
               >
-                {t("cta")} <ArrowUpRight size={18} />
+                <Glare />
+                <span className="relative">{t("cta")}</span> <ArrowUpRight size={18} className="relative" />
               </a>
               <a
-                href="#designs"
-                onClick={(e) => { e.preventDefault(); scrollToTarget("#designs"); }}
+                href="#referenzen"
+                onClick={(e) => { e.preventDefault(); scrollToTarget("#referenzen"); }}
                 className="glass inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold md:px-5 md:py-3 md:text-base transition-colors duration-500 ease-fluid hover:border-accent"
               >
                 {t("secondary")}
@@ -319,13 +317,8 @@ export function HeroScrub({ films, visNote }: Props) {
           </div>
           {mode === "scrub" && (
             <div className="hero-progress container-x mt-4 flex md:mt-8 items-center gap-4 text-xs uppercase tracking-[0.18em] text-fg/70">
-              {clean ? (
-                <button type="button" onClick={() => scrollToTarget("#leistungen")} className="pointer-events-auto inline-flex items-center gap-2 uppercase tracking-[0.18em] text-fg transition-colors hover:text-accent">
-                  <ArrowDown size={14} className="animate-bounce" /> {t("next")}
-                </button>
-              ) : (
-                <span className="inline-flex items-center gap-2"><ArrowDown size={14} className="animate-bounce" /> <span className="hidden sm:inline">{t("scroll")}</span></span>
-              )}
+              {/* Scroll-Hinweis nur während des Aufbaus; danach kein „Weiter zu …“ */}
+              {!clean && <span className="inline-flex items-center gap-2"><ArrowDown size={14} className="animate-bounce" /> <span className="hidden sm:inline">{t("scroll")}</span></span>}
               <span className="ml-auto">{t("progress")}</span>
               <div className="relative h-px w-32 bg-white/20 md:w-56">
                 <div ref={bar} className="absolute inset-0 origin-left scale-x-0 bg-accent" />

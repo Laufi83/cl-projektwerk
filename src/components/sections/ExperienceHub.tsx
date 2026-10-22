@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLocale } from "next-intl";
+import { pick } from "@/i18n/locales";
 import { useReducedMotion } from "@/hooks/useMedia";
 import { ArrowLeft, ArrowRight, CalendarBlank } from "@phosphor-icons/react";
 import { Kinetic } from "@/components/kinetic/Kinetic";
@@ -34,7 +35,8 @@ function TypedYear({text}:{text:string}){
 export function ExperienceHub({career,projects,careerTitle,projectsTitle,projectsNote}:{
   career:Career[]; projects:Project[]; careerTitle:string;projectsTitle:string;projectsNote:string
 }){
-  const de=useLocale()==="de";
+  const locale=useLocale();
+  const L=(o:{de:string;en:string}&Partial<Record<string,string>>)=>pick(o,locale);
   const [mode,setMode]=useState<"career"|"projects">("career");
   const [index,setIndex]=useState(0);
   const entries=mode==="career"?career:projects;
@@ -45,13 +47,13 @@ export function ExperienceHub({career,projects,careerTitle,projectsTitle,project
   const shift=(n:number)=>setIndex(p=>(p+n+entries.length)%entries.length);
   if(!entry)return null;
   return (
-    <section aria-label={de?"Werdegang und Projekterfahrung":"Career and project experience"} className="mt-16" data-experience-hub>
+    <section aria-label={L({de:"Werdegang und Projekterfahrung",en:"Career and project experience",fr:"Parcours et expérience de projet",es:"Trayectoria y experiencia en proyectos",it:"Percorso ed esperienza di progetto",nl:"Loopbaan en projectervaring"})} className="mt-16" data-experience-hub>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="eyebrow">CL / PROFESSIONAL EXPERIENCE</p>
-          <h3 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl"><Kinetic text={de?"Erfahrung, die Projekte trägt.":"Experience that shapes projects."} stomp /></h3>
+          <h3 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl"><Kinetic text={L({de:"Erfahrung, die Projekte trägt.",en:"Experience that shapes projects.",fr:"Une expérience qui porte les projets.",es:"Experiencia que sostiene proyectos.",it:"Esperienza che sostiene i progetti.",nl:"Ervaring die projecten draagt."})} stomp /></h3>
         </div>
-        <div role="tablist" aria-label={de?"Erfahrungsansicht wählen":"Choose experience view"} className="flex flex-wrap gap-2">
+        <div role="tablist" aria-label={L({de:"Erfahrungsansicht wählen",en:"Choose experience view",fr:"Choisir la vue",es:"Elegir vista",it:"Scegli la vista",nl:"Weergave kiezen"})} className="flex flex-wrap gap-2">
           <button type="button" role="tab" aria-selected={mode==="career"} onClick={()=>select("career")} aria-controls="experience-stage"
             className="rounded-full border border-line-strong px-4 py-2.5 text-xs font-semibold transition-colors hover:border-accent aria-selected:border-accent aria-selected:bg-accent aria-selected:text-accent-contrast">{careerTitle}</button>
           <button type="button" role="tab" aria-selected={mode==="projects"} onClick={()=>select("projects")} aria-controls="experience-stage"
@@ -88,14 +90,14 @@ export function ExperienceHub({career,projects,careerTitle,projectsTitle,project
             <p className="mt-4 text-base leading-relaxed text-[#c1ccd4]"><FxWords text={careerEntry?.org??projectEntry?.event??""} immediate delay={650} /></p>
             {projectEntry?.size&&<p className="mt-4 inline-flex rounded-full border border-white/20 px-3 py-1.5 font-mono text-xs text-accent">{projectEntry.size}</p>}
             {projectEntry?.note&&<p className="mt-5 max-w-lg text-sm leading-relaxed text-[#9eacba]">{projectEntry.note}</p>}
-            {mode==="projects"&&<p className="mt-8 border-t border-white/15 pt-5 text-xs text-[#9daeb9]">{de?"Persönliche Projekterfahrung aus früheren Anstellungen – keine Kundenreferenzen von CL Projektwerk.":"Project experience from previous employment – not client work of CL Projektwerk."}</p>}
+            {mode==="projects"&&<p className="mt-8 border-t border-white/15 pt-5 text-xs text-[#9daeb9]">{L({de:"Persönliche Projekterfahrung aus früheren Anstellungen – keine Kundenreferenzen von CL Projektwerk.",en:"Project experience from previous employment – not client work of CL Projektwerk.",fr:"Expérience de projet issue d’emplois précédents – pas des références clients de CL Projektwerk.",es:"Experiencia en proyectos de empleos anteriores; no son referencias de clientes de CL Projektwerk.",it:"Esperienza di progetto da impieghi precedenti, non referenze clienti di CL Projektwerk.",nl:"Projectervaring uit eerdere dienstverbanden – geen klantreferenties van CL Projektwerk."})}</p>}
           </div>
           <div className="mt-auto flex items-center justify-between gap-4 border-t border-white/15 px-6 py-4 md:px-9">
-            <button type="button" onClick={()=>shift(-1)} aria-label={de?"Vorheriger Eintrag":"Previous entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowLeft size={19} aria-hidden="true"/></button>
-            <div role="progressbar" aria-label={de?"Position":"Position"} aria-valuemin={1} aria-valuemax={entries.length} aria-valuenow={index+1} className="h-[3px] w-2/3 overflow-hidden rounded-full bg-white/15">
+            <button type="button" onClick={()=>shift(-1)} aria-label={L({de:"Vorheriger Eintrag",en:"Previous entry",fr:"Entrée précédente",es:"Entrada anterior",it:"Voce precedente",nl:"Vorige vermelding"})} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowLeft size={19} aria-hidden="true"/></button>
+            <div role="progressbar" aria-label={L({de:"Position",en:"Position",fr:"Position",es:"Posición",it:"Posizione",nl:"Positie"})} aria-valuemin={1} aria-valuemax={entries.length} aria-valuenow={index+1} className="h-[3px] w-2/3 overflow-hidden rounded-full bg-white/15">
               <div className="h-full bg-accent transition-[width] duration-500 motion-reduce:transition-none" style={{width:((index+1)/entries.length*100)+"%"}}/>
             </div>
-            <button type="button" onClick={()=>shift(1)} aria-label={de?"Nächster Eintrag":"Next entry"} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowRight size={19} aria-hidden="true"/></button>
+            <button type="button" onClick={()=>shift(1)} aria-label={L({de:"Nächster Eintrag",en:"Next entry",fr:"Entrée suivante",es:"Entrada siguiente",it:"Voce successiva",nl:"Volgende vermelding"})} className="grid size-10 place-items-center rounded-full border border-white/25 hover:border-accent"><ArrowRight size={19} aria-hidden="true"/></button>
           </div>
         </div>
       </div>

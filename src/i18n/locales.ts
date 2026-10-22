@@ -1,6 +1,6 @@
 /**
- * Sprachen der Website (seit 14.10.2026): Deutsch, Englisch, Spanisch, Französisch, Italienisch, Portugiesisch, Tschechisch.
- * Die Sprachdateien weiterer Sprachen (nl, pl, zh, hi, ru, da, sv, nb, fi, hu, tr, ar) liegen in src/messages, sind aber
+ * Sprachen der Website (seit 21.10.2026): Deutsch, Englisch, Französisch, Spanisch, Italienisch, Niederländisch.
+ * Die Sprachdateien weiterer Sprachen (pt, cs, pl, zh, hi, ru, da, sv, nb, fi, hu, tr, ar) liegen in src/messages, sind aber
  * nicht eingebunden – zum Aktivieren hier eintragen (und RETIRED_LOCALES in next.config.ts anpassen).
  * Deutsch ohne Präfix, alle anderen unter /<code>. Texte: src/messages/<code>.json;
  * was dort fehlt, kommt aus en.json (i18n/request.ts).
@@ -10,11 +10,10 @@
 export const LOCALES = [
   { code: "de", name: "Deutsch", flag: "de", intl: "de-DE", og: "de_DE" },
   { code: "en", name: "English", flag: "gb", intl: "en-GB", og: "en_GB" },
-  { code: "es", name: "Español", flag: "es", intl: "es-ES", og: "es_ES" },
   { code: "fr", name: "Français", flag: "fr", intl: "fr-FR", og: "fr_FR" },
+  { code: "es", name: "Español", flag: "es", intl: "es-ES", og: "es_ES" },
   { code: "it", name: "Italiano", flag: "it", intl: "it-IT", og: "it_IT" },
-  { code: "pt", name: "Português", flag: "pt", intl: "pt-PT", og: "pt_PT" },
-  { code: "cs", name: "Čeština", flag: "cz", intl: "cs-CZ", og: "cs_CZ" },
+  { code: "nl", name: "Nederlands", flag: "nl", intl: "nl-NL", og: "nl_NL" },
 ] as const satisfies readonly { code: string; name: string; flag: string; intl: string; og: string; rtl?: boolean }[];
 
 export type AppLocale = (typeof LOCALES)[number]["code"];

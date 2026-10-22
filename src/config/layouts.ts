@@ -1,5 +1,5 @@
 /**
- * Sieben Layouts (01 Studio, 02 Wood, 03 Lumen, 04 Atrium, 05 Copper, 06 Violet, 07 Canopy),
+ * Vier Layouts (01 Studio, 02 Lumen, 03 Copper, 04 Violet – Wood, Atrium, Canopy seit 22.10.2026 entfernt),
  * umschaltbar über die Lasche am rechten Rand (Rollmenü wie die Sprachwahl).
  * Je Layout: Farben, Schriften, Hero-Anordnung (alles in src/app/layouts.css),
  * Aufbaufilm im Hero und eigener Hover-Effekt der animierten Schriften.
@@ -22,21 +22,8 @@ export const LAYOUTS = [
     desc: { de: "Anthrazit & Orange · Buchstaben heben sich", en: "Charcoal & orange · letters lift" },
   },
   {
-    id: "wood",
-    n: "02",
-    name: "Wood",
-    // Entwurf 021 „Lamello“: eigener Aufbaufilm aus dem Firefly-Zeitraffer (public/hero/021)
-    film: "021",
-    sharedFilm: false,
-    theme: "#16100b",
-    swatch: "linear-gradient(135deg,#16100b 45%,#c98d55 45% 72%,#efe3cf 72%)",
-    effect: "slat",
-    font: "var(--font-raleway)",
-    desc: { de: "Eiche, Walnuss & Creme · filigrane Schrift · Lamellen drehen sich", en: "Oak, walnut & cream · fine type · turning slats" },
-  },
-  {
     id: "lumen",
-    n: "03",
+    n: "02",
     name: "Lumen",
     // Eigener Aufbaufilm: Firefly-Zeitraffer des hellen CL-Stands mit hinterleuchteter Lichtwand (public/hero/lumen)
     film: "lumen",
@@ -48,21 +35,8 @@ export const LAYOUTS = [
     desc: { de: "Eisblau, Silber & Glas · Buchstaben leuchten auf", en: "Ice blue, silver & glass · letters light up" },
   },
   {
-    id: "atrium",
-    n: "04",
-    name: "Atrium",
-    // Zeitraffer CL-02: runder, zweigeschossiger Stand in Creme mit Messing und warmem Lichtband (public/hero/atrium)
-    film: "atrium",
-    sharedFilm: false,
-    theme: "#14100a",
-    swatch: "linear-gradient(135deg,#14100a 45%,#d8b06a 45% 72%,#f1e7d6 72%)",
-    effect: "shimmer",
-    font: "var(--font-jost)",
-    desc: { de: "Espresso, Champagner & Creme · Goldschimmer", en: "Espresso, champagne & cream · golden shimmer" },
-  },
-  {
     id: "copper",
-    n: "05",
+    n: "03",
     name: "Copper",
     // Zeitraffer CL-03: schwarzes Stahlgerüst mit gefaltetem Kupferdach (public/hero/copper)
     film: "copper",
@@ -75,7 +49,7 @@ export const LAYOUTS = [
   },
   {
     id: "violet",
-    n: "06",
+    n: "04",
     name: "Violet",
     // Zeitraffer CL-04: schwarzer Stand mit violetten LED-Linien und Lamellenturm (public/hero/violet)
     film: "violet",
@@ -85,19 +59,6 @@ export const LAYOUTS = [
     effect: "neon",
     font: "var(--font-archivo)",
     desc: { de: "Schwarz & Violett · Neonlicht flackert", en: "Black & violet · flickering neon" },
-  },
-  {
-    id: "canopy",
-    n: "07",
-    name: "Canopy",
-    // Zeitraffer CL-05: Holzgitter, Naturstein und viel Grün (public/hero/canopy)
-    film: "canopy",
-    sharedFilm: false,
-    theme: "#0d120d",
-    swatch: "linear-gradient(135deg,#0d120d 45%,#a9c97a 45% 72%,#c99a62 72%)",
-    effect: "sway",
-    font: "var(--font-mulish)",
-    desc: { de: "Blattgrün, Rattan & Stein · Buchstaben wiegen sich", en: "Leaf green, rattan & stone · swaying letters" },
   },
 ] as const;
 
@@ -118,7 +79,13 @@ export const HERO_PORTRAIT_QUERY = "(orientation: portrait)";
  * gespeichertes Layout setzen (kein Aufblitzen) und das passende Hero-Poster (LCP-Bild) sofort mit hoher Priorität vorladen –
  * sonst entdeckt der Browser es erst nach dem Stylesheet (CSS-Variable --hero-poster).
  */
-export const layoutInitScript = `(function(){var d=document.documentElement,l=${JSON.stringify(DEFAULT_LAYOUT)};try{var v=localStorage.getItem(${JSON.stringify(LAYOUT_STORAGE_KEY)});if(${JSON.stringify(
+/**
+ * Layout-Umschalter (LayoutDock): bei false zeigt die Seite nur das Standard-Layout und ignoriert eine gespeicherte Wahl
+ * (dann auch <LayoutDock /> in app/[locale]/layout.tsx entfernen).
+ */
+export const LAYOUT_SWITCH = true;
+
+export const layoutInitScript = `(function(){var d=document.documentElement,l=${JSON.stringify(DEFAULT_LAYOUT)};try{if(!${JSON.stringify(LAYOUT_SWITCH)})throw 0;var v=localStorage.getItem(${JSON.stringify(LAYOUT_STORAGE_KEY)});if(${JSON.stringify(
   LAYOUTS.map((l) => l.id),
 )}.indexOf(v)>-1){d.setAttribute("data-layout",v);l=v;}}catch(e){}try{var m=${JSON.stringify(
   Object.fromEntries(LAYOUTS.map((l) => [l.id, l.film])),

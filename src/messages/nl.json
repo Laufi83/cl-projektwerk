@@ -5,8 +5,8 @@
     "ogTitle": "{brand}: planningscapaciteit voor beursstands, merkruimtes en interieurbouw",
     "ogDescription": "Gemaatvoerde productiedocumenten, werkvoorbereiding en projectsturing voor standbouwers, bureaus, interieurbouwbedrijven en exposanten. Contactpersoon: Christof Laufersweiler, Leipzig.",
     "socialDescription": "Extra plannings- en projectcapaciteit voor beursstands, merkruimtes en interieurbouw, per project en met een duidelijk afgesproken omvang.",
-    "designsTitle": "Standconcepten, elke dag een nieuw",
-    "designsDescription": "Standconcepten met visualisaties, plattegronden en aanzichten, van {min} tot {max}. Elke ochtend om 5:00 uur komt er een concept bij.",
+    "designsTitle": "Designstudies voor beursstands",
+    "designsDescription": "Vrije designstudies voor beursstands van {min} tot {max} – visualisaties van CL Projektwerk, geen gebouwde stands.",
     "designTitle": "{number} {title} · Standconcept",
     "designDescription": "Concept {title}: {size}{floors}. {description} Visualisatie van een concept, geen gebouwde stand.",
     "inquiryTitle": "Uw project bespreken",
@@ -15,8 +15,10 @@
     "selectionDescription": "Uw opgeslagen standconcepten, die u bij een aanvraag kunt meesturen.",
     "imprintDescription": "Juridische kennisgeving en gegevens van de aanbieder.",
     "privacyDescription": "Informatie over de verwerking van persoonsgegevens op deze website.",
-    "pmTitle": "Project management for exhibition stands – tools for project managers",
-    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
+    "pmTitle": "Projectleiding voor beursstands – tools voor projectleiders",
+    "pmDescription": "Masterplanning, deadlineradar, 3D-haalbaarheid, 4D-opbouw, logistiek en laadplanning, stroombehoefte, vloer en hoeveelheden, drukbestanden, ploegen, budget, cockpit voor de opbouwdag en opleverrapport – gratis in uw browser.",
+    "fairsTitle": "Beurskalender en beurslocaties in Europa",
+    "fairsDescription": "Komende beursdata in Duitsland en Europa en 50 beurslocaties in één overzicht – ter oriëntatie bij uw projectplanning."
   },
   "common": {
     "skip": "Naar de inhoud",
@@ -40,7 +42,7 @@
   },
   "nav": {
     "services": "Diensten",
-    "designs": "Concepten",
+    "designs": "Designstudies",
     "process": "Samenwerking",
     "world": "Beurskalender",
     "about": "Over mij",
@@ -49,14 +51,17 @@
     "selection": "Mijn selectie",
     "home": "Home",
     "main": "Hoofdnavigatie",
-    "pm": "Project management"
+    "pm": "Projectleiding",
+    "references": "Referenties",
+    "fairs": "Beurzen",
+    "venues": "Beurslocaties"
   },
   "hero": {
     "eyebrow": "Extern plannings- en projectbureau · Beursstands, merkruimtes, interieurbouw",
     "title": "Planning die op de vloer werkt.",
-    "lead": "Ik ondersteun standbouwers, bureaus, interieurbouwbedrijven en exposanten met technische planning, werkvoorbereiding en projectsturing: per project, met een duidelijk afgesproken omvang en traceerbare documenten.",
+    "lead": "Technische planning en projectsturing voor standbouwers, bureaus en exposanten.",
     "cta": "Planningscapaciteit aanvragen",
-    "secondary": "Concepten bekijken",
+    "secondary": "Referenties bekijken",
     "scroll": "Scroll en kijk hoe de visualisatie ontstaat",
     "progress": "Opbouw (visualisatie)",
     "done": "Afgewerkte ruimte",
@@ -235,21 +240,21 @@
     }
   },
   "gallery": {
-    "eyebrow": "Conceptgalerij · elke dag nieuw",
-    "title": "Elke dag een nieuw concept.",
-    "lead": "{count} van {total} standconcepten zijn nu zichtbaar, van {min} tot {max}. Elke ochtend om 5:00 uur komt er een concept bij. Alle beelden zijn visualisaties van concepten. Blader, filter, bewaar en vraag direct aan.",
-    "slider": "Slider",
+    "eyebrow": "Ontwerpatlas",
+    "title": "Ideeën waar je in kunt stappen.",
+    "lead": "{total} standconcepten van {min} tot {max} – alles in één overzicht. Alle beelden zijn visualisaties.",
+    "slider": "Schuifbalk",
     "grid": "Raster",
     "viewMode": "Weergave",
     "random": "Willekeurig concept",
     "dayPick": "Concept van de dag",
     "hint": "Slepen, scrollen of pijltjestoetsen",
     "hintTouch": "Veeg opzij",
-    "count": "{count} van {total}",
+    "count": "{count} van {total} ontwerpen",
     "empty": "Geen concept past bij deze filters.",
     "reset": "Filters wissen",
     "filters": "Filters",
-    "listTitle": "Alle zichtbare concepten in één overzicht",
+    "listTitle": "Alle concepten in één overzicht",
     "sliderLabel": "Conceptslider. Pijltjestoetsen bladeren, Enter opent.",
     "current": "Actueel: {number} {title}",
     "loadingSlider": "Slider wordt geladen",
@@ -273,15 +278,15 @@
     "atlas": {
       "name": "Atlas",
       "role": "Ontwerpatlas",
-      "label": "Design atlas: draggable wall of all designs. Arrow keys move, Enter opens the design in focus.",
-      "cursor": "Drag",
+      "label": "Ontwerpatlas: versleepbare wand met alle ontwerpen. Pijltjestoetsen verplaatsen, Enter opent het ontwerp in focus.",
+      "cursor": "Slepen",
       "focus": "In focus",
       "save": "Bewaren",
       "open": "Ontwerp bekijken",
-      "left": "Design to the left",
-      "right": "Design to the right",
-      "up": "Design above",
-      "down": "Design below",
+      "left": "Ontwerp links",
+      "right": "Ontwerp rechts",
+      "up": "Ontwerp erboven",
+      "down": "Ontwerp eronder",
       "hint": "Sleep of gebruik de pijltjestoetsen · klik op een beeld om het te focussen · klik op de focus om het te openen",
       "hintTouch": "Veeg zijwaarts · tik op een beeld om het te focussen · tik opnieuw om het te openen"
     },
@@ -289,13 +294,22 @@
     "searchPlaceholder": "Naam, nummer of formaat",
     "loadMore": "Meer ontwerpen laden ({shown}/{total})",
     "rows": {
-      "name": "Carousel",
-      "label": "Designs in two moving rows",
-      "prev": "Back",
-      "next": "Next",
-      "hint": "Hover a row: point towards an edge to steer it, the centre stops it · drag or use the arrows · click opens the design",
-      "hintTouch": "Swipe sideways or tap the arrows · tap an image to open the design"
-    }
+      "name": "Carrousel",
+      "label": "Ontwerpen in twee bewegende rijen",
+      "prev": "Terug",
+      "next": "Verder",
+      "hint": "Beweeg over een rij: wijs naar een rand om te sturen, het midden stopt de rij – slepen of pijlen gebruiken – klik opent het ontwerp",
+      "hintTouch": "Veeg opzij of tik op de pijlen – tik op een beeld om het ontwerp te openen"
+    },
+    "searchExamples": [
+      "Lamello",
+      "hout",
+      "6 × 4 m",
+      "twee verdiepingen",
+      "groen",
+      "licht"
+    ],
+    "tunnelHint": "Scroll en vlieg door de ontwerpen"
   },
   "detail": {
     "facts": "Kerngegevens",
@@ -377,7 +391,9 @@
         "alt": "Conceptanimatie van de overdracht (visualisatie)"
       }
     },
-    "sketch": "Schets"
+    "sketch": "Schets",
+    "lead": "Heldere stappen, één vast aanspreekpunt en vastgelegde goedkeuringen maken elk project traceerbaar.",
+    "note": "De films illustreren afzonderlijke werkstappen (visualisaties). Ze tonen niet de opbouw van een specifieke beursstand."
   },
   "world": {
     "eyebrow": "Beurskalender",
@@ -838,7 +854,19 @@
       "aurora": "Donkere vlakken met mint en violet, serif-letter, zachte lichtbewegingen",
       "tide": "Petrol en koraal, expressieve letter, vloeiende golven",
       "mono": "Strikt zwart en wit, sterk contrast, geometrische vormen",
-      "wood": "Notenhout, eiken en crème, schreefletter en lamellen – warm als een houten stand"
+      "wood": "Notenhout, eiken en crème, fijne letter en lamellen – warm als een houten stand",
+      "lumen": "IJsblauw, zilver en glas, strakke letter – van achteren verlicht als een lichtwand",
+      "atrium": "Espresso, champagne en crème, slanke grotesk – warm verlicht als een ronde stand met messing",
+      "copper": "Staalzwart en koper, gespatieerde kapitalen – als een stalen frame met gevouwen koperen dak",
+      "violet": "Zwart en violet, zeer lichte grotesk – met gloeiende ledlijnen",
+      "canopy": "Bladgroen, rotan en steen, lichte letter – met houten latwerk en planten"
+    },
+    "films": {
+      "lumen": "Hero: timelapse van de lichte CL-stand",
+      "atrium": "Hero: timelapse van de CL-stand met ronde galerij",
+      "copper": "Hero: timelapse van de CL-stand met koperen dak",
+      "violet": "Hero: timelapse van de CL-stand met ledlijnen",
+      "canopy": "Hero: timelapse van de CL-stand met houten latwerk en groen"
     }
   },
   "radio": {
@@ -865,6 +893,32 @@
       "paused": "Gepauzeerd",
       "error": "Zender niet bereikbaar",
       "blocked": "Start geblokkeerd door de browser. Klik opnieuw op afspelen."
+    },
+    "onAir": "ON AIR",
+    "rank": "Nr. {n} · ma 2026 Audio II",
+    "listeners": "{n}k luisteraars per uur",
+    "tuner": "Zenderschaal",
+    "prev": "Vorige zender",
+    "next": "Volgende zender",
+    "levelReal": "De balken volgen het echte geluid (lokaal in uw browser berekend).",
+    "source": "Selectie: de tien Duitse zenders met het grootste bereik volgens ma 2026 Audio II (luisteraars per gemiddeld uur, ma–vr). Daarnaast HITRADIO RTL Leipzig, bigFM, sunshine live en hr3. Plus muziekkanalen van ROCK ANTENNE, N-JOY, ANTENNE BAYERN, 80s80s, 90s90s, HIT RADIO FFH en RPR1.",
+    "extra": "Extra selectie",
+    "channel": "Muziekkanaal",
+    "genresLabel": "Kies een genre",
+    "top": "Top 10",
+    "genres": {
+      "rock": "Rock",
+      "pop": "Pop",
+      "metal": "Metal",
+      "oldies": "Oldies",
+      "g70": "Jaren 70",
+      "g80": "Jaren 80",
+      "g90": "Jaren 90",
+      "g2000": "Jaren 2000",
+      "g2010": "Jaren 2010",
+      "schlager": "Schlager",
+      "charts": "Hitlijsten",
+      "ndw": "Neue Deutsche Welle"
     }
   },
   "drops": {
@@ -972,10 +1026,36 @@
     "film": "▶ Conceptanimatie"
   },
   "pm": {
-    "eyebrow": "For exhibition project managers",
-    "title": "Run the project before the hall opens.",
-    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
-    "cta": "Open the tools",
-    "teaser": "New: tools for project managers"
+    "eyebrow": "Voor projectleiders in de standbouw",
+    "title": "Stuur het project aan voordat de hal opengaat.",
+    "lead": "Dertien tools voor projectleiding – van masterplanning via stroombehoefte, vloerhoeveelheden en drukbestanden tot de ondertekende oplevering. Alles draait in uw browser; er wordt niets verstuurd.",
+    "cta": "Tools openen",
+    "teaser": "Nieuw: tools voor projectleiders"
+  },
+  "references": {
+    "eyebrow": "Referenties",
+    "title": "Projecten die ik heb geleid.",
+    "lead": "Een selectie uit mijn tijd als projectleider in loondienst en algemeen directeur in de standbouw – van voertuiglancering tot hal van 1.200 m².",
+    "size": "Oppervlakte",
+    "role": "Mijn rol",
+    "note": "Projecten uit mijn eerdere dienstverband bij de telkens genoemde werkgever. Het zijn geen projecten van CL Projektwerk, en de genoemde bedrijven zijn geen klanten van CL Projektwerk.",
+    "all": "Loopbaan en meer projecten"
+  },
+  "studies": {
+    "eyebrow": "Designstudies",
+    "title": "Ideeën voor elke vloer.",
+    "lead": "{count} vrije designstudies – visualisaties, geen gebouwde stands.",
+    "all": "Alle designstudies bekijken"
+  },
+  "fairs": {
+    "eyebrow": "Beurzen",
+    "title": "Beurskalender en beurslocaties.",
+    "lead": "Komende beursdata in Duitsland en Europa en 50 beurslocaties in één overzicht – ter oriëntatie bij uw projectplanning. De vermeldingen zeggen niets over opdrachten of deelname van CL Projektwerk.",
+    "teaserTitle": "Komende beurzen.",
+    "teaserLead": "De volgende data in Duitsland en Europa. De volledige kalender met globe en 50 beurscentra staat op de beurzenpagina.",
+    "teaserCta": "Beurskalender openen",
+    "teaserLabel": "Komende beursdata",
+    "teaserRunning": "Nu bezig",
+    "teaserNote": "Ter oriëntatie bij de projectplanning – de vermeldingen zeggen niets over opdrachten of deelname van CL Projektwerk."
   }
 }

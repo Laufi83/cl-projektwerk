@@ -5,8 +5,8 @@
     "ogTitle": "{brand} – capacité de planification pour stands, espaces de marque et aménagement intérieur",
     "ogDescription": "Dossiers de fabrication cotés, préparation du travail et pilotage de projet pour constructeurs de stands, agences, entreprises d'agencement et exposants. Contact : Christof Laufersweiler, Leipzig.",
     "socialDescription": "Capacité supplémentaire de planification et de gestion de projet pour stands, espaces de marque et aménagement intérieur – par projet, avec un périmètre clairement défini.",
-    "designsTitle": "Projets de stands",
-    "designsDescription": "Concepts de stands avec visualisations, plans et élévations de {min} à {max} – tous les projets d’un coup d’œil.",
+    "designsTitle": "Études de design pour stands",
+    "designsDescription": "Études de design libres pour stands de {min} à {max} – des visualisations de CL Projektwerk, pas des stands construits.",
     "designTitle": "{number} {title} · Concept de stand",
     "designDescription": "Concept {title} : {size}{floors}. {description} Visualisation d'un concept, pas un stand réalisé.",
     "inquiryTitle": "Parler de votre projet",
@@ -18,7 +18,7 @@
     "fairsTitle": "Calendrier des salons et parcs des expositions en Europe",
     "fairsDescription": "Les prochains salons en Allemagne et en Europe et 50 parcs des expositions en un coup d'œil – pour vous orienter dans la planification de vos projets.",
     "pmTitle": "Gestion de projet de stands – outils",
-    "pmDescription": "Planning, échéances, faisabilité 3D, montage 4D, logistique, équipes, budget et procès-verbal de remise – gratuit dans le navigateur."
+    "pmDescription": "Planning, échéances, faisabilité 3D, montage 4D, logistique et chargement, puissance électrique, sol et quantités, fichiers d’impression, équipes, budget, poste de pilotage et procès-verbal de remise – gratuit dans votre navigateur."
   },
   "common": {
     "skip": "Aller au contenu",
@@ -42,7 +42,7 @@
   },
   "nav": {
     "services": "Prestations",
-    "designs": "Concepts",
+    "designs": "Études de design",
     "process": "Collaboration",
     "world": "Calendrier des salons",
     "about": "À propos",
@@ -52,15 +52,16 @@
     "home": "Accueil",
     "main": "Navigation principale",
     "fairs": "Salons",
-    "venues": "Parcs d’expo",
-    "pm": "Gestion de projet"
+    "venues": "Parcs des expositions",
+    "pm": "Gestion de projet",
+    "references": "Références"
   },
   "hero": {
     "eyebrow": "Bureau de planification et de projet · Stands · Espaces de marque · Aménagement intérieur",
     "title": "Une planification qui fonctionne sur le terrain.",
-    "lead": "Planification technique, préparation du travail et pilotage de projet pour standistes, agences et exposants – par projet, avec un périmètre clairement défini.",
+    "lead": "Planification technique et pilotage de projet pour standistes, agences et exposants.",
     "cta": "Demander une capacité de planification",
-    "secondary": "Voir les concepts",
+    "secondary": "Voir les références",
     "scroll": "Faites défiler – le concept prend forme",
     "progress": "Montage (visualisation)",
     "done": "Espace terminé",
@@ -305,7 +306,8 @@
       "next": "Suivant",
       "hint": "Survolez une bande : vers un bord pour la diriger, au centre elle s'arrête · glissez ou utilisez les flèches · un clic ouvre le concept",
       "hintTouch": "Balayez latéralement ou touchez les flèches · touchez une image pour ouvrir le concept"
-    }
+    },
+    "tunnelHint": "Faites défiler pour traverser les projets"
   },
   "detail": {
     "facts": "Caractéristiques",
@@ -1014,8 +1016,23 @@
   "pm": {
     "eyebrow": "Pour les chefs de projet salon",
     "title": "Piloter le projet avant l’ouverture du hall.",
-    "lead": "Dix outils pour la gestion de projet, du planning à la remise signée. Tout fonctionne dans votre navigateur.",
+    "lead": "Treize outils pour la direction de projet – du planning à la puissance électrique, aux quantités de sol et aux fichiers d’impression, jusqu’au procès-verbal de remise signé. Tout fonctionne dans votre navigateur ; rien n’est transmis.",
     "cta": "Ouvrir les outils",
     "teaser": "Nouveau : outils pour chefs de projet"
+  },
+  "references": {
+    "eyebrow": "Références",
+    "title": "Des projets que j’ai dirigés.",
+    "lead": "Une sélection de mes années de chef de projet salarié et de directeur général dans la construction de stands – du lancement de véhicule au hall de 1 200 m².",
+    "size": "Surface",
+    "role": "Mon rôle",
+    "note": "Projets réalisés lors de mon emploi précédent chez l’employeur indiqué. Ce ne sont pas des projets de CL Projektwerk, et les entreprises citées ne sont pas des clients de CL Projektwerk.",
+    "all": "Parcours et autres projets"
+  },
+  "studies": {
+    "eyebrow": "Études de design",
+    "title": "Des idées pour chaque surface.",
+    "lead": "{count} études de design libres – des visualisations, pas des stands construits.",
+    "all": "Voir toutes les études de design"
   }
 }

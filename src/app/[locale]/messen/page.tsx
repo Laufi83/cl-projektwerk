@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { World } from "@/components/sections/World";
 import { MesseVenueExplorer } from "@/components/sections/MesseVenueExplorer";
 import { GlobalVenueExplorer } from "@/components/messe-guide/GlobalVenueExplorer";
+import { VenueDataStatus } from "@/components/messe-guide/VenueDataStatus";
 import { globalVenues } from "@/lib/messebau/venues";
 import { Kinetic } from "@/components/kinetic/Kinetic";
 import { FxWords } from "@/components/kinetic/FxWords";
@@ -39,6 +40,7 @@ export default async function FairsPage({ params }: { params: Promise<{ locale: 
           <p className="mt-6 text-lg text-fg-muted"><FxWords text={t("lead")} delay={350} /></p>
         </div>
       </header>
+      <VenueDataStatus locale={locale} fairsChecked={TRADE_FAIRS_CHECKED} />
       <World rows={boardRows(locations, tradeFairs, now)} nowIso={now.toISOString()} checked={TRADE_FAIRS_CHECKED} />
       <MesseVenueExplorer />
       {/* weltweites Verzeichnis aller Standorte der Datenquelle (Suche, Filter, Vergleich) */}

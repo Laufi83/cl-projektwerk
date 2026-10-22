@@ -5,8 +5,8 @@
     "ogTitle": "{brand} – planning capacity for exhibition stands, brand spaces and interior fit-out",
     "ogDescription": "Dimensioned production drawings, work preparation and project control for stand builders, agencies, interior fit-out companies and exhibitors. Contact: Christof Laufersweiler, Leipzig.",
     "socialDescription": "Additional planning and project capacity for exhibition stands, brand spaces and interior fit-out – per project, with a clearly agreed scope.",
-    "designsTitle": "Exhibition stand designs",
-    "designsDescription": "Exhibition stand concepts with visualisations, floor plans and elevations from {min} to {max} – all designs at a glance.",
+    "designsTitle": "Exhibition stand design studies",
+    "designsDescription": "Independent exhibition stand design studies from {min} to {max} – visualisations by CL Projektwerk, not built stands.",
     "designTitle": "{number} {title} · Exhibition stand concept",
     "designDescription": "Design {title}: {size}{floors}. {description} Visualisation of a concept, not a built stand.",
     "inquiryTitle": "Discuss your project",
@@ -18,7 +18,7 @@
     "fairsTitle": "Trade fair calendar and exhibition venues in Europe",
     "fairsDescription": "Upcoming trade fair dates in Germany and Europe and 50 exhibition venues at a glance – for orientation in your project planning.",
     "pmTitle": "Project management for exhibition stands – tools for project managers",
-    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, shifts, budget, build-day cockpit and handover report – free in your browser."
+    "pmDescription": "Master schedule, deadline radar, 3D feasibility, 4D build-up, logistics and load planning, power demand, floor quantities, print data, shifts, budget, build-day cockpit and handover report – free in your browser."
   },
   "common": {
     "skip": "Skip to content",
@@ -42,7 +42,7 @@
   },
   "nav": {
     "services": "Services",
-    "designs": "Concepts",
+    "designs": "Design studies",
     "process": "Collaboration",
     "world": "Fair calendar",
     "about": "About me",
@@ -53,14 +53,15 @@
     "main": "Main navigation",
     "fairs": "Trade fairs",
     "venues": "Venues",
-    "pm": "Project management"
+    "pm": "Project management",
+    "references": "References"
   },
   "hero": {
     "eyebrow": "Planning and project office · Exhibition stands · Brand spaces · Interior fit-out",
     "title": "Planning that works on the floor.",
-    "lead": "Technical planning, work preparation and project management for stand builders, agencies and exhibitors – per project, with a clearly agreed scope.",
+    "lead": "Technical planning and project management for stand builders, agencies and exhibitors.",
     "cta": "Request planning capacity",
-    "secondary": "View concepts",
+    "secondary": "View references",
     "scroll": "Scroll – watch the design take shape",
     "progress": "Build-up (visualisation)",
     "done": "Finished space",
@@ -234,7 +235,8 @@
       "next": "Next",
       "hint": "Hover a row: point towards an edge to steer it, the centre stops it · drag or use the arrows · click opens the design",
       "hintTouch": "Swipe sideways or tap the arrows · tap an image to open the design"
-    }
+    },
+    "tunnelHint": "Scroll to fly through the designs"
   },
   "detail": {
     "facts": "Key facts",
@@ -924,8 +926,23 @@
   "pm": {
     "eyebrow": "For exhibition project managers",
     "title": "Run the project before the hall opens.",
-    "lead": "Ten tools for project management – from the master schedule to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
+    "lead": "Thirteen tools for project management – from the master schedule to power demand, floor quantities and print data to the signed handover. Everything runs in your browser; nothing is sent anywhere.",
     "cta": "Open the tools",
     "teaser": "New: tools for project managers"
+  },
+  "references": {
+    "eyebrow": "References",
+    "title": "Projects I have led.",
+    "lead": "A selection from my time as an employed project manager and managing director in exhibition stand construction – from vehicle launches to 1,200 m² halls.",
+    "size": "Area",
+    "role": "My role",
+    "note": "Projects from my earlier employment with the employer named in each case. They are not projects of CL Projektwerk, and the companies named are not clients of CL Projektwerk.",
+    "all": "Career and further projects"
+  },
+  "studies": {
+    "eyebrow": "Design studies",
+    "title": "Ideas for every floor plan.",
+    "lead": "{count} independent design studies – visualisations, not built stands.",
+    "all": "View all design studies"
   }
 }

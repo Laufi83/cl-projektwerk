@@ -5,9 +5,16 @@ import type { GalleryItem } from "@/components/gallery/types";
 import { RELEASE } from "./release";
 import { contentLocale } from "@/i18n/locales";
 
-const everything = [...(manifest as unknown as { designs: Design[] }).designs].sort((a, b) => a.number - b.number);
+/**
+ * KI-erzeugte Grundrisse, Ansichten und Elektropläne werden seit 20.10.2026 nicht mehr gezeigt – sie sehen aus wie
+ * Fertigungszeichnungen, sind es aber nicht. Die Dateien bleiben im Manifest; zum Wiederanzeigen SHOW_AI_PLANS = true.
+ */
+const SHOW_AI_PLANS = false;
+const everything = [...(manifest as unknown as { designs: Design[] }).designs]
+  .map((d) => (SHOW_AI_PLANS ? d : { ...d, floorplan: null, elevation: null, extraPlans: [] }))
+  .sort((a, b) => a.number - b.number);
 /** veröffentlichbare Designs (ohne RELEASE.exclude, z. B. wegen Fremdlogos) */
-const all = everything.filter((d) => !RELEASE.exclude.includes(d.number));
+const all = everything.filter((d) => !RELEASE.exclude.includes(d.number) && (RELEASE.show.length === 0 || RELEASE.show.includes(d.number)));
 /** Alle veröffentlichten Designs in Nummernfolge (siehe lib/release.ts) */
 export function getDesigns(): Design[] {
   return all;

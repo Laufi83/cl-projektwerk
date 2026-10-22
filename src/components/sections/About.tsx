@@ -15,8 +15,6 @@ export async function About() {
   const facts = tp.raw("facts") as { value: string; label: string }[];
   const career = tp.raw("career") as { years: string; role: string; org: string }[];
   const projects = tp.raw("projects") as { year: string; client: string; event: string; size?: string; note?: string }[];
-  const tools = tp.raw("tools") as string[];
-  const languages = tp.raw("languages") as string[];
   return (
     <section id="ueber" aria-labelledby="about-title" className="relative scroll-mt-24 py-24 md:py-32">
       <div className="container-x grid items-start gap-12 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
@@ -46,7 +44,6 @@ export async function About() {
             <h2 id="about-title" className="font-display mt-4 text-5xl font-semibold leading-none md:text-7xl"><Kinetic text={t("name")} stomp /></h2>
             <p className="mt-3 text-lg text-accent"><FxWords text={t("role")} delay={500} /></p>
             <p className="mt-6 max-w-xl text-lg text-fg-muted"><ScrollWords text={t("text")} /></p>
-            <p className="mt-4 max-w-xl text-xl font-semibold md:text-2xl"><FxWords text={t("close")} delay={150} /></p>
           </div>
 
           <dl className="mt-10 grid max-w-xl grid-cols-3 gap-3 sm:gap-4" data-reveal>
@@ -67,10 +64,6 @@ export async function About() {
             {t("cta")} <ArrowUpRight size={18} />
           </a>
 
-          <dl className="mt-10 grid max-w-xl gap-2 text-sm" data-reveal>
-            <div className="flex flex-wrap gap-x-3"><dt className="font-semibold">{t("tools")}:</dt><dd className="text-fg-muted">{tools.join(" · ")}</dd></div>
-            <div className="flex flex-wrap gap-x-3"><dt className="font-semibold">{t("languages")}:</dt><dd className="text-fg-muted">{languages.join(" · ")}</dd></div>
-          </dl>
         </div>
       </div>
       <div className="container-x" data-reveal>

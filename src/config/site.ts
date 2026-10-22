@@ -6,7 +6,7 @@ export const site = {
   brand: "CL Projektwerk",
   /** Logo: public/brand/logo.svg bzw. src/components/brand/Logo.tsx (CL↗) */
   person: "Christof Laufersweiler",
-  role: { de: "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau", en: "External planning and project office for exhibition construction, brand spaces and interior fit-out" },
+  role: { de: "Externes Planungs- und Projektbüro für Messebau, Markenräume und Innenausbau", en: "External planning and project office for exhibition construction, brand spaces and interior fit-out", fr: "Bureau externe de planification et de projets pour stands, espaces de marque et aménagement intérieur", es: "Oficina externa de planificación y proyectos para stands, espacios de marca e interiorismo", it: "Studio esterno di progettazione e project management per stand, spazi di marca e allestimento d’interni", nl: "Extern plannings- en projectbureau voor standbouw, merkruimtes en interieurbouw" },
   claim: { de: "Planung, die auf der Fläche funktioniert.", en: "Planning that works on the floor." },
   email: "christof.laufersweiler@web.de",
   /**
@@ -30,7 +30,7 @@ export const site = {
    */
   indexing: process.env.NEXT_PUBLIC_INDEXING === "true",
   /** Hinweis an Renderings und Clips */
-  visualisationNote: { de: "Visualisierung", en: "Visualisation" },
+  visualisationNote: { de: "Visualisierung", en: "Visualisation", fr: "Visualisation", es: "Visualización", it: "Visualizzazione", nl: "Visualisatie" },
 } as const;
 
 export const isPlaceholder = (value: string) => /^\[.*\]$/.test(value.trim());
