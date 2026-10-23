@@ -1,5 +1,5 @@
 /**
- * Sieben Layouts (01 Studio, 02 Wood, 03 Lumen, 04 Atrium, 05 Copper, 06 Violet, 07 Canopy),
+ * Vier Layouts (seit 23.10.2026 auf Wunsch des Inhabers: 01 Studio, 02 Violet, 03 Copper, 04 Lumen; Wood, Atrium und Canopy entfernt),
  * umschaltbar über die Lasche am rechten Rand (Rollmenü wie die Sprachwahl).
  * Je Layout: Farben, Schriften, Hero-Anordnung (alles in src/app/layouts.css),
  * Aufbaufilm im Hero und eigener Hover-Effekt der animierten Schriften.
@@ -22,60 +22,8 @@ export const LAYOUTS = [
     desc: { de: "Anthrazit & Orange · Buchstaben heben sich", en: "Charcoal & orange · letters lift" },
   },
   {
-    id: "wood",
-    n: "02",
-    name: "Wood",
-    // Entwurf 021 „Lamello“: eigener Aufbaufilm aus dem Firefly-Zeitraffer (public/hero/021)
-    film: "021",
-    sharedFilm: false,
-    theme: "#16100b",
-    swatch: "linear-gradient(135deg,#16100b 45%,#c98d55 45% 72%,#efe3cf 72%)",
-    effect: "slat",
-    font: "var(--font-raleway)",
-    desc: { de: "Eiche, Walnuss & Creme · filigrane Schrift · Lamellen drehen sich", en: "Oak, walnut & cream · fine type · turning slats" },
-  },
-  {
-    id: "lumen",
-    n: "03",
-    name: "Lumen",
-    // Eigener Aufbaufilm: Firefly-Zeitraffer des hellen CL-Stands mit hinterleuchteter Lichtwand (public/hero/lumen)
-    film: "lumen",
-    sharedFilm: false,
-    theme: "#060b12",
-    swatch: "linear-gradient(135deg,#060b12 45%,#4fd2f7 45% 72%,#e9eef2 72%)",
-    effect: "glow",
-    font: "var(--font-sora)",
-    desc: { de: "Eisblau, Silber & Glas · Buchstaben leuchten auf", en: "Ice blue, silver & glass · letters light up" },
-  },
-  {
-    id: "atrium",
-    n: "04",
-    name: "Atrium",
-    // Zeitraffer CL-02: runder, zweigeschossiger Stand in Creme mit Messing und warmem Lichtband (public/hero/atrium)
-    film: "atrium",
-    sharedFilm: false,
-    theme: "#14100a",
-    swatch: "linear-gradient(135deg,#14100a 45%,#d8b06a 45% 72%,#f1e7d6 72%)",
-    effect: "shimmer",
-    font: "var(--font-jost)",
-    desc: { de: "Espresso, Champagner & Creme · Goldschimmer", en: "Espresso, champagne & cream · golden shimmer" },
-  },
-  {
-    id: "copper",
-    n: "05",
-    name: "Copper",
-    // Zeitraffer CL-03: schwarzes Stahlgerüst mit gefaltetem Kupferdach (public/hero/copper)
-    film: "copper",
-    sharedFilm: false,
-    theme: "#0b0b0c",
-    swatch: "linear-gradient(135deg,#0b0b0c 45%,#d07a43 45% 72%,#5a5a5f 72%)",
-    effect: "fold",
-    font: "var(--font-josefin)",
-    desc: { de: "Stahlschwarz & Kupfer · Buchstaben falten sich", en: "Steel black & copper · folding letters" },
-  },
-  {
     id: "violet",
-    n: "06",
+    n: "02",
     name: "Violet",
     // Zeitraffer CL-04: schwarzer Stand mit violetten LED-Linien und Lamellenturm (public/hero/violet)
     film: "violet",
@@ -87,17 +35,30 @@ export const LAYOUTS = [
     desc: { de: "Schwarz & Violett · Neonlicht flackert", en: "Black & violet · flickering neon" },
   },
   {
-    id: "canopy",
-    n: "07",
-    name: "Canopy",
-    // Zeitraffer CL-05: Holzgitter, Naturstein und viel Grün (public/hero/canopy)
-    film: "canopy",
+    id: "copper",
+    n: "03",
+    name: "Copper",
+    // Zeitraffer CL-03: schwarzes Stahlgerüst mit gefaltetem Kupferdach (public/hero/copper)
+    film: "copper",
     sharedFilm: false,
-    theme: "#0d120d",
-    swatch: "linear-gradient(135deg,#0d120d 45%,#a9c97a 45% 72%,#c99a62 72%)",
-    effect: "sway",
-    font: "var(--font-mulish)",
-    desc: { de: "Blattgrün, Rattan & Stein · Buchstaben wiegen sich", en: "Leaf green, rattan & stone · swaying letters" },
+    theme: "#0b0b0c",
+    swatch: "linear-gradient(135deg,#0b0b0c 45%,#d07a43 45% 72%,#5a5a5f 72%)",
+    effect: "fold",
+    font: "var(--font-josefin)",
+    desc: { de: "Stahlschwarz & Kupfer · Buchstaben falten sich", en: "Steel black & copper · folding letters" },
+  },
+  {
+    id: "lumen",
+    n: "04",
+    name: "Lumen",
+    // Eigener Aufbaufilm: Firefly-Zeitraffer des hellen CL-Stands mit hinterleuchteter Lichtwand (public/hero/lumen)
+    film: "lumen",
+    sharedFilm: false,
+    theme: "#060b12",
+    swatch: "linear-gradient(135deg,#060b12 45%,#4fd2f7 45% 72%,#e9eef2 72%)",
+    effect: "glow",
+    font: "var(--font-sora)",
+    desc: { de: "Eisblau, Silber & Glas · Buchstaben leuchten auf", en: "Ice blue, silver & glass · letters light up" },
   },
 ] as const;
 

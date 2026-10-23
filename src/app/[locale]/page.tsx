@@ -1,11 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import hero001 from "../../../public/hero/001/hero.json";
-import hero021 from "../../../public/hero/021/hero.json";
 import heroLumen from "../../../public/hero/lumen/hero.json";
-import heroAtrium from "../../../public/hero/atrium/hero.json";
 import heroCopper from "../../../public/hero/copper/hero.json";
 import heroViolet from "../../../public/hero/violet/hero.json";
-import heroCanopy from "../../../public/hero/canopy/hero.json";
 import { getDesigns, getGalleryItems, getMediaDesign, sizeRange } from "@/lib/designs";
 import { designAsset, mediaUrl } from "@/lib/media";
 import { site } from "@/config/site";
@@ -55,9 +52,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   };
   const svc = (k: string, id: string) => ({ src: mediaUrl(`services/${k}-1280.webp`), srcSet: `${mediaUrl(`services/${k}-640.webp`)} 640w, ${mediaUrl(`services/${k}-1280.webp`)} 1280w`, design: linked(id) });
   const d1 = getMediaDesign("001") ?? designs[0];
-  // Hero-Aufbaufilme je Layout (config/layouts.ts): Entwürfe 001 (Studio, Ersatzbild) und 021 (Wood), dazu Zeitraffer der CL-Stände ohne Entwurfsbezug
+  // Hero-Aufbaufilme je Layout (config/layouts.ts): Entwurf 001 (Studio, Ersatzbild), dazu Zeitraffer der CL-Stände (Violet, Copper, Lumen) ohne Entwurfsbezug
   const heroFilms: HeroFilm[] = [
-    ...[hero001, hero021].map((h) => {
+    ...[hero001].map((h) => {
       const d = getMediaDesign(h.id) ?? d1;
       // Ruhephase des Heros: belegte Eckdaten des Entwurfs, Link nur bei veröffentlichtem Entwurf
       const facts = [
@@ -68,7 +65,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       const slug = galleryItems.find((g) => g.id === d.id)?.slug ?? null;
       return { id: h.id, label: `${h.id} ${d.title}`, clip: designAsset(h.id, "clip.mp4"), desktop: h.desktop, mobile: h.mobile, info: { facts, slug } };
     }),
-    ...[heroLumen, heroAtrium, heroCopper, heroViolet, heroCanopy].map((h) => ({
+    ...[heroViolet, heroCopper, heroLumen].map((h) => ({
       id: h.id, label: "", clip: mediaUrl(`custom/${h.id}-aufbau.mp4`), desktop: h.desktop, mobile: h.mobile,
     })),
   ];
