@@ -5,7 +5,7 @@ import { designAsset } from "@/lib/media";
 import { globalVenues } from "@/lib/messebau/venues";
 import { languageAlternates, LOCALES } from "@/i18n/locales";
 
-/** Liste der veröffentlichten Designs ändert sich täglich um 5:00 Uhr */
+/** Veröffentlichte Designs: alle außer RELEASE.exclude (src/lib/release.ts); alle 5 Minuten neu erzeugen */
 export const revalidate = 300;
 
 /** Sitemap mit hreflang-Alternativen (DE ohne Präfix, weitere Sprachen unter /<code>, siehe i18n/locales.ts). */

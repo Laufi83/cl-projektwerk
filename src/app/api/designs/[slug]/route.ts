@@ -1,7 +1,7 @@
 import { getDesign, getDesigns, getNeighbours } from "@/lib/designs";
 
 export const dynamic = "force-static";
-// wie die Detailseite: tägliche Veröffentlichung, unveröffentlichte Designs → 404
+// wie die Detailseite: ausgeblendete Designs (RELEASE.exclude) → 404
 export const dynamicParams = true;
 export const revalidate = 300;
 

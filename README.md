@@ -36,7 +36,7 @@ Bei manueller Einrichtung eines **Web Service**:
 | Node-Version | `24.19.0` |
 | Region | Frankfurt |
 
-Render setzt `PORT` automatisch; der Start bindet an `0.0.0.0`. Die App benötigt einen Node-Server für Kontaktformular und dynamische Vorschaubilder. Der Render-Build nutzt den vorgesehenen persistenten Build-Cache unter `XDG_CACHE_HOME`; das ist kein Laufzeit-Datenspeicher. Es ist für diese App kein persistenter Datenträger eingerichtet. Der bestehende Anfrageversand läuft in Produktion per SMTP und speichert dort keine lokale Anfragekopie. Das vorhandene Rate-Limit ist pro Prozess und nicht für mehrere Instanzen gemeinsam ausgelegt.
+Render setzt `PORT` automatisch; der Start bindet an `0.0.0.0`. Die App benötigt einen Node-Server für Kontaktformular und dynamische Vorschaubilder. Der Render-Build nutzt den vorgesehenen persistenten Build-Cache unter `XDG_CACHE_HOME`; das ist kein Laufzeit-Datenspeicher. Es ist für diese App kein persistenter Datenträger eingerichtet. Auf Render läuft das Kontaktformular im mailto-Modus (`NEXT_PUBLIC_CONTACT_MODE=mailto`, Render Free sperrt die üblichen SMTP-Ports): Der Server erzeugt nur einen E-Mail-Entwurf und speichert keine Anfragekopie. Der SMTP-Modus bleibt als Option für einen anderen Host. Anfragen über 32 KB werden abgewiesen; das Rate-Limit (5 je Absender, 30 insgesamt pro 10 Minuten) ist pro Prozess und nicht für mehrere Instanzen gemeinsam ausgelegt. Die Absenderkennung ist der von rechts gezählte `X-Forwarded-For`-Eintrag vor `TRUSTED_PROXY_HOPS` vertrauenswürdigen Proxys (Standard 1).
 
 ## Enthaltene Optimierungen
 

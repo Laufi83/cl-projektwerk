@@ -41,11 +41,6 @@ export function getMediaDesign(id: string): Design | undefined {
   return everything.find((d) => d.id === id);
 }
 
-/** Designs mit Aufbaufilm (für „5 Stände. 10 Sekunden.“) – unabhängig von der Galerie */
-export function getFilmItems(): GalleryItem[] {
-  return everything.filter((d) => d.clip).slice(0, 5).map(toItem);
-}
-
 const toItem = (d: Design): GalleryItem => ({
   id: d.id, slug: d.slug, n: d.number, title: d.title, tags: d.tags,
   size: d.size ? `${d.size.width} × ${d.size.depth} m` : null, area: d.size?.area ?? null, floors: d.floors,

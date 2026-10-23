@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./shadcn-theme.css";
 
 /* ───────────────────────── Design-Tokens ─────────────────────────
    Alle Farben als CSS-Variablen. Akzent tauschen: nur --accent ändern. */

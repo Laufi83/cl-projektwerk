@@ -49,6 +49,11 @@ const nextConfig: NextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self)" },
+          // Nicht in fremde Seiten einbetten (Security-Audit 23.10.2026); ältere Browser über X-Frame-Options
+          { key: "Content-Security-Policy", value: "frame-ancestors 'self'" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          // Nur HTTPS (Render und eigene Domain liefern ausschließlich über TLS aus)
+          { key: "Strict-Transport-Security", value: "max-age=31536000" },
         ],
       },
     ];

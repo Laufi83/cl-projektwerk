@@ -207,6 +207,28 @@ try {
   });
   assert.equal(invalid.status, 400);
   checks.push("POST /api/inquiry: invalid payload rejected, no mail sent");
+  // Security-Audit 23.10.2026: Anfragen über 32 KB werden vor dem Einlesen abgewiesen
+  const oversized = await fetch(base + "/api/inquiry", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ message: "a".repeat(40 * 1024) }),
+  });
+  assert.equal(oversized.status, 413);
+  checks.push("POST /api/inquiry: body over 32 KB rejected with 413");
+  // Rate-Limit-Schlüssel: wechselnder erster X-Forwarded-For-Eintrag darf die Grenze nicht umgehen (rechter Eintrag zählt)
+  let lastStatus = 0;
+  for (let i = 1; i <= 6; i++) {
+    const r = await fetch(base + "/api/inquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Forwarded-For": `198.51.100.${i}, 203.0.113.7` },
+      body: JSON.stringify({ type: "callback", name: "Limit Test", phone: "12345", startedAt: 1, consent: true }),
+    });
+    lastStatus = r.status;
+  }
+  assert.equal(lastStatus, 429);
+  checks.push("POST /api/inquiry: spoofed left-most X-Forwarded-For does not bypass the rate limit");
+  const home = await fetch(base + "/");
+  assert.match(home.headers.get("content-security-policy") ?? "", /frame-ancestors 'self'/);
+  assert.equal(home.headers.get("x-frame-options"), "SAMEORIGIN");
+  checks.push("Security headers: frame-ancestors, X-Frame-Options");
   if (EMAIL_DRAFT_MODE) {
     for (const data of [
       { type: "callback", name: "Render Test & Müller", phone: "+49 123 456789", time: "morgen 10 Uhr" },

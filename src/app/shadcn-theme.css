@@ -1,0 +1,51 @@
+/* ─────────────────────────────────────────────────────────────
+   Brücke für shadcn/ui-Bausteine (components.json → tailwind.css zeigt hierher).
+   shadcn erwartet eigene Farbnamen (--background, --primary …); sie werden hier auf die Farben des
+   aktiven Layouts abgebildet, damit Bausteine jedem Layout folgen. --accent und die Radien der Website
+   bleiben unangetastet (shadcns Standardwerte würden das Orange und die Rundungen überschreiben).
+   Alle Layouts sind dunkel – Dunkel-Varianten (dark:) gelten deshalb immer.
+   ───────────────────────────────────────────────────────────── */
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:where(html, html *));
+
+:root {
+  --background: var(--bg);
+  --foreground: var(--fg);
+  --card: var(--bg-raised);
+  --card-foreground: var(--fg);
+  --popover: var(--bg-raised);
+  --popover-foreground: var(--fg);
+  --primary: var(--accent);
+  --primary-foreground: var(--accent-contrast);
+  --secondary: color-mix(in oklab, var(--fg) 8%, var(--bg));
+  --secondary-foreground: var(--fg);
+  --muted: color-mix(in oklab, var(--fg) 6%, var(--bg));
+  --muted-foreground: var(--fg-muted);
+  --accent-foreground: var(--accent-contrast);
+  --destructive: var(--danger);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--accent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
