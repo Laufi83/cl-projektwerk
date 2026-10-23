@@ -60,12 +60,30 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
       near: p > 0.12,
     }),
   },
+  // 02 Wood – Lamellen: Buchstaben drehen sich wie Holzlamellen zum Zeiger und fangen warmes Licht
+  slat: {
+    radius: 130,
+    fx: ({ p, ux }) => ({
+      transform: `perspective(400px) rotateY(${(-ux * 58 * p).toFixed(1)}deg) translateY(${(-4 * p).toFixed(1)}px)`,
+      textShadow: p > 0.05 ? `0 0 ${Math.round(18 * p)}px rgba(232,170,104,${(0.5 * p).toFixed(2)})` : "",
+      near: p > 0.3,
+    }),
+  },
   // 03 Lumen – Buchstaben leuchten wie hinterleuchtete Paneele auf und heben sich leicht
   glow: {
     radius: 140,
     fx: ({ p }) => ({
       transform: `translateY(${(-6 * p).toFixed(1)}px) scale(${(1 + 0.04 * p).toFixed(3)})`,
       textShadow: p > 0.05 ? `0 0 ${Math.round(4 + 22 * p)}px rgba(79,210,247,${(0.85 * p).toFixed(2)}), 0 0 ${Math.round(2 + 6 * p)}px rgba(233,251,255,${(0.6 * p).toFixed(2)})` : "",
+      near: p > 0.3,
+    }),
+  },
+  // 04 Atrium – Goldschimmer: Buchstaben heben sich und fangen das warme Messinglicht
+  shimmer: {
+    radius: 140,
+    fx: ({ p, ux }) => ({
+      transform: `translateY(${(-5 * p).toFixed(1)}px)`,
+      textShadow: p > 0.05 ? `${(-ux * 3 * p).toFixed(1)}px 0 ${Math.round(8 + 16 * p)}px rgba(216,176,106,${(0.75 * p).toFixed(2)})` : "",
       near: p > 0.3,
     }),
   },
@@ -90,6 +108,14 @@ const EFFECTS: Record<KineticEffect, { radius: number; fx: (c: Ctx) => Out }> = 
         near: p > 0.3,
       };
     },
+  },
+  // 07 Canopy – Buchstaben wiegen sich wie Blätter zur Seite
+  sway: {
+    radius: 140,
+    fx: ({ p, ux }) => ({
+      transform: `rotate(${(ux * 14 * p).toFixed(1)}deg) translateY(${(-4 * p).toFixed(1)}px)`,
+      near: p > 0.3,
+    }),
   },
 };
 

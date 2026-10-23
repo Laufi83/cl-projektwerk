@@ -219,8 +219,8 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
           </aside>
         </div>
 
-        {/* Pläne (nur wenn vorhanden – KI-Pläne sind in lib/designs ausgeblendet) */}
-        {plans.length > 0 && <section className="mt-16" aria-labelledby={`plans-${d.id}`}>
+        {/* Pläne */}
+        <section className="mt-16" aria-labelledby={`plans-${d.id}`}>
           <h2 id={`plans-${d.id}`} className="eyebrow">{t("plans")}</h2>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {plans.map((p) => (
@@ -242,7 +242,7 @@ export function DesignDetail({ design: d, prev, next, mode, onClose, onNavigate,
               </figure>
             ))}
           </div>
-        </section>}
+        </section>
 
         {/* Vor / Zurück */}
         <nav className="mt-16 flex items-center justify-between gap-4 border-t border-line pt-6" aria-label={`${t("prevDesign")} / ${t("nextDesign")}`}>

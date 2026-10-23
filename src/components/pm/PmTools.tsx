@@ -1,13 +1,13 @@
 "use client";
 /**
- * Projektleiter-Werkzeuge: gemeinsame Projektleiste (Gelände, Eröffnung, Aufbautage, Standgröße …) und dreizehn Werkzeuge
+ * Projektleiter-Werkzeuge: gemeinsame Projektleiste (Gelände, Eröffnung, Aufbautage, Standgröße …) und zehn Werkzeuge
  * als Reiter. Jedes Werkzeug wird erst beim Öffnen geladen (3D-Werkzeuge nutzen die Kompass-Bühne).
  * Reiter per Anker direkt aufrufbar (/projektleitung#ladung). Alle Daten bleiben im Browser (pm/store.ts).
  */
 import dynamic from "next/dynamic";
 import { useEffect, useState, type ComponentType } from "react";
 import { useLocale } from "next-intl";
-import { CalendarCheck, Timer, Cube, FilmStrip, Truck, Package, UsersThree, Coins, Broadcast, Signature, ArrowCounterClockwise, Lightning, Printer, SquaresFour } from "@phosphor-icons/react";
+import { CalendarCheck, Timer, Cube, FilmStrip, Truck, Package, UsersThree, Coins, Broadcast, Signature, ArrowCounterClockwise } from "@phosphor-icons/react";
 import type { PmVenue } from "./venues";
 import { DEFAULT_PROJECT, useProject } from "./project";
 import { resetPm } from "./store";
@@ -24,9 +24,6 @@ const TOOLS: { id: string; de: string; en: string; sub: [string, string]; icon: 
   { id: "logistik", de: "Logistikrechner", en: "Logistics calculator", sub: ["Volumen, Fahrzeuge, Zeitfenster, Staplerstunden", "Volume, vehicles, time slots, forklift hours"], icon: Truck, C: load(() => import("./tools/LogisticsCalc")) },
   { id: "ladung", de: "Ladeplaner 3D", en: "Load planner 3D", sub: ["Beladung nach Aufbaureihenfolge, Packliste mit QR", "Loading by build order, packing list with QR"], icon: Package, C: load(() => import("./tools/LoadPlanner")) },
   { id: "schicht", de: "Personal & Schichten", en: "Crew & shifts", sub: ["Schichtplan nach Arbeitszeitgesetz, Hotel, Ausweise", "Shift plan, hotel, passes"], icon: UsersThree, C: load(() => import("./tools/ShiftPlanner")) },
-  { id: "strom", de: "Strombedarf", en: "Power demand", sub: ["Verbraucher, Gleichzeitigkeit, passender Anschluss", "Loads, simultaneity, the right connection"], icon: Lightning, C: load(() => import("./tools/PowerCalc")) },
-  { id: "boden", de: "Boden & Mengen", en: "Floor & quantities", sub: ["Teppichbahnen, Verschnitt, Podestplatten, Stellfüße", "Carpet lanes, waste, deck panels, feet"], icon: SquaresFour, C: load(() => import("./tools/FloorCalc")) },
-  { id: "druck", de: "Druckdaten", en: "Print data", sub: ["Auflösung nach Abstand, Pixel, Dateigröße, Maßstab", "Resolution by distance, pixels, file size, scale"], icon: Printer, C: load(() => import("./tools/PrintCalc")) },
   { id: "budget", de: "Budget & Nachträge", en: "Budget & changes", sub: ["Kalkulation, Ist, Nachträge, Prognose je Gewerk", "Estimate, actual, change orders, forecast"], icon: Coins, C: load(() => import("./tools/Budget")) },
   { id: "leitstand", de: "Aufbautag-Leitstand", en: "Build-day cockpit", sub: ["Ein Bildschirm vor Ort: Zeitfenster, Wetter, Gewerke, Mängel", "One screen on site: slot, weather, trades, defects"], icon: Broadcast, C: load(() => import("./tools/Cockpit")) },
   { id: "abnahme", de: "Übergabeprotokoll", en: "Handover report", sub: ["Checkliste mit Fotos, Mängeln und Unterschrift als PDF", "Checklist with photos, defects and signature as PDF"], icon: Signature, C: load(() => import("./tools/Handover")) },

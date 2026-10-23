@@ -25,14 +25,13 @@ function onChange(cb:()=>void){
     media.forEach(m=>m.removeEventListener("change",cb));
   };
 }
-/**
- * Schonmodus (Auswahl im Footer und Automatik für iPhones/kleine Touch-Geräte) seit 22.10.2026 entfernt:
- * reduziert wird nur noch bei „Bewegung reduzieren“ im System und bei aktivem Datensparmodus bzw. 2G.
- */
 function lite():boolean{
   if(matchMedia(REDUCE).matches)return true;
+  const p=preference();
+  if(p==="lite")return true;
+  if(p==="full")return false;
   const connection=(navigator as Navigator&{connection?:{saveData?:boolean;effectiveType?:string}}).connection;
-  return !!connection?.saveData||/^(slow-2g|2g)$/.test(connection?.effectiveType??"");
+  return matchMedia(CHANGE).matches||!!connection?.saveData||/^(slow-2g|2g)$/.test(connection?.effectiveType??"");
 }
 export function useLiteMode():boolean{
   return useSyncExternalStore(onChange,lite,()=>false);

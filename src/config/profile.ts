@@ -57,34 +57,3 @@ export const languages: L[] = [
   { de: "Deutsch (Muttersprache)", en: "German (native)" },
   { de: "Englisch (verhandlungssicher)", en: "English (business fluent)" },
 ];
-
-/** Text in Deutsch und Englisch, für die Startseiten-Referenzen auch in Französisch, Spanisch, Italienisch und Niederländisch */
-type ML = L & { fr: string; es: string; it: string; nl: string };
-const same = (t: string): ML => ({ de: t, en: t, fr: t, es: t, it: t, nl: t });
-
-/** damalige Rolle je Anstellung (aus career, nach Projektjahr) */
-const ROLE = {
-  c3: { de: "Senior-Projektmanager · C3 EXPO GmbH", en: "Senior project manager · C3 EXPO GmbH", fr: "Chef de projet senior · C3 EXPO GmbH", es: "Jefe de proyecto sénior · C3 EXPO GmbH", it: "Senior project manager · C3 EXPO GmbH", nl: "Senior projectmanager · C3 EXPO GmbH" },
-  mp: { de: "Projektleitung · Messeprojekt GmbH", en: "Project management · Messeprojekt GmbH", fr: "Direction de projet · Messeprojekt GmbH", es: "Dirección de proyecto · Messeprojekt GmbH", it: "Direzione di progetto · Messeprojekt GmbH", nl: "Projectleiding · Messeprojekt GmbH" },
-  ms: { de: "Geschäftsführer (angestellt) · MS Internationaler Messebau GmbH", en: "Managing director (employed) · MS Internationaler Messebau GmbH", fr: "Directeur général (salarié) · MS Internationaler Messebau GmbH", es: "Director general (en plantilla) · MS Internationaler Messebau GmbH", it: "Amministratore delegato (dipendente) · MS Internationaler Messebau GmbH", nl: "Algemeen directeur (in loondienst) · MS Internationaler Messebau GmbH" },
-} satisfies Record<string, ML>;
-
-/**
- * Sechs Referenzen für die Startseite (Auswahl aus projects). Ohne Fotos; vor dem Go-live mit den früheren
- * Arbeitgebern klären, ob Kundennamen und Bilder gezeigt werden dürfen.
- */
-export const references: { year: string; client: string; event: ML; size: ML | null; role: ML; note?: ML }[] = [
-  { year: "2026", client: "Amazon", event: same("Amazon Port, Cannes Lions 2026"), size: null, role: ROLE.c3,
-    note: { de: "International Festival of Creativity, Cannes", en: "International Festival of Creativity, Cannes", fr: "Festival international de la créativité, Cannes", es: "Festival Internacional de Creatividad, Cannes", it: "Festival internazionale della creatività, Cannes", nl: "Internationaal festival van creativiteit, Cannes" } },
-  { year: "2026", client: "BMW", event: { de: "Vorstellung des neuen BMW X5, Showpalast München", en: "Launch of the new BMW X5, Showpalast Munich", fr: "Présentation du nouveau BMW X5, Showpalast Munich", es: "Presentación del nuevo BMW X5, Showpalast Múnich", it: "Presentazione della nuova BMW X5, Showpalast Monaco di Baviera", nl: "Presentatie van de nieuwe BMW X5, Showpalast München" }, size: null, role: ROLE.c3 },
-  { year: "2024", client: "ZDK", event: { de: "Automechanika, Frankfurt", en: "Automechanika, Frankfurt", fr: "Automechanika, Francfort", es: "Automechanika, Fráncfort", it: "Automechanika, Francoforte", nl: "Automechanika, Frankfurt" },
-    size: { de: "1.200 m²", en: "1,200 m²", fr: "1 200 m²", es: "1.200 m²", it: "1.200 m²", nl: "1.200 m²" }, role: ROLE.mp,
-    note: { de: "Mehrere Aussteller und Fahrzeuge, großflächige LED-Displays", en: "Several exhibitors and vehicles, large-format LED displays", fr: "Plusieurs exposants et véhicules, grands écrans LED", es: "Varios expositores y vehículos, pantallas LED de gran formato", it: "Più espositori e veicoli, display LED di grande formato", nl: "Meerdere exposanten en voertuigen, grote ledschermen" } },
-  { year: "2023", client: "Bosch Rexroth", event: { de: "Agritechnica, Hannover", en: "Agritechnica, Hanover", fr: "Agritechnica, Hanovre", es: "Agritechnica, Hannover", it: "Agritechnica, Hannover", nl: "Agritechnica, Hannover" },
-    size: { de: "1.200 m²", en: "1,200 m²", fr: "1 200 m²", es: "1.200 m²", it: "1.200 m²", nl: "1.200 m²" }, role: ROLE.mp,
-    note: { de: "20 m lange, teils freitragende LED-Wand", en: "20 m, partly self-supporting LED wall", fr: "Mur LED de 20 m, en partie autoportant", es: "Pared LED de 20 m, en parte autoportante", it: "Parete LED di 20 m, in parte autoportante", nl: "Ledwand van 20 m, deels vrijdragend" } },
-  { year: "2022 – 2024", client: "Merck, Darmstadt", event: { de: "ESHRE-Jahrestagung, drei Jahre in Folge", en: "ESHRE Annual Meeting, three years running", fr: "Congrès annuel de l’ESHRE, trois années de suite", es: "Congreso anual de ESHRE, tres años seguidos", it: "Congresso annuale ESHRE, tre anni di fila", nl: "ESHRE-jaarcongres, drie jaar op rij" }, size: null, role: ROLE.mp,
-    note: { de: "Mailand 2022 · Kopenhagen 2023 · Amsterdam 2024", en: "Milan 2022 · Copenhagen 2023 · Amsterdam 2024", fr: "Milan 2022 · Copenhague 2023 · Amsterdam 2024", es: "Milán 2022 · Copenhague 2023 · Ámsterdam 2024", it: "Milano 2022 · Copenaghen 2023 · Amsterdam 2024", nl: "Milaan 2022 · Kopenhagen 2023 · Amsterdam 2024" } },
-  { year: "2018", client: "Schöffel", event: { de: "ISPO, München", en: "ISPO, Munich", fr: "ISPO, Munich", es: "ISPO, Múnich", it: "ISPO, Monaco di Baviera", nl: "ISPO, München" }, size: same("360 m²"), role: ROLE.ms,
-    note: { de: "Abgehängte BSH-Konstruktion, faltenfrei bespannt", en: "Suspended glulam structure, wrinkle-free fabric graphics", fr: "Structure suspendue en bois lamellé-collé, toile tendue sans plis", es: "Estructura suspendida de madera laminada, lona tensada sin arrugas", it: "Struttura sospesa in legno lamellare, tessuto teso senza pieghe", nl: "Hangende constructie van gelamineerd hout, rimpelvrij bespannen" } },
-];

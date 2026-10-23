@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Plus } from "@phosphor-icons/react/dist/ssr";
 import { Kinetic } from "@/components/kinetic/Kinetic";
+import { FxWords } from "@/components/kinetic/FxWords";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 type Faq = { q: string; a: string };
@@ -25,6 +26,7 @@ export async function SeoSection() {
         <div data-reveal>
           <p className="eyebrow">{t("eyebrow")}</p>
           <h2 id="seo-title" className="font-display mt-4 text-4xl font-semibold leading-[1.05] md:text-6xl"><Kinetic text={t("title")} stomp /></h2>
+          <p className="mt-6 max-w-xl text-fg-muted"><FxWords text={t("intro")} delay={350} /></p>
         </div>
         <div className="divide-y divide-line border-y border-line self-start" data-fx-list style={{ ["--fx-delay" as string]: "200ms" }}>
           {faq.map((f, i) => (

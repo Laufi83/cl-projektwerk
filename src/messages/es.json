@@ -5,8 +5,8 @@
     "ogTitle": "{brand} – capacidad de planificación para stands, espacios de marca e interiorismo",
     "ogDescription": "Documentación de fabricación acotada, preparación del trabajo y control de proyectos para constructores de stands, agencias, empresas de interiorismo y expositores. Contacto: Christof Laufersweiler, Leipzig.",
     "socialDescription": "Capacidad adicional de planificación y gestión de proyectos para stands, espacios de marca e interiorismo – por proyecto, con un alcance claramente acordado.",
-    "designsTitle": "Estudios de diseño para stands",
-    "designsDescription": "Estudios de diseño libres para stands de {min} a {max}: visualizaciones de CL Projektwerk, no stands construidos.",
+    "designsTitle": "Diseños de stands",
+    "designsDescription": "Conceptos de stands con visualizaciones, plantas y alzados de {min} a {max}: todos los diseños de un vistazo.",
     "designTitle": "{number} {title} · Concepto de stand",
     "designDescription": "Diseño {title}: {size}{floors}. {description} Visualización de un concepto, no un stand construido.",
     "inquiryTitle": "Hablar de su proyecto",
@@ -18,7 +18,7 @@
     "fairsTitle": "Calendario de ferias y recintos feriales en Europa",
     "fairsDescription": "Las próximas ferias en Alemania y Europa y 50 recintos feriales de un vistazo – como orientación para la planificación de sus proyectos.",
     "pmTitle": "Gestión de proyectos de stands – herramientas",
-    "pmDescription": "Planificación, plazos, viabilidad 3D, montaje 4D, logística y carga, potencia eléctrica, suelo y cantidades, archivos de impresión, turnos, presupuesto, centro de control y acta de entrega: gratis en su navegador."
+    "pmDescription": "Planificación, plazos, viabilidad 3D, montaje 4D, logística, turnos, presupuesto y acta de entrega – gratis en el navegador."
   },
   "common": {
     "skip": "Saltar al contenido",
@@ -42,7 +42,7 @@
   },
   "nav": {
     "services": "Servicios",
-    "designs": "Estudios de diseño",
+    "designs": "Conceptos",
     "process": "Colaboración",
     "world": "Calendario de ferias",
     "about": "Sobre mí",
@@ -52,16 +52,15 @@
     "home": "Inicio",
     "main": "Navegación principal",
     "fairs": "Ferias",
-    "venues": "Recintos feriales",
-    "pm": "Gestión de proyectos",
-    "references": "Referencias"
+    "venues": "Recintos",
+    "pm": "Gestión de proyectos"
   },
   "hero": {
     "eyebrow": "Oficina de planificación y proyectos · Stands · Espacios de marca · Interiorismo",
     "title": "Planificación que funciona sobre el terreno.",
-    "lead": "Planificación técnica y dirección de proyectos para constructores de stands, agencias y expositores.",
+    "lead": "Planificación técnica, preparación del trabajo y dirección de proyectos para constructores de stands, agencias y expositores – por proyecto, con un alcance claramente acordado.",
     "cta": "Solicitar capacidad de planificación",
-    "secondary": "Ver referencias",
+    "secondary": "Ver conceptos",
     "scroll": "Desplácese – el diseño toma forma",
     "progress": "Montaje (visualización)",
     "done": "Espacio terminado",
@@ -306,8 +305,7 @@
       "next": "Siguiente",
       "hint": "Pase el ratón por una fila: hacia un borde la dirige, en el centro se detiene · arrastre o use las flechas · clic abre el diseño",
       "hintTouch": "Deslice lateralmente o toque las flechas · toque una imagen para abrir el diseño"
-    },
-    "tunnelHint": "Desplácese para volar entre los diseños"
+    }
   },
   "detail": {
     "facts": "Datos",
@@ -1016,23 +1014,8 @@
   "pm": {
     "eyebrow": "Para jefes de proyecto de ferias",
     "title": "Dirija el proyecto antes de que abra el pabellón.",
-    "lead": "Trece herramientas para la dirección de proyectos: de la planificación a la potencia eléctrica, las cantidades de suelo y los archivos de impresión, hasta el acta de entrega firmada. Todo funciona en su navegador; no se envía nada.",
+    "lead": "Diez herramientas para la dirección de proyectos, del cronograma a la entrega firmada. Todo funciona en su navegador.",
     "cta": "Abrir herramientas",
     "teaser": "Nuevo: herramientas para jefes de proyecto"
-  },
-  "references": {
-    "eyebrow": "Referencias",
-    "title": "Proyectos que he dirigido.",
-    "lead": "Una selección de mi etapa como jefe de proyecto en plantilla y director general en la construcción de stands: desde presentaciones de vehículos hasta pabellones de 1.200 m².",
-    "size": "Superficie",
-    "role": "Mi función",
-    "note": "Proyectos de mi empleo anterior en la empresa indicada en cada caso. No son proyectos de CL Projektwerk y las empresas mencionadas no son clientes de CL Projektwerk.",
-    "all": "Trayectoria y más proyectos"
-  },
-  "studies": {
-    "eyebrow": "Estudios de diseño",
-    "title": "Ideas para cada superficie.",
-    "lead": "{count} estudios de diseño libres: visualizaciones, no stands construidos.",
-    "all": "Ver todos los estudios de diseño"
   }
 }

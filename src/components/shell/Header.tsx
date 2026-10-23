@@ -9,26 +9,19 @@ import { site } from "@/config/site";
 import { Logo } from "@/components/brand/Logo";
 import { LanguageSwitch } from "@/components/shell/LanguageCarousel";
 import { Kinetic } from "@/components/kinetic/Kinetic";
-import { MenuOverlay } from "@/components/shell/MenuOverlay";
-import { Glare } from "@/components/ui/Glare";
 
 /** Abschnitte der Startseite (Anker) */
 const SECTIONS = [
   { id: "leistungen", key: "services" },
   { id: "designs", key: "designs" },
+  { id: "messestandorte", key: "venues" },
+  { id: "messen", key: "fairs" },
   { id: "ueber", key: "about" },
-  { id: "referenzen", key: "references" },
 ] as const;
-/**
- * Navigation (seit 20.10.2026 auf die Verkaufsseite reduziert): Leistungen, Designstudien, Über mich, Referenzen.
- * Messegelände (/messen) und Projektleitung (/projektleitung) als eigene Seiten am Ende – nicht auf der Startseite.
- */
-type NavItem = { id: string; key: "services" | "designs" | "venues" | "about" | "fairs" | "contact" | "pm" | "references"; page?: "/messen" | "/projektleitung" };
-const NAV: NavItem[] = [
-  ...SECTIONS,
-  { id: "messen", key: "venues", page: "/messen" },
-  { id: "projektleitung", key: "pm", page: "/projektleitung" },
-];
+/** Navigation: Leistungen & Zusammenarbeit, Entwürfe, Messestandorte (Atlas + Messebau-Kompass), Messen (Vorschau), Über mich */
+type NavItem = { id: string; key: "services" | "designs" | "venues" | "about" | "fairs" | "contact" | "pm"; page?: "/messen" | "/projektleitung" };
+/** Projektleitung als eigene Seite nach „Messen“ */
+const NAV: NavItem[] = [...SECTIONS.slice(0, 4), { id: "projektleitung", key: "pm", page: "/projektleitung" }, ...SECTIONS.slice(4)];
 
 export function Header() {
   const t = useTranslations("nav");
@@ -142,10 +135,9 @@ export function Header() {
           href={{ pathname: "/", hash: "kontakt" }}
           onClick={go("kontakt")}
           data-magnetic
-          className="relative ml-1 hidden overflow-hidden rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-contrast transition-transform duration-500 ease-fluid hover:scale-[1.03] active:scale-[0.98] sm:inline-flex"
+          className="ml-1 hidden rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-contrast transition-transform duration-500 ease-fluid hover:scale-[1.03] active:scale-[0.98] sm:inline-flex"
         >
-          <Glare />
-          <span className="relative">{t("cta")}</span>
+          {t("cta")}
         </Link>
 
         <button
@@ -163,14 +155,41 @@ export function Header() {
         </button>
       </nav>
 
-      {/* Menü unter xl: Vollbild mit Vorschau und Anfrage-Bereich (shell/MenuOverlay) */}
-      <MenuOverlay
-        open={open}
-        items={[...NAV, { id: "kontakt", key: "contact" }]}
-        current={NAV.find((n) => n.id === current)?.key ?? null}
-        favCount={favs.length}
-        onPick={(item, e) => { if (!item.page && item.id !== "auswahl") go(item.id)(e); setOpen(false); }}
-      />
+      {/* Mobiles Menü: Vollbild-Glas, Links gestaffelt */}
+      <div
+        id="mobile-menu"
+        hidden={!open}
+        className="pointer-events-auto fixed inset-0 -z-10 bg-[#080b10]/95 backdrop-blur-3xl xl:hidden"
+        onClick={(e) => e.target === e.currentTarget && setOpen(false)}
+      >
+        <ul className="flex h-full flex-col justify-center gap-2 px-8">
+          {[...NAV, { id: "kontakt", key: "contact" } as NavItem].map((s, i) => (
+            <li key={s.id} className="overflow-hidden">
+              <Link
+                href={s.page ?? { pathname: "/", hash: s.id }}
+                onClick={(e) => { if (!s.page) go(s.id)(e); setOpen(false); }}
+                className="font-display block py-2 text-[clamp(1.75rem,5.5vh,3rem)] font-semibold tracking-tight transition-[transform,opacity,color] duration-500 ease-fluid hover:text-accent"
+                style={{
+                  transform: open ? "none" : "translateY(48px)",
+                  opacity: open ? 1 : 0,
+                  transitionDelay: `${100 + i * 50}ms`,
+                }}
+              >
+                {t(s.key)}
+              </Link>
+            </li>
+          ))}
+          <li className="mt-8 flex gap-3">
+            <Link
+              href="/auswahl"
+              onClick={() => setOpen(false)}
+              className="rounded-full border border-line-strong px-4 py-2 text-sm font-semibold"
+            >
+              {t("selection")} ({favs.length})
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 }

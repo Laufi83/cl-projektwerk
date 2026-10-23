@@ -5,8 +5,8 @@
     "ogTitle": "{brand} – capacità di progettazione per stand, spazi di marca e allestimenti d'interni",
     "ogDescription": "Documenti di produzione quotati, preparazione del lavoro e controllo di progetto per costruttori di stand, agenzie, aziende di allestimento e espositori. Referente: Christof Laufersweiler, Lipsia.",
     "socialDescription": "Capacità aggiuntiva di progettazione e project management per stand, spazi di marca e allestimenti d'interni – per progetto, con un perimetro chiaramente concordato.",
-    "designsTitle": "Studi di design per stand fieristici",
-    "designsDescription": "Studi di design liberi per stand da {min} a {max}: visualizzazioni di CL Projektwerk, non stand realizzati.",
+    "designsTitle": "Progetti di stand",
+    "designsDescription": "Concept di stand con visualizzazioni, piante e prospetti da {min} a {max}: tutti i progetti a colpo d’occhio.",
     "designTitle": "{number} {title} · Concept di stand",
     "designDescription": "Progetto {title}: {size}{floors}. {description} Visualizzazione di un concept, non uno stand realizzato.",
     "inquiryTitle": "Parliamo del suo progetto",
@@ -18,7 +18,7 @@
     "fairsTitle": "Calendario fiere e quartieri fieristici in Europa",
     "fairsDescription": "Le prossime fiere in Germania e in Europa e 50 quartieri fieristici a colpo d'occhio – come orientamento per la pianificazione dei vostri progetti.",
     "pmTitle": "Project management per stand fieristici – strumenti",
-    "pmDescription": "Cronoprogramma, scadenze, fattibilità 3D, montaggio 4D, logistica e carico, potenza elettrica, pavimento e quantità, file di stampa, turni, budget, centro di controllo e verbale di consegna: gratis nel browser."
+    "pmDescription": "Cronoprogramma, scadenze, fattibilità 3D, montaggio 4D, logistica, turni, budget e verbale di consegna – gratis nel browser."
   },
   "common": {
     "skip": "Vai al contenuto",
@@ -42,7 +42,7 @@
   },
   "nav": {
     "services": "Servizi",
-    "designs": "Studi di design",
+    "designs": "Concept",
     "process": "Collaborazione",
     "world": "Calendario fiere",
     "about": "Chi sono",
@@ -53,15 +53,14 @@
     "main": "Navigazione principale",
     "fairs": "Fiere",
     "venues": "Quartieri fieristici",
-    "pm": "Project management",
-    "references": "Referenze"
+    "pm": "Project management"
   },
   "hero": {
     "eyebrow": "Studio di progettazione e project management · Stand · Spazi di marca · Allestimenti d'interni",
     "title": "Una pianificazione che funziona sul campo.",
-    "lead": "Progettazione tecnica e project management per allestitori, agenzie ed espositori.",
+    "lead": "Progettazione tecnica, preparazione del lavoro e gestione del progetto per allestitori, agenzie ed espositori – per progetto, con un perimetro chiaramente concordato.",
     "cta": "Richiedi capacità di pianificazione",
-    "secondary": "Vedi le referenze",
+    "secondary": "Guarda i concept",
     "scroll": "Scorrete – il progetto prende forma",
     "progress": "Allestimento (visualizzazione)",
     "done": "Spazio completato",
@@ -306,8 +305,7 @@
       "next": "Avanti",
       "hint": "Passate sopra una fila: verso un bordo la guidate, al centro si ferma · trascinate o usate le frecce · un clic apre il progetto",
       "hintTouch": "Scorrete lateralmente o toccate le frecce · toccate un'immagine per aprire il progetto"
-    },
-    "tunnelHint": "Scorri per volare tra i progetti"
+    }
   },
   "detail": {
     "facts": "Dati",
@@ -1016,23 +1014,8 @@
   "pm": {
     "eyebrow": "Per project manager fieristici",
     "title": "Guidare il progetto prima che apra il padiglione.",
-    "lead": "Tredici strumenti per la direzione di progetto: dal cronoprogramma alla potenza elettrica, alle quantità per il pavimento e ai file di stampa, fino al verbale di consegna firmato. Tutto funziona nel browser; non viene inviato nulla.",
+    "lead": "Dieci strumenti per il project management, dal cronoprogramma alla consegna firmata. Tutto funziona nel browser.",
     "cta": "Apri gli strumenti",
     "teaser": "Nuovo: strumenti per project manager"
-  },
-  "references": {
-    "eyebrow": "Referenze",
-    "title": "Progetti che ho guidato.",
-    "lead": "Una selezione dal mio periodo come project manager dipendente e amministratore delegato nell’allestimento fieristico: dal lancio di un veicolo a padiglioni di 1.200 m².",
-    "size": "Superficie",
-    "role": "Il mio ruolo",
-    "note": "Progetti del mio precedente impiego presso il datore di lavoro di volta in volta indicato. Non sono progetti di CL Projektwerk e le aziende citate non sono clienti di CL Projektwerk.",
-    "all": "Percorso e altri progetti"
-  },
-  "studies": {
-    "eyebrow": "Studi di design",
-    "title": "Idee per ogni superficie.",
-    "lead": "{count} studi di design liberi: visualizzazioni, non stand realizzati.",
-    "all": "Vedi tutti gli studi di design"
   }
 }

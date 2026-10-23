@@ -9,6 +9,7 @@ import { site } from "@/config/site";
 import { designAsset } from "@/lib/media";
 import { Header } from "@/components/shell/Header";
 import { Footer } from "@/components/shell/Footer";
+import { CookieBanner } from "@/components/shell/CookieBanner";
 import { ClientShell } from "@/components/shell/ClientShell";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { organizationJsonLd } from "@/lib/structured-data";
@@ -116,6 +117,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
             <Footer />
             <LayoutDock />
             <RadioDock />
+            <CookieBanner />
           </ClientShell>
         </NextIntlClientProvider>
       </body>

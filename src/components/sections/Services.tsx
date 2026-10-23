@@ -55,6 +55,7 @@ export async function Services({ media, visNote, children }: { media: Record<Mod
         <ul className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-6">
           {MODULES.map((k, i) => {
             const m = media[k];
+            const points = t.raw(`items.${k}.points`) as string[];
             const big = i < 2;
             return (
               <li key={k} data-reveal style={{ ["--reveal-delay" as string]: `${(i % 3) * 80}ms` }}
@@ -83,6 +84,11 @@ export async function Services({ media, visNote, children }: { media: Record<Mod
                 <div className="flex flex-1 flex-col p-6 md:p-7">
                   <h3 className={`font-display font-semibold leading-tight hyphens-auto ${big ? "text-2xl md:text-3xl" : "text-2xl"}`}>{t(`items.${k}.title`)}</h3>
                   <p className="mt-3 text-fg-muted"><FxWords text={t(`items.${k}.text`)} delay={180} /></p>
+                  <ul className="mt-5 grid gap-2 text-sm" data-fx-list style={{ ["--fx-delay" as string]: "450ms" }}>
+                    {points.map((p, j) => (
+                      <li key={p} className="flex gap-2.5" style={{ ["--i" as string]: j }}><Check size={16} weight="bold" className="mt-0.5 shrink-0 text-accent" aria-hidden /><span>{p}</span></li>
+                    ))}
+                  </ul>
                   <InquireLink service={k} className="mt-auto inline-flex w-max items-center gap-2 pt-6 text-sm font-semibold text-accent transition-[gap] duration-300 hover:gap-3">
                     {t("inquire")} <ArrowRight size={16} aria-hidden />
                   </InquireLink>
